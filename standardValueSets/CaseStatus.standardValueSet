@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance Review</fullName>
+        <default>false</default>
+        <label>Compliance Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Final Appeal Determination</fullName>
+        <default>false</default>
+        <label>Final Appeal Determination</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Account Review</fullName>
+        <default>false</default>
+        <label>In Account Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>true</default>
+        <label>Open</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Appeal Committee</fullName>
+        <default>false</default>
+        <label>Pending Appeal Committee</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Approval</fullName>
+        <default>false</default>
+        <label>Pending Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Finance</fullName>
+        <default>false</default>
+        <label>Pending Finance</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Member Follow Up Call</fullName>
+        <default>false</default>
+        <label>Pending Member Follow Up Call</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Member Response</fullName>
+        <default>false</default>
+        <label>Pending Member Response</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Negotiation</fullName>
+        <default>false</default>
+        <label>Pending Negotiation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Pre-Ex Review</fullName>
+        <default>false</default>
+        <label>Pending Pre-Ex Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Provider Response</fullName>
+        <default>false</default>
+        <label>Pending Provider Response</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-Ex Review</fullName>
+        <default>false</default>
+        <label>Pre-Ex Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>SR Sent for Reprocessing</fullName>
+        <default>false</default>
+        <label>SR Sent for Reprocessing</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for EOS</fullName>
+        <default>false</default>
+        <label>Waiting for EOS</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

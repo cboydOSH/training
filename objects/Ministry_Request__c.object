@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Ministry_Request_Lightning_Page_Layout</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Ministry_Request_Lightning_Page_Layout</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Ministry_Request_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Ministry_Request_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Call_Purpose__c</fields>
+        <fields>Contact_Type__c</fields>
+        <fields>OwnerId</fields>
+        <label>Ministry Request Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Call_Duration__c</fullName>
+        <description>Duration of Call in Minutes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Duration of Call in Minutes e.g 1 hr call would be 60 minutes.</inlineHelpText>
+        <label>Call Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Purpose__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Purpose</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prayer</fullName>
+                    <default>false</default>
+                    <label>Prayer</label>
+                </value>
+                <value>
+                    <fullName>Counseling</fullName>
+                    <default>false</default>
+                    <label>Counseling</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Category_Need__c</fullName>
+        <externalId>false</externalId>
+        <label>Category/Need</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Family</fullName>
+                    <default>false</default>
+                    <label>Family</label>
+                </value>
+                <value>
+                    <fullName>Finances</fullName>
+                    <default>false</default>
+                    <label>Finances</label>
+                </value>
+                <value>
+                    <fullName>Health</fullName>
+                    <default>false</default>
+                    <label>Health</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Self</fullName>
+                    <default>false</default>
+                    <label>Self</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Employee</fullName>
+                    <default>true</default>
+                    <label>Employee</label>
+                </value>
+                <value>
+                    <fullName>Member</fullName>
+                    <default>false</default>
+                    <label>Member</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Email_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Address</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Request_Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Origin</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Referral</fullName>
+                    <default>false</default>
+                    <label>Referral</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Secondary_Need__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Need</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category_Need__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Anxiety</fullName>
+                    <default>false</default>
+                    <label>Anxiety</label>
+                </value>
+                <value>
+                    <fullName>Bankruptcy</fullName>
+                    <default>false</default>
+                    <label>Bankruptcy</label>
+                </value>
+                <value>
+                    <fullName>Children</fullName>
+                    <default>false</default>
+                    <label>Children</label>
+                </value>
+                <value>
+                    <fullName>Children’s health</fullName>
+                    <default>false</default>
+                    <label>Children’s health</label>
+                </value>
+                <value>
+                    <fullName>Debt</fullName>
+                    <default>false</default>
+                    <label>Debt</label>
+                </value>
+                <value>
+                    <fullName>Depression</fullName>
+                    <default>false</default>
+                    <label>Depression</label>
+                </value>
+                <value>
+                    <fullName>Extended family</fullName>
+                    <default>false</default>
+                    <label>Extended family</label>
+                </value>
+                <value>
+                    <fullName>For parent’s health</fullName>
+                    <default>false</default>
+                    <label>For parent’s health</label>
+                </value>
+                <value>
+                    <fullName>Gambling</fullName>
+                    <default>false</default>
+                    <label>Gambling</label>
+                </value>
+                <value>
+                    <fullName>In-laws</fullName>
+                    <default>false</default>
+                    <label>In-laws</label>
+                </value>
+                <value>
+                    <fullName>Mental Health</fullName>
+                    <default>false</default>
+                    <label>Mental Health</label>
+                </value>
+                <value>
+                    <fullName>Money Management</fullName>
+                    <default>false</default>
+                    <label>Money Management</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Overspending</fullName>
+                    <default>false</default>
+                    <label>Overspending</label>
+                </value>
+                <value>
+                    <fullName>Parents</fullName>
+                    <default>false</default>
+                    <label>Parents</label>
+                </value>
+                <value>
+                    <fullName>Recent Diagnosis</fullName>
+                    <default>false</default>
+                    <label>Recent Diagnosis</label>
+                </value>
+                <value>
+                    <fullName>Self-harm</fullName>
+                    <default>false</default>
+                    <label>Self-harm</label>
+                </value>
+                <value>
+                    <fullName>Spouse</fullName>
+                    <default>false</default>
+                    <label>Spouse</label>
+                </value>
+                <value>
+                    <fullName>Spouse’s health</fullName>
+                    <default>false</default>
+                    <label>Spouse’s health</label>
+                </value>
+                <value>
+                    <fullName>Stress</fullName>
+                    <default>false</default>
+                    <label>Stress</label>
+                </value>
+                <value>
+                    <fullName>Suicide</fullName>
+                    <default>false</default>
+                    <label>Suicide</label>
+                </value>
+                <value>
+                    <fullName>Under the weather</fullName>
+                    <default>false</default>
+                    <label>Under the weather</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Family</controllingFieldValue>
+                <valueName>Children</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Family</controllingFieldValue>
+                <valueName>Extended family</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Family</controllingFieldValue>
+                <valueName>In-laws</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Family</controllingFieldValue>
+                <controllingFieldValue>Finances</controllingFieldValue>
+                <controllingFieldValue>Health</controllingFieldValue>
+                <controllingFieldValue>Self</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Family</controllingFieldValue>
+                <valueName>Parents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Family</controllingFieldValue>
+                <valueName>Spouse</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finances</controllingFieldValue>
+                <valueName>Bankruptcy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finances</controllingFieldValue>
+                <valueName>Debt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finances</controllingFieldValue>
+                <valueName>Gambling</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finances</controllingFieldValue>
+                <valueName>Money Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finances</controllingFieldValue>
+                <valueName>Overspending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Health</controllingFieldValue>
+                <valueName>Children’s health</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Health</controllingFieldValue>
+                <valueName>For parent’s health</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Health</controllingFieldValue>
+                <valueName>Recent Diagnosis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Health</controllingFieldValue>
+                <valueName>Spouse’s health</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Health</controllingFieldValue>
+                <valueName>Under the weather</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self</controllingFieldValue>
+                <valueName>Anxiety</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self</controllingFieldValue>
+                <valueName>Depression</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self</controllingFieldValue>
+                <valueName>Mental Health</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self</controllingFieldValue>
+                <valueName>Self-harm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self</controllingFieldValue>
+                <valueName>Stress</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self</controllingFieldValue>
+                <valueName>Suicide</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Summary__c</fullName>
+        <externalId>false</externalId>
+        <label>Summary</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Tertiary_Need__c</fullName>
+        <externalId>false</externalId>
+        <label>Tertiary Need</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Secondary_Need__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Abuse/Self-harm</fullName>
+                    <default>false</default>
+                    <label>Abuse/Self-harm</label>
+                </value>
+                <value>
+                    <fullName>Addition</fullName>
+                    <default>false</default>
+                    <label>Addition</label>
+                </value>
+                <value>
+                    <fullName>Allergies</fullName>
+                    <default>false</default>
+                    <label>Allergies</label>
+                </value>
+                <value>
+                    <fullName>Alzheimer Disease</fullName>
+                    <default>false</default>
+                    <label>Alzheimer Disease</label>
+                </value>
+                <value>
+                    <fullName>Anger Issues</fullName>
+                    <default>false</default>
+                    <label>Anger Issues</label>
+                </value>
+                <value>
+                    <fullName>Anxiety</fullName>
+                    <default>false</default>
+                    <label>Anxiety</label>
+                </value>
+                <value>
+                    <fullName>Autism</fullName>
+                    <default>false</default>
+                    <label>Autism</label>
+                </value>
+                <value>
+                    <fullName>Bad habits</fullName>
+                    <default>false</default>
+                    <label>Bad habits</label>
+                </value>
+                <value>
+                    <fullName>Bipolar</fullName>
+                    <default>false</default>
+                    <label>Bipolar</label>
+                </value>
+                <value>
+                    <fullName>Bullying</fullName>
+                    <default>false</default>
+                    <label>Bullying</label>
+                </value>
+                <value>
+                    <fullName>Car loans</fullName>
+                    <default>false</default>
+                    <label>Car loans</label>
+                </value>
+                <value>
+                    <fullName>Cell phone bills</fullName>
+                    <default>false</default>
+                    <label>Cell phone bills</label>
+                </value>
+                <value>
+                    <fullName>Changes and Stressful Events</fullName>
+                    <default>false</default>
+                    <label>Changes and Stressful Events</label>
+                </value>
+                <value>
+                    <fullName>Children/Special Needs</fullName>
+                    <default>false</default>
+                    <label>Children/Special Needs</label>
+                </value>
+                <value>
+                    <fullName>Cold/Flu</fullName>
+                    <default>false</default>
+                    <label>Cold/Flu</label>
+                </value>
+                <value>
+                    <fullName>Controlling relatives/parents</fullName>
+                    <default>false</default>
+                    <label>Controlling relatives/parents</label>
+                </value>
+                <value>
+                    <fullName>Credit card debt</fullName>
+                    <default>false</default>
+                    <label>Credit card debt</label>
+                </value>
+                <value>
+                    <fullName>Death in the Family</fullName>
+                    <default>false</default>
+                    <label>Death in the Family</label>
+                </value>
+                <value>
+                    <fullName>Decision to place in nursing home</fullName>
+                    <default>false</default>
+                    <label>Decision to place in nursing home</label>
+                </value>
+                <value>
+                    <fullName>Decreased income</fullName>
+                    <default>false</default>
+                    <label>Decreased income</label>
+                </value>
+                <value>
+                    <fullName>Dementia</fullName>
+                    <default>false</default>
+                    <label>Dementia</label>
+                </value>
+                <value>
+                    <fullName>Depression</fullName>
+                    <default>false</default>
+                    <label>Depression</label>
+                </value>
+                <value>
+                    <fullName>Discord/Disagreements</fullName>
+                    <default>false</default>
+                    <label>Discord/Disagreements</label>
+                </value>
+                <value>
+                    <fullName>Divorce or Separation</fullName>
+                    <default>false</default>
+                    <label>Divorce or Separation</label>
+                </value>
+                <value>
+                    <fullName>Due to Age (Hormonal unbalance)</fullName>
+                    <default>false</default>
+                    <label>Due to Age (Hormonal unbalance)</label>
+                </value>
+                <value>
+                    <fullName>Due to coping skills</fullName>
+                    <default>false</default>
+                    <label>Due to coping skills</label>
+                </value>
+                <value>
+                    <fullName>Due to current Prescription/s</fullName>
+                    <default>false</default>
+                    <label>Due to current Prescription/s</label>
+                </value>
+                <value>
+                    <fullName>Due to Difficulty managing emotions</fullName>
+                    <default>false</default>
+                    <label>Due to Difficulty managing emotions</label>
+                </value>
+                <value>
+                    <fullName>Due to Finances</fullName>
+                    <default>false</default>
+                    <label>Due to Finances</label>
+                </value>
+                <value>
+                    <fullName>Due to health condition/s</fullName>
+                    <default>false</default>
+                    <label>Due to health condition/s</label>
+                </value>
+                <value>
+                    <fullName>Due to medical condition</fullName>
+                    <default>false</default>
+                    <label>Due to medical condition</label>
+                </value>
+                <value>
+                    <fullName>Due to unemployment</fullName>
+                    <default>false</default>
+                    <label>Due to unemployment</label>
+                </value>
+                <value>
+                    <fullName>Eating disorder</fullName>
+                    <default>false</default>
+                    <label>Eating disorder</label>
+                </value>
+                <value>
+                    <fullName>Family History</fullName>
+                    <default>false</default>
+                    <label>Family History</label>
+                </value>
+                <value>
+                    <fullName>Grief/Loss</fullName>
+                    <default>false</default>
+                    <label>Grief/Loss</label>
+                </value>
+                <value>
+                    <fullName>Infidelity</fullName>
+                    <default>false</default>
+                    <label>Infidelity</label>
+                </value>
+                <value>
+                    <fullName>Lack of budgeting</fullName>
+                    <default>false</default>
+                    <label>Lack of budgeting</label>
+                </value>
+                <value>
+                    <fullName>Large medical expenses</fullName>
+                    <default>false</default>
+                    <label>Large medical expenses</label>
+                </value>
+                <value>
+                    <fullName>Marriage related</fullName>
+                    <default>false</default>
+                    <label>Marriage related</label>
+                </value>
+                <value>
+                    <fullName>Menopause</fullName>
+                    <default>false</default>
+                    <label>Menopause</label>
+                </value>
+                <value>
+                    <fullName>Mental Health</fullName>
+                    <default>false</default>
+                    <label>Mental Health</label>
+                </value>
+                <value>
+                    <fullName>Mental/Psychological</fullName>
+                    <default>false</default>
+                    <label>Mental/Psychological</label>
+                </value>
+                <value>
+                    <fullName>Midlife Crisis</fullName>
+                    <default>false</default>
+                    <label>Midlife Crisis</label>
+                </value>
+                <value>
+                    <fullName>Money lending</fullName>
+                    <default>false</default>
+                    <label>Money lending</label>
+                </value>
+                <value>
+                    <fullName>Need help with managing finances</fullName>
+                    <default>false</default>
+                    <label>Need help with managing finances</label>
+                </value>
+                <value>
+                    <fullName>Obsessive Compulsive Disorder (OCD)</fullName>
+                    <default>false</default>
+                    <label>Obsessive Compulsive Disorder (OCD)</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Overextended credit</fullName>
+                    <default>false</default>
+                    <label>Overextended credit</label>
+                </value>
+                <value>
+                    <fullName>Overspending</fullName>
+                    <default>false</default>
+                    <label>Overspending</label>
+                </value>
+                <value>
+                    <fullName>Passed away</fullName>
+                    <default>false</default>
+                    <label>Passed away</label>
+                </value>
+                <value>
+                    <fullName>Payday loans</fullName>
+                    <default>false</default>
+                    <label>Payday loans</label>
+                </value>
+                <value>
+                    <fullName>Personality clashes</fullName>
+                    <default>false</default>
+                    <label>Personality clashes</label>
+                </value>
+                <value>
+                    <fullName>Psychological Abuse</fullName>
+                    <default>false</default>
+                    <label>Psychological Abuse</label>
+                </value>
+                <value>
+                    <fullName>Physical</fullName>
+                    <default>false</default>
+                    <label>Physical</label>
+                </value>
+                <value>
+                    <fullName>Physical Abuse/Verbal to spouse</fullName>
+                    <default>false</default>
+                    <label>Physical Abuse/Verbal to spouse</label>
+                </value>
+                <value>
+                    <fullName>Post-Traumatic Stress</fullName>
+                    <default>false</default>
+                    <label>Post-Traumatic Stress</label>
+                </value>
+                <value>
+                    <fullName>Pressure to conform/covert to region or cultural norms</fullName>
+                    <default>false</default>
+                    <label>Pressure to conform/covert to region or cultural norms</label>
+                </value>
+                <value>
+                    <fullName>Recent diagnosis</fullName>
+                    <default>false</default>
+                    <label>Recent diagnosis</label>
+                </value>
+                <value>
+                    <fullName>Relationship/discord</fullName>
+                    <default>false</default>
+                    <label>Relationship/discord</label>
+                </value>
+                <value>
+                    <fullName>Self-harm</fullName>
+                    <default>false</default>
+                    <label>Self-harm</label>
+                </value>
+                <value>
+                    <fullName>Special needs</fullName>
+                    <default>false</default>
+                    <label>Special needs</label>
+                </value>
+                <value>
+                    <fullName>Student/personal loans debt</fullName>
+                    <default>false</default>
+                    <label>Student/personal loans debt</label>
+                </value>
+                <value>
+                    <fullName>Substance Abuse</fullName>
+                    <default>false</default>
+                    <label>Substance Abuse</label>
+                </value>
+                <value>
+                    <fullName>Suicide</fullName>
+                    <default>false</default>
+                    <label>Suicide</label>
+                </value>
+                <value>
+                    <fullName>Trauma</fullName>
+                    <default>false</default>
+                    <label>Trauma</label>
+                </value>
+                <value>
+                    <fullName>Trying to wedge into a marriage relationship</fullName>
+                    <default>false</default>
+                    <label>Trying to wedge into a marriage relationship</label>
+                </value>
+                <value>
+                    <fullName>Unexpected Expenses</fullName>
+                    <default>false</default>
+                    <label>Unexpected Expenses</label>
+                </value>
+                <value>
+                    <fullName>Unknown/Not sure</fullName>
+                    <default>false</default>
+                    <label>Unknown/Not sure</label>
+                </value>
+                <value>
+                    <fullName>Utility bills</fullName>
+                    <default>false</default>
+                    <label>Utility bills</label>
+                </value>
+                <value>
+                    <fullName>Victim of Bullying</fullName>
+                    <default>false</default>
+                    <label>Victim of Bullying</label>
+                </value>
+                <value>
+                    <fullName>Work related</fullName>
+                    <default>false</default>
+                    <label>Work related</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Under the weather</controllingFieldValue>
+                <valueName>Allergies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Under the weather</controllingFieldValue>
+                <valueName>Cold/Flu</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Under the weather</controllingFieldValue>
+                <controllingFieldValue>Money Management</controllingFieldValue>
+                <controllingFieldValue>Recent Diagnosis</controllingFieldValue>
+                <controllingFieldValue>Spouse’s health</controllingFieldValue>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <controllingFieldValue>Children’s health</controllingFieldValue>
+                <controllingFieldValue>Debt</controllingFieldValue>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Money Management</controllingFieldValue>
+                <valueName>Bad habits</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Money Management</controllingFieldValue>
+                <valueName>Decreased income</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Money Management</controllingFieldValue>
+                <valueName>Lack of budgeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Money Management</controllingFieldValue>
+                <valueName>Need help with managing finances</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Money Management</controllingFieldValue>
+                <valueName>Overspending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parents</controllingFieldValue>
+                <valueName>Alzheimer Disease</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parents</controllingFieldValue>
+                <valueName>Decision to place in nursing home</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parents</controllingFieldValue>
+                <valueName>Dementia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parents</controllingFieldValue>
+                <controllingFieldValue>Recent Diagnosis</controllingFieldValue>
+                <controllingFieldValue>Spouse’s health</controllingFieldValue>
+                <controllingFieldValue>Children</controllingFieldValue>
+                <controllingFieldValue>Children’s health</controllingFieldValue>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <valueName>Mental Health</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parents</controllingFieldValue>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <valueName>Passed away</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parents</controllingFieldValue>
+                <controllingFieldValue>Spouse’s health</controllingFieldValue>
+                <controllingFieldValue>Children’s health</controllingFieldValue>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Recent diagnosis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parents</controllingFieldValue>
+                <valueName>Relationship/discord</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parents</controllingFieldValue>
+                <controllingFieldValue>Spouse</controllingFieldValue>
+                <controllingFieldValue>Children</controllingFieldValue>
+                <valueName>Self-harm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Recent Diagnosis</controllingFieldValue>
+                <controllingFieldValue>Spouse’s health</controllingFieldValue>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <valueName>Physical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Recent Diagnosis</controllingFieldValue>
+                <controllingFieldValue>Spouse’s health</controllingFieldValue>
+                <controllingFieldValue>Children</controllingFieldValue>
+                <controllingFieldValue>Children’s health</controllingFieldValue>
+                <valueName>Special needs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self-harm</controllingFieldValue>
+                <valueName>Addition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self-harm</controllingFieldValue>
+                <valueName>Autism</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self-harm</controllingFieldValue>
+                <valueName>Bipolar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self-harm</controllingFieldValue>
+                <valueName>Eating disorder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self-harm</controllingFieldValue>
+                <valueName>Obsessive Compulsive Disorder (OCD)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self-harm</controllingFieldValue>
+                <valueName>Psychological Abuse</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Self-harm</controllingFieldValue>
+                <controllingFieldValue>Spouse</controllingFieldValue>
+                <valueName>Post-Traumatic Stress</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spouse</controllingFieldValue>
+                <controllingFieldValue>Children</controllingFieldValue>
+                <valueName>Anger Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spouse</controllingFieldValue>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <valueName>Divorce or Separation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spouse</controllingFieldValue>
+                <valueName>Infidelity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spouse</controllingFieldValue>
+                <valueName>Mental/Psychological</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spouse</controllingFieldValue>
+                <valueName>Physical Abuse/Verbal to spouse</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <valueName>Due to medical condition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <valueName>Due to unemployment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <valueName>Large medical expenses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <controllingFieldValue>Stress</controllingFieldValue>
+                <valueName>Marriage related</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <valueName>Overextended credit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <valueName>Unexpected Expenses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <valueName>Unknown/Not sure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bankruptcy</controllingFieldValue>
+                <controllingFieldValue>Stress</controllingFieldValue>
+                <valueName>Work related</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Children</controllingFieldValue>
+                <valueName>Bullying</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Children’s health</controllingFieldValue>
+                <valueName>Abuse/Self-harm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Children’s health</controllingFieldValue>
+                <valueName>Victim of Bullying</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Debt</controllingFieldValue>
+                <valueName>Car loans</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Debt</controllingFieldValue>
+                <valueName>Cell phone bills</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Debt</controllingFieldValue>
+                <valueName>Credit card debt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Debt</controllingFieldValue>
+                <valueName>Payday loans</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Debt</controllingFieldValue>
+                <valueName>Student/personal loans debt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Debt</controllingFieldValue>
+                <valueName>Utility bills</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Depression</controllingFieldValue>
+                <valueName>Changes and Stressful Events</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Depression</controllingFieldValue>
+                <valueName>Due to Age (Hormonal unbalance)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Depression</controllingFieldValue>
+                <valueName>Due to current Prescription/s</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Depression</controllingFieldValue>
+                <valueName>Due to health condition/s</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Depression</controllingFieldValue>
+                <valueName>Family History</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Depression</controllingFieldValue>
+                <valueName>Grief/Loss</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Depression</controllingFieldValue>
+                <valueName>Substance Abuse</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Depression</controllingFieldValue>
+                <valueName>Trauma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <valueName>Anxiety</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <valueName>Depression</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <valueName>Menopause</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>For parent’s health</controllingFieldValue>
+                <valueName>Midlife Crisis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Stress</controllingFieldValue>
+                <valueName>Children/Special Needs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Stress</controllingFieldValue>
+                <valueName>Due to Finances</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Controlling relatives/parents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Death in the Family</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Discord/Disagreements</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Money lending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Personality clashes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Pressure to conform/covert to region or cultural norms</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-laws</controllingFieldValue>
+                <valueName>Trying to wedge into a marriage relationship</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <label>Ministry Request</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Call_Purpose__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Counseling_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Category_Need__c</columns>
+        <columns>Secondary_Need__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Purpose__c</field>
+            <operation>equals</operation>
+            <value>Counseling</value>
+        </filters>
+        <label>Counseling Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Prayer_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Category_Need__c</columns>
+        <columns>Secondary_Need__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Purpose__c</field>
+            <operation>equals</operation>
+            <value>Prayer</value>
+        </filters>
+        <label>Prayer Requests</label>
+    </listViews>
+    <nameField>
+        <displayFormat>MR-{00000000}</displayFormat>
+        <label>Ministry Request</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Ministry Requests</pluralLabel>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <profileName>Ministry Outreach</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

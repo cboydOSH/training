@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <adapterUrl>/apex/icAgentConsole__inContactAgentConsole</adapterUrl>
+    <customSettings>{&quot;reqSoftphoneHeight&quot;:&quot;600&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;200&quot;,&quot;reqSalesforceCompatibilityMode&quot;:&quot;Classic_and_Lightning&quot;}</customSettings>
+    <displayName>NICE-inContact CXone - NA1</displayName>
+    <displayNameLabel>Name</displayNameLabel>
+    <internalNameLabel>Api Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>/apex/icAgentConsole__inContactAgentConsole</value>
+        </items>
+        <items>
+            <label>Description</label>
+            <name>reqDescription</name>
+            <value>NICE-inContact CXone Agent</value>
+        </items>
+        <items>
+            <label>Program Id</label>
+            <name>reqProgId</name>
+            <value>NICE-inContact.SalesforceAgent.12.0</value>
+        </items>
+        <items>
+            <label>Version</label>
+            <name>reqVersion</name>
+            <value>12.0</value>
+        </items>
+        <items>
+            <label>Use OpenCTI</label>
+            <name>reqUseApi</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Softphone Height</label>
+            <name>reqSoftphoneHeight</name>
+            <value>600</value>
+        </items>
+        <items>
+            <label>Softphone Width</label>
+            <name>reqSoftphoneWidth</name>
+            <value>200</value>
+        </items>
+        <items>
+            <label>Softphone Height(Lightning)</label>
+            <name>reqSoftphoneLightningHeight</name>
+            <value>646</value>
+        </items>
+        <items>
+            <label>Softphone Width(Lightning)</label>
+            <name>reqSoftphoneLightningWidth</name>
+            <value>202</value>
+        </items>
+        <items>
+            <label>Salesforce Compatibility Mode</label>
+            <name>reqSalesforceCompatibilityMode</name>
+            <value>Classic_and_Lightning</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Outside Prefix</label>
+            <name>reqOutsidePrefix</name>
+            <value>9</value>
+        </items>
+        <items>
+            <label>Long Distance Prefix</label>
+            <name>reqLongDistPrefix</name>
+            <value>1</value>
+        </items>
+        <items>
+            <label>International Prefix</label>
+            <name>reqInternationalPrefix</name>
+            <value>01</value>
+        </items>
+        <label>Dialing Options</label>
+        <name>reqDialingOptions</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Authorization Server</label>
+            <name>icAuthorizationUrl</name>
+            <value>https://api.incontact.com/InContactAuthorizationServer/Token</value>
+        </items>
+        <items>
+            <label>Platform</label>
+            <name>authMode</name>
+            <value>Evolve</value>
+        </items>
+        <items>
+            <label>CXone Authentication Server</label>
+            <name>evolveAuthUrl</name>
+            <value>https://na1.nice-incontact.com</value>
+        </items>
+        <items>
+            <label>CXone Notification Server</label>
+            <name>evolveNotificationUrl</name>
+            <value>https://na1-ws.nice-incontact.com/ws/notifications</value>
+        </items>
+        <items>
+            <label>CXone Web Server</label>
+            <name>evolveWebServerUrl</name>
+            <value>https://na1.nice-incontact.com</value>
+        </items>
+        <label>NICE-inContact Settings</label>
+        <name>inContactSettings</name>
+    </sections>
+    <version>12</version>
+</CallCenter>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>LearnTrac User</label>
+    <permissionSets>ltui__LearnTrac_Lightning_UI_User</permissionSets>
+    <permissionSets>redwing__LMS_External_User</permissionSets>
+    <permissionSets>redwing__LMS_User</permissionSets>
+    <permissionSets>rwscorm__LMS_Player_User</permissionSets>
+    <permissionSets>scormanywhere__Player_User</permissionSets>
+    <permissionSets>vtui__ViewTrac_Lightning_UI_User</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

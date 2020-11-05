@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset>Opportunity_Contact_Role</dataset>
+    <dates>
+        <alias>Opportunity.CreatedDate</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>0</fiscalMonthOffset>
+        <label>Opportunity Created Date</label>
+        <sortIndex>0</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dates>
+        <alias>Opportunity.CloseDate</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>0</fiscalMonthOffset>
+        <label>Opportunity Close Date</label>
+        <sortIndex>1</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dimensions>
+        <field>Account.Name</field>
+        <isDerived>false</isDerived>
+        <label>Account</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Contact.Name</field>
+        <isDerived>false</isDerived>
+        <label>Contact</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Contact.Title</field>
+        <isDerived>false</isDerived>
+        <label>Job Title</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ContactId</field>
+        <isDerived>false</isDerived>
+        <label>Contact ID</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Opportunity.Name</field>
+        <isDerived>false</isDerived>
+        <label>Opportunity</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Opportunity.AccountId</field>
+        <isDerived>false</isDerived>
+        <label>Account ID</label>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>OpportunityId</field>
+        <isDerived>false</isDerived>
+        <label>Opportunity ID</label>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Role</field>
+        <isDerived>false</isDerived>
+        <label>Role</label>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+</WaveXmd>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$Subject</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$Account</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$CallType</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$EventSubtype</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User.Activity$OwnerId$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Demitria Jones</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Activities Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User_with_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Activity$OwnerId$CreatedDate</dateColumn>
+        <endDate>2020-04-27</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-04-20</startDate>
+    </timeFrameFilter>
+</Report>

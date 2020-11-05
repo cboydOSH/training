@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Compliance Queue</name>
+    <queueMembers>
+        <users>
+            <user>amack@onesharehealth.com</user>
+            <user>aklevgard@onesharehealth.com</user>
+            <user>jfparker@onesharehealth.com</user>
+            <user>rbogdan@onesharehealth.com</user>
+            <user>rfields@onesharehealth.com</user>
+            <user>tpalacios@onesharehealth.com</user>
+            <user>tygordon@onesharehealth.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Work_Item__c</sobjectType>
+    </queueSobject>
+</Queue>

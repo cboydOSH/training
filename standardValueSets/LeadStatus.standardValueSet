@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow-up</fullName>
+        <default>false</default>
+        <label>Follow-up</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Verbal Yes</fullName>
+        <default>false</default>
+        <label>Verbal Yes</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Lost</fullName>
+        <default>false</default>
+        <label>Lead Lost</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Converted</fullName>
+        <default>false</default>
+        <label>Converted</label>
+        <converted>true</converted>
+    </standardValue>
+</StandardValueSet>

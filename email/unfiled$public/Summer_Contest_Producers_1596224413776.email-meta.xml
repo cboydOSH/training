@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Summer contest announcement for 0-19% producers.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Summer Contest (Producers)</name>
+    <style>none</style>
+    <subject>OneShare Summer Contest!</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

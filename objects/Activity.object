@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>vfirst__Adjudication__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c, &quot;Approved&quot;), 
+IMAGE(&quot;https://salesforce.verifiedfirst.com/images/Approved.png&quot;, &quot;Approved&quot;, 14, 14),&apos;&apos;) 
++ 
+IF(CONTAINS(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c, &quot;Pending&quot;), 
+IMAGE(&quot;https://salesforce.verifiedfirst.com/images/Pending.png&quot;, &quot;Pending&quot;, 14, 14),&apos;&apos;) 
++ 
+IF(CONTAINS(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c, &quot;Declined&quot;), 
+IMAGE(&quot;https://salesforce.verifiedfirst.com/images/Declined.png&quot;, &quot;Declined&quot;, 14, 14),&apos;&apos;) 
++ 
+IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;, 
+&apos;To Be Determined&apos;, &apos; &apos; + vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Adjudication</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vfirst__Site_Guest_Access_Helper__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Verified First Site Guest Access Helper</label>
+        <referenceTo>vfirst__Site_Guest_Access_Helper__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vfirst__Stage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(vfirst__Site_Guest_Access_Helper__r.vfirst__File_Processing__c,
+  &apos;File Processing...&apos;,
+  IF(OR(OR(OR(OR(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;x:email&apos;, vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;ready_to_order&apos;), vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;x:app_pending&apos;), CONTAINS(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c, &apos;pre_pull&apos;)), CONTAINS(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c, &apos;waiting_applicant&apos;)), 
+    IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Archived__c, 
+      IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Archived_By__c == &apos;Applicant&apos;, 
+        &apos;Refused Invitation&apos;, 
+        &apos;Withdrawn&apos; 
+      ), 
+      IF(CONTAINS(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c, &apos;pre_pull&apos;), 
+        &apos;Partially Ordered&apos;, 
+        IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;ready_to_order&apos;,
+          &apos;Ready to Order&apos;,
+          IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Invite_Send_Error__c,
+            &apos;Notification Email Bounced&apos;, 
+            &apos;Waiting on Applicant&apos; 
+          ) 
+        ) 
+      ) 
+    ), 
+    IF(OR(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;x:pending&apos;, CONTAINS(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c, &apos;partial&apos;)), 
+      &apos;Partially Complete&apos;, 
+      IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;applicant_declined&apos;, 
+        &apos;Applicant Declined&apos;, 
+        IF(OR(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;x:ready&apos;, vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;complete&apos;), 
+          &apos;Complete&apos;, 
+          IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;canceled&apos;, 
+            &apos;Canceled&apos;, 
+            IF(OR(OR(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;x:email&apos;, vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;waiting_applicant-invitation_email&apos;), vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;waiting_applicant-invitation_sms&apos;), 
+              &apos;Invitation Sent&apos;, 
+              IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;complete-need_review&apos;, 
+                &apos;Complete - In Need of Review&apos;, 
+                IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;complete-approved&apos;, 
+                  &apos;Complete - Approved&apos;, 
+                  IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;complete-completed&apos;, 
+                  &apos;Complete - Completed&apos;, 
+                    IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;complete-preadverse&apos;, 
+                    &apos;Complete - Pre-Adverse Action&apos;, 
+                      IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;complete-adverse&apos;, 
+                        &apos;Complete - Adverse Action&apos;, 
+                        IF(ISBLANK(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c), 
+                          &apos;&apos;, 
+                          &apos;File Processing...&apos; 
+                        ) 
+                      ) 
+                    ) 
+                  ) 
+                ) 
+              ) 
+            ) 
+          ) 
+        ) 
+      ) 
+    ) 
+  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vfirst__Verification_Report__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;x:ready&apos;, 
+
+	IF( CONTAINS($Api.Partner_Server_URL_300, &apos;.my.&apos;),
+	HYPERLINK(SUBSTITUTE ( SUBSTITUTE ( LEFT($Api.Partner_Server_URL_300, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_300)), &apos;https://vfirst.&apos;, &apos;https://&apos;), &apos;.visual.&apos;, &apos;.sales&apos;) + &apos;apex/vfirst__PdfTemplate?objectId=&apos; + Id, IMAGE(&apos;https://salesforce.verifiedfirst.com/images/report%2Bactive.png&apos;, &apos;Ready &apos;,16,16))
+	,
+	HYPERLINK(SUBSTITUTE ( SUBSTITUTE ( LEFT($Api.Partner_Server_URL_300, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_300)), &apos;https://&apos;, &apos;https://vfirst.&apos;), &apos;.sales&apos;, &apos;.visual.&apos;) + &apos;apex/vfirst__PdfTemplate?objectId=&apos; + Id, IMAGE(&apos;https://salesforce.verifiedfirst.com/images/report%2Bactive.png&apos;, &apos;Ready &apos;,16,16))
+	)
+,
+	IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Status__c == &apos;x:partial&apos;,
+
+	IF( CONTAINS($Api.Partner_Server_URL_300, &apos;.my.&apos;),
+	HYPERLINK(SUBSTITUTE ( SUBSTITUTE ( LEFT($Api.Partner_Server_URL_300, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_300)), &apos;https://vfirst.&apos;, &apos;https://&apos;), &apos;.visual.&apos;, &apos;.sales&apos;) + &apos;apex/vfirst__PdfTemplate?objectId=&apos; + Id, IMAGE(&apos;https://salesforce.verifiedfirst.com/images/report%2Byellow.png&apos;, &apos;Partially &apos;,16,16))
+	,
+	HYPERLINK(SUBSTITUTE ( SUBSTITUTE ( LEFT($Api.Partner_Server_URL_300, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_300)), &apos;https://&apos;, &apos;https://vfirst.&apos;), &apos;.sales&apos;, &apos;.visual.&apos;) + &apos;apex/vfirst__PdfTemplate?objectId=&apos; + Id, IMAGE(&apos;https://salesforce.verifiedfirst.com/images/report%2Byellow.png&apos;, &apos;Partially &apos;,16,16))
+	) 
+	,
+	IMAGE(&apos;https://salesforce.verifiedfirst.com/images/report%2Binactive.png&apos;, &apos;Not Ready &apos;,16,16))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Verification Report</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vfirst__of_Background_Checks_Ordered__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>vfirst__Site_Guest_Access_Helper__r.vfirst__of_Background_Checks_Ordered__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label># of Background Checks Ordered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <columns>ACTIVITY_SUBTYPE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>EVENT.LOCATION</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

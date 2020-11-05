@@ -1,0 +1,33 @@
+<html>
+ <head> 
+  <title></title> 
+  <meta content="no-referrer" /> 
+ </head> 
+ <body style="height: auto; min-height: auto;">
+  <img alt="2020_OneShare_Health_Wordmark_Email_Image_v2" src="https://onesharehealth--c.documentforce.com/file-asset-public/X2020_OneShare_Health_Wordmark_Email2?oid=00D4P000000yQIU" style="max-width: 782.1667053222656px" title="2020_OneShare_Health_Wordmark_Email_Image_v2" /> 
+  <br /> 
+  <br /> Hi {{{Recipient.FirstName}}}, 
+  <br /> 
+  <br /> We are excited to welcome you to our OneShare Health family! Our industry-leading programs are the perfect solution for your clients who are seeking an affordable health care option. To help you begin your journey, we host a weekly national webinar where we dive into our programs in detail and answer any questions you may have.&nbsp; 
+  <br /> 
+  <br /> We want to be a part of your ongoing success and provide our Producers with benefits such as: 
+  <ol> 
+   <li>Competitive Industry Commissions paid weekly</li> 
+   <li>Market OneShare Programs 365 days per year&nbsp;</li> 
+   <li>Approved Marketing Materials</li> 
+   <li>Simple Electronic Enrollment with Next-Day Effective Dates Available (1st – 28th of the month)</li> 
+   <li>Available Nationwide, excluding the residents of MD, VT, MA, WA, &amp; PA&nbsp;&nbsp;</li> 
+  </ol> We are here for you if you need any additional support, so do not hesitate to reach out. Remember, your first commission check is only a week away! 
+  <br /> 
+  <br /> 
+  <span style="color:#c0392b;">[Insert this week’s webinar link]</span> 
+  <br /> 
+  <br /> Sincerely, 
+  <br /> 
+  <br /> 
+  <span style="color:#c0392b;">FirstName LastName<br /> (Your Title) at OneShare Health<br /> 000.000.0000 | email@onesharehealth.com</span> 
+  <br /> 
+  <br /> 
+  <span style="font-size:10px;">Galatians 6:2 (NIV)<br /> Carry each other’s burdens, and in this way you will fulfill the law of Christ.<br /> <i>Disclaimer: OneShare Health, LLC is not an insurance company but a religious health care sharing ministry. For our full disclosures, see www.onesharehealth.com/legal-notices<br /> OneShare Health • (682) 651-7400 • www.OneShareHealth.com<br /> 3701 Regent Blvd., Ste. 100, Irving, TX 75063</i></span>
+ </body>
+</html>

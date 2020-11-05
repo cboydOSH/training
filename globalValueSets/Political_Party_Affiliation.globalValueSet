@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Democratic</fullName>
+        <default>false</default>
+        <label>Democratic</label>
+    </customValue>
+    <customValue>
+        <fullName>Independent</fullName>
+        <default>false</default>
+        <label>Independent</label>
+    </customValue>
+    <customValue>
+        <fullName>Republican</fullName>
+        <default>false</default>
+        <label>Republican</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Political Party Affiliation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeKeywordSearchHistory$Keyword</field>
+    </columns>
+    <columns>
+        <field>KnowledgeKeywordSearchHistory$Channel</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>KnowledgeKeywordSearchHistory$Count</field>
+    </columns>
+    <columns>
+        <field>KnowledgeKeywordSearchHistory$Duration</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>KnowledgeKeywordSearchHistory$Success</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>Sum</aggregateType>
+        <dateGranularity>Month</dateGranularity>
+        <field>KnowledgeKeywordSearchHistory$AsOfDate</field>
+        <sortByName>KnowledgeKeywordSearchHistory$Count</sortByName>
+        <sortOrder>Asc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Knowledge Keyword Search Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Keyword_Search__c</reportType>
+    <scope>durationYear</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeKeywordSearchHistory$AsOfDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

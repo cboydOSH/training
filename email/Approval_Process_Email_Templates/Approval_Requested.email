@@ -1,0 +1,10 @@
+Hello {!Receiving_User.FirstName},
+
+Please approve/reject the request from {!Lead.OwnerFullName} for an Affinity Contract whose contract level is {!Lead.Contract_Level__c}.
+
+Here is a link to the lead  
+{!Lead.Link}
+
+
+Best Regards,
+{!Lead.OwnerFullName}

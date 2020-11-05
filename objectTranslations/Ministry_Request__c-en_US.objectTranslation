@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ministry Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ministry Requests</value>
+    </caseValues>
+    <fields>
+        <help><!-- Duration of Call in Minutes e.g 1 hr call would be 60 minutes. --></help>
+        <label><!-- Call Duration --></label>
+        <name>Call_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Purpose --></label>
+        <name>Call_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Counseling</masterLabel>
+            <translation><!-- Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prayer</masterLabel>
+            <translation><!-- Prayer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category/Need --></label>
+        <name>Category_Need__c</name>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finances</masterLabel>
+            <translation><!-- Finances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health</masterLabel>
+            <translation><!-- Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self</masterLabel>
+            <translation><!-- Self --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Origin --></label>
+        <name>Request_Origin__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Need --></label>
+        <name>Secondary_Need__c</name>
+        <picklistValues>
+            <masterLabel>Anxiety</masterLabel>
+            <translation><!-- Anxiety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankruptcy</masterLabel>
+            <translation><!-- Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children</masterLabel>
+            <translation><!-- Children --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children’s health</masterLabel>
+            <translation><!-- Children’s health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt</masterLabel>
+            <translation><!-- Debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Depression</masterLabel>
+            <translation><!-- Depression --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extended family</masterLabel>
+            <translation><!-- Extended family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>For parent’s health</masterLabel>
+            <translation><!-- For parent’s health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gambling</masterLabel>
+            <translation><!-- Gambling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-laws</masterLabel>
+            <translation><!-- In-laws --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health</masterLabel>
+            <translation><!-- Mental Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money Management</masterLabel>
+            <translation><!-- Money Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overspending</masterLabel>
+            <translation><!-- Overspending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parents</masterLabel>
+            <translation><!-- Parents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recent Diagnosis</masterLabel>
+            <translation><!-- Recent Diagnosis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-harm</masterLabel>
+            <translation><!-- Self-harm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse</masterLabel>
+            <translation><!-- Spouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse’s health</masterLabel>
+            <translation><!-- Spouse’s health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stress</masterLabel>
+            <translation><!-- Stress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suicide</masterLabel>
+            <translation><!-- Suicide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under the weather</masterLabel>
+            <translation><!-- Under the weather --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tertiary Need --></label>
+        <name>Tertiary_Need__c</name>
+        <picklistValues>
+            <masterLabel>Abuse/Self-harm</masterLabel>
+            <translation><!-- Abuse/Self-harm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Addition</masterLabel>
+            <translation><!-- Addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allergies</masterLabel>
+            <translation><!-- Allergies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alzheimer Disease</masterLabel>
+            <translation><!-- Alzheimer Disease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anger Issues</masterLabel>
+            <translation><!-- Anger Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anxiety</masterLabel>
+            <translation><!-- Anxiety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autism</masterLabel>
+            <translation><!-- Autism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad habits</masterLabel>
+            <translation><!-- Bad habits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bipolar</masterLabel>
+            <translation><!-- Bipolar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bullying</masterLabel>
+            <translation><!-- Bullying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car loans</masterLabel>
+            <translation><!-- Car loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cell phone bills</masterLabel>
+            <translation><!-- Cell phone bills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changes and Stressful Events</masterLabel>
+            <translation><!-- Changes and Stressful Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children/Special Needs</masterLabel>
+            <translation><!-- Children/Special Needs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold/Flu</masterLabel>
+            <translation><!-- Cold/Flu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Controlling relatives/parents</masterLabel>
+            <translation><!-- Controlling relatives/parents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit card debt</masterLabel>
+            <translation><!-- Credit card debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death in the Family</masterLabel>
+            <translation><!-- Death in the Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decision to place in nursing home</masterLabel>
+            <translation><!-- Decision to place in nursing home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decreased income</masterLabel>
+            <translation><!-- Decreased income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dementia</masterLabel>
+            <translation><!-- Dementia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Depression</masterLabel>
+            <translation><!-- Depression --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discord/Disagreements</masterLabel>
+            <translation><!-- Discord/Disagreements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divorce or Separation</masterLabel>
+            <translation><!-- Divorce or Separation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to Age (Hormonal unbalance)</masterLabel>
+            <translation><!-- Due to Age (Hormonal unbalance) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to Difficulty managing emotions</masterLabel>
+            <translation><!-- Due to Difficulty managing emotions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to Finances</masterLabel>
+            <translation><!-- Due to Finances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to coping skills</masterLabel>
+            <translation><!-- Due to coping skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to current Prescription/s</masterLabel>
+            <translation><!-- Due to current Prescription/s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to health condition/s</masterLabel>
+            <translation><!-- Due to health condition/s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to medical condition</masterLabel>
+            <translation><!-- Due to medical condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to unemployment</masterLabel>
+            <translation><!-- Due to unemployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eating disorder</masterLabel>
+            <translation><!-- Eating disorder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family History</masterLabel>
+            <translation><!-- Family History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grief/Loss</masterLabel>
+            <translation><!-- Grief/Loss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infidelity</masterLabel>
+            <translation><!-- Infidelity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of budgeting</masterLabel>
+            <translation><!-- Lack of budgeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large medical expenses</masterLabel>
+            <translation><!-- Large medical expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marriage related</masterLabel>
+            <translation><!-- Marriage related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Menopause</masterLabel>
+            <translation><!-- Menopause --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health</masterLabel>
+            <translation><!-- Mental Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental/Psychological</masterLabel>
+            <translation><!-- Mental/Psychological --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midlife Crisis</masterLabel>
+            <translation><!-- Midlife Crisis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money lending</masterLabel>
+            <translation><!-- Money lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need help with managing finances</masterLabel>
+            <translation><!-- Need help with managing finances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obsessive Compulsive Disorder (OCD)</masterLabel>
+            <translation><!-- Obsessive Compulsive Disorder (OCD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overextended credit</masterLabel>
+            <translation><!-- Overextended credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overspending</masterLabel>
+            <translation><!-- Overspending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed away</masterLabel>
+            <translation><!-- Passed away --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payday loans</masterLabel>
+            <translation><!-- Payday loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personality clashes</masterLabel>
+            <translation><!-- Personality clashes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical</masterLabel>
+            <translation><!-- Physical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Abuse/Verbal to spouse</masterLabel>
+            <translation><!-- Physical Abuse/Verbal to spouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Traumatic Stress</masterLabel>
+            <translation><!-- Post-Traumatic Stress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pressure to conform/covert to region or cultural norms</masterLabel>
+            <translation><!-- Pressure to conform/covert to region or cultural norms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychological Abuse</masterLabel>
+            <translation><!-- Psychological Abuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recent diagnosis</masterLabel>
+            <translation><!-- Recent diagnosis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship/discord</masterLabel>
+            <translation><!-- Relationship/discord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-harm</masterLabel>
+            <translation><!-- Self-harm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special needs</masterLabel>
+            <translation><!-- Special needs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student/personal loans debt</masterLabel>
+            <translation><!-- Student/personal loans debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Substance Abuse</masterLabel>
+            <translation><!-- Substance Abuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suicide</masterLabel>
+            <translation><!-- Suicide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trauma</masterLabel>
+            <translation><!-- Trauma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trying to wedge into a marriage relationship</masterLabel>
+            <translation><!-- Trying to wedge into a marriage relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unexpected Expenses</masterLabel>
+            <translation><!-- Unexpected Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown/Not sure</masterLabel>
+            <translation><!-- Unknown/Not sure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility bills</masterLabel>
+            <translation><!-- Utility bills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Victim of Bullying</masterLabel>
+            <translation><!-- Victim of Bullying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work related</masterLabel>
+            <translation><!-- Work related --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

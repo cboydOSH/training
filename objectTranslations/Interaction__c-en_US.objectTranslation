@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interactions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Admin Interaction ID --></label>
+        <name>Admin_Interaction_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ﻿Agent ID --></label>
+        <name>Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Label --></label>
+        <name>Agent_Label__c</name>
+        <relationshipLabel><!-- Agent Interactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Agent ID --></label>
+        <name>Member_Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Agent Label --></label>
+        <name>Member_Agent_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member ID --></label>
+        <name>Member_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Name --></label>
+        <name>Member_Name__c</name>
+        <relationshipLabel><!-- Member Interactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Member Phone --></label>
+        <name>Member_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member State --></label>
+        <name>Member_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Status --></label>
+        <name>Member_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Active Date --></label>
+        <name>Product_Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Created Date --></label>
+        <name>Product_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product ID --></label>
+        <name>Product_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Inactive Date --></label>
+        <name>Product_Inactive_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Label --></label>
+        <name>Product_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Code --></label>
+        <name>Reference_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Date --></label>
+        <name>Reference_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Agent ID --></label>
+        <name>User_Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Agent Label --></label>
+        <name>User_Agent_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Agent Interaction --></label>
+        <name>Agent_Interaction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Member Interaction --></label>
+        <name>Member_Interaction</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

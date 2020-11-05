@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regulatory Record</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regulatory Records</value>
+    </caseValues>
+    <fields>
+        <label><!-- Governor Party Affiliation --></label>
+        <name>Governor_Party_Affiliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Governor&apos;s Name --></label>
+        <name>Governor_s_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Governor&apos;s Phone --></label>
+        <name>Governor_s_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Commissioner Party Affiliation --></label>
+        <name>Insurance_Commissioner_Party_Affiliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Commissioner&apos;s Name --></label>
+        <name>Insurance_Commissioner_s_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Commissioner&apos;s Phone --></label>
+        <name>Insurance_Commissioner_s_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lt. Governor Party Affiliation --></label>
+        <name>Lt_Governor_Party_Affiliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lt. Governor&apos;s Name --></label>
+        <name>Lt_Governor_s_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lt. Governor&apos;s Phone --></label>
+        <name>Lt_Governor_s_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Election --></label>
+        <name>Next_Election__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>Time_Zone__c</name>
+        <picklistValues>
+            <masterLabel>Alaskan</masterLabel>
+            <translation><!-- Alaskan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eastern</masterLabel>
+            <translation><!-- Eastern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaiian</masterLabel>
+            <translation><!-- Hawaiian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mountain</masterLabel>
+            <translation><!-- Mountain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pacific</masterLabel>
+            <translation><!-- Pacific --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

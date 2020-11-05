@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Expense Sharing Queue</name>
+    <queueMembers>
+        <users>
+            <user>azambrano@onesharehealth.com</user>
+            <user>aescobedo@onesharehealth.com</user>
+            <user>amims@onesharehealth.com</user>
+            <user>bbobby@onesharehealth.com</user>
+            <user>growland@onesharehealth.com</user>
+            <user>kmarshall@onesharehealth.com</user>
+            <user>lcochran@onesharehealth.com</user>
+            <user>sholmes@onesharehealth.com</user>
+            <user>ttaylor@onesharehealth.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Work_Item__c</sobjectType>
+    </queueSobject>
+</Queue>

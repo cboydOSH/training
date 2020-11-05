@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Body --></label>
+        <name>Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Book No. --></label>
+        <name>Book_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Membership Guide --></label>
+        <name>Fulfillment_Membership_Guide__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Code --></label>
+        <name>Group_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Knowledge --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Program Code --></label>
+        <name>Program_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topics --></label>
+        <name>Topics__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- FAQ --></label>
+        <name>FAQ</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Member Guide Books --></label>
+        <name>Member_Guide_Books</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Membership Cards --></label>
+        <name>Membership_Cards</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Producer Guide Books --></label>
+        <name>Producer_Guide_Books</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tutorial --></label>
+        <name>Tutorial</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

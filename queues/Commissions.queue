@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Commissions Queue</name>
+    <queueMembers>
+        <users>
+            <user>apaiz@onesharehealth.com</user>
+            <user>acano@onesharehealth.com</user>
+            <user>jbagley@onesharehealth.com</user>
+            <user>kmarshall@onesharehealth.com</user>
+            <user>mhutchison@onesharehealth.com</user>
+            <user>pjones@onesharehealth.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Work_Item__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>OSHTraining</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>Learning</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>My Learning</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/my-learning</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Learning Catalogs</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/learning-catalogs</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Learning Calendar</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/learning-calendar</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Media Board</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>All Media</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/all-media</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+</NavigationMenu>

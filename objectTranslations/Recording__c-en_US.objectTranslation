@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Recording</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Recordings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Recordings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Disclosure Agreement Location --></label>
+        <name>Disclosure_Agreement_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclosure Agreement --></label>
+        <name>Disclosure_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dropbox URL CHECK --></label>
+        <name>Dropbox_URL_CHECK__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dropbox URL --></label>
+        <name>Dropbox_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Includes Application --></label>
+        <name>Includes_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Account --></label>
+        <name>Member_Account__c</name>
+        <relationshipLabel><!-- Recordings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recording Date --></label>
+        <name>Recording_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recording Source --></label>
+        <name>Recording_Source__c</name>
+        <picklistValues>
+            <masterLabel>RingCentral</masterLabel>
+            <translation><!-- RingCentral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification</masterLabel>
+            <translation><!-- Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vicidial</masterLabel>
+            <translation><!-- Vicidial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- S3 URL CHECK --></label>
+        <name>S3_URL_CHECK__c</name>
+    </fields>
+    <fields>
+        <label><!-- S3 URL --></label>
+        <name>S3_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms Agreement Location --></label>
+        <name>Terms_Agreement_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms Agreement --></label>
+        <name>Terms_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twilio URL CHECK --></label>
+        <name>Twilio_URL_CHECK__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twilio URL --></label>
+        <name>Twilio_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Duration --></label>
+        <name>Verification_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Type --></label>
+        <name>Verification_Type__c</name>
+        <picklistValues>
+            <masterLabel>Catastrophic</masterLabel>
+            <translation><!-- Catastrophic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Classic</masterLabel>
+            <translation><!-- Classic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summit</masterLabel>
+            <translation><!-- Summit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thrive</masterLabel>
+            <translation><!-- Thrive --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

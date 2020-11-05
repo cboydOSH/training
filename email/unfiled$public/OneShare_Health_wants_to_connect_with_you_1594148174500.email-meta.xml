@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>&quot; I have valuable information...&quot;</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OneShare Health wants to connect with you!</name>
+    <style>none</style>
+    <subject>OneShare Health wants to connect with you!</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

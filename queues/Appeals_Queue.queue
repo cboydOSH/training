@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Appeals Queue</name>
+    <queueMembers>
+        <users>
+            <user>jclay@onesharehealth.com</user>
+            <user>jmichelle@onesharehealth.com</user>
+            <user>jlaengrich@onesharehealth.com</user>
+            <user>kmarshall@onesharehealth.com</user>
+            <user>kwaters@onesharehealth.com</user>
+            <user>rbogdan@onesharehealth.com</user>
+            <user>sholmes@onesharehealth.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

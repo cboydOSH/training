@@ -1,0 +1,6 @@
+Dear {!Lead.OwnerFullName},
+
+Your recent approval request regarding {!Lead.Name} has not been approved. Please log in to your org for details or click here: {!Lead.Link}
+
+
+Thank you,

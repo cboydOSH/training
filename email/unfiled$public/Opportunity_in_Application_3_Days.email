@@ -1,0 +1,5 @@
+Hi {!Opportunity.OwnerFirstName},
+This Oppportunity has been in the Application Stage since {!Opportunity.LastModifiedDate}
+Please send the Application link to {!Opportunity.Name} for them to complete the Application Step.
+
+Click on the link below to access the Opportunity

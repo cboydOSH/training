@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Classic Basic</fullName>
+        <default>false</default>
+        <label>Classic Basic</label>
+    </customValue>
+    <customValue>
+        <fullName>Classic Enhanced</fullName>
+        <default>false</default>
+        <label>Classic Enhanced</label>
+    </customValue>
+    <customValue>
+        <fullName>Classic Crown</fullName>
+        <default>false</default>
+        <label>Classic Crown</label>
+    </customValue>
+    <customValue>
+        <fullName>Complete Basic</fullName>
+        <default>false</default>
+        <label>Complete Basic</label>
+    </customValue>
+    <customValue>
+        <fullName>Complete Enhanced</fullName>
+        <default>false</default>
+        <label>Complete Enhanced</label>
+    </customValue>
+    <customValue>
+        <fullName>Complete Crown</fullName>
+        <default>false</default>
+        <label>Complete Crown</label>
+    </customValue>
+    <customValue>
+        <fullName>Catastrophic</fullName>
+        <default>false</default>
+        <label>Catastrophic</label>
+    </customValue>
+    <masterLabel>Program</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

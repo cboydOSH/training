@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset>Pardot_Activity</dataset>
+    <dates>
+        <alias>ActivityDate</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>0</fiscalMonthOffset>
+        <label>Activity Date</label>
+        <sortIndex>0</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dimensions>
+        <field>AccountId</field>
+        <isDerived>false</isDerived>
+        <label>Account ID</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AccountName</field>
+        <isDerived>false</isDerived>
+        <label>Account</label>
+        <recordIdField>AccountId</recordIdField>
+        <salesforceActionsEnabled>true</salesforceActionsEnabled>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ActivityType</field>
+        <isDerived>false</isDerived>
+        <label>Activity</label>
+        <members>
+            <label>Email Click</label>
+            <member>1</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>View</label>
+            <member>2</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>Success</label>
+            <member>4</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>Open</label>
+            <member>11</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>Visit</label>
+            <member>20</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <members>
+            <label>Custom URL Click</label>
+            <member>21</member>
+            <sortIndex>5</sortIndex>
+        </members>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ActorExternalId</field>
+        <isDerived>false</isDerived>
+        <label>External ID</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ActorId</field>
+        <isDerived>false</isDerived>
+        <label>ID</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ActorName</field>
+        <isDerived>false</isDerived>
+        <label>Name</label>
+        <recordIdField>ActorId</recordIdField>
+        <salesforceActionsEnabled>true</salesforceActionsEnabled>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AssetActivity</field>
+        <isDerived>false</isDerived>
+        <label>Asset Activity</label>
+        <members>
+            <label>Form View</label>
+            <member>1 2</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>Form Success</label>
+            <member>1 4</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>List Email Click</label>
+            <member>2 1</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>List Email Open</label>
+            <member>2 11</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>File View</label>
+            <member>3 2</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <members>
+            <label>Custom Url Click</label>
+            <member>4 21</member>
+            <sortIndex>5</sortIndex>
+        </members>
+        <members>
+            <label>Landing Page View</label>
+            <member>5 2</member>
+            <sortIndex>6</sortIndex>
+        </members>
+        <members>
+            <label>Landing Page Success</label>
+            <member>5 4</member>
+            <sortIndex>7</sortIndex>
+        </members>
+        <members>
+            <label>Form Handler Success</label>
+            <member>6 4</member>
+            <sortIndex>8</sortIndex>
+        </members>
+        <members>
+            <label>Automated Email Click</label>
+            <member>7 1</member>
+            <sortIndex>9</sortIndex>
+        </members>
+        <members>
+            <label>Automated Email Open</label>
+            <member>7 11</member>
+            <sortIndex>10</sortIndex>
+        </members>
+        <members>
+            <label>Website Visit</label>
+            <member>8 20</member>
+            <sortIndex>11</sortIndex>
+        </members>
+        <members>
+            <label>Priority Page View</label>
+            <member>9 2</member>
+            <sortIndex>12</sortIndex>
+        </members>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AssetId</field>
+        <isDerived>false</isDerived>
+        <label>Asset ID</label>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AssetName</field>
+        <isDerived>false</isDerived>
+        <label>Asset Name</label>
+        <recordIdField>AssetId</recordIdField>
+        <salesforceActionsEnabled>true</salesforceActionsEnabled>
+        <sortIndex>8</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AssetType</field>
+        <isDerived>false</isDerived>
+        <label>Asset Type</label>
+        <members>
+            <label>Form</label>
+            <member>1</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>List Email</label>
+            <member>2</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>File</label>
+            <member>3</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>Custom Url</label>
+            <member>4</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>Landing Page</label>
+            <member>5</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <members>
+            <label>Form Handler</label>
+            <member>6</member>
+            <sortIndex>5</sortIndex>
+        </members>
+        <members>
+            <label>Automated Email</label>
+            <member>7</member>
+            <sortIndex>6</sortIndex>
+        </members>
+        <members>
+            <label>Website Visit</label>
+            <member>8</member>
+            <sortIndex>7</sortIndex>
+        </members>
+        <members>
+            <label>Priority Page View</label>
+            <member>9</member>
+            <sortIndex>8</sortIndex>
+        </members>
+        <sortIndex>9</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>BucketHash</field>
+        <isDerived>false</isDerived>
+        <label>Bucket Hash</label>
+        <showInExplorer>false</showInExplorer>
+        <sortIndex>10</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>BucketId</field>
+        <isDerived>false</isDerived>
+        <label>Bucket ID</label>
+        <showInExplorer>false</showInExplorer>
+        <sortIndex>11</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ActivityCampaignId</field>
+        <isDerived>false</isDerived>
+        <label>Activity Campaign ID</label>
+        <sortIndex>12</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ActivityCampaignName</field>
+        <isDerived>false</isDerived>
+        <label>Activity Campaign Name</label>
+        <recordIdField>ActivityCampaignId</recordIdField>
+        <salesforceActionsEnabled>true</salesforceActionsEnabled>
+        <sortIndex>13</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ActorType</field>
+        <isDerived>false</isDerived>
+        <label>Prospect Type</label>
+        <members>
+            <label>Lead</label>
+            <member>1</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>Contact</label>
+            <member>2</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>Prospect</label>
+            <member>3</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <sortIndex>14</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ActivityExternalId</field>
+        <isDerived>false</isDerived>
+        <label>Pardot Activity ID</label>
+        <sortIndex>15</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AccountExternalId</field>
+        <isDerived>false</isDerived>
+        <label>Pardot Account ID</label>
+        <sortIndex>16</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ProspectCampaignExternalId</field>
+        <isDerived>false</isDerived>
+        <label>Prospect Pardot Campaign Id</label>
+        <sortIndex>17</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AssetExternalId</field>
+        <isDerived>false</isDerived>
+        <label>Pardot Asset ID</label>
+        <sortIndex>18</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ProspectJobTitle</field>
+        <isDerived>false</isDerived>
+        <label>Pardot Prospect Job Title</label>
+        <sortIndex>19</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ProspectIsArchived</field>
+        <isDerived>false</isDerived>
+        <label>Pardot Prospect Archived</label>
+        <sortIndex>20</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Month</field>
+        <isDerived>false</isDerived>
+        <label>Activity Date (Month Name)</label>
+        <sortIndex>21</sortIndex>
+    </dimensions>
+</WaveXmd>
