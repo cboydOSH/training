@@ -23,6 +23,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -7152,6 +7153,7 @@
         <connector>
             <targetReference>myDecision102</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -7235,6 +7237,7 @@
         <connector>
             <targetReference>myDecision104</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -7315,6 +7318,7 @@
         <label>320 monthly memberships</label>
         <locationX>8800</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -7398,6 +7402,7 @@
         <connector>
             <targetReference>myDecision12</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -7487,6 +7492,7 @@
         <connector>
             <targetReference>myDecision14</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -7576,6 +7582,7 @@
         <connector>
             <targetReference>myDecision16</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -7665,6 +7672,7 @@
         <connector>
             <targetReference>myDecision18</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -7754,6 +7762,7 @@
         <connector>
             <targetReference>myDecision20</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -7843,6 +7852,7 @@
         <connector>
             <targetReference>myRule_1_A2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -8856,6 +8866,7 @@
         <label>Update Contact</label>
         <locationX>100</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9011,6 +9022,7 @@
         <connector>
             <targetReference>myDecision23</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9094,6 +9106,7 @@
         <connector>
             <targetReference>myDecision26</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9177,6 +9190,7 @@
         <connector>
             <targetReference>myDecision29</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9260,6 +9274,7 @@
         <connector>
             <targetReference>myDecision32</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9343,6 +9358,7 @@
         <connector>
             <targetReference>myDecision35</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9426,6 +9442,7 @@
         <connector>
             <targetReference>myDecision38</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9509,6 +9526,7 @@
         <connector>
             <targetReference>myDecision41</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9589,6 +9607,7 @@
         <label>Update Account</label>
         <locationX>300</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9672,6 +9691,7 @@
         <connector>
             <targetReference>myDecision44</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9755,6 +9775,7 @@
         <connector>
             <targetReference>myDecision47</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9838,6 +9859,7 @@
         <connector>
             <targetReference>myDecision50</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -9921,6 +9943,7 @@
         <connector>
             <targetReference>myDecision53</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10004,6 +10027,7 @@
         <connector>
             <targetReference>myDecision56</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10087,6 +10111,7 @@
         <connector>
             <targetReference>myRule_57_A2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10170,6 +10195,7 @@
         <connector>
             <targetReference>myDecision6</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10253,6 +10279,7 @@
         <connector>
             <targetReference>myDecision62</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10336,6 +10363,7 @@
         <connector>
             <targetReference>myDecision65</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10419,6 +10447,7 @@
         <connector>
             <targetReference>myDecision68</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10502,6 +10531,7 @@
         <connector>
             <targetReference>myDecision70</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10585,6 +10615,7 @@
         <connector>
             <targetReference>myDecision72</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10668,6 +10699,7 @@
         <connector>
             <targetReference>myDecision74</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10751,6 +10783,7 @@
         <connector>
             <targetReference>myDecision76</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10834,6 +10867,7 @@
         <connector>
             <targetReference>myDecision78</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -10917,6 +10951,7 @@
         <connector>
             <targetReference>myDecision80</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11000,6 +11035,7 @@
         <connector>
             <targetReference>myDecision8</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11089,6 +11125,7 @@
         <connector>
             <targetReference>myDecision82</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11172,6 +11209,7 @@
         <connector>
             <targetReference>myDecision84</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11255,6 +11293,7 @@
         <connector>
             <targetReference>myDecision86</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11338,6 +11377,7 @@
         <connector>
             <targetReference>myDecision88</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11421,6 +11461,7 @@
         <connector>
             <targetReference>myDecision90</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11504,6 +11545,7 @@
         <connector>
             <targetReference>myDecision92</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11587,6 +11629,7 @@
         <connector>
             <targetReference>myDecision94</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11670,6 +11713,7 @@
         <connector>
             <targetReference>myDecision96</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11753,6 +11797,7 @@
         <connector>
             <targetReference>myDecision98</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11836,6 +11881,7 @@
         <connector>
             <targetReference>myDecision100</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -11919,6 +11965,7 @@
         <connector>
             <targetReference>myDecision10</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>

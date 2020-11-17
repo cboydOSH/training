@@ -850,6 +850,22 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>VisualAntidote__MetricApi</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisualAntidote__MetricController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisualAntidote__MetricDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisualAntidote__MetricService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>VisualAntidote__MigrationController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -1344,6 +1360,10 @@
     <classAccesses>
         <apexClass>VisualAntidote__TestLicenseHelper</apexClass>
         <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisualAntidote__TestMetricService</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>VisualAntidote__TestMigrationController</apexClass>
@@ -16106,6 +16126,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>copado__Project__c.Copado_Integration_Setting__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>copado__Project__c.Enable_Logs__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17745,7 +17770,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>copado__User_Story__c.copado__Environment_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17800,7 +17825,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>copado__User_Story__c.copado__Last_Validation_Deployment_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17855,7 +17880,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>copado__User_Story__c.copado__Parent_Epic_Title__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17865,7 +17890,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>copado__User_Story__c.copado__Progress_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17905,7 +17930,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>copado__User_Story__c.copado__QR_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17960,7 +17985,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>copado__User_Story__c.copado__Total_Story_Points__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17980,7 +18005,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>copado__User_Story__c.copado__View_in_Git__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -27242,17 +27267,18 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>copado__User_Story__c.copado__Bug</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>copado__User_Story__c.copado__Investigation</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>copado__User_Story__c.copado__User_Story</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

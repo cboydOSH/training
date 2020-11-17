@@ -45,4 +45,5 @@
             </field>
         </workOrderLineItemFields>
     </suggestedArticles>
+    <votingEnabled>true</votingEnabled>
 </KnowledgeSettings>

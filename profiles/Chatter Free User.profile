@@ -850,6 +850,22 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>VisualAntidote__MetricApi</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisualAntidote__MetricController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisualAntidote__MetricDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisualAntidote__MetricService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>VisualAntidote__MigrationController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1343,6 +1359,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>VisualAntidote__TestLicenseHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisualAntidote__TestMetricService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -16093,6 +16113,11 @@
         <editable>false</editable>
         <field>copado__Persona__c.copado__Description__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>copado__Project__c.Copado_Integration_Setting__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
