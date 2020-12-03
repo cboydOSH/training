@@ -12346,6 +12346,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Room__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>SocialPersona.AreWeFollowing</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -22503,14 +22508,6 @@
     <layoutAssignments>
         <layout>PersonAccount-Dependent Account Layout</layout>
         <recordType>PersonAccount.Dependent</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PersonAccount-Dependent Account Layout</layout>
-        <recordType>PersonAccount.Dependent</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PersonAccount-Primary Member Account Layout</layout>
-        <recordType>PersonAccount.Primary_Member</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>PersonAccount-Primary Member Account Layout</layout>
