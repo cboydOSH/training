@@ -8256,6 +8256,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Test_txt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.TickerSymbol</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -22602,7 +22607,7 @@
     <layoutAssignments>
         <layout>Work_Item__c-Work Item Layout</layout>
     </layoutAssignments>
-    <loginHours/>
+    <loginHours />
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
