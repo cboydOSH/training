@@ -12346,6 +12346,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Room__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>SocialPersona.AreWeFollowing</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -22602,7 +22607,7 @@
     <layoutAssignments>
         <layout>Work_Item__c-Work Item Layout</layout>
     </layoutAssignments>
-    <loginHours/>
+    <loginHours />
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
