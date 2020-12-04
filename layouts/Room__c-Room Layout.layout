@@ -5,7 +5,12 @@
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
         <label>Information</label>
+        <layoutColumns/>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerId</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Name</field>
@@ -19,6 +24,7 @@
                 <field>Description__c</field>
             </layoutItems>
         </layoutColumns>
+
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -29,6 +35,7 @@
                 <field>Test_Text__c</field>
             </layoutItems>
         </layoutColumns>
+
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -66,7 +73,9 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h03000000N3uG</masterLabel>
+
+        <masterLabel>00h6w000000Mwmc</masterLabel>
+
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
