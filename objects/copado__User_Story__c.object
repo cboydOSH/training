@@ -6245,9 +6245,38 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
     </fields>
     <label>User Story</label>
     <listViews>
+        <fullName>Copado_Approvers_to_QA_User_Story</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Copado Approvers</label>
+        <queue>Copado_Approvers_to_QA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>User_Stories_in_trnDevOSH</fullName>
+        <columns>NAME</columns>
+        <columns>copado__User_Story_Title__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__Project__c</columns>
+        <columns>copado__Org_Credential__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Org_Credential__c</field>
+            <operation>equals</operation>
+            <value>trnDevOSH</value>
+        </filters>
+        <label>User Stories in trnDevOSH</label>
+        <sharedTo>
+            <group>Copado_Developers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>copado__All</fullName>
         <columns>NAME</columns>
         <columns>copado__User_Story_Title__c</columns>
+        <columns>CREATED_DATE</columns>
         <columns>copado__userStory_Role__c</columns>
         <columns>copado__userStory_need__c</columns>
         <columns>copado__userStory_reason__c</columns>
@@ -6261,22 +6290,6 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews>
-    <listViews>
-        <fullName>copado__Cli_Listview</fullName>
-        <columns>NAME</columns>
-        <columns>copado__User_Story_Title__c</columns>
-        <columns>copado__Status__c</columns>
-        <columns>copado__Project__c</columns>
-        <columns>copado__Org_Credential__c</columns>
-        <columns>CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>copado__Status__c</field>
-            <operation>equals</operation>
-            <value>In Progress</value>
-        </filters>
-        <label>Cli Listview</label>
     </listViews>
     <nameField>
         <displayFormat>US-{0000000}</displayFormat>
@@ -7652,6 +7665,12 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <searchResultsAdditionalFields>copado__Status__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Promote_after_approval_completed</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(copado__Environment__r.Name = &quot;trnDevOSH&quot;,  NOT(ISPICKVAL(copado__Status__c, &quot;Approved&quot;)),OR( copado__Promote_Change__c = True, copado__Promote_and_Deploy__c = True))</errorConditionFormula>
+        <errorMessage>This user story needs approval to proceed</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>copado__Cancellation_reason_required</fullName>
         <active>true</active>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#008AB3</headerColor>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Vlocity Digital Studio</label>
+    <navType>Console</navType>
+    <tabs>vlocity_ins__OmniScriptHome</tabs>
+    <tabs>vlocity_ins__VlocityCardHome</tabs>
+    <tabs>vlocity_ins__FlexCards</tabs>
+    <tabs>vlocity_ins__DataRaptor</tabs>
+    <tabs>vlocity_ins__IntegrationProcedureHome</tabs>
+    <tabs>vlocity_ins__CalculationProcedure__c</tabs>
+    <tabs>vlocity_ins__CalculationMatrix__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>vlocity_ins__Vlocity_Digital_Studio_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>vlocity_ins__CalculationMatrix__c</tab>
+        </mappings>
+        <mappings>
+            <tab>vlocity_ins__CalculationProcedure__c</tab>
+        </mappings>
+        <mappings>
+            <tab>vlocity_ins__DataRaptor</tab>
+        </mappings>
+        <mappings>
+            <tab>vlocity_ins__FlexCards</tab>
+        </mappings>
+        <mappings>
+            <tab>vlocity_ins__IntegrationProcedureHome</tab>
+        </mappings>
+        <mappings>
+            <tab>vlocity_ins__OmniScriptHome</tab>
+        </mappings>
+        <mappings>
+            <tab>vlocity_ins__VlocityCardHome</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

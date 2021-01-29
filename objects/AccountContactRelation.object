@@ -82,4 +82,24 @@
     <fields>
         <fullName>StartDate</fullName>
     </fields>
+    <fields>
+        <fullName>vlocity_ins__IsPrimaryRelationship__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Represents the primary relationship among all the relationships for a Contact with Accounts. For example, the Primary Provider Location where a Provider serves.</description>
+        <externalId>false</externalId>
+        <label>Primary Relationship</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OperatingHoursId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Operating Hours for a Contact, specific to an Account. For example, the Operating Hours of a Provider at a specific Provider Location.</description>
+        <externalId>false</externalId>
+        <label>Operating Hours</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
 </CustomObject>

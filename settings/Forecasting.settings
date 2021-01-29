@@ -274,6 +274,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -462,6 +466,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -582,6 +594,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -600,6 +616,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -634,8 +658,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -696,6 +728,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -793,6 +829,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -840,6 +877,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -870,11 +909,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -883,7 +925,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -899,6 +943,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -1115,6 +1160,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -1303,6 +1352,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -1423,6 +1480,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -1441,6 +1502,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -1475,8 +1544,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -1537,6 +1614,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -1634,6 +1715,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -1681,6 +1763,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -1711,11 +1795,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -1724,7 +1811,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -1740,6 +1829,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -1960,6 +2050,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -2148,6 +2242,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -2268,6 +2370,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -2286,6 +2392,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -2320,8 +2434,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -2382,6 +2504,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -2480,6 +2606,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -2527,6 +2654,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -2557,11 +2686,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -2570,7 +2702,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -2586,6 +2720,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -2802,6 +2937,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -2990,6 +3129,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -3110,6 +3257,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -3128,6 +3279,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -3162,8 +3321,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -3224,6 +3391,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -3321,6 +3492,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -3368,6 +3540,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -3398,11 +3572,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -3411,7 +3588,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -3427,6 +3606,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -3647,6 +3827,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -3835,6 +4019,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -3955,6 +4147,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -3973,6 +4169,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -4007,8 +4211,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -4069,6 +4281,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -4167,6 +4383,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -4214,6 +4431,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -4244,11 +4463,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -4257,7 +4479,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -4273,6 +4497,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -4489,6 +4714,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -4677,6 +4906,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -4797,6 +5034,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -4815,6 +5056,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -4849,8 +5098,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -4911,6 +5168,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -5008,6 +5269,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -5055,6 +5317,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -5085,11 +5349,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -5098,7 +5365,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -5114,6 +5383,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -5334,6 +5604,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -5522,6 +5796,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -5642,6 +5924,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -5660,6 +5946,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -5694,8 +5988,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -5756,6 +6058,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -5854,6 +6160,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -5901,6 +6208,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -5931,11 +6240,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -5944,7 +6256,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -5960,6 +6274,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -6176,6 +6491,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -6364,6 +6683,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -6484,6 +6811,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -6502,6 +6833,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -6536,8 +6875,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -6598,6 +6945,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -6695,6 +7046,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -6742,6 +7094,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -6772,11 +7126,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -6785,7 +7142,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -6801,6 +7160,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -7021,6 +7381,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -7209,6 +7573,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -7329,6 +7701,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -7347,6 +7723,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -7381,8 +7765,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -7443,6 +7835,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -7541,6 +7937,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -7588,6 +7985,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -7618,11 +8017,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -7631,7 +8033,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -7647,6 +8051,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -7863,6 +8268,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -8051,6 +8460,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -8171,6 +8588,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -8189,6 +8610,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -8223,8 +8652,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -8285,6 +8722,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -8382,6 +8823,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -8429,6 +8871,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -8459,11 +8903,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -8472,7 +8919,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -8488,6 +8937,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -8708,6 +9158,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -8896,6 +9350,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -9016,6 +9478,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -9034,6 +9500,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -9068,8 +9542,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -9130,6 +9612,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -9228,6 +9714,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -9275,6 +9762,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -9305,11 +9794,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -9318,7 +9810,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -9334,6 +9828,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>
@@ -9550,6 +10045,10 @@
             <label>Affinity %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIY</field>
+            <label>Agency/Brokerage</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000H5wRF</field>
             <label>Agent ID</label>
         </opportunityListFieldsLabelMappings>
@@ -9738,6 +10237,14 @@
             <label>FMO %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIZ</field>
+            <label>Follow Up To</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIa</field>
+            <label>Frame Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXT</field>
             <label>Full Time Employees</label>
         </opportunityListFieldsLabelMappings>
@@ -9858,6 +10365,10 @@
             <label>One Time Admin Fee</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIc</field>
+            <label>Originating Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJU</field>
             <label>Parent Account</label>
         </opportunityListFieldsLabelMappings>
@@ -9876,6 +10387,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000H61bT</field>
             <label>Preferred Language</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIe</field>
+            <label>Price List</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIf</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJV</field>
@@ -9910,8 +10429,16 @@
             <label>Referral %</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEId</field>
+            <label>Referral Source</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJa</field>
             <label>Regional Sales Director</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIb</field>
+            <label>Require Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvR24</field>
@@ -9972,6 +10499,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FvOXY</field>
             <label>Total Prospects</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N8A00000BCEIg</field>
+            <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4P00000FtlJj</field>
@@ -10069,6 +10600,7 @@
             <field>00N4P00000GJUa5</field>
             <field>00N4P00000FtlJ1</field>
             <field>00N4P00000Fu6el</field>
+            <field>00N8A00000BCEIY</field>
             <field>00N4P00000H5wRF</field>
             <field>00N4P00000FtlJ3</field>
             <field>00N4P00000FtlJ5</field>
@@ -10116,6 +10648,8 @@
             <field>00N4P00000FvOXS</field>
             <field>00N4P00000FtlJI</field>
             <field>00N4P00000Fu6ev</field>
+            <field>00N8A00000BCEIZ</field>
+            <field>00N8A00000BCEIa</field>
             <field>00N4P00000FvOXT</field>
             <field>00N4P00000FvOXU</field>
             <field>00N4P00000FtuCh</field>
@@ -10146,11 +10680,14 @@
             <field>00N4P00000G7ICL</field>
             <field>00N4P00000H113h</field>
             <field>00N4P00000FtlJT</field>
+            <field>00N8A00000BCEIc</field>
             <field>00N4P00000FtlJU</field>
             <field>00N4P00000FvOXV</field>
             <field>00N4P00000G7ICQ</field>
             <field>00N4P00000Fu3Of</field>
             <field>00N4P00000H61bT</field>
+            <field>00N8A00000BCEIe</field>
+            <field>00N8A00000BCEIf</field>
             <field>00N4P00000FtlJV</field>
             <field>00N4P00000Fu6f5</field>
             <field>00N4P00000FvJnN</field>
@@ -10159,7 +10696,9 @@
             <field>00N4P00000FtlJX</field>
             <field>00N4P00000FtlJY</field>
             <field>00N4P00000Fu6fF</field>
+            <field>00N8A00000BCEId</field>
             <field>00N4P00000FtlJa</field>
+            <field>00N8A00000BCEIb</field>
             <field>00N4P00000FvR24</field>
             <field>00N4P00000H5sPa</field>
             <field>00N4P00000FvOXW</field>
@@ -10175,6 +10714,7 @@
             <field>00N4P00000FtlJg</field>
             <field>00N4P00000FtlJh</field>
             <field>00N4P00000FvOXY</field>
+            <field>00N8A00000BCEIg</field>
             <field>00N4P00000FtlJj</field>
             <field>00N4P00000FtlJi</field>
             <field>00N4P00000GJUa8</field>

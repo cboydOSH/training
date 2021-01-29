@@ -327,6 +327,39 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>vlocity_ins__DocuSignEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DocuSign Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__GlobalKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The globally unique identifier of the Product. Used to identify the product across Salesforce instances.</description>
+        <externalId>false</externalId>
+        <label>Global Key</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OMplusSyncEnabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable OM+ sync for this user</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked a user will be marked for export to OMplus platform. User will be enabled in OMplus once catalog synchronisation job is complete in Vlocity XOM Administration tab.</inlineHelpText>
+        <label>OMplus Enabled</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
     <listViews>
         <fullName>ActiveUsers</fullName>
         <columns>FULL_NAME</columns>

@@ -817,6 +817,10 @@
         <name>copado__User_Story</name>
     </recordTypes>
     <validationRules>
+        <errorMessage><!-- This user story needs approval to proceed --></errorMessage>
+        <name>Promote_after_approval_completed</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- A cancellation reason must be given. --></errorMessage>
         <name>copado__Cancellation_reason_required</name>
     </validationRules>
