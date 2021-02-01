@@ -1,0 +1,101 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__InternalNotes__c": "ThisisQuote is true",
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "OSH My Family Step",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/My Family/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "OSH My Family Step",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/My Family/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "myFamily",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/My Family/English/myFamily",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "myFamily",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": true,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "documentNames": [
+            "CACAABAJAcd1e74739929452590d2d095c95e143a",
+            "CACAABAJAdf96109ba79c4dfbb212952ac9d2f122",
+            "CACAABAJA5d831d0742d248bb83f7ed096b7767af",
+            "CACAABAJA74807ffc1cf141d4a90111bfeca346cb"
+        ],
+        "enableCaption": true,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "horizontalMode": "image",
+        "imageCountInRow": 4,
+        "label": "Who will be on this Membership?",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": "image"
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "imgId": "../servlet/servlet.ImageServer?id=0158A000000NniUQAS&&docName=CACAABAJAcd1e74739929452590d2d095c95e143a&&oid=00D8A0000005sUvUAI",
+                "name": "MySelf",
+                "value": "Myself"
+            },
+            {
+                "imgId": "../servlet/servlet.ImageServer?id=0158A000000NniZQAS&&docName=CACAABAJAdf96109ba79c4dfbb212952ac9d2f122&&oid=00D8A0000005sUvUAI",
+                "name": "MyselfMyspouse",
+                "value": "Myself & My Spouse"
+            },
+            {
+                "imgId": "../servlet/servlet.ImageServer?id=0158A000000NniKQAS&&docName=CACAABAJA5d831d0742d248bb83f7ed096b7767af&&oid=00D8A0000005sUvUAI",
+                "name": "MyselfandDependents",
+                "value": "Myself & My Dependents"
+            },
+            {
+                "imgId": "../servlet/servlet.ImageServer?id=0158A000000NniPQAS&&docName=CACAABAJA74807ffc1cf141d4a90111bfeca346cb&&oid=00D8A0000005sUvUAI",
+                "name": "MyselfSpouseDependents",
+                "value": "Myself, My Spouse, & Dependents"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "ThisisQuote"
+                    }
+                ]
+            }
+        }
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Radio",
+    "Name": "RadioFamily",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/My Family/English/RadioFamily"
+}

@@ -1,0 +1,230 @@
+{
+    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "OSH My Family Step",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/My Family/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "AccountsForOSHEmployees": [
+                {
+                    "Id": "0018A00000Twm85QAB",
+                    "Monthly_Commission_Fee__c": 100,
+                    "Name": "Maris Walter",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v49.0/sobjects/Account/0018A00000Twm85QAB"
+                    }
+                },
+                {
+                    "Id": "0018A00000TzHtdQAF",
+                    "Monthly_Commission_Fee__c": 30,
+                    "Name": "Forever young",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+                    }
+                },
+                {
+                    "Id": "0018A00000TyjGAQAZ",
+                    "Monthly_Commission_Fee__c": 45,
+                    "Name": "OSH Enrollment",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+                    }
+                }
+            ],
+            "AddEditFamilyMember": [
+                {
+                    "address": "",
+                    "age": 0,
+                    "americanIndian": "",
+                    "city": "",
+                    "defaultNo": "false",
+                    "dob": null,
+                    "eligiblemedicare": "",
+                    "email": "",
+                    "fname": "test",
+                    "gender": "",
+                    "id": "1592586112963",
+                    "lname": "testeste",
+                    "parent_id": "1592586112963",
+                    "phone": "",
+                    "relationship": "Primary",
+                    "state": "",
+                    "zipcode": ""
+                }
+            ],
+            "AgentLabel": "0018A00000Twm6dQAB",
+            "ContextId": "",
+            "DRId_Lead": "00Q8A0000040vC0UAI",
+            "ExistingInfoPacket": {
+                "BlkExistingInfoPacket": {
+                    "TxtInfoPacketNumber": null
+                },
+                "CancelFormula": "/",
+                "EnrollerID": "1234134",
+                "FormulaEnrollerId": true,
+                "RadioExistingInfoPacket": "No",
+                "ServicingAgentDropdown": null
+            },
+            "FamilySelection": "",
+            "FormulaEegible": "",
+            "FormulaEegibleMA": "",
+            "HaveAdultDependent": 0,
+            "MonthlyFee": 0,
+            "NoAdultGreaterThan27AndLesserThan65": 0,
+            "NoChildGreaterThan27": 0,
+            "NoChildGreaterThan65": 0,
+            "NoChildWrongDate": 0,
+            "NoEmpAge18": 0,
+            "NoSpouse65": 0,
+            "NumOfEmployeeInternal": 1,
+            "PrimaryLanguage": "",
+            "SelectedServicingAgentDropdown": {
+                "Id": "0018A00000Twm85QAB",
+                "Monthly_Commission_Fee__c": 100,
+                "Name": "Maris Walter",
+                "RecordTypeId": "0124P000000uPa9QAE",
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v49.0/sobjects/Account/0018A00000Twm85QAB"
+                }
+            },
+            "ServicingAgent": "Needs Dropdown selection",
+            "ThisisQuote": true,
+            "UserType": "OSH Employee",
+            "WritingAgent": "0058A000003wB21QAE",
+            "childrenInCensus": false,
+            "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+            "effDate": "",
+            "error": "OK",
+            "errorDOBList": [
+            ],
+            "id": "a628A00000012y2QAA",
+            "isdtp": "p1",
+            "layout": "newport",
+            "letsGetStarted": {
+                "BlkNoExistingInfoPacket": {
+                    "Email1": "brunnoben@MAIL.COM",
+                    "FormulaEegible": false,
+                    "FormulaEegibleMA": false,
+                    "SSNITIN": "123412341",
+                    "SelectReferer": "Internet Search",
+                    "TAAddressGoogle-Block": {
+                        "City": "Hebron",
+                        "Country": "Estados Unidos",
+                        "State": "KY",
+                        "TAAddressGoogle": "2305 Litton Ln, Hebron, KY 41048, USA",
+                        "address": "2305 Litton Lane",
+                        "buildingSuiteApartment": "1324123",
+                        "zipCode": "41048"
+                    },
+                    "Telephone1": "1234123412",
+                    "fName": "test",
+                    "lName": "testeste"
+                }
+            },
+            "myFamily": {
+                "ChildGreaterThan65Error": null,
+                "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+                "FormulaConForDiplayAddInfo30": false,
+                "FormulaConForDiplayAddInfo60": false,
+                "FormulaValidateOldMember": false,
+                "HaveAdultDependentInfoMessage": null,
+                "MSGRatingWillBeBasedOn": null,
+                "MSGRatingWillBeBasedOn30or60": null,
+                "MomentaryPigFormula": 0,
+                "MsgEffDateEnrollValid": null,
+                "NeedselectedaSopuse": null,
+                "NoChildGreater27Error": null,
+                "Primary18AndOlderError": null,
+                "RadioFamily": "MySelf",
+                "Space20x12": null,
+                "Space21x12": null,
+                "Space22x7": null,
+                "Space5x12": null,
+                "Space6x12": null,
+                "Spouse65AndOlderError": null,
+                "WhatPrimaryLanguageSpoken": "English",
+                "effDate": "2020-06-20",
+                "effDateEnroll": null,
+                "myFamilyTable": null
+            },
+            "oldestMemberList": [
+            ],
+            "reviewQuote": {
+                "Space13x12": null,
+                "Space14x12": null,
+                "Space17x3": null,
+                "Space25x3": null,
+                "Space26x3": null,
+                "readyToEnroll": null,
+                "url1": null
+            },
+            "sfdcIFrameHost": "web",
+            "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+            "stateofBeliefs": {
+                "MessagingStatesoff": null,
+                "Space2x4": null,
+                "Space3x4": null,
+                "msg": null,
+                "qualification": "Yes"
+            },
+            "stateofBeliefsAnswers": {
+            },
+            "tellUsAboutYou": {
+                "Block19": null,
+                "Block20": null,
+                "additionalFees": null,
+                "formulaMoreThan6FamilyMemberAdtionalFee": null,
+                "formulaTotalFamilyMember": null,
+                "monthlyFee": null,
+                "oneTimeContributionFee": null,
+                "tellUsAboutYouFields": {
+                    "MSHowOftenPCP": null,
+                    "RadioCurrExpctibgStartfamily": null,
+                    "RadiofamilycurrSpecialist": null
+                }
+            },
+            "tellUsAboutYouAnswers": {
+            },
+            "testDate": "2020-09-30",
+            "timeStamp": "2020-06-19T17:01:24.961Z",
+            "userCurrencyCode": "USD",
+            "userId": "0058A000003wB21QAE",
+            "userName": "brunno@attentisconsulting.com.dvvl2",
+            "userProfile": "System Administrator",
+            "userTimeZone": -300,
+            "validCensus": true,
+            "vlcPersistentComponent": {
+            }
+        },
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SVQuoteFlag",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/My Family/English/SVQuoteFlag"
+}
