@@ -1,0 +1,65 @@
+<div class="nds-max-small-size_1-of-1 nds-size_12-of-12 nds-grid nds-wrap nds-m-bottom_medium nds-m-top_none" ng-controller="OSHHospitalizedServiceController">
+	<div class="nds-max-small-size_1-of-1 nds-size_12-of-12" ng-if="bpTree.response.radioMedicalServiceFunction =='Yes'">
+		<!--Table Have you, or any Family Member been Hospitalized in the past 6 Months?-->
+		<div >
+			<div class="nds-m-bottom_medium" >
+				<table class="nds-table nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right" style="width:100%;">
+					<thead>
+						<tr class="nds-text-title_caps">
+							<th scope="col">
+								<div class="nds-truncate" title="Member">Member</div>
+							</th>
+							<th item-width="200px" scope="col">
+								<div class="nds-truncate" title="Admission Date">Admission Date</div>
+							</th>
+							<th item-width="200px" scope="col">
+								<div class="nds-truncate" title="Facilitys Name">Facility’s Name</div>
+							</th>
+							<th item-width="200px" scope="col">
+								<div class="nds-truncate" title="Diagnosis">Diagnosis</div>
+							</th>
+						</tr>
+						<tr>
+						</tr>
+					</thead>
+					<tbody class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12"  ng-repeat="familyMember in bpTree.response.EditFamilyMember">
+						<tr ng-repeat="hospitalizedDetails in familyMember.hospitalizedMemberDetails">
+							<!-- Member -->
+							<td scope="row">
+								<div align="left">
+									<div class="nds-form-element">
+										<div class="nds-form-element__control">
+											{{familyMember.fname}}
+										</div>
+									</div>
+								</div>
+							</td>
+							<!-- Admission Date -->
+							<td>
+								<div class="nds-form-element">
+									{{hospitalizedDetails.admissionDate}}
+								</div>
+							</td>
+							<!-- Facility’s Name -->
+							<td>
+								<div class="nds-form-element">
+									<div class="nds-form-element__control">
+										{{hospitalizedDetails.facilityName}}
+									</div>
+								</div>
+							</td>
+							<!-- Diagnosis -->
+							<td>
+								<div class="nds-form-element">
+									<div class="nds-form-element__control">
+										{{hospitalizedDetails.diagnosis}}
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

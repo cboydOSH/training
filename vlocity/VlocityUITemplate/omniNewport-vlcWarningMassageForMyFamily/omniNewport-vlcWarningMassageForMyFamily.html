@@ -1,0 +1,19 @@
+<div class="census-container " ng-controller="OSHController">
+    <div ng-repeat="data in bpTree.response.oldestMemberList"
+        class="nds-notify nds-notify_alert nds-theme_alert-texture nds-theme_warning"
+        role="alert">
+        <div ng-if="bpTree.response.oldestMemberList != 'null' || bpTree.response.oldestMemberList != ''">
+            <span class="nds-icon_container nds-icon-utility-warning nds-m-right_x-small"
+                title="Description of icon when needed">
+            <h2>
+                <b> Monthly contribution will be based on {{data.fname}} {{data.lname}}’s date of birth</b>
+            </h2>
+            <!--<button class="nds-button nds-button_icon nds-notify__close nds-button_icon-inverse" title="Close">
+        <svg class="nds-button__icon" aria-hidden="true">
+          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+        </svg>
+        <span class="nds-assistive-text">Close</span>
+      </button>-->
+        </div>
+    </div>
+</div>
