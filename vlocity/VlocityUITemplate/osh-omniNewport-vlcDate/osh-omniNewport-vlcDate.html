@@ -1,0 +1,27 @@
+<div ng-controller="vlcDateCustom" style="width:100%;">
+    <div class="nds-size_1-of-1 ng-scope">
+        <ng-form name="loopform" class="nds-form-element nds-m-bottom_large nds-p-around_small ng-pristine ng-scope ng-valid-max ng-valid-min ng-valid-date ng-valid-disabled-date ng-valid ng-valid-required">
+            <div class="nds-grid nds-form--multi-input__container">
+                <div class="nds-cont-wrapper nds-form-element__control nds-form-element__control-animated-label">
+
+                    <input id="effDate" name="loopname" ng-disabled="control.ro" ng-required="control.req" 
+                        type="text" placement="none" class="nds-input ng-pristine ng-untouched ng-valid-max ng-valid-min ng-valid-date ng-valid-disabled-date ng-empty ng-valid ng-valid-required" 
+                        ng-model="bpTree.response.myFamily.effDate" ng-init="initValue()" data-date-format="MM/dd/yyyy" data-max-date="today + 61 days" 
+                        data-min-date="today + 1 day" date-type="string" model-date-format="yyyy-MM-dd" days-of-week-disabled="" slds-date-picker="" 
+                        autocomplete="off" vlc-slds-val-checker="response" aria-invalid="false">
+
+                        <label for="effDate" class="nds-form-element__label ng-binding">
+                        What date would you like your Program to begin?
+                        </label>
+                </div>
+            </div>
+            <div ng-include="::errHTMLId" class="ng-scope">
+                <div class="ng-scope">
+                    <div class="nds-has-error ng-hide" ng-show="control.srvErr" aria-hidden="true">
+                        <small class="nds-form-element__help ng-binding"/>
+                    </div>
+                </div>
+            </div>
+        </ng-form>
+    </div>
+</div>
