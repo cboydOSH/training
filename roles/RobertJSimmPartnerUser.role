@@ -5,6 +5,6 @@
     <description>Robert J Simm Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Robert J Simm Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Regional_Sales_Director</parentRole>
 </Role>

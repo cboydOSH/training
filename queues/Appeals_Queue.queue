@@ -4,13 +4,7 @@
     <name>Appeals Queue</name>
     <queueMembers>
         <users>
-            <user>jclay@onesharehealth.com</user>
-            <user>jmichelle@onesharehealth.com</user>
             <user>jlaengrich@onesharehealth.com</user>
-            <user>kmarshall@onesharehealth.com</user>
-            <user>kwaters@onesharehealth.com</user>
-            <user>rbogdan@onesharehealth.com</user>
-            <user>sholmes@onesharehealth.com</user>
         </users>
     </queueMembers>
     <queueSobject>

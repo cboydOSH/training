@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Adam Ledbetter Partner User</description>
+    <description>HST Healthcare Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Adam Ledbetter Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>HST Healthcare Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

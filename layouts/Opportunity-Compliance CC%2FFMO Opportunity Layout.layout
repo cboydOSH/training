@@ -143,15 +143,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Active_in_Admin123__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Salesforce_ID_in_Admin123__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Agent_ID__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -253,6 +245,11 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>FeedItem.ContentNote</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>6</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Edit</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>0</sortOrder>
@@ -281,11 +278,6 @@
             <actionName>NewEvent</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>5</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>FeedItem.ContentNote</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>
@@ -333,11 +325,11 @@
     </relatedContent>
     <relatedLists>
         <fields>ContactName</fields>
-        <fields>ContactEmail</fields>
-        <fields>ContactPhone</fields>
         <fields>Role</fields>
         <fields>ContactTitle</fields>
         <fields>IsPrimary</fields>
+        <fields>ContactPhone</fields>
+        <fields>ContactEmail</fields>
         <fields>ContactAccountName</fields>
         <relatedList>RelatedContactRoleList</relatedList>
     </relatedLists>

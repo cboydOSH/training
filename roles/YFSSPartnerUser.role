@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Lake Point Insurance Agency DBA YFSS Partner User</description>
+    <description>YFSS Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Lake Point Insurance Agency DBA YFSS Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>YFSS Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

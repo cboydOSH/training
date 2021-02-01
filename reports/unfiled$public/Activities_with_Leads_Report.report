@@ -48,6 +48,7 @@
             <operator>equals</operator>
             <value>Larry Estridge,German Hernandez</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

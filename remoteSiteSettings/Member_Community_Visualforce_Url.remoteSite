@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>visualforce osh</description>
+    <disableProtocolSecurity>true</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://onesharehealth--devvl2--c.visualforce.com</url>
+</RemoteSiteSetting>

@@ -41,6 +41,7 @@
             <operator>equals</operator>
             <value>Account.Producer</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>Producer Accounts Hierarchy Report</name>

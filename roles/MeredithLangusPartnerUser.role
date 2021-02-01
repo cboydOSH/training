@@ -5,6 +5,6 @@
     <description>Meredith Langus Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Meredith Langus Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>State_Sales_Manager</parentRole>
 </Role>

@@ -5,6 +5,6 @@
     <description>Gloria Milena Castano Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Gloria Milena Castano Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

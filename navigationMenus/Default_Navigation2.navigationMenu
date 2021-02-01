@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Producer Community</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>Members</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <defaultListViewId>AllContacts</defaultListViewId>
+                <label>View Members</label>
+                <position>0</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>Contact</target>
+                <type>SalesforceObject</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>New Prospect</label>
+                <position>1</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/new-prospect</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>New Application</label>
+                <position>2</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>/new-application</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Dashboards</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Members Dashboard</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/members-dashboard</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Producers Dashboard</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/producers-dashboard</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Call Centers Dashboard</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/call-center-dashboard</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Open Cases</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/open-cases-report</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>FirstHealth Provider Search</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>http://providerlocator.firsthealth.com/oneshare</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <defaultListViewId>TodaysLeads</defaultListViewId>
+        <label>OSH Contact Info</label>
+        <position>4</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/contact-info</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

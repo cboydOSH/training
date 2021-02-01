@@ -1,0 +1,161 @@
+<apex:page controller="DocuSignReturnPageController" sidebar="false" showHeader="false"  >
+  <script>
+    function changeToSent(elementId){
+      document.getElementById(elementId).style.opacity = 0;
+      document.getElementById(elementId).style.display = "none";
+      document.getElementById("sent").style.opacity = 1;
+    }
+  </script>
+  <style>
+    .docucuSignReturnContainer {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px #C8D0D8;
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 60px;
+        font-family: Lato, sans-serif;
+        font-size: 16px;
+    }
+
+    .docuSignReturnIcon {
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        left: calc(50% - 100px);
+    }
+
+    .docuSignReturnHeading {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin-top: 12px;
+        font-weight: 900;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .docuSignReturnSubHeading {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+
+    .docuSignReturnDescription {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin-top: 2px;
+        font-weight: 300;
+    }
+
+    .docuSignReturnButton {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 10px;
+        background: #0070d2;
+        color: white;
+        border-radius: 7px;
+        cursor: pointer;
+        width: 30%;
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+        font-weight: bold;
+    }
+
+    .docuSignReturnMoreInfo {
+        position: relative;
+        overflow: hidden;
+        width: 55%;
+        margin: 0 auto;
+        margin-top: 15px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .enrollmentTeamLink {
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .docuSignReturnOption {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s;
+        opacity: 1;
+    }
+
+    .green {
+      color: #7dc242;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .blue {
+        color: #004fa3;
+    }
+
+    #sent {
+      opacity: 0;
+    }
+
+  </style>
+  <apex:form >
+      <base target="_parent"/>
+      <div class="docucuSignReturnContainer" style="{! if (event == 'signing_complete', 'display: block' , 'display:none') }">
+        <img class="docuSignReturnIcon"
+          src="https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1601319136000/docuSignSuccessIcon"></img>
+        <div class="docuSignReturnHeading green">Congratulations!</div>
+        <div class="docuSignReturnSubHeading">You have successfully signed this document.</div>
+        <div class="docuSignReturnDescription">Please click next to continue.</div>
+      </div>
+      <div class="docucuSignReturnContainer" style="{! if (event == 'decline', 'display: block' , 'display:none') }">
+        <img class="docuSignReturnIcon"
+          src="https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1601318916000/docuSignDeclineIcon"></img>
+        <div class="docuSignReturnHeading black">We're sorry to see you go!</div>
+        <div class="docuSignReturnSubHeading">You've declined to sign the document.</div>
+        <div class="docuSignReturnDescription">If this was by mistake, just click below to start again.</div>
+        <div class="docuSignReturnButton" onclick='signNowAction();'>START AGAIN</div>
+        <div class="docuSignReturnMoreInfo">
+            If you have questions, call our Enrollment Team at 
+            <a href="https://www.onesharehealth.com/en/" class="enrollmentTeamLink blue">(833) 513-4931</a>
+            for assistance.
+        </div>
+      </div>
+      <div class="docucuSignReturnContainer" style="{! if (event != 'decline' && event != 'signing_complete', 'display: block' , 'display:none') }">
+        <img class="docuSignReturnIcon"
+          src="https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1601319056000/docuSignOopsIcon"></img>
+        <div class="docuSignReturnHeading blue">Oops!</div>
+        <div class="docuSignReturnSubHeading">Something went wrong, or your<br></br>session has timed out.</div>
+        <div style="margin-top: 15px;" class="docuSignReturnDescription">Click below to continue signing this document,<br></br>or have it emailed for completion later.</div>
+        <div style="width: 40%;" class="docuSignReturnButton" onclick='signNowAction();resizeIframe();'>SIGN NOW</div>
+        <div class="docuSignReturnOption blue" id="completeViaEmail" onclick="sendViaEmailAction(); changeToSent('completeViaEmail');">COMPLETE VIA EMAIL</div>
+        <div class="docuSignReturnOption blue" id="sent">SENT</div>
+      </div>
+      <apex:actionFunction name="signNowAction" action="{! signNow}" reRender="docuSignIframe"/>
+      <apex:actionFunction name="sendViaEmailAction" action="{! sendViaEmail}" reRender="fm"/>
+  </apex:form>
+</apex:page>

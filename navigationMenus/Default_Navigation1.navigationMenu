@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Member Community</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <defaultListViewId>AllContacts</defaultListViewId>
+        <label>Members</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <defaultListViewId>AllContacts</defaultListViewId>
+                <label>Member ID Card</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/member-card</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Update Member Details</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/update-member-profile</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Update Payment Details</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/update-member-payment-details</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>OneShare Box</label>
+                <position>3</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>https://onesharemember.simtraction.com/login_member.asp</target>
+                <targetPreference>OpenExternalLinkInSameTab</targetPreference>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>FirstHealth Provider Search</label>
+                <position>4</position>
+                <publiclyAvailable>true</publiclyAvailable>
+                <target>http://providerlocator.firsthealth.com/oneshare</target>
+                <type>ExternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Telemedicine</label>
+                <position>5</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Telemedicine</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Guidebook</label>
+                <position>6</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/guidebook</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>OSH Contact Info</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/contact-info</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>All Program Information</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <defaultListViewId>Signed_And_Awaiting_Signature</defaultListViewId>
+                <label>Program Details</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/plan-details</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Guidebook</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/guidebook</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Discounts</label>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Prescription</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Prescription</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Dental</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Dental</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Diabetic Supplies</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Diabetic-Supplies</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Hearing Care</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Hearing-Care</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Lab Discounts Programs</label>
+                <position>4</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Lab-Discounts-Programs</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Lifeline Screening</label>
+                <position>5</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Lifeline-Screening</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Vitamins and Supplements</label>
+                <position>6</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Vitamins-and-Supplements</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Vision</label>
+                <position>7</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Vision</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Lasik</label>
+                <position>8</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Lasik</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Behavioral Health/Member Assistance Program (MAP)</label>
+                <position>9</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/Behavioral-Health</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+</NavigationMenu>

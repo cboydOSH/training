@@ -5,6 +5,6 @@
     <description>Tonia Stoetzel Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Tonia Stoetzel Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

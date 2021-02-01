@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- InteractionFieldList --></label>
+        <name>vlocity_ins__InteractionFieldList</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ProviderGroupNetworkSearch --></label>
+        <name>vlocity_ins__ProviderGroupNetworkSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Segment List Export --></label>
+        <name>vlocity_ins__SegmentListExport</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Annualized Value --></label>
+        <name>Account_Annualized_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Member --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Dependents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AcctOpp Lock --></label>
+        <name>AcctOpp_Lock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Date --></label>
+        <name>Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Period --></label>
+        <name>Active_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affinity --></label>
+        <name>Affinity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Affinity % --></label>
+        <name>Affinity_percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Age of the member --></help>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field auto populates the Agent ID from the Agent Label --></help>
+        <label><!-- Agent ID --></label>
+        <name>Agent_ID_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Agent ID from Admin123. --></help>
+        <label><!-- Agent ID --></label>
+        <name>Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Enrollment by OSH --></label>
+        <name>Allow_Enrollment_by_OSH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Admin Comm % --></label>
+        <name>Annual_Admin_Comm_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Admin Fee Paid --></label>
+        <name>Annual_Admin_Fee_Paid__c</name>
+        <relationshipLabel><!-- Accounts (Annual Admin Fee Paid) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Annual Admin Fee --></label>
+        <name>Annual_Admin_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Fee Discount --></label>
+        <name>Application_Fee_Discount__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Building / Suite / Apartment --></label>
+        <name>Building_Suite_Apartment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Center --></label>
+        <name>Call_Center__c</name>
+        <relationshipLabel><!-- Accounts (Call Center) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call Center % --></label>
+        <name>Call_Center_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Manager --></label>
+        <name>Client_Manager__c</name>
+        <relationshipLabel><!-- Accounts (Client Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract Level --></label>
+        <name>Contract_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contribution Discount --></label>
+        <name>Contribution_Discount__c</name>
+        <relationshipLabel><!-- Accounts (Contribution Discount) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter the name of the County where the Account is located --></help>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currently Enrroled HCS Ministry --></label>
+        <name>Currently_Enrroled_HCS_Ministry__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currently see a Specialist --></label>
+        <name>Currently_see_a_Specialist__c</name>
+    </fields>
+    <fields>
+        <label><!-- E&amp;O Expiration Date --></label>
+        <name>E_O_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email 2 --></label>
+        <name>Email_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Email --></label>
+        <name>Error_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Phone --></label>
+        <name>Error_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expecting family grow --></label>
+        <name>Expecting_family_grow__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMO --></label>
+        <name>FMO__c</name>
+        <relationshipLabel><!-- Accounts (FMO) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- FMO % --></label>
+        <name>FMO_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Address --></label>
+        <name>Google_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hipaa Authorization Type --></label>
+        <name>HipaaAuthorizationType__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial</masterLabel>
+            <translation><!-- Partial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How often See your PCP --></label>
+        <name>How_often_See_your_PCP__c</name>
+        <picklistValues>
+            <masterLabel>0-1</masterLabel>
+            <translation><!-- 0-1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2-4</masterLabel>
+            <translation><!-- 2-4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 or more</masterLabel>
+            <translation><!-- 5 or more --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inactive Date --></label>
+        <name>Inactive_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Reason --></label>
+        <name>Inactive_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Currently in Opportunity</masterLabel>
+            <translation><!-- Currently in Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No longer enrolling members</masterLabel>
+            <translation><!-- No longer enrolling members --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity was lost</masterLabel>
+            <translation><!-- Opportunity was lost --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Hippa Authorized --></label>
+        <name>Is_Hippa_Authorized__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Bill Certification Requirements Met --></label>
+        <name>List_Bill_Certification_Requirements_Met__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- List Bill Certified --></label>
+        <name>List_Bill_Certified__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Bill Producer Agent ID --></label>
+        <name>List_Bill_Producer_Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Bill Producer --></label>
+        <name>List_Bill_Producer__c</name>
+        <relationshipLabel><!-- Accounts (List Bill Producer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- List Bill Training --></label>
+        <name>List_Bill_Training__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- List Bill --></label>
+        <name>List_Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- MGP --></label>
+        <name>MGP__c</name>
+        <relationshipLabel><!-- Accounts (MGP) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MGP % --></label>
+        <name>MGP_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Asset --></label>
+        <name>Main_Asset__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Member Created Date --></label>
+        <name>Member_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Admin Comm % --></label>
+        <name>Monthly_Admin_Comm_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Admin Fee Paid --></label>
+        <name>Monthly_Admin_Fee_Paid__c</name>
+        <relationshipLabel><!-- Accounts (Monthly Admin Fee Paid) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monthly Admin Fee --></label>
+        <name>Monthly_Admin_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Commission Fee --></label>
+        <name>Monthly_Commission_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Contribution --></label>
+        <name>Monthly_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPN No. --></label>
+        <name>NPN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Billing Date --></label>
+        <name>Next_Billing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Producers --></label>
+        <name>No_of_Producers__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Projected Members --></label>
+        <name>No_of_Projected_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSH Enroller --></label>
+        <name>OSH_Enroller__c</name>
+        <relationshipLabel><!-- Accounts (OSH Enroller) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- One Time Admin Fee --></label>
+        <name>One_Time_Admin_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field auto populates the Parent Agent ID from the Parent Account --></help>
+        <label><!-- Parent Agent ID --></label>
+        <name>Parent_Agent_ID_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Agent ID old --></label>
+        <name>Parent_Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pays Downline E&amp;O --></label>
+        <name>Pays_Downline_E_O__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Language Spoken --></label>
+        <name>Primary_Language_Spoken__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Producer Member Id --></label>
+        <name>Producer_Member_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Producer --></label>
+        <name>Producer__c</name>
+        <relationshipLabel><!-- Accounts (Producer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Producer % --></label>
+        <name>Producer_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Privilegies --></label>
+        <name>Product_Privilegies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral --></label>
+        <name>Referral__c</name>
+        <relationshipLabel><!-- Accounts (Referral) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referral % --></label>
+        <name>Referral_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Sales Director --></label>
+        <name>Regional_Sales_Director__c</name>
+        <relationshipLabel><!-- Accounts (Regional Sales Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SSN/ITIN --></label>
+        <name>SSN_ITIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team Referral --></label>
+        <name>Sales_Team_Referral__c</name>
+        <relationshipLabel><!-- Accounts (Sales Team Referral) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Servicing Agent --></label>
+        <name>Servicing_Agent__c</name>
+        <relationshipLabel><!-- Accounts (Servicing Agent) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Servicing Representative --></label>
+        <name>Servicing_Representative__c</name>
+        <relationshipLabel><!-- Accounts (Servicing Representative) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State Sales Director --></label>
+        <name>State_Sales_Director__c</name>
+        <relationshipLabel><!-- Accounts (State Sales Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Top Level Account Name --></label>
+        <name>Top_Level_Account_Name__c</name>
+        <relationshipLabel><!-- Downline Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Top Level Account --></label>
+        <name>Top_Level_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Comm % --></label>
+        <name>Total_Comm_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- VP Sales --></label>
+        <name>VP_Sales__c</name>
+        <relationshipLabel><!-- Accounts (VP Sales) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Writing agent --></label>
+        <name>Writing_agent__c</name>
+        <relationshipLabel><!-- Accounts (Writing agent) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adjudication --></label>
+        <name>vfirst__Adjudication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified First Site Guest Access Helper --></label>
+        <name>vfirst__Site_Guest_Access_Helper__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>vfirst__Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Report --></label>
+        <name>vfirst__Verification_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Background Checks Ordered --></label>
+        <name>vfirst__of_Background_Checks_Ordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agency / Brokerage No. --></label>
+        <name>vlocity_ins__AgencyBrokerageNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Address --></label>
+        <name>vlocity_ins__CalculatedAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim System Status --></label>
+        <name>vlocity_ins__ClaimSystemStatus__c</name>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validated</masterLabel>
+            <translation><!-- Validated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>vlocity_ins__CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Founded --></label>
+        <name>vlocity_ins__DateFounded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of First Insurance --></label>
+        <name>vlocity_ins__DateOfFirstInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directory Listed --></label>
+        <name>vlocity_ins__DirectoryListed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Exchange --></label>
+        <name>vlocity_ins__Disclosure1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming or Gambling --></label>
+        <name>vlocity_ins__Disclosure2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Money Lending/Pawning --></label>
+        <name>vlocity_ins__Disclosure3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>vlocity_ins__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Autopay --></label>
+        <name>vlocity_ins__EnableAutopay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use CMS MA Contract Amendment --></label>
+        <name>vlocity_ins__HasCarrierContract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner --></label>
+        <name>vlocity_ins__IsPartner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Person Account --></label>
+        <name>vlocity_ins__IsPersonAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Root Resolved --></label>
+        <name>vlocity_ins__IsRootResolved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Segment --></label>
+        <name>vlocity_ins__MarketSegment__c</name>
+        <picklistValues>
+            <masterLabel>ASO (Admin Services Only)</masterLabel>
+            <translation><!-- ASO (Admin Services Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Group</masterLabel>
+            <translation><!-- Large Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid Sized Group</masterLabel>
+            <translation><!-- Mid Sized Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Group</masterLabel>
+            <translation><!-- Small Group --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- National Producer Number --></label>
+        <name>vlocity_ins__NPNNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Worth --></label>
+        <name>vlocity_ins__NetWorth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependents --></label>
+        <name>vlocity_ins__NumberOfDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibles --></label>
+        <name>vlocity_ins__NumberOfEligibles__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Medicare Certified Beds --></label>
+        <name>vlocity_ins__NumberOfMedicareBeds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Members --></label>
+        <name>vlocity_ins__NumberOfMembers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscribers --></label>
+        <name>vlocity_ins__NumberOfSubscribers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>vlocity_ins__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Producers --></label>
+        <name>vlocity_ins__NumberofProducers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating Hours --></label>
+        <name>vlocity_ins__OperatingHoursId__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Tier --></label>
+        <name>vlocity_ins__PartnerTier__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>vlocity_ins__PartyId__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Person Contact Id --></label>
+        <name>vlocity_ins__PersonContactId__c</name>
+        <relationshipLabel><!-- Person Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Premium Year --></label>
+        <name>vlocity_ins__PremiumYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Producer --></label>
+        <name>vlocity_ins__PrimaryBroker__c</name>
+        <relationshipLabel><!-- Accounts (Primary Broker) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>vlocity_ins__PrimaryContactId__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider Identifier --></label>
+        <name>vlocity_ins__ProviderIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepts new patients --></label>
+        <name>vlocity_ins__ProviderIsAcceptingNewPatients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Type --></label>
+        <name>vlocity_ins__RatingType__c</name>
+        <picklistValues>
+            <masterLabel>Age</masterLabel>
+            <translation><!-- Age --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Composite</masterLabel>
+            <translation><!-- Composite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred By --></label>
+        <name>vlocity_ins__ReferredByContactId__c</name>
+        <relationshipLabel><!-- Accounts (Referred By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Start Date --></label>
+        <name>vlocity_ins__RelationshipStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>vlocity_ins__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>vlocity_ins__SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>vlocity_ins__SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SSA/County Code --></label>
+        <name>vlocity_ins__SSACountyCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No. Employees --></label>
+        <name>vlocity_ins__SumOfEmployees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Time Equivalent (FTE) --></label>
+        <name>vlocity_ins__SumOfFTE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax ID --></label>
+        <name>vlocity_ins__TaxID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Reason --></label>
+        <name>vlocity_ins__TerminationReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Requested By --></label>
+        <name>vlocity_ins__TerminationRequestedBy__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Partner --></label>
+        <name>Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Producer --></label>
+        <name>Producer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Agency/Brokerage --></label>
+        <name>vlocity_ins__AgencyBrokerage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>vlocity_ins__Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Carrier --></label>
+        <name>vlocity_ins__Carrier</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Group --></label>
+        <name>vlocity_ins__Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Group Division --></label>
+        <name>vlocity_ins__GroupDivision</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MobilePhoneAccount --></label>
+        <name>vlocity_ins__MobilePhoneAccount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pharmacy --></label>
+        <name>vlocity_ins__Pharmacy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Provider --></label>
+        <name>vlocity_ins__Provider</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Provider Location --></label>
+        <name>vlocity_ins__ProviderLocation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Account --></label>
+        <name>vlocity_ins__StandardAccount</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot create a new producer account without going through the lead conversion process. Please create a lead and then convert it to an opportunity and account. --></errorMessage>
+        <name>AcctOpp_Lock_field_must_be_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Leads with contract type &apos;Affinity&apos; and contract level greater than 3 should be Submitted for Approval. Please contact your Sales Coordinator or Sales VP for further instructions. --></errorMessage>
+        <name>Affinity_Level_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Individual Producers with a contract level greater than 19 needs approval during lead stage --></errorMessage>
+        <name>Contract_Level_19_needs_approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select an inactive reason. --></errorMessage>
+        <name>Need_reason_when_account_is_inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One or more of the following required fields is not populated: Internal Sales Team, No. of Producers, Contract Type, and Contract Level. --></errorMessage>
+        <name>Required_fields_after_account_creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Top Level Account Name must be an active producer account designated as a Top Level Account. --></errorMessage>
+        <name>Top_Level_Account</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_To_Prospect_Insight --></label>
+        <name>pi__Send_To_Prospect_Insight</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateGroup --></label>
+        <name>vlocity_ins__CreateGroup</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateHousehold --></label>
+        <name>vlocity_ins__CreateHousehold</name>
+    </webLinks>
+</CustomObjectTranslation>

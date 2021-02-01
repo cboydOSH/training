@@ -1,0 +1,3 @@
+let definition = 
+                {"Cards":["community-member-modal"],"dataSource":{"type":"Custom","value":{"body":"{}"}},"templates":{"0":{"templateUrl":"card-canvas-1x-slds"}},"enableLwc":true,"repeatCards":false,"componentName":"cfCommunityMemberHeader","lwc":{"MasterLabel":"cardCanvas1x","DeveloperName":"cardCanvas1x","Id":"0Rb8A000000ESELSA4","name":"cardCanvas1x"},"workspace":["community-member-modal/OneShare Health, LLC/1/1593184194899"],"metatagVars":[],"sessionVars":[],"previewType":"designTime","GlobalKey__c":"community-member-header/1/OneShare Health, LLC/1593184035657"}; 
+            export default definition

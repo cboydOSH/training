@@ -10,5 +10,4 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>Work_Item__c</tabs>
-    <tabs>Recording__c</tabs>
 </CustomApplication>

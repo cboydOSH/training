@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>George Skajac Partner User</description>
+    <description>Bernadette Skaljac, Inc. dba George Skaljac Insurance Services Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>George Skajac Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Bernadette Skaljac, Inc. dba George Skaljac Insurance Services Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Temp</parentRole>
 </Role>

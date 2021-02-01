@@ -5,6 +5,6 @@
     <description>Ric Franks Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Ric Franks Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>State_Sales_Manager</parentRole>
 </Role>

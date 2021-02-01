@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Jesse Miller Agency Partner User</description>
+    <description>Jessie Miller Agency Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Jesse Miller Agency Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>Jessie Miller Agency Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Regional_Sales_Director</parentRole>
 </Role>

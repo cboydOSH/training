@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Tina Wyatt Partner User</description>
+    <description>DeMoss Financial Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Tina Wyatt Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>DeMoss Financial Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

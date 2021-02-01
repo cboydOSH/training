@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>CommunitiesLogin</authorizationRequiredPage>
+    <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>true</browserXssProtection>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <contentSniffingProtection>true</contentSniffingProtection>
+    <cspUpgradeInsecureRequests>true</cspUpgradeInsecureRequests>
+    <enableAuraRequests>true</enableAuraRequests>
+    <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <genericErrorPage>Exception</genericErrorPage>
+    <inMaintenancePage>InMaintenance</inMaintenancePage>
+    <indexPage>CommunitiesLanding</indexPage>
+    <masterLabel>Contracting Community</masterLabel>
+    <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <requireHttps>true</requireHttps>
+    <selfRegPage>CommunitiesSelfReg</selfRegPage>
+    <siteAdmin>andres.deus@arcsona.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>andres.deus@arcsona.com</siteGuestRecordDefaultOwner>
+    <siteType>ChatterNetwork</siteType>
+    <subdomain>oshtraining</subdomain>
+    <urlPathPrefix>contracting</urlPathPrefix>
+</CustomSite>

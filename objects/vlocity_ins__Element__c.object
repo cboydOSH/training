@@ -324,11 +324,6 @@
                     <label>Aggregate</label>
                 </value>
                 <value>
-                    <fullName>Assert Action</fullName>
-                    <default>false</default>
-                    <label>Assert Action</label>
-                </value>
-                <value>
                     <fullName>Batch Action</fullName>
                     <default>false</default>
                     <label>Batch Action</label>
@@ -364,11 +359,6 @@
                     <label>Custom Lightning Web Component</label>
                 </value>
                 <value>
-                    <fullName>Chatter Action</fullName>
-                    <default>false</default>
-                    <label>Chatter Action</label>
-                </value>
-                <value>
                     <fullName>Loop Block</fullName>
                     <default>false</default>
                     <label>Loop Block</label>
@@ -387,11 +377,6 @@
                     <fullName>DataRaptor Extract Action</fullName>
                     <default>false</default>
                     <label>DataRaptor Extract Action</label>
-                </value>
-                <value>
-                    <fullName>DataRaptor Turbo Action</fullName>
-                    <default>false</default>
-                    <label>DataRaptor Turbo Action</label>
                 </value>
                 <value>
                     <fullName>DataRaptor Post Action</fullName>
@@ -672,11 +657,6 @@
                     <fullName>Validation</fullName>
                     <default>false</default>
                     <label>Validation</label>
-                </value>
-                <value>
-                    <fullName>Action Block</fullName>
-                    <default>false</default>
-                    <label>Action Block</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

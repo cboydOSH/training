@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AVS International --></label>
+        <name>ChargentOrders__AVS_International__c</name>
+    </fields>
+    <fields>
+        <label><!-- AVS Response Code --></label>
+        <name>ChargentOrders__AVS_Response_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- AVS Zip --></label>
+        <name>ChargentOrders__AVS_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>ChargentOrders__Account__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>ChargentOrders__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount available for Refund --></label>
+        <name>ChargentOrders__Amount_available_for_Refund__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorization --></label>
+        <name>ChargentOrders__Authorization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Last 4 --></label>
+        <name>ChargentOrders__Bank_Account_Last_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Name --></label>
+        <name>ChargentOrders__Bank_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Number --></label>
+        <name>ChargentOrders__Bank_Account_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field only works with certain gateways. See our documentations for more details. --></help>
+        <label><!-- Transaction Status --></label>
+        <name>ChargentOrders__Bank_Account_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Type --></label>
+        <name>ChargentOrders__Bank_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Checking</masterLabel>
+            <translation><!-- Business Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bank Name --></label>
+        <name>ChargentOrders__Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Routing Number --></label>
+        <name>ChargentOrders__Bank_Routing_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field only works with certain gateways. See our documentations for more details. --></help>
+        <label><!-- Settlement Date --></label>
+        <name>ChargentOrders__Bank_Transfer_Settlement_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address Line 2 --></label>
+        <name>ChargentOrders__Billing_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address --></label>
+        <name>ChargentOrders__Billing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>ChargentOrders__Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company --></label>
+        <name>ChargentOrders__Billing_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>ChargentOrders__Billing_Country__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Email --></label>
+        <name>ChargentOrders__Billing_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Fax --></label>
+        <name>ChargentOrders__Billing_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing First --></label>
+        <name>ChargentOrders__Billing_First__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Last --></label>
+        <name>ChargentOrders__Billing_Last__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Phone --></label>
+        <name>ChargentOrders__Billing_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Postal Code --></label>
+        <name>ChargentOrders__Billing_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Province --></label>
+        <name>ChargentOrders__Billing_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State --></label>
+        <name>ChargentOrders__Billing_State__c</name>
+        <picklistValues>
+            <masterLabel>Alabama</masterLabel>
+            <translation><!-- Alabama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alaska</masterLabel>
+            <translation><!-- Alaska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arizona</masterLabel>
+            <translation><!-- Arizona --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arkansas</masterLabel>
+            <translation><!-- Arkansas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>California</masterLabel>
+            <translation><!-- California --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colorado</masterLabel>
+            <translation><!-- Colorado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connecticut</masterLabel>
+            <translation><!-- Connecticut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delaware</masterLabel>
+            <translation><!-- Delaware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>District of Columbia</masterLabel>
+            <translation><!-- District of Columbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Florida</masterLabel>
+            <translation><!-- Florida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia</masterLabel>
+            <translation><!-- Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaii</masterLabel>
+            <translation><!-- Hawaii --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Idaho</masterLabel>
+            <translation><!-- Idaho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illinois</masterLabel>
+            <translation><!-- Illinois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indiana</masterLabel>
+            <translation><!-- Indiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iowa</masterLabel>
+            <translation><!-- Iowa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kansas</masterLabel>
+            <translation><!-- Kansas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kentucky</masterLabel>
+            <translation><!-- Kentucky --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Louisiana</masterLabel>
+            <translation><!-- Louisiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maine</masterLabel>
+            <translation><!-- Maine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maryland</masterLabel>
+            <translation><!-- Maryland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Massachusetts</masterLabel>
+            <translation><!-- Massachusetts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michigan</masterLabel>
+            <translation><!-- Michigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minnesota</masterLabel>
+            <translation><!-- Minnesota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mississippi</masterLabel>
+            <translation><!-- Mississippi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missouri</masterLabel>
+            <translation><!-- Missouri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montana</masterLabel>
+            <translation><!-- Montana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nebraska</masterLabel>
+            <translation><!-- Nebraska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nevada</masterLabel>
+            <translation><!-- Nevada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Hampshire</masterLabel>
+            <translation><!-- New Hampshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Jersey</masterLabel>
+            <translation><!-- New Jersey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Mexico</masterLabel>
+            <translation><!-- New Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Carolina</masterLabel>
+            <translation><!-- North Carolina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Dakota</masterLabel>
+            <translation><!-- North Dakota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ohio</masterLabel>
+            <translation><!-- Ohio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oklahoma</masterLabel>
+            <translation><!-- Oklahoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oregon</masterLabel>
+            <translation><!-- Oregon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pennsylvania</masterLabel>
+            <translation><!-- Pennsylvania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puerto Rico</masterLabel>
+            <translation><!-- Puerto Rico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rhode Island</masterLabel>
+            <translation><!-- Rhode Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Carolina</masterLabel>
+            <translation><!-- South Carolina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Dakota</masterLabel>
+            <translation><!-- South Dakota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tennessee</masterLabel>
+            <translation><!-- Tennessee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Texas</masterLabel>
+            <translation><!-- Texas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utah</masterLabel>
+            <translation><!-- Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vermont</masterLabel>
+            <translation><!-- Vermont --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virginia</masterLabel>
+            <translation><!-- Virginia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Washington</masterLabel>
+            <translation><!-- Washington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Virginia</masterLabel>
+            <translation><!-- West Virginia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wisconsin</masterLabel>
+            <translation><!-- Wisconsin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wyoming</masterLabel>
+            <translation><!-- Wyoming --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Security Response --></label>
+        <name>ChargentOrders__Card_Code_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Last 4 --></label>
+        <name>ChargentOrders__Card_Last_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Disbursement --></label>
+        <name>ChargentOrders__Cash_Disbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Receipt --></label>
+        <name>ChargentOrders__Cash_Receipt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Name --></label>
+        <name>ChargentOrders__Credit_Card_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Number --></label>
+        <name>ChargentOrders__Credit_Card_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Type --></label>
+        <name>ChargentOrders__Credit_Card_Type__c</name>
+        <picklistValues>
+            <masterLabel>American Express</masterLabel>
+            <translation><!-- American Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discover</masterLabel>
+            <translation><!-- Discover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electron</masterLabel>
+            <translation><!-- Electron --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JCB Card</masterLabel>
+            <translation><!-- JCB Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MC Eurocard</masterLabel>
+            <translation><!-- MC Eurocard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mastercard</masterLabel>
+            <translation><!-- Mastercard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solo</masterLabel>
+            <translation><!-- Solo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK Maestro</masterLabel>
+            <translation><!-- UK Maestro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visa</masterLabel>
+            <translation><!-- Visa --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>ChargentOrders__Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Token --></label>
+        <name>ChargentOrders__Customer_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>ChargentOrders__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details (Payflow) --></label>
+        <name>ChargentOrders__Details_Payflow__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to Gateway transaction details --></help>
+        <label><!-- Details (Authorize.net) --></label>
+        <name>ChargentOrders__Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway Date --></label>
+        <name>ChargentOrders__Gateway_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway ID --></label>
+        <name>ChargentOrders__Gateway_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway Response --></label>
+        <name>ChargentOrders__Gateway_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway --></label>
+        <name>ChargentOrders__Gateway__c</name>
+        <relationshipLabel><!-- Transaction --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ignore In Payment Console --></label>
+        <name>ChargentOrders__Ignore_In_PC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>ChargentOrders__Order__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>ChargentOrders__Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check</masterLabel>
+            <translation><!-- Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check (Paper)</masterLabel>
+            <translation><!-- Check (Paper) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Request --></label>
+        <name>ChargentOrders__Payment_Request__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason Code --></label>
+        <name>ChargentOrders__Reason_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Text --></label>
+        <name>ChargentOrders__Reason_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring --></label>
+        <name>ChargentOrders__Recurring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Code --></label>
+        <name>ChargentOrders__Response_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Message --></label>
+        <name>ChargentOrders__Response_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Status --></label>
+        <name>ChargentOrders__Response_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>ChargentOrders__Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settlement Time --></label>
+        <name>ChargentOrders__Settlement_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- The token that was used for this transaction. --></help>
+        <label><!-- Tokenization --></label>
+        <name>ChargentOrders__Tokenization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>ChargentOrders__Type__c</name>
+        <picklistValues>
+            <masterLabel>Authorization</masterLabel>
+            <translation><!-- Authorization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charge</masterLabel>
+            <translation><!-- Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund</masterLabel>
+            <translation><!-- Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Void</masterLabel>
+            <translation><!-- Void --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Chargent Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- Chargent Transactions --></relationshipLabel>
+    </fields>
+    <webLinks>
+        <label><!-- Charge_Authorized --></label>
+        <name>ChargentOrders__Charge_Authorized</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Partial_Refund --></label>
+        <name>ChargentOrders__Partial_Refund</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refund --></label>
+        <name>ChargentOrders__Refund</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void --></label>
+        <name>ChargentOrders__Void</name>
+    </webLinks>
+</CustomObjectTranslation>

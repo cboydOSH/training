@@ -1,0 +1,28 @@
+<apex:page id="CompleteSpringOAuth" controller="dfsle.SetupController" title="{!$Label.dfsle__docusign}" showHeader="false"
+           sideBar="false">
+    <apex:slds />
+
+    <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+        <span class="slds-assistive-text">{!$Label.Loading}</span>
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+
+    <script>
+      function endOAuth(event, result) {
+        window.opener.endSpringOAuth(event, result);
+        window.close();
+      }
+
+      var error = '{!JSENCODE($CurrentPage.parameters.error)}';
+      if (error) {
+        endOAuth({
+          status: false, message: '{!JSENCODE($CurrentPage.parameters.error_message)}' || '{!$Label.ConsentRequired}'
+        }, null);
+      } else {
+        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.SetupController.completeSpringOAuth}', '{!JSENCODE($CurrentPage.parameters.code)}', function (result, event) {
+          endOAuth(event, result);
+        });
+      }
+    </script>
+</apex:page>

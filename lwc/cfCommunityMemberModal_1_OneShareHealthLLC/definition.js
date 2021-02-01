@@ -1,0 +1,3 @@
+let definition = 
+                {"states":[{"fields":[],"conditions":{"group":[{"field":"$scope.data.status","operator":"===","value":"'active'","type":"system"}]},"definedActions":{"actions":[]},"name":"Active","lwc":{"attributes":{"type":"LightningComponentBundle","url":"/services/data/v46.0/tooling/sobjects/LightningComponentBundle/0Rb8A000000ESEKSA4"},"MasterLabel":"card-active-state","Id":"0Rb8A000000ESEKSA4","NamespacePrefix":"vlocity_ins","DeveloperName":"cardActiveState"},"isSmartAction":false,"smartAction":{}}],"filter":{},"dataSource":{"type":null},"enableLwc":true,"GlobalKey__c":"community-member-modal/OneShare Health, LLC/1/1593184194899"}; 
+            export default definition

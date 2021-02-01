@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Roberto Gongora Partner User</description>
+    <description>Claro Insurance Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Roberto Gongora Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Claro Insurance Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

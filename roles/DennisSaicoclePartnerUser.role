@@ -5,6 +5,6 @@
     <description>Dennis Saicocle Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Dennis Saicocle Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

@@ -5,6 +5,6 @@
     <description>Janice Pratt Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Janice Pratt Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

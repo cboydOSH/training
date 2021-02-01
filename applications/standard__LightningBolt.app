@@ -7,619 +7,7 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Analytics</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Analytics Cloud Integration User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Analytics Cloud Security User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>B2BMA Integration User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Billing</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Call Center Leadership</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter External User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter Free User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter Moderator User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Client Management</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter External User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter Free User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter Moderator User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Client Management</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Compliance</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Concierge</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>ContractManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Contracting</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>CPQ Integration User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Customer Community Login User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Customer Community Plus Login User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Guest License User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Marketing</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>MarketingProfile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Member Enrollment</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Member Loyalty</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Member Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Network Development</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>OSHTraining Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Partner Community Login User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Partner Community User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Producer Onboarding</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Producer Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Product</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Quality Assurance</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>ReadOnly</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Sales Executive</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Sales Team</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>SolutionManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>StandardAul</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Compliance</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Concierge</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>ContractManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Contracting</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>CPQ Integration User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Customer Community Login User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Customer Community Plus Login User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Guest License User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>MarketingProfile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Member Enrollment</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Member Loyalty</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Member Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Network Development</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>OSHTraining Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Partner Community Login User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Partner Community User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Producer Onboarding</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Producer Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Product</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Quality Assurance</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>ReadOnly</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Sales Executive</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Sales Team</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>SolutionManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>StandardAul</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Standard</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Producer</recordType>
-        <type>Flexipage</type>
-        <profile>Training</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -628,7 +16,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -637,7 +25,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -646,7 +34,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -655,7 +43,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -664,7 +52,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -673,7 +61,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -682,7 +70,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -691,7 +79,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -700,7 +88,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -709,7 +97,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -718,7 +106,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -727,7 +115,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -736,7 +124,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -745,7 +133,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -754,7 +142,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -763,7 +151,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -772,7 +160,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -781,7 +169,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -790,7 +178,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -799,7 +187,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -808,7 +196,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -817,7 +205,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -826,7 +214,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -835,7 +223,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -844,7 +232,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -853,7 +241,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -862,7 +250,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -871,7 +259,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -880,7 +268,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -889,7 +277,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -898,7 +286,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -907,7 +295,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -916,7 +304,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -925,7 +313,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -934,7 +322,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -943,7 +331,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -952,7 +340,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Partner</recordType>
@@ -961,267 +349,347 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Analytics</profile>
+        <profile>Sales Executive</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Sales Team</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>SolutionManager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>StandardAul</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Standard</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Training</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>ReadOnly</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
         <profile>Analytics Cloud Integration User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
         <profile>Analytics Cloud Security User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
         <profile>B2BMA Integration User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
         <profile>Billing</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
         <profile>Call Center Leadership</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Standard</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Person_Account_Lightning_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.Producer_Member</recordType>
-        <type>Flexipage</type>
-        <profile>Training</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Commissions</profile>
+        <profile>Chatter External User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Continuous Improvement</profile>
+        <profile>Chatter Free User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Contracting Profile</profile>
+        <profile>Chatter Moderator User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Expense Sharing</profile>
+        <profile>Client Management</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Expense Sharing Support</profile>
+        <profile>Compliance</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Marketing</profile>
+        <profile>Concierge</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Minimum Access - Salesforce</profile>
+        <profile>ContractManager</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Ministry Outreach</profile>
+        <profile>Contracting</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Project Management</profile>
+        <profile>CPQ Integration User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Regulatory</profile>
+        <profile>Customer Community Login User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Commissions</profile>
+        <profile>Customer Community Plus Login User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Continuous Improvement</profile>
+        <profile>Guest License User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Contracting Profile</profile>
+        <profile>MarketingProfile</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Expense Sharing</profile>
+        <profile>Member Enrollment</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Expense Sharing Support</profile>
+        <profile>Member Loyalty</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Marketing</profile>
+        <profile>Member Support</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Minimum Access - Salesforce</profile>
+        <profile>Network Development</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Ministry Outreach</profile>
+        <profile>OSHTraining Profile</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Project Management</profile>
+        <profile>Partner Community Login User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Producer_Lightning_Record_Page</content>
+        <content>Account_Lightning_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Partner</recordType>
+        <recordType>Account.Producer</recordType>
         <type>Flexipage</type>
-        <profile>Regulatory</profile>
+        <profile>Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Producer Onboarding</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Producer Support</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Product</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Quality Assurance</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Account_Lightning_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Producer</recordType>
+        <type>Flexipage</type>
+        <profile>Analytics</profile>
     </profileActionOverrides>
     <tabs>standard-LightningBoltHome</tabs>
     <tabs>Work_Item__c</tabs>
-    <tabs>Recording__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

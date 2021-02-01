@@ -165,7 +165,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Read</externalSharingModel>
     <fields>
         <fullName>Age__c</fullName>
         <externalId>false</externalId>
@@ -186,7 +186,7 @@
         <label>Comments</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -440,6 +440,15 @@
         <filterScope>Queue</filterScope>
         <label>Escalations Queue</label>
         <queue>Escalations</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Expense_Sharing_Support_Work_Item</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Expense Sharing Support Queue</label>
+        <queue>Expense_Sharing_Support</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>

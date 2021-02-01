@@ -16,5 +16,4 @@
     <tabs>standard-Quote</tabs>
     <tabs>standard-WaveHome</tabs>
     <tabs>Work_Item__c</tabs>
-    <tabs>Recording__c</tabs>
 </CustomApplication>

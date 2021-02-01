@@ -72,6 +72,7 @@
             <operator>lessOrEqual</operator>
             <value>90</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

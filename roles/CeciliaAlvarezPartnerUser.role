@@ -5,6 +5,6 @@
     <description>Cecilia Alvarez Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Cecilia Alvarez Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

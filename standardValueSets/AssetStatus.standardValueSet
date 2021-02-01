@@ -2,28 +2,53 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Purchased</fullName>
+        <fullName>Inactive - Pending Signature</fullName>
         <default>false</default>
-        <label>Purchased</label>
+        <label>Inactive - Pending Signature</label>
     </standardValue>
     <standardValue>
-        <fullName>Shipped</fullName>
+        <fullName>Inactive - Pending Payment</fullName>
         <default>false</default>
-        <label>Shipped</label>
+        <label>Inactive - Pending Payment</label>
     </standardValue>
     <standardValue>
-        <fullName>Installed</fullName>
+        <fullName>Inactive - Pending First Contribution</fullName>
         <default>false</default>
-        <label>Installed</label>
+        <label>Inactive - Pending First Contribution</label>
     </standardValue>
     <standardValue>
-        <fullName>Registered</fullName>
+        <fullName>Ready to Activate - Pending Application Fee</fullName>
         <default>false</default>
-        <label>Registered</label>
+        <label>Ready to Activate - Pending Application Fee</label>
     </standardValue>
     <standardValue>
-        <fullName>Obsolete</fullName>
+        <fullName>Ready to Activate</fullName>
         <default>false</default>
-        <label>Obsolete</label>
+        <label>Ready to Activate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Active - Pending Application Fee</fullName>
+        <default>false</default>
+        <label>Active - Pending Application Fee</label>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Terminated</fullName>
+        <default>false</default>
+        <label>Terminated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
     </standardValue>
 </StandardValueSet>

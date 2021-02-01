@@ -55,6 +55,7 @@
             <operator>equals</operator>
             <value>Larry Estridge,Ryan Herlin,Jeffrey Fisher,Rasheed Gutter</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

@@ -54,6 +54,7 @@
             <operator>notEqual</operator>
             <value>Larry Estridge,Isaac Tillotson,Paula Cokonougher,Jacqueline Perez,Malcalm Snell,German Hernandez,Rita Linde,Kemp Cole,David Gresl,Victor Mensavage,Jack Jarrell</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

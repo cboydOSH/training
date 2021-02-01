@@ -1,0 +1,22 @@
+<apex:page sidebar="false" showHeader="false" standardStylesheets="true" cache="false" id="chargentAnywhere">
+    <apex:includeLightning />
+
+    <div id="container"></div>
+
+    <script>
+        $Lightning.use("c:ChargentAnywhereTest", function() {
+            $Lightning.createComponent("ChargentAnyObj:Chargent_Anywhere",
+                    {
+                       'req': '{!$CurrentPage.parameters.req}',
+                       'ChargentBase__Gateway__c': 'a8x8A0000008h1DQAQ',
+                       'GatewayId': 'a8x8A0000008h1DQAQ',
+                       'formName': 'Chargent Anywhere'
+                    },
+                    "container",
+                    function(cmp) {
+                        //variable2 = "{!$CurrentPage.parameters.variable}";
+                        //console.log('variable2:' + variable2);           
+                    });
+        });
+    </script>
+</apex:page>

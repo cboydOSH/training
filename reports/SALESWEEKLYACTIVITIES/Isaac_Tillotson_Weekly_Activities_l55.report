@@ -55,6 +55,7 @@
             <operator>equals</operator>
             <value>Isaac Tillotson,Jill Sutherland,Dan Fleming,Julie Benveniste</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

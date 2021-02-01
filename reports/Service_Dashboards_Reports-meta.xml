@@ -5,5 +5,15 @@
         <sharedTo>AllInternalUsers</sharedTo>
         <sharedToType>Organization</sharedToType>
     </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>AllPartnerUsers</sharedTo>
+        <sharedToType>AllPrmUsers</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>Community_Users</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
     <name>Service Dashboards Reports</name>
 </ReportFolder>

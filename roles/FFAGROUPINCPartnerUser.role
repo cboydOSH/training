@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Diana Cardona Partner User</description>
+    <description>FFA GROUP INC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Diana Cardona Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>FFA GROUP INC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>State_Sales_Manager</parentRole>
 </Role>

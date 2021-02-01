@@ -5,6 +5,6 @@
     <description>Darryl Smith Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Darryl Smith Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

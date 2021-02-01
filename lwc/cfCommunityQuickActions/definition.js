@@ -1,0 +1,3 @@
+let definition = 
+                {"states":[{"fields":[],"conditions":{"group":[{"field":"$scope.data.status","operator":"===","value":"'active'","type":"system"}]},"definedActions":{"actions":[]},"name":"Active","lwc":{"MasterLabel":"CommunityProducerQuickActions","DeveloperName":"communityProducerQuickActions","Id":"0Rb8A000000FG7VSAW","name":"communityProducerQuickActions"},"isSmartAction":false,"smartAction":{}}],"filter":{},"dataSource":{"type":null},"enableLwc":true,"GlobalKey__c":"communityQuickActions/OneShare Health, LLC/1/1591825797571"}; 
+            export default definition

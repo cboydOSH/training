@@ -5,6 +5,6 @@
     <description>Paul Pacifico Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Paul Pacifico Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

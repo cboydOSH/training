@@ -5,6 +5,6 @@
     <description>GINA DWYER Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>GINA DWYER Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

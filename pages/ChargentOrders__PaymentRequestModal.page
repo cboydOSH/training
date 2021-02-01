@@ -1,0 +1,8 @@
+<apex:page controller="ChargentOrders.PaymentRequestModalController" showHeader="false" id="page">
+<apex:form >
+<apex:selectList id="paymentRequest" value="{!selectedOpt}"
+         size="1" required="true">
+  <apex:selectOptions value="{!amountOptions}"/>
+</apex:selectList>
+</apex:form>
+</apex:page>

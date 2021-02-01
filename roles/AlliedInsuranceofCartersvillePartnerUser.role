@@ -5,6 +5,6 @@
     <description>Allied Insurance of Cartersville Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Allied Insurance of Cartersville Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

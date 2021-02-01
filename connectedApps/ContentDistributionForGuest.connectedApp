@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>andres.deus@arcsona.com</contactEmail>
+    <label>ContentDistributionForGuest</label>
+    <oauthConfig>
+        <callbackUrl>https://onesharehealth--devvl2.my.salesforce.com/services/authcallback/ContentDistributionForGuest</callbackUrl>
+        <consumerKey>3MVG9eQyYZ1h89HeHMRBODSXhulQDcUMPbw0S9EM6uisV5FfGp6bpG1MKNBGY2k6BMiZAhrWFA8paMpOnKLN4</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <scopes>Api</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>Member Community Profile</profileName>
+    <profileName>System Administrator</profileName>
+    <profileName>Data Model Producer</profileName>
+</ConnectedApp>

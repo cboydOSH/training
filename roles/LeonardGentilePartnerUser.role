@@ -5,6 +5,6 @@
     <description>Leonard Gentile Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Leonard Gentile Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Temp</parentRole>
 </Role>

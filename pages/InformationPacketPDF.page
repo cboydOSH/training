@@ -1,0 +1,512 @@
+<apex:page renderAs="pdf" applyBodyTag="false" standardController="Quote" extensions="InformationPacketController">
+	<head>
+		<style type="text/css" media="print">
+			@page:first { 
+				margin: 1.7in 0.65in 1.25in .6in;
+				@top-left { content: element(header1);}
+				@top-right { content: element(headerRightDate);}
+				@bottom-left { content: element(footer); }
+			}
+			@page { 
+				margin: 1in 0.65in 1.25in .6in;
+				@top-left { content: element(header2);}
+				@bottom-left { content: element(footer2); }
+			}
+			@page last{ 
+				margin: 1in 0.65in .5in .6in;
+				@top-left { content: element(header2);}
+				@bottom-left { content: element(lastfooter); }
+			}
+
+			@page complete{ 
+				margin: 1in 0.65in 1.25in .6in;
+				@top-left { content: element(header2);}
+				@top-right { content: element(headerRight);}
+				@bottom-left { content: element(footer2); }
+			}
+
+			@page route{ 
+				margin: 1in 0.65in 1.25in .6in;
+				@top-left { content: element(header2);}
+				@top-right { content: element(headerRight);}
+				@bottom-left { content: element(footer2); }
+			}
+
+			@page nonEligible{ 
+				margin: 1in 0.65in 1.25in .6in;
+				@top-left { content: element(header2);}
+				@bottom-left { content: element(footer2); }
+			}
+			
+			div.header1 { padding: 10px; position: running(header1); margin: 0px; }
+
+			div.header2 { padding: 10px; position: running(header2); margin: 0px; }
+
+			div.headerRight { padding: 10px; position: running(headerRight); margin: 0px; }
+
+			div.headerRightDate { padding: 10px; position: running(headerRightDate); margin: 0px; }
+			
+			div.footer { display: block; padding: 5px; position: running(footer); margin-top:0em; }
+			
+			div.footer2 { display: block; padding: 5px; position: running(footer2); margin-top:0em; }
+
+			#lastfooter{display: block; padding: 5px; position: running(lastfooter); margin-top:0em; }
+			#lastpage  {page:last}
+			
+			#completepage {page:complete}
+
+			#routepage {page:route}
+
+			#nonEligiblePage {page:nonEligible}
+			
+		</style>
+	</head>
+	<apex:stylesheet value="{!URLFOR($Resource.oshInsPhotos, 'css.css')}"/>
+	
+     <!-- First Page it can be added as a Visualforce Component -->
+	 <div style="page-break-after:always;">
+		<apex:outputPanel rendered="true">
+			<div class="header1">
+				<apex:image value="{!URLFOR($Resource.oshInsPhotos, 'osh2.png')}" width="235px" height="120px"/>
+			</div>  
+			<div class="header2">
+				<apex:image value="{!URLFOR($Resource.oshInsPhotos, 'osh2-2.png')}" width="235px" height="120px"/>
+			</div>
+			<div class="headerRightDate"  style="font-family: Helvetica Neue,Helvetica,Arial,sans-serif;text-align:right;">
+				Prepared on: {!MONTH(DATEVALUE(quoteCreatedDate))}/{!DAY(DATEVALUE(quoteCreatedDate))}/{!YEAR(DATEVALUE(quoteCreatedDate))}<br/>
+				<apex:outputPanel rendered="{! (profile=='OSH Employee') }">Prepared by an OSH Employee for {!accountForServicingAgent.Name}</apex:outputPanel>
+				<apex:outputPanel rendered="{! (profile=='Guest') }">Prepared by: {!accountForServicingAgent.Name} via Self-Service</apex:outputPanel>
+				<apex:outputPanel rendered="{! (profile=='Producer') }">Prepared by: {!writingAgent.Name} for {!accountForServicingAgent.Name}</apex:outputPanel>
+				<br/>Information Packet #: {!informationPacketNumber}
+			</div>  
+			<div style="text-align:justify;">
+				<div style="font-size: 24pt; text-align: center!important;">OneShare Health<br/>
+				Health Care Sharing Membership Information</div>
+				<p>The program<apex:outputText rendered="{!IF(multiplePrograms, true, false)}">s</apex:outputText> you requested <apex:outputText rendered="{!IF(multiplePrograms, true, false)}"> are</apex:outputText> <apex:outputText rendered="{!IF(multiplePrograms, false, true)}"> is</apex:outputText>  attached and based on the information you have provided. We hope this illustration helps with making your decision. If you have any questions or would like to move forward, contact us and we can get your membership started!</p>
+				<br/>
+				<div style="text-align:center!important;">
+					<apex:image value="{!URLFOR($Resource.oshInsPhotos, 'background01.jpg')}"/>
+				</div>
+				<p>Thank you again for your interest in OneShare Health and the opportunity to meet your health care needs. We hope to partner with you on your health care journey.</p>
+				<p>Use the Information Packet number at the top of this page to initiate your Enrollment process.</p>
+				<p>OneShare Membership is not health insurance. It is an opportunity to share each members’ medical bills and demonstrate the love of God to the entire community.</p>  
+				<!-- <p>
+					<apex:outputText rendered="{!IF(agedBrackets==1, true, false)}">Valid for 30 days </apex:outputText>
+					<apex:outputText rendered="{!IF(agedBrackets==2, true, false)}">Valid until {!ratingMemberAccount.Name}’s next birthday&nbsp;(
+						<apex:outputText value="{0,date,MM/dd/}">
+							<apex:param value="{!ratingMemberAccount.PersonBirthdate}"/>
+						</apex:outputText>
+						<apex:outputText value="{0,date,yyyy}">
+							<apex:param value="{!createdQuoteDate}"/>
+						</apex:outputText>)
+					</apex:outputText>
+					<apex:outputText rendered="{!IF(agedBrackets==3, true, false)}">Valid for 30 days. Price change will happen on {!ratingMemberAccount.Name}’s next birthday&nbsp;(
+						<apex:outputText value="{0,date,MM/dd/}">
+							<apex:param value="{!ratingMemberAccount.PersonBirthdate}"/>
+						</apex:outputText>
+						<apex:outputText value="{0,date,yyyy}">
+							<apex:param value="{!createdQuoteDate}"/>
+						</apex:outputText>)
+					</apex:outputText>
+					and based on type of enrollment. Programs and guidelines are subject to change and may vary at time of enrollment.</p>   -->
+					<p>Contribution amounts presented are illustrative only.  Actual contribution amounts will be determined at the time of final enrollment based on the program selected, age of the oldest member, and number of family members enrolled.</p>
+				<br/>
+				<p style="color:#0b4295; font-size: 12pt;">“Carry each other’s burdens, and in this way, you will fulfill the law of Christ.” Galatians 6:2 (NIV)</p>
+			</div>
+			<div class="footer">
+				<div style="float:left; width:80%; line-height:0px; text-align:left; font-family:Gulim_Type1_0,Gulim,serif; font-size: 9pt;">
+					<p>OneShare Health, LLC.</p>
+					<p></p>OneShare Health, LLC is not an insurance company but a religious health care sharing ministry.
+					<p>For our full disclosures, see<a href="https://www.OneShareHealth.com/legal-notices" target="_blank"> www.OneShareHealth.com/legal-notices.</a></p>
+				</div>
+				<div style="float:left; width:20%; line-height:0px; text-align:right;">
+					<p href="https://www.OneShareHealth.com/legal-notices" target="_blank">www.OneShareHealth.com</p>
+					<p>833.546.4478</p>
+				</div>
+			</div>
+			<div class="footer2">
+				<div style="float:left; width:80%; line-height:0px; text-align:left; font-family:Gulim_Type1_0,Gulim,serif; font-size: 9pt;">
+					<p>OneShare Health, LLC.</p>
+					<p></p>OneShare Health, LLC is not an insurance company but a religious health care sharing ministry.
+					<p>For our full disclosures, see<a href="https://www.OneShareHealth.com/legal-notices" target="_blank"> www.OneShareHealth.com/legal-notices.</a></p>
+				</div>
+			</div>
+		</apex:outputpanel>
+	 </div>
+
+	 <!--Last Page [OUR STATEMENT OF BELIEFS ] -->
+	 <div style="page-break-after:always;">
+		<apex:outputPanel rendered="true">
+			<br/>
+			<p style="text-align:center;">
+				<b>Statement of Beliefs<br/>
+				With our origins in the Anabaptist faith</b>
+			</p>
+			<div style="text-align:left;"> <!-- Content -->
+				<p>
+					<b>We believe</b> in the authority of Scripture and the sanctity and dignity of every human<br/>
+					life created by God with special meaning and purpose.<br/>
+					<b>II Timothy 3:16; Psalm 139:13-14</b><br/>
+				</p><br/>
+				<p>
+					<b>We believe</b> that every individual has the constitutional and religious right and duty to<br/>
+					worship God in freedom.<br/>
+					<b>II Corinthians 3:17; U.S. Const. amend. I</b><br/>
+				</p><br/>
+				<p>
+					<b>We believe</b> and agree in the biblical and ethical principle of sharing with those who<br/>
+					are less fortunate and who experience medical needs.<br/>
+					<b>Galatians 6:2</b><br/>
+				</p><br/>
+				<p>
+					<b>We believe</b> and agree that it is our responsibility to God and our fellow members to<br/>
+					engage in accountable, healthy living, and to avoid habits and behaviors which are<br/>
+					harmful to the body.<br/>
+					<b>I Corinthians 6:19-20</b><br/>
+				</p><br/>
+				<p>
+					<b>We believe</b> in the power of prayer to save lives, to heal lives, and to unite our <br/>
+					members in common purpose and community, and we believe that prayer should be a<br/>
+					fundamental practice of daily life.<br/>
+					<b>I John 5:14; Philippians 4:6-7</b><br/>
+				</p><br/>
+			</div>
+		</apex:outputPanel>
+	</div>
+	
+	<!-- Complete Plans -->
+	<apex:repeat value="{!completePrograms}" var="prod">
+		<div id="completepage" style="page-break-after:always;">
+			<apex:outputPanel >
+				<div class="headerRight" style="font-family: Helvetica Neue,Helvetica,Arial,sans-serif;text-align:right;">
+					<apex:outputText value="{!prod}"></apex:outputText>
+				</div>
+				<h2>Sharing Services¹</h2>
+				<p class="unless">Unless stated otherwise in the Eligible Sharing Descriptions and Limits, there is a 90-day waiting period for any medical expenses
+				other than for accidents, injuries, acute illnesses, and immunizations (if eligible). Individual Sharing Amount (ISA) may apply to eligible services.</p>
+				<table id="complete" border="1" style="border-collapse: collapse; width:100%;">
+					<thead style="background-color: #6fc765;color: white; text-align:center;">
+						<apex:variable var="programName" value="{!prod}''" />
+						<tr>
+							<th/>
+							<th>
+								<apex:outputText rendered="{!IF(CONTAINS(programName,'Basic'),true,false)}">BASIC</apex:outputText>
+								<apex:outputText rendered="{!IF(CONTAINS(programName,'Enhanced'),true,false)}">ENHANCED</apex:outputText>
+								<apex:outputText rendered="{!IF(CONTAINS(programName,'Crown'),true,false)}">CROWN</apex:outputText>
+								<apex:outputText value=" In Network" />
+							</th>
+							<th>
+								<apex:outputText rendered="{!IF(CONTAINS(programName,'Basic'),true,false)}">BASIC</apex:outputText>
+								<apex:outputText rendered="{!IF(CONTAINS(programName,'Enhanced'),true,false)}">ENHANCED</apex:outputText>
+								<apex:outputText rendered="{!IF(CONTAINS(programName,'Crown'),true,false)}">CROWN</apex:outputText>
+								<apex:outputText value=" Out of Network" />
+							</th>
+						</tr>
+					</thead>
+					<tbody style="font-size: 14px;">
+						<!-- <tr style="background-color: #6fc765;color: white; text-align:center;"> -->
+						<tr>
+							<td style="text-align:left;">Provider Network- First Health®</td>
+							<td style="text-align:center;" colspan="2" >In-Network/Out of Network²</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<td style="text-align:left;">ISA</td>
+							<td style="text-align:center;" colspan="2">{!productsComplete[prod]['ISAAMT']}</td>
+						</tr>
+						<apex:repeat value="{!completedKeysOrder}" var="key">
+							<tr>
+								<apex:variable var="key2" value="{!key}2" />
+								<td style="text-align:left;">{!mapCodesWithLabels[key]}</td>
+								<td style="text-align:center;">{!productsComplete[prod][key]}</td>
+								<td style="text-align:center;">{!productsComplete[prod][key2]}</td>
+							</tr>
+						</apex:repeat>
+						<tr>
+							<td style="text-align:left;">Monthly contribution</td>
+							<td style="text-align:center;" colspan="2">{!productsComplete[prod]['vlocity_ins__TotalAmount__c']}</td>
+						</tr>
+					</tbody>
+				</table>
+				<small>1. Review Membership Guide for full details, waiting periods, pre-existing limitations, limits, and applicable ISA for all Sharing Services.</small><br/>
+				<small>2. Out of Network member sharing reimbursement is based on the lesser of the Out of network provider actual billed amount or Maximum Reasonable Guidelines for Eligible Services provided.</small><br/>
+				<small>3. Telemedicine, Prescription Discount Program, and Membership Discount Programs are not sharing services and are not owned or operated by OneShare Health, LLC. These are made available to OneShare Members by Careington for a fee paid from the Member’s monthly contribution.</small>
+			</apex:outputPanel>
+		</div>
+	 </apex:repeat>
+
+    <!-- Classic Plans  starts-->
+    <div style="page-break-after:always;">
+		<apex:outputPanel rendered="{! (qliListClassicNames.size > 0) }">
+			<h2>Sharing Services¹</h2>
+			<p class="unless">Unless stated otherwise in the Eligible Sharing Descriptions and Limits, there is a 90-day waiting period for any medical expenses
+			other than for accidents, injuries, acute illnesses, and immunizations (if eligible). Individual Sharing Amount (ISA) may apply to eligible services.</p>
+			<table id="classic" border="1" style="border-collapse: collapse; width:100%;">
+				<thead>
+					<tr style="background-color: #014b9b;color: white;text-align:center;">
+						<th/>
+						<apex:repeat value="{!qliListClassicNames}" var="prod">
+							<th>
+								<apex:outputPanel >
+									<apex:outputText value="{!prod}" />
+								</apex:outputPanel>
+							</th>
+						</apex:repeat>
+					</tr>
+				</thead>
+				<tbody style="font-size: 14px;">
+					<!-- <apex:repeat value="{!keysForClassicPrograms}" var="key"> -->
+					<apex:repeat value="{!generalKeysOrder}" var="key">
+						<tr>
+							<td style="text-align:left;">{!mapCodesWithLabels[key]}</td>
+							<apex:repeat value="{!productsClassic}" var="attrs">
+								<td style="text-align:center;">{!attrs[key]}</td>
+							</apex:repeat>
+						</tr>
+					</apex:repeat>
+				</tbody>
+			</table>
+			<small>1. Review Membership Guide for full details, waiting periods, pre-existing limitations, limits, and applicable ISA for all Sharing Services.</small><br/>
+			<small>2. Out of Network member sharing reimbursement is based on the lesser of the Out of network provider actual billed amount or Maximum Reasonable Guidelines for Eligible Services provided.</small><br/>
+			<small>3. Telemedicine, Prescription Discount Program, and Membership Discount Programs are not sharing services and are not owned or operated by OneShare Health, LLC. These are made available to OneShare Members by Careington for a fee paid from the Member’s monthly contribution.</small>
+			<br/>
+		</apex:outputPanel>
+	</div>
+	<!-- Classic Plans  ends-->
+
+	 <!-- Catasthropic Plans -->
+	<div style="page-break-after:always;">
+		<apex:outputPanel rendered="{! (qliListCatastrophicNames.size > 0) }">
+			<h2>Sharing Services¹</h2>
+			<p class="unless">Unless stated otherwise in the Eligible Sharing Descriptions and Limits, there is a 90-day waiting period for any medical expenses
+			other than for accidents, injuries, acute illnesses, and immunizations (if eligible). Individual Sharing Amount (ISA) may apply to eligible services.</p>
+			<table id="catastrophic" border="1" style="border-collapse: collapse; width:100%;">
+				<thead>
+					<tr style="background-color: #fa9722;color: white; text-align:center;">
+						<th/>
+						<apex:repeat value="{!qliListCatastrophicNames}" var="prod">
+							<th>
+								<apex:outputText value="{!prod}" />
+							</th>
+						</apex:repeat>
+					</tr>
+				</thead>
+				<tbody style="font-size: 14px;">
+					<!-- <apex:repeat value="{!keysForCatastrophicPrograms}" var="key"> -->
+					<apex:repeat value="{!generalKeysOrder}" var="key">
+						<tr>
+							<td style="text-align:left;">{!mapCodesWithLabels[key]}</td>
+							<apex:repeat value="{!productsCatastrophic}" var="attrs">
+								<td style="text-align:center;">{!attrs[key]}</td>
+							</apex:repeat>
+						</tr>
+					</apex:repeat>
+				</tbody>
+			</table>
+			<small>1. Review Membership Guide for full details, waiting periods, pre-existing limitations, limits, and applicable ISA for all Sharing Services.</small><br/>
+			<small>2. Out of Network member sharing reimbursement is based on the lesser of the Out of network provider actual billed amount or Maximum Reasonable Guidelines for Eligible Services provided.</small><br/>
+			<small>3. Telemedicine, Prescription Discount Program, and Membership Discount Programs are not sharing services and are not owned or operated by OneShare Health, LLC. These are made available to OneShare Members by Careington for a fee paid from the Member’s monthly contribution.</small>
+		<br/>
+		
+		</apex:outputPanel>
+	</div>
+
+	<!-- Thrive Plans  starts-->
+    <div style="page-break-after:always;">
+		<apex:outputPanel rendered="{! (qliListThriveNames.size > 0) }">
+			<h2>Sharing Services¹</h2>
+			<p class="unless">Unless stated otherwise in the Eligible Sharing Descriptions and Limits, there is a 90-day waiting period for any medical expenses
+			other than for accidents, injuries, acute illnesses, and immunizations (if eligible). Individual Sharing Amount (ISA) may apply to eligible services.</p>
+			<table id="thrive" border="1" style="border-collapse: collapse; width:100%;">
+				<thead>
+					<tr style="background-color: #46b549;color: white;text-align:center;">
+						<th/>
+						<apex:repeat value="{!qliListThriveNames}" var="prod">
+							<th>
+								<apex:outputPanel >
+									<apex:outputText value="{!prod}" />
+								</apex:outputPanel>
+							</th>
+						</apex:repeat>
+					</tr>
+				</thead>
+				<tbody style="font-size: 14px;">
+					<!-- <apex:repeat value="{!keysForClassicPrograms}" var="key"> -->
+					<apex:repeat value="{!generalKeysOrder}" var="key">
+						<tr>
+							<td style="text-align:left;">{!mapCodesWithLabels[key]}</td>
+							<apex:repeat value="{!productsThrive}" var="attrs">
+								<td style="text-align:center;">{!attrs[key]}</td>
+							</apex:repeat>
+						</tr>
+					</apex:repeat>
+				</tbody>
+			</table>
+			<small>1. Review Membership Guide for full details, waiting periods, pre-existing limitations, limits, and applicable ISA for all Sharing Services.</small><br/>
+			<small>2. Out of Network member sharing reimbursement is based on the lesser of the Out of network provider actual billed amount or Maximum Reasonable Guidelines for Eligible Services provided.</small><br/>
+			<small>3. Telemedicine, Prescription Discount Program, and Membership Discount Programs are not sharing services and are not owned or operated by OneShare Health, LLC. These are made available to OneShare Members by Careington for a fee paid from the Member’s monthly contribution.</small>
+			<br/>
+		</apex:outputPanel>
+	</div>
+	<!-- Thrive Plans  ends-->
+
+	<!-- Route Plans start-->
+	<apex:repeat value="{!routePrograms}" var="prod">
+		<div id="routepage" style="page-break-after:always;">
+			<apex:outputPanel >
+				<div class="headerRight" style="font-family: Helvetica Neue,Helvetica,Arial,sans-serif;text-align:right;">
+					<apex:outputText value="{!prod}"></apex:outputText>
+				</div>
+				<h2>Sharing Services¹</h2>
+				<p class="unless">Unless stated otherwise in the Eligible Sharing Descriptions and Limits, there is a 90-day waiting period for any medical expenses
+				other than for accidents, injuries, acute illnesses, and immunizations (if eligible). Individual Sharing Amount (ISA) may apply to eligible services.</p>
+				<table id="complete" border="1" style="border-collapse: collapse; width:100%;">
+					<thead style="background-color: #014b9b;color: white; text-align:center;">
+						<apex:variable var="programName" value="{!prod}''" />
+						<tr>
+							<th/>
+							<th>
+								<apex:outputText >ROUTE</apex:outputText>
+								<apex:outputText value=" In Network" />
+							</th>
+							<th>
+								<apex:outputText >ROUTE</apex:outputText>
+								<apex:outputText value=" Out of Network" />
+							</th>
+						</tr>
+					</thead>
+					<tbody style="font-size: 14px;">
+						<!-- <tr style="background-color: #6fc765;color: white; text-align:center;"> -->
+						<tr>
+							<td style="text-align:left;">Provider Network- First Health®</td>
+							<td style="text-align:center;" colspan="2" >In-Network/Out of Network²</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<td style="text-align:left;">ISA</td>
+							<td style="text-align:center;" colspan="2">{!productsRoute[prod]['ISAAMT']}</td>
+						</tr>
+						<apex:repeat value="{!routeKeysOrder}" var="key">
+							<tr>
+								<apex:variable var="key2" value="{!key}2" />
+								<td style="text-align:left;">{!mapCodesWithLabels[key]}</td>
+								<td style="text-align:center;">{!productsRoute[prod][key]}</td>
+								<td style="text-align:center;">{!productsRoute[prod][key2]}</td>
+							</tr>
+						</apex:repeat>
+						<tr>
+							<td style="text-align:left;">Monthly contribution</td>
+							<td style="text-align:center;" colspan="2">{!productsRoute[prod]['vlocity_ins__TotalAmount__c']}</td>
+						</tr>
+					</tbody>
+				</table>
+				<small>1. Review Membership Guide for full details, waiting periods, pre-existing limitations, limits, and applicable ISA for all Sharing Services.</small><br/>
+				<small>2. Out of Network member sharing reimbursement is based on the lesser of the Out of network provider actual billed amount or Maximum Reasonable Guidelines for Eligible Services provided.</small><br/>
+				<small>3. Telemedicine, Prescription Discount Program, and Membership Discount Programs are not sharing services and are not owned or operated by OneShare Health, LLC. These are made available to OneShare Members by Careington for a fee paid from the Member’s monthly contribution.</small>
+			</apex:outputPanel>
+		</div>
+	 </apex:repeat>
+	 <!-- Route Plans end-->
+
+	<apex:repeat value="{!nonEligibleItemsProdNamesOrder}" var="prodName">
+		<apex:outputPanel rendered="{!IF(CONTAINS(prodName,'Route'),true,false)}">
+			<div id="nonEligiblePage" style="page-break-after:always;">
+				<h2>Not Eligible for Sharing </h2>
+				<h3><apex:outputLabel escape="false"  value="{!prodName}"></apex:outputLabel></h3>
+				<apex:variable var="index" value="{!0}" />
+				<apex:variable var="limit" value="{!1}" />
+				<apex:variable var="nonEligibleItemsVar" value="{!nonEligibleItems[prodName]}"/>
+				<div style="font-size: 14px;">
+					<apex:outputLabel escape="false" style="width: 45%;padding-left: 0%;font-weight: bold;">This list includes, but is not limited, to the following:</apex:outputLabel>
+					<apex:repeat value="{!nonEligibleItemsVar}" var="nonEligibleItem">
+						<div>
+							<apex:outputLabel rendered="{!index==0}" escape="false" styleClass="left" value="{!SUBSTITUTE(nonEligibleItem, '+', '<br/>')}">
+							</apex:outputLabel>
+						</div>
+						<div>
+							<apex:outputLabel rendered="{!index==1}" escape="false" styleClass="right" value="{!SUBSTITUTE(nonEligibleItem, '+', '<br/>')}">
+							</apex:outputLabel> 
+						</div>
+						<apex:variable var="index" value="{!index + 1}" />
+					</apex:repeat>
+				</div>				
+			</div>
+			<div id="nonEligiblePage" style="page-break-after:always;">
+				<h2>Not Eligible for Sharing </h2>
+				<h3><apex:outputLabel escape="false"  value="{!prodName}"></apex:outputLabel></h3>
+				<apex:variable var="index" value="{!0}" />
+				<apex:variable var="nonEligibleItemsVar" value="{!nonEligibleItems[prodName]}"/>
+				<div style="font-size: 14px;">
+					<apex:repeat value="{!nonEligibleItemsVar}" var="nonEligibleItem">
+						<div>
+							<apex:outputLabel rendered="{!index==2}" escape="false" styleClass="left" value="{!SUBSTITUTE(nonEligibleItem, '+', '<br/>')}">
+							</apex:outputLabel>
+						</div>
+						<apex:variable var="index" value="{!index + 1}" />
+					</apex:repeat>
+				</div>				
+			</div>
+		</apex:outputPanel>
+		<apex:outputPanel rendered="{!IF(CONTAINS(prodName,'Route'),false,true)}">
+			<div id="nonEligiblePage" style="page-break-after:always;">
+				<h2>Not Eligible for Sharing </h2>
+				<h3><apex:outputLabel escape="false"  value="{!prodName}"></apex:outputLabel></h3>
+				<apex:variable var="index" value="{!0}" />
+				<apex:variable var="limit" value="{!1}" />
+				<apex:variable var="nonEligibleItemsVar" value="{!nonEligibleItems[prodName]}"/>
+				<div style="font-size: 14px;">
+					<apex:outputLabel escape="false" style="width: 45%;padding-left: 0%;font-weight: bold;">This list includes, but is not limited, to the following:</apex:outputLabel>
+					<apex:repeat value="{!nonEligibleItemsVar}" var="nonEligibleItem">
+						<div>
+							<apex:outputLabel rendered="{!index<limit}" escape="false" styleClass="left" value="{!SUBSTITUTE(nonEligibleItem, '+', '<br/>')}">
+							</apex:outputLabel>
+						</div>
+						<div>
+							<apex:outputLabel rendered="{!index>=limit}" escape="false" styleClass="right" value="{!SUBSTITUTE(nonEligibleItem, '+', '<br/>')}">
+							</apex:outputLabel> 
+						</div>
+						<apex:variable var="index" value="{!index + 1}" />
+					</apex:repeat>
+				</div>				
+			</div>
+		</apex:outputPanel>
+	 </apex:repeat>
+
+	 <!--Last Page [OUR STATEMENT OF BELIEFS ] -->
+	 <div id="lastpage">
+		<apex:outputPanel rendered="true">
+			<!--Content -->
+			 <div style="text-align:left;"> 
+				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				<p>
+					<b>OneShare Health, LLC</b><br/>
+					3701 Regent Blvd. Suite 100<br/>
+					Irving, TX 75063<br/>
+				</p>
+			</div> 
+			<br/><br/><!-- Brunno please check -->
+			<div>
+				<div style="float:left; width:40%; line-height:0px; text-align:left;padding-top:15%;">
+						<p href="https://www.OneShareHealth.com/legal-notices" target="_blank"><a>www.OneShareHealth.com</a></p>
+						<p>833.546.4478</p>
+					</div>
+				<div style="float:left; width:60%; text-align:right; line-height:0px; font-family:Gulim_Type1_0,Gulim,serif; font-size: 8pt;white-space:nowrap;">
+					<p>OneShare Health</p>
+					<p>	ONESHARE HEALTH, LLC (ONESHARE) IS NOT AN INSURANCE COMPANY BUT A RELIGIOUS</p>
+					<p>	HEALTH CARE SHARING MINISTRY (HCSM) THAT FACILITATES THE SHARING OF MEDICAL</p>
+					<p>	EXPENSES AMONG MEMBERS. As with all HCSMs under 26 USC § 5000A(d)(2)(B)(ii), OneShare’s</p>
+					<p>	members are exempt from the ACA individual mandate. OneShare does not assume any legal risk or</p>
+					<p>	obligation for payment of member medical expenses. Neither OneShare nor its members guarantee</p>
+					<p>	or promise that medical bills will be paid or shared by the membership. Available nationwide, but</p>
+					<p>	please check www.onesharehealth.com/legal-notices for the most up to date state availability</p>
+					<p>	listing. THE DISCOUNT PLAN IS NOT INSURANCE and is not intended to replace health insurance</p>
+					<p>	and do not meet the minimum creditable coverage requirements under M.G.L. c.111M and 956</p>
+					<p>	CMR 5.00. The programs are not Qualified Health Plans under the Affordable Care Act. This is not a</p>
+					<p>	Medicare prescription drug plan</p>
+				</div>
+			</div>
+		</apex:outputPanel>
+	</div>
+</apex:page>

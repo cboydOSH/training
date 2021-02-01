@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Jerri L Stockett Partner User</description>
+    <description>The Producer&apos;s Group LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Jerri L Stockett Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>The Producer&apos;s Group LLC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VP_of_Sales</parentRole>
 </Role>

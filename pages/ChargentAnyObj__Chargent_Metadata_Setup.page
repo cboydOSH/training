@@ -1,0 +1,327 @@
+<!--
+ - Created by ericalexander on 1/13/17.
+ -->
+<!-- TODO: Add text about adding the related lists to the object layouts -->
+<apex:page id="Chargent_Metadata_Setup" controller="ChargentAnyObj.Chargent_Metadata_Utilities" standardStylesheets="false"
+           showHeader="false"
+           sidebar="true" applyHtmlTag="true" applyBodyTag="false" docType="html-5.0" cache="false"
+           action="{!checkToolingAPI}">
+
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<style>
+		.back-div{
+			position: absolute;
+			top: 50%;
+			left: .75rem;
+			transform: translateY(-50%);
+		}
+	</style>
+
+	<apex:includeScript value="{!URLFOR($Resource.ChargentAnyObj__AppFrontier_Assets,'/js/apiMetadata.js')}"/>
+
+	<apex:composition template="ChargentAnyObj__SLDS_Template">
+
+		<apex:define name="title">
+			<title>Chargent Anywhere Configuration Wizard</title>
+		</apex:define>
+
+		<apex:define name="body">
+			<!-- HEADER DIV -->
+			<apex:define name="header">
+				<div class="slds-notify slds-notify_alert slds-theme_alert-texture" role="alert">
+					<!--<span styleClass="slds-media__figure slds-float_left">-->
+					<div class="slds-icon_container xslds-icon-standard-back xslds-m-right_small back-div" title="Back">
+						<svg aria-hidden="true" class="slds-icon slds-icon-action-back slds-icon_medium"
+						     style="cursor: pointer;"
+						     onclick="gotoURL('/{!$CurrentPage.parameters.recId}');">
+							<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/action-sprite/svg/symbols.svg#back')}"></use>
+						</svg>
+
+					</div>
+
+					<h2 class="slds-text-heading_large">Chargent Anywhere Configuration Wizard</h2>
+					<!--</div>-->
+					<div class="slds-notify__close">
+						<!--<button id="homeBtn" class="slds-button slds-button_icon xslds-button_icon-inverse" title="Home">-->
+						<svg class="slds-icon slds-icon-standard-home slds-icon_medium" aria-hidden="true" onclick="goHome();" style="cursor: pointer;">
+							<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/standard-sprite/svg/symbols.svg#home')}"></use>
+						</svg>
+						<span class="slds-assistive-text">Close</span>
+						<!--</button>-->
+					</div>
+
+				</div>
+
+				<!--<div class="slds-clearfix slds-notify slds-notify&#45;&#45;alert slds-theme&#45;&#45;alert-texture" role="alert">-->
+					<!--<apex:outPutPanel layout="inline" styleClass="slds-media__figure slds-float&#45;&#45;left">-->
+
+						<!--<svg aria-hidden="true" class="slds-icon slds-icon-action-back slds-icon&#45;&#45;medium"-->
+						     <!--style="cursor: pointer;"-->
+						     <!--onclick="gotoURL('/{!$CurrentPage.parameters.recId}');">-->
+							<!--<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/action-sprite/svg/symbols.svg#back')}"></use>-->
+						<!--</svg>-->
+
+					<!--</apex:outPutPanel>-->
+
+					<!--<span class="slds-media__figure slds-float&#45;&#45;right">-->
+						<!--<svg aria-hidden="true"-->
+						     <!--class="slds-icon slds-icon-standard-home slds-icon&#45;&#45;medium"-->
+						     <!--style="cursor: pointer;"-->
+						     <!--onclick="goHome();">-->
+							<!--<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/standard-sprite/svg/symbols.svg#home')}"></use>-->
+						<!--</svg>-->
+					<!--</span>-->
+
+					<!--<div class="slds-text-align&#45;&#45;center slds-text-heading&#45;&#45;large">-->
+						<!--Chargent Anywhere Configuration Wizard-->
+					<!--</div>-->
+
+				<!--</div>-->
+
+			</apex:define>
+
+			<!-- ERROR ALERT DIV -->
+			<apex:outputPanel layout="block" id="msg_block" style="display: none;">
+				<div id="err_wrapper"
+				     class="slds-notify slds-notify--alert slds-theme--{!alertType} slds-theme--alert-texture"
+				     role="alert">
+					<h2>
+						<div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<svg aria-hidden="true"
+							     class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
+								<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/utility-sprite/svg/symbols.svg#' + if(alertType = 'success','check','ban'))}"></use>
+							</svg>
+							<span id="err_text"></span>
+						</div>
+					</h2>
+				</div>
+
+			</apex:outputPanel>
+
+			<apex:outputPanel id="config_wrapper" layout="block">
+				<apex:form >
+					<apex:actionFunction name="afterMetadataCall" action="{!afterMetadataCall}"
+					                     rerender="config_wrapper, package_block, post_processing">
+						<apex:param name="metadataResponse" assignTo="{!metadataResponse}" value=""/>
+					</apex:actionFunction>
+				</apex:form>
+
+				<!--Remote Site Block-->
+				<apex:outputPanel id="remote_site_block" layout="block"
+				                  styleClass="slds-grid--vertical slds-align--absolute-center slds-m-top--large"
+				                  rendered="{!OR(NOT(toolingOK),$CurrentPage.parameters.remote == 'true')}">
+
+					<div class="slds-card slds-small-size--6-of-6 slds-large-size--6-of-12">
+						<div class="slds-card__header slds-grid">
+							<header class="slds-media slds-media--center slds-has-flexi-truncate">
+								<div class="slds-media__figure" xmlns="http://www.w3.org/2000/svg"
+								     xmlns:xlink="http://www.w3.org/1999/xlink">
+									<svg aria-hidden="true"
+									     class="slds-icon slds-icon-custom-custom30 slds-icon--small">
+										<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/custom-sprite/svg/symbols.svg#custom30')}"></use>
+									</svg>
+								</div>
+								<div class="slds-media__body slds-truncate">
+									<h2>
+										<a href="javascript:void(0);" class="slds-text-link--reset">
+											<span class="slds-text-heading--small">This Organization</span>
+										</a>
+									</h2>
+								</div>
+							</header>
+							<div class="slds-no-flex">
+								<button id="tooling_btn" class="slds-button slds-button--neutral"
+								        onclick="$(this).attr('disabled','disabled'); showProcessing(); createRemoteSite(remoteSiteHosts,afterMetadataCall);">
+									Add Remote Site
+								</button>
+								<script>
+									if ({!toolingOk} && `{!JSENCODE($CurrentPage.parameters.remote)}` != 'true')
+									$('#tooling_btn').attr('disabled', true);
+								</script>
+
+							</div>
+						</div>
+						<div class="slds-card__body slds-text-align--center">A remote site setting for {!Host} will
+							be
+							used
+							to access the MetaData API to assist with configuring your Organization
+						</div>
+
+						<apex:outputPanel layout="block"
+						                  styleClass="slds-card__footer slds-text-align--center slds-modal__header"
+						                  rendered="{!!toolingOK}">
+							<div class="slds-notify_container">
+								<div class="slds-notify slds-notify--alert slds-theme--offline slds-theme--alert-texture"
+								     role="alert">
+									<h2>
+										<svg aria-hidden="true"
+										     class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small"
+										     xmlns:xlink="http://www.w3.org/1999/xlink">
+											<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
+										</svg>
+										Remote Site Setting Not Detected
+									</h2>
+								</div>
+							</div>
+						</apex:outputPanel>
+						<apex:outputPanel layout="block"
+						                  styleClass="slds-card__footer slds-text-align--center slds-modal__header"
+						                  rendered="{!toolingOK}">
+							<div class="slds-notify_container">
+								<div class="slds-notify slds-notify--alert slds-theme--success slds-theme--alert-texture"
+								     role="alert">
+									<h2>
+										<svg aria-hidden="true"
+										     class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small"
+										     xmlns:xlink="http://www.w3.org/1999/xlink">
+											<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+										</svg>
+										All Good
+									</h2>
+								</div>
+							</div>
+
+						</apex:outputPanel>
+
+
+					</div>
+
+				</apex:outputPanel>
+
+				<!-- Metadata Creation-->
+				<apex:outputPanel id="package_block" layout="block" styleClass="slds-m-top--large">
+					<apex:outputPanel layout="block" rendered="{!AND(toolingOK, $CurrentPage.parameters.remote != 'true')}">
+						<div class="slds-grid xslds-grid--vertical" style="opacity: {!IF(metadataSuccess,0.2,1)}">
+							<div class="slds-size--6-of-12 slds-container--center">
+								<div>
+									<h3 class="slds-section-title--divider">Creating Fields to Connect the Data</h3>
+								</div>
+								<div class="slds-box slds-theme--default">
+
+									<div class="slds-text-body--regular">
+										<p class="slds-m-bottom--small"><b>Chargent Anywhere</b> can help improve your time to collect payments as well as help with
+											reporting of those payments.
+											In order to ensure that users that need to use <b>Chargent Anywhere</b> can use it, we will need to create a few lookup fields
+											and assign the correct permissions for them.
+										</p>
+										<p class="slds-has-divider--bottom">
+											Below are the details of exactly what will be modified.  The risk here is pretty low.
+										</p>
+
+										<p class="slds-m-top--small">
+											A lookup field to {!objType} will be created (If one does not already exist on the object.) on
+											the following object(s):
+										</p>
+										<ul class="slds-m-top--x-small slds-list--dotted">
+											<li>{!oocName}</li>
+											<li>{!trxName}</li>
+											<li>{!prName}</li>
+										</ul>
+										<p class="slds-m-top--small">
+											A lookup field to Chargent Orders ({!oocName}) will be created (If one does not already exist on the object.) on
+											the following object(s):
+										</p>
+										<ul class="slds-m-top--x-small slds-list--dotted">
+											<li>{!objType}</li>
+										</ul>
+
+										<p class="slds-m-top--small">The Field Level Security for these fields will be applied to
+											the
+											following profiles:</p>
+
+										<ul class="slds-m-top--x-small slds-list--dotted">
+											<li>System Administrator</li>
+										</ul>
+										<p class="slds-m-top--small">The Field Level Security for these fields will be applied to
+											the
+											following permission sets:</p>
+
+										<ul class="slds-m-top--x-small slds-list--dotted">
+											<li>Chargent Anywhere Payment Console</li>
+											<li>Chargent Anywhere Payment Request</li>
+										</ul>
+
+
+										<p class="slds-text-body--regular slds-m-top--medium slds-text-align--center">
+											<b>Note: Modification of these fields may affect the functionality of Chargent Anywhere.</b>
+										</p>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+
+						<apex:outputPanel layout="block" rendered="{!!metadataSuccess}">
+
+							<div class="slds-align--absolute-center slds-m-top--medium">
+								<div class="slds-container--small">
+									<input class="slds-input" onkeyup="acknowledge($(this).val());"
+									       style="text-align: center;"
+									       placeholder="Type 'UNDERSTOOD'"/>
+								</div>
+							</div>
+
+							<div class="slds-align--absolute-center slds-m-top--large">
+								<button id="flds_btn" type="button" disabled="true"
+								        class="slds-is-disabled slds-button slds-button--brand"
+								        onclick="showProcessing(); createFields('{!oocName}','{!trxName}','{!prName}','{!fieldData}', afterMetadataCall);"
+								>
+									Create Relationship Fields
+								</button>
+							</div>
+						</apex:outputPanel>
+
+						<apex:outputPanel layout="block" rendered="{!metadataSuccess}">
+							<div class="slds-align--absolute-center slds-m-top--large">
+								<button id="flds_btn" type="button"
+								        class="slds-button slds-button--brand" onclick="gotoURL('/{!$CurrentPage.parameters.recId}');">Return to {!objType}
+									record
+								</button>
+							</div>
+						</apex:outputPanel>
+
+					</apex:outputPanel>
+				</apex:outputPanel>
+
+
+			</apex:outputPanel>
+
+			<!--APEX VARIABLES DIV-->
+			<apex:outputPanel id="post_processing">
+
+				<script>
+					var hasMessages = {!hasMessages};
+					var errorMessage = "{!errorMessage}";
+					var sessionId = '{!$Api.Session_ID}';
+					var sfHost = '{!Host}';
+					var ignoreMetadataErrors = `{!JSENCODE($CurrentPage.parameters.ignoreErrors)}`;
+					hideProcessing();
+					checkMessages();
+
+					var remoteSiteHosts = [];
+
+					remoteSiteHosts.push({
+						name: 'Chargent_Metadata_OrgAPI',
+						description: 'This Organization\'s API URL for the VisualForce Metadata API',
+						host: '{!Host}'
+					});
+
+					remoteSiteHosts.push({
+						name: 'Chargent_Tooling_OrgAPI',
+						description: 'This Organization\'s API URL',
+						host: '{!sfBaseHost}'
+					});
+
+				</script>
+
+			</apex:outputPanel>
+
+		</apex:define>
+	</apex:composition>
+	</html>
+
+
+</apex:page>

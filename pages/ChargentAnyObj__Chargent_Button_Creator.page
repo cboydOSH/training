@@ -1,0 +1,357 @@
+<!--
+ - Created by ericalexander on 2/23/17.
+ -->
+
+<apex:page id="Chargent_Button_Creator" controller="ChargentAnyObj.Chargent_Button_Creator"
+           showHeader="true"
+           sidebar="true" applyHtmlTag="true" applyBodyTag="false" docType="html-5.0" cache="false" standardStylesheets="false">
+
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<apex:includeScript value="{!URLFOR($Resource.ChargentAnyObj__AppFrontier_Assets,'/js/apiMetadata.js')}"/>
+
+	<apex:includeLightning />
+
+	<apex:composition template="ChargentAnyObj__SLDS_Template">
+
+
+		<apex:define name="title">
+			<title>Chargent Button Creator</title>
+		</apex:define>
+
+		<apex:define name="body">
+			<!-- HEADER DIV -->
+			<apex:define name="header">
+
+				<div class="slds-notify slds-notify_alert slds-theme_alert-texture" role="alert">
+					<!--<span id="homeBtn" class="slds-media__figure slds-float_right">-->
+					<!--<svg aria-hidden="true"-->
+					<!--class="slds-icon slds-icon-standard-home slds-icon_medium"-->
+					<!--style="cursor: pointer;"-->
+					<!--onclick="goHome();">-->
+					<!--<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/standard-sprite/svg/symbols.svg#home')}"></use>-->
+					<!--</svg>-->
+					<!--</span>-->
+
+					<!--<div class="slds-text-align_center slds-text-heading_large xslds-size_1-of-1">-->
+					<h2 class="slds-text-heading_large">Chargent Button Creator</h2>
+					<!--</div>-->
+					<div class="slds-notify__close">
+						<!--<button id="homeBtn" class="slds-button slds-button_icon xslds-button_icon-inverse" title="Home">-->
+						<svg class="slds-icon slds-icon-standard-home slds-icon_medium" aria-hidden="true" onclick="goHome();" style="cursor: pointer;">
+							<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/standard-sprite/svg/symbols.svg#home')}"></use>
+						</svg>
+						<span class="slds-assistive-text">Close</span>
+						<!--</button>-->
+					</div>
+
+				</div>
+
+			</apex:define>
+
+			<!-- ERROR ALERT DIV -->
+			<apex:outputPanel layout="block" id="msg_block" style="display: none;">
+				<div id="err_wrapper"
+				     class="slds-notify slds-notify_alert slds-theme_{!alertType} slds-theme_alert-texture"
+				     role="alert">
+					<h2>
+						<div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<svg aria-hidden="true"
+							     class="slds-icon icon-text-email slds-icon_small slds-m-right_x-small">
+								<use xlink:href="{!URLFOR($Resource.ChargentAnyObj__Appfrontier_Assets, '/assets/icons/utility-sprite/svg/symbols.svg#' + if(alertType = 'success','check','ban'))}"></use>
+							</svg>
+							<span id="err_text"></span>
+						</div>
+					</h2>
+				</div>
+
+			</apex:outputPanel>
+
+			<apex:outputPanel id="body-wrapper">
+				<apex:form rendered="{!!metadataSuccess}">
+
+					<apex:actionFunction name="setObjName" action="{!fireSetters}" reRender="field-name-select, currency-field-name-select, currency-recurring-field-name-select, post_processing"/>
+					<apex:actionFunction name="setGeneric" action="{!fireSetters}" reRender="post_processing"/>
+
+					<apex:actionFunction name="afterMetadataCall" action="{!afterMetadataCall}"
+					                     rerender="body-wrapper, msg_block, post_processing">
+						<apex:param name="metadataResponse" assignTo="{!metadataResponse}" value=""/>
+					</apex:actionFunction>
+
+					<div class="slds-grid slds-grid_align-center">
+						<div class="slds-size_2-of-4 slds-form_stacked">
+
+							<div class="slds-p-top_medium  slds-form-element is-required" id="obj-select">
+								<!-- This just holds the place on the page for the lightning component so it does not look weird -->
+								<div id="obj-select-placeholder">
+									<label class="slds-form-element__label" for="obj_name_id">
+										<abbr class="slds-required" title="required">*</abbr>
+										Select Object
+									</label>
+
+									<div class="slds-form-element__control">
+										<input class="slds-input"/>
+									<!--<select class="slds-select" id="obj_name_id">-->
+										<!--<option value="&#45;&#45;Not Selected&#45;&#45;">&#45;&#45;Not Selected&#45;&#45;</option>-->
+										<!--<apex:repeat value="{!getLabels}" var="oName">-->
+											<!--<option value="{!oName.objectAPIName}">{!oName.objectLabel}</option>-->
+										<!--</apex:repeat>-->
+									<!--</select>-->
+									<!--<script>-->
+										<!--$('#obj_name_id').on('change', function () {-->
+											<!--$('[id$=obj_name_value]').val($('#obj_name_id option:selected').val());-->
+											<!--setObjName();-->
+										<!--});-->
+										<!--$('#obj_name_id').val($('[id$=obj_name_value]').val());-->
+
+									<!--</script>-->
+
+									</div>
+								</div>
+								<apex:inputHidden id="obj_name_value"
+								                  value="{!objName}"/>
+
+							</div>
+
+
+							<div class="slds-p-top_medium slds-form-element xis-required">
+								<label class="slds-form-element__label" for="field_name_id">
+									<!--<abbr class="slds-required" title="required">*</abbr>-->
+									Select <b>Account</b> Lookup Field
+								</label>
+
+								<apex:outputPanel layout="block" id="field-name-select"
+								                  styleClass="slds-form-element__control">
+									<select class="slds-select" id="field_name_id">
+										<option value="--Not Selected--">--Not Selected--</option>
+										<apex:repeat value="{!objfields}" var="oFields">
+											<option value="{!oFields}">{!oFields}</option>
+										</apex:repeat>
+									</select>
+									<apex:inputHidden id="field_name_value"
+									                  value="{!selectedField}"/>
+									<script>
+										$('#field_name_id').on('change', function () {
+											$('[id$=field_name_value]').val($('#field_name_id option:selected').val());
+											setGeneric();
+										});
+										$('#field_name_id').val($('[id$=field_name_value]').val());
+
+										if ('{!JSENCODE(objName)}' == '' || '{!JSENCODE(objName)}' == '--Not Selected--') $('#field_name_id').prop('disabled', 'disabled');
+
+										if('{!JSENCODE(objName)}' == '' || '{!JSENCODE(objName)}' == '--Not Selected--'){
+
+											$('#flds_btn').prop('disabled', 'disabled').addClass('slds-is-disabled');
+										}else{
+
+											$('#flds_btn').prop('disabled',false).removeClass('slds-is-disabled');
+										}
+
+									</script>
+
+								</apex:outputPanel>
+							</div>
+
+							<div class="slds-p-top_medium slds-form-element">
+								<label class="slds-form-element__label" for="currency_field_name_id">
+									<!--<abbr class="slds-required" title="required">*</abbr>-->
+									Select a currency field to use for defaulting amounts (if desired)
+								</label>
+
+								<apex:outputPanel layout="block" id="currency-field-name-select"
+								                  styleClass="slds-form-element__control">
+									<select class="slds-select" id="currency_field_name_id">
+										<option value="--Not Selected--">--Not Selected--</option>
+										<apex:repeat value="{!objCurrencyfields}" var="curFields">
+											<option value="{!curFields}">{!objCurrencyfields[curFields]} ({!curFields})</option>
+										</apex:repeat>
+									</select>
+									<apex:inputHidden id="currency_field_name_value"
+									                  value="{!selectedCurrencyField}"/>
+									<script>
+										$('#currency_field_name_id').on('change', function () {
+											$('[id$=currency_field_name_value]').val($('#currency_field_name_id option:selected').val());
+											setGeneric();
+										});
+										$('#currency_field_name_id').val($('[id$=currency_field_name_value]').val());
+
+										if ('{!JSENCODE(objName)}' == '' || '{!JSENCODE(objName)}' == '--Not Selected--') $('#currency_field_name_id').prop('disabled', 'disabled');
+
+										if('{!JSENCODE(objName)}' == '' || '{!JSENCODE(objName)}' == '--Not Selected--'){
+
+											$('#flds_btn').prop('disabled', 'disabled').addClass('slds-is-disabled');
+										}else{
+
+											$('#flds_btn').prop('disabled',false).removeClass('slds-is-disabled');
+										}
+
+									</script>
+
+								</apex:outputPanel>
+							</div>
+
+
+							<div class="slds-p-top_medium slds-form-element">
+								<label class="slds-form-element__label" for="currency_recurring_field_name_id">
+									<!--<abbr class="slds-required" title="required">*</abbr>-->
+									Select a currency field to use for defaulting recurring amounts (if desired)
+								</label>
+
+								<apex:outputPanel layout="block" id="currency-recurring-field-name-select"
+								                  styleClass="slds-form-element__control">
+									<select class="slds-select" id="currency_recurring_field_name_id">
+										<option value="--Not Selected--">--Not Selected--</option>
+										<apex:repeat value="{!objCurrencyfields}" var="curFields">
+											<option value="{!curFields}">{!objCurrencyfields[curFields]} ({!curFields})</option>
+										</apex:repeat>
+									</select>
+									<apex:inputHidden id="currency_recurring_field_name_value"
+									                  value="{!selectedRecurringCurrencyField}"/>
+									<script>
+										$('#currency_recurring_field_name_id').on('change', function () {
+											$('[id$=currency_recurring_field_name_value]').val($('#currency_recurring_field_name_id option:selected').val());
+											setGeneric();
+										});
+										$('#currency_recurring_field_name_id').val($('[id$=currency_recurring_field_name_value]').val());
+
+										if ('{!JSENCODE(objName)}' == '' || '{!JSENCODE(objName)}' == '--Not Selected--') $('#currency_recurring_field_name_id').prop('disabled', 'disabled');
+
+										if('{!JSENCODE(objName)}' == '' || '{!JSENCODE(objName)}' == '--Not Selected--'){
+
+											$('#flds_btn').prop('disabled', 'disabled').addClass('slds-is-disabled');
+										}else{
+
+											$('#flds_btn').prob('disabled',false).removeClass('slds-is-disabled');
+										}
+
+									</script>
+
+								</apex:outputPanel>
+							</div>
+
+
+							<div class="slds-p-top_medium slds-form-element">
+								<label class="slds-checkbox_toggle slds-grid slds-grid_align-center">
+									<span class="slds-form-element__label slds-m-bottom_none">Limit Contacts to
+										Account</span>
+									<apex:inputCheckbox id="checkbox" html-aria-describedby="toggle-desc"
+									                    value="{!limitContacts}" onChange="setGeneric();"/>
+									<span id="toggle-desc" class="slds-checkbox_faux_container" aria-live="assertive">
+										<span class="slds-checkbox_faux"></span>
+										<span class="slds-checkbox_on">Yes</span>
+										<span class="slds-checkbox_off">No</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="slds-p-top_x-large slds-align_absolute-center">
+						<button id="flds_btn" type="button" disabled="true"
+						        class="slds-button slds-button_brand slds-is-disabled"
+						        onclick="doCreateButtons();"
+						>
+							Create Buttons
+						</button>
+
+						<!--<apex:commandButton value="Create Buttons" onClick="showProcessing();" action="{!createButtons}"-->
+						<!--styleClass="slds-button slds-button--brand" reRender="body-wrapper, post_processing, msg_block"/>-->
+					</div>
+				</apex:form>
+
+				<apex:outputPanel layout="block" rendered="{!metadataSuccess}">
+
+					<div class="slds-m-top_large slds-align_absolute-center">
+						<img class="" style="max-width: 10rem;" src="{!URLFOR($Resource.ChargentAnyObj__AppFrontier_Assets, '/svg/circle-tick-green.svg')}" alt="Success"/>
+					</div>
+
+					<div class="slds-p-top_medium slds-text-align_center slds-text-heading_large">Remember to add to the {!objName} Page Layouts!</div>
+					<div class="slds-p-top_x-large slds-align_absolute-center">
+						<button id="reload_btn" type="button"
+						        class="slds-button slds-button_brand"
+						        onclick="gotoURL('/apex/ChargentAnyObj__Chargent_Button_Creator');"
+						>
+							Create Buttons for another Object
+						</button>
+					</div>
+				</apex:outputPanel>
+
+				<script>
+					var selectCreated = false;
+					var metadataSuccess = "{!metadataSuccess}";
+					showProcessing();
+
+					console.log(metadataSuccess);
+
+					if(metadataSuccess === "false") {
+						$Lightning.use("ChargentAnyObj:Auto_Complete_Lookup", function () {
+							$Lightning.createComponent(
+								"ChargentAnyObj:Strike_Lookup",
+								{
+									"object": "SObject",
+									"placeholder": "Enter SObject Name",
+									"iconName": "standard:sobject",
+									"loadingMessage": "Loading...",
+									"errorMessage": "Invalid Input",
+									"showRecentRecords": "false",
+									"required": "true",
+									"label": "Select SObject",
+									"elementHandle": "SObject",
+									"value": "{!JSENCODE(objName)}"
+
+								},
+								"obj-select",
+								function (cmp) {
+
+
+									// if(!cmp.isValid()) return;
+									$('#obj-select-placeholder').addClass("slds-hide");
+//                        toggleConsole(function(){
+// 					var loadingDivElt = document.getElementById("loader");
+// 					loadingDivElt.style.display = 'none';
+//                        });
+									selectCreated = true;
+									hideProcessing();
+									$A.eventService.addHandler({
+										event: 'ChargentAnyObj:autoCompleteSelected',
+										handler: function (event) {
+											showProcessing();
+											$('[id$=obj_name_value]').val(event.getParams().objAPIName);
+											if (hasMessages === false || event.getParams().objAPIName.length == 0) setObjName(); //If metadata error do not set as setting clears the message
+										}
+									});
+								});
+						});
+
+					}
+				</script>
+			</apex:outputPanel>
+
+			<!--APEX VARIABLES DIV-->
+			<apex:outputPanel id="post_processing">
+
+				<script>
+					var hasMessages = {!hasMessages};
+					var errorMessage = "{!errorMessage}";
+					var sessionId = '{!$Api.Session_ID}';
+					var sfHost = '{!Host}';
+					var ignoreMetadataErrors = `{!JSENCODE($CurrentPage.parameters.ignoreErrors)}`;
+
+					if(selectCreated === true) hideProcessing();
+					checkMessages();
+
+					function doCreateButtons(){
+						showProcessing();
+						createButtons('{!JSENCODE(objName)}','{!JSENCODE(orderObjName)}','{!JSENCODE(pcButtonRL)}','{!JSENCODE(prButtonRL)}','{!JSENCODE(pcButton)}','{!JSENCODE(prButton)}','{!JSENCODE(addCheckButton)}','{!JSENCODE(addCashButton)}', afterMetadataCall);
+					}
+
+				</script>
+
+			</apex:outputPanel>
+
+		</apex:define>
+	</apex:composition>
+	</html>
+
+
+</apex:page>

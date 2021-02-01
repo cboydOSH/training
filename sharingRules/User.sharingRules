@@ -1,3 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_Guest_User_Owner</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Guest User Owner</label>
+        <sharedTo>
+            <group>Community_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CommunityNickname</field>
+            <operation>equals</operation>
+            <value>ownerguestusernickname</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingGuestRules>
+        <fullName>GuestUserDefaultShare</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>GuestUserDefaultShare</label>
+        <sharedTo>
+            <guestUser>Member_Community</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Username</field>
+            <operation>equals</operation>
+            <value>andres.deus@arcsona.com.devvl2</value>
+        </criteriaItems>
+    </sharingGuestRules>
+</SharingRules>

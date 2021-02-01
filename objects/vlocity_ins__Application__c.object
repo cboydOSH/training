@@ -516,11 +516,6 @@
                     <label>Individual Dental</label>
                 </value>
                 <value>
-                    <fullName>Individual Provider</fullName>
-                    <default>false</default>
-                    <label>Individual Provider</label>
-                </value>
-                <value>
                     <fullName>Individual Vision</fullName>
                     <default>false</default>
                     <label>Individual Vision</label>
@@ -539,11 +534,6 @@
                     <fullName>Medicare Part D</fullName>
                     <default>false</default>
                     <label>Medicare Part D</label>
-                </value>
-                <value>
-                    <fullName>Organizational Provider</fullName>
-                    <default>false</default>
-                    <label>Organizational Provider</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

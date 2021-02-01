@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Silver JARS LLC Partner User</description>
+    <description>Transflux, Inc Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Silver JARS LLC Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Transflux, Inc Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

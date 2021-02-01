@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Wendy Crafton Partner User</description>
+    <description>Health Reform Team Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Wendy Crafton Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>Health Reform Team Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VP_of_Sales</parentRole>
 </Role>

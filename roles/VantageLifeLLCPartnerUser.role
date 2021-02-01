@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Robert Baker Partner User</description>
+    <description>Vantage Life, LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Robert Baker Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Vantage Life, LLC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

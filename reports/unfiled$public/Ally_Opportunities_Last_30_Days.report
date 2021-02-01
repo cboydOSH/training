@@ -51,6 +51,7 @@
             <operator>equals</operator>
             <value>Compliance,Kick-off Meeting,Contracting,Data Transfer,Enrollment,Marketing,Training,Closed Won,Closed Lost</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

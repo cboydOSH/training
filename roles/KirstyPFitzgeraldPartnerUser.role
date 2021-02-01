@@ -5,6 +5,6 @@
     <description>Kirsty P Fitzgerald Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Kirsty P Fitzgerald Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

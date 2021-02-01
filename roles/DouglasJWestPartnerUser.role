@@ -5,6 +5,6 @@
     <description>Douglas J West Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Douglas J West Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

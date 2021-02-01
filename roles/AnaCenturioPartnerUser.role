@@ -5,6 +5,6 @@
     <description>Ana Centurio Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Ana Centurio Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

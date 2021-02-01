@@ -5,6 +5,6 @@
     <description>SHAWNDA DENAY SHORT Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>SHAWNDA DENAY SHORT Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

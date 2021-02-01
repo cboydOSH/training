@@ -40,11 +40,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>NPN_No__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>SSN__c</field>
+                <field>Approval_Status__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -74,19 +70,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Approval_Status__c</field>
+                <field>NPN_No__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Demographic_Groups__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Preferred_Language__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Ethnicity__c</field>
+                <field>SSN__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -331,26 +319,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>DocuSign_Sent__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>DocuSign_Received__c</field>
-            </layoutItems>
-            <layoutItems>
-                <emptySpace>true</emptySpace>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Active_in_Admin123__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Salesforce_ID_in_Admin123__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Agent_ID__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -425,11 +398,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>FeedItem.ContentPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>9</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Background_Check</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>0</sortOrder>
@@ -460,11 +428,6 @@
             <sortOrder>5</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewEvent</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>FeedItem.ContentNote</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>7</sortOrder>
@@ -473,6 +436,16 @@
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>8</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.ContentPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>9</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>NewEvent</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>6</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -510,11 +483,11 @@
     </relatedContent>
     <relatedLists>
         <fields>ContactName</fields>
-        <fields>ContactEmail</fields>
-        <fields>ContactPhone</fields>
         <fields>Role</fields>
         <fields>ContactTitle</fields>
         <fields>IsPrimary</fields>
+        <fields>ContactPhone</fields>
+        <fields>ContactEmail</fields>
         <fields>ContactAccountName</fields>
         <relatedList>RelatedContactRoleList</relatedList>
     </relatedLists>

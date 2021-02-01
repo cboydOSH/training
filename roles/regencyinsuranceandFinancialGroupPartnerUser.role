@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Mary Go Partner User</description>
+    <description>regency insurance and Financial Group Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Mary Go Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>regency insurance and Financial Group Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

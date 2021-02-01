@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>CUST_CREATED_NAME</field>
-    </columns>
-    <columns>
-        <field>CUST_OWNER_NAME</field>
-    </columns>
-    <columns>
         <field>CUST_NAME</field>
     </columns>
     <columns>
@@ -21,16 +15,21 @@
         <field>Work_Item__c.Age__c</field>
     </columns>
     <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
         <field>CUST_LAST_UPDATE</field>
     </columns>
     <filter>
-        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Alassandria Mack,Ali Klevgard,Buddy Combs,Robert Bogdan</value>
+            <value>Alassandria Mack,Ali Klevgard</value>
         </criteriaItems>
         <criteriaItems>
             <column>Work_Item__c.Status__c</column>
@@ -39,13 +38,7 @@
             <operator>notEqual</operator>
             <value>Completed,Cancelled</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>CUST_OWNER_NAME</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Tiffany Palacios,Alassandria Mack,Ali Klevgard,Buddy Combs,Robert Bogdan,Compliance Queue</value>
-        </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -58,12 +51,7 @@
         <field>CUST_CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Work_Item__c.Owner_Name__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>COMPLIANCE WORK ITEMS</name>
+    <name>WORK ITEMS</name>
     <params>
         <name>co</name>
         <value>1</value>

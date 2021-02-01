@@ -5,6 +5,6 @@
     <description>Eleanor Archer Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Eleanor Archer Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

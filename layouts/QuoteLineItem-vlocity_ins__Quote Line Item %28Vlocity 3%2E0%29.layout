@@ -30,6 +30,10 @@
                 <behavior>Required</behavior>
                 <field>Quantity</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Future_Price__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

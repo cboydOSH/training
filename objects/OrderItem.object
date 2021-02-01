@@ -354,11 +354,6 @@
                     <default>false</default>
                     <label>Pending</label>
                 </value>
-                <value>
-                    <fullName>Rejected</fullName>
-                    <default>false</default>
-                    <label>Rejected</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>

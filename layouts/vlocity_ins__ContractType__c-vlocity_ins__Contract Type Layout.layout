@@ -58,6 +58,22 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Contract Terms</label>
+        <layoutColumns>
+            <layoutItems>
+                <height>200</height>
+                <page>vlocity_ins__ContractTypeTerm</page>
+                <showLabel>false</showLabel>
+                <showScrollbars>false</showScrollbars>
+                <width>100%</width>
+            </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
+    </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
         <fields>vlocity_ins__SetupValue__c</fields>
@@ -70,7 +86,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h1500000XanZV</masterLabel>
+        <masterLabel>00h8A000001HcFu</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

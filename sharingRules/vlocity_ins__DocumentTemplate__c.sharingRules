@@ -1,3 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Document_Tamplate_to_Community</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Document Tamplate to Community</label>
+        <sharedTo>
+            <group>Community_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>equals</operation>
+            <value>OSH_Contract_Master_Test</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingGuestRules>
+        <fullName>GuestUserSharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>GuestUserSharing</label>
+        <sharedTo>
+            <guestUser>Member_Community</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingGuestRules>
+</SharingRules>

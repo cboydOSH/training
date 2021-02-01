@@ -1,0 +1,1336 @@
+<apex:page controller="ChargentBase.SitePaymentController" extensions="ChargentOrders.SitePaymentController" showHeader="false" standardStylesheets="true" id="page">
+	<apex:includeScript id="script2" value="{!URLFOR($Resource.ChargentBase__CreditCardJS, 'bililiteRange.js')}" loadOnReady="false"/>
+	<meta http-equiv="X-Frame-Options" content="deny" />
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<style> html{display : none ; } </style>
+	<script>
+		if( self == top ) {
+			document.documentElement.style.display = 'block' ;
+		} else {
+			top.location = self.location ;
+		}
+	</script>
+
+	<apex:outputPanel layout="block" styleClass="page">
+
+		<apex:stylesheet value="{!URLFOR($Resource.ChargentBase__CreditCardJS, 'style.css')}"/>
+		<apex:stylesheet value="{!URLFOR($Resource.ChargentBase__CreditCardJS, 'sitepaymentStyle.css')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/jquery.min.js')}"/>
+
+		<style>
+			@-moz-document url-prefix() {
+				.ccjs-card .ccjs-expiration:after {
+					top: 0em !important;
+				}
+			}
+		</style>
+
+		<apex:outputPanel id="pageContent" layout="block" styleClass="content">
+			<apex:outputPanel id="msgblock" layout="block">
+				<apex:pageMessage id="msg" summary="{!debugMessage}" severity="{!debugStatus}" strength="2" rendered="{!IF(OR(status = 'error', status = 'confirm', invalidCardInfo), true, false) }" escape="false"/>
+			</apex:outputPanel>
+
+			<!-- WARNING -->
+			<apex:outputPanel id="warningmsg" layout="block" style="display: none;">
+				<apex:pageMessage summary="Your Credit Card information is invalid or empty." severity="warning" strength="2" escape="false"/>
+			</apex:outputPanel>
+
+			<apex:outputPanel id="emailwarning" layout="block" style="display: none;">
+				<apex:pageMessage summary="Your Email is invalid." severity="warning" strength="2" escape="false"/>
+			</apex:outputPanel>
+
+			<apex:outputPanel id="cardValid" layout="block" style="display: none;">
+				<apex:pageMessage id="cardValidMessage" summary="" severity="warning" strength="2" escape="false"/>
+			</apex:outputPanel>
+
+			<apex:outputPanel id="warningCheck" layout="block" style="display: none;">
+				<apex:pageMessage summary="Your Bank Account information is invalid or empty." severity="warning" strength="2" escape="false"/>
+			</apex:outputPanel>
+
+			<apex:outputPanel id="warningUpdate" layout="block">
+				<apex:pageMessage summary="Updating/Saving billing information failed" severity="warning" strength="2" escape="false" rendered="{!IF(updateOOCstatus = 'updateError', true, false)}"/>
+			</apex:outputPanel>
+
+			<apex:outputPanel id="warningLicense" layout="block" style="display: none;">
+				<apex:pageMessage summary="Please accept License Agreement" severity="warning" strength="2" escape="false"/>
+			</apex:outputPanel>
+
+			<apex:form id="frm">
+
+				<div id="spinner" style="display: none; z-index: 99999; width: 100%; height: 100%; position: absolute;" align="center" >
+					<img src="{!URLFOR($Resource.ChargentBase__CreditCardJS, 'big-spinner.gif')}" style="margin-top: 50%;"/>
+				</div>
+
+				<apex:outputPanel layout="block" rendered="{!IF(status == 'paid', true, false)}" styleClass="paidmsg">
+					<h2>{!paidStatusMessage}</h2>
+				</apex:outputPanel>
+
+				<apex:outputPanel layout="block" rendered="{!IF(status == 'confirm', true, false)}">
+					<apex:outputPanel layout="block" styleClass="messageInfoPanel" rendered="{!CONTAINS(debugMessage, 'Payment Approved.')}">
+						<apex:outputPanel rendered="{!NOT(CONTAINS(debugMessage, 'Update error.'))}">
+							<apex:outputText styleClass="text" value="{!'Payment Approved. We had an issue writing the transaction record to the database, your admin (' + adminEmailAddress + ') was notified.'}" escape="false" rendered="{!AND(statusType == 'charge', CONTAINS(debugMessage, 'Payment Approved.'), NOT(ISBLANK(adminEmailAddress)))}"/>
+							<apex:outputText styleClass="text" value="{!'Payment Approved. We had an issue writing the transaction record to the database, your admin was notified.'}" escape="false" rendered="{!AND(statusType == 'charge', CONTAINS(debugMessage, 'Payment Approved.'), ISBLANK(adminEmailAddress))}"/>
+						</apex:outputPanel>
+						<apex:outputPanel rendered="{!CONTAINS(debugMessage, 'Update error.')}">
+							<apex:outputText styleClass="text" value="{!'Payment Approved. We had an issue updating the {!objectName} record, your admin (' + adminEmailAddress + ') was notified.'}" escape="false" rendered="{!AND(statusType == 'charge', CONTAINS(debugMessage, 'Payment Approved.'), NOT(ISBLANK(adminEmailAddress)))}"/>
+							<apex:outputText styleClass="text" value="{!'Payment Approved. We had an issue updating the {!objectName} record, your admin was notified.'}" escape="false" rendered="{!AND(statusType == 'charge', CONTAINS(debugMessage, 'Payment Approved.'), ISBLANK(adminEmailAddress))}"/>
+						</apex:outputPanel>
+						<apex:outputText styleClass="text" value="{!accountUpdaterConfirmationText}" rendered="{!IF(statusType == 'update', true, false)}"></apex:outputText>
+						<apex:outputText styleClass="text" value="Thank you for using Chargent!"></apex:outputText> <br/><br/>
+					</apex:outputPanel>
+					<apex:outputPanel layout="block" styleClass="messageInfoPanel" rendered="{!NOT(CONTAINS(debugMessage, 'Payment Approved.'))}">
+						<apex:outputText styleClass="text" value="{!paymentConfirmationText}" rendered="{!IF(statusType == 'charge', true, false)}"></apex:outputText>
+						<apex:outputText styleClass="text" value="{!accountUpdaterConfirmationText}" rendered="{!IF(statusType == 'update', true, false)}"></apex:outputText>
+						<apex:outputText styleClass="text" value="Thank you for using Chargent!"></apex:outputText> <br/><br/>
+					</apex:outputPanel>
+				</apex:outputPanel>
+
+				<apex:outputPanel layout="block" rendered="{!IF(status == 'error', true, false)}" style="text-align: left;" >
+
+					<apex:outputPanel layout="block" styleClass="messageInfoPanel" rendered="{!IF(statusGtw == 'error', true, false)}">
+						<apex:outputLabel title="Error" value="" rendered="{!IF(statusType == 'update', true, false)}" escape="false"/>
+					</apex:outputPanel>
+
+					<apex:outputPanel layout="block" styleClass="messageInfoPanel" rendered="{!IF(statusGtw != 'error', true, false)}">
+						<apex:outputLabel title="Error" value="{!paymentErrorText}" rendered="{!IF(statusType == 'charge', true, false)}"/>
+						<apex:outputLabel title="Error" value="{!accountUpdaterErrorText}" rendered="{!IF(statusType == 'update', true, false)}"/>
+
+					</apex:outputPanel>
+				</apex:outputPanel>
+
+				<apex:outputPanel id="chargePanel" layout="block" rendered="{!IF(status == 'charge', true, false)}">
+					<apex:panelGrid columns="2" styleClass="info" rendered="{!NOT(showUpdateInput)}" >
+						<apex:outputText value="For your billing address we have: " /><br/>
+						<apex:outputText value="{!fullBillingAddress}" /> <br/>
+						<apex:commandLink value="Update Billing Address" action="{!showInput}" oncomplete="oncompleteUpdateBillingAddress()" rerender="chargePanel, initCreditCard" styleClass="link" /> <!-- rendered="{!NOT(requiredUpdate)}" -->
+					</apex:panelGrid>
+
+					<apex:panelGrid columns="2" styleClass="info" rendered="{!showUpdateInput}">
+						<apex:outputText value="First Name" />
+						<apex:inputText value="{!firstName}" styleClass="inputText" maxlength="64" id="billing_First"/>
+
+						<apex:outputText value="Last Name" />
+						<apex:inputText value="{!lastName}" styleClass="inputText" maxlength="64" id="billing_Last"/>
+
+						<apex:outputText value="Address line 1" />
+						<apex:inputText value="{!billingAddressLine}" styleClass="inputText" maxlength="255" id="billingAddressLine"/>
+
+						<apex:outputText value="Address line 2" />
+						<apex:inputText value="{!billingAddressLine2}" styleClass="inputText" maxlength="255" id="billingAddressLine2"/>
+
+						<apex:outputText value="City/Town" />
+						<apex:inputText value="{!billingCity}" styleClass="inputText" maxlength="64" id="billingCity"/>
+
+						<apex:outputText value="State/Province" />
+						<apex:selectList styleClass="inputText" value="{!billingState}" size="1" id="inputText">
+							<apex:selectOptions value="{!billingStateList}"/>
+						</apex:selectList>
+
+						<apex:outputText value="Zip/Postal code" />
+						<apex:inputText value="{!billingZip}" styleClass="inputText" maxlength="10" id="billingZip"/>
+
+						<apex:outputText value="Email" />
+						<apex:inputText id="email" value="{!billingEmail}" maxlength="64" styleClass="inputText"/>
+
+						<apex:outputText value="Country" />
+						<apex:inputText value="{!billingCountry}" maxlength="64" styleClass="inputText" id="billingCountry"/>
+
+						<apex:commandLink id="saveBillingAddress" value="Save Billing Address" action="{!saveInput}" rerender="chargePanel, initCreditCard, warningUpdate" styleClass="link"/>
+					</apex:panelGrid>
+
+					<br/><br/>
+					<apex:panelGrid columns="2" styleClass="info">
+						<apex:outputText value="Charge amount" />
+						<apex:outputText value="{!currencySymbol} {!amount}" style="float: right;"/>
+
+					</apex:panelGrid>
+
+					<br/>
+
+				</apex:outputPanel>
+
+				<apex:outputPanel layout="block" rendered="{!IF(status == 'update', true, false)}">
+
+					<apex:panelGrid columns="2" styleClass="info" >
+						<apex:outputText value="First Name" />
+						<apex:inputText value="{!firstName}" styleClass="inputText" maxlength="64" id="billing_FirstUpdate"/>
+
+						<apex:outputText value="Last Name" />
+						<apex:inputText value="{!lastName}" styleClass="inputText" maxlength="64" id="billing_LastUpdate"/>
+
+						<apex:outputText value="Address line 1" />
+						<apex:inputText value="{!billingAddressLine}" styleClass="inputText" maxlength="255" id="billingAddressLineUpdate"/>
+
+						<apex:outputText value="Address line 2" />
+						<apex:inputText value="{!billingAddressLine2}" styleClass="inputText" maxlength="255" id="billingAddressLine2Update"/>
+
+						<apex:outputText value="City/Town" />
+						<apex:inputText value="{!billingCity}" styleClass="inputText" maxlength="64" id="billingCityUpdate"/>
+
+						<apex:outputText value="State/Province" />
+						<apex:selectList styleClass="inputText" value="{!billingState}" size="1" id="inputTextUpdate">
+							<apex:selectOptions value="{!billingStateList}"/>
+						</apex:selectList>
+
+						<apex:outputText value="Zip/Postal code" />
+						<apex:inputText value="{!billingZip}" styleClass="inputText" maxlength="10" id="billingZipUpdate"/>
+
+						<apex:outputText value="Email" />
+						<apex:inputText id="emailUpdate" value="{!billingEmail}" maxlength="64" styleClass="inputText" />
+
+						<apex:outputText value="Country" />
+						<apex:inputText value="{!billingCountry}" styleClass="inputText" maxlength="64" id="billingCountryUpdate"/>
+
+					</apex:panelGrid>
+					<br/>
+
+				</apex:outputPanel>
+
+				<!-- CHOOSE PAYMENT METHOD -->
+				<apex:outputPanel layout="block" styleClass="info" id="pm_form" rendered="{!IF(OR(AND(status != 'confirm', status != 'error', status != 'paid', status == 'charge', payu, !ISBLANK(availablePaymentMethods)), AND(status != 'confirm', status != 'error', status != 'paid', status == 'charge', acceptACH, !ISBLANK(availablePaymentMethods))), true, false)}" >
+					<apex:outputPanel layout="inline" id="pm_form_header">
+						<apex:outputText value="Choose Payment method" />
+					</apex:outputPanel>
+					<apex:selectRadio value="{!paymentMethod}" id="pm_form_radio_value">
+						<apex:selectOption itemValue="Credit Card" itemLabel="Credit Card" rendered="{!IF(CONTAINS(availablePaymentMethods, 'Credit Card'), true, false)}"/>
+						<apex:selectOption itemValue="Check" itemLabel="Bank Account" rendered="{!IF(AND(CONTAINS(availablePaymentMethods, 'eCheck'), acceptACH), true, false)}"/>
+						<apex:selectOption itemValue="Bank Transfer" itemLabel="Bank" rendered="{!IF(AND(CONTAINS(availablePaymentMethods, 'Bank Transfer'), payu), true, false)}"/>
+						<apex:selectOption itemValue="Cash Transfer" itemLabel="Cash" rendered="{!IF(AND(CONTAINS(availablePaymentMethods, 'Cash Transfer'), payu), true, false)}"/>
+					</apex:selectRadio>
+				</apex:outputPanel>
+
+				<!-- CC FORM -->
+				<apex:outputPanel id="cc_form" layout="block" rendered="{!IF(AND(status != 'confirm', status != 'error', status != 'paid'), true, false)}">
+					<div class="ccjs-card" id="innerForm">
+						<label class="ccjs-number">
+							Card Number
+							<apex:inputText id="cardNumberInput" value="{!cardNumber}" styleClass="ccjs-number cardNumberInput "/>
+						</label>
+
+						<label class="ccjs-csc">
+							Security Code
+							<apex:inputText id="securityCodeInput" value="{!securityCode}" styleClass="ccjs-csc"/>
+						</label>
+
+						<button type="button" class="ccjs-csc-help">?</button>
+
+						<label class="ccjs-name">
+							Name on Card
+							<apex:inputText value="{!nameOnCard}" styleClass="ccjs-name" id="nameOnCardInput" maxlength="129"/>
+						</label>
+
+						<fieldset class="ccjs-expiration">
+							<legend>Expiration</legend>
+
+							<apex:selectList value="{!expMonth}" styleClass="ccjs-month" size="1">
+								<apex:selectOption itemValue="MM" itemLabel="MM" itemDisabled="true"/>
+								<apex:selectOption itemValue="01" itemLabel="01"/>
+								<apex:selectOption itemValue="02" itemLabel="02"/>
+								<apex:selectOption itemValue="03" itemLabel="03"/>
+								<apex:selectOption itemValue="04" itemLabel="04"/>
+								<apex:selectOption itemValue="05" itemLabel="05"/>
+								<apex:selectOption itemValue="06" itemLabel="06"/>
+								<apex:selectOption itemValue="07" itemLabel="07"/>
+								<apex:selectOption itemValue="08" itemLabel="08"/>
+								<apex:selectOption itemValue="09" itemLabel="09"/>
+								<apex:selectOption itemValue="10" itemLabel="10"/>
+								<apex:selectOption itemValue="11" itemLabel="11"/>
+								<apex:selectOption itemValue="12" itemLabel="12"/>
+							</apex:selectList>
+
+							<apex:selectList value="{!expYear}" styleClass="ccjs-year" size="1">
+								<apex:selectOptions value="{!expYearOptions}"/>
+							</apex:selectList>
+						</fieldset>
+
+						<apex:inputHidden value="{!cardType}" id="cardType" />
+						<select name="card-type" class="ccjs-hidden-card-type" id="cardTypeSelect">
+							<option value="Visa" class="ccjs-visa">Visa</option>
+							<option value="Mastercard" class="ccjs-mastercard">Mastercard</option>
+							<option value="Discover" class="ccjs-discover">Discover</option>
+							<option value="American Express" class="ccjs-amex">American Express</option>
+							<option value="MC Eurocard" class="ccjs-jcb">MC Eurocard</option>
+							<option value="UK Maestro" class="ccjs-maestro">UK Maestro</option>
+							<option value="JCB Card" class="ccjs-jcb">JCB Card</option>
+							<option value="Electron" class="ccjs-jcb">Electron</option>
+							<option value="Diners Club" class="ccjs-diners-club">Diners Club</option>
+						</select>
+
+					</div>
+				</apex:outputPanel>
+
+				<!-- ECHECK FORM -->
+
+				<apex:outputPanel layout="block" id="echeck_form" style="display: none;">
+
+					<style>
+						.echeck_box {
+							border: 0 none;
+							margin: 0 auto 20px auto;
+							background: #ededed;
+							max-width: 368px;
+							min-height: 224px;
+							-webkit-border-radius: .75em;
+							-moz-border-radius: .75em;
+							border-radius: .75em;
+						}
+						.echeck_box div {
+							font-family: inherit;
+							font-weight: normal;
+							font-style: normal;
+							font-size: 15px;
+							color: #5E656B;
+							left: 1.5em;
+							line-height: 1.5em;
+							height: 1.5em;
+							margin-bottom: 2.5em;
+						}
+
+						.echeck_content {
+							margin: 10px;
+						}
+
+						.echeck_box div input, .echeck_select {
+							font-size: 1em;
+							height: 1.9em;
+							padding-left: .5em;
+							max-width: 150px;
+						}
+						.echeck_BAN{
+							font-size: 1em;
+							height: 1.9em;
+							padding-left: .25em;
+							min-width: 315px;
+						}
+					</style>
+
+					<apex:outputPanel layout="block" styleClass="echeck_box">
+
+						<apex:outputPanel layout="block" styleClass="echeck_content">
+							<apex:panelGrid id="table" columns="2" width="320" >
+								<apex:panelGroup >
+									<div style="margin-top: 1em;">
+										Routing Number
+										<apex:inputText id="bankRoutingNumber" value="{!bankRoutingNumber}" styleClass="echeck_input"/>
+									</div>
+								</apex:panelGroup>
+
+								<apex:panelGroup >
+									<div style="margin-top: 1em;">
+										Account Number
+										<apex:inputText id="bankAccountNumber" value="{!bankAccountNumber}" styleClass="echeck_input"/>
+									</div>
+								</apex:panelGroup>
+							</apex:panelGrid>
+
+							<apex:panelGroup >
+								<div style="width: 324px;padding-left: 2.5px;">
+									Account Name<br/> <!--  (First Name, Last Name) -->
+									<apex:inputText id="bankAccountName" value="{!bankAccountName}" styleClass="echeck_BAN"/>
+								</div>
+							</apex:panelGroup>
+
+							<apex:panelGrid columns="2" style="width: 330px">
+								<apex:panelGroup >
+									<div>
+										Bank Name<br/>
+										<apex:inputText value="{!bankName}" id="bankName" styleClass="echeck_BN"/>
+									</div>
+								</apex:panelGroup>
+
+								<apex:panelGroup >
+									<div>
+										Account Type
+										<apex:selectList value="{!bankAccountType}" id="echeck_type" size="1" styleClass="echeck_select">
+											<apex:selectOption itemValue="Checking" itemLabel="Checking"/>
+											<apex:selectOption itemValue="Savings" itemLabel="Savings" />
+										</apex:selectList>
+									</div>
+								</apex:panelGroup>
+							</apex:panelGrid>
+						</apex:outputPanel>
+
+					</apex:outputPanel>
+				</apex:outputPanel>
+
+				<!-- BANK TRANSFER FORM -->
+				<apex:outputPanel layout="block" id="bank_form" style="display: none;" rendered="{!IF(AND(status != 'confirm', status != 'error', status != 'paid', status == 'charge', payu), true, false)}">
+					<style type="text/css">
+						.bank_form_div {
+							width: 368px;
+							border-radius: .75em;
+							background: #ededed;
+							margin: 0 auto 20px auto;
+							font-size: 16px;
+						}
+
+						.bank_form_div td input, .bank_form_div td select {
+							font-size: 1em;
+							height: 1.9em;
+							padding-left: .25em;
+							min-width: 315px;
+							margin-top: 5px;
+						}
+
+						.bank_form_br {
+							height: 5px;
+						}
+					</style>
+
+					<center>
+						<apex:outputPanel layout="block" id="bank_form_div" styleClass="bank_form_div">
+							<apex:panelGrid columns="1" cellspacing="10px;">
+								<apex:panelGroup id="btbankGroup">
+									<apex:outputText value="Select Your Bank (*)"/> <br/>
+									<apex:selectList value="{!btBank}" size="1">
+										<apex:selectOption itemValue="BANCO AV VILLAS" itemLabel="BANCO AV VILLAS"/>
+										<apex:selectOption itemValue="BANCO CAJA SOCIAL" itemLabel="BANCO CAJA SOCIAL"/>
+										<apex:selectOption itemValue="BANCO COLPATRIA" itemLabel="BANCO COLPATRIA"/>
+										<apex:selectOption itemValue="BANCO CORBANCA S.A" itemLabel="BANCO CORBANCA S.A"/>
+										<apex:selectOption itemValue="BANCO DAVIVIENDA" itemLabel="BANCO DAVIVIENDA"/>
+										<apex:selectOption itemValue="BANCO DE BOGOTA" itemLabel="BANCO DE BOGOTA"/>
+										<apex:selectOption itemValue="BANCO DE OCCIDENTE" itemLabel="BANCO DE OCCIDENTE"/>
+										<apex:selectOption itemValue="BANCO FALABELLA" itemLabel="BANCO FALABELLA"/>
+										<apex:selectOption itemValue="BANCO GNB SUDAMERIS" itemLabel="BANCO GNB SUDAMERIS"/>
+										<apex:selectOption itemValue="BANCO PICHINCHA S.A" itemLabel="BANCO PICHINCHA S.A"/>
+										<apex:selectOption itemValue="BANCO POPULAR" itemLabel="BANCO POPULAR"/>
+										<apex:selectOption itemValue="BANCO PROCREDIT" itemLabel="BANCO PROCREDIT"/>
+										<apex:selectOption itemValue="BANCOLOMBIA" itemLabel="BANCOLOMBIA"/>
+										<apex:selectOption itemValue="BANCOMEVA S.A" itemLabel="BANCOMEVA S.A"/>
+										<apex:selectOption itemValue="BBVA COLOMBIA S.A" itemLabel="BBVA COLOMBIA S.A"/>
+										<apex:selectOption itemValue="CITIBANK" itemLabel="CITIBANK"/>
+										<apex:selectOption itemValue="HELM BANK S.A" itemLabel="HELM BANK S.A"/>
+										<apex:selectOption itemValue="HSBC COLOMBIA" itemLabel="HSBC COLOMBIA"/>
+									</apex:selectList>
+								</apex:panelGroup>
+
+								<apex:panelGroup id="btaccountGroup">
+									<apex:outputText value="Account Type (*)"/> <br/>
+									<apex:selectList value="{!btAccountType}" size="1">
+										<apex:selectOption itemValue="Natural" itemLabel="Natural"/>
+										<apex:selectOption itemValue="Legal" itemLabel="Legal"/>
+									</apex:selectList>
+								</apex:panelGroup>
+
+								<apex:panelGroup id="bttypeGroup">
+									<apex:outputText value="Type ID (*)"/> <br/>
+									<apex:selectList value="{!btTypeId}" size="1">
+										<apex:selectOption itemValue="Certificate Of Citizenship" itemLabel="Certificate Of Citizenship"/>
+										<apex:selectOption itemValue="Foreigner Id Card" itemLabel="Foreigner Id Card"/>
+										<apex:selectOption itemValue="Cellphone Number" itemLabel="Cellphone Number"/>
+										<apex:selectOption itemValue="Foreigner Identification Document" itemLabel="Foreigner Identification Document"/>
+										<apex:selectOption itemValue="Client Unique Identifier" itemLabel="Client Unique Identifier"/>
+										<apex:selectOption itemValue="N.I.T." itemLabel="N.I.T."/>
+										<apex:selectOption itemValue="Passport" itemLabel="Passport"/>
+										<apex:selectOption itemValue="Birth Certificate" itemLabel="Birth Certificate"/>
+										<apex:selectOption itemValue="Identity Card" itemLabel="Identity Card"/>
+									</apex:selectList>
+								</apex:panelGroup>
+
+
+								<apex:panelGroup id="btidnumberGroup">
+									<apex:outputText value="Id Number (*)"/> <br/>
+									<apex:inputText value="{!btIdNumber}" />
+								</apex:panelGroup>
+
+								<apex:panelGroup id="btnameGroup">
+									<apex:outputText value="Name (*)"/> <br/>
+									<apex:inputText value="{!btName}" />
+								</apex:panelGroup>
+
+								<apex:panelGroup id="btphoneGroup">
+									<apex:outputText value="Daytime Phone"/> <br/>
+									<apex:inputText value="{!btDaytimePhone}" />
+								</apex:panelGroup>
+
+								<apex:panelGroup id="btemailGroup">
+									<apex:outputText value="E-mail"/> <br/>
+									<apex:inputText value="{!btEmail}" />
+								</apex:panelGroup>
+							</apex:panelGrid>
+						</apex:outputPanel>
+					</center>
+				</apex:outputPanel>
+
+				<!-- CASH TRANSFER FORM -->
+				<apex:outputPanel layout="block" id="cash_form" style="display: none;" rendered="{!IF(AND(status != 'confirm', status != 'error', status != 'paid', status == 'charge', payu), true, false)}">
+					<style type="text/css">
+						.cash_form_div {
+							width: 368px;
+							border-radius: .75em;
+							background: #ededed;
+							margin: 0 auto 20px auto;
+							font-size: 16px;
+						}
+
+						.cash_form_div td input, .cash_form_div td select {
+							font-size: 1em;
+							height: 1.9em;
+							padding-left: .25em;
+							min-width: 315px;
+							margin-top: 5px;
+						}
+
+						.cash_form_br {
+							height: 5px;
+						}
+					</style>
+
+					<center>
+						<apex:outputPanel layout="block" id="cash_form_div" styleClass="cash_form_div">
+							<apex:panelGrid columns="1" cellspacing="10px;">
+
+								<apex:panelGroup id="ctidnumberGroup">
+									<apex:outputText value="Id Number (*)"/> <br/>
+									<apex:inputText value="{!ctIdNumber}" />
+								</apex:panelGroup>
+
+								<apex:panelGroup id="ctnameGroup">
+									<apex:outputText value="Name (*)"/> <br/>
+									<apex:inputText value="{!ctName}" />
+								</apex:panelGroup>
+
+								<apex:panelGroup id="ctphoneGroup">
+									<apex:outputText value="Daytime Phone"/> <br/>
+									<apex:inputText value="{!ctDaytimePhone}" />
+								</apex:panelGroup>
+
+								<apex:panelGroup id="ctemailGroup">
+									<apex:outputText value="E-mail"/> <br/>
+									<apex:inputText value="{!ctEmail}" />
+								</apex:panelGroup>
+							</apex:panelGrid>
+						</apex:outputPanel>
+					</center>
+				</apex:outputPanel>
+
+				<apex:outputPanel >
+
+					<apex:outputPanel id="feesAndCharges" layout="block" style="display: none;margin: 4px 20px;">
+						<table style="width: 100%;">
+							<thead>
+							<tr>
+								<td colspan="4">Fees / Charges</td>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Credit Card</td>
+								<td>1.87%</td>
+								<td style="padding-left: 4%;">Transaction Fee</td>
+								<td>$0.44</td>
+							</tr>
+							</tbody>
+						</table>
+					</apex:outputPanel>
+
+					<apex:outputPanel id="feesAndChargesACH" layout="block" style="display: none;margin: 4px 20px;">
+						<table style="width: 100%;">
+							<thead>
+							<tr>
+								<td colspan="4">Fees / Charges</td>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>One Time Setup Fee</td>
+								<td>$3.30</td>
+								<td style="padding-left: 4%;">Visa/Mastercard</td>
+								<td>2.2% (min $1.25)</td>
+							</tr>
+							<tr>
+								<td>Bank Account</td>
+								<td>$1.25</td>
+								<td style="padding-left: 4%;">Amex/Diners</td>
+								<td>4.4% (min $1.25)</td>
+							</tr>
+							<tr>
+								<td>Optional SMS Reminder</td>
+								<td>$0.28</td>
+								<td style="padding-left: 4%;">Payer Dishonour Fee</td>
+								<td>$11.90</td>
+							</tr>
+							</tbody>
+						</table>
+					</apex:outputPanel>
+
+					<apex:outputPanel id="preLicenseCheck" layout="block" style="display: none;margin: 4px 20px;">
+						<p>I / We authorise Ezidebit Pty Ltd ACN 096 902 813 (User ID No 165969) to debit my/our account at the Financial Institution identified above through the Bulk Electronic Clearing System (BECS) in accordance with the Debit Arrangement stated above and this Direct Debit Request and as per the Ezidebit DDR Service Agreement (Ver 1.8) provided.</p>
+					</apex:outputPanel>
+
+					<apex:outputPanel id="panelLicense" style="display: none;margin: 4px 20px;" >
+						<p>Service Agreement</p>
+						<div><textarea style="overflow-y: scroll; -webkit-overflow-scrolling: touch;width:100%" cols="50" readonly="readonly" rows="7">	I/We hereby authorise Ezidebit Pty Ltd ACN 096 902 813 (Direct Debit User ID number 165969, 303909, 301203, 234040, 234072, 428198) (herein referred to as "Ezidebit") to make periodic debits on behalf of the "Business" as indicated on the attached Direct Debit Request (herein referred to as "the Business").
+
+	I/We acknowledge that Ezidebit is acting as a Direct Debit Agent for the Business and that Ezidebit does not provide any goods or services (other than the direct debit collection services to me/us for the Business pursuant to the Direct Debit Request and this DDR Service Agreement) and has no express or implied liability in regards to the goods and services provided by the Business or the terms and conditions of any agreement that I/we have with the Business.
+
+	I/We acknowledge that the debit amount will be debited from my/our account according to the terms and conditions of my/our agreement with the Business and the terms and conditions of the Direct Debit Request (and specifically the Debit Arrangement and the Fees/Charges detailed in the Direct Debit Request) and this DDR Service Agreement.
+
+	I/We acknowledge that bank account and/or credit card details have been verified against a recent bank statement to ensure accuracy of the details provided and I/we will contact my/our financial institution if I/we are uncertain of the accuracy of these details.
+
+	I/We acknowledge that is my/our responsibility to ensure that there are sufficient cleared funds in the nominated account by the due date to enable the direct debit to be honoured on the debit date. Direct debits normally occur overnight, however transactions can take up to three (3) business days depending on the financial institution. Accordingly, I/we acknowledge and agree that sufficient funds will remain in the nominated account until the direct debit amount has been debited from the account and that if there are insufficient funds available, I/we agree that Ezidebit will not be held responsible for any fees and charges that may be charged by either my/our or its financial institution.
+
+	I/We acknowledge that there may be a delay in processing the debit if:-
+(1) there is a public or bank holiday on the day of the debit, or any day after the debit date;
+(2) a payment request is received by Ezidebit on a day that is not a banking business day in Queensland;
+(3) a payment request is received after normal Ezidebit cut off times, being 3:00pm Queensland time, Monday to Friday.
+Any payments that fall due on any of the above will be processed on the next business day.
+
+	I/We authorise Ezidebit to vary the amount of the payments from time to time as may be agreed by me/us and the Business as provided for within my/our agreement with the Business. I/We authorise Ezidebit to vary the amount of the payments upon receiving instructions from the Business of the agreed variations. I/We do not require Ezidebit to notify me/us of such variations to the debit amount.
+
+	I/We acknowledge that Ezidebit is to provide at least 14 days' notice if it proposes to vary any of the terms and conditions of the Direct Debit Request or this DDR Service Agreement including varying any of the terms of the debit arrangements between us.
+
+	I/We acknowledge that I/we will contact the Business if I/we wish to alter or defer any of the debit arrangements.
+
+	I/We acknowledge that any request by me/us to stop or cancel the debit arrangements will be directed to the Business.
+
+	I/We acknowledge that any disputed debit payments will be directed to the Business and/or Ezidebit. If no resolution is forthcoming, I/we agree to contact my/our financial institution.
+
+	I/We acknowledge that if a debit is returned by my/our financial institution as unpaid, a failed payment fee of up to $11.90 is payable by me/us to Ezidebit. I/We will also be responsible for any fees and charges applied by my/our financial institution for each unsuccessful debit attempt together with any collection fees, including but not limited to any solicitor fees and/or collection agent fee as may be incurred by Ezidebit.
+
+	I/We authorise Ezidebit to attempt to re-process any unsuccessful payments as advised by the Business.
+
+	I/We acknowledge that certain fees and charges (including setup, variation, SMS or processing fees) may apply to the Direct Debit Request and may be payable to Ezidebit and subject to my/our agreement with the Business agree to pay those fees and charges to Ezidebit.
+	Credit Card Payments
+
+	I/We acknowledge that "Ezidebit" will appear as the merchant for all payments from my/our credit card. I/We acknowledge and agree that Ezidebit will not be held liable for any disputed transactions resulting in the non supply of goods and/or services and that all disputes will be directed to the Business as Ezidebit is acting only as a Direct Debit Agent for the Business.
+
+	I/We acknowledge that Credit Card Fees are a minimum of the Transaction Fee or the Credit Card Fee, whichever is greater as detailed on the Direct Debit Request.
+
+	I/We appoint Ezidebit as my/our exclusive agent with regard to the control, management and protection of my/our personal information (relating to the Business and contained in this DDR Service Agreement). I/We irrevocably authorise Ezidebit to take all necessary action (which Ezidebit deems necessary) to protect and/or correct, if required, my/our personal information, including (but not limited to) correcting account numbers and providing such information to relevant third parties and otherwise disclosing or allowing access to my/our personal information to third parties in accordance with the Ezidebit Privacy Policy.
+	Other than as provided in this Agreement or the Ezidebit Privacy Policy, Ezidebit will keep your information about your nominated account at the financial institution private and confidential unless this information is required to investigate a claim made relating to an alleged incorrect or wrongful debit, to be referred to a debt collection agency for the purposes of debt collection, or as otherwise required or permitted by law. Further information relating to Ezidebit's Privacy Policy can be found at http://www.ezidebit.com/au/privacy-policy/.
+
+	I/We hereby irrevocably authorise, direct and instruct any third party who holds/stores my/our personal information (relating to the Business and contained in this DDR Service Agreement) to release and provide such information to Ezidebit on my/our written request.
+
+	I/We authorise:
+a) Ezidebit to verify and/or correct, if necessary, details of my/our account with my/our financial institution; and
+b) my/our financial institution to release information allowing Ezidebit to verify my/our account details.
+						</textarea></div>
+						<div>
+							<p><input id="licenseCheck" type="checkbox" />I agree to the Terms and Conditions of the Direct Debit Request and Service Agreement <em>*</em></p>
+						</div>
+					</apex:outputPanel>
+				</apex:outputPanel>
+
+				<!-- BUTTONS -->
+				<apex:outputPanel rendered="{!IF(status == 'charge', true, false)}">
+					<apex:outputPanel layout="block" styleClass="btns">
+						<apex:commandButton id="btn" value="Charge" action="{!charge}" style="margin-right: 10px;" rerender="frm, msgblock" oncomplete="hideSpinner(); enableButton(this); loadCreditCardJS();"/>
+						<apex:commandButton value="Cancel"  action="{!processCancel}" rendered="{!IF(cancelURL != '', true, false)}"/>
+						<apex:commandButton id="cancelbtn" value="Cancel" rendered="{!IF(cancelURL != '', false, true)}"/>
+					</apex:outputPanel>
+					<br/>
+
+				</apex:outputPanel>
+
+				<apex:outputPanel rendered="{!IF(status == 'update', true, false)}">
+					<apex:outputPanel styleClass="btns">
+						<apex:commandButton id="updbtn" value="Update" action="{!updateAccountInfoComp}" rerender="frm, msgblock" oncomplete="hideSpinner(); enableButton(this); loadCreditCardJS();" />
+					</apex:outputPanel>
+
+				</apex:outputPanel>
+
+				<apex:includeScript id="script" value="{!URLFOR($Resource.ChargentBase__CreditCardJS, 'creditcardjs.js')}" loadOnReady="true"/>
+				<apex:actionFunction action="{!showInvalidCardInfoMessage}" name="showInvalidCardInfoMessage"></apex:actionFunction>
+			</apex:form>
+
+			<script type="text/javascript">
+				window.addEventListener('load', function() {
+					if (document.getElementById('page:frm:saveBillingAddress')) {
+						var saveBillingAddressAction = document.getElementById('page:frm:saveBillingAddress').onclick;
+						document.getElementById('page:frm:saveBillingAddress').onclick = function () {
+							if (!checkValidFields() || !isValidEmail()) {
+								return false;
+							}
+							saveBillingAddressAction();
+						};
+					}
+
+					if (document.getElementById('page:frm:pm_form_radio_value')) {
+						document.getElementById('page:frm:pm_form_radio_value').onclick = function () {
+							showPaymentForm();
+						};
+					}
+
+					if (document.getElementById('page:frm:btn')) {
+						var btnAction = document.getElementById('page:frm:btn').onclick;
+						document.getElementById('page:frm:btn').onclick = function () {
+							if (!isValidEchekForm()) {
+								return false;
+							}
+							if (!checkValidFields()) {
+								return false;
+							}
+							if (!isValidEmail()) {
+								return false;
+							}
+							if (!hideActionButton()) {
+								return false;
+							}
+							if (!valid()) {
+								return false;
+							}
+							showSpinner();
+							disableButton(this);
+							btnAction();
+						};
+					}
+
+					if (document.getElementById('page:frm:cancelbtn')) {
+						document.getElementById('page:frm:cancelbtn').onclick = function () {
+							window.close();
+							return false;
+						};
+					}
+
+					if (document.getElementById('page:frm:updbtn')) {
+						var updbtnAction = document.getElementById('page:frm:updbtn').onclick;
+						document.getElementById('page:frm:updbtn').onclick = function () {
+							if (!isValidEchekForm()) {
+								return false;
+							}
+							if (!checkValidFields()) {
+								return false;
+							}
+							if (!isValidEmail()) {
+								return false;
+							}
+							if (!valid()) {
+								return false;
+							}
+							showSpinner();
+							disableButton(this);
+							updbtnAction();
+						};
+					}
+
+					if (document.getElementById('page:frm:nameOnCardInput')) {
+						document.getElementById('page:frm:nameOnCardInput').onchange = function () {
+							onchangedCardName();
+						}
+					}
+
+					if (document.getElementById('cardTypeSelect')) {
+						document.getElementById('cardTypeSelect').onchange = function () {
+							cardtype(this.value);
+						}
+					}
+
+					if (document.getElementById('page:frm:cardNumberInput') && document.getElementById('page:frm:cardNumberInput').nextSibling) {
+						document.getElementById('page:frm:cardNumberInput').nextSibling.onchange = function () {
+							isAvailableCreditCard();
+						}
+					}
+				});
+
+				oncompleteUpdateBillingAddress = function () {
+					filler();
+
+					if (document.getElementById('page:frm:billing_First')) {
+						document.getElementById('page:frm:billing_First').onchange = function () {
+							filler();
+						}
+					}
+
+					if (document.getElementById('page:frm:billing_Last')) {
+						document.getElementById('page:frm:billing_Last').onchange = function () {
+							filler();
+						}
+					}
+
+					if (document.getElementById('page:frm:billing_FirstUpdate')) {
+						document.getElementById('page:frm:billing_FirstUpdate').onchange = function () {
+							filler();
+						}
+					}
+
+					if (document.getElementById('page:frm:billing_LastUpdate')) {
+						document.getElementById('page:frm:billing_LastUpdate').onchange = function () {
+							filler();
+						}
+					}
+				}
+			</script>
+
+			<script type="text/javascript" id="initCreditCard">
+
+				window.addEventListener('load', function() {
+					var inputs = document.getElementsByTagName('input');
+					for (var i = 0; i < inputs.length; i++) {
+						var id = String(inputs[i].id);
+						if (id.indexOf('securityCodeInput') != -1) {
+							inputs[i].setAttribute('type', 'password');
+						}
+					}
+
+					if ({!payu} || {!acceptACH}) {
+						showPaymentForm();
+					}
+
+					onloadFiler();
+					showLicense();
+				});
+
+				function closeAllForms() {
+					if (document.getElementById("page:frm:cc_form") != null) {
+						document.getElementById("page:frm:cc_form").style.display = "none";
+					}
+					if (document.getElementById("page:frm:echeck_form") != null) {
+						document.getElementById("page:frm:echeck_form").style.display = "none";
+					}
+					if (document.getElementById("page:frm:bank_form") != null) {
+						document.getElementById("page:frm:bank_form").style.display = "none";
+					}
+					if (document.getElementById("page:frm:cash_form") != null) {
+						document.getElementById("page:frm:cash_form").style.display = "none";
+					}
+				}
+
+				function getCheckedPaymentMethod() {
+					if('{!JSENCODE(status)}' == 'update') return 'Credit Card';
+					var buttons = document.getElementsByName('page:frm:pm_form_radio_value');
+					for (i=0; i < buttons.length; i++) {
+						if (buttons[i].checked) {
+							return buttons[i].value;
+						}
+					}
+
+					// Only one Payment method available
+					if (buttons[0] != null) {
+						return buttons[0].value;
+					}
+					return 'Credit Card';
+				}
+
+				function hideActionButton(){
+					var checkbox = document.getElementById("licenseCheck");
+					console.log(checkbox.checked);
+					var Ezidebit = {!itsEzidebit};
+					if (getCheckedPaymentMethod() =='Credit Card') {
+						document.getElementById('page:warningLicense').style.display = "none";
+						return true;
+					}
+					else if (checkbox.checked && Ezidebit ) {
+						document.getElementById('page:warningLicense').style.display = "none";
+						return true;
+					} else if (!Ezidebit) {
+						return true;
+					} else {
+						document.getElementById('page:warningLicense').style.display = "block";
+						return false;
+					}
+				}
+
+
+				function showLicense() {
+					if (getCheckedPaymentMethod() == 'Credit Card' && {!itsEzidebit}) {
+						document.getElementById("page:frm:panelLicense").style.display = "none";
+						document.getElementById("page:frm:preLicenseCheck").style.display = "none";
+						document.getElementById("page:frm:feesAndCharges").style.display = "block";
+						document.getElementById("page:frm:feesAndChargesACH").style.display = "none";
+					} else if (getCheckedPaymentMethod() == 'Check' && {!itsEzidebit}) {
+						document.getElementById("page:frm:panelLicense").style.display = "block";
+						document.getElementById("page:frm:preLicenseCheck").style.display = "block";
+						document.getElementById("page:frm:feesAndCharges").style.display = "none";
+						document.getElementById("page:frm:feesAndChargesACH").style.display = "block";
+					}
+
+				}
+
+				function showPaymentForm() {
+					closeAllForms();
+
+					if (getCheckedPaymentMethod() == 'Credit Card') {
+						$('[id*=warningCheck]').css('display', 'none');
+						document.getElementById("page:frm:cc_form").style.display = "block";
+						if ({!itsEzidebit}) {
+							document.getElementById("page:frm:panelLicense").style.display = "none";
+							document.getElementById("page:frm:preLicenseCheck").style.display = "none";
+							document.getElementById("page:frm:feesAndCharges").style.display = "block";
+							document.getElementById("page:frm:feesAndChargesACH").style.display = "none";
+						}
+						isAvailableCreditCard();
+						return;
+					}
+
+					if (getCheckedPaymentMethod() == 'Check') {
+						enableButtons();
+						$('[id*=warningmsg]').css('display', 'none');
+						document.getElementById("page:cardValid").style.display = 'none';
+						document.getElementById("page:frm:echeck_form").style.display = "block";
+						if ({!itsEzidebit}) {
+							document.getElementById("page:frm:panelLicense").style.display = "block";
+							document.getElementById("page:frm:preLicenseCheck").style.display = "block";
+							document.getElementById("page:frm:feesAndCharges").style.display = "none";
+							document.getElementById("page:frm:feesAndChargesACH").style.display = "block";
+						}
+						return;
+					}
+
+					if (getCheckedPaymentMethod() == 'Bank Transfer') {
+						enableButtons();
+						$('[id*=warningCheck]').css('display', 'none');
+						$('[id*=warningmsg]').css('display', 'none');
+						document.getElementById("page:cardValid").style.display = 'none';
+						document.getElementById("page:frm:bank_form").style.display = "block";
+						return;
+					}
+
+					if (getCheckedPaymentMethod() == 'Cash Transfer') {
+						enableButtons();
+						$('[id*=warningCheck]').css('display', 'none');
+						$('[id*=warningmsg]').css('display', 'none');
+						document.getElementById("page:cardValid").style.display = 'none';
+						document.getElementById("page:frm:cash_form").style.display = "block";
+						return;
+					}
+
+				}
+
+				function valid() {
+					if (document.getElementById("page:frm:cc_form").style.display == "none") {
+						return true;
+					}
+					if (!creditcardjs.isValid()) {
+						checkRequiredFields();
+						document.getElementById("page:warningmsg").style.display = "block";
+						return false;
+					}
+					else {
+						document.getElementById("page:warningmsg").style.display = "none";
+						if(!checkRequiredFields()) {
+							return false;
+						}
+						return true;
+					}
+				}
+
+				function disableButton(b) {
+					b.disabled = true;
+					b.setAttribute('class', 'btn btnDisabled');
+				}
+
+				function enableButton(b) {
+					b.disabled = false;
+					b.setAttribute('class', 'btn');
+				}
+
+				function setCardType() {
+					var cardtypeval = document.getElementById('cardTypeSelect').value;
+					document.getElementById('page:frm:cardType').value = cardtypeval;
+					return cardtypeval;
+				}
+
+				function cardtype(val) {
+					document.getElementById('page:frm:cardType').value = val;
+					return val;
+				}
+
+				function checkRequiredFields() {
+					var err = false;
+					var style = "1px solid red";
+					var addr = document.getElementById('page:frm:reqAddress');
+					if (addr == null) {
+						return true;
+					}
+					if (addr.value == '') {
+						addr.style.border = style;
+						err = true;
+					} else {
+						addr.style.border = "";
+					}
+					var city = document.getElementById('page:frm:reqCity');
+					if (city.value == '') {
+						city.style.border = style;
+						err = true;
+					} else {
+						city.style.border = "";
+					}
+					var state = document.getElementById('page:frm:reqState');
+					if (state.value == '') {
+						state.style.border = style;
+						err = true;
+					} else {
+						state.style.border = "";
+					}
+					var zip = document.getElementById('page:frm:reqZip');
+					if (zip.value == '') {
+						zip.style.border = style;
+						err = true;
+					} else {
+						zip.style.border = "";
+					}
+					var country = document.getElementById('page:frm:reqCountry');
+					if (country.value == '') {
+						country.style.border = style;
+						err = true;
+					} else {
+						country.style.border = "";
+					}
+
+					return !err;
+				}
+
+				function isValidEmail() {
+					var regexp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+					var email = document.getElementById('page:frm:email');
+					if (email == null) {
+						email = document.getElementById('page:frm:mobileEmail');
+					}
+					if ('{!JSENCODE(status)}' == 'update') {
+						email = document.getElementById('page:frm:emailUpdate');
+					}
+
+					if (email != null && regexp.test(email.value) == false && email.value != '') {
+						document.getElementById('page:emailwarning').style.display = 'block';
+						scroll(0,0);
+						return false;
+					}
+
+					document.getElementById('page:emailwarning').style.display = 'none';
+					return true;
+				}
+
+				function checkValidFields() {
+					var result = true;
+					var messageText = '';
+					var firstName = document.getElementById('page:frm:billing_First');
+					if ('{!JSENCODE(status)}' == 'update') {
+						firstName = document.getElementById('page:frm:billing_FirstUpdate');
+					}
+					if (firstName != null) {
+						if (firstName.value.length > 64) {
+							messageText = messageText + '"First Name"';
+							result = false;
+						}
+					}
+
+					var lastName = document.getElementById('page:frm:billing_Last');
+					if ('{!JSENCODE(status)}' == 'update') {
+						lastName = document.getElementById('page:frm:billing_LastUpdate');
+					}
+					if (lastName != null) {
+						if (lastName.value.length > 64) {
+
+							if (messageText.length > 0) {
+								messageText = messageText + ', "Last Name"';
+							} else {
+								messageText = messageText + '"Last Name"';
+							}
+
+							result = false;
+						}
+					}
+
+					var billingAddressLine = document.getElementById('page:frm:billingAddressLine');
+					if ('{!JSENCODE(status)}' == 'update') {
+						billingAddressLine = document.getElementById('page:frm:billingAddressLineUpdate');
+					}
+					if (billingAddressLine != null) {
+						if (billingAddressLine.value.length > 255) {
+
+							if (messageText.length > 0) {
+								messageText = messageText + ', "Address line 1"';
+							} else {
+								messageText = messageText + '"Address line 1"';
+							}
+
+							result = false;
+						}
+					}
+
+					var billingAddressLine2 = document.getElementById('page:frm:billingAddressLine2');
+					if ('{!JSENCODE(status)}' == 'update') {
+						document.getElementById('page:frm:billingAddressLine2Update');
+					}
+					if (billingAddressLine2 != null) {
+						if (billingAddressLine2.value.length > 255) {
+
+							if (messageText.length > 0) {
+								messageText = messageText + ', "Address line 2"';
+							} else {
+								messageText = messageText + '"Address line 2"';
+							}
+
+							result = false;
+						}
+					}
+
+					var billingCity = document.getElementById('page:frm:billingCity');
+					if ('{!JSENCODE(status)}' == 'update') {
+						billingCity = document.getElementById('page:frm:billingCityUpdate');
+					}
+					if (billingCity != null) {
+						if (billingCity.value.length > 64) {
+
+							if (messageText.length > 0) {
+								messageText = messageText + ', "City/Town"';
+							} else {
+								messageText = messageText + '"City/Town"';
+							}
+
+							result = false;
+						}
+					}
+
+					var billingCountry = document.getElementById('page:frm:billingCountry');
+					if ('{!JSENCODE(status)}' == 'update') {
+						billingCountry = document.getElementById('page:frm:billingCountryUpdate');
+					}
+					if (billingCountry != null) {
+						if (billingCountry.value.length > 64) {
+
+							if (messageText.length > 0) {
+								messageText = messageText + ', "Country"';
+							} else {
+								messageText = messageText + '"Country"';
+							}
+
+							result = false;
+						}
+					}
+
+					var billingZip = document.getElementById('page:frm:billingZip');
+					if ('{!JSENCODE(status)}' == 'update') {
+						billingZip = document.getElementById('page:frm:billingZipUpdate');
+					}
+					if (billingZip != null) {
+						if (billingZip.value.length > 10) {
+
+							if (messageText.length > 0) {
+								messageText = messageText + ', "Zip/Postal code"';
+							} else {
+								messageText = messageText + '"Zip/Postal code"';
+							}
+
+							result = false;
+						}
+					}
+
+					var ccName  = document.getElementById('page:frm:nameOnCardInput');
+					if (ccName != null) {
+						if (ccName.value.length > 129) {
+
+							if (ccName.length > 0) {
+								ccName = messageText + ', "Credit Card Name"';
+							} else {
+								ccName = messageText + '"Credit Card Name"';
+							}
+
+							result = false;
+						}
+					}
+
+
+					if (result == true) {
+						document.getElementById("page:cardValid").style.display = "none";
+					}
+					if (result == false) {
+						try {
+							if(messageText.indexOf(',') + 1) {
+								messageText = messageText + '  are too long';
+							} else {
+								messageText = messageText + '  is too long';
+							}
+							showMessage(messageText);
+						} catch(e){return;}
+					}
+
+					return result;
+				}
+
+				function showSpinner() {
+					document.getElementById('spinner').style.display="block";
+				}
+
+				function hideSpinner() {
+					document.getElementById('spinner').style.display="none";
+				}
+
+				function loadCreditCardJS() {
+					var elements = document.body.getElementsByTagName("script");
+					var script;
+
+					for (var i = 0; i < elements.length; i++) {
+						if (elements[i].src.indexOf('creditcardjs.js') != -1) {
+							script = elements[i];
+							break;
+						}
+					}
+					var src = script.src;
+					var parent = script.parentNode;
+					script.parentNode.removeChild(script);
+
+					var script= document.createElement('script');
+					script.type= 'text/javascript';
+					script.src= src;
+					parent.appendChild(script);
+				}
+
+				var isEditedCardName = false;
+				var isStartPage = true;
+				var isSavedBillingAdress = false;
+				var fName = '';
+				var lName ='';
+
+				function onchangedCardName() {
+					isEditedCardName = true;
+					var cardName = document.getElementById('page:frm:nameOnCardInput');
+					if(cardName.className.indexOf('ccjs-complete') == -1) {
+						isEditedCardName = false;
+						if(isStartPage) onloadFiler();
+						else filler();
+					}
+				}
+
+				function filler() {
+					isStartPage = false;
+					if ('{!JSENCODE(status)}' == 'update') {
+						fName = document.getElementById('page:frm:billing_FirstUpdate').value;
+						lName = document.getElementById('page:frm:billing_LastUpdate').value;
+					} else {
+						fName = document.getElementById('page:frm:billing_First').value;
+						lName = document.getElementById('page:frm:billing_Last').value;
+					}
+					if(isEditedCardName) return;
+					if ('{!JSENCODE(status)}' == 'update') {
+						var firstName = document.getElementById('page:frm:billing_FirstUpdate');
+						var lastName =  document.getElementById('page:frm:billing_LastUpdate');
+					} else {
+						var firstName = document.getElementById('page:frm:billing_First');
+						var lastName =  document.getElementById('page:frm:billing_Last');
+
+					}
+					document.getElementById('page:frm:nameOnCardInput').value = '';
+					if(firstName.value != '') $('[id*=nameOnCardInput]').sendkeys((firstName.value + ' ' + lastName.value).trim());
+					else  $('[id*=nameOnCardInput]').sendkeys(lastName.value);
+					if(firstName.value == '' && lastName.value == '') document.getElementById('page:frm:nameOnCardInput').className = 'ccjs-name nameOnCardInput';
+				}
+
+				function onloadFiler() {
+					if(!isSavedBillingAdress) {
+						var firstName = "{!JSENCODE(firstName)}";
+						var lastName = "{!JSENCODE(lastName)}";
+						var cardName = document.getElementById('page:frm:nameOnCardInput');
+						if(firstName != '') $('[id*=nameOnCardInput]').sendkeys((firstName + ' ' + lastName).trim());
+						else  $('[id*=nameOnCardInput]').sendkeys(lastName);
+					}
+					else {
+						var firstName = fName;
+						var lastName = lName;
+						var cardName = document.getElementById('page:frm:nameOnCardInput');
+						if(firstName != '') $('[id*=nameOnCardInput]').sendkeys((firstName + ' ' + lastName).trim());
+						else  $('[id*=nameOnCardInput]').sendkeys(lastName);
+					}
+				}
+
+				function onSaveBillingAddress() {
+					isStartPage = true;
+					isSavedBillingAdress = true;
+				}
+
+				function isAvailableCreditCard() { // Card Type Deactivation logic
+					setCardType();
+					if('{!JSENCODE(status)}' == 'update') return;
+					document.getElementById("page:cardValid").style.display = 'none';
+					document.getElementById("page:warningmsg").style.display = 'none';
+					enableButtons();
+					var card =  document.getElementsByClassName('ccjs-type-read-only')[0];
+					if('{!JSENCODE(AvailableCards)}' == '') {
+						if(document.getElementById("innerForm").className.indexOf('ccjs-card-type-set') == -1) {
+							document.getElementById("page:cardValid").style.display = "none";
+							enableButtons();
+						}
+						return;
+					}
+					var AvailableCards = '{!JSENCODE(AvailableCards)}'.toLowerCase().split(';');
+					if(AvailableCards.indexOf(card.innerHTML.toLowerCase()) == -1) {
+						$('[id*=cardValid]').css('display', 'block');
+						try {
+							showMessage("Sorry, we don't accept " + card.innerHTML + ".");
+						}
+						catch(e){return;}
+						disableButtons();
+					}
+					if(document.getElementById("innerForm").className.indexOf('ccjs-card-type-set') == -1) {
+						document.getElementById("page:cardValid").style.display = "none";
+						enableButtons();
+					}
+				}
+
+				function showMessage(text) {
+					document.getElementById("page:cardValid").style.display = "block";
+					$('div[id*=cardValidMessage]').empty();
+					$('div[id*=cardValidMessage]').append($('<div>' +text + '</div>'));
+				}
+
+				function enableButtons() {
+					if(document.getElementById("page:frm:btn") != null) {
+						document.getElementById("page:frm:btn").disabled = false;
+						document.getElementById("page:frm:btn").className = 'btn';
+					}
+				}
+
+				function disableButtons() {
+					if(document.getElementById("page:frm:btn") != null) {
+						document.getElementById("page:frm:btn").disabled = true;
+						document.getElementById("page:frm:btn").className = 'btn btnDisabled';
+					}
+				}
+
+				function isValidEchekForm() {
+					if (getCheckedPaymentMethod() == 'Check') {
+						var bankRoutingNumber = document.getElementById('page:frm:bankRoutingNumber').value;
+						var bankAccountNumber = document.getElementById('page:frm:bankAccountNumber').value;
+						var bankAccountName = document.getElementById('page:frm:bankAccountName').value;
+						var bankName = document.getElementById('page:frm:bankName').value;
+						console.log(bankRoutingNumber + ' ' + bankAccountNumber + ' ' + bankAccountName + ' ' + bankName);
+						if (bankRoutingNumber == '' ||
+							bankAccountNumber == '' ||
+							bankAccountName == ''   ||
+							bankName == '') {
+							$('[id*=warningCheck]').css('display', 'block');
+							return false;
+						}
+						$('[id*=warningCheck]').css('display', 'none');
+						return true;
+					}
+
+					return true;
+				}
+			</script>
+			<script>
+				$(document).ready(function($){
+					$.fn.sendkeys = function (x){
+						x = x.replace(/([^{])\n/g, '$1{enter}'); // turn line feeds into explicit break insertions, but not if escaped
+						return this.each( function(){
+							bililiteRange(this).bounds('selection').sendkeys(x).select();
+						});
+					}; // sendkeys
+
+					// add a default handler for keydowns so that we can send keystrokes, even though code-generated events
+					// are untrusted (http://www.w3.org/TR/DOM-Level-3-Events/#trusted-events)
+					// documentation of special event handlers is at http://learn.jquery.com/events/event-extensions/
+					$.event.special.keydown = $.event.special.keydown || {};
+					$.event.special.keydown._default = function (evt){
+						if (evt.isTrusted) return false;
+						if (evt.ctrlKey || evt.altKey || evt.metaKey) return false; // only deal with printable characters. This may be a false assumption
+						if (evt.key == null) return false; // nothing to print. Use the keymap plugin to set this
+						var target = evt.target;
+						if (target.isContentEditable || target.nodeName == 'INPUT' || target.nodeName == 'TEXTAREA') {
+							// only insert into editable elements
+							var key = evt.key;
+							if (key.length > 1 && key.charAt(0) != '{') key = '{'+key+'}'; // sendkeys notation
+							$(target).sendkeys(key);
+							return true;
+						}
+						return false;
+					}
+				});
+			</script>
+
+		</apex:outputPanel>
+	</apex:outputPanel>
+</apex:page>

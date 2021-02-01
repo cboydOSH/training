@@ -111,6 +111,84 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>dfsle__GeneratedFileFormat__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Generated File Format</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Word</fullName>
+                    <default>true</default>
+                    <label>Word</label>
+                </value>
+                <value>
+                    <fullName>PDF</fullName>
+                    <default>false</default>
+                    <label>PDF</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>dfsle__GeneratedFileName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Generated File Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>dfsle__GeneratedFileSuffix__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Generated File Suffix</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>name</fullName>
+                    <default>true</default>
+                    <label>name</label>
+                </value>
+                <value>
+                    <fullName>date</fullName>
+                    <default>false</default>
+                    <label>date</label>
+                </value>
+                <value>
+                    <fullName>name_date</fullName>
+                    <default>false</default>
+                    <label>name_date</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>dfsle__Rule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JSON mapping for storing Document Generation rule helpful in implementing Conditional Template
+        generation.</description>
+        <externalId>false</externalId>
+        <label>Rule</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>vlocity_ins__GlobalKey__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>

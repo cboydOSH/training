@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>USERNAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>ALIAS</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>LAST_LOGIN</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>PROFILE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Partner Community Login User</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>2/25/2020 12:00 AM</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>CREATED_DATE</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Inactive Community Users</name>
+    <params>
+        <name>active</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>LAST_LOGIN</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -21,6 +21,22 @@
         <name>Address_Type__c</name>
     </fields>
     <fields>
+        <label><!-- Agree to SOB --></label>
+        <name>Agree_to_SOB__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alternate Email --></label>
+        <name>Alternate_Email__c</name>
+    </fields>
+    <fields>
         <label><!-- Approval Status --></label>
         <name>Approval_Status__c</name>
         <picklistValues>
@@ -35,6 +51,14 @@
             <masterLabel>Pending</masterLabel>
             <translation><!-- Pending --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Building / Suite / Apartment --></label>
+        <name>Building_Suite_Apartment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Continue Save for Later --></label>
+        <name>Continue_Save_for_Later__c</name>
     </fields>
     <fields>
         <label><!-- Contract Level --></label>
@@ -55,6 +79,31 @@
         <name>Created_By_Profile__c</name>
     </fields>
     <fields>
+        <help><!-- What customer demographic groups do you currently work with? --></help>
+        <label><!-- Demographic Groups --></label>
+        <name>Demographic_Groups__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filipino</masterLabel>
+            <translation><!-- Filipino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin/Spanish</masterLabel>
+            <translation><!-- Latin/Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefer not to answer</masterLabel>
+            <translation><!-- Prefer not to answer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <help><!-- List each dependent with their date of birth. --></help>
         <label><!-- Dependents, DOB --></label>
         <name>Dependents_DOB__c</name>
@@ -62,6 +111,34 @@
     <fields>
         <label><!-- Desired Effective Date --></label>
         <name>Desired_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible --></label>
+        <name>Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Address --></label>
+        <name>Google_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hear about us --></label>
+        <name>Hear_about_us__c</name>
+        <picklistValues>
+            <masterLabel>Internet Search</masterLabel>
+            <translation><!-- Internet Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Lead Lost Reason --></label>
@@ -153,6 +230,214 @@
         <name>List_Bill__c</name>
     </fields>
     <fields>
+        <label><!-- List of States --></label>
+        <name>List_of_States__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Medical --></label>
         <name>Medical__c</name>
     </fields>
@@ -183,6 +468,70 @@
         <relationshipLabel><!-- Leads (Parent Account) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language__c</name>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haitian Creole</masterLabel>
+            <translation><!-- Haitian Creole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefer not to answer</masterLabel>
+            <translation><!-- Prefer not to answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tagalog</masterLabel>
+            <translation><!-- Tagalog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Language Spoken --></label>
+        <name>Primary_Language_Spoken__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Product --></label>
         <name>Product__c</name>
         <relationshipLabel><!-- Leads --></relationshipLabel>
@@ -199,6 +548,10 @@
         <label><!-- Regional Sales Director --></label>
         <name>Regional_Sales_Director__c</name>
         <relationshipLabel><!-- Leads (Regional Sales Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SSN/ITIN --></label>
+        <name>SSN_ITIN__c</name>
     </fields>
     <fields>
         <label><!-- Sales Team Referral --></label>
@@ -219,14 +572,6 @@
         <label><!-- VP Sales --></label>
         <name>VP_Sales__c</name>
         <relationshipLabel><!-- Leads (VP Sales) --></relationshipLabel>
-    </fields>
-    <fields>
-        <label><!-- Formstack Auto-Assign --></label>
-        <name>VisualAntidote__Fast_Forms_Auto_Assign__c</name>
-    </fields>
-    <fields>
-        <label><!-- Formstack Autoresponse --></label>
-        <name>VisualAntidote__Fast_Forms_Autoresponse__c</name>
     </fields>
     <fields>
         <label><!-- Needs Score Synced --></label>
@@ -398,6 +743,10 @@
         <name>Contract_Level_19_needs_approval</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Demographic groups, Preferred Language and Ethnicity fields need to be filled before converting a Sales lead to an opportunity. --></errorMessage>
+        <name>Ethnicity_DG_PL_fields_req_before_conv</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- The First Name field cannot be blank. --></errorMessage>
         <name>First_name_cannot_be_blank</name>
     </validationRules>
@@ -414,6 +763,10 @@
         <name>Needs_lead_lost_reason</name>
     </validationRules>
     <webLinks>
+        <label><!-- Generatea9P8A0000008WGIUA2 --></label>
+        <name>Generatea9P8A0000008WGIUA2</name>
+    </webLinks>
+    <webLinks>
         <label><!-- GoogleMaps --></label>
         <name>GoogleMaps</name>
     </webLinks>
@@ -424,6 +777,18 @@
     <webLinks>
         <label><!-- GoogleSearch --></label>
         <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OnlineEditora9P8A0000008WGNUA2 --></label>
+        <name>OnlineEditora9P8A0000008WGNUA2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
     </webLinks>
     <webLinks>
         <label><!-- Send_Pardot_Email --></label>

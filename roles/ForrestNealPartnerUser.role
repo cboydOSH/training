@@ -5,6 +5,6 @@
     <description>Forrest Neal Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Forrest Neal Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

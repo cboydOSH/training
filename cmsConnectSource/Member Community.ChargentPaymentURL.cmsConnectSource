@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMSConnectSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connectionType>Public</connectionType>
+    <developerName>ChargentPaymentURL</developerName>
+    <languageEnabled>N</languageEnabled>
+    <masterLabel>ChargentPaymentURL</masterLabel>
+    <personalizationEnabled>N</personalizationEnabled>
+    <rootPath>paymentrequest</rootPath>
+    <sortOrder>1</sortOrder>
+    <status>ACTIVE</status>
+    <type>Other</type>
+    <websiteUrl>https://devvl2-paymentrequest.cs45.force.com</websiteUrl>
+</CMSConnectSource>

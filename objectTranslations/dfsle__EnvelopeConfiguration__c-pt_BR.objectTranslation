@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuração do envelope do DocuSign</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurações do envelope do DocuSign</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action --></label>
+        <name>dfsle__Action__c</name>
+        <picklistValues>
+            <masterLabel>Prepare</masterLabel>
+            <translation>Preparar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send</masterLabel>
+            <translation>Enviar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tag</masterLabel>
+            <translation>Marcação</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>dfsle__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Salesforce source documents --></label>
+        <name>dfsle__AddSourceDocuments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Salesforce source recipients --></label>
+        <name>dfsle__AddSourceRecipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email message --></label>
+        <name>dfsle__EmailMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email subject --></label>
+        <name>dfsle__EmailSubject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expire/void envelope in N day(s) --></label>
+        <name>dfsle__ExpireAfterDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warn of expiration in N day(s) prior --></label>
+        <name>dfsle__ExpireWarnDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expire/void envelope --></label>
+        <name>dfsle__Expires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object type --></label>
+        <name>dfsle__ObjectType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send reminder in N day(s) --></label>
+        <name>dfsle__RemindAfterDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remind every N day(s) until complete --></label>
+        <name>dfsle__RemindFrequencyDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remind signers via email --></label>
+        <name>dfsle__Remind__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Chatter settings --></label>
+        <name>dfsle__ShowChatterSettings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show email message --></label>
+        <name>dfsle__ShowEmailMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show email subject --></label>
+        <name>dfsle__ShowEmailSubject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show remind and expire settings --></label>
+        <name>dfsle__ShowRemindExpire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show send button --></label>
+        <name>dfsle__ShowSendButton__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show tag button --></label>
+        <name>dfsle__ShowTagButton__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name</nameFieldLabel>
+</CustomObjectTranslation>

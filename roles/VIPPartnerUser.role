@@ -5,6 +5,6 @@
     <description>VIP Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>VIP Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Temp</parentRole>
 </Role>

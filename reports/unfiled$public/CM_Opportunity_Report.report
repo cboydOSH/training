@@ -89,6 +89,7 @@
             <operator>equals</operator>
             <value>Call Center,FMO,MGP</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

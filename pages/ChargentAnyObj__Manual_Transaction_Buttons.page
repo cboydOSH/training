@@ -1,0 +1,60 @@
+<!--
+ - Created by ericalexander on 2/22/17.
+ -->
+
+<apex:page id="Chargent_Manual_Transaction" showHeader="false" sideBar="false" standardStylesheets="false">
+
+	<apex:stylesheet value="{!URLFOR($Resource.ChargentAnyObj__AppFrontier_Assets, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}"/>
+
+	<apex:includeLightning />
+
+	<script>
+		$Lightning.use("ChargentAnyObj:Chargent_Manual_Transaction", function () {
+			$Lightning.createComponent(
+				"ChargentAnyObj:Manual_Transaction",
+				{
+					"recordId": "{!$CurrentPage.parameters.id}",
+					"trType": '{!JSENCODE($CurrentPage.parameters.trType)}',
+					"isFromVF": true
+				},
+				"manual_transaction_content",
+				function (cmp) {
+					var loadingDivElt = document.getElementById("loader");
+					loadingDivElt.style.display = 'none';
+					$A.eventService.addHandler({
+						event: 'force:navigateToURL',
+						handler: function (event) {
+							if (typeof sforce != 'undefined' && sforce.one) {
+								sforce.one.navigateToURL(event.getParams().url);
+							} else {
+
+								if (event.getParams().url.endsWith('{!$CurrentPage.parameters.id}') && event.getParams().url.indexOf('recId') == -1) {
+									window.parent.location.href = '/{!$CurrentPage.parameters.id}';
+								} else {
+									window.parent.location.href = event.getParams().url + '&retURL=/{!$CurrentPage.parameters.id}';
+								}
+
+							}
+
+						}
+					});
+				});
+		});
+
+	</script>
+
+	<div class="appfrontier">
+		<div id="loader" class="slds-grid slds-grid--frame">
+			<div class="slds-spinner_container">
+				<div class="slds-spinner slds-spinner--brand slds-spinner--large" role="alert">
+					<span class="slds-assistive-text">Loading</span>
+					<div class="slds-spinner__dot-a"></div>
+					<div class="slds-spinner__dot-b"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="manual_transaction_content">
+	</div>
+
+</apex:page>

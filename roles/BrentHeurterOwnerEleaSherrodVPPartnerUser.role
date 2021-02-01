@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Healthy Halo Partner User</description>
+    <description>Brent Heurter (Owner) Elea Sherrod (VP) Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Healthy Halo Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Brent Heurter (Owner) Elea Sherrod (VP) Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

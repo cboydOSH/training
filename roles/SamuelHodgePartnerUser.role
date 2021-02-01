@@ -5,6 +5,6 @@
     <description>Samuel Hodge Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Samuel Hodge Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Adam Martinez Partner User</description>
+    <description>Gruene Insurance Group Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Adam Martinez Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>Gruene Insurance Group Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>State_Sales_Manager</parentRole>
 </Role>

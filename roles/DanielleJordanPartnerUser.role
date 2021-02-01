@@ -5,6 +5,6 @@
     <description>Danielle Jordan Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Danielle Jordan Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

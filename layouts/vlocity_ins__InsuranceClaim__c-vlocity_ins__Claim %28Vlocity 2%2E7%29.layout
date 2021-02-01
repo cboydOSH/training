@@ -180,35 +180,17 @@
         <fields>NAME</fields>
         <fields>vlocity_ins__AssetCoverageName__c</fields>
         <fields>vlocity_ins__ClaimantName__c</fields>
-        <fields>vlocity_ins__ReserveProcessingMode__c</fields>
         <fields>vlocity_ins__CoverageStatus__c</fields>
-        <fields>vlocity_ins__CoverageReserveStatus__c</fields>
-        <fields>vlocity_ins__ReserveAmount__c</fields>
-        <fields>vlocity_ins__ExpenseReserveAmount__c</fields>
         <relatedList>vlocity_ins__ClaimCoverage__c.vlocity_ins__ClaimId__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>vlocity_ins__Type__c</fields>
         <fields>vlocity_ins__ClaimantName__c</fields>
         <fields>vlocity_ins__AssetCoverageName__c</fields>
         <fields>vlocity_ins__ClaimAmount__c</fields>
         <fields>vlocity_ins__CoverageAmount__c</fields>
         <fields>vlocity_ins__AdjustedAmount__c</fields>
-        <fields>vlocity_ins__ExpenseAmount__c</fields>
-        <fields>vlocity_ins__PaidAmount__c</fields>
         <relatedList>vlocity_ins__ClaimLineItem__c.vlocity_ins__ClaimId__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>vlocity_ins__ClaimCoverageId__c</fields>
-        <fields>vlocity_ins__ClaimLineItemId__c</fields>
-        <fields>vlocity_ins__AssetTermId__c</fields>
-        <fields>vlocity_ins__PostedAmount__c</fields>
-        <fields>vlocity_ins__RemainingAmount__c</fields>
-        <fields>vlocity_ins__PostedValue__c</fields>
-        <fields>vlocity_ins__RemainingValue__c</fields>
-        <relatedList>vlocity_ins__AssetTermTrackingEntry__c.vlocity_ins__ClaimId__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

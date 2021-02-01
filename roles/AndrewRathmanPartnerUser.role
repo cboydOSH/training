@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Smart Care LLC Partner User</description>
+    <description>Andrew Rathman Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Smart Care LLC Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Andrew Rathman Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

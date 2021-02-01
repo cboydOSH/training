@@ -5,5 +5,10 @@
         <sharedTo>AllInternalUsers</sharedTo>
         <sharedToType>Organization</sharedToType>
     </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>cfogliano@onesharehealth.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
     <name>Sales and Marketing Dashboards</name>
 </DashboardFolder>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>dfsle__CLMEOSViewController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dfsle__CLMMapObjectController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Provides administrative access to CLM in DocuSign Apps Launcher</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.dfsle__CanManageAccount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.dfsle__Provisioned__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.dfsle__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.dfsle__Username__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>DocuSign CLM Admin</label>
+    <pageAccesses>
+        <apexPage>dfsle__CompleteOAuth</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

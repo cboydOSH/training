@@ -5,6 +5,6 @@
     <description>OneShare Health Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>OneShare Health Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Temp</parentRole>
 </Role>

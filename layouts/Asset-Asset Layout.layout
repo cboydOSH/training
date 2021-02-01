@@ -21,11 +21,31 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Start_Date__c</field>
+                <field>Contract_Number__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Contract_Number__c</field>
+                <field>Group_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>First_Chargent_Order__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Second_Chargent_Order__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Payment_Note_Order__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Confimation_Chargent_Order__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Temporary_Amount__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -43,11 +63,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Start_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>End_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Inactive_Reason__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Product_Contract__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -87,6 +115,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Last_Payment__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Last_Payment_Amount__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -138,7 +170,108 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
-        <relatedList>RelatedEntityHistoryList</relatedList>
+        <relatedList>RelatedFileList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>CASES.CASE_NUMBER</fields>
+        <fields>NAME</fields>
+        <fields>CASES.SUBJECT</fields>
+        <fields>CASES.PRIORITY</fields>
+        <fields>CASES.CREATED_DATE</fields>
+        <fields>CASES.STATUS</fields>
+        <fields>OWNER_NAME</fields>
+        <relatedList>RelatedCaseList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <relatedList>Quote.vlocity_ins__SourceAssetId__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Account.NAME</fields>
+        <fields>Account.ACC_ACCOUNT_NUMBER</fields>
+        <fields>Account.ACC_RECORDTYPE</fields>
+        <relatedList>dc_ProducerAsset__c.Asset__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>vlocity_ins__ClaimStatus__c</fields>
+        <fields>vlocity_ins__PrimaryPolicyId__c</fields>
+        <fields>vlocity_ins__PrimaryOwnerPartyId__c</fields>
+        <relatedList>vlocity_ins__InsuranceClaim__c.vlocity_ins__PrimaryPolicyAssetId__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>vlocity_ins__BillingAccountId__c</fields>
+        <fields>vlocity_ins__PricingVariableID__c</fields>
+        <fields>vlocity_ins__AdjustmentValue__c</fields>
+        <fields>vlocity_ins__Amount__c</fields>
+        <relatedList>vlocity_ins__AccountPriceAdjustment__c.vlocity_ins__AssetId__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Account.NAME</fields>
+        <fields>Account.ACC_ACCOUNT_NUMBER</fields>
+        <fields>Contact.PC_00N8A000005wlv9</fields>
+        <relatedList>dc_MemberAsset__c.Asset__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Producer__c</fields>
+        <fields>Payment_Date__c</fields>
+        <fields>Transaction_Status__c</fields>
+        <fields>Adjustment_Amount__c</fields>
+        <relatedList>dc_Commission_Transaction__c.Asset__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>ChargentOrders__Status__c</fields>
+        <fields>ChargentOrders__Billing_Contact__c</fields>
+        <fields>ChargentOrders__Email_Address__c</fields>
+        <fields>ChargentOrders__ChargentOrder__c</fields>
+        <fields>ChargentOrders__Payment_Link_Formatted__c</fields>
+        <relatedList>ChargentOrders__Payment_Request__c.Asset__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>ChargentOrders__Billing_First_Name__c</fields>
+        <fields>ChargentOrders__Billing_Last_Name__c</fields>
+        <fields>ChargentOrders__Payment_Method__c</fields>
+        <fields>ChargentOrders__Card_Type__c</fields>
+        <fields>ChargentOrders__Card_Last_4__c</fields>
+        <fields>ChargentOrders__Payment_Status__c</fields>
+        <relatedList>ChargentOrders__ChargentOrder__c.Asset__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>vlocity_ins__Amount__c</fields>
+        <fields>vlocity_ins__TransactionDate__c</fields>
+        <fields>vlocity_ins__TransactionNumber__c</fields>
+        <fields>LAST_UPDATE</fields>
+        <relatedList>vlocity_ins__AssetTransaction__c.vlocity_ins__AssetId__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>CONTRACT.CONTRACT_NUMBER</fields>
+        <fields>CONTRACT.NAME</fields>
+        <fields>SALES.ACCOUNT.NAME</fields>
+        <fields>CONTRACT.STATUS</fields>
+        <relatedList>Contract.Asset__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>ACCOUNT.ADDRESS1_CITY</fields>
+        <fields>ACCOUNT.PHONE1</fields>
+        <relatedList>Account.Main_Asset__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Internal_Change_Log__c.Asset__c</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

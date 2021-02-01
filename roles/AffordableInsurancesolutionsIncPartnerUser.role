@@ -5,6 +5,6 @@
     <description>Affordable Insurance solutions Inc. Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Affordable Insurance solutions Inc. Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

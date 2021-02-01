@@ -1,0 +1,98 @@
+<aura:component controller="EmailSendController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+	<!--Attribute declare-->  
+   <aura:attribute name="email" type="string"/>
+   <aura:attribute name="firstname" type="string"/>
+   <aura:attribute name="lastname" type="string"/>
+   <aura:attribute name="subject" type="string"/>
+   <aura:attribute name="phone" type="string"/>
+   <aura:attribute name="body" type="string"/>
+   <aura:attribute name="mailStatus" type="boolean" default="false"/>
+   
+   <aura:if isTrue="{!v.mailStatus}">
+        <div role="alertdialog" tabindex="-1" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" class="slds-modal slds-fade-in-open slds-modal--prompt">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header slds-theme--error slds-theme--alert-texture">
+                    <h2 class="slds-text-heading--medium" id="prompt-heading-id">Mail Status</h2>
+                </div>
+                <div class="slds-modal__content slds-p-around--medium">
+                    <div>
+                    <p>Email Sent successfully to {!v.email}</p>
+                    </div>
+                </div>
+                <div class="slds-modal__footer slds-theme--default">
+                    <button class="slds-button slds-button--brand" onclick="{!c.closeMessage}">Close</button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </aura:if>
+
+    <div class="container" style="background:white;">
+        <div style="text-align:center">
+            <h1 style="color: #004fa3; font-size: 40px;">Get In Touch</h1>
+            <h2 style="color: #f8991d; font-size: 30px;">Need to contact OneShare Health?</h2>
+            <h3 style="color: #f8991d; font-size: 20px;">Give us a call! Our dedicated support teams are ready to help!</h3>
+        </div>
+        <div class="row">
+            <div class="column">
+                <form style="font-size:15px">
+                    <label for="fname">First Name</label>
+					<ui:inputText class="slds-input" aura:id="firstname"  value="{!v.firstname}" placeholder="Your last name.."/>
+                    <label for="lname">Last Name</label>
+					<ui:inputText class="slds-input" aura:id="lastname"  value="{!v.lastname}" placeholder="Your last name.."/>
+                    <label for="email">Email</label>
+					<ui:inputEmail class="slds-input" aura:id="email" value="{!v.email}" required="true" placeholder="Your email.."/>
+                    <label for="phone">Phone Number</label>
+					<ui:inputPhone aura:id="phone" value="{!v.phone}" placeholder="Your phone number.." />
+                    <label for="kindofhelp">What can we help you with today?</label>
+					<ui:inputSelect class="single" aura:id="subject" value="{!v.subject}">
+						<ui:inputSelectOption text="Please Select" value=""/>
+						<ui:inputSelectOption text="New Enrollment" value="New Enrollment"/>
+						<ui:inputSelectOption text="Enrollment Questions" value="Enrollment Questions"/>
+						<ui:inputSelectOption text="Member Support" value="Member Support"/>
+						<ui:inputSelectOption text="Member Concierge" value="Member Concierge"/>
+						<ui:inputSelectOption text="Producer Support" value="Producer Support"/>
+						<ui:inputSelectOption text="Marketing or Press Inquiries" value="Marketing or Press Inquiries"/>
+						<ui:inputSelectOption text="Other" value="Other"/>
+					</ui:inputSelect>
+                    <label for="message">Message</label>
+					<lightning:inputRichText aura:id="body" value="{!v.body}" placeholder="Write something.."/>
+					<button class="submit" onclick="{!c.sendMail}">Send</button>
+                </form>
+            </div>
+            <div class="column">
+                <div style="width: 80%;margin: 0 auto 1em;">
+                    <label style="font-size: 25px;">Hours of Operation</label>
+                    <p style="font-size: 18px;">Monday-Friday, 7am -7 pm</p>
+                    <p style="font-size: 18px;">After hours? Leave us a message!</p>
+                </div>
+                <div style="width: 80%;margin: 0 auto 1em;">
+                    <label style="font-size: 25px;">Direct Contact</label>
+                    <p style="font-size: 18px;">Office: (682) 651-7400</p>
+                    <p style="font-size: 18px;">Email: questions@onesharehealth.com</p>
+                </div>
+                <div style="width: 80%;margin: 0 auto 1em;">
+                    <label style="font-size: 25px;">Contact Information</label>
+                    <p style="font-size: 20px; color: #004fa3;">Enrollment Services</p>
+                    <p style="font-size: 18px;">(833) 513-4931</p>
+                    <br></br>
+                    <p style="font-size: 20px; color: #004fa3;">Member Support</p>
+                    <p style="font-size: 18px;">(833) 546-4478</p>
+                    <br></br>
+                    <p style="font-size: 20px; color: #004fa3;">Concierge Services</p>
+                    <p style="font-size: 18px;">(866) 284-4286</p>
+                    <br></br>
+                    <p style="font-size: 20px; color: #004fa3;">Billing Services</p>
+                    <p style="font-size: 18px;">(866) 417-4273</p>
+                    <br></br>
+                    <p style="font-size: 20px; color: #004fa3;">Pre-Certification</p>
+                    <p style="font-size: 18px;">(833) 380-9080</p>
+                    <br></br>
+                    <p style="font-size: 20px; color: #004fa3;">Producer Support</p>
+                    <p style="font-size: 18px;">(833) 546-4477</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aura:dependency resource="markup://force:*" type="EVENT"/>
+</aura:component>

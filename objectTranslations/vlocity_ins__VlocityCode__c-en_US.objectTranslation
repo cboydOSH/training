@@ -23,10 +23,6 @@
             <masterLabel>Life</masterLabel>
             <translation><!-- Life --></translation>
         </picklistValues>
-        <picklistValues>
-            <masterLabel>NUCC Taxonomy Code</masterLabel>
-            <translation><!-- NUCC Taxonomy Code --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Code Source --></label>

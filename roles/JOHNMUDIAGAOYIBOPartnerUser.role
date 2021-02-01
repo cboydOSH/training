@@ -5,6 +5,6 @@
     <description>JOHN MUDIAGA OYIBO Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>JOHN MUDIAGA OYIBO Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

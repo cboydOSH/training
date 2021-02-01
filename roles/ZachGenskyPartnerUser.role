@@ -5,6 +5,6 @@
     <description>Zach Gensky Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Zach Gensky Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

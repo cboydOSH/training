@@ -5,6 +5,6 @@
     <description>RH Benefits Insurance Services, Inc. Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>RH Benefits Insurance Services, Inc. Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

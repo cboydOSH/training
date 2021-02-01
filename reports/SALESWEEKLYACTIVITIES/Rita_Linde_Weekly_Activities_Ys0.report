@@ -55,6 +55,7 @@
             <operator>equals</operator>
             <value>Rita Linde,Mark LaMere,Gary Mueller,Patrick Malak</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

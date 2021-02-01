@@ -5,6 +5,6 @@
     <description>Robert Rockey Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Robert Rockey Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Temp</parentRole>
 </Role>

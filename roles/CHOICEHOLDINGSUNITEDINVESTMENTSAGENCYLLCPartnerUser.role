@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Ann Williams Partner User</description>
+    <description>CHOICE HOLDINGS UNITED INVESTMENTS AGENCY, LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Ann Williams Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>CHOICE HOLDINGS UNITED INVESTMENTS AGENCY, LLC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Paul Newman Partner User</description>
+    <description>Health and Life Associates Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Paul Newman Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Health and Life Associates Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

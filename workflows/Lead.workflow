@@ -114,11 +114,6 @@
             <operation>equals</operation>
             <value>Internal Lead</value>
         </criteriaItems>
-        <criteriaItems>
-            <field>Lead.CreatedById</field>
-            <operation>notEqual</operation>
-            <value>Carrlos Boyd</value>
-        </criteriaItems>
         <description>When an internal lead is created by Contracting, Producer Onboarding, or Producer Support, send an email.</description>
         <triggerType>onCreateOnly</triggerType>
     </rules>

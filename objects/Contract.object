@@ -156,11 +156,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contract_Record_Page2</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -558,6 +561,19 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>BillingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -600,9 +616,39 @@
         <trackHistory>true</trackHistory>
     </fields>
     <fields>
+        <fullName>Effective_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Effective date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>EndDate</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Envelope_Id__c</fullName>
+        <description>DocuSign Envelope Id</description>
+        <externalId>false</externalId>
+        <label>Envelope Id</label>
+        <length>36</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Most_Recent_PR_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Pay Link (Most Recent)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
     </fields>
     <fields>
         <fullName>Name</fullName>
@@ -624,6 +670,19 @@
         <fullName>Pricebook2Id</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Recurring_Payment_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Recurring Payment Order</label>
+        <referenceTo>ChargentOrders__ChargentOrder__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -1270,11 +1329,25 @@
     </listViews>
     <listViews>
         <fullName>AllContracts</fullName>
+        <columns>CONTRACT.CREATED_DATE</columns>
+        <columns>CONTRACT.CONTRACT_NUMBER</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>CONTRACT.START_DATE</columns>
+        <columns>CONTRACT.END_DATE</columns>
+        <columns>CONTRACT.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <label>All Contracts</label>
     </listViews>
     <listViews>
         <fullName>AllDraftContracts</fullName>
+        <columns>CONTRACT.CONTRACT_NUMBER</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>CONTRACT.CREATED_DATE</columns>
+        <columns>CONTRACT.START_DATE</columns>
+        <columns>CONTRACT.END_DATE</columns>
+        <columns>CONTRACT.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CONTRACT.STATUS_CODE</field>
@@ -1323,8 +1396,126 @@
         </filters>
         <label>My In Approval Contracts</label>
     </listViews>
+    <listViews>
+        <fullName>Signed_And_Awaiting_Signature</fullName>
+        <columns>CONTRACT.CONTRACT_NUMBER</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>CONTRACT.STATUS</columns>
+        <columns>CONTRACT.START_DATE</columns>
+        <columns>CONTRACT.END_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS</field>
+            <operation>contains</operation>
+            <value>Awaiting Signature,Signed</value>
+        </filters>
+        <label>Signed And Awaiting Signature</label>
+    </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Producer_2</fullName>
+        <active>false</active>
+        <label>Producer 2</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ExpirationReason__c</picklist>
+            <values>
+                <fullName>Does not want to renew</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving to M2M</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__LocaleCode__c</picklist>
+            <values>
+                <fullName>de</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en_US</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fr</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RenewalNotificationTerm__c</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Months</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationReason__c</picklist>
+            <values>
+                <fullName>Customer Not Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Termination without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationType__c</picklist>
+            <values>
+                <fullName>With Cause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <recordTypes>
         <fullName>vlocity_ins__Carrier</fullName>
         <active>true</active>
@@ -1341,6 +1532,10 @@
             </values>
             <values>
                 <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1434,11 +1629,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Awaiting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Awaiting Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Draft</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1539,6 +1746,10 @@
                 <fullName>In Approval Process</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
@@ -1635,6 +1846,10 @@
             </values>
             <values>
                 <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1735,6 +1950,10 @@
                 <fullName>In Approval Process</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
@@ -1831,6 +2050,10 @@
             </values>
             <values>
                 <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1933,6 +2156,18 @@
         <searchResultsAdditionalFields>CONTRACT_TERM</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Contract</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromContract</page>
+        <protected>false</protected>
+    </webLinks>
     <webLinks>
         <fullName>vlocity_ins__CloneContract</fullName>
         <availability>online</availability>

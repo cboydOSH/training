@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Edward J Gerrick Partner User</description>
+    <description>Ed Gerrick Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Edward J Gerrick Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Ed Gerrick Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

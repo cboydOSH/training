@@ -3,7 +3,6 @@
     <customButtons>vlocity_ins__CreateHousehold</customButtons>
     <customButtons>vlocity_ins__CreateGroup</customButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
-    <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
@@ -129,6 +128,10 @@
                 <showScrollbars>true</showScrollbars>
                 <width>100%</width>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>HipaaShare__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
@@ -206,6 +209,14 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <relatedLists>
+        <fields>CreatedDate</fields>
+        <fields>StepStatus</fields>
+        <fields>OriginalActor</fields>
+        <fields>Actor</fields>
+        <fields>Comments</fields>
+        <relatedList>RelatedProcessHistoryList</relatedList>
+    </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

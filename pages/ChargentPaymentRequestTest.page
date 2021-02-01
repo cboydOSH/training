@@ -1,0 +1,21 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="PaymentRequest" cache="false">
+     <apex:includeLightning />
+      <apex:slds />
+            <script type="text/javascript">
+                  $Lightning.use("ChargentBase:ChargentTakePaymentApp", function () {
+                        $Lightning.createComponent(
+                              "ChargentBase:chargentPaymentRequest",
+                              {
+                                    'formName': 'Pay Request',
+                                    'showCountryField': true,
+                                    'showEmailField': true,
+                                    'req': '{!$CurrentPage.parameters.req}'
+                              },
+                              "container",
+                              function (cmp) {
+                              }
+                        );
+                  });
+            </script>
+      <div id="container"></div>
+</apex:page>

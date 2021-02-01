@@ -5,6 +5,6 @@
     <description>Lynn Tyler Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Lynn Tyler Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

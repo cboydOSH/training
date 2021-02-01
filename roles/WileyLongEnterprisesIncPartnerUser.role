@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Wiley Long Enterprises Inc - FMO Partner User</description>
+    <description>Wiley Long Enterprises Inc. Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Wiley Long Enterprises Inc - FMO Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Wiley Long Enterprises Inc. Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

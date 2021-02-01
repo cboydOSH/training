@@ -10,18 +10,6 @@
         <default>false</default>
         <label>1</label>
     </customValue>
-    <customValue>
-        <fullName>0%</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>0%</label>
-    </customValue>
-    <customValue>
-        <fullName>1%</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>1%</label>
-    </customValue>
     <masterLabel>Referral %</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

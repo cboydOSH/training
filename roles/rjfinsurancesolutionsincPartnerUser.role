@@ -5,6 +5,6 @@
     <description>rjf insurance solutions inc Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>rjf insurance solutions inc Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

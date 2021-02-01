@@ -24,10 +24,6 @@
             <translation><!-- Data Input --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>List Input</masterLabel>
-            <translation><!-- List Input --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>No Input</masterLabel>
             <translation><!-- No Input --></translation>
         </picklistValues>
@@ -56,12 +52,12 @@
             <translation><!-- Hourly --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Ignore</masterLabel>
-            <translation><!-- Ignore --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Monthly</masterLabel>
             <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Yearly</masterLabel>

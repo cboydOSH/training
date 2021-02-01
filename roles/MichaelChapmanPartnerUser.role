@@ -5,6 +5,6 @@
     <description>Michael Chapman Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Michael Chapman Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

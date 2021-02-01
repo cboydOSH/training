@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Luis Alberto Izquierdo Partner User</description>
+    <description>Luis Izquierdo Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Luis Alberto Izquierdo Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Luis Izquierdo Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

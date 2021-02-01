@@ -5,6 +5,6 @@
     <description>Jeffries Insurance Group Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Jeffries Insurance Group Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

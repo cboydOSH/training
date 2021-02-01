@@ -1,0 +1,3 @@
+let definition = 
+                {"Cards":["communityMemberCustomList"],"enableLwc":true,"repeatCards":false,"lwc":{"MasterLabel":"cardCanvas1x","DeveloperName":"cardCanvas1x","Id":"0Rb8A000000ESELSA4","name":"cardCanvas1x","NamespacePrefix":"vlocity_ins"},"previewType":"designTime","componentName":"cfCommunity_member_custom_list_1_OneShare_Health_LLC","dataSource":{"type":"IntegrationProcedures","value":{"ipMethod":"MemberCommunity_CustomListSource","optionsMap":{"vlcClass":"vlocity_ins.IntegrationProcedureService"}}},"workspace":["communityMemberCustomList/OneShare_Health_LLC/1/1603894998183"],"GlobalKey__c":"community_member_custom_list/1/OneShare_Health_LLC/1603834398796"}; 
+            export default definition

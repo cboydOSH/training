@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Sydney M Watson Partner User</description>
+    <description>Sydney Watson Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Sydney M Watson Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Sydney Watson Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

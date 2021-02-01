@@ -5,6 +5,6 @@
     <description>All Health Options LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>All Health Options LLC Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

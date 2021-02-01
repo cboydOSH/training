@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Bradley Frazier Partner User</description>
+    <description>IHC Specialty Benefits Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Bradley Frazier Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>IHC Specialty Benefits Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>State_Sales_Manager</parentRole>
 </Role>

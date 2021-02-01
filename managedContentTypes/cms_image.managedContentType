@@ -19,7 +19,7 @@
         <nodeType>MTEXT</nodeType>
     </managedContentNodeTypes>
     <managedContentNodeTypes>
-        <helpText>Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is allowed by your org so your users can access it.</helpText>
+        <helpText>Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is whitelisted by your org so your users can access it.</helpText>
         <isLocalizable>false</isLocalizable>
         <isRequired>true</isRequired>
         <nodeLabel>Source</nodeLabel>

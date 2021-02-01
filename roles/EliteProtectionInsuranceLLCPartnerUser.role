@@ -5,6 +5,6 @@
     <description>Elite Protection Insurance LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Elite Protection Insurance LLC Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Temp</parentRole>
 </Role>

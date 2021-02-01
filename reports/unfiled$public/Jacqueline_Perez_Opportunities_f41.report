@@ -47,6 +47,7 @@
             <operator>equals</operator>
             <value>Application,Compliance,Kick-off Meeting,Contracting,Data Transfer,Enrollment,Marketing,Training</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

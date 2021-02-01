@@ -186,11 +186,6 @@
                     <default>false</default>
                     <label>InsuranceClaim__c</label>
                 </value>
-                <value>
-                    <fullName>ClaimCoverage__c</fullName>
-                    <default>false</default>
-                    <label>ClaimCoverage__c</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Q/Q and Enrol Process Omni</description>
+    <height>250</height>
+    <icon>vlocity_ins__Event</icon>
+    <label>New Prospect</label>
+    <lightningComponent>GlobalQuoteActionComponent</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

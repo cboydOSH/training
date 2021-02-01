@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Herman Self Jr Partner User</description>
+    <description>Independant Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Herman Self Jr Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Independant Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

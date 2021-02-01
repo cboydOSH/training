@@ -1,0 +1,3 @@
+let definition = 
+                {"Cards":["testcard"],"enableLwc":true,"repeatCards":false,"lwc":{"MasterLabel":"cardCanvas1x","DeveloperName":"cardCanvas1x","Id":"0Rb8A000000ESELSA4","name":"cardCanvas1x","NamespacePrefix":"vlocity_ins"},"previewType":"designTime","componentName":"cfTestLwcCard_1_OneShareHealth","workspace":["testcard/OneShareHealth/1/1605812860221"],"dataSource":{"type":"Query","value":{"body":"{}","optionsMap":{"vlcClass":"vlocity_ins.IntegrationProcedureService"},"ipMethod":"Get_AccountDetails"}},"GlobalKey__c":"TestLwcCard/1/OneShareHealth/1605812823771"}; 
+            export default definition

@@ -92,6 +92,27 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListContainer</componentName>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-e8cf57a6-ab5c-4450-926c-00340daa6ffb</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>body</name>
                     <value>Facet-ebfdbda1-15cf-4b0c-a29f-67d8599f30e8</value>
                 </componentInstanceProperties>
@@ -115,6 +136,19 @@
                 <componentInstanceProperties>
                     <name>title</name>
                     <value>Standard.Tab.collaborate</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-e8cf57a6-ab5c-4450-926c-00340daa6ffb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.relatedLists</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
             </componentInstance>

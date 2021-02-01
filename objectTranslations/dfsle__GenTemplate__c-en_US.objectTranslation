@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>dfsle__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Name --></label>
+        <name>dfsle__FileName__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Suffix --></label>
+        <name>dfsle__FileSuffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Previewed Documents --></label>
+        <name>dfsle__HasPreviewedDocuments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Sample --></label>
+        <name>dfsle__IsSample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Mappings --></label>
+        <name>dfsle__ObjectMappings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signer Mappings --></label>
+        <name>dfsle__SignerMappings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Object --></label>
+        <name>dfsle__SourceObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Steps Completed --></label>
+        <name>dfsle__StepsCompleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Id --></label>
+        <name>dfsle__TemplateId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Type --></label>
+        <name>dfsle__TemplateType__c</name>
+        <picklistValues>
+            <masterLabel>DocuSign Agreement Cloud Editor</masterLabel>
+            <translation>DocuSign Agreement Cloud Editor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Word</masterLabel>
+            <translation>Microsoft Word</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Use All Templates --></label>
+        <name>dfsle__UseAllTemplates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Current Record --></label>
+        <name>dfsle__UseCurrentRecord__c</name>
+    </fields>
+</CustomObjectTranslation>

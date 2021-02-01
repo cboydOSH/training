@@ -5,6 +5,6 @@
     <description>Life Solutions Of Georgia Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Life Solutions Of Georgia Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

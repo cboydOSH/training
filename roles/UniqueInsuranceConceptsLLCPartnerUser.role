@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Kelly A Ryan-Kuzulka Partner User</description>
+    <description>Unique Insurance Concepts LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Kelly A Ryan-Kuzulka Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>Unique Insurance Concepts LLC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VP_of_Sales</parentRole>
 </Role>

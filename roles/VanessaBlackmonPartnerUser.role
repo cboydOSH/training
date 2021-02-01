@@ -5,6 +5,6 @@
     <description>Vanessa Blackmon Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Vanessa Blackmon Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

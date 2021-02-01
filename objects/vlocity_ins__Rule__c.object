@@ -154,7 +154,7 @@
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fieldSets>
         <fullName>vlocity_ins__ConsoleAdminSearch</fullName>
         <description>EPC Console Admin Search</description>

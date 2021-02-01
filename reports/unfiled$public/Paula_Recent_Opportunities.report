@@ -38,6 +38,7 @@
             <operator>contains</operator>
             <value>Paula,Sherri</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

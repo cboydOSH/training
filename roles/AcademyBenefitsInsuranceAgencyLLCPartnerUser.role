@@ -5,6 +5,6 @@
     <description>Academy Benefits Insurance Agency LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Academy Benefits Insurance Agency LLC Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

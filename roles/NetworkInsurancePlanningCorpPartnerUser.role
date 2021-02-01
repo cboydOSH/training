@@ -5,6 +5,6 @@
     <description>Network Insurance Planning Corp Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Network Insurance Planning Corp Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

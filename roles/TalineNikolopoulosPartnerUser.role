@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Taline B Nikolopoulos Partner User</description>
+    <description>Taline Nikolopoulos Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Taline B Nikolopoulos Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Taline Nikolopoulos Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Temp</parentRole>
 </Role>

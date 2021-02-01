@@ -5,6 +5,6 @@
     <description>Sam Sciascia Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Sam Sciascia Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

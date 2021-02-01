@@ -3,50 +3,32 @@
     <sorted>false</sorted>
     <standardValue>
         <fullName>Draft</fullName>
-        <default>true</default>
+        <default>false</default>
         <label>Draft</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Started</fullName>
+        <default>true</default>
+        <label>Started</label>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
-        <fullName>Needs Review</fullName>
+        <fullName>Completed</fullName>
         <default>false</default>
-        <label>Needs Review</label>
+        <label>Completed</label>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
-        <fullName>In Review</fullName>
+        <fullName>Awaiting Signature</fullName>
         <default>false</default>
-        <label>In Review</label>
+        <label>Awaiting Signature</label>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
-        <fullName>Approved</fullName>
+        <fullName>Enrolled</fullName>
         <default>false</default>
-        <label>Approved</label>
-        <allowEmail>true</allowEmail>
-    </standardValue>
-    <standardValue>
-        <fullName>Rejected</fullName>
-        <default>false</default>
-        <label>Rejected</label>
-        <allowEmail>true</allowEmail>
-    </standardValue>
-    <standardValue>
-        <fullName>Presented</fullName>
-        <default>false</default>
-        <label>Presented</label>
-        <allowEmail>true</allowEmail>
-    </standardValue>
-    <standardValue>
-        <fullName>Accepted</fullName>
-        <default>false</default>
-        <label>Accepted</label>
-        <allowEmail>true</allowEmail>
-    </standardValue>
-    <standardValue>
-        <fullName>Denied</fullName>
-        <default>false</default>
-        <label>Denied</label>
+        <label>Enrolled</label>
         <allowEmail>true</allowEmail>
     </standardValue>
 </StandardValueSet>

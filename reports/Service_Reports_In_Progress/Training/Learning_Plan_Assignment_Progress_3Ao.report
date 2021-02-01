@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_94100273</developerName>
+        <masterLabel>Progress</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>redwing__Training_Plan_Assignment__c.Learning_Assignment_Evaluation_Result__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Not Started</sourceValue>
+            </sourceValues>
+            <value>Not Started</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Passed</sourceValue>
+            </sourceValues>
+            <value>Passed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Failed-Completed</sourceValue>
+            </sourceValues>
+            <value>Failed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Failed-Not Completed</sourceValue>
+            </sourceValues>
+            <value>In Progress</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>redwing__Training_Plan_Assignment__c.Learning_Assignment_Evaluation_Result__c</field>
+    </columns>
+    <columns>
+        <field>redwing__Training_Plan_Assignment__c.redwing__Training_Plan__c</field>
+    </columns>
+    <columns>
+        <field>redwing__Training_Plan_Assignment__c.redwing__Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>redwing__Training_Plan_Assignment__c.redwing__Total_NotStarted_Items__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>redwing__Training_Plan_Assignment__c.redwing__Total_InReview_Items__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>redwing__Training_Plan_Assignment__c.redwing__Total_InProgress_Items__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>redwing__Training_Plan_Assignment__c.redwing__Total_Completed_Items__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <aggregateTypes>Maximum</aggregateTypes>
+        <aggregateTypes>Minimum</aggregateTypes>
+        <field>redwing__Training_Plan_Assignment__c.redwing__Progress_Percentage__c</field>
+    </columns>
+    <columns>
+        <field>redwing__Training_Plan_Assignment__c.redwing__Completed_On__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>redwing__Training_Plan_Assignment__c.redwing__Training_Plan__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>February 2020 Membership Guide Program Updates</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_94100273</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>redwing__Training_Plan_Assignment__c.redwing__User__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Learning Plan Assignment Progress</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$redwing__Training_Plan_Assignment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

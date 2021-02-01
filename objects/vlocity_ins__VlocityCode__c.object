@@ -191,11 +191,6 @@
                     <default>false</default>
                     <label>Home</label>
                 </value>
-                <value>
-                    <fullName>NUCC Taxonomy Code</fullName>
-                    <default>false</default>
-                    <label>NUCC Taxonomy Code</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>

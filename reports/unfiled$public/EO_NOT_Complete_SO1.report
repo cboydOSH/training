@@ -66,6 +66,7 @@
             <operator>equals</operator>
             <value>Contracting,Data Transfer,Enrollment,Marketing,Training,Closed Won</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Hineth Pettway Partner User</description>
+    <description>Altruis Benefit Consulting Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Hineth Pettway Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Altruis Benefit Consulting Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

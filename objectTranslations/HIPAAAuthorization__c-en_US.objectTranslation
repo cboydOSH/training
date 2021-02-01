@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HIPAA Authorization</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HIPAA Authorizations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Authorization Effective Date --></label>
+        <name>AuthorizationEffectiveDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorization Effective Event --></label>
+        <name>AuthorizationEffectiveEvent__c</name>
+        <picklistValues>
+            <masterLabel>Membership change</masterLabel>
+            <translation><!-- Membership change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membership end</masterLabel>
+            <translation><!-- Membership end --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorization Effective Until --></label>
+        <name>AuthorizationEffectiveUntil__c</name>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorization Period --></label>
+        <name>AuthorizationPeriod__c</name>
+        <picklistValues>
+            <masterLabel>All time</masterLabel>
+            <translation><!-- All time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time bound</masterLabel>
+            <translation><!-- Time bound --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorization SubType --></label>
+        <name>AuthorizationSubType__c</name>
+        <picklistValues>
+            <masterLabel>Alcohol/drug abuse treatment</masterLabel>
+            <translation><!-- Alcohol/drug abuse treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing and Membership Records</masterLabel>
+            <translation><!-- Billing and Membership Records --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change/Update of Record</masterLabel>
+            <translation><!-- Change/Update of Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communicable diseases</masterLabel>
+            <translation><!-- Communicable diseases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health Records</masterLabel>
+            <translation><!-- Mental Health Records --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AuthorizationType --></label>
+        <name>AuthorizationType__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial</masterLabel>
+            <translation><!-- Partial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorized Member --></label>
+        <name>AuthorizedMember__c</name>
+        <relationshipLabel><!-- HIPAA Authorizations (Authorized Member) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Authorization --></label>
+        <name>OtherAuthorization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Member --></label>
+        <name>PrimaryMember__c</name>
+        <relationshipLabel><!-- HIPAA Authorizations (Primary Member) --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -12,32 +12,16 @@
             <translation><!-- ClaimStatus__c --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>CoverageStatus__c</masterLabel>
-            <translation><!-- CoverageStatus__c --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Status</masterLabel>
             <translation><!-- Status --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Status__c</masterLabel>
-            <translation><!-- Status__c --></translation>
         </picklistValues>
     </fields>
     <fields>
         <label><!-- Object API Name --></label>
         <name>vlocity_ins__ObjectAPIName__c</name>
         <picklistValues>
-            <masterLabel>Application__c</masterLabel>
-            <translation><!-- Application__c --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Asset</masterLabel>
             <translation><!-- Asset --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ClaimCoverage__c</masterLabel>
-            <translation><!-- ClaimCoverage__c --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Contract</masterLabel>

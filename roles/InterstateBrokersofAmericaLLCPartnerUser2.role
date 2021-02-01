@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Keith Connolly Partner User</description>
+    <description>Interstate Brokers of America LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Keith Connolly Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>Interstate Brokers of America LLC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VP_of_Sales</parentRole>
 </Role>

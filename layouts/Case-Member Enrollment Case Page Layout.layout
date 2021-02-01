@@ -226,18 +226,6 @@
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
-            <quickActionName>FeedItem.TextPost</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>FeedItem.ContentPost</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>LogACall</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>NewTask</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
             <quickActionName>NewEvent</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
@@ -248,6 +236,18 @@
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FeedItem.PollPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.TextPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.ContentPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>LogACall</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>NewTask</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>Case.SendEmail</quickActionName>
@@ -268,28 +268,25 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>TASK.LAST_UPDATE</fields>
-        <relatedList>RelatedHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedCommentsList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedEntityHistoryList</relatedList>
+        <fields>CASES.CASE_NUMBER</fields>
+        <fields>CASES.SUBJECT</fields>
+        <fields>CASES.PRIORITY</fields>
+        <fields>CASES.CREATED_DATE</fields>
+        <fields>CASES.STATUS</fields>
+        <fields>OWNER_NAME</fields>
+        <relatedList>RelatedChildCaseList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedCaseContactRoleList</relatedList>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedFileList</relatedList>
+        <relatedList>RelatedCommentsList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedContentNoteList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
@@ -302,28 +299,24 @@
         <relatedList>RelatedActivityList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Recording__c.Case__c</relatedList>
+        <fields>TASK.SUBJECT</fields>
+        <fields>TASK.WHO_NAME</fields>
+        <fields>ACTIVITY.TASK</fields>
+        <fields>TASK.DUE_DATE</fields>
+        <fields>CORE.USERS.FULL_NAME</fields>
+        <fields>TASK.LAST_UPDATE</fields>
+        <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>CASES.CASE_NUMBER</fields>
-        <fields>CASES.SUBJECT</fields>
-        <fields>CASES.PRIORITY</fields>
-        <fields>CASES.CREATED_DATE</fields>
-        <fields>CASES.STATUS</fields>
-        <fields>OWNER_NAME</fields>
-        <relatedList>RelatedChildCaseList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Work_Item__c.Related_Case__c</relatedList>
+        <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedObjects>ContactId</relatedObjects>
+    <runAssignmentRulesDefault>false</runAssignmentRulesDefault>
     <showEmailCheckbox>true</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
     <showKnowledgeComponent>false</showKnowledgeComponent>
-    <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
+    <showRunAssignmentRulesCheckbox>true</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>true</showSubmitAndAttachButton>
     <summaryLayout>
         <masterLabel>00h4P00000WLDpR</masterLabel>

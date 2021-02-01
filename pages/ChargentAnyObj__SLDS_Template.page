@@ -1,0 +1,124 @@
+<!--
+ - Created by ericalexander on 9/21/16.
+ -->
+
+<apex:page name="SLDS_template" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+	<head>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentAnyObj__AppFrontier_Assets, '/js/jquery-3.1.1.min.js')}"/>
+		<!--<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"/>-->
+		<!--<apex:includeScript value="{!URLFOR($Resource.ChargentAnyObj__AppFrontier_Assets,'/js/jquery.aljs-all-with-moment.min.js')}"/>-->
+		<!--<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"/>-->
+
+		<apex:insert name="title"/>
+
+		<!--<apex:stylesheet value="{!URLFOR($Resource.AppFrontier_Assets, '/assets/styles/salesforce-lightning-design-system-vf.min.css')}" />-->
+		<apex:slds />
+
+		<style>
+			input[type=number]::-webkit-inner-spin-button,
+			input[type=number]::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			#loader {
+				position: fixed;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				background: #000;
+				opacity: 0.6;
+				filter: alpha(opacity=100);
+				z-index: 99999;
+			}
+
+		</style>
+
+		<script>
+			function goBack(){
+				if(ForceUI.isSalesforce1()){
+					sforce.one.back(true);
+				} else{
+					goretURL();
+				}
+			}
+			function goHome(){
+				ForceUI.isSalesforce1() ? sforce.one.navigateToURL('/lightning/page/home',true) : window.location.href='/';
+			}
+
+			function goretURL(){
+				ForceUI.isSalesforce1() ? sforce.one.navigateToURL(`{!JSENCODE($CurrentPage.parameters.retURL)}`) : window.location.href=`{!JSENCODE($CurrentPage.parameters.retURL)}`;
+			}
+
+			function gotoURL(u, isParent){
+				ForceUI.isSalesforce1() ? sforce.one.navigateToURL(u) : (isParent ? window.top.location.href = u : window.location.href=u);
+			}
+
+			function showProcessing() {
+				$('#loader').show();
+			}
+
+			function hideProcessing() {
+				$('#loader').delay(300).fadeOut(400);
+				// hasDelete();
+			}
+
+			function checkMessages() {
+				if (hasMessages) {
+					$('#err_text').html(errorMessage);
+
+					$('[id$=msg_block]').slideDown(300);
+
+					if($('[id$=err_wrapper]').hasClass('slds-theme--success')){
+						setTimeout(function(){
+							$('[id$=msg_block]').slideUp(300);
+						},2000);
+
+					}
+
+				} else {
+					$('[id$=msg_block]').slideUp(300);
+				}
+
+				hideProcessing();
+
+			}
+
+			(function(myContext){
+				myContext.ForceUI = myContext.ForceUI || {};
+
+				myContext.ForceUI.isSalesforce1 = function() {
+					return((typeof sforce != 'undefined') && sforce && (!!sforce.one));
+				}
+			})(this);
+
+		</script>
+	</head>
+
+
+
+	<div class="slds-scope appfrontier">
+
+		<body>
+
+		<!--<apex:pageMessages id="pg_msgs" escape="false"/>-->
+
+		<apex:insert name="header"/>
+
+		<div id="loader" class="slds-spinner_container">
+			<div class="slds-spinner slds-spinner--large" role="alert">
+				<span class="slds-assistive-text">Loading</span>
+				<div class="slds-spinner__dot-a"></div>
+				<div class="slds-spinner__dot-b"></div>
+			</div>
+		</div>
+
+		<apex:insert name="body"/>
+
+		</body>
+
+	</div>
+
+</apex:page>

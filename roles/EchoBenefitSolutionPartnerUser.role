@@ -5,6 +5,6 @@
     <description>Echo Benefit Solution Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Echo Benefit Solution Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

@@ -9,34 +9,99 @@
     <isTLSv12RequiredCommunities xsi:nil="true"/>
     <networkAccess>
         <ipRanges>
-            <description>Copado</description>
-            <end>54.175.230.252</end>
-            <start>54.175.230.252</start>
+            <description>DocuSign Production EU</description>
+            <end>185.81.103.254</end>
+            <start>185.81.100.1</start>
         </ipRanges>
         <ipRanges>
-            <description>Copado</description>
-            <end>54.173.229.200</end>
-            <start>54.173.229.200</start>
+            <description>DocuSign Production NA and Demo</description>
+            <end>162.248.187.254</end>
+            <start>162.248.184.1</start>
         </ipRanges>
         <ipRanges>
-            <description>Copado</description>
-            <end>54.88.136.216</end>
-            <start>54.88.136.216</start>
+            <description>DocuSign Production NA and Demo</description>
+            <end>64.207.219.254</end>
+            <start>64.207.216.1</start>
         </ipRanges>
         <ipRanges>
-            <description>Copado</description>
-            <end>54.84.188.199</end>
-            <start>54.84.188.199</start>
+            <description>DocuSign Production NA and Demo</description>
+            <end>52.41.95.219</end>
+            <start>52.41.95.219</start>
         </ipRanges>
         <ipRanges>
-            <description>Copado</description>
-            <end>35.174.57.133</end>
-            <start>35.174.57.133</start>
+            <description>DocuSign Production NA and Demo</description>
+            <end>52.34.155.26</end>
+            <start>52.34.155.26</start>
         </ipRanges>
         <ipRanges>
-            <description>Copado</description>
-            <end>18.233.58.2</end>
-            <start>18.233.58.2</start>
+            <description>DocuSign Production NA and Demo</description>
+            <end>52.27.85.20</end>
+            <start>52.27.85.20</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>52.25.145.215</end>
+            <start>52.25.145.215</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>35.167.67.7</end>
+            <start>35.167.67.7</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>35.164.40.59</end>
+            <start>35.164.40.59</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>34.215.203.190</end>
+            <start>34.215.203.190</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>34.215.142.185</end>
+            <start>34.215.142.185</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>34.215.124.54</end>
+            <start>34.215.124.54</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>34.213.254.17</end>
+            <start>34.213.254.17</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>34.213.201.254</end>
+            <start>34.213.201.254</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production NA and Demo</description>
+            <end>34.212.7.28</end>
+            <start>34.212.7.28</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production AU</description>
+            <end>13.72.249.142</end>
+            <start>13.72.249.142</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production AU</description>
+            <end>13.72.248.93</end>
+            <start>13.72.248.93</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production AU</description>
+            <end>13.70.141.103</end>
+            <start>13.70.141.103</start>
+        </ipRanges>
+        <ipRanges>
+            <description>DocuSign Production AU</description>
+            <end>13.70.136.159</end>
+            <start>13.70.136.159</start>
         </ipRanges>
     </networkAccess>
     <passwordPolicies>
@@ -71,7 +136,7 @@
         <enableSMSIdentity>true</enableSMSIdentity>
         <enableU2F>false</enableU2F>
         <enableUpgradeInsecureRequests>true</enableUpgradeInsecureRequests>
-        <enableXssProtection>true</enableXssProtection>
+        <enableXssProtection>false</enableXssProtection>
         <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
         <enforceUserDeviceRevoked>false</enforceUserDeviceRevoked>
         <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>

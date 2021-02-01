@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Michael Bruce Tripp Partner User</description>
+    <description>MICHAEL TRIPP Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Michael Bruce Tripp Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>MICHAEL TRIPP Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VP_of_Sales</parentRole>
 </Role>

@@ -1,0 +1,84 @@
+<!--
+ - Created by ericalexander on 2019-02-27.
+ -->
+
+<apex:page id="Chargent_Send_Payment_Request" showHeader="false" sideBar="false" standardStylesheets="false">
+
+	<!--<apex:stylesheet value="{!URLFOR($Resource.AppFrontier_Assets, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}"/>-->
+
+
+	<apex:includeLightning />
+	<apex:slds />
+
+	<script>
+		$Lightning.use("ChargentAnyObj:Chargent_Send_Payment_Request", function () {
+			$Lightning.createComponent(
+				"ChargentAnyObj:Send_Payment_Request",
+				{
+					"isFromVF": true,
+					"recordId": "{!$CurrentPage.parameters.id}",
+					"accId": "{!JSENCODE($CurrentPage.parameters.accId)}",
+					"parentId": "{!JSENCODE($CurrentPage.parameters.parentId)}",
+					"filterPR" : "{!JSENCODE($CurrentPage.parameters.filterPR)}",
+					"editAmount" : "{!JSENCODE($CurrentPage.parameters.editAmount)}",
+					"defaultAmount" : "{!$CurrentPage.parameters.amtfld}"
+				},
+				"payment_request_content",
+				function (cmp) {
+					var loadingDivElt = document.getElementById("loader");
+					loadingDivElt.style.display = 'none';
+
+					$A.eventService.addHandler({
+						event: 'force:navigateToURL',
+						handler: function (event) {
+							if (typeof sforce != 'undefined' && sforce.one) {
+								// VF page in S1 or Lightning Exp
+								// VF page in Classic
+								sforce.one.navigateToURL(event.getParams().url);
+
+							} else {
+								//From the Payment Entry Modal if opened from this VF then the URL will simply end with this records id
+								//So navigate to it
+								if (event.getParams().url.endsWith('{!$CurrentPage.parameters.id}') && event.getParams().url.indexOf('recId') == -1) {
+									window.parent.location.href = '/{!$CurrentPage.parameters.id}';
+								} else if (event.getParams().url.endsWith('{!JSENCODE($CurrentPage.parameters.parentId)}') && event.getParams().url.indexOf('recId') == -1) {
+									window.parent.location.href = '/{!JSENCODE($CurrentPage.parameters.parentId)}';
+								} else { //Else going to a different URL (like metadatacheck)
+									window.parent.location.href = event.getParams().url + '&retURL=/{!$CurrentPage.parameters.id}';
+								}
+
+							}
+
+						}
+					});
+				});
+		});
+
+		/**
+		 function toggleConsole(callback){
+            var ltngDivElt = document.getElementById("payment_console_modal");
+            ltngDivElt.classList.toggle('slds-hidden');
+            callback();
+
+        }
+
+		 **/
+	</script>
+
+	<div class="slds-scope">
+		<div id="loader" class="slds-grid slds-grid--frame">
+			<div class="slds-spinner_container">
+				<div class="slds-spinner slds-spinner--brand slds-spinner--large" role="alert">
+					<span class="slds-assistive-text">Loading</span>
+					<div class="slds-spinner__dot-a"></div>
+					<div class="slds-spinner__dot-b"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div id="payment_console_modal" class="slds-fade-in-open slds-hidden">-->
+	<div id="payment_request_content" class="slds-scope">
+	</div>
+	<!--</div>-->
+	<!--</div>-->
+</apex:page>

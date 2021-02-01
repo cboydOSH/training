@@ -153,7 +153,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>vlocity_ins__AsyncApexJobId__c</fullName>
         <deprecated>false</deprecated>
@@ -229,11 +229,6 @@
                     <default>false</default>
                     <label>Data Input</label>
                 </value>
-                <value>
-                    <fullName>List Input</fullName>
-                    <default>false</default>
-                    <label>List Input</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -273,9 +268,9 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Ignore</fullName>
+                    <fullName>None</fullName>
                     <default>false</default>
-                    <label>Ignore</label>
+                    <label>None</label>
                 </value>
                 <value>
                     <fullName>Hourly</fullName>

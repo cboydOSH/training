@@ -5,6 +5,6 @@
     <description>Connor Group Insurance Agency Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Connor Group Insurance Agency Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

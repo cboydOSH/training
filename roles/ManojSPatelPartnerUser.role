@@ -5,6 +5,6 @@
     <description>Manoj S. Patel Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Manoj S. Patel Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

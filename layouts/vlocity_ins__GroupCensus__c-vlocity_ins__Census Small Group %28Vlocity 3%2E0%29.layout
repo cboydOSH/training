@@ -94,6 +94,22 @@
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>false</editHeading>
+        <label>Census Members</label>
+        <layoutColumns>
+            <layoutItems>
+                <height>500</height>
+                <page>vlocity_ins__CensusMemberInput</page>
+                <showLabel>false</showLabel>
+                <showScrollbars>true</showScrollbars>
+                <width>100%</width>
+            </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
+    </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
         <fields>vlocity_ins__FirstName__c</fields>
@@ -103,24 +119,6 @@
         <fields>vlocity_ins__IsPrimaryMember__c</fields>
         <fields>vlocity_ins__RelatedCensusMemberId__c</fields>
         <relatedList>vlocity_ins__GroupCensusMember__c.vlocity_ins__CensusId__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>QUOTE.NAME</fields>
-        <relatedList>Quote.vlocity_ins__GroupCensusId__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>CONTRACT.CONTRACT_NUMBER</fields>
-        <fields>CONTRACT.NAME</fields>
-        <fields>SALES.ACCOUNT.NAME</fields>
-        <fields>CONTRACT.STATUS</fields>
-        <relatedList>Contract.vlocity_ins__FinalRatingGroupCensusId__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>CONTRACT.CONTRACT_NUMBER</fields>
-        <fields>CONTRACT.NAME</fields>
-        <fields>SALES.ACCOUNT.NAME</fields>
-        <fields>CONTRACT.STATUS</fields>
-        <relatedList>Contract.vlocity_ins__EnrollmentCensusId__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedNoteList</relatedList>

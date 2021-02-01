@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Marcia Jobe Partner User</description>
+    <description>Choice Holdings United Investments Agency, LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Marcia Jobe Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Choice Holdings United Investments Agency, LLC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

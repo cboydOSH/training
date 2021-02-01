@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Evelyn Vanhouten Partner User</description>
+    <description>insurance savings direct Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Evelyn Vanhouten Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>insurance savings direct Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

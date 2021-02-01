@@ -5,6 +5,6 @@
     <description>Kristen Kessel Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Kristen Kessel Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

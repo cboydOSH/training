@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Enrolled Member</audienceName>
+    <container>Member Community</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.Main_Asset__c.Status</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Active</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.Main_Asset__c.Status</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Active - Pending Application Fee</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <profile>member community admin test</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <profile>member community</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <profile>data model member</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>3</criteriaNumber>
+            <criterionValue>
+                <profile>admin</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+    </criteria>
+    <formula>(1 AND 2) OR 3</formula>
+    <formulaFilterType>CustomLogicMatches</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>3862b381-f2b7-4418-817d-d9a87b83ee56$#$3f3931a7-8603-4d61-84f6-e59b4bd09f80</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Contracting_Portal_communityPortalContactUsEnglish_Component</targetValue>
+        </target>
+        <target>
+            <groupName>8c40e496-1fad-4653-b47f-219cc330a265</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Home_for_Enrolled_Members_Page</targetValue>
+        </target>
+        <target>
+            <groupName>74e01835-07c1-4b09-a857-f0dd4c8fb915$#$c825179f-f09a-4921-8441-0aad49920e4c</groupName>
+            <priority>2</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Default_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+    </targets>
+</Audience>

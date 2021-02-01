@@ -4,13 +4,7 @@
     <name>Pre-Cert Queue</name>
     <queueMembers>
         <users>
-            <user>dicenhour@onesharehealth.com</user>
-            <user>dgriffin@onesharehealth.com</user>
-            <user>diwilliams@onesharehealth.com</user>
-            <user>jclay@onesharehealth.com</user>
             <user>jlaengrich@onesharehealth.com</user>
-            <user>tnolan@onesharehealth.com</user>
-            <user>tclayton@onesharehealth.com</user>
         </users>
     </queueMembers>
     <queueSobject>

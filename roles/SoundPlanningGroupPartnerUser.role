@@ -5,6 +5,6 @@
     <description>Sound Planning Group Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Sound Planning Group Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

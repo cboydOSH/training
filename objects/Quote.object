@@ -142,11 +142,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Quote_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -3332,7 +3335,7 @@
         </availableFields>
         <description>The fields queries as part of InsuranceQuoteHandler</description>
         <displayedFields>
-            <field>vlocity_ins__DaysRemaining__c</field>
+            <field>Information_Packet_Number__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -3343,26 +3346,6 @@
         </displayedFields>
         <displayedFields>
             <field>vlocity_ins__EndDate__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>vlocity_ins__TotalAmountTermDifference__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>vlocity_ins__TotalFeeTermDifference__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>vlocity_ins__TotalPremiumTermDifference__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>vlocity_ins__TotalTaxTermDifference__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -3397,21 +3380,6 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>RecordTypeId</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>vlocity_ins__RecordTypeName__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>vlocity_ins__Type__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
             <field>vlocity_ins__GroupCensusId__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -3431,6 +3399,46 @@
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__DaysRemaining__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__TotalAmountTermDifference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__TotalFeeTermDifference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__TotalPremiumTermDifference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__TotalTaxTermDifference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__RecordTypeName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
         <label>QuoteDetail</label>
     </fieldSets>
     <fields>
@@ -3441,11 +3449,47 @@
         <fullName>AdditionalName</fullName>
     </fields>
     <fields>
+        <fullName>Age_Period_30d__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This is foeld is necesary for the information package and Enroll process</description>
+        <externalId>false</externalId>
+        <label>Age Period 30d</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Age_Period_60d__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is necesary for Information Package and Enroll Process</description>
+        <externalId>false</externalId>
+        <label>Age Period 60d</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Agent_Label__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Agent Label</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Agent Label)</relationshipLabel>
+        <relationshipName>AgentLabel</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>BillingName</fullName>
     </fields>
     <fields>
         <fullName>ContactId</fullName>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Continue_Save_for_Later__c</fullName>
+        <description>This field have the save for later information of the omniscript in Enroll</description>
+        <externalId>false</externalId>
+        <label>Continue Save for Later</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
     </fields>
     <fields>
         <fullName>ContractId</fullName>
@@ -3461,6 +3505,15 @@
         <fullName>Email</fullName>
     </fields>
     <fields>
+        <fullName>Enroller_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Enroller Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ExpirationDate</fullName>
     </fields>
     <fields>
@@ -3470,13 +3523,37 @@
         <fullName>GrandTotal</fullName>
     </fields>
     <fields>
+        <fullName>Information_Packet_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Information Packet #</label>
+        <length>15</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>IsSyncing</fullName>
     </fields>
     <fields>
         <fullName>LineItemCount</fullName>
     </fields>
     <fields>
+        <fullName>Most_Recent_PR_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Pay Link (Most Recent)</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>Old_MemBer_Based_Dob__c</fullName>
+        <description>This Field is necesary for know the specific Dob and Verbiage in Information Package</description>
+        <externalId>false</externalId>
+        <label>Old MemBer Based Dob</label>
+        <required>false</required>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>OpportunityId</fullName>
@@ -3490,7 +3567,48 @@
         <fullName>Phone</fullName>
     </fields>
     <fields>
+        <fullName>Price_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This is  a field for Infomation Package</description>
+        <externalId>false</externalId>
+        <label>Price Change</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>QuoteToName</fullName>
+    </fields>
+    <fields>
+        <fullName>Rating_Member__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rating Member</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Rating Member)</relationshipLabel>
+        <relationshipName>Rating_Member</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Recurring_Payment_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Recurring Payment Order</label>
+        <referenceTo>ChargentOrders__ChargentOrder__c</referenceTo>
+        <relationshipLabel>Quotes</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Servicing_Agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Servicing Agent</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Servicing Agent)</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ShippingHandling</fullName>
@@ -3510,6 +3628,16 @@
     </fields>
     <fields>
         <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Writing_agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Writing agent</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>vlocity_ins__AgencyBrokerageId__c</fullName>
@@ -4062,16 +4190,78 @@
         <type>Lookup</type>
     </fields>
     <listViews>
-        <fullName>mine</fullName>
+        <fullName>All</fullName>
         <columns>QUOTE.NAME</columns>
+        <columns>Information_Packet_Number__c</columns>
         <columns>OPPORTUNITY.NAME</columns>
         <columns>QUOTE.ISSYNCING</columns>
         <columns>QUOTE.EXPIRATIONDATE</columns>
         <columns>QUOTE.SUBTOTAL</columns>
         <columns>QUOTE.TOTALPRICE</columns>
+        <columns>vlocity_ins__EffectiveDate__c</columns>
+        <columns>QUOTE.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Quotes</label>
+    </listViews>
+    <listViews>
+        <fullName>Applications_In_Progress</fullName>
+        <columns>QUOTE.NAME</columns>
+        <columns>Information_Packet_Number__c</columns>
+        <columns>CreatedBy</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>QUOTE.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Draft,Started</value>
+        </filters>
+        <label>Applications In Progress</label>
+    </listViews>
+    <listViews>
+        <fullName>Completed_Quotes</fullName>
+        <columns>QUOTE.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Information_Packet_Number__c</columns>
+        <columns>CreatedBy</columns>
+        <columns>LastModifiedBy</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>QUOTE.STATUS</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <label>Completed Quotes</label>
+    </listViews>
+    <listViews>
+        <fullName>Custom_All_Quotes</fullName>
+        <columns>QUOTE.NAME</columns>
+        <columns>QUOTE.ISSYNCING</columns>
+        <columns>QUOTE.EXPIRATIONDATE</columns>
+        <columns>QUOTE.SUBTOTAL</columns>
+        <columns>QUOTE.TOTALPRICE</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Information_Packet_Number__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>Custom All Quotes</label>
+    </listViews>
+    <listViews>
+        <fullName>mine</fullName>
+        <columns>QUOTE.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>QUOTE.SUBTOTAL</columns>
+        <columns>QUOTE.TOTALPRICE</columns>
         <filterScope>Mine</filterScope>
         <label>My Quotes</label>
     </listViews>
+    <profileSearchLayouts>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
     <recordTypes>
         <fullName>vlocity_ins__LargeGroupQuote</fullName>
         <active>true</active>
@@ -4079,15 +4269,11 @@
         <picklistValues>
             <picklist>Status</picklist>
             <values>
-                <fullName>Accepted</fullName>
+                <fullName>Awaiting Signature</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Denied</fullName>
+                <fullName>Completed</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4095,19 +4281,11 @@
                 <default>true</default>
             </values>
             <values>
-                <fullName>In Review</fullName>
+                <fullName>Enrolled</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Needs Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Presented</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rejected</fullName>
+                <fullName>Started</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4195,15 +4373,11 @@
         <picklistValues>
             <picklist>Status</picklist>
             <values>
-                <fullName>Accepted</fullName>
+                <fullName>Awaiting Signature</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Denied</fullName>
+                <fullName>Completed</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4211,19 +4385,11 @@
                 <default>true</default>
             </values>
             <values>
-                <fullName>In Review</fullName>
+                <fullName>Enrolled</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Needs Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Presented</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rejected</fullName>
+                <fullName>Started</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4311,15 +4477,11 @@
         <picklistValues>
             <picklist>Status</picklist>
             <values>
-                <fullName>Accepted</fullName>
+                <fullName>Awaiting Signature</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Denied</fullName>
+                <fullName>Completed</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4327,19 +4489,11 @@
                 <default>true</default>
             </values>
             <values>
-                <fullName>In Review</fullName>
+                <fullName>Enrolled</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Needs Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Presented</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rejected</fullName>
+                <fullName>Started</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4423,31 +4577,66 @@
     <searchLayouts>
         <customTabListAdditionalFields>QUOTE.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Information_Packet_Number__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>QUOTE.ISSYNCING</customTabListAdditionalFields>
         <customTabListAdditionalFields>QUOTE.EXPIRATIONDATE</customTabListAdditionalFields>
         <customTabListAdditionalFields>QUOTE.SUBTOTAL</customTabListAdditionalFields>
         <customTabListAdditionalFields>QUOTE.TOTALPRICE</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>QUOTE.NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Information_Packet_Number__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>QUOTE.ISSYNCING</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>QUOTE.EXPIRATIONDATE</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>QUOTE.SUBTOTAL</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>QUOTE.TOTALPRICE</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>QUOTE.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Information_Packet_Number__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>QUOTE.ISSYNCING</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>QUOTE.EXPIRATIONDATE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>QUOTE.SUBTOTAL</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>QUOTE.TOTALPRICE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>QUOTE.PHONE</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>QUOTE.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Information_Packet_Number__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>QUOTE.ISSYNCING</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>QUOTE.EXPIRATIONDATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>QUOTE.SUBTOTAL</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>QUOTE.TOTALPRICE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Continue_Application</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Continue Application</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!IF( CONTAINS($Site.CurrentSiteUrl, &apos;oshtraining&apos;) , URLFOR(&apos;/producercommunity/s/new-application&apos;,null,[ContextId=Quote.Id, Thisisdirect=true, thisIsCommunity=true]), URLFOR(&apos;/apex/vlocity_ins__OmniScriptUniversalPage?ContextId=&apos;&amp;Quote.Id&amp;&apos;&amp;Thisisdirect=true&amp;layout=newport#/OmniScriptType/OSH/OmniScriptSubType/Enroll/OmniScriptLang/English/ContextId/PrefillDataRaptorBundle//true&apos;,null,[ContextId=Quote.Id]))}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Start_Application</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Start Application</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>{!IF( CONTAINS($Site.CurrentSiteUrl, &apos;oshtraining&apos;) , URLFOR(&apos;/producercommunity/s/new-application&apos;,null,[ContextId=Quote.Id, Thisisdirect=true, thisIsCommunity=true]), URLFOR(&apos;/apex/vlocity_ins__OmniScriptUniversalPage?ContextId=&apos;&amp;Quote.Id&amp;&apos;&amp;Thisisdirect=true&amp;layout=newport#/OmniScriptType/OSH/OmniScriptSubType/Enroll/OmniScriptLang/English/ContextId/PrefillDataRaptorBundle//true&apos;,null,[ContextId=Quote.Id]))}</url>
+    </webLinks>
     <webLinks>
         <fullName>vlocity_ins__CreatingContractAloha</fullName>
         <availability>online</availability>

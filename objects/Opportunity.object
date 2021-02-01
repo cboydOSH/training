@@ -293,7 +293,7 @@
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <externalSharingModel>Read</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fieldSets>
         <fullName>vlocity_ins__StoryFieldSet</fullName>
         <description>Story board</description>
@@ -383,19 +383,6 @@
             <restricted>true</restricted>
             <valueSetName>Affinity_percent</valueSetName>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Agent_ID__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Agent ID from Admin123</inlineHelpText>
-        <label>Agent ID</label>
-        <length>6</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Amount</fullName>
@@ -758,36 +745,6 @@
                 <valueName>0.25</valueName>
             </valueSettings>
             <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <valueName>0.5</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <controllingFieldValue>Referral</controllingFieldValue>
-                <valueName>1</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <valueName>2</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <valueName>3</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <valueName>4</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <valueName>5</valueName>
-            </valueSettings>
-            <valueSettings>
                 <controllingFieldValue>Call Center</controllingFieldValue>
                 <controllingFieldValue>Management</controllingFieldValue>
                 <valueName>25</valueName>
@@ -835,6 +792,27 @@
             <valueSettings>
                 <controllingFieldValue>FMO</controllingFieldValue>
                 <valueName>22</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <controllingFieldValue>Referral</controllingFieldValue>
+                <valueName>1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <valueName>2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <valueName>3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <valueName>4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <valueName>5</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Producer</controllingFieldValue>
@@ -896,6 +874,33 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Currently_enrolled_health_C_Program__c</fullName>
+        <description>a.	Are you currently enrolled in a health care Program? – Yes/No</description>
+        <externalId>false</externalId>
+        <label>Currently enrolled health C Program</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Date_of_Birth__c</fullName>
         <externalId>false</externalId>
         <label>Date of Birth</label>
@@ -926,67 +931,10 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Demographic_Groups__c</fullName>
-        <externalId>false</externalId>
-        <label>Demographic Groups</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>English</fullName>
-                    <default>false</default>
-                    <label>English</label>
-                </value>
-                <value>
-                    <fullName>Filipino</fullName>
-                    <default>false</default>
-                    <label>Filipino</label>
-                </value>
-                <value>
-                    <fullName>Korean</fullName>
-                    <default>false</default>
-                    <label>Korean</label>
-                </value>
-                <value>
-                    <fullName>Latin/Spanish</fullName>
-                    <default>false</default>
-                    <label>Latin/Spanish</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-    </fields>
-    <fields>
-        <fullName>DocuSign_Received__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>DocuSign Received</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>DocuSign_Sent__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>DocuSign Sent</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>E_O_Date__c</fullName>
@@ -1119,52 +1067,6 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Ethnicity__c</fullName>
-        <externalId>false</externalId>
-        <label>Ethnicity</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Hispanic/Latino</fullName>
-                    <default>false</default>
-                    <label>Hispanic/Latino</label>
-                </value>
-                <value>
-                    <fullName>American Indian/Alaska Native</fullName>
-                    <default>false</default>
-                    <label>American Indian/Alaska Native</label>
-                </value>
-                <value>
-                    <fullName>Asian</fullName>
-                    <default>false</default>
-                    <label>Asian</label>
-                </value>
-                <value>
-                    <fullName>Black/African American</fullName>
-                    <default>false</default>
-                    <label>Black/African American</label>
-                </value>
-                <value>
-                    <fullName>Native Hawaiian/Pacific Islander</fullName>
-                    <default>false</default>
-                    <label>Native Hawaiian/Pacific Islander</label>
-                </value>
-                <value>
-                    <fullName>White/Caucasian</fullName>
-                    <default>false</default>
-                    <label>White/Caucasian</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>ExpectedRevenue</fullName>
@@ -1753,42 +1655,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Preferred_Language__c</fullName>
-        <externalId>false</externalId>
-        <label>Preferred Language</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>English</fullName>
-                    <default>false</default>
-                    <label>English</label>
-                </value>
-                <value>
-                    <fullName>Latin/Spanish</fullName>
-                    <default>false</default>
-                    <label>Latin/Spanish</label>
-                </value>
-                <value>
-                    <fullName>Korean</fullName>
-                    <default>false</default>
-                    <label>Korean</label>
-                </value>
-                <value>
-                    <fullName>Vietnamese</fullName>
-                    <default>false</default>
-                    <label>Vietnamese</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Pricebook2Id</fullName>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -1979,6 +1845,15 @@
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Servicing Representative</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.UserRole.Name</field>
+                <operation>equals</operation>
+                <value>VP of Sales,Regional Sales Director,State Sales Manager</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
         <referenceTo>User</referenceTo>
         <relationshipName>Opportunities1</relationshipName>
         <required>false</required>
@@ -2749,9 +2624,9 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
     </listViews>
     <listViews>
         <fullName>Opportunities_in_Application</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
         <columns>OPPORTUNITY.NAME</columns>
         <columns>ACCOUNT.NAME</columns>
-        <columns>CORE.USERS.FULL_NAME</columns>
         <columns>OPPORTUNITY.STAGE_NAME</columns>
         <columns>OPPORTUNITY.CREATED_DATE</columns>
         <columns>OPPORTUNITY.RECORDTYPE</columns>
@@ -2870,10 +2745,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -2982,21 +2853,13 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Demographic_Groups__c</picklist>
+            <picklist>Currently_enrolled_health_C_Program__c</picklist>
             <values>
-                <fullName>English</fullName>
+                <fullName>No</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Filipino</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Korean</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latin%2FSpanish</fullName>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3019,33 +2882,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Virtual</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ethnicity__c</picklist>
-            <values>
-                <fullName>American Indian%2FAlaska Native</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Asian</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Black%2FAfrican American</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hispanic%2FLatino</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Native Hawaiian%2FPacific Islander</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>White%2FCaucasian</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3110,11 +2946,11 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>AAAI</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Appcast</fullName>
+                <fullName>Advertisement</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3126,11 +2962,15 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
+                <fullName>Farmers Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Google AdWords</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Internal Recruiting Team</fullName>
+                <fullName>NAHU Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3269,25 +3109,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Preferred_Language__c</picklist>
-            <values>
-                <fullName>English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Korean</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latin%2FSpanish</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vietnamese</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Producer2_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -3318,6 +3139,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>18</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referral_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3553,21 +3385,13 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Demographic_Groups__c</picklist>
+            <picklist>Currently_enrolled_health_C_Program__c</picklist>
             <values>
-                <fullName>English</fullName>
+                <fullName>No</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Filipino</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Korean</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latin%2FSpanish</fullName>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3590,33 +3414,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Virtual</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ethnicity__c</picklist>
-            <values>
-                <fullName>American Indian%2FAlaska Native</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Asian</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Black%2FAfrican American</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hispanic%2FLatino</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Native Hawaiian%2FPacific Islander</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>White%2FCaucasian</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3681,11 +3478,11 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>AAAI</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Appcast</fullName>
+                <fullName>Advertisement</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3697,11 +3494,15 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
+                <fullName>Farmers Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Google AdWords</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Internal Recruiting Team</fullName>
+                <fullName>NAHU Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3836,25 +3637,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Producer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Preferred_Language__c</picklist>
-            <values>
-                <fullName>English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Korean</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latin%2FSpanish</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vietnamese</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4151,21 +3933,13 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Demographic_Groups__c</picklist>
+            <picklist>Currently_enrolled_health_C_Program__c</picklist>
             <values>
-                <fullName>English</fullName>
+                <fullName>No</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Filipino</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Korean</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latin%2FSpanish</fullName>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4188,33 +3962,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Virtual</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ethnicity__c</picklist>
-            <values>
-                <fullName>American Indian%2FAlaska Native</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Asian</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Black%2FAfrican American</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hispanic%2FLatino</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Native Hawaiian%2FPacific Islander</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>White%2FCaucasian</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4426,25 +4173,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Preferred_Language__c</picklist>
-            <values>
-                <fullName>English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Korean</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latin%2FSpanish</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vietnamese</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Producer2_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -4475,6 +4203,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>18</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referral_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4618,10 +4357,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -4721,10 +4456,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
@@ -4734,21 +4465,13 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Demographic_Groups__c</picklist>
+            <picklist>Currently_enrolled_health_C_Program__c</picklist>
             <values>
-                <fullName>English</fullName>
+                <fullName>No</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Filipino</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Korean</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latin%2FSpanish</fullName>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4771,33 +4494,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Virtual</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ethnicity__c</picklist>
-            <values>
-                <fullName>American Indian%2FAlaska Native</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Asian</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Black%2FAfrican American</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hispanic%2FLatino</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Native Hawaiian%2FPacific Islander</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>White%2FCaucasian</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4872,10 +4568,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         </picklistValues>
         <picklistValues>
             <picklist>Lost_Reason__c</picklist>
-            <values>
-                <fullName>All efforts extended%2C no response</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Lost to Competitor</fullName>
                 <default>false</default>
@@ -4973,25 +4665,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Preferred_Language__c</picklist>
-            <values>
-                <fullName>English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Korean</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Latin%2FSpanish</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vietnamese</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Producer2_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -5083,10 +4756,10 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Projected_Close_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Read</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>AcctOpp_Lock_field_must_be_checked</fullName>
         <active>true</active>
@@ -5094,6 +4767,7 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <errorConditionFormula>AND
 (
  $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+ $Profile.Name &lt;&gt; &quot;Data Model Producer&quot;,
  AcctOpp_Lock__c = FALSE
 )</errorConditionFormula>
         <errorMessage>You cannot create a new opportunity without going through the lead conversion process. Please create a lead and then convert it to an opportunity and account.</errorMessage>
@@ -5134,17 +4808,6 @@ ISPICKVAL(Contract_Level__c , &quot;5&quot;)
 )</errorConditionFormula>
         <errorDisplayField>Contract_Level__c</errorDisplayField>
         <errorMessage>Leads with contract type &apos;Affinity&apos; and contract level greater than 3 should be Submitted for Approval. Please contact your Sales Coordinator or Sales VP for further instructions.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Agent_ID_Needed_To_Convert</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-	$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
-	ISBLANK(Agent_ID__c),
-	IsWon = TRUE
-	)</errorConditionFormula>
-        <errorDisplayField>Agent_ID__c</errorDisplayField>
-        <errorMessage>Please Enter the Agent ID before converting the Opportunity.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>All_Contracting_fields_should_be_checked</fullName>
@@ -5480,10 +5143,10 @@ ISCHANGED(Contract_Type__c)
     </validationRules>
     <validationRules>
         <fullName>Parent_Acct_required_in_Qualification</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND
 (
-				$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+				$Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;Producer&quot;,
 				ISBLANK(Parent_Account__c),
 				TEXT(StageName) &lt;&gt; &quot;Closed Lost&quot;,
 				NOT(ISPICKVAL(StageName, &quot;Qualification&quot;))
@@ -5555,6 +5218,18 @@ ISCHANGED(Contract_Type__c)
         <openType>replace</openType>
         <protected>false</protected>
         <url>https://onesharehealth--vfirst.visualforce.com/apex/vfirst__Portal?redirect_url={!URLENCODE(&apos;order-report?sf_object_id=&apos; + CASESAFEID(Opportunity.Id) + &apos;&amp;sf_object_name=opportunity&apos;)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Opportunity</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromOpportunity</page>
+        <protected>false</protected>
     </webLinks>
     <webLinks>
         <fullName>pi__Send_Pardot_Emails</fullName>

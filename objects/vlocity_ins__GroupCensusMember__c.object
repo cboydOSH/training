@@ -511,6 +511,39 @@
         <label>Rating Fact Source Fields</label>
     </fieldSets>
     <fields>
+        <fullName>HIPAA_Authorized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HIPAA Authorized</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Use_Tobbaco_or_Vapo__c</fullName>
+        <description>Define al usuario si consume tabaco o vape</description>
+        <externalId>false</externalId>
+        <label>Use Tobbaco or Vapo</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>vlocity_ins__AttributeSelectedValues__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>

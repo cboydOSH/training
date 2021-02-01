@@ -410,16 +410,6 @@
                     <default>false</default>
                     <label>Complete</label>
                 </value>
-                <value>
-                    <fullName>Summit</fullName>
-                    <default>false</default>
-                    <label>Summit</label>
-                </value>
-                <value>
-                    <fullName>Thrive</fullName>
-                    <default>false</default>
-                    <label>Thrive</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>

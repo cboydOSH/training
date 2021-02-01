@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Mike Rickett Partner User</description>
+    <description>Art of Strength Insurance Solutions Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Mike Rickett Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Art of Strength Insurance Solutions Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

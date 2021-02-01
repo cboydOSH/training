@@ -5,6 +5,6 @@
     <description>LOUIS J ROSA Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>LOUIS J ROSA Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

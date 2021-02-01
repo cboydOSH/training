@@ -5,6 +5,6 @@
     <description>Sharla Maingrette Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Sharla Maingrette Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

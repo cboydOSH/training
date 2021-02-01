@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
-    <sharingOwnerRules>
-        <fullName>Sales_Leadership_Access</fullName>
+    <sharingCriteriaRules>
+        <fullName>Member_Community_Accounts</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>Read</caseAccessLevel>
+            <caseAccessLevel>None</caseAccessLevel>
             <contactAccessLevel>Edit</contactAccessLevel>
             <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
-        <label>Sales Leadership Access</label>
+        <label>Member Community Accounts</label>
         <sharedTo>
-            <group>Sales_Leadership</group>
+            <group>Member_users</group>
         </sharedTo>
-        <sharedFrom>
-            <group>Sales_Team</group>
-        </sharedFrom>
-    </sharingOwnerRules>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingGuestRules>
+        <fullName>Accounts_share_for_guest_user</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Accounts share for guest user</label>
+        <sharedTo>
+            <guestUser>Member_Community</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingGuestRules>
 </SharingRules>

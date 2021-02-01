@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Elena Carrillo Andre Partner User</description>
+    <description>Luis Feliciano Insurance Agency Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Elena Carrillo Andre Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Luis Feliciano Insurance Agency Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

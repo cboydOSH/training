@@ -6,8 +6,9 @@
     <enableAssetSharing>true</enableAssetSharing>
     <enableCommunityUserVisibility>true</enableCommunityUserVisibility>
     <enableExternalSharingModel>true</enableExternalSharingModel>
-    <enableManagerGroups>false</enableManagerGroups>
-    <enableManualUserRecordSharing>false</enableManualUserRecordSharing>
+    <enableManagerGroups>true</enableManagerGroups>
+    <enableManualUserRecordSharing>true</enableManualUserRecordSharing>
+    <enablePortalUserCaseSharing>true</enablePortalUserCaseSharing>
     <enablePortalUserVisibility>true</enablePortalUserVisibility>
     <enableRemoveTMGroupMembership>false</enableRemoveTMGroupMembership>
     <enableRestrictAccessLookupRecords>false</enableRestrictAccessLookupRecords>

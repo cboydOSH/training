@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Can Manage DocuSign Account --></label>
+        <name>dfsle__CanManageAccount__c</name>
+    </fields>
+    <fields>
+        <help>Fecha de aprovisionamiento</help>
+        <label><!-- DocuSign Provisioned Date --></label>
+        <name>dfsle__Provisioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Docusign Status --></label>
+        <name>dfsle__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Activo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation>Inactivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Username --></label>
+        <name>dfsle__Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- inContact Custom Screenpop --></label>
+        <name>icAgentConsole__incCustomScreenpop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can View Not Assigned Prospects --></label>
+        <name>pi__Can_View_Not_Assigned_Prospects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Key --></label>
+        <name>pi__Pardot_Api_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Version --></label>
+        <name>pi__Pardot_Api_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Id --></label>
+        <name>pi__Pardot_User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Key --></label>
+        <name>pi__Pardot_User_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Role --></label>
+        <name>pi__Pardot_User_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Email --></label>
+        <name>vlocity_ins__DocuSignEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked a user will be marked for export to OMplus platform. User will be enabled in OMplus once catalog synchronisation job is complete in Vlocity XOM Administration tab. --></help>
+        <label><!-- OMplus Enabled --></label>
+        <name>vlocity_ins__OMplusSyncEnabled__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Manager field has to be filled before creating users --></errorMessage>
+        <name>Manager_field_req_during_user_creation</name>
+    </validationRules>
+</CustomObjectTranslation>

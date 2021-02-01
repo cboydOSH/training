@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Shelby Fitzer Partner User</description>
+    <description>Solid Financial Solutions Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Shelby Fitzer Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Solid Financial Solutions Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

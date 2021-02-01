@@ -10,7 +10,7 @@
     <authorizationRequiredPage>CommunitiesLogin</authorizationRequiredPage>
     <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
     <browserXssProtection>true</browserXssProtection>
-    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <clickjackProtectionLevel>AllowAllFraming</clickjackProtectionLevel>
     <contentSniffingProtection>true</contentSniffingProtection>
     <cspUpgradeInsecureRequests>true</cspUpgradeInsecureRequests>
     <enableAuraRequests>true</enableAuraRequests>
@@ -19,11 +19,29 @@
     <inMaintenancePage>InMaintenance</inMaintenancePage>
     <indexPage>CommunitiesLanding</indexPage>
     <masterLabel>OSHTraining</masterLabel>
-    <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <referrerPolicyOriginWhenCrossOrigin>false</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
     <siteAdmin>pm@appinium.com.osh</siteAdmin>
     <siteGuestRecordDefaultOwner>pm@appinium.com.osh</siteGuestRecordDefaultOwner>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/paymentrequest/ChargentBase/ChargentTakePaymentApp.app?aura.format=JSON&amp;aura.formatAdapter=LIGHTNING_OUT</source>
+        <target>https://devvl2-paymentrequest.cs45.force.com/paymentrequest/ChargentBase/ChargentTakePaymentApp.app?aura.format=JSON&amp;aura.formatAdapter=LIGHTNING_OUT</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/paymentrequest/lightning/lightning.out.delegate.js?v=axnV2upVY_ZFzdo18txAEw</source>
+        <target>https://devvl2-paymentrequest.cs45.force.com/paymentrequest/lightning/lightning.out.delegate.js?v=axnV2upVY_ZFzdo18txAEw</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/paymentrequest/lightning/lightning.out.js?v=2</source>
+        <target>https://devvl2-paymentrequest.cs45.force.com/paymentrequest/lightning/lightning.out.js?v=2</target>
+    </siteRedirectMappings>
     <siteType>ChatterNetwork</siteType>
     <subdomain>oshtraining</subdomain>
 </CustomSite>

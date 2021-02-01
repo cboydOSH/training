@@ -4,9 +4,12 @@
     <name>Escalations Queue</name>
     <queueMembers>
         <users>
+            <user>amack@onesharehealth.com</user>
+            <user>acardona@onesharehealth.com</user>
+            <user>aklevgard@onesharehealth.com</user>
+            <user>bwashington@onesharehealth.com</user>
             <user>fabayomi@onesharehealth.com</user>
             <user>jhinkson@onesharehealth.com</user>
-            <user>jlaengrich@onesharehealth.com</user>
             <user>kwaters@onesharehealth.com</user>
             <user>rhissam@onesharehealth.com</user>
             <user>rseacat@onesharehealth.com</user>

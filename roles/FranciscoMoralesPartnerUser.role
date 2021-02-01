@@ -5,6 +5,6 @@
     <description>Francisco Morales Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Francisco Morales Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

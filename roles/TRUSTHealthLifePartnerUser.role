@@ -5,6 +5,6 @@
     <description>TRUST Health &amp; Life Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>TRUST Health &amp; Life Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

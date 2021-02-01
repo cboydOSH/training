@@ -2,14 +2,14 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>AAAI</fullName>
+        <default>false</default>
+        <label>AAAI</label>
+    </standardValue>
+    <standardValue>
         <fullName>Advertisement</fullName>
         <default>false</default>
         <label>Advertisement</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Appcast</fullName>
-        <default>false</default>
-        <label>Appcast</label>
     </standardValue>
     <standardValue>
         <fullName>Customer Event</fullName>
@@ -22,6 +22,11 @@
         <label>Employee Referral</label>
     </standardValue>
     <standardValue>
+        <fullName>Farmers Agent</fullName>
+        <default>false</default>
+        <label>Farmers Agent</label>
+    </standardValue>
+    <standardValue>
         <fullName>Google AdWords</fullName>
         <default>false</default>
         <label>Google AdWords</label>
@@ -32,9 +37,9 @@
         <label>Internal</label>
     </standardValue>
     <standardValue>
-        <fullName>Internal Recruiting Team</fullName>
+        <fullName>NAHU Event</fullName>
         <default>false</default>
-        <label>Internal Recruiting Team</label>
+        <label>NAHU Event</label>
     </standardValue>
     <standardValue>
         <fullName>Other</fullName>

@@ -114,16 +114,22 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>ProductCloned</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>ProductCloned</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -626,6 +632,11 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
             <field>vlocity_ins__ParentClassId__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -741,11 +752,6 @@
             <isRequired>false</isRequired>
         </availableFields>
         <description>The fields will be included in the list of eligible products.</description>
-        <displayedFields>
-            <field>Name</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
         <displayedFields>
             <field>vlocity_ins__LineOfBusiness__c</field>
             <isFieldManaged>false</isFieldManaged>
@@ -3877,6 +3883,16 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Catalog__c</fullName>
+        <externalId>false</externalId>
+        <label>Catalog</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -3923,6 +3939,17 @@
     <fields>
         <fullName>NumberOfRevenueInstallments</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Organization_Code__c</fullName>
+        <description>Organization Code necesary for Enroll process in logic and slection fo the correct Organization</description>
+        <externalId>false</externalId>
+        <label>Organization Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>ProductCode</fullName>
@@ -5408,8 +5435,29 @@
     </fields>
     <listViews>
         <fullName>AllProducts</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>PRODUCT2.FAMILY</columns>
+        <columns>Catalog__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Products</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Product_Filtred_Catalog</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>PRODUCT2.FAMILY</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>vlocity_ins__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Catalog__c</field>
+            <operation>equals</operation>
+            <value>Vlocity</value>
+        </filters>
+        <label>All Product Filtered Catalog</label>
     </listViews>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
@@ -7486,7 +7534,7 @@
             <picklist>vlocity_ins__Term__c</picklist>
             <values>
                 <fullName>Annual</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Custom</fullName>

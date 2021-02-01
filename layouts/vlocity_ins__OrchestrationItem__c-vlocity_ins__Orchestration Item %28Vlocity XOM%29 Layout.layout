@@ -183,25 +183,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <layoutSections>
-        <customLabel>true</customLabel>
-        <detailHeading>true</detailHeading>
-        <editHeading>true</editHeading>
-        <label>Interaction Details</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>vlocity_ins__Request__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>vlocity_ins__Response__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <style>TwoColumnsTopToBottom</style>
-    </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>vlocity_ins__OrchestrationDependency__c.vlocity_ins__OrchestrationItemId__c</relatedList>

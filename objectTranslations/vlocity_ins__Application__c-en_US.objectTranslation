@@ -132,10 +132,6 @@
             <translation><!-- Individual Health --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Individual Provider</masterLabel>
-            <translation><!-- Individual Provider --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Individual Vision</masterLabel>
             <translation><!-- Individual Vision --></translation>
         </picklistValues>
@@ -150,10 +146,6 @@
         <picklistValues>
             <masterLabel>Medicare Supplemental</masterLabel>
             <translation><!-- Medicare Supplemental --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Organizational Provider</masterLabel>
-            <translation><!-- Organizational Provider --></translation>
         </picklistValues>
     </fields>
     <webLinks>

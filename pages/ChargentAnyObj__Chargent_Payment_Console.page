@@ -1,0 +1,125 @@
+<!--
+ - Created by ericalexander on 1/5/17.
+ -->
+
+<apex:page id="Chargent_Payment_Console" controller="ChargentAnyObj.Chargent_Payment_Console_Controller" showHeader="false" sideBar="false" standardStylesheets="false">
+	<!-- To support identification of PC being inside payment console -->
+	<apex:includeScript value="/support/console/38.0/integration.js" />
+	<apex:includeLightning />
+	<apex:slds />
+	<apex:form >
+		<apex:actionFunction name="resumeRecording" action="{!nvmPauseRecording_VF}" immediate="true" reRender="jspanel" onComplete="notifyResumeError()"/>
+
+		<apex:outputPanel id="jspanel">
+			<script>
+				var m = '{!vfMessage}';
+				function notifyResumeError(){
+					if(m.length > 0){
+						alert('Unable to resume recording: ' + m);
+					}
+				}
+			</script>
+		</apex:outputPanel>
+	</apex:form>
+	<script>
+		var resumeNVMRecording = false;
+		/**
+		 $(document).ready(function(){
+            $('#pc_close_btn').on('click', function(){
+                console.log('here');
+                toggleConsole( function(){parent.location.reload()});
+            });
+
+        });
+		 **/
+		$Lightning.use("ChargentAnyObj:Chargent_Payment_Console", function () {
+			$Lightning.createComponent(
+				"ChargentAnyObj:Payment_Console",
+				{
+					"isFromVF": true,
+					"recordId": "{!$CurrentPage.parameters.id}",
+					"accId": "{!JSENCODE($CurrentPage.parameters.accId)}",
+					"sobjectType":"{!sObjectType}",
+					"defaultAmount" : '{!$CurrentPage.parameters.amtfld}',
+					"defaultRecurringAmount" : '{!$CurrentPage.parameters.recamtfld}'
+				},
+				"payment_console_content",
+				function (cmp) {
+					var loadingDivElt = document.getElementById("loader");
+					loadingDivElt.style.display = 'none';
+					$A.eventService.addHandler({
+						event: 'force:navigateToURL',
+						handler: function (event) {
+
+							if(resumeNVMRecording === true){
+								resumeRecording();
+								//Allow to catch error if any and present it
+								sleep(500);
+							}
+
+							if(typeof sforce != 'undefined' && sforce.console && sforce.console.isInConsole()){
+								window.parent.postMessage('close','*');
+							}else if (typeof sforce != 'undefined' && sforce.one) {
+								// VF page in S1 or Lightning Exp
+								// VF page in Classic
+								sforce.one.navigateToURL(event.getParams().url);
+
+							} else {
+								//From the Payment Entry Modal if opened from this VF then the URL will simply end with this records id
+								//So navigate to it
+								if (event.getParams().url.endsWith('{!$CurrentPage.parameters.id}') && event.getParams().url.indexOf('recId') == -1) {
+									window.parent.location.href = '/{!$CurrentPage.parameters.id}';
+								}else { //Else going to a different URL (like metadatacheck)
+									window.parent.location.href = event.getParams().url + '&retURL=/{!$CurrentPage.parameters.id}';
+								}
+
+							}
+
+						}
+					});
+					$A.eventService.addHandler({
+						event: 'ChargentAnyObj:closeModal',
+						handler: function (event) {
+							resumeNVMRecording = event.getParams().NVMRecordingPaused;
+						}
+					});
+
+				});
+		});
+
+		function sleep(milliseconds) {
+			const date = Date.now();
+			let currentDate = null;
+			do {
+				currentDate = Date.now();
+			} while (currentDate - date < milliseconds);
+		}
+
+		/**
+		 function toggleConsole(callback){
+            var ltngDivElt = document.getElementById("payment_console_modal");
+            ltngDivElt.classList.toggle('slds-hidden');
+            callback();
+
+        }
+
+		 **/
+	</script>
+
+	<div class="slds-scope">
+		<div id="loader" class="slds-grid slds-grid_frame">
+			<div class="slds-spinner_container">
+				<div class="slds-spinner slds-spinner_brand slds-spinner_large" role="alert">
+					<span class="slds-assistive-text">Loading</span>
+					<div class="slds-spinner__dot-a"></div>
+					<div class="slds-spinner__dot-b"></div>
+				</div>
+			</div>
+		</div>
+		<!--</div>-->
+		<!--<div id="payment_console_modal" class="slds-fade-in-open slds-hidden">-->
+		<div id="payment_console_content">
+		</div>
+		<!--</div>-->
+	</div>
+</apex:page>

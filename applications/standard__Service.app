@@ -14,5 +14,4 @@
     <tabs>standard-WaveHome</tabs>
     <tabs>Knowledge__kav</tabs>
     <tabs>Work_Item__c</tabs>
-    <tabs>Recording__c</tabs>
 </CustomApplication>

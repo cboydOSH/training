@@ -25,6 +25,14 @@
         <name>Group_Code__c</name>
     </fields>
     <fields>
+        <label><!-- Network --></label>
+        <name>Network__c</name>
+        <picklistValues>
+            <masterLabel>1N</masterLabel>
+            <translation><!-- 1N --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Product --></label>
         <name>Product__c</name>
         <relationshipLabel><!-- Knowledge --></relationshipLabel>
@@ -32,6 +40,42 @@
     <fields>
         <label><!-- Program Code --></label>
         <name>Program_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Program__c</name>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL</masterLabel>
+            <translation><!-- CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- States --></label>
+        <name>States__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier --></label>
+        <name>Tier__c</name>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E</masterLabel>
+            <translation><!-- E --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Topics --></label>
@@ -52,6 +96,10 @@
     <recordTypes>
         <label><!-- Producer Guide Books --></label>
         <name>Producer_Guide_Books</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Program Overview --></label>
+        <name>Program_Overview</name>
     </recordTypes>
     <recordTypes>
         <label><!-- Tutorial --></label>

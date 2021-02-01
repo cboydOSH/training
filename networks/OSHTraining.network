@@ -10,7 +10,7 @@
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>
     <enableGuestChatter>false</enableGuestChatter>
-    <enableGuestFileAccess>false</enableGuestFileAccess>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
     <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
     <enableInvitation>false</enableInvitation>
     <enableKnowledgeable>false</enableKnowledgeable>
@@ -42,7 +42,6 @@
         <profile>analytics cloud security user</profile>
         <profile>analytics cloud integration user</profile>
         <profile>network development</profile>
-        <profile>member enrollment</profile>
         <profile>concierge</profile>
         <profile>member loyalty</profile>
         <profile>contracting</profile>

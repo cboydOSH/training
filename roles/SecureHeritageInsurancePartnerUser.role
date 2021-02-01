@@ -5,6 +5,6 @@
     <description>Secure Heritage Insurance Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Secure Heritage Insurance Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>VP_of_Sales</parentRole>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Regional_Sales_Director</parentRole>
 </Role>

@@ -8,10 +8,6 @@
             <translation><!-- Asset --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>ClaimCoverage__c</masterLabel>
-            <translation><!-- ClaimCoverage__c --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Contract</masterLabel>
             <translation><!-- Contract --></translation>
         </picklistValues>

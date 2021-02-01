@@ -5,6 +5,6 @@
     <description>Traci Davis Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Traci Davis Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

@@ -5,6 +5,6 @@
     <description>TANYA BOYD &amp; ASSOCIATES, LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>TANYA BOYD &amp; ASSOCIATES, LLC Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

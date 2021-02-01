@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Yeily Ocando Partner User</description>
+    <description>All insurance agency of Florida llc Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Yeily Ocando Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>All insurance agency of Florida llc Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

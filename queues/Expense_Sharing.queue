@@ -4,15 +4,8 @@
     <name>Expense Sharing Queue</name>
     <queueMembers>
         <users>
-            <user>azambrano@onesharehealth.com</user>
-            <user>aescobedo@onesharehealth.com</user>
-            <user>amims@onesharehealth.com</user>
-            <user>bbobby@onesharehealth.com</user>
-            <user>growland@onesharehealth.com</user>
-            <user>kmarshall@onesharehealth.com</user>
             <user>lcochran@onesharehealth.com</user>
             <user>sholmes@onesharehealth.com</user>
-            <user>ttaylor@onesharehealth.com</user>
         </users>
     </queueMembers>
     <queueSobject>

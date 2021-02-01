@@ -154,7 +154,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>vlocity_ins__Color__c</fullName>
         <deprecated>false</deprecated>
@@ -348,6 +348,6 @@
         <searchResultsAdditionalFields>vlocity_ins__SourceString__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>vlocity_ins__Color__c</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

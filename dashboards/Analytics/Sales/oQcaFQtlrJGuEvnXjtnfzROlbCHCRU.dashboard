@@ -385,7 +385,7 @@
             <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>8</colSpan>
+            <colSpan>12</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -423,44 +423,7 @@
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>48</rowIndex>
-            <rowSpan>10</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>8</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <axisBinding>y</axisBinding>
-                    <column>RowCount</column>
-                </chartSummary>
-                <componentType>Donut</componentType>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>ASSIGNED</groupingColumn>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>All Weekly Activities - Sales</header>
-                <legendPosition>Right</legendPosition>
-                <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>SALESWEEKLYACTIVITIES/All_Weekly_Activities_Sales_9z2</report>
-                <showPercentage>true</showPercentage>
-                <showTotal>true</showTotal>
-                <showValues>true</showValues>
-                <sortBy>RowLabelAscending</sortBy>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>48</rowIndex>
-            <rowSpan>10</rowSpan>
+            <rowSpan>13</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>6</colSpan>
@@ -488,13 +451,13 @@
                 </groupingSortProperties>
                 <header>CM Open Opportunities</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>SalesFolder/CM_Open_Opportunities</report>
+                <report>Sales/CM_Open_Opportunities</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>58</rowIndex>
+            <rowIndex>61</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>

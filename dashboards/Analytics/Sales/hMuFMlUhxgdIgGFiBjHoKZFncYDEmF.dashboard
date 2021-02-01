@@ -104,7 +104,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Sales_gCR</report>
+                <report>Sales/Open_Opportunities_Sales_gCR</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -136,7 +136,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Sales_gCR</report>
+                <report>Sales/Open_Opportunities_Sales_gCR</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -167,7 +167,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Contracting_Iqa</report>
+                <report>Sales/Open_Opportunities_Contracting_Iqa</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -198,7 +198,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Contracting_Iqa</report>
+                <report>Sales/Open_Opportunities_Contracting_Iqa</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -230,7 +230,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Compliance_nVQ</report>
+                <report>Sales/Open_Opportunities_Compliance_nVQ</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -262,7 +262,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Compliance_nVQ</report>
+                <report>Sales/Open_Opportunities_Compliance_nVQ</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -294,7 +294,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Sales_gCR</report>
+                <report>Sales/Open_Opportunities_Sales_gCR</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -326,7 +326,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Sales_gCR</report>
+                <report>Sales/Open_Opportunities_Sales_gCR</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -357,7 +357,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Contracting_Iqa</report>
+                <report>Sales/Open_Opportunities_Contracting_Iqa</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -388,7 +388,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Contracting_Iqa</report>
+                <report>Sales/Open_Opportunities_Contracting_Iqa</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -420,7 +420,7 @@
                 <indicatorHighColor>#FF0000</indicatorHighColor>
                 <indicatorLowColor>#008000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Compliance_nVQ</report>
+                <report>Sales/Open_Opportunities_Compliance_nVQ</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -452,7 +452,7 @@
                 <indicatorHighColor>#008000</indicatorHighColor>
                 <indicatorLowColor>#FF0000</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_Compliance_nVQ</report>
+                <report>Sales/Open_Opportunities_Compliance_nVQ</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -495,7 +495,7 @@
                 </groupingSortProperties>
                 <header>Count &amp; Avg Stage Age</header>
                 <legendPosition>Right</legendPosition>
-                <report>SalesFolder/Open_Opportunities_by_Stage</report>
+                <report>Sales/Open_Opportunities_by_Stage</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -544,7 +544,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Sales - Top 10 by Count by Owner</header>
-                <report>SalesFolder/Open_Opportunities_Sales_gCR</report>
+                <report>Sales/Open_Opportunities_Sales_gCR</report>
             </dashboardComponent>
             <rowIndex>22</rowIndex>
             <rowSpan>12</rowSpan>
@@ -588,7 +588,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Contracting - Top 10 Count By Owner</header>
-                <report>SalesFolder/Open_Opportunities_Contracting_Iqa</report>
+                <report>Sales/Open_Opportunities_Contracting_Iqa</report>
             </dashboardComponent>
             <rowIndex>22</rowIndex>
             <rowSpan>12</rowSpan>
@@ -633,7 +633,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Compliance - Top 10 Count by Owner</header>
-                <report>SalesFolder/Open_Opportunities_Compliance_nVQ</report>
+                <report>Sales/Open_Opportunities_Compliance_nVQ</report>
             </dashboardComponent>
             <rowIndex>22</rowIndex>
             <rowSpan>12</rowSpan>
@@ -678,7 +678,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Sales - Top 10 Aging by Owner</header>
-                <report>SalesFolder/Open_Opportunities_Sales_gCR</report>
+                <report>Sales/Open_Opportunities_Sales_gCR</report>
             </dashboardComponent>
             <rowIndex>34</rowIndex>
             <rowSpan>11</rowSpan>
@@ -727,7 +727,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Contracting - Max Aging by Stage</header>
-                <report>SalesFolder/Open_Opportunities_Contracting_Iqa</report>
+                <report>Sales/Open_Opportunities_Contracting_Iqa</report>
             </dashboardComponent>
             <rowIndex>34</rowIndex>
             <rowSpan>11</rowSpan>
@@ -771,7 +771,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Contracting - Top 10 Aging by Owner</header>
-                <report>SalesFolder/Open_Opportunities_Compliance_nVQ</report>
+                <report>Sales/Open_Opportunities_Compliance_nVQ</report>
             </dashboardComponent>
             <rowIndex>34</rowIndex>
             <rowSpan>11</rowSpan>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Cody B Mangalsingh Partner User</description>
+    <description>Jeff Fisher Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Cody B Mangalsingh Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Regional_Sales_Director</parentRole>
+    <name>Jeff Fisher Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>State_Sales_Manager</parentRole>
 </Role>

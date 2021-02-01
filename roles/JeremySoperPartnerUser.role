@@ -5,6 +5,6 @@
     <description>Jeremy Soper Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Jeremy Soper Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

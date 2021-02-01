@@ -5,6 +5,6 @@
     <description>The Hunter Agency Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>The Hunter Agency Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

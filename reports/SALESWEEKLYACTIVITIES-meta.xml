@@ -6,8 +6,18 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>cfogliano@onesharehealth.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
         <accessLevel>Manage</accessLevel>
         <sharedTo>kwagura@onesharehealth.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>mbaum@onesharehealth.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>

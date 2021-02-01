@@ -200,7 +200,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -234,7 +234,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -282,7 +282,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Opportunities by RSD</header>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>12</rowSpan>
@@ -325,7 +325,7 @@
                 <header>Won by RSD</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -363,7 +363,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -397,7 +397,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -431,7 +431,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
@@ -465,7 +465,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
@@ -508,7 +508,7 @@
                 </groupingSortProperties>
                 <header>Sum of Annual Memberships</header>
                 <legendPosition>Right</legendPosition>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -560,7 +560,7 @@
                 </groupingSortProperties>
                 <header>Won By Month</header>
                 <legendPosition>Right</legendPosition>
-                <report>SalesFolder/Opportunities_By_Team_Wmw</report>
+                <report>Sales/Opportunities_By_Team_Wmw</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -611,7 +611,7 @@
                 <header>Activities</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>10</maxValuesDisplayed>
-                <report>SalesFolder/Opportunities_With_Activities_BDk</report>
+                <report>Sales/Opportunities_With_Activities_BDk</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -620,64 +620,6 @@
             <rowIndex>22</rowIndex>
             <rowSpan>11</rowSpan>
         </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>12</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
-                <dashboardFilterColumns>
-                    <column>Opportunity.Regional_Sales_Director__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>STAGE_NAME</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>Opportunity.State_Sales_Director__c</column>
-                </dashboardFilterColumns>
-                <flexComponentProperties>
-                    <decimalPrecision>-1</decimalPrecision>
-                    <flexTableColumn>
-                        <reportColumn>Opportunity.Regional_Sales_Director__c</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>false</showTotal>
-                        <type>grouping</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>FORMULA1</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>false</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>s!WON</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>false</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>s!CLOSED</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>false</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableSortInfo>
-                        <sortOrder>1</sortOrder>
-                    </flexTableSortInfo>
-                    <hideChatterPhotos>true</hideChatterPhotos>
-                </flexComponentProperties>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>Opportunities By Team Closed</header>
-                <report>SalesFolder/Opportunities_By_Team_Closed_SEY</report>
-            </dashboardComponent>
-            <rowIndex>33</rowIndex>
-            <rowSpan>19</rowSpan>
-        </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
@@ -685,7 +627,7 @@
     <isGridLayout>true</isGridLayout>
     <runningUser>kwagura@onesharehealth.com</runningUser>
     <textColor>#000000</textColor>
-    <title>Opportunities Breakdown</title>
+    <title>Opportunities by Region</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

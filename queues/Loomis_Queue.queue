@@ -2,25 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Loomis Queue</name>
-    <queueMembers>
-        <users>
-            <user>airwin@loomisco.com</user>
-            <user>bmanrodt@loomisco.com</user>
-            <user>bmartin@loomisco.com</user>
-            <user>dferrara@loomisco.com</user>
-            <user>jmichelle@onesharehealth.com</user>
-            <user>jgermes@loomisco.com</user>
-            <user>kminier@loomisco.com</user>
-            <user>pgraeff@loomisco.com</user>
-            <user>rfisher2@loomisco.com</user>
-            <user>srader@loomisco.com</user>
-            <user>squaintance-edwards@loomisco.com</user>
-            <user>thermany@loomisco.com</user>
-            <user>tnoll@loomisco.com</user>
-            <user>trauenzahn@loomisco.com</user>
-            <user>vurueta@loomisco.com</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

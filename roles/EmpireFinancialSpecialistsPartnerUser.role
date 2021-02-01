@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Cristiane Vieira Partner User</description>
+    <description>Empire Financial Specialists Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Cristiane Vieira Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Empire Financial Specialists Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

@@ -1,0 +1,34 @@
+<apex:page showHeader="false" controller="oshIndividualChargentUpdateCCController">
+	
+	<!-- <apex:pageBlock rendered="{!IF($Profile.Name=='System Administrator', true, false)}"> -->
+	<apex:pageBlock >
+		<apex:iframe src="https://onesharehealth--devvl2--vlocity-ins.visualforce.com/apex/vlocity_ins__OmniScriptUniversalPage?id={!$User.Id}&layout=newport#/OmniScriptType/Community Member Portal/OmniScriptSubType/Update MEmber Payment Details/OmniScriptLang/English/ContextId/{!$User.Id}/PrefillDataRaptorBundle//true" scrolling="true" id="ChargentUpdateCC"/>
+	</apex:pageBlock>
+
+	<!-- <apex:pageBlock rendered="{!IF($Profile.Name!='System Administrator', true, false)}">
+		<apex:iframe src="https://devvl2-oshtraining.cs45.force.com/apex/vlocity_ins__OmniScriptUniversalPage?id={!$User.Id}&layout=newport#/OmniScriptType/Community Member Portal/OmniScriptSubType/Update MEmber Payment Details/OmniScriptLang/English/ContextId/{!$User.Id}/PrefillDataRaptorBundle//true" scrolling="true" id="ChargentUpdateCC"/>
+	</apex:pageBlock> -->
+
+	<!-- <iframe src="https://onesharehealth--devvl2.mysalesforce.com"></iframe> -->
+	
+	<!-- <iframe scrolling="true" id="ChargentUpdateCC" src="https://onesharehealth--devvl2--vlocity-ins.visualforce.com/apex/vlocity_ins__OmniScriptUniversalPage?id={!$User.Id}&layout=newport#/OmniScriptType/Community Member Portal/OmniScriptSubType/Update MEmber Payment Details/OmniScriptLang/English/ContextId/{!$User.Id}/PrefillDataRaptorBundle//true" style="width: 100%; height: 830px; border: none;" 
+		 sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"></iframe> -->
+		
+<!-- <apex:page standardStylesheets="false" showHeader="false" sidebar="false" docType="html-5.0">
+	<div class="vlocity via-slds" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ng-app="UpdatePaymentInformation">
+		<vlocity_ins:BusinessProcessComponent
+			strOmniScriptType="Community Member Portal"
+			strOmniScriptSubType="Update MEmber Payment Details"
+			strOmniScriptLang="English"
+			scriptLayout="newport"/>
+		<script type="text/javascript">
+			var modules = ['vlocity-business-process'];
+			var myModule = angular.module('UpdatePaymentInformation', modules);
+		</script>
+	</div>
+	<vlocity_ins:VFActionFunction/> 
+</apex:page> -->
+	<!-- <apex:form>
+		<apex:commandButton value="{!$Profile.Name}" action="{!test}" rerender="out"/>
+	</apex:form> -->
+</apex:page>

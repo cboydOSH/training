@@ -181,11 +181,7 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Knowledge</tabs>
     <tabs>Work_Item__c</tabs>
-    <tabs>Recording__c</tabs>
     <workspaceConfig>
-        <mappings>
-            <tab>Recording__c</tab>
-        </mappings>
         <mappings>
             <tab>Work_Item__c</tab>
         </mappings>

@@ -5,6 +5,6 @@
     <description>Richard Staine Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Richard Staine Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

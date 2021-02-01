@@ -458,6 +458,11 @@
                     <label>Limit - Currency</label>
                 </value>
                 <value>
+                    <fullName>Deductible</fullName>
+                    <default>false</default>
+                    <label>Deductible</label>
+                </value>
+                <value>
                     <fullName>ScopeCountLimit</fullName>
                     <default>false</default>
                     <label>Limit - Scope Count</label>
@@ -466,11 +471,6 @@
                     <fullName>UnitCountLimit</fullName>
                     <default>false</default>
                     <label>Limit - Claim Line Item Unit Count</label>
-                </value>
-                <value>
-                    <fullName>Deductible</fullName>
-                    <default>false</default>
-                    <label>Deductible</label>
                 </value>
                 <value>
                     <fullName>Copay</fullName>

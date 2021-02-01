@@ -61,6 +61,7 @@
             <operator>equals</operator>
             <value>IndividualAnnuity</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

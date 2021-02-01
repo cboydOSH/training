@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Community SFDC</description>
+    <disableProtocolSecurity>true</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://devvl2-oshtraining.cs45.force.com</url>
+</RemoteSiteSetting>

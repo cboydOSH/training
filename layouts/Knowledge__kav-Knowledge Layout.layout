@@ -12,8 +12,34 @@
             <layoutItems>
                 <field>UrlName</field>
             </layoutItems>
+            <layoutItems>
+                <field>Network__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Program__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Tier__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>States__c</field>
+            </layoutItems>
         </layoutColumns>
-        <style>OneColumn</style>
+        <layoutColumns>
+            <layoutItems>
+                <field>IsVisibleInCsp</field>
+            </layoutItems>
+            <layoutItems>
+                <field>IsVisibleInPrm</field>
+            </layoutItems>
+            <layoutItems>
+                <field>IsVisibleInApp</field>
+            </layoutItems>
+            <layoutItems>
+                <field>IsVisibleInPkb</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -25,4 +51,7 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <platformActionList>
+        <actionListContext>Record</actionListContext>
+    </platformActionList>
 </Layout>

@@ -36,23 +36,22 @@
     <columns>
         <field>EVENT_SUBTYPE</field>
     </columns>
+    <columns>
+        <field>TASK_SUBTYPE</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>OWNER_ROLE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>Regional Sales Director,State Sales Manager,VP Sales</value>
+            <operator>equals</operator>
+            <value>Regional Sales Director,State Sales Manager</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <field>LAST_UPDATE</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
-    <groupingsAcross>
-        <dateGranularity>Day</dateGranularity>
-        <field>TASK_SUBTYPE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
@@ -72,7 +71,7 @@
     </params>
     <params>
         <name>type</name>
-        <value>t</value>
+        <value>te</value>
     </params>
     <params>
         <name>co</name>
@@ -85,8 +84,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>LAST_UPDATE</dateColumn>
-        <endDate>2020-10-21</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-10-15</startDate>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

@@ -57,8 +57,9 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Carl Davidson,Darryl Johnson,David Gresl,Jacqueline Perez,Victoria Damone,Victor Mensavage,Larry Estridge</value>
+            <value>Carl Davidson,Darryl Johnson,David Gresl,Isaac Tillotson,Jack Jarell,Jacqueline Perez,Victoria Damone,Victor Mensavage,Rita Linde,Larry Estridge,Ryan Herlin,Stephen Brady</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -91,8 +92,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <endDate>2020-08-31</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-01-01</startDate>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

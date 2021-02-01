@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>vlocity_ins__CreateGroup</customButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -23,6 +26,50 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>OwnerId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Expecting_family_grow__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Currently_see_a_Specialist__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Monthly_Commission_Fee__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SSN_ITIN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Writing_agent__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Ethnicity__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Servicing_Agent__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Main_Asset__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Effective_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Active_Period__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>HipaaAuthorizationType__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -77,7 +124,12 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Description Information</label>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Product_Privilegies__c</field>
+            </layoutItems>
+        </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
@@ -138,6 +190,53 @@
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
+    <relatedLists>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <relatedList>Quote.Servicing_Agent__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <relatedList>Quote.Agent_Label__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <relatedList>Quote.Rating_Member__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>ACCOUNT.ADDRESS1_CITY</fields>
+        <fields>ACCOUNT.PHONE1</fields>
+        <relatedList>Account.Servicing_Agent__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>HIPAAAuthorization__c.PrimaryMember__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Asset__c</fields>
+        <fields>Change_Date__c</fields>
+        <fields>Change_Type__c</fields>
+        <relatedList>Internal_Change_Log__c.Account__c</relatedList>
+    </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -145,7 +244,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00ho0000003sQjz</masterLabel>
+        <masterLabel>00h8A000001HcM7</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

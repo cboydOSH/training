@@ -184,11 +184,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page3</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -238,7 +241,7 @@
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fieldSets>
         <fullName>vlocity_ins__InteractionFieldList</fullName>
         <availableFields>
@@ -508,6 +511,17 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Active_Period__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Effective_Date__c), &apos;&apos;, IF((TODAY() - Effective_Date__c) &lt; 0, &apos;Not Started&apos; , IF((TODAY() - Effective_Date__c) &lt; 365, TEXT(TODAY() - Effective_Date__c) &amp; &apos; Days&apos;, IF((TODAY() - Effective_Date__c) &lt; 730, TEXT((YEAR(TODAY()) - YEAR(Effective_Date__c)) * 12 + MONTH(TODAY()) - MONTH(Effective_Date__c)) &amp; &apos; Months&apos;, TEXT(YEAR(TODAY()) - YEAR(Effective_Date__c)) &amp; &apos;+ Years&apos;))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Active Period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Affinity__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -575,7 +589,7 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <length>6</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -633,6 +647,19 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Application_Fee_Discount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Application Fee Discount</label>
+        <referenceTo>Program_Promotion__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Approval_Status__c</fullName>
         <externalId>false</externalId>
         <label>Approval Status</label>
@@ -666,6 +693,17 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <fullName>BillingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Building_Suite_Apartment__c</fullName>
+        <externalId>false</externalId>
+        <label>Building / Suite / Apartment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Call_Center__c</fullName>
@@ -737,36 +775,6 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
                 <valueName>0.25</valueName>
             </valueSettings>
             <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <valueName>0.5</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <controllingFieldValue>Referral</controllingFieldValue>
-                <valueName>1</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <valueName>2</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <valueName>3</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <valueName>4</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Affinity</controllingFieldValue>
-                <controllingFieldValue>MGP</controllingFieldValue>
-                <valueName>5</valueName>
-            </valueSettings>
-            <valueSettings>
                 <controllingFieldValue>Call Center</controllingFieldValue>
                 <controllingFieldValue>Management</controllingFieldValue>
                 <valueName>25</valueName>
@@ -816,6 +824,27 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
                 <valueName>22</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <controllingFieldValue>Referral</controllingFieldValue>
+                <valueName>1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <valueName>2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <valueName>3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <valueName>4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGP</controllingFieldValue>
+                <valueName>5</valueName>
+            </valueSettings>
+            <valueSettings>
                 <controllingFieldValue>Producer</controllingFieldValue>
                 <controllingFieldValue>Management</controllingFieldValue>
                 <valueName>16</valueName>
@@ -844,6 +873,19 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         </valueSet>
     </fields>
     <fields>
+        <fullName>Contribution_Discount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contribution Discount</label>
+        <referenceTo>Program_Promotion__c</referenceTo>
+        <relationshipLabel>Accounts (Contribution Discount)</relationshipLabel>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>County__c</fullName>
         <description>Name of the County where the Account is located</description>
         <externalId>false</externalId>
@@ -857,6 +899,44 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Currently_Enrroled_HCS_Ministry__c</fullName>
+        <externalId>false</externalId>
+        <label>Currently Enrroled HCS Ministry</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Currently_see_a_Specialist__c</fullName>
+        <externalId>false</externalId>
+        <label>Currently see a Specialist</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -865,6 +945,16 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <fullName>E_O_Expiration_Date__c</fullName>
         <externalId>false</externalId>
         <label>E&amp;O Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Effective_Date__c</fullName>
+        <description>The beginning of the most recent term for this policy. This defines when the responsibilities of, and benefits to, all parties kick in for the most recent term. For policies subject to periodic renewal, the effective date reflects the most recent renewal.</description>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -904,6 +994,30 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Ethnicity__c</fullName>
+        <externalId>false</externalId>
+        <label>Ethnicity</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expecting_family_grow__c</fullName>
+        <externalId>false</externalId>
+        <label>Expecting family grow</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>FMO__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -933,6 +1047,73 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <fullName>Fax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Google_Address__c</fullName>
+        <description>Address provided by google</description>
+        <externalId>false</externalId>
+        <label>Google Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HipaaAuthorizationType__c</fullName>
+        <externalId>false</externalId>
+        <label>Hipaa Authorization Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full</fullName>
+                    <default>false</default>
+                    <label>Full</label>
+                </value>
+                <value>
+                    <fullName>Partial</fullName>
+                    <default>false</default>
+                    <label>Partial</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>How_often_See_your_PCP__c</fullName>
+        <externalId>false</externalId>
+        <label>How often See your PCP</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0-1</fullName>
+                    <default>false</default>
+                    <label>0-1</label>
+                </value>
+                <value>
+                    <fullName>2-4</fullName>
+                    <default>false</default>
+                    <label>2-4</label>
+                </value>
+                <value>
+                    <fullName>5 or more</fullName>
+                    <default>false</default>
+                    <label>5 or more</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Inactive_Date__c</fullName>
@@ -986,6 +1167,16 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <fullName>IsPartner</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Is_Hippa_Authorized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is a Hippa Authorized Member?</description>
+        <externalId>false</externalId>
+        <label>Is Hippa Authorized</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Jigsaw</fullName>
@@ -1121,6 +1312,19 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         </valueSet>
     </fields>
     <fields>
+        <fullName>Main_Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Main Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Member_Created_Date__c</fullName>
         <externalId>false</externalId>
         <label>Member Created Date</label>
@@ -1180,9 +1384,9 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <fullName>Monthly_Contribution__c</fullName>
         <externalId>false</externalId>
         <label>Monthly Contribution</label>
-        <precision>8</precision>
+        <precision>9</precision>
         <required>false</required>
-        <scale>2</scale>
+        <scale>3</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
@@ -1408,6 +1612,31 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Primary_Language_Spoken__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Language Spoken</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Producer_Member_Id__c</fullName>
         <externalId>false</externalId>
         <label>Producer Member Id</label>
@@ -1443,6 +1672,17 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
             <restricted>true</restricted>
             <valueSetName>Producer_percent</valueSetName>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Privilegies__c</fullName>
+        <description>Field Used for strage avaliable or non avalaible Products for the diferents Accoun of Producer</description>
+        <externalId>false</externalId>
+        <label>Product Privilegies</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>Rating</fullName>
@@ -1498,6 +1738,17 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>SSN_ITIN__c</fullName>
+        <externalId>false</externalId>
+        <label>SSN/ITIN</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Sales_Team_Referral__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1510,10 +1761,33 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Servicing_Agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Field to check and save the top of the hierarchy tree</description>
+        <externalId>false</externalId>
+        <label>Servicing Agent</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Accounts (Servicing Agent)</relationshipLabel>
+        <relationshipName>AccountsTqeV</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Servicing_Representative__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Servicing Representative</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.UserRole.Name</field>
+                <operation>equals</operation>
+                <value>VP of Sales,Regional Sales Director,State Sales Manager</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <referenceTo>User</referenceTo>
         <relationshipName>Accounts1</relationshipName>
         <required>false</required>
@@ -1671,6 +1945,19 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <fullName>Website</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Writing_agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Current Agent who did  the process</description>
+        <externalId>false</externalId>
+        <label>Writing agent</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts7</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>vfirst__Adjudication__c</fullName>
@@ -2601,6 +2888,27 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <unique>false</unique>
     </fields>
     <listViews>
+        <fullName>All</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>List_Bill_Certification_Requirements_Met__c</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>Active_Date__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Effective_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Main_Asset__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
         <fullName>All_Accounts</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.CREATED_DATE</columns>
@@ -2612,6 +2920,11 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <columns>Servicing_Representative__c</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>Relationship__pc</columns>
+        <columns>List_Bill_Certification_Requirements_Met__c</columns>
+        <columns>List_Bill__c</columns>
+        <columns>List_Bill_Producer__c</columns>
+        <columns>List_Bill_Training__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Accounts</label>
     </listViews>
@@ -2634,25 +2947,10 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <label>David Gresl&apos;s Accounts</label>
     </listViews>
     <listViews>
-        <fullName>Member_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>PersonAccount.Dependent,PersonAccount.Primary_Member</value>
-        </filters>
-        <label>Member Accounts</label>
-    </listViews>
-    <listViews>
         <fullName>MyAccounts</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
         <columns>Status__c</columns>
         <columns>PARENT_NAME</columns>
         <columns>Servicing_Representative__c</columns>
@@ -2662,6 +2960,42 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Mine</filterScope>
         <label>My Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Primary_Members</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Relationship__pc</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <operation>equals</operation>
+            <value>Vicente</value>
+        </filters>
+        <label>Primary Members</label>
+    </listViews>
+    <listViews>
+        <fullName>Primary_and_Related</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>Relationship__pc</columns>
+        <columns>Language__pc</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>PersonAccount.Dependent,PersonAccount.PersonAccount,PersonAccount.Primary_Member</value>
+        </filters>
+        <label>Primary and Related</label>
     </listViews>
     <listViews>
         <fullName>Victor_s_Accounts</fullName>
@@ -2703,6 +3037,7 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>
         <columns>vlocity_ins__NumberofProducers__c</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.RECORDTYPE</field>
@@ -2996,6 +3331,39 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>FMO_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -3027,6 +3395,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3245,6 +3639,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Producer_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -3275,6 +3680,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referral_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3485,11 +3901,11 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>AAAI</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Appcast</fullName>
+                <fullName>Advertisement</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3501,11 +3917,19 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
+                <fullName>Farmers Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Google AdWords</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Internal Recruiting Team</fullName>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NAHU Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3628,10 +4052,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -3744,6 +4164,39 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>FMO_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -3775,6 +4228,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3989,6 +4468,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4338,10 +4828,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -4441,15 +4927,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4485,6 +5000,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4699,6 +5240,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5016,10 +5568,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -5119,15 +5667,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5163,6 +5740,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5377,6 +5980,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5694,10 +6308,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -5797,15 +6407,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5841,6 +6480,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6055,6 +6720,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6372,10 +7048,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -6475,15 +7147,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6519,6 +7220,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6733,6 +7460,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7050,10 +7788,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -7153,15 +7887,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7197,6 +7960,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7411,6 +8200,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7728,10 +8528,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -7831,15 +8627,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7875,6 +8700,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8089,6 +8940,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8406,10 +9268,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -8509,15 +9367,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8553,6 +9440,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8767,6 +9680,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9084,10 +10008,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -9187,15 +10107,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9231,6 +10180,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9445,6 +10420,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9762,10 +10748,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -9865,15 +10847,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9909,6 +10920,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10123,6 +11160,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10440,10 +11488,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>0%2E5</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1</fullName>
                 <default>false</default>
             </values>
@@ -10543,15 +11587,44 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
                 <default>false</default>
             </values>
             <values>
-                <fullName>Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Producer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10587,6 +11660,32 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HipaaAuthorizationType__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10801,6 +11900,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11029,8 +12139,6 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.CREATED_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
@@ -11189,6 +12297,18 @@ ISPICKVAL(Contract_Level__c , &quot;21%&quot;)
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Account</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromAccount</page>
+        <protected>false</protected>
     </webLinks>
     <webLinks>
         <fullName>pi__Send_Pardot_Emails</fullName>

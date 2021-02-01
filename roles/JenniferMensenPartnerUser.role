@@ -5,6 +5,6 @@
     <description>Jennifer Mensen Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Jennifer Mensen Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

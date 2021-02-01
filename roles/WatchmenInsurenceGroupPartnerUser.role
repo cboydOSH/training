@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Matt Caruso Partner User</description>
+    <description>Watchmen Insurence Group Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Matt Caruso Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Watchmen Insurence Group Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

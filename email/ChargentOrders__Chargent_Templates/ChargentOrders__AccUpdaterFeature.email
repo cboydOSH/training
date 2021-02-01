@@ -1,0 +1,7 @@
+Hello
+{!ChargentOrders__Email_Notification__c.ChargentOrders__First_Name__c} 
+Your card will expire soon. 
+Please use our online form to update your billing information here:
+{!ChargentOrders__Email_Notification__c.ChargentOrders__Account_Updater_Link_Formatted__c}
+Thanks,
+{!Organization.Name}

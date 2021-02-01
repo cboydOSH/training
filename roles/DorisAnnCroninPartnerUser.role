@@ -5,6 +5,6 @@
     <description>Doris Ann Cronin Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Doris Ann Cronin Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

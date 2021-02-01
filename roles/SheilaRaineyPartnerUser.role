@@ -5,6 +5,6 @@
     <description>Sheila Rainey Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Sheila Rainey Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

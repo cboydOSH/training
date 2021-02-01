@@ -5,6 +5,6 @@
     <description>Scott Yarbrough Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Scott Yarbrough Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

@@ -16,7 +16,7 @@
                 <field>Fulfillment_Membership_Guide__c</field>
             </layoutItems>
             <layoutItems>
-                <field>Book_No__c</field>
+                <field>Network__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -28,6 +28,15 @@
             </layoutItems>
             <layoutItems>
                 <field>Product__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Book_No__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Program__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Tier__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -46,6 +55,9 @@
             </layoutItems>
             <layoutItems>
                 <field>Topics__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>States__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
@@ -86,4 +98,7 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <relatedLists>
+        <relatedList>KnowledgeArticleVersionFilesRelatedList</relatedList>
+    </relatedLists>
 </Layout>

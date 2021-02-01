@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Dean Corliss Partner User</description>
+    <description>Core Benefits Group INC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Dean Corliss Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Core Benefits Group INC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

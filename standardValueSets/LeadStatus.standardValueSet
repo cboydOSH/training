@@ -8,21 +8,9 @@
         <converted>false</converted>
     </standardValue>
     <standardValue>
-        <fullName>Follow-up</fullName>
+        <fullName>Info Packet Created</fullName>
         <default>false</default>
-        <label>Follow-up</label>
-        <converted>false</converted>
-    </standardValue>
-    <standardValue>
-        <fullName>Verbal Yes</fullName>
-        <default>false</default>
-        <label>Verbal Yes</label>
-        <converted>false</converted>
-    </standardValue>
-    <standardValue>
-        <fullName>Lead Lost</fullName>
-        <default>false</default>
-        <label>Lead Lost</label>
+        <label>Info Packet Created</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>

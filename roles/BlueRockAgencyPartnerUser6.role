@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Wes Obana Partner User</description>
+    <description>Blue Rock Agency Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Wes Obana Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Blue Rock Agency Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

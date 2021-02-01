@@ -206,10 +206,6 @@
         <fullName>Cancellation</fullName>
         <isActive>true</isActive>
         <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Closed</fullName>
             <default>false</default>
         </values>
@@ -229,10 +225,6 @@
     <businessProcesses>
         <fullName>Commission</fullName>
         <isActive>true</isActive>
-        <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Closed</fullName>
             <default>false</default>
@@ -254,10 +246,6 @@
         <fullName>Concierge</fullName>
         <isActive>true</isActive>
         <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Closed</fullName>
             <default>false</default>
         </values>
@@ -269,18 +257,10 @@
             <fullName>Pending Member Follow Up Call</fullName>
             <default>false</default>
         </values>
-        <values>
-            <fullName>Pending Negotiation</fullName>
-            <default>false</default>
-        </values>
     </businessProcesses>
     <businessProcesses>
         <fullName>Escalation</fullName>
         <isActive>true</isActive>
-        <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Closed</fullName>
             <default>false</default>
@@ -330,50 +310,6 @@
         <fullName>Expense Sharing</fullName>
         <isActive>true</isActive>
         <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Closed</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>In Progress</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>New</fullName>
-            <default>true</default>
-        </values>
-        <values>
-            <fullName>On Hold</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pending Appeal Committee</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pending Approval</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pending Finance</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pending Pre-Ex Review</fullName>
-            <default>false</default>
-        </values>
-    </businessProcesses>
-    <businessProcesses>
-        <fullName>General Inquiry</fullName>
-        <isActive>true</isActive>
-        <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Closed</fullName>
             <default>false</default>
         </values>
@@ -393,10 +329,6 @@
     <businessProcesses>
         <fullName>Loomis</fullName>
         <isActive>true</isActive>
-        <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Closed</fullName>
             <default>false</default>
@@ -418,10 +350,6 @@
         <fullName>Member Enrollment</fullName>
         <isActive>true</isActive>
         <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Closed</fullName>
             <default>false</default>
         </values>
@@ -433,10 +361,6 @@
     <businessProcesses>
         <fullName>Member Support</fullName>
         <isActive>true</isActive>
-        <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Closed</fullName>
             <default>false</default>
@@ -456,18 +380,13 @@
     </businessProcesses>
     <businessProcesses>
         <fullName>Pre-Cert</fullName>
-        <description>Pre-Cert Support Process</description>
         <isActive>true</isActive>
-        <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Closed</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Final Appeal Determination</fullName>
+            <fullName>Escalated</fullName>
             <default>false</default>
         </values>
         <values>
@@ -486,22 +405,10 @@
             <fullName>Open</fullName>
             <default>true</default>
         </values>
-        <values>
-            <fullName>Pending Appeal Committee</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pending Pre-Ex Review</fullName>
-            <default>false</default>
-        </values>
     </businessProcesses>
     <businessProcesses>
         <fullName>Producer Support</fullName>
         <isActive>true</isActive>
-        <values>
-            <fullName>Cancelled</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Closed</fullName>
             <default>false</default>
@@ -525,6 +432,10 @@
         <isActive>true</isActive>
         <values>
             <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
             <default>false</default>
         </values>
         <values>
@@ -631,7 +542,7 @@
         <label>Member Support Compact Layout</label>
     </compactLayouts>
     <enableFeeds>true</enableFeeds>
-    <externalSharingModel>ReadWriteTransfer</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fieldSets>
         <fullName>vlocity_ins__StoryFieldSet</fullName>
         <description>Story board</description>
@@ -762,22 +673,6 @@
                     <label>Waiting Period</label>
                 </value>
             </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Appeal Pre-Cert</controllingFieldValue>
-                <valueName>Pre Existing</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Appeal Pre-Cert</controllingFieldValue>
-                <valueName>Signs and Symptoms</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Appeal Pre-Cert</controllingFieldValue>
-                <valueName>Statement of Beliefs</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Appeal Pre-Cert</controllingFieldValue>
-                <valueName>Waiting Period</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -2339,7 +2234,7 @@
         <fullName>Paid_Amount__c</fullName>
         <externalId>false</externalId>
         <label>Paid Amount</label>
-        <precision>10</precision>
+        <precision>7</precision>
         <required>false</required>
         <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
@@ -2442,17 +2337,6 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Primary_Member__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(Account.RecordType.Name=&quot;Dependent&quot;,HYPERLINK(&quot;/lightning/r/&quot;&amp;Account.Account__c+&quot;/view&quot;,Account.Account__r.FirstName+&quot; &quot;+Account.Account__r.LastName, &quot;_self&quot;),IF(Account.RecordType.Name=&quot;Primary Member&quot;,HYPERLINK(&quot;/lightning/r/&quot;&amp;AccountId+&quot;/view&quot;,Account.FirstName+&quot; &quot;+Account.LastName,&quot;_self&quot;),&quot;&quot;))</formula>
-        <label>Primary Member</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Priority</fullName>
@@ -2663,32 +2547,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Requester__c</fullName>
-        <externalId>false</externalId>
-        <label>Requester</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Member</fullName>
-                    <default>false</default>
-                    <label>Member</label>
-                </value>
-                <value>
-                    <fullName>Provider</fullName>
-                    <default>false</default>
-                    <label>Provider</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Resolution_Date__c</fullName>
@@ -3338,30 +3196,6 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>VisualAntidote__Fast_Forms_Auto_Assign__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>This field must be added to a form as a hidden checked field to enable auto-assignment rules.</description>
-        <externalId>false</externalId>
-        <label>Formstack Auto-Assign</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>VisualAntidote__Fast_Forms_Autoresponse__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>This field must be added to a form as a hidden checked field to enable auto-response rules.</description>
-        <externalId>false</externalId>
-        <label>Formstack Autoresponse</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Web_Origin__c</fullName>
         <externalId>false</externalId>
         <label>Web Origin</label>
@@ -3769,11 +3603,6 @@
         <columns>CASES.RECORDTYPE</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>All Open Cases</label>
     </listViews>
     <listViews>
@@ -3787,19 +3616,7 @@
     </listViews>
     <listViews>
         <fullName>Billing_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Billing Queue</label>
         <queue>Billing</queue>
         <sharedTo>
@@ -3807,40 +3624,8 @@
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Cancellation_Cases_public</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>OWNER_NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Cancellation</value>
-        </filters>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Cancellation Cases</label>
-    </listViews>
-    <listViews>
         <fullName>Commissions_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Commissions Queue</label>
         <queue>Commissions</queue>
         <sharedTo>
@@ -3849,19 +3634,7 @@
     </listViews>
     <listViews>
         <fullName>Compliance_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Compliance Queue</label>
         <queue>Compliance</queue>
         <sharedTo>
@@ -3870,19 +3643,7 @@
     </listViews>
     <listViews>
         <fullName>Concierge_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Concierge Queue</label>
         <queue>Concierge</queue>
         <sharedTo>
@@ -3902,11 +3663,6 @@
             <field>CASES.RECORDTYPE</field>
             <operation>equals</operation>
             <value>Case.Concierge</value>
-        </filters>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
         </filters>
         <label>Concierge Cases</label>
     </listViews>
@@ -3930,27 +3686,15 @@
             <value>Case.Escalation</value>
         </filters>
         <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
         </filters>
         <label>Escalation Cases</label>
     </listViews>
     <listViews>
         <fullName>Expense_Sharing_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Expense Sharing Queue</label>
         <queue>Expense_Sharing</queue>
         <sharedTo>
@@ -3958,16 +3702,16 @@
         </sharedTo>
     </listViews>
     <listViews>
+        <fullName>Expense_Sharing_Support_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Expense Sharing Support Queue</label>
+        <queue>Expense_Sharing_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>Loomis_Queue_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>NAME</columns>
-        <columns>Member_ID__c</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
         <label>Loomis Queue</label>
         <queue>Loomis_Queue</queue>
@@ -3992,27 +3736,15 @@
             <value>Case.Member_Enrollment</value>
         </filters>
         <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
         </filters>
         <label>Member Enrollment Cases</label>
     </listViews>
     <listViews>
         <fullName>Member_Loyalty_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Member Loyalty Queue</label>
         <queue>Member_Loyalty</queue>
         <sharedTo>
@@ -4021,19 +3753,7 @@
     </listViews>
     <listViews>
         <fullName>Member_Support_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Member Support Queue</label>
         <queue>Member_Support</queue>
         <sharedTo>
@@ -4087,19 +3807,7 @@
     </listViews>
     <listViews>
         <fullName>Pre_Cert_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Pre-Cert Queue</label>
         <queue>Pre_Cert</queue>
         <sharedTo>
@@ -4108,19 +3816,7 @@
     </listViews>
     <listViews>
         <fullName>Producer_Support_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
         <label>Producer Support Queue</label>
         <queue>Producer_Support</queue>
         <sharedTo>
@@ -4129,857 +3825,15 @@
     </listViews>
     <listViews>
         <fullName>Short_Story_Case</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.REASON</field>
-            <operation>equals</operation>
-            <value>Short Story Completed,Short Story Needed,Short Story Pending Pre Ex</value>
-        </filters>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Short Story Cases</label>
+        <filterScope>Queue</filterScope>
+        <label>Short Story</label>
+        <queue>Short_Story</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>true</recordTypeTrackHistory>
-    <recordTypes>
-        <fullName>Billing</fullName>
-        <active>true</active>
-        <businessProcess>General Inquiry</businessProcess>
-        <compactLayoutAssignment>Billing_Compact_Layout</compactLayoutAssignment>
-        <label>Billing</label>
-        <picklistValues>
-            <picklist>Appeals__c</picklist>
-            <values>
-                <fullName>Pre Existing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Signs and Symptoms</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Statement of Beliefs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Waiting Period</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Bill_Status__c</picklist>
-            <values>
-                <fullName>Denied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Entered</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Paid</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pending Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Review</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Call_Center__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Cancel_Reason__c</picklist>
-            <values>
-                <fullName>Dissatisfaction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Financial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Intentional</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Program Changes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Program Restrictions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Cancel_Type__c</picklist>
-            <values>
-                <fullName>Controllable</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Uncontrollable</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Case_Resolution__c</picklist>
-            <values>
-                <fullName>Added Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cancelled the Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Changed Producer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed Program Change</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Merged Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Processed Payment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Refunded the Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Removed Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Switched Primary</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Updated Billing Date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Updated Payment Method</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Case_Sub_Category__c</picklist>
-            <values>
-                <fullName>90 Day Wait %28Preventive%2FDoctor Visit%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CAT %28PCP Visits%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CAT %28Preventive%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CAT %28SP Visits%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cancer Wait Period</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Class Basic %28SP Visit%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Class Enhanced %28SP Visit%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contribution Discrepancy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discounts %28Dental%2FVision%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Eligibility Questions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Exposed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Infected</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Labs%2FDiagnostic</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Maternity</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mental Health</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Insurance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other %28ineligible for sharing%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Ex Wait Period</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prescription</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Surgery Wait Period</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Commission_Level__c</picklist>
-            <values>
-                <fullName>Correct</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incorrect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Competitor_Program__c</picklist>
-            <values>
-                <fullName>Aliera</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Altrua</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MediShare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other_HealthShare</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Contact_Type__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Gender__c</picklist>
-            <values>
-                <fullName>Female</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Male</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Neutral</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Lost_Reason__c</picklist>
-            <values>
-                <fullName>Employer Paid Plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Financial Reasons</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insufficient Coverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lost in Verification</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non-acceptance of Sharing Eligibility</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non-acceptance of Statement of Beliefs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non-acceptance of Waiting Periods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Physician Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Traditional Health Plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Working with Producer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Membership_Size__c</picklist>
-            <values>
-                <fullName>6 %2B Members</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Family</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Member %2B 1</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>OSH_Agreed_to_Urgency_Rating__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>OSH_Met_Resolution_Time__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Origin</picklist>
-            <values>
-                <fullName>C-suite</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inbound Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OSH Call Center</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outbound Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Report</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sales</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Payment_Type__c</picklist>
-            <values>
-                <fullName>ACH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Credit Card</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Preferred_Language__c</picklist>
-            <values>
-                <fullName>Dutch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>French</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Italian</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spanish</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Priority</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Procedure_Type_Expense_Sharing__c</picklist>
-            <values>
-                <fullName>Inpatient</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outpatient</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PCP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Specialist</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Provider_Type_Expense_Sharing__c</picklist>
-            <values>
-                <fullName>Facility</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PCP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Specialist</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Reason</picklist>
-            <values>
-                <fullName>Account Audit Required</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Aging Off</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cancellation Refunds</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Member Follow Up</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Merging Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outbound Payment Error</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Method Update</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Primary Younger Than Dependent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Processing Payment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer Change Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Program Change</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reactivating Member Accounts %E2%80%93 less than 30 days</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reinstating Member Accounts %E2%80%93 past 30 days</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Save__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Sub_Cancel_Reason__c</picklist>
-            <values>
-                <fullName>Confused about Bundled Services</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Delayed in Sharing Request Response</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Did Not Agree to Terms</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Did Not Receive ID Cards</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Final Transaction Decline</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gap or Temporary Coverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>In Network But Refused Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal Customer Issue</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loss of Job or Income Source</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Member Deceased</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misrepresentation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Moving Out of Service Area</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No In Network Provider in Area</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Preferred Providers Available</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Enough Methods of Payment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Over 65</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Poor Customer Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Existing Conditions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Program Features</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider Declined to Accept HealthShare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider Not in Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider is Balance Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Refused to Answer Questions After Sale</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Signed Without Consent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unable to Afford Contributions Long Term</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unable to Afford Contributions Short Term</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unhappy with Company Values</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unpaid Expense Sharing Requests</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unresolved Chargebacks</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Waiting Periods</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Tool_Chest__c</picklist>
-            <values>
-                <fullName>1%25 off lifetime membership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>2%25 off lifetime membership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Application Fee Waived</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>None</fullName>
-                <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Type</picklist>
-            <values>
-                <fullName>Feature Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Question</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Web_Origin__c</picklist>
-            <values>
-                <fullName>Facebook</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Glassdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Google Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Healthcaresharingreview%2Ecom</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Indeed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Instagram</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>LinkedIn</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Twitter</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>vlocity_ins__Product__c</picklist>
-            <values>
-                <fullName>GC1020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC1040</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC1060</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC3020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC3040</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC3060</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC5020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC5040</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC5060</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
     <recordTypes>
         <fullName>Cancellation</fullName>
         <active>true</active>
@@ -5493,17 +4347,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Save__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -5664,14 +4507,6 @@
         <picklistValues>
             <picklist>Tool_Chest__c</picklist>
             <values>
-                <fullName>1%25 off lifetime membership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>2%25 off lifetime membership</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Application Fee Waived</fullName>
                 <default>false</default>
             </values>
@@ -5774,7 +4609,6 @@
         <fullName>Commission</fullName>
         <active>true</active>
         <businessProcess>Commission</businessProcess>
-        <compactLayoutAssignment>Commission_Compact_Layout</compactLayoutAssignment>
         <label>Commission</label>
         <picklistValues>
             <picklist>Appeals__c</picklist>
@@ -6252,48 +5086,6 @@
             </values>
             <values>
                 <fullName>Specialist</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Reason</picklist>
-            <values>
-                <fullName>Commission Level Change</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>E%26O Refunds</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incorrect Commission Levels</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>List Bill Credit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer Change</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer Overpayment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer Underpayment</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7041,14 +5833,6 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
-                <fullName>Appeal Pre-Cert</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appointment Scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>COVID-19</fullName>
                 <default>false</default>
             </values>
@@ -7065,14 +5849,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Member Negotiation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NPS Feedback</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Provider Eligibility Questions</fullName>
                 <default>false</default>
             </values>
@@ -7082,21 +5858,6 @@
             </values>
             <values>
                 <fullName>Share Request Escalation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Social Media Feedback</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7295,22 +6056,6 @@
         </picklistValues>
         <picklistValues>
             <picklist>Case_Resolution__c</picklist>
-            <values>
-                <fullName>Appeal Approved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal Denied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal in Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal to Arbitration</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Exception Made %28i%2Ee%2E Appeals%29</fullName>
                 <default>false</default>
@@ -7708,19 +6453,7 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
-                <fullName>App Fee Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal Pre-Cert</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Attorney General</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Attorney Letter</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -7744,34 +6477,15 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Refund Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Share Request Escalation</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Subrogation</fullName>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Trigger Terms %28fraud%2C attorney%2C etc%2E%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Complaint</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8059,807 +6773,6 @@
             </values>
             <values>
                 <fullName>Subrogation Complete</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Case_Sub_Category__c</picklist>
-            <values>
-                <fullName>COVID</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inaccurate Coding</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Laboratory</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medical Necessity</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OON Denial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-existing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Program Max</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reimbursed Amount</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timely Filing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Waiting Period</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Commission_Level__c</picklist>
-            <values>
-                <fullName>Correct</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incorrect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Competitor_Program__c</picklist>
-            <values>
-                <fullName>Aliera</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Altrua</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MediShare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other_HealthShare</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Contact_Type__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Gender__c</picklist>
-            <values>
-                <fullName>Female</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Male</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Neutral</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Lost_Reason__c</picklist>
-            <values>
-                <fullName>Employer Paid Plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Financial Reasons</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insufficient Coverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lost in Verification</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non-acceptance of Sharing Eligibility</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non-acceptance of Statement of Beliefs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non-acceptance of Waiting Periods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Physician Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Traditional Health Plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Working with Producer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Membership_Size__c</picklist>
-            <values>
-                <fullName>6 %2B Members</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Family</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Member %2B 1</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>OSH_Agreed_to_Urgency_Rating__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>OSH_Met_Resolution_Time__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Origin</picklist>
-            <values>
-                <fullName>C-suite</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inbound Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>LSN</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loomis Pending %24100K</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OSH Call Center</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outbound Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pending %26 Unpaid</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sales</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Payment_Type__c</picklist>
-            <values>
-                <fullName>ACH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Credit Card</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Preferred_Language__c</picklist>
-            <values>
-                <fullName>Dutch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>French</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Italian</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spanish</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Priority</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Procedure_Type_Expense_Sharing__c</picklist>
-            <values>
-                <fullName>Inpatient</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outpatient</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PCP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Specialist</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Provider_Type_Expense_Sharing__c</picklist>
-            <values>
-                <fullName>Facility</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PCP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Specialist</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Reason</picklist>
-            <values>
-                <fullName>Account Audit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal Pre-Cert</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Bill Status Review Required</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>First Level Appeal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loomis Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Review Concierge Initiated</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Review ESS Initiated</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Review Member Initiated</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Review Member Support Initiated</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Review Producer Initiated</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Review Provider Initiated</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Repricing Needed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Second Level Appeal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Short Story Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Short Story Needed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Short Story Pending Pre Ex</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Subrogation Review</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Save__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Sub_Cancel_Reason__c</picklist>
-            <values>
-                <fullName>Agentra Cancellation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cease and Desist %2F Regulatory Mandates</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Confused about Bundled Services</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Delayed in Sharing Request Response</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Did Not Agree to Terms</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Did Not Receive ID Cards</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Duplicate Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Final Transaction Decline</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gap or Temporary Coverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>In Network But Refused Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal Customer Issue</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>List bill employer group cancellation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loss of Job or Income Source</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Member Deceased</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misrepresentation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Moving Out of Service Area</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Negative Press %2F Marketing %2F Reputation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No In Network Provider in Area</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Preferred Providers Available</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Enough Methods of Payment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Over 65</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Poor Customer Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Existing Conditions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Program Features</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider Declined to Accept HealthShare</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider Not in Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider is Balance Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Refused to Answer Questions After Sale</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Signed Without Consent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unable to Afford Contributions Long Term</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unable to Afford Contributions Short Term</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unhappy with Company Values</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unpaid Expense Sharing Requests</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unresolved Chargebacks</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Waiting Periods</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Tool_Chest__c</picklist>
-            <values>
-                <fullName>1%25 off lifetime membership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>2%25 off lifetime membership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Application Fee Waived</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>None</fullName>
-                <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Type</picklist>
-            <values>
-                <fullName>Feature Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Question</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Web_Origin__c</picklist>
-            <values>
-                <fullName>Facebook</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Glassdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Google Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Healthcaresharingreview%2Ecom</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Indeed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Instagram</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>LinkedIn</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Twitter</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>vlocity_ins__Product__c</picklist>
-            <values>
-                <fullName>GC1020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC1040</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC1060</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC3020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC3040</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC3060</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC5020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC5040</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GC5060</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
-    <recordTypes>
-        <fullName>General_Inquiry</fullName>
-        <active>true</active>
-        <businessProcess>General Inquiry</businessProcess>
-        <label>General Inquiry</label>
-        <picklistValues>
-            <picklist>Appeals__c</picklist>
-            <values>
-                <fullName>Pre Existing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Signs and Symptoms</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Statement of Beliefs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Waiting Period</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Bill_Status__c</picklist>
-            <values>
-                <fullName>Denied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Entered</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Paid</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pending Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Review</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Call_Center__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Cancel_Reason__c</picklist>
-            <values>
-                <fullName>Dissatisfaction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Financial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Intentional</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Program Changes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Program Restrictions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Cancel_Type__c</picklist>
-            <values>
-                <fullName>Controllable</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Uncontrollable</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Case_Resolution__c</picklist>
-            <values>
-                <fullName>Issue resolved%2C member satisfied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Issue resolved%2C member unsatisfied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9227,38 +7140,11 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
-                <fullName>Billing Issues</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Existing problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Find a Provider</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Member Eligibility Questions</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>New problem</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Social Media</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
+                <fullName>Provider Eligibility Questions</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9276,6 +7162,14 @@
         <picklistValues>
             <picklist>Sub_Cancel_Reason__c</picklist>
             <values>
+                <fullName>Agentra Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cease and Desist %2F Regulatory Mandates</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Confused about Bundled Services</fullName>
                 <default>false</default>
             </values>
@@ -9289,6 +7183,10 @@
             </values>
             <values>
                 <fullName>Did Not Receive ID Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Account</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -9308,6 +7206,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>List bill employer group cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Loss of Job or Income Source</fullName>
                 <default>false</default>
             </values>
@@ -9321,6 +7223,801 @@
             </values>
             <values>
                 <fullName>Moving Out of Service Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Press %2F Marketing %2F Reputation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No In Network Provider in Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Preferred Providers Available</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Enough Methods of Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over 65</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor Customer Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Existing Conditions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Features</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Declined to Accept HealthShare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Not in Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider is Balance Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refused to Answer Questions After Sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed Without Consent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Afford Contributions Long Term</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Afford Contributions Short Term</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unhappy with Company Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unpaid Expense Sharing Requests</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresolved Chargebacks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting Periods</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tool_Chest__c</picklist>
+            <values>
+                <fullName>1%25 off lifetime membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%25 off lifetime membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Application Fee Waived</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Web_Origin__c</picklist>
+            <values>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Glassdoor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcaresharingreview%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indeed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instagram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Product__c</picklist>
+            <values>
+                <fullName>GC1020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5060</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Expense_Sharing_Support</fullName>
+        <active>true</active>
+        <businessProcess>Expense Sharing</businessProcess>
+        <compactLayoutAssignment>Expense_Sharing_Support_Compact_Layout</compactLayoutAssignment>
+        <label>Expense Sharing Support</label>
+        <picklistValues>
+            <picklist>Appeals__c</picklist>
+            <values>
+                <fullName>Pre Existing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signs and Symptoms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statement of Beliefs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting Period</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Bill_Status__c</picklist>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Entered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-ex Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Center__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancel_Reason__c</picklist>
+            <values>
+                <fullName>Dissatisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intentional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancel_Type__c</picklist>
+            <values>
+                <fullName>Controllable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uncontrollable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Resolution__c</picklist>
+            <values>
+                <fullName>Appeal Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Appeal Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Audit Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Further Action Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Pre-Ex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-ex Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processed as Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repriced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subrogation Complete</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Sub_Category__c</picklist>
+            <values>
+                <fullName>90 Day Wait %28Preventive%2FDoctor Visit%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAT %28PCP Visits%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAT %28Preventive%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAT %28SP Visits%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancer Wait Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class Basic %28SP Visit%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class Enhanced %28SP Visit%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contribution Discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discounts %28Dental%2FVision%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eligibility Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exposed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Infected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labs%2FDiagnostic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maternity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mental Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28ineligible for sharing%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Ex Wait Period</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescription</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surgery Wait Period</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commission_Level__c</picklist>
+            <values>
+                <fullName>Correct</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitor_Program__c</picklist>
+            <values>
+                <fullName>Aliera</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Altrua</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MediShare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other_HealthShare</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Gender__c</picklist>
+            <values>
+                <fullName>Female</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>Employer Paid Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insufficient Coverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost in Verification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-acceptance of Sharing Eligibility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-acceptance of Statement of Beliefs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-acceptance of Waiting Periods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physician Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traditional Health Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Working with Producer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Membership_Size__c</picklist>
+            <values>
+                <fullName>6 %2B Members</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member %2B 1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OSH_Agreed_to_Urgency_Rating__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OSH_Met_Resolution_Time__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>C-suite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OSH Call Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Card</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Preferred_Language__c</picklist>
+            <values>
+                <fullName>Dutch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Procedure_Type_Expense_Sharing__c</picklist>
+            <values>
+                <fullName>Inpatient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outpatient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialist</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Provider_Type_Expense_Sharing__c</picklist>
+            <values>
+                <fullName>Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialist</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Member Eligibility Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Eligibility Questions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Save__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Cancel_Reason__c</picklist>
+            <values>
+                <fullName>Agentra Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cease and Desist %2F Regulatory Mandates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confused about Bundled Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delayed in Sharing Request Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Agree to Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Receive ID Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Transaction Decline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gap or Temporary Coverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Network But Refused Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Customer Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>List bill employer group cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loss of Job or Income Source</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Deceased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misrepresentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving Out of Service Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Press %2F Marketing %2F Reputation</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10033,54 +8730,7 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
-                <fullName>Appeal Pre-Ex</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Audit Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Bill Status Review Required</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OSH Review Bill Status</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Ex Review Loomis</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Ex Review OSH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Priority Bill Status Review Required</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Repricing Needed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Subrogation Review</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10772,18 +9422,23 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
+                <fullName>Complex functionality</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Provider</fullName>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11507,17 +10162,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Save__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -11866,22 +10510,6 @@
         </picklistValues>
         <picklistValues>
             <picklist>Case_Resolution__c</picklist>
-            <values>
-                <fullName>Appeal Approved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal Denied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal in Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal to Arbitration</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Approved</fullName>
                 <default>false</default>
@@ -12238,24 +10866,16 @@
         <picklistValues>
             <picklist>Priority</picklist>
             <values>
-                <fullName>Expedited</fullName>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Medium</fullName>
                 <default>true</default>
-            </values>
-            <values>
-                <fullName>Quick Response</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>STAT</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Request</fullName>
-                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -12303,10 +10923,6 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
-                <fullName>Appeal Pre-Cert</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Chemo</fullName>
                 <default>false</default>
             </values>
@@ -12336,17 +10952,6 @@
             </values>
             <values>
                 <fullName>Status Update</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13117,17 +11722,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Save__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -13478,31 +12072,7 @@
         <picklistValues>
             <picklist>Case_Resolution__c</picklist>
             <values>
-                <fullName>Account Audit Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Added Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Age Off</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal Approved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal Denied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal in Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appeal to Arbitration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13510,31 +12080,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Audit Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cancel %3C 30</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Cancelled the Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Changed Producer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed Program Change</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Coverage</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Created Case for other Dept</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13546,19 +12096,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Demographics Updated</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Denied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Duplicate Pre-Cert Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Duplicate Request</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13574,10 +12112,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Escalated to Supervisor</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Exception Made %28i%2Ee%2E Appeals%29</fullName>
                 <default>false</default>
             </values>
@@ -13586,23 +12120,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Form Emailed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Form Mailed</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Healthcare Bluebook negotiation process</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ID Card Emailed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ID Card Requested</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13614,27 +12132,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Left Message %2F No Message left %E2%80%93 1st Attempt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Left Message %2F No Message left %E2%80%93 2nd Attempt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Left Message %2F No message left %E2%80%93 3rd attempt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>List Bill Corrected</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Lost</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Member Education on Program Guidelines</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13646,35 +12144,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Merged Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Misrepresented</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Negotiation Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Negotiation Processed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Action Taken - Hold or Inactive</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Further Action Needed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Pre-Cert Required</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Pre-Ex</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13718,35 +12192,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Pre-Ex Upheld</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-ex Identified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Processed Payment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Processed as Secondary</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Processing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer Commission Level Corrected</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer Information Updated</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Producer Payment Corrected</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13758,51 +12204,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Provider Education on Member%27s Program Guideline</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider Nomination</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider Pre Cert Pending</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Provider options sent to member</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Provider sent to Network Development</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Records Received</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Refund Finalized</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Refunded the Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Removed Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Repriced</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reprocessed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Return Mail %E2%80%93 Address Updated</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13815,82 +12221,6 @@
             </values>
             <values>
                 <fullName>Sharing Dispute</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Short Story Approved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Short Story Denied</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spoke to Member Inquiry Answered %2F Issue Resolved</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spoke to Producer %28answered questions %2F issue resolved%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Subrogation Complete</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Survey Response Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Switched Primary</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Transferred Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Transferred to another Dept</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Updated Billing Date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Updated Payment Method</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Waiting Period NOT MET</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Welcome Call AM Attempt %E2%80%93 Left Message</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Welcome Call AM Attempt %E2%80%93 No Message Left</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Welcome Call AM Attempt %E2%80%93 Welcome Call Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Welcome Call Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Welcome Call PM Attempt %E2%80%93 Left Message</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Welcome Call PM Attempt %E2%80%93 No Message Left</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Welcome Call PM Attempt %E2%80%93 Welcome Call Completed</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13910,10 +12240,6 @@
             </values>
             <values>
                 <fullName>CAT %28SP Visits%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>COVID</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13945,15 +12271,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Inaccurate Coding</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Infected</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Laboratory</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13965,23 +12283,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Medical Necessity</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Mental Health</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Not Insurance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OON Denial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13993,31 +12299,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Pre-existing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Prescription</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Program Max</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reimbursed Amount</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Surgery Wait Period</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timely Filing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Waiting Period</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14176,6 +12462,14 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Web</fullName>
                 <default>false</default>
             </values>
@@ -14232,19 +12526,7 @@
         <picklistValues>
             <picklist>Procedure_Type_Expense_Sharing__c</picklist>
             <values>
-                <fullName>Hospitalization</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Inpatient</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lab</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Maternity</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14260,15 +12542,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Radiology</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Specialist</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Surgery</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14315,17 +12589,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Requester__c</picklist>
-            <values>
-                <fullName>Member</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provider</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Save__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -14338,14 +12601,6 @@
         </picklistValues>
         <picklistValues>
             <picklist>Sub_Cancel_Reason__c</picklist>
-            <values>
-                <fullName>Agentra Cancellation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cease and Desist %2F Regulatory Mandates</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Confused about Bundled Services</fullName>
                 <default>false</default>
@@ -14360,10 +12615,6 @@
             </values>
             <values>
                 <fullName>Did Not Receive ID Cards</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Duplicate Account</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14383,10 +12634,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>List bill employer group cancellation</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Loss of Job or Income Source</fullName>
                 <default>false</default>
             </values>
@@ -14400,10 +12647,6 @@
             </values>
             <values>
                 <fullName>Moving Out of Service Area</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Negative Press %2F Marketing %2F Reputation</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14431,10 +12674,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Prescription Plan Not Sufficient</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Program Features</fullName>
                 <default>false</default>
             </values>
@@ -14456,10 +12695,6 @@
             </values>
             <values>
                 <fullName>Signed Without Consent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Transaction Decline</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14621,16 +12856,15 @@
         <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>ReadWriteTransfer</sharingModel>
+    <sharingModel>Private</sharingModel>
     <validationRules>
         <fullName>Appeal_Reason_reqd_if_Appeal_Precert</fullName>
         <active>true</active>
         <errorConditionFormula>AND
 (
-	ISPICKVAL(Reason, &quot;Appeal Pre-Cert&quot;),
-	ISBLANK(TEXT(Appeals__c)),
-	$RecordType.Name = &quot;Pre-Cert&quot;,
-	NOT(BEGINS(PRIORVALUE(OwnerId),&quot;00G&quot;))
+ ISPICKVAL(Reason, &quot;Appeal Pre-Cert&quot;),
+ ISBLANK(TEXT(Appeals__c)),
+ $RecordType.Name = &quot;Pre-Cert&quot;
 )</errorConditionFormula>
         <errorDisplayField>Appeals__c</errorDisplayField>
         <errorMessage>If Case Reason is Appeal Pre-Cert, you must select an Appeal Reason.</errorMessage>
@@ -14673,7 +12907,6 @@ PRIORVALUE(IsClosed) = TRUE
  ISBLANK (TEXT(Case_Resolution__c)), 
  ISPICKVAL(Status, &quot;Closed&quot;),
  $RecordType.Name != &quot;Cancellation&quot;,
- $RecordType.Name != &quot;General Inquiry&quot;,
  $RecordType.Name != &quot;Escalation&quot;
 )</errorConditionFormula>
         <errorDisplayField>Case_Resolution__c</errorDisplayField>
@@ -14684,6 +12917,7 @@ PRIORVALUE(IsClosed) = TRUE
         <active>true</active>
         <errorConditionFormula>AND(
 	OR(
+		TEXT(Reason)=&quot;Appeal Pre-Cert&quot;,
 		TEXT(Reason)=&quot;First Level Appeal&quot;,
 		TEXT(Reason)=&quot;Second Level Appeal&quot;),
 	ISBLANK(TEXT(Case_Sub_Category__c)),
@@ -14736,17 +12970,6 @@ ISPICKVAL(Case_Resolution__c, &quot;Enrolled&quot;)
         <errorMessage>You must select a Lost Reason before closing this case.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>No_Save_option_if_case_cancelled</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND
-(
- NOT(ISBLANK (TEXT(Save__c))),
- ISPICKVAL(Status, &quot;Cancelled&quot;),
- $RecordType.Name = &quot;Cancellation&quot;
-)</errorConditionFormula>
-        <errorMessage>If member was not saved, please select the Status &quot;Closed&quot; and Save field &quot;No&quot;. If case is being cancelled as a duplicate or because it was opened in error, please do not select an option on the Save field.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Only_owner_can_edit_case</fullName>
         <active>true</active>
         <errorConditionFormula>AND
@@ -14778,29 +13001,7 @@ ISPICKVAL(Case_Resolution__c, &quot;Enrolled&quot;)
         <errorMessage>Resolution Note is required before closing a case.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Requester_is_req_for_PreCert_and_ESS</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND
-(
-OR
-(
-ISPICKVAL(Reason, &quot;Appeal Pre-Cert&quot;),
-ISPICKVAL(Reason, &quot;First Level Appeal&quot;),
-ISPICKVAL(Reason, &quot;Second Level Appeal&quot;)
-),
-OR
-(
-$RecordType.Name = &quot;Pre-Cert&quot;,
-$RecordType.Name = &quot;Expense Sharing&quot;
-),
-ISBLANK(TEXT( Requester__c )),
-ISPICKVAL(Status, &quot;Closed&quot;)
-)</errorConditionFormula>
-        <errorDisplayField>Requester__c</errorDisplayField>
-        <errorMessage>Requester is required when case is Appeal related</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Save_required_for_Cancellation_case</fullName>
+        <fullName>Save_required_for_Member_Loyalty</fullName>
         <active>true</active>
         <errorConditionFormula>AND
 (
@@ -14816,13 +13017,23 @@ $RecordType.Name = &quot;Cancellation&quot;
         <active>true</active>
         <errorConditionFormula>AND
 (
-	ISPICKVAL(Origin, &quot;Web&quot;),
-	ISBLANK(TEXT(Web_Origin__c)),
-	$RecordType.Name = &quot;Escalation&quot;,
-	NOT(BEGINS(PRIORVALUE(OwnerId),&quot;00G&quot;))
-
+ ISPICKVAL(Origin, &quot;Web&quot;),
+ ISBLANK(TEXT(Web_Origin__c)),
+ $RecordType.Name = &quot;Escalation&quot;
 )</errorConditionFormula>
         <errorDisplayField>Web_Origin__c</errorDisplayField>
         <errorMessage>If Case Origin is Web, you must select a Web Origin.</errorMessage>
     </validationRules>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Case</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromCase</page>
+        <protected>false</protected>
+    </webLinks>
 </CustomObject>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Roger Gene Johnson Partner User</description>
+    <description>John Bowling Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Roger Gene Johnson Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <name>John Bowling Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Regional_Sales_Director</parentRole>
 </Role>

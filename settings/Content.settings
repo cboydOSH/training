@@ -4,19 +4,19 @@
     <enableChatterFileLink>true</enableChatterFileLink>
     <enableContent>true</enableContent>
     <enableContentAutoAssign>false</enableContentAutoAssign>
-    <enableContentDistForPortalUsers>false</enableContentDistForPortalUsers>
-    <enableContentDistPwOptionsBit1>true</enableContentDistPwOptionsBit1>
-    <enableContentDistPwOptionsBit2>true</enableContentDistPwOptionsBit2>
+    <enableContentDistForPortalUsers>true</enableContentDistForPortalUsers>
+    <enableContentDistPwOptionsBit1>false</enableContentDistPwOptionsBit1>
+    <enableContentDistPwOptionsBit2>false</enableContentDistPwOptionsBit2>
     <enableContentDistribution>true</enableContentDistribution>
     <enableContentSupportMultiLanguage>false</enableContentSupportMultiLanguage>
     <enableContentWorkspaceAccess>true</enableContentWorkspaceAccess>
     <enableDeleteFileInContentPacks>false</enableDeleteFileInContentPacks>
     <enableFileShareSetByRecord>false</enableFileShareSetByRecord>
     <enableFilesUsrShareNetRestricted>false</enableFilesUsrShareNetRestricted>
-    <enableJPGPreviews>false</enableJPGPreviews>
+    <enableJPGPreviews>true</enableJPGPreviews>
     <enableLibraryManagedFiles>false</enableLibraryManagedFiles>
-    <enableSiteGuestUserToUploadFiles>false</enableSiteGuestUserToUploadFiles>
-    <enableUploadFilesOnAttachments>false</enableUploadFilesOnAttachments>
+    <enableSiteGuestUserToUploadFiles>true</enableSiteGuestUserToUploadFiles>
+    <enableUploadFilesOnAttachments>true</enableUploadFilesOnAttachments>
     <setValidContentTypeForAtchDocDownload>false</setValidContentTypeForAtchDocDownload>
     <skipContentAssetTriggers>false</skipContentAssetTriggers>
     <skipContentAssetTriggersOnDeploy>true</skipContentAssetTriggersOnDeploy>

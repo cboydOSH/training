@@ -115,6 +115,12 @@
         <default>false</default>
         <label>32</label>
     </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>10</label>
+    </customValue>
     <masterLabel>Contract Level</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

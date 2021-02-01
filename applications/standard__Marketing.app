@@ -13,5 +13,4 @@
     <tabs>standard-File</tabs>
     <tabs>standard-Quote</tabs>
     <tabs>Work_Item__c</tabs>
-    <tabs>Recording__c</tabs>
 </CustomApplication>

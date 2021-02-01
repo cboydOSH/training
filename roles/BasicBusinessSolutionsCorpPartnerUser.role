@@ -5,6 +5,6 @@
     <description>Basic Business Solutions Corp Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Basic Business Solutions Corp Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

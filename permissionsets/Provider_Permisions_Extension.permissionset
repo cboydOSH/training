@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permision set is for extend the providers function about acces to vlocity DR,IP,Etc.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Provider Permisions Extension</label>
+    <license>Partner Community Login</license>
+</PermissionSet>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Kelsey Dugas Partner User</description>
+    <description>OneShare Health Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Kelsey Dugas Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>OneShare Health Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

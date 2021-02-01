@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Commission Transaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Commission Transactions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Adjustment Amount --></label>
+        <name>Adjustment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Note --></label>
+        <name>Adjustment_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Type --></label>
+        <name>Adjustment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Credit</masterLabel>
+            <translation><!-- Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit</masterLabel>
+            <translation><!-- Debit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Product Fee --></label>
+        <name>Asset_Product_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Commission Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commission Amount --></label>
+        <name>Commission_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Level --></label>
+        <name>Contract_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Amount --></label>
+        <name>Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Recurrence --></label>
+        <name>Fee_Recurrence__c</name>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-time</masterLabel>
+            <translation><!-- One-time --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fee Type --></label>
+        <name>Fee_Type__c</name>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Amount --></label>
+        <name>Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Producer Commission --></label>
+        <name>Producer_Commission__c</name>
+        <relationshipLabel><!-- Commission Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Producer --></label>
+        <name>Producer__c</name>
+        <relationshipLabel><!-- Commission Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Commission Transaction --></label>
+        <name>Related_Commission_Transaction__c</name>
+        <relationshipLabel><!-- Related Commission Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Transaction Status --></label>
+        <name>Transaction_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid</masterLabel>
+            <translation><!-- Unpaid --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Adjustment --></label>
+        <name>Adjustment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Member Fee --></label>
+        <name>Member_Fee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payment --></label>
+        <name>Payment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

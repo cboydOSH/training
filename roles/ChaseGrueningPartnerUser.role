@@ -5,6 +5,6 @@
     <description>Chase Gruening Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Chase Gruening Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

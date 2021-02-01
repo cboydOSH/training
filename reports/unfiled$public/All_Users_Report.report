@@ -44,6 +44,7 @@
             <operator>notContain</operator>
             <value>Community</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>All Users Report</name>

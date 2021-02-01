@@ -311,10 +311,6 @@
                 <behavior>Edit</behavior>
                 <field>Salesforce_ID_in_Admin123__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Agent_ID__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -497,11 +493,11 @@
     </relatedContent>
     <relatedLists>
         <fields>ContactName</fields>
-        <fields>ContactEmail</fields>
-        <fields>ContactPhone</fields>
         <fields>Role</fields>
         <fields>ContactTitle</fields>
         <fields>IsPrimary</fields>
+        <fields>ContactPhone</fields>
+        <fields>ContactEmail</fields>
         <fields>ContactAccountName</fields>
         <relatedList>RelatedContactRoleList</relatedList>
     </relatedLists>

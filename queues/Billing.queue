@@ -2,17 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Billing Queue</name>
-    <queueMembers>
-        <users>
-            <user>apaiz@onesharehealth.com</user>
-            <user>aknight@onesharehealth.com</user>
-            <user>acano@onesharehealth.com</user>
-            <user>bfoster@onesharehealth.com</user>
-            <user>kmarshall@onesharehealth.com</user>
-            <user>smatthews@onesharehealth.com</user>
-            <user>treneau@onesharehealth.com</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

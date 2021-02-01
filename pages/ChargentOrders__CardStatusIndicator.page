@@ -1,0 +1,18 @@
+<apex:page standardController="ChargentOrders__ChargentOrder__c" extensions="ChargentBase.TChargentStaticHelper" showHeader="false" standardStylesheets="false" >
+<apex:stylesheet value="{!URLFOR($Resource.ChargentOrders__SLDS214, 'assets/styles/salesforce-lightning-design-system.css')}"/>
+	<style type="text/css">
+		.green {
+			background-color: #b6d7a8;
+		}
+		.yellow {
+			background-color: #ffe599;
+		}
+		.red {
+			background-color: #FF0000; 
+			color:#FFFFFF;
+		}
+	</style>
+	<div>
+		<apex:outputText value="{!indicatorString}" styleClass="{!status} slds-form-element__label"/>
+	</div>
+</apex:page>

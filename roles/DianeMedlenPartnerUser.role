@@ -5,6 +5,6 @@
     <description>Diane Medlen Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Diane Medlen Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

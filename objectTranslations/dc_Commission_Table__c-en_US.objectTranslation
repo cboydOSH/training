@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Commission Table</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Commission Tables</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Commission Tables --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Payment Date --></label>
+        <name>Last_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Contract --></label>
+        <name>Product_Contract__c</name>
+        <relationshipLabel><!-- Commission Tables --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Producer Commissions --></label>
+        <name>Total_Producer_Commissions__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Total Producer Commissions cannot exceed 32%. --></errorMessage>
+        <name>Total_Commissions_percentage_limit</name>
+    </validationRules>
+</CustomObjectTranslation>

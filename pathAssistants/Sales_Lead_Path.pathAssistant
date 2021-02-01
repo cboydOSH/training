@@ -4,10 +4,5 @@
     <entityName>Lead</entityName>
     <fieldName>Status</fieldName>
     <masterLabel>Sales Lead Path</masterLabel>
-    <pathAssistantSteps>
-        <fieldNames>Lead_Lost_Reason__c</fieldNames>
-        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Please select a Lead Lost Reason before marking the lead as lost.&lt;/span&gt;&lt;/p&gt;</info>
-        <picklistValueName>Lead Lost</picklistValueName>
-    </pathAssistantSteps>
     <recordTypeName>Sales_Lead</recordTypeName>
 </PathAssistant>

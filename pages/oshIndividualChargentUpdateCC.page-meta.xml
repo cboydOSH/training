@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>This page have an Iframe for show directly the chargent site &quot;payment&quot;</description>
+    <label>oshIndividualChargentUpdateCC</label>
+    <packageVersions>
+        <majorNumber>890</majorNumber>
+        <minorNumber>220</minorNumber>
+        <namespace>vlocity_ins</namespace>
+    </packageVersions>
+</ApexPage>

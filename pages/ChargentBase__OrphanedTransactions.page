@@ -1,0 +1,22 @@
+<apex:page id="OrphanedTransactions" sideBar="false">
+    <apex:includeLightning />
+
+    <apex:outputPanel layout="block" id="component"></apex:outputPanel>
+
+    <script>
+        $Lightning.use("ChargentBase:OrphanedTransactionsApp", function() {
+            $Lightning.createComponent("ChargentBase:OrphanedTransactions",{},
+                "OrphanedTransactions:component",
+                function(cmp, status, errorMessage){
+                    //Add the new button to the body array
+                    if (status === "SUCCESS") {
+                        console.log("Custom component loaded.");
+                    }else if (status === "INCOMPLETE") {
+                        console.log("No response from server or client is offline.")
+                    }else if (status === "ERROR") {
+                        console.log("Error: " + errorMessage);
+                }
+            });
+        });
+    </script>
+</apex:page>

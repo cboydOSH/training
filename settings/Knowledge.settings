@@ -4,16 +4,21 @@
         <enableArticleCreation>false</enableArticleCreation>
     </answers>
     <cases>
+        <articlePublicSharingCommunities>
+            <community>Member Community</community>
+            <community>Producer Community</community>
+            <community>Provider Community</community>
+        </articlePublicSharingCommunities>
         <enableArticleCreation>false</enableArticleCreation>
-        <enableArticlePublicSharingSites>false</enableArticlePublicSharingSites>
-        <enableCaseDataCategoryMapping>false</enableCaseDataCategoryMapping>
+        <enableArticlePublicSharingSites>true</enableArticlePublicSharingSites>
+        <enableCaseDataCategoryMapping>true</enableCaseDataCategoryMapping>
         <useProfileForPDFCreation>false</useProfileForPDFCreation>
     </cases>
     <defaultLanguage>en_US</defaultLanguage>
-    <enableChatterQuestionKBDeflection>false</enableChatterQuestionKBDeflection>
+    <enableChatterQuestionKBDeflection>true</enableChatterQuestionKBDeflection>
     <enableCreateEditOnArticlesTab>true</enableCreateEditOnArticlesTab>
     <enableExternalMediaContent>true</enableExternalMediaContent>
-    <enableKbStandardSharing>false</enableKbStandardSharing>
+    <enableKbStandardSharing>true</enableKbStandardSharing>
     <enableKnowledge>true</enableKnowledge>
     <enableKnowledgeAgentContribution>false</enableKnowledgeAgentContribution>
     <enableKnowledgeAnswersPromotion>false</enableKnowledgeAnswersPromotion>
@@ -26,14 +31,26 @@
     <showArticleSummariesCustomerPortal>false</showArticleSummariesCustomerPortal>
     <showArticleSummariesInternalApp>false</showArticleSummariesInternalApp>
     <showArticleSummariesPartnerPortal>false</showArticleSummariesPartnerPortal>
-    <showValidationStatusField>false</showValidationStatusField>
+    <showValidationStatusField>true</showValidationStatusField>
     <suggestedArticles>
         <caseFields>
             <field>
                 <name>Subject</name>
             </field>
+            <field>
+                <name>Status</name>
+            </field>
+            <field>
+                <name>CaseTopics</name>
+            </field>
+            <field>
+                <name>SuppliedName</name>
+            </field>
+            <field>
+                <name>Language</name>
+            </field>
         </caseFields>
-        <useSuggestedArticlesForCase>false</useSuggestedArticlesForCase>
+        <useSuggestedArticlesForCase>true</useSuggestedArticlesForCase>
         <workOrderFields>
             <field>
                 <name>Subject</name>

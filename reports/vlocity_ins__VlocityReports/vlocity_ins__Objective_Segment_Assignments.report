@@ -61,6 +61,7 @@
             <operator>equals</operator>
             <value>Objectives</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsDown>

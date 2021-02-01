@@ -5,6 +5,6 @@
     <description>ERIC JURCINS Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>ERIC JURCINS Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

@@ -5,6 +5,6 @@
     <description>James Shea Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>James Shea Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

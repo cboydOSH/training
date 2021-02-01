@@ -5,6 +5,6 @@
     <description>Be Well Insurance Solutions Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Be Well Insurance Solutions Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

@@ -2,16 +2,6 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Contracting</fullName>
-        <default>false</default>
-        <label>Contracting</label>
-    </standardValue>
-    <standardValue>
-        <fullName>C-suite</fullName>
-        <default>false</default>
-        <label>C-suite</label>
-    </standardValue>
-    <standardValue>
         <fullName>Email</fullName>
         <default>false</default>
         <label>Email</label>
@@ -22,14 +12,14 @@
         <label>Inbound Call</label>
     </standardValue>
     <standardValue>
-        <fullName>Loomis Pending $100K</fullName>
+        <fullName>Outbound Call</fullName>
         <default>false</default>
-        <label>Loomis Pending $100K</label>
+        <label>Outbound Call</label>
     </standardValue>
     <standardValue>
-        <fullName>LSN</fullName>
+        <fullName>Web</fullName>
         <default>false</default>
-        <label>LSN</label>
+        <label>Web</label>
     </standardValue>
     <standardValue>
         <fullName>Mail</fullName>
@@ -37,19 +27,9 @@
         <label>Mail</label>
     </standardValue>
     <standardValue>
-        <fullName>OSH Call Center</fullName>
+        <fullName>Sales</fullName>
         <default>false</default>
-        <label>OSH Call Center</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Outbound Call</fullName>
-        <default>false</default>
-        <label>Outbound Call</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Pending &amp; Unpaid</fullName>
-        <default>false</default>
-        <label>Pending &amp; Unpaid</label>
+        <label>Sales</label>
     </standardValue>
     <standardValue>
         <fullName>Producer</fullName>
@@ -57,18 +37,23 @@
         <label>Producer</label>
     </standardValue>
     <standardValue>
+        <fullName>OSH Call Center</fullName>
+        <default>false</default>
+        <label>OSH Call Center</label>
+    </standardValue>
+    <standardValue>
+        <fullName>C-suite</fullName>
+        <default>false</default>
+        <label>C-suite</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contracting</fullName>
+        <default>false</default>
+        <label>Contracting</label>
+    </standardValue>
+    <standardValue>
         <fullName>Report</fullName>
         <default>false</default>
         <label>Report</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Sales</fullName>
-        <default>false</default>
-        <label>Sales</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Web</fullName>
-        <default>false</default>
-        <label>Web</label>
     </standardValue>
 </StandardValueSet>

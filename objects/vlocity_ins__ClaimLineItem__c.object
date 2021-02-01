@@ -1618,11 +1618,11 @@
         <picklistValues>
             <picklist>vlocity_ins__Type__c</picklist>
             <values>
-                <fullName>Expense</fullName>
+                <fullName>Chargeable</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Loss</fullName>
+                <fullName>Non Chargeable</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1660,12 +1660,8 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>New</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Open</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Paid</fullName>

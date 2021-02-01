@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Bridget Contreras Partner User</description>
+    <description>Game Changing Benefits Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Bridget Contreras Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Game Changing Benefits Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

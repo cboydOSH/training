@@ -5,6 +5,6 @@
     <description>health Insurance Brokers Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>health Insurance Brokers Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

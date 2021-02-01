@@ -114,7 +114,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Open_Opportunities_by_Stage</report>
+                <report>Sales/Open_Opportunities_by_Stage</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -147,7 +147,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Closed_Opportunities_by_Duration</report>
+                <report>Sales/Closed_Opportunities_by_Duration</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -193,7 +193,7 @@
                 </groupingSortProperties>
                 <header>Open Opportunities by Team</header>
                 <legendPosition>Right</legendPosition>
-                <report>SalesFolder/Open_Opportunities_by_Stage</report>
+                <report>Sales/Open_Opportunities_by_Stage</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -242,7 +242,7 @@
                 </groupingSortProperties>
                 <header>Won Vs Lost</header>
                 <legendPosition>Right</legendPosition>
-                <report>SalesFolder/Closed_Opportunities_by_Duration</report>
+                <report>Sales/Closed_Opportunities_by_Duration</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -279,7 +279,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>SalesFolder/Closed_Opportunities_by_Duration</report>
+                <report>Sales/Closed_Opportunities_by_Duration</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -327,7 +327,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Opportunities Won By Contract Type</header>
-                <report>SalesFolder/Closed_Opportunities_by_Duration</report>
+                <report>Sales/Closed_Opportunities_by_Duration</report>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
             <rowSpan>10</rowSpan>
@@ -379,7 +379,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Open Opportunities by Team</header>
-                <report>SalesFolder/Open_Opportunities_by_Stage</report>
+                <report>Sales/Open_Opportunities_by_Stage</report>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
             <rowSpan>6</rowSpan>
@@ -424,7 +424,7 @@
                 </groupingSortProperties>
                 <header>Open Opportunities by Stage Age</header>
                 <legendPosition>Right</legendPosition>
-                <report>SalesFolder/Open_Opportunities_by_Stage</report>
+                <report>Sales/Open_Opportunities_by_Stage</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -469,7 +469,7 @@
                 <header>Open Opportunities by Team</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>SalesFolder/Open_Opportunities_by_Stage</report>
+                <report>Sales/Open_Opportunities_by_Stage</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -521,7 +521,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Top 10 Won Opportunities</header>
-                <report>SalesFolder/Closed_Opportunities_by_Duration</report>
+                <report>Sales/Closed_Opportunities_by_Duration</report>
             </dashboardComponent>
             <rowIndex>14</rowIndex>
             <rowSpan>15</rowSpan>
@@ -554,7 +554,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>ContractingFolder/Closed_Opportunities_by_Contracting</report>
+                <report>Contracting/Closed_Opportunities_by_Contracting</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>29</rowIndex>
@@ -588,7 +588,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>ContractingFolder/Open_Opportunities_in_Contracting</report>
+                <report>Contracting/Open_Opportunities_in_Contracting</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>29</rowIndex>
@@ -622,7 +622,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>ContractingFolder/Open_Opportunities_in_Contracting</report>
+                <report>Contracting/Open_Opportunities_in_Contracting</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>29</rowIndex>
@@ -670,7 +670,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Top 100 Opportunity Owners</header>
-                <report>SalesFolder/Open_Opportunities_by_Stage</report>
+                <report>Sales/Open_Opportunities_by_Stage</report>
             </dashboardComponent>
             <rowIndex>35</rowIndex>
             <rowSpan>12</rowSpan>

@@ -5,6 +5,6 @@
     <description>Estera Rumpel Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Estera Rumpel Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

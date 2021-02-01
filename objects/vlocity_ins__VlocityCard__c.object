@@ -150,10 +150,10 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>vlocity_ins__Active__c</fullName>
         <defaultValue>false</defaultValue>
@@ -324,17 +324,7 @@
     <label>Vlocity Card</label>
     <listViews>
         <fullName>vlocity_ins__All</fullName>
-        <columns>NAME</columns>
-        <columns>vlocity_ins__Author__c</columns>
-        <columns>vlocity_ins__Version__c</columns>
-        <columns>LAST_UPDATE</columns>
-        <columns>vlocity_ins__Active__c</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>vlocity_ins__CardType__c</field>
-            <operation>equals</operation>
-            <value>flex</value>
-        </filters>
         <label>All</label>
     </listViews>
     <nameField>

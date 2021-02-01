@@ -5,6 +5,6 @@
     <description>Randy Frasier Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Randy Frasier Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

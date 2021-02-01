@@ -1,0 +1,47 @@
+<!-- <apex:page  standardStylesheets="false" showHeader="false" sidebar="false" docType="html-5.0">
+   <div ng-app="Text" class='vlocity'> 
+   <style> .vlocity .vlc-form-group { text-transform: none;} .vlocity .field-lable {text-transform: uppercase;} </style>    
+      <vlocity_ins:BusinessProcessComponent 
+         strOmniScriptType="OSH"                                                               
+         strOmniScriptSubType="Enroll"                                                               
+         strOmniScriptLang="English"
+         ContextId="{!$CurrentPage.parameters.Id}"
+         scriptLayout="newport"                                                 
+         verticalMode="true"                                                               
+         /> 
+      <script type="text/javascript">
+         var modules = ['vlocity-business-process'];
+         var myModule = angular.module('Text', modules);
+      </script> 
+   </div>
+</apex:page> -->
+<!-- Author        : Vlocity Team -->
+<!-- Date Created  : 20 June 2017 -->
+<!-- Last Updated  : 17 July 2017
+<!-- Description   : VF Page to call an OmniScript to edit a Form detail record --> 
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" docType="html-5.0">
+    <apex:includeScript value="/support/console/40.0/integration.js"/>
+    
+    <script type="text/javascript">
+       
+        window.onload = function redirectToOmniScript() {
+            
+         sforce.console.getEnclosingTabId(setTabTitle);
+            var ostype = "WEB";
+ 
+            if(ostype === 'WebSR') {
+                 window.location = "/apex/SRM_WebSRFormErrorMessage"
+            }
+            else{
+                 window.location = "/apex/vlocity_ins__OmniScriptUniversalPage?id={!$CurrentPage.parameters.Id}&OmniScriptType=OSH&OmniScriptSubType=Enroll&OmniScriptLang=English&PrefillDataRaptorBundle=&scriptMode=vertical&layout=newport&ContextId={!$CurrentPage.parameters.Id}"
+            }
+        };
+        
+        var setTabTitle = function setTabTitle(result) {
+            // Setting Title with current SR Number
+            sforce.console.setTabTitle('tittle', result.id);
+        }
+ 
+    </script>  
+ 
+</apex:page>

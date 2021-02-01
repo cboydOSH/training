@@ -2,63 +2,9 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Account Audit</fullName>
-        <default>false</default>
-        <label>Account Audit</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Account Audit Required</fullName>
-        <default>false</default>
-        <label>Account Audit Required</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Aging Off</fullName>
-        <default>false</default>
-        <label>Aging Off</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Appeal Pre-Cert</fullName>
-        <default>false</default>
-        <label>Appeal Pre-Cert</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Appeal Pre-Ex</fullName>
-        <default>false</default>
-        <label>Appeal Pre-Ex</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>App Fee Request</fullName>
-        <default>false</default>
-        <label>App Fee Request</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Appointment Scheduled</fullName>
-        <default>false</default>
-        <label>Appointment Scheduled</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Attorney General</fullName>
         <default>false</default>
         <label>Attorney General</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Attorney Letter</fullName>
-        <default>false</default>
-        <label>Attorney Letter</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Audit Request</fullName>
-        <default>false</default>
-        <label>Audit Request</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -80,27 +26,9 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Bill Status Review Required</fullName>
-        <default>false</default>
-        <label>Bill Status Review Required</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Cancellation Refunds</fullName>
-        <default>false</default>
-        <label>Cancellation Refunds</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Chemo</fullName>
         <default>false</default>
         <label>Chemo</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Commission Level Change</fullName>
-        <default>false</default>
-        <label>Commission Level Change</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -134,12 +62,6 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>E&amp;O Refunds</fullName>
-        <default>false</default>
-        <label>E&amp;O Refunds</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Existing problem</fullName>
         <default>false</default>
         <label>Existing problem</label>
@@ -149,12 +71,6 @@
         <fullName>Find a Provider</fullName>
         <default>false</default>
         <label>Find a Provider</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>First Level Appeal</fullName>
-        <default>false</default>
-        <label>First Level Appeal</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -200,33 +116,9 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Incorrect Commission Levels</fullName>
-        <default>false</default>
-        <label>Incorrect Commission Levels</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Instructions not clear</fullName>
         <default>false</default>
         <label>Instructions not clear</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>List Bill Credit</fullName>
-        <default>false</default>
-        <label>List Bill Credit</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Loomis Review</fullName>
-        <default>false</default>
-        <label>Loomis Review</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>LPC Audit Review</fullName>
-        <default>false</default>
-        <label>LPC Audit Review</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -242,24 +134,6 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Member Follow Up</fullName>
-        <default>false</default>
-        <label>Member Follow Up</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Member Negotiation</fullName>
-        <default>false</default>
-        <label>Member Negotiation</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Merging Accounts</fullName>
-        <default>false</default>
-        <label>Merging Accounts</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Misrepresentation</fullName>
         <default>false</default>
         <label>Misrepresentation</label>
@@ -272,27 +146,9 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>NPS Feedback</fullName>
-        <default>false</default>
-        <label>NPS Feedback</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>OSH Review Bill Status</fullName>
-        <default>false</default>
-        <label>OSH Review Bill Status</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Other</fullName>
         <default>false</default>
         <label>Other</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Outbound Payment Error</fullName>
-        <default>false</default>
-        <label>Outbound Payment Error</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -302,75 +158,9 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Payment Method Update</fullName>
-        <default>false</default>
-        <label>Payment Method Update</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Portal Inquiries (Reset PW, how to log in)</fullName>
         <default>false</default>
         <label>Portal Inquiries (Reset PW, how to log in)</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre Certification Member Initiated</fullName>
-        <default>false</default>
-        <label>Pre Certification Member Initiated</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre Certification Provider Initiated</fullName>
-        <default>false</default>
-        <label>Pre Certification Provider Initiated</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre-ex Review Concierge Initiated</fullName>
-        <default>false</default>
-        <label>Pre-ex Review Concierge Initiated</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre-ex Review ESS Initiated</fullName>
-        <default>false</default>
-        <label>Pre-ex Review ESS Initiated</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre-Ex Review Loomis</fullName>
-        <default>false</default>
-        <label>Pre-Ex Review Loomis</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre-ex Review Member Initiated</fullName>
-        <default>false</default>
-        <label>Pre-ex Review Member Initiated</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre-ex Review Member Support Initiated</fullName>
-        <default>false</default>
-        <label>Pre-ex Review Member Support Initiated</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre-Ex Review OSH</fullName>
-        <default>false</default>
-        <label>Pre-Ex Review OSH</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre-ex Review Producer Initiated</fullName>
-        <default>false</default>
-        <label>Pre-ex Review Producer Initiated</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Pre-ex Review Provider Initiated</fullName>
-        <default>false</default>
-        <label>Pre-ex Review Provider Initiated</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -380,57 +170,9 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Primary Younger Than Dependent</fullName>
-        <default>false</default>
-        <label>Primary Younger Than Dependent</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Priority Bill Status Review Required</fullName>
-        <default>false</default>
-        <label>Priority Bill Status Review Required</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Processing Payment</fullName>
-        <default>false</default>
-        <label>Processing Payment</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Producer Change</fullName>
-        <default>false</default>
-        <label>Producer Change</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Producer Change Form</fullName>
-        <default>false</default>
-        <label>Producer Change Form</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Producer Demographic Maintenance</fullName>
         <default>false</default>
         <label>Producer Demographic Maintenance</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Producer Overpayment</fullName>
-        <default>false</default>
-        <label>Producer Overpayment</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Producer Underpayment</fullName>
-        <default>false</default>
-        <label>Producer Underpayment</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Program Change</fullName>
-        <default>false</default>
-        <label>Program Change</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -482,39 +224,9 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Reactivating Member Accounts – less than 30 days</fullName>
-        <default>false</default>
-        <label>Reactivating Member Accounts – less than 30 days</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Refund Request</fullName>
-        <default>false</default>
-        <label>Refund Request</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Reinstating Member Accounts</fullName>
-        <default>false</default>
-        <label>Reinstating Member Accounts</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Reinstating Member Accounts – past 30 days</fullName>
-        <default>false</default>
-        <label>Reinstating Member Accounts – past 30 days</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Repeat Caller Report</fullName>
         <default>false</default>
         <label>Repeat Caller Report</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Repricing Needed</fullName>
-        <default>false</default>
-        <label>Repricing Needed</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -524,45 +236,15 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Second Level Appeal</fullName>
-        <default>false</default>
-        <label>Second Level Appeal</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Share Request Escalation</fullName>
         <default>false</default>
         <label>Share Request Escalation</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Short Story Completed</fullName>
-        <default>false</default>
-        <label>Short Story Completed</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Short Story Needed</fullName>
-        <default>false</default>
-        <label>Short Story Needed</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Short Story Pending Pre Ex</fullName>
-        <default>false</default>
-        <label>Short Story Pending Pre Ex</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Social Media</fullName>
         <default>false</default>
         <label>Social Media</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Social Media Feedback</fullName>
-        <default>false</default>
-        <label>Social Media Feedback</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -578,18 +260,6 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Subrogation</fullName>
-        <default>false</default>
-        <label>Subrogation</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Subrogation Review</fullName>
-        <default>false</default>
-        <label>Subrogation Review</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
         <fullName>Trigger Terms (fraud, attorney, etc.)</fullName>
         <default>false</default>
         <label>Trigger Terms (fraud, attorney, etc.)</label>
@@ -599,12 +269,6 @@
         <fullName>User didn&apos;t attend training</fullName>
         <default>false</default>
         <label>User didn&apos;t attend training</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Web Complaint</fullName>
-        <default>false</default>
-        <label>Web Complaint</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>

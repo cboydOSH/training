@@ -1,0 +1,73 @@
+<apex:page showHeader="false" controller="ChargentBase.PaymentRequestResultController" standardStylesheets="true" id="PaymentRequestResult" docType="html-5.0">
+	<apex:slds />
+	<style type="text/css">
+		html {
+			min-height: 80%;
+			position: relative;
+		}
+
+		.result-container {
+			position: static;
+			top: 0;
+			left: 0;
+			right: 0;
+			overflow: initial;
+			margin-bottom: 110px;
+			height: 100%;
+		}
+
+		.band {
+			height: 80px;
+			background-color: gray;
+		}
+		.message-box{
+			height: 300px;
+			margin-bottom: 25px;
+		}
+
+	</style>
+
+	<div class="result-container">
+		<apex:outputPanel id="header" layout="block" styleClass="slds-align_absolute-center">
+			<apex:image url="{!companyLogo}"/>
+		</apex:outputPanel>
+
+		<hr/>
+
+		<div class="slds-grid slds-wrap message-box">
+			<div class="slds-col slds-size_1-of-3"></div>
+			<div class="slds-col slds-size_1-of-3 slds-box message-box slds-align_absolute-center {!messageTheme}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<apex:outputPanel id="content" layout="block" styleClass="slds-p-around_small" >
+					<div class="slds-grid slds-grid_align-center">
+						<span class="slds-icon_container slds-icon-utility-{!messageIcon} slds-m-right_x-small"
+						      title="Description of icon when needed">
+							<svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+								<use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#' + messageIcon)}"></use>
+							</svg>
+						</span>
+						<h2>{!message}</h2>
+					</div>
+				</apex:outputPanel>
+			</div>
+			<div class="slds-col slds-size_1-of-3"></div>
+		</div>
+
+		<div class="slds-grid slds-wrap">
+			<div class="slds-col slds-size_1-of-3"></div>
+			<div class="slds-col slds-size_1-of-3 button-block slds-align_absolute-center">
+				<apex:form id="form" styleClass="{!IF(or(result == 'success', not(showBackButton)), 'slds-hide', 'slds-p-left_small')}">
+					<apex:commandButton action="{!back}" value="Back" id="theButton"
+					                    styleClass="slds-p-left_x-large slds-p-right_x-large slds-button slds-button_neutral" />
+				</apex:form>
+			</div>
+			<div class="slds-col slds-size_1-of-3"></div>
+		</div>
+	</div>
+
+
+	<apex:outputPanel layout="block" styleClass="footer slds-docked-form-footer slds-grid">
+		<apex:outputText value="{!pageFooter}" styleClass="slds-col slds-p-around_medium footertext" escape="false" />
+		<apex:outputPanel layout="block" styleClass="band" />
+	</apex:outputPanel>
+
+</apex:page>

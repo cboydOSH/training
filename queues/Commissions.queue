@@ -4,11 +4,6 @@
     <name>Commissions Queue</name>
     <queueMembers>
         <users>
-            <user>apaiz@onesharehealth.com</user>
-            <user>acano@onesharehealth.com</user>
-            <user>jbagley@onesharehealth.com</user>
-            <user>kmarshall@onesharehealth.com</user>
-            <user>mhutchison@onesharehealth.com</user>
             <user>pjones@onesharehealth.com</user>
         </users>
     </queueMembers>

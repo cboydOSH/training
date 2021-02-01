@@ -5,6 +5,6 @@
     <description>Alberto Garcia Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Alberto Garcia Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VP_of_Sales</parentRole>
 </Role>

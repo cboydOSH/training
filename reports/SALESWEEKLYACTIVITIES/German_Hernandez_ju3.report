@@ -53,8 +53,9 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Carl Davidson</value>
+            <value>German Hernandez,Jack Jarell,Carl Davidson,Stephen Brady,Antonia Holden</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -91,8 +92,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>LAST_UPDATE</dateColumn>
-        <endDate>2020-09-01</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-01-01</startDate>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

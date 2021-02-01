@@ -53,6 +53,7 @@
             <operator>notEqual</operator>
             <value>Call Center</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

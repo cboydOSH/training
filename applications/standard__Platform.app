@@ -10,5 +10,4 @@
     <tabs>standard-Chatter</tabs>
     <tabs>standard-File</tabs>
     <tabs>Work_Item__c</tabs>
-    <tabs>Recording__c</tabs>
 </CustomApplication>

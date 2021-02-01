@@ -5,6 +5,6 @@
     <enableEventLogWaveIntegration>false</enableEventLogWaveIntegration>
     <enableLoginForensics>false</enableLoginForensics>
     <enableStreamingApi>true</enableStreamingApi>
-    <enableTerminateOldestSession>true</enableTerminateOldestSession>
-    <enableTransactionSecurityPolicies>true</enableTransactionSecurityPolicies>
+    <enableTerminateOldestSession>false</enableTerminateOldestSession>
+    <enableTransactionSecurityPolicies>false</enableTransactionSecurityPolicies>
 </EventSettings>

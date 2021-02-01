@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- StoryFieldSet --></label>
+        <name>vlocity_ins__StoryFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UpdateCaseWidget --></label>
+        <name>vlocity_ins__UpdateCaseWidget</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active Date --></label>
+        <name>Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent ID --></label>
+        <name>Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appeal Reason --></label>
+        <name>Appeals__c</name>
+        <picklistValues>
+            <masterLabel>Pre Existing</masterLabel>
+            <translation><!-- Pre Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signs and Symptoms</masterLabel>
+            <translation><!-- Signs and Symptoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statement of Beliefs</masterLabel>
+            <translation><!-- Statement of Beliefs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Period</masterLabel>
+            <translation><!-- Waiting Period --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Audit Required --></label>
+        <name>Audit_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Number --></label>
+        <name>Bill_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Status --></label>
+        <name>Bill_Status__c</name>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Entered</masterLabel>
+            <translation><!-- Not Entered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Pricing</masterLabel>
+            <translation><!-- Pending Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-ex Review</masterLabel>
+            <translation><!-- Pre-ex Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billed Amount --></label>
+        <name>Billed_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter each CPT codes here, separated by a comma. --></help>
+        <label><!-- CPT Codes --></label>
+        <name>CPT_Codes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Center --></label>
+        <name>Call_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Reason --></label>
+        <name>Cancel_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfaction</masterLabel>
+            <translation><!-- Dissatisfaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial</masterLabel>
+            <translation><!-- Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intentional</masterLabel>
+            <translation><!-- Intentional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer</masterLabel>
+            <translation><!-- Producer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Changes</masterLabel>
+            <translation><!-- Program Changes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Restrictions</masterLabel>
+            <translation><!-- Program Restrictions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider</masterLabel>
+            <translation><!-- Provider --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancel Type --></label>
+        <name>Cancel_Type__c</name>
+        <picklistValues>
+            <masterLabel>Controllable</masterLabel>
+            <translation><!-- Controllable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncontrollable</masterLabel>
+            <translation><!-- Uncontrollable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Age --></label>
+        <name>Case_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Created By --></label>
+        <name>Case_Created_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select a Case Disposition before closing the case. --></help>
+        <label><!-- Case Resolution --></label>
+        <name>Case_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>Account Audit Completed</masterLabel>
+            <translation><!-- Account Audit Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Added Member</masterLabel>
+            <translation><!-- Added Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Age Off</masterLabel>
+            <translation><!-- Age Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appeal Approved</masterLabel>
+            <translation><!-- Appeal Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appeal Denied</masterLabel>
+            <translation><!-- Appeal Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appeal in Review</masterLabel>
+            <translation><!-- Appeal in Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appeal to Arbitration</masterLabel>
+            <translation><!-- Appeal to Arbitration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audit Completed</masterLabel>
+            <translation><!-- Audit Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel &lt; 30</masterLabel>
+            <translation><!-- Cancel &lt; 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled the Account</masterLabel>
+            <translation><!-- Cancelled the Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changed Producer</masterLabel>
+            <translation><!-- Changed Producer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Program Change</masterLabel>
+            <translation><!-- Completed Program Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coverage</masterLabel>
+            <translation><!-- Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created Case for other Dept</masterLabel>
+            <translation><!-- Created Case for other Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service</masterLabel>
+            <translation><!-- Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demographics Updated</masterLabel>
+            <translation><!-- Demographics Updated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Pre-Cert Request</masterLabel>
+            <translation><!-- Duplicate Pre-Cert Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Request</masterLabel>
+            <translation><!-- Duplicate Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer Plan</masterLabel>
+            <translation><!-- Employer Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage VCP</masterLabel>
+            <translation><!-- Engage VCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrolled</masterLabel>
+            <translation><!-- Enrolled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated to Supervisor</masterLabel>
+            <translation><!-- Escalated to Supervisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception Made (i.e. Appeals)</masterLabel>
+            <translation><!-- Exception Made (i.e. Appeals) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial</masterLabel>
+            <translation><!-- Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form Emailed</masterLabel>
+            <translation><!-- Form Emailed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form Mailed</masterLabel>
+            <translation><!-- Form Mailed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare Bluebook negotiation process</masterLabel>
+            <translation><!-- Healthcare Bluebook negotiation process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Card Emailed</masterLabel>
+            <translation><!-- ID Card Emailed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Card Requested</masterLabel>
+            <translation><!-- ID Card Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue resolved, member satisfied</masterLabel>
+            <translation><!-- Issue resolved, member satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue resolved, member unsatisfied</masterLabel>
+            <translation><!-- Issue resolved, member unsatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Message / No Message left – 1st Attempt</masterLabel>
+            <translation><!-- Left Message / No Message left – 1st Attempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Message / No Message left – 2nd Attempt</masterLabel>
+            <translation><!-- Left Message / No Message left – 2nd Attempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Message / No message left – 3rd attempt</masterLabel>
+            <translation><!-- Left Message / No message left – 3rd attempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Bill Corrected</masterLabel>
+            <translation><!-- List Bill Corrected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Education on Program Guidelines</masterLabel>
+            <translation><!-- Member Education on Program Guidelines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Engaged De-Escalated</masterLabel>
+            <translation><!-- Member Engaged De-Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Refunded</masterLabel>
+            <translation><!-- Member Refunded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merged Accounts</masterLabel>
+            <translation><!-- Merged Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misrepresented</masterLabel>
+            <translation><!-- Misrepresented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation Completed</masterLabel>
+            <translation><!-- Negotiation Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation Processed</masterLabel>
+            <translation><!-- Negotiation Processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Action Taken - Hold or Inactive</masterLabel>
+            <translation><!-- No Action Taken - Hold or Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Further Action Needed</masterLabel>
+            <translation><!-- No Further Action Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Pre-Cert Required</masterLabel>
+            <translation><!-- No Pre-Cert Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Pre-Ex</masterLabel>
+            <translation><!-- No Pre-Ex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Reason Given</masterLabel>
+            <translation><!-- No Reason Given --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-US resident</masterLabel>
+            <translation><!-- Non-US resident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a valid issue</masterLabel>
+            <translation><!-- Not a valid issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Going Review Hospitalization</masterLabel>
+            <translation><!-- On Going Review Hospitalization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other HS Plan</masterLabel>
+            <translation><!-- Other HS Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending COB</masterLabel>
+            <translation><!-- Pending COB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending preexisting investigation</masterLabel>
+            <translation><!-- Pending preexisting investigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Ex Upheld</masterLabel>
+            <translation><!-- Pre-Ex Upheld --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-ex Identified</masterLabel>
+            <translation><!-- Pre-ex Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed Payment</masterLabel>
+            <translation><!-- Processed Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed as Secondary</masterLabel>
+            <translation><!-- Processed as Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer Commission Level Corrected</masterLabel>
+            <translation><!-- Producer Commission Level Corrected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer Information Updated</masterLabel>
+            <translation><!-- Producer Information Updated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer Payment Corrected</masterLabel>
+            <translation><!-- Producer Payment Corrected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Changed</masterLabel>
+            <translation><!-- Program Changed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Availability</masterLabel>
+            <translation><!-- Provider Availability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Education on Member&apos;s Program Guideline</masterLabel>
+            <translation><!-- Provider Education on Member&apos;s Program Guideline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Nomination</masterLabel>
+            <translation><!-- Provider Nomination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Pre Cert Pending</masterLabel>
+            <translation><!-- Provider Pre Cert Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider options sent to member</masterLabel>
+            <translation><!-- Provider options sent to member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider sent to Network Development</masterLabel>
+            <translation><!-- Provider sent to Network Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Records Received</masterLabel>
+            <translation><!-- Records Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund Finalized</masterLabel>
+            <translation><!-- Refund Finalized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunded the Member</masterLabel>
+            <translation><!-- Refunded the Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed Member</masterLabel>
+            <translation><!-- Removed Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repriced</masterLabel>
+            <translation><!-- Repriced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reprocessed</masterLabel>
+            <translation><!-- Reprocessed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return Mail – Address Updated</masterLabel>
+            <translation><!-- Return Mail – Address Updated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Share Requests Reviewed – Processed Correctly</masterLabel>
+            <translation><!-- Share Requests Reviewed – Processed Correctly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Share Requests Reviewed – Reprocessed</masterLabel>
+            <translation><!-- Share Requests Reviewed – Reprocessed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharing Dispute</masterLabel>
+            <translation><!-- Sharing Dispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Story Approved</masterLabel>
+            <translation><!-- Short Story Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Story Denied</masterLabel>
+            <translation><!-- Short Story Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Member Inquiry Answered / Issue Resolved</masterLabel>
+            <translation><!-- Spoke to Member Inquiry Answered / Issue Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Producer (answered questions / issue resolved)</masterLabel>
+            <translation><!-- Spoke to Producer (answered questions / issue resolved) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subrogation Complete</masterLabel>
+            <translation><!-- Subrogation Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Survey Response Completed</masterLabel>
+            <translation><!-- Survey Response Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switched Primary</masterLabel>
+            <translation><!-- Switched Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred Call</masterLabel>
+            <translation><!-- Transferred Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred to another Dept</masterLabel>
+            <translation><!-- Transferred to another Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Updated Billing Date</masterLabel>
+            <translation><!-- Updated Billing Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Updated Payment Method</masterLabel>
+            <translation><!-- Updated Payment Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Period NOT MET</masterLabel>
+            <translation><!-- Waiting Period NOT MET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Call AM Attempt – Left Message</masterLabel>
+            <translation><!-- Welcome Call AM Attempt – Left Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Call AM Attempt – No Message Left</masterLabel>
+            <translation><!-- Welcome Call AM Attempt – No Message Left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Call AM Attempt – Welcome Call Completed</masterLabel>
+            <translation><!-- Welcome Call AM Attempt – Welcome Call Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Call Completed</masterLabel>
+            <translation><!-- Welcome Call Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Call PM Attempt – Left Message</masterLabel>
+            <translation><!-- Welcome Call PM Attempt – Left Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Call PM Attempt – No Message Left</masterLabel>
+            <translation><!-- Welcome Call PM Attempt – No Message Left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Call PM Attempt – Welcome Call Completed</masterLabel>
+            <translation><!-- Welcome Call PM Attempt – Welcome Call Completed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Sub Category --></label>
+        <name>Case_Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>90 Day Wait (Preventive/Doctor Visit)</masterLabel>
+            <translation><!-- 90 Day Wait (Preventive/Doctor Visit) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT (PCP Visits)</masterLabel>
+            <translation><!-- CAT (PCP Visits) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT (Preventive)</masterLabel>
+            <translation><!-- CAT (Preventive) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT (SP Visits)</masterLabel>
+            <translation><!-- CAT (SP Visits) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COVID</masterLabel>
+            <translation><!-- COVID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancer Wait Period</masterLabel>
+            <translation><!-- Cancer Wait Period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class Basic (SP Visit)</masterLabel>
+            <translation><!-- Class Basic (SP Visit) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class Enhanced (SP Visit)</masterLabel>
+            <translation><!-- Class Enhanced (SP Visit) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contribution Discrepancy</masterLabel>
+            <translation><!-- Contribution Discrepancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discounts (Dental/Vision)</masterLabel>
+            <translation><!-- Discounts (Dental/Vision) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligibility Questions</masterLabel>
+            <translation><!-- Eligibility Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exposed</masterLabel>
+            <translation><!-- Exposed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inaccurate Coding</masterLabel>
+            <translation><!-- Inaccurate Coding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infected</masterLabel>
+            <translation><!-- Infected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratory</masterLabel>
+            <translation><!-- Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labs/Diagnostic</masterLabel>
+            <translation><!-- Labs/Diagnostic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maternity</masterLabel>
+            <translation><!-- Maternity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Necessity</masterLabel>
+            <translation><!-- Medical Necessity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health</masterLabel>
+            <translation><!-- Mental Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Insurance</masterLabel>
+            <translation><!-- Not Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OON Denial</masterLabel>
+            <translation><!-- OON Denial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (ineligible for sharing)</masterLabel>
+            <translation><!-- Other (ineligible for sharing) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Ex Wait Period</masterLabel>
+            <translation><!-- Pre-Ex Wait Period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-existing</masterLabel>
+            <translation><!-- Pre-existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescription</masterLabel>
+            <translation><!-- Prescription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Max</masterLabel>
+            <translation><!-- Program Max --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursed Amount</masterLabel>
+            <translation><!-- Reimbursed Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgery Wait Period</masterLabel>
+            <translation><!-- Surgery Wait Period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timely Filing</masterLabel>
+            <translation><!-- Timely Filing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Period</masterLabel>
+            <translation><!-- Waiting Period --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commission Level --></label>
+        <name>Commission_Level__c</name>
+        <picklistValues>
+            <masterLabel>Correct</masterLabel>
+            <translation><!-- Correct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect</masterLabel>
+            <translation><!-- Incorrect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor Program --></label>
+        <name>Competitor_Program__c</name>
+        <picklistValues>
+            <masterLabel>Aliera</masterLabel>
+            <translation><!-- Aliera --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Altrua</masterLabel>
+            <translation><!-- Altrua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MediShare</masterLabel>
+            <translation><!-- MediShare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other HealthShare</masterLabel>
+            <translation><!-- Other HealthShare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer</masterLabel>
+            <translation><!-- Producer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider</masterLabel>
+            <translation><!-- Provider --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date of Service --></label>
+        <name>Date_of_Service__c</name>
+    </fields>
+    <fields>
+        <help><!-- List each dependent with their date of birth. --></help>
+        <label><!-- Dependents, DOB --></label>
+        <name>Dependents_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Effective Date --></label>
+        <name>Desired_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diagnosis --></label>
+        <name>Diagnosis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Notes --></label>
+        <name>Disposition_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISA Remaining --></label>
+        <name>ISA_Remaining__c</name>
+    </fields>
+    <fields>
+        <help><!-- Individual Sharing Amount --></help>
+        <label><!-- ISA --></label>
+        <name>ISA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Date --></label>
+        <name>Inactive_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Billed Date --></label>
+        <name>Last_Billed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lost Reason --></label>
+        <name>Lost_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Employer Paid Plan</masterLabel>
+            <translation><!-- Employer Paid Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Reasons</masterLabel>
+            <translation><!-- Financial Reasons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient Coverage</masterLabel>
+            <translation><!-- Insufficient Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost in Verification</masterLabel>
+            <translation><!-- Lost in Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-acceptance of Sharing Eligibility</masterLabel>
+            <translation><!-- Non-acceptance of Sharing Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-acceptance of Statement of Beliefs</masterLabel>
+            <translation><!-- Non-acceptance of Statement of Beliefs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-acceptance of Waiting Periods</masterLabel>
+            <translation><!-- Non-acceptance of Waiting Periods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician Network</masterLabel>
+            <translation><!-- Physician Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional Health Plan</masterLabel>
+            <translation><!-- Traditional Health Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working with Producer</masterLabel>
+            <translation><!-- Working with Producer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manual Adjustments --></label>
+        <name>Manual_Adjustments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical --></label>
+        <name>Medical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Call Back Required --></label>
+        <name>Member_Call_Back_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member ID --></label>
+        <name>Member_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Size --></label>
+        <name>Membership_Size__c</name>
+        <picklistValues>
+            <masterLabel>6 + Members</masterLabel>
+            <translation><!-- 6 + Members --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member + 1</masterLabel>
+            <translation><!-- Member + 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monthly Contribution --></label>
+        <name>Monthly_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negotiated Rate --></label>
+        <name>Negotiated_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Billed Date --></label>
+        <name>Next_Billed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSH Agreed to Urgency Rating --></label>
+        <name>OSH_Agreed_to_Urgency_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSH Lesson Learned --></label>
+        <name>OSH_Lesson_Learned__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSH Met Resolution Time --></label>
+        <name>OSH_Met_Resolution_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paid Amount --></label>
+        <name>Paid_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent ID --></label>
+        <name>Parent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>ACH</masterLabel>
+            <translation><!-- ACH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preexisting Review Needed --></label>
+        <name>Preexisting_Review_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language__c</name>
+        <picklistValues>
+            <masterLabel>Dutch</masterLabel>
+            <translation><!-- Dutch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Procedure Type --></label>
+        <name>Procedure_Type_Expense_Sharing__c</name>
+        <picklistValues>
+            <masterLabel>Hospitalization</masterLabel>
+            <translation><!-- Hospitalization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inpatient</masterLabel>
+            <translation><!-- Inpatient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab</masterLabel>
+            <translation><!-- Lab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maternity</masterLabel>
+            <translation><!-- Maternity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outpatient</masterLabel>
+            <translation><!-- Outpatient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCP</masterLabel>
+            <translation><!-- PCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radiology</masterLabel>
+            <translation><!-- Radiology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialist</masterLabel>
+            <translation><!-- Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgery</masterLabel>
+            <translation><!-- Surgery --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Procedure Type --></label>
+        <name>Procedure_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Producer Change Needed --></label>
+        <name>Producer_Change_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Producer --></label>
+        <name>Producer__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Type --></label>
+        <name>Provider_Type_Expense_Sharing__c</name>
+        <picklistValues>
+            <masterLabel>Facility</masterLabel>
+            <translation><!-- Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCP</masterLabel>
+            <translation><!-- PCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialist</masterLabel>
+            <translation><!-- Specialist --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Taxonomy Lookup --></help>
+        <label><!-- Provider Type --></label>
+        <name>Provider_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Offered --></label>
+        <name>Quote_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Resolution Time Not Met --></label>
+        <name>Reason_Resolution_Time_Not_Met__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Recieved --></label>
+        <name>Records_Recieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Date --></label>
+        <name>Resolution_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save --></label>
+        <name>Save__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Run Needed --></label>
+        <name>Special_Run_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Cancel Reason --></label>
+        <name>Sub_Cancel_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Agentra Cancellation</masterLabel>
+            <translation><!-- Agentra Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cease and Desist / Regulatory Mandates</masterLabel>
+            <translation><!-- Cease and Desist / Regulatory Mandates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confused about Bundled Services</masterLabel>
+            <translation><!-- Confused about Bundled Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delayed in Sharing Request Response</masterLabel>
+            <translation><!-- Delayed in Sharing Request Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Agree to Terms</masterLabel>
+            <translation><!-- Did Not Agree to Terms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Receive ID Cards</masterLabel>
+            <translation><!-- Did Not Receive ID Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Account</masterLabel>
+            <translation><!-- Duplicate Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Transaction Decline</masterLabel>
+            <translation><!-- Final Transaction Decline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gap or Temporary Coverage</masterLabel>
+            <translation><!-- Gap or Temporary Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Network But Refused Service</masterLabel>
+            <translation><!-- In Network But Refused Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Customer Issue</masterLabel>
+            <translation><!-- Legal Customer Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List bill employer group cancellation</masterLabel>
+            <translation><!-- List bill employer group cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss of Job or Income Source</masterLabel>
+            <translation><!-- Loss of Job or Income Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Deceased</masterLabel>
+            <translation><!-- Member Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misrepresentation</masterLabel>
+            <translation><!-- Misrepresentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moving Out of Service Area</masterLabel>
+            <translation><!-- Moving Out of Service Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negative Press / Marketing / Reputation</masterLabel>
+            <translation><!-- Negative Press / Marketing / Reputation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No In Network Provider in Area</masterLabel>
+            <translation><!-- No In Network Provider in Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Preferred Providers Available</masterLabel>
+            <translation><!-- No Preferred Providers Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Enough Methods of Payment</masterLabel>
+            <translation><!-- Not Enough Methods of Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over 65</masterLabel>
+            <translation><!-- Over 65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor Customer Service</masterLabel>
+            <translation><!-- Poor Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Existing Conditions</masterLabel>
+            <translation><!-- Pre-Existing Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescription Plan Not Sufficient</masterLabel>
+            <translation><!-- Prescription Plan Not Sufficient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Features</masterLabel>
+            <translation><!-- Program Features --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Declined to Accept HealthShare</masterLabel>
+            <translation><!-- Provider Declined to Accept HealthShare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Not in Network</masterLabel>
+            <translation><!-- Provider Not in Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider is Balance Billing</masterLabel>
+            <translation><!-- Provider is Balance Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refused to Answer Questions After Sale</masterLabel>
+            <translation><!-- Refused to Answer Questions After Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Without Consent</masterLabel>
+            <translation><!-- Signed Without Consent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Decline</masterLabel>
+            <translation><!-- Transaction Decline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Afford Contributions Long Term</masterLabel>
+            <translation><!-- Unable to Afford Contributions Long Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Afford Contributions Short Term</masterLabel>
+            <translation><!-- Unable to Afford Contributions Short Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unhappy with Company Values</masterLabel>
+            <translation><!-- Unhappy with Company Values --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid Expense Sharing Requests</masterLabel>
+            <translation><!-- Unpaid Expense Sharing Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unresolved Chargebacks</masterLabel>
+            <translation><!-- Unresolved Chargebacks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Periods</masterLabel>
+            <translation><!-- Waiting Periods --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax ID or NPI# --></label>
+        <name>Tax_ID_or_NPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tool Chest --></label>
+        <name>Tool_Chest__c</name>
+        <picklistValues>
+            <masterLabel>1% off lifetime membership</masterLabel>
+            <translation><!-- 1% off lifetime membership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2% off lifetime membership</masterLabel>
+            <translation><!-- 2% off lifetime membership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Fee Waived</masterLabel>
+            <translation><!-- Application Fee Waived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Web Origin --></label>
+        <name>Web_Origin__c</name>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glassdoor</masterLabel>
+            <translation><!-- Glassdoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Review</masterLabel>
+            <translation><!-- Google Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcaresharingreview.com</masterLabel>
+            <translation><!-- Healthcaresharingreview.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indeed</masterLabel>
+            <translation><!-- Indeed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instagram</masterLabel>
+            <translation><!-- Instagram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LinkedIn</masterLabel>
+            <translation><!-- LinkedIn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twitter</masterLabel>
+            <translation><!-- Twitter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Policy Relationship --></label>
+        <name>vlocity_ins__AssetPartyRelationshipId__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Account --></label>
+        <name>vlocity_ins__BillingAccountId__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>vlocity_ins__ContractId__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Engineering Req Number --></label>
+        <name>vlocity_ins__EngineeringReqNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account --></label>
+        <name>vlocity_ins__FinancialAccountId__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Follow Up To --></label>
+        <name>vlocity_ins__FollowUpTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indicator Image Name --></label>
+        <name>vlocity_ins__IndicatorImageName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__InsuranceClaimId__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Interaction Notes --></label>
+        <name>vlocity_ins__InteractionNotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>vlocity_ins__PolicyId__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Policy Relationship --></label>
+        <name>vlocity_ins__PolicyPartyRelationshipId__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority Image Name --></label>
+        <name>vlocity_ins__PriorityImageName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>vlocity_ins__Product__c</name>
+        <picklistValues>
+            <masterLabel>GC1020</masterLabel>
+            <translation><!-- GC1020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC1040</masterLabel>
+            <translation><!-- GC1040 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC1060</masterLabel>
+            <translation><!-- GC1060 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC3020</masterLabel>
+            <translation><!-- GC3020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC3040</masterLabel>
+            <translation><!-- GC3040 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC3060</masterLabel>
+            <translation><!-- GC3060 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5020</masterLabel>
+            <translation><!-- GC5020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5040</masterLabel>
+            <translation><!-- GC5040 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5060</masterLabel>
+            <translation><!-- GC5060 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Statement --></label>
+        <name>vlocity_ins__StatementId__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Image Name --></label>
+        <name>vlocity_ins__StatusImageName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Timestamp --></label>
+        <name>vlocity_ins__VerificationTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified Agent Name --></label>
+        <name>vlocity_ins__VerifiedAgentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified --></label>
+        <name>vlocity_ins__Verified__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Cancellation --></label>
+        <name>Cancellation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Commission --></label>
+        <name>Commission</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Concierge --></label>
+        <name>Concierge</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Escalation --></label>
+        <name>Escalation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Expense Sharing --></label>
+        <name>Expense_Sharing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Expense Sharing Support --></label>
+        <name>Expense_Sharing_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Loomis --></label>
+        <name>Loomis</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Member Enrollment --></label>
+        <name>Member_Enrollment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Member Support --></label>
+        <name>Member_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pre-Cert --></label>
+        <name>Pre_Cert</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Producer Support --></label>
+        <name>Producer_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Mobile Phone Case --></description>
+        <label><!-- MobilePhoneCase --></label>
+        <name>vlocity_ins__MobilePhoneCase</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- If Case Reason is Appeal Pre-Cert, you must select an Appeal Reason. --></errorMessage>
+        <name>Appeal_Reason_reqd_if_Appeal_Precert</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cancel Reason is required before closing a case --></errorMessage>
+        <name>Cancel_Reason_required_for_Member_Loyalt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit a case that has been closed. --></errorMessage>
+        <name>Cannot_edit_closed_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Resolution is required before closing a case --></errorMessage>
+        <name>Case_Resolution_required_for_ME</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Subcategory required when the selected case reason is Appeal Share Request --></errorMessage>
+        <name>Case_SubCat_Reqd_for_Appeal_Share</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Subcategory required when the selected case reason is Misrepresentation. --></errorMessage>
+        <name>Case_Subcategory_Required_for_Misrep</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case status has to be &apos;Closed&apos; when Case Resolution is &apos;Enrolled&apos; or &apos;Lost&apos;. --></errorMessage>
+        <name>Enroll_or_Lost_cases_shd_be_closed_in_ME</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select a Lost Reason before closing this case. --></errorMessage>
+        <name>Lost_reason_for_member_enrollment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot make changes to a case that you do not own. Please make yourself the owner first. --></errorMessage>
+        <name>Only_owner_can_edit_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resolution Note is required before closing a case. --></errorMessage>
+        <name>PCrt_Concierge_Resn_Note_reqd_to_close</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Save is required before closing a case --></errorMessage>
+        <name>Save_required_for_Member_Loyalty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Case Origin is Web, you must select a Web Origin. --></errorMessage>
+        <name>Web_Origin_reqd_if_case_origin_is_Web</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

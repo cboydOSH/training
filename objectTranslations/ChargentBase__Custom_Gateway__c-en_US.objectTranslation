@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>ChargentBase__Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Namespace Prefix --></label>
+        <name>ChargentBase__Namespace_Prefix__c</name>
+    </fields>
+</CustomObjectTranslation>

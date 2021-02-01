@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ChargentBase__Country_Alpha_2_ISO_code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Country Alpha-2 ISO code</label>
+        <length>2</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ChargentBase__Country_Numeric_ISO_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Country Numeric ISO Code</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Country Mapping</label>
+    <visibility>Public</visibility>
+</CustomObject>

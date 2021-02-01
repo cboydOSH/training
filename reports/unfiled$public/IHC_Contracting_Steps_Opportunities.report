@@ -76,6 +76,7 @@
             <operator>contains</operator>
             <value>IHC</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>IHC Contracting Steps Opportunities</name>

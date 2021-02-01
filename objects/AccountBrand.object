@@ -174,5 +174,5 @@
         <searchResultsAdditionalFields>Email</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Phone</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>Read</sharingModel>
 </CustomObject>

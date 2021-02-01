@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Martisha Brown Partner User</description>
+    <description>Highland Health Direct Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Martisha Brown Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Highland Health Direct Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

@@ -45,24 +45,13 @@
     <columns>
         <field>LEAD_SOURCE</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>CREATED</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>Hernandez,Davidson,Gresl,Snell,Johnson,Cokonougher,Mensavage,Sutherland,Benveniste,Estridge,Perez,Rodriguez,Berndt,Arfeli</value>
-        </criteriaItems>
-    </filter>
+    <columns>
+        <field>CREATED</field>
+    </columns>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>STAGE_NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>CREATED</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Monthly New Opportunities</name>
@@ -85,6 +74,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

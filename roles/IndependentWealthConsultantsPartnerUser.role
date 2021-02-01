@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Jaime Cavazos Partner User</description>
+    <description>Independent Wealth Consultants Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Jaime Cavazos Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Independent Wealth Consultants Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

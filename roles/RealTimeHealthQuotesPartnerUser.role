@@ -5,6 +5,6 @@
     <description>Real Time Health Quotes Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Real Time Health Quotes Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

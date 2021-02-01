@@ -5,6 +5,6 @@
     <description>Febres Insurance Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Febres Insurance Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Temp</parentRole>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VP_of_Sales</parentRole>
 </Role>

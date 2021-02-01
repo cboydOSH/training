@@ -5,6 +5,6 @@
     <description>Erin Sunday Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Erin Sunday Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

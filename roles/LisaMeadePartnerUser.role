@@ -5,6 +5,6 @@
     <description>Lisa Meade Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Lisa Meade Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

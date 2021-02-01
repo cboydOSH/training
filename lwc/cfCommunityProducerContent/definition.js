@@ -1,0 +1,3 @@
+let definition = 
+                {"Cards":["communityProducerContent"],"dataSource":{"type":"Custom","value":{"body":"{}"}},"enableLwc":true,"repeatCards":false,"lwc":{"MasterLabel":"cardCanvas1x","DeveloperName":"cardCanvas1x","Id":"0Rb8A000000ESELSA4","name":"cardCanvas1x"},"previewType":"runTime","componentName":"cfCommunityProducerContent","workspace":["communityProducerContent/OneShare Health, LLC/1/1594161943733"],"GlobalKey__c":"community-producer-content/1/OneShare Health, LLC/1594161867156"}; 
+            export default definition

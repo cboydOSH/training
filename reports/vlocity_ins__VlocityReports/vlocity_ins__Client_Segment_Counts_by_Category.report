@@ -57,6 +57,7 @@
             <operator>equals</operator>
             <value>Contact</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsDown>

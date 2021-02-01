@@ -5,6 +5,6 @@
     <description>Steven Zogby Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Steven Zogby Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

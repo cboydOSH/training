@@ -5,6 +5,6 @@
     <description>Michele Witt Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Michele Witt Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

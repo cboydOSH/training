@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>AttributeAssignmentCommunityUsers</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Attribute Assignment Community Users</label>
+        <sharedTo>
+            <group>Community_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingGuestRules>
+        <fullName>Attribute_Assignment_Created_By</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Andres Site Guest User</description>
+        <label>Attribute Assignment Created By:</label>
+        <sharedTo>
+            <guestUser>Member_Community</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>startsWith</operation>
+            <value>005</value>
+        </criteriaItems>
+    </sharingGuestRules>
+</SharingRules>

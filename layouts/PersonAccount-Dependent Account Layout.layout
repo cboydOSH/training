@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -51,6 +52,38 @@
                 <behavior>Edit</behavior>
                 <field>County__pc</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Ethnicity__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Product_Privilegies__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Servicing_Agent__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Main_Asset__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Effective_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Active_Period__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>HipaaShare__pc</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>HipaaAuthorizationType__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -76,10 +109,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Email_2__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Error_Email__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -110,8 +139,8 @@
         <label>Agent &amp; Payment Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Agent_ID_2__c</field>
+                <behavior>Edit</behavior>
+                <field>Agent_ID__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -312,14 +341,14 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>FeedItem.ContentPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>1</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.ContentPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>1</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>LogACall</actionName>
@@ -332,104 +361,124 @@
             <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewEvent</actionName>
-            <actionType>QuickAction</actionType>
+            <actionName>LoginToPortalAsPersonUser</actionName>
+            <actionType>StandardButton</actionType>
             <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>FeedItem.LinkPost</actionName>
-            <actionType>QuickAction</actionType>
+            <actionName>LoginToNetworkAsPersonUser</actionName>
+            <actionType>StandardButton</actionType>
             <sortOrder>5</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>FeedItem.PollPost</actionName>
+            <actionName>NewEvent</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>ChangeRecordType</actionName>
-            <actionType>StandardButton</actionType>
+            <actionName>FeedItem.LinkPost</actionName>
+            <actionType>QuickAction</actionType>
             <sortOrder>7</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>AccountHierarchy</actionName>
-            <actionType>StandardButton</actionType>
+            <actionName>FeedItem.PollPost</actionName>
+            <actionType>QuickAction</actionType>
             <sortOrder>8</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>ChangeOwnerOne</actionName>
+            <actionName>ChangeRecordType</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>9</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>PrintableView</actionName>
+            <actionName>AccountHierarchy</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>10</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Edit</actionName>
+            <actionName>ChangeOwnerOne</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>11</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Delete</actionName>
+            <actionName>PrintableView</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>12</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>AccountAddToCampaign</actionName>
+            <actionName>Edit</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>13</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>CreateCallList</actionName>
+            <actionName>Delete</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>14</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>JigsawSearch</actionName>
+            <actionName>AccountAddToCampaign</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>15</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>XClean</actionName>
+            <actionName>CreateCallList</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>16</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>PartnerScorecard</actionName>
+            <actionName>JigsawSearch</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>17</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>CreateSurveyInvitation</actionName>
+            <actionName>XClean</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>18</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>CallHighlightAction</actionName>
-            <actionType>ProductivityAction</actionType>
+            <actionName>PartnerScorecard</actionName>
+            <actionType>StandardButton</actionType>
             <sortOrder>19</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>SmsHighlightAction</actionName>
-            <actionType>ProductivityAction</actionType>
+            <actionName>CreateSurveyInvitation</actionName>
+            <actionType>StandardButton</actionType>
             <sortOrder>20</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>EmailHighlightAction</actionName>
+            <actionName>CallHighlightAction</actionName>
             <actionType>ProductivityAction</actionType>
             <sortOrder>21</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>WebsiteHighlightAction</actionName>
+            <actionName>SmsHighlightAction</actionName>
             <actionType>ProductivityAction</actionType>
             <sortOrder>22</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>EmailHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>23</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>WebsiteHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>24</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>pi__Send_To_Prospect_Insight</actionName>
             <actionType>CustomButton</actionType>
-            <sortOrder>23</sortOrder>
+            <sortOrder>25</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>EnableAsPartner</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>26</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>EnableCustomerPortalUser</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>27</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -466,12 +515,15 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
-        <fields>ORDERS.ORDER_NUMBER</fields>
-        <fields>Product_Label__c</fields>
-        <fields>Active_Date__c</fields>
-        <fields>Inactive_Date__c</fields>
-        <fields>Inactive_Reason__c</fields>
-        <relatedList>RelatedOrderList</relatedList>
+        <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Asset.NAME</fields>
+        <fields>Asset.STATUS</fields>
+        <fields>Asset.CREATED_DATE</fields>
+        <relatedList>dc_MemberAsset__c.Member__c</relatedList>
+        <sortField>Asset.CREATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>CASES.CASE_NUMBER</fields>
@@ -495,6 +547,10 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Protected_Health_Information__c.Member_Account__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
@@ -528,6 +584,24 @@
         <fields>scormanywhere__Completion_Date__c</fields>
         <fields>scormanywhere__Test_Launch__c</fields>
         <relatedList>scormanywhere__Transcript__c.Contact__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>ACCOUNT.ADDRESS1_CITY</fields>
+        <fields>ACCOUNT.PHONE1</fields>
+        <relatedList>Account.Servicing_Agent__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>HIPAAAuthorization__c.PrimaryMember__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>HIPAAAuthorization__c.AuthorizedMember__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Internal_Change_Log__c.Account__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

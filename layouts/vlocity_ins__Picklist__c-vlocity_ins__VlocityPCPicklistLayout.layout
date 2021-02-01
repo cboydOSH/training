@@ -59,19 +59,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <platformActionList>
-        <actionListContext>Record</actionListContext>
-        <platformActionListItems>
-            <actionName>vlocity_ins__Picklist__c.vlocity_ins__New_Version</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>vlocity_ins__Picklist__c.vlocity_ins__Version_History</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>1</sortOrder>
-        </platformActionListItems>
-    </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
         <fields>vlocity_ins__Value__c</fields>

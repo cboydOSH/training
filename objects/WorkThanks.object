@@ -43,7 +43,7 @@
         <type>Default</type>
     </actionOverrides>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Read</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>FeedItemId</fullName>
         <type>Lookup</type>

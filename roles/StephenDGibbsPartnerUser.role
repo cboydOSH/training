@@ -5,6 +5,6 @@
     <description>Stephen D. Gibbs Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Stephen D. Gibbs Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>William S Shorts Partner User</description>
+    <description>William Shorts Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>William S Shorts Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>William Shorts Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Temp</parentRole>
 </Role>

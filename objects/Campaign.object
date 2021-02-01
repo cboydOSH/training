@@ -169,7 +169,7 @@
     </compactLayouts>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
-    <externalSharingModel>FullAccess</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fieldSets>
         <fullName>vlocity_ins__StoryFieldSet</fullName>
         <description>Story board</description>

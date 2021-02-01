@@ -5,6 +5,6 @@
     <description>Hasan Mahmud Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Hasan Mahmud Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

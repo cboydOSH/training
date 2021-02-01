@@ -4,10 +4,6 @@
     <objectMapping>
         <inputObject>Lead</inputObject>
         <mappingFields>
-            <inputField>AcctOpp_Lock__c</inputField>
-            <outputField>AcctOpp_Lock__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>Contract_Level__c</inputField>
             <outputField>Contract_Level__c</outputField>
         </mappingFields>
@@ -28,10 +24,6 @@
             <outputField>Regional_Sales_Director__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Sales_Team_Referral__c</inputField>
-            <outputField>Sales_Team_Referral__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>Servicing_Representative__c</inputField>
             <outputField>Servicing_Representative__c</outputField>
         </mappingFields>
@@ -47,6 +39,14 @@
     </objectMapping>
     <objectMapping>
         <inputObject>Lead</inputObject>
+        <mappingFields>
+            <inputField>pi__comments__c</inputField>
+            <outputField>pi__comments__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>pi__conversion_date__c</inputField>
+            <outputField>pi__conversion_date__c</outputField>
+        </mappingFields>
         <mappingFields>
             <inputField>pi__conversion_object_name__c</inputField>
             <outputField>pi__conversion_object_name__c</outputField>
@@ -100,6 +100,10 @@
             <outputField>pi__score__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>pi__campaign__c</inputField>
+            <outputField>pi__campaign__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>pi__utm_campaign__c</inputField>
             <outputField>pi__utm_campaign__c</outputField>
         </mappingFields>
@@ -119,26 +123,10 @@
             <inputField>pi__utm_term__c</inputField>
             <outputField>pi__utm_term__c</outputField>
         </mappingFields>
-        <mappingFields>
-            <inputField>pi__campaign__c</inputField>
-            <outputField>pi__campaign__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>pi__comments__c</inputField>
-            <outputField>pi__comments__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>pi__conversion_date__c</inputField>
-            <outputField>pi__conversion_date__c</outputField>
-        </mappingFields>
         <outputObject>Contact</outputObject>
     </objectMapping>
     <objectMapping>
         <inputObject>Lead</inputObject>
-        <mappingFields>
-            <inputField>AcctOpp_Lock__c</inputField>
-            <outputField>AcctOpp_Lock__c</outputField>
-        </mappingFields>
         <mappingFields>
             <inputField>Contract_Level__c</inputField>
             <outputField>Contract_Level__c</outputField>
@@ -166,10 +154,6 @@
         <mappingFields>
             <inputField>Regional_Sales_Director__c</inputField>
             <outputField>Regional_Sales_Director__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Sales_Team_Referral__c</inputField>
-            <outputField>Sales_Team_Referral__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Servicing_Representative__c</inputField>

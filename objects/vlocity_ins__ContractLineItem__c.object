@@ -223,6 +223,11 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
+            <field>vlocity_ins__ProductCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
             <field>vlocity_ins__ProductDescription__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -279,11 +284,6 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>vlocity_ins__ImageId__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
             <field>vlocity_ins__ParentItemId__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -304,7 +304,17 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>vlocity_ins__ProductCode__c</field>
+            <field>vlocity_ins__RateBandId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__UnitPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__ImageId__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -314,17 +324,7 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>vlocity_ins__RateBandId__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
             <field>vlocity_ins__RecordTypeName__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>vlocity_ins__UnitPrice__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>

@@ -1,0 +1,38 @@
+.slot {
+    font-size: 12PX;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    border-right: 1px solid lightgrey;   
+}
+
+.slot p {
+    font-weight: normal;
+    padding: 5px;
+    font-size: 12px;
+    color:#B0ADAB;
+}
+
+.last p {
+    font-weight: normal;
+    padding: 5px;
+    font-size: 12px;
+    color:#B0ADAB;
+}
+
+.last {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center; 
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}

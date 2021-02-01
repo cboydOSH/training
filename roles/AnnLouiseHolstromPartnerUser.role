@@ -5,6 +5,6 @@
     <description>Ann Louise Holstrom Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Ann Louise Holstrom Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

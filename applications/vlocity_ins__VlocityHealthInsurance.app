@@ -8,7 +8,9 @@
     <logo>vlocity_ins__VlocityResources/vlocity_ins__VlocityHealthInsurance.png</logo>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
-    <tabs>vlocity_ins__ProductSelection</tabs>
-    <tabs>standard-Contract</tabs>
-    <tabs>standard-Dashboard</tabs>
+    <tabs>vlocity_ins__OmniScriptHome</tabs>
+    <tabs>vlocity_ins__DataRaptor</tabs>
+    <tabs>vlocity_ins__VlocityUITemplateDesigner</tabs>
+    <tabs>vlocity_ins__CalculationProcedure__c</tabs>
+    <tabs>vlocity_ins__IntegrationProcedureHome</tabs>
 </CustomApplication>

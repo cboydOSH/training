@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Michael Occhipinto Partner User</description>
+    <description>Apollo Insurance Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Michael Occhipinto Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Apollo Insurance Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

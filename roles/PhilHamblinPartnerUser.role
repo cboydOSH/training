@@ -5,6 +5,6 @@
     <description>Phil Hamblin Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Phil Hamblin Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

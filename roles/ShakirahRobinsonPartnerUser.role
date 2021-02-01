@@ -5,6 +5,6 @@
     <description>Shakirah Robinson Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Shakirah Robinson Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

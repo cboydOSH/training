@@ -56,16 +56,8 @@
         <label><!-- Type --></label>
         <name>vlocity_ins__Type__c</name>
         <picklistValues>
-            <masterLabel>Action Block</masterLabel>
-            <translation><!-- Action Block --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Aggregate</masterLabel>
             <translation><!-- Aggregate --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Assert Action</masterLabel>
-            <translation><!-- Assert Action --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Batch Action</masterLabel>
@@ -82,10 +74,6 @@
         <picklistValues>
             <masterLabel>Calculation Action</masterLabel>
             <translation><!-- Calculation Action --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Chatter Action</masterLabel>
-            <translation><!-- Chatter Action --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Checkbox</masterLabel>
@@ -114,10 +102,6 @@
         <picklistValues>
             <masterLabel>DataRaptor Transform Action</masterLabel>
             <translation><!-- DataRaptor Transform Action --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>DataRaptor Turbo Action</masterLabel>
-            <translation><!-- DataRaptor Turbo Action --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Date</masterLabel>

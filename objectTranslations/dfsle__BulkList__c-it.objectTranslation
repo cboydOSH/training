@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Elenco per invio in blocco DocuSign</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Elenchi per invio in blocco DocuSign</value>
+    </caseValues>
+    <fields>
+        <label><!-- DocuSign bulk list ID --></label>
+        <name>dfsle__DocuSignId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce source ID --></label>
+        <name>dfsle__SourceId__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

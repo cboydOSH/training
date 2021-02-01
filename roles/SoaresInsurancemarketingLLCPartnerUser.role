@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Soares Insurance Marketing Partner User</description>
+    <description>SoaresInsurancemarketing LLC Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Soares Insurance Marketing Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>SoaresInsurancemarketing LLC Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Aaron Bryson Partner User</description>
+    <description>CAPMAR Insurance Services Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Aaron Bryson Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>CAPMAR Insurance Services Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>State_Sales_Manager</parentRole>
 </Role>

@@ -5,6 +5,6 @@
     <description>Mark Castelhano Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Mark Castelhano Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
-    <parentRole>Regional_Sales_Director</parentRole>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>State_Sales_Manager</parentRole>
 </Role>

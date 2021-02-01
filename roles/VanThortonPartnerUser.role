@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Van Ray Thornton Partner User</description>
+    <description>Van Thorton Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Van Ray Thornton Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Van Thorton Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

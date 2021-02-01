@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>vlocity_ins__CreateGroup</customButtons>
+    <customConsoleComponents>
+        <subtabComponents>
+            <containers>
+                <height>50</height>
+                <isContainerAutoSizeEnabled>false</isContainerAutoSizeEnabled>
+                <region>Top</region>
+                <sidebarComponents>
+                    <componentType>ReportChart</componentType>
+                </sidebarComponents>
+                <sidebarComponents>
+                    <componentType>ReportChart</componentType>
+                </sidebarComponents>
+                <style>Tabs</style>
+                <unit>Percentage</unit>
+            </containers>
+        </subtabComponents>
+    </customConsoleComponents>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -8,6 +28,28 @@
         <editHeading>true</editHeading>
         <label>Account Information</label>
         <layoutColumns>
+            <layoutItems>
+                <reportChartComponent>
+                    <cacheData>true</cacheData>
+                    <contextFilterableField>CONTACT.ACCOUNT_ID</contextFilterableField>
+                    <hideOnError>false</hideOnError>
+                    <includeContext>true</includeContext>
+                    <reportName>Closed_Cases_This_Week_GiB</reportName>
+                    <showTitle>false</showTitle>
+                    <size>SMALL</size>
+                </reportChartComponent>
+            </layoutItems>
+            <layoutItems>
+                <reportChartComponent>
+                    <cacheData>true</cacheData>
+                    <contextFilterableField>CONTACT.ACCOUNT_ID</contextFilterableField>
+                    <hideOnError>false</hideOnError>
+                    <includeContext>true</includeContext>
+                    <reportName>My_Open_Cases_4ks</reportName>
+                    <showTitle>false</showTitle>
+                    <size>SMALL</size>
+                </reportChartComponent>
+            </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Name</field>
@@ -19,6 +61,54 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>OwnerId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Expecting_family_grow__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Currently_see_a_Specialist__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Monthly_Commission_Fee__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SSN_ITIN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Writing_agent__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Ethnicity__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Servicing_Agent__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Main_Asset__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Effective_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Active_Period__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>HipaaAuthorizationType__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Active_Date__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -124,7 +214,12 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Description Information</label>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Product_Privilegies__c</field>
+            </layoutItems>
+        </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
@@ -217,6 +312,238 @@
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
+    <platformActionList>
+        <actionListContext>Record</actionListContext>
+        <platformActionListItems>
+            <actionName>New_Prospect</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>New_Application</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>1</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>NewTask</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>2</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>NewEvent</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>3</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>LogACall</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>4</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.ContentNote</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>5</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.RypplePost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>6</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.ContentPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>7</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.QuestionPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>8</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>NewContact</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>9</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>NewOpportunity</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>10</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>NewLead</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>11</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.PollPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>12</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.TextPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>13</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>XClean</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>14</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Delete</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>15</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>LoginToPortalAsPersonUser</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>16</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Share</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>17</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>ChangeRecordType</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>18</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>ViewCustomerPortalUser</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>19</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>DisablePartnerPortalAccount</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>20</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>AccountAddToCampaign</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>21</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>AccountHierarchy</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>22</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>LoginToNetworkAsPersonUser</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>23</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CreateCallList</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>24</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>PrintableView</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>25</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>26</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>IncludeOffline</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>27</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>StartOutboundConversation</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>28</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>EnableCustomerPortalUser</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>29</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>EnableAsPartner</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>30</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>PartnerScorecard</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>31</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>DisableCustomerPortalAccount</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>32</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Submit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>33</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>JigsawSearch</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>34</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>ChangeOwnerOne</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>35</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CreateSurveyInvitation</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>36</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>vlocity_ins__CreateGroup</actionName>
+            <actionType>CustomButton</actionType>
+            <sortOrder>37</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CallHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>38</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>SmsHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>39</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>EmailHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>40</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>WebsiteHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>41</sortOrder>
+        </platformActionListItems>
+    </platformActionList>
+    <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <fields>Program_Promotion__c</fields>
+        <relatedList>Producer_Promotion__c.Producer_Account__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <relatedList>Quote.vlocity_ins__AgencyBrokerageId__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Protected_Health_Information__c.Member_Account__c</relatedList>
+    </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <fields>vlocity_ins__PolicyNumber__c</fields>
@@ -226,6 +553,53 @@
         <fields>vlocity_ins__ExpirationDate__c</fields>
         <relatedList>vlocity_ins__NonHeldPolicy__c.vlocity_ins__AccountId__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <relatedList>Quote.Servicing_Agent__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <relatedList>Quote.Agent_Label__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>QUOTE.NAME</fields>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>Information_Packet_Number__c</fields>
+        <fields>QUOTE.ISSYNCING</fields>
+        <fields>QUOTE.EXPIRATIONDATE</fields>
+        <fields>QUOTE.SUBTOTAL</fields>
+        <fields>QUOTE.TOTALPRICE</fields>
+        <relatedList>Quote.Rating_Member__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>ACCOUNT.ADDRESS1_CITY</fields>
+        <fields>ACCOUNT.PHONE1</fields>
+        <relatedList>Account.Servicing_Agent__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>HIPAAAuthorization__c.PrimaryMember__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Asset__c</fields>
+        <fields>Change_Date__c</fields>
+        <fields>Change_Type__c</fields>
+        <relatedList>Internal_Change_Log__c.Account__c</relatedList>
+    </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -233,7 +607,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00ho0000004RiUE</masterLabel>
+        <masterLabel>00h8A000001HcM4</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

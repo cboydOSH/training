@@ -9,6 +9,22 @@
         <name>vlocity_ins__RatingFactSourceFields</name>
     </fieldSets>
     <fields>
+        <label><!-- HIPAA Authorized --></label>
+        <name>HIPAA_Authorized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Tobbaco or Vapo --></label>
+        <name>Use_Tobbaco_or_Vapo__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Attribute Selected Values --></label>
         <name>vlocity_ins__AttributeSelectedValues__c</name>
     </fields>

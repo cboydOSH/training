@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>National Benefit Plans, Inc. Partner User</description>
+    <description>Vicki Ferguson Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>National Benefit Plans, Inc. Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>Vicki Ferguson Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>

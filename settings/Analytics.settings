@@ -36,7 +36,7 @@
     <enableWaveAssetsNewDateVersion>false</enableWaveAssetsNewDateVersion>
     <enableWaveIndexMVDim>true</enableWaveIndexMVDim>
     <enableWaveRecordNavigation>false</enableWaveRecordNavigation>
-    <enableWaveReplication>true</enableWaveReplication>
+    <enableWaveReplication>false</enableWaveReplication>
     <enableWaveSharingInheritance>false</enableWaveSharingInheritance>
     <enableWaveTrendedDatasetCleanup>false</enableWaveTrendedDatasetCleanup>
     <maxHoursAppInProgress>48</maxHoursAppInProgress>

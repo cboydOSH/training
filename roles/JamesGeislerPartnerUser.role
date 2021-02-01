@@ -5,6 +5,6 @@
     <description>James Geisler Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>James Geisler Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Regional_Sales_Director</parentRole>
 </Role>

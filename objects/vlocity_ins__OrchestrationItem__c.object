@@ -1016,11 +1016,6 @@ HYPERLINK(&quot;/&quot; &amp; vlocity_ins__OrderItemId__r.OrderId, vlocity_ins__
                     <label>Fatally Failed</label>
                 </value>
                 <value>
-                    <fullName>Amended</fullName>
-                    <default>false</default>
-                    <label>Amended</label>
-                </value>
-                <value>
                     <fullName>Cancelled</fullName>
                     <default>false</default>
                     <label>Cancelled</label>
@@ -1049,16 +1044,6 @@ HYPERLINK(&quot;/&quot; &amp; vlocity_ins__OrderItemId__r.OrderId, vlocity_ins__
                     <fullName>Frozen - Fatally Failed</fullName>
                     <default>false</default>
                     <label>Frozen - Fatally Failed</label>
-                </value>
-                <value>
-                    <fullName>Discarded</fullName>
-                    <default>false</default>
-                    <label>Discarded</label>
-                </value>
-                <value>
-                    <fullName>Failed Discarded</fullName>
-                    <default>false</default>
-                    <label>Failed Discarded</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Robert A Bieniasz Partner User</description>
+    <description>National Benefit Plans Partner User</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Robert A Bieniasz Partner User</name>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <name>National Benefit Plans Partner User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>VP_of_Sales</parentRole>
 </Role>
