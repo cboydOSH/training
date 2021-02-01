@@ -1,0 +1,372 @@
+//Date Picker 
+.nds-dropdown {
+    position: absolute;
+    z-index: 7000;
+    left: 50%;
+    float: left;
+    min-width: 24rem !important;
+    max-width: 24rem !important;
+    margin-top: .125rem;
+    margin-bottom: .125rem;
+    border: 1px solid #dddbda;
+    border-radius: .125rem;
+    padding: .25rem 0;
+    font-size: .75rem;
+    background: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.16);
+    transform: translateX(-50%);
+}
+
+
+.alaskaError{
+    background-color: #fefbe6!important;
+    border: 1px solid  #fcee9c!important;
+     padding: 5px 9px;
+
+}
+
+//CSS for Disable Dependent Right Card
+.disabledeptooltip {
+  position: relative;
+  display: inline-block;
+  //border-bottom: 1px dotted black;
+}
+.disabledeptooltip .disabledeptooltiptext {
+  visibility: hidden;
+  width: 128%;
+  min-width: 200px !important;
+  background-color: #005fb2;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 12px 0;
+     
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  //bottom: 100%;
+  left: 108%;
+  top: -30px;
+  //margin-left: -60px;
+}
+.disabledeptooltip:hover .disabledeptooltiptext {
+  visibility: visible;
+}
+.testy{
+    background-color: yellow;
+    padding: 5px 9px;
+}
+
+.census-table{
+        // margin-top: 30px;
+    }
+    .clearbutton{
+        margin-left: 91%!important;
+        border: unset!important;
+        color: #0071b3!important;
+        height: 40px!important;
+        font-size: 14px!important;
+        background-color: #f6f6f6!important;
+        padding: 5px!important;
+        transition: background-color 0.5s ease;
+    }
+    .census-table tr th{
+        padding: 10px;
+        font-weight: 400;
+        font-size: 0.875rem;
+    }
+    .census-table tr td{
+        padding: 8px;
+        // text-align: center;
+        width: 16%;
+        font-size: 0.875rem;
+    }
+    .census-table tr td:nth-child(1){
+        width: 4%;
+    }
+    .census-table tr td input{
+        height: 30px !important;
+        min-height: 30px !important;
+        border-radius: 1px !important;
+        max-width: 120px;
+        min-width: 100px !important;
+        font-size: 0.875rem;
+    }
+    .census-table tr td .nds-checkbox--faux {
+        border: 1px solid #cfd7e6 !important;
+    }
+    .census-table tr td input::-webkit-inner-spin-button, .census-table tr td input::-webkit-calendar-picker-indicator{
+        display: none;
+        -webkit-appearance: none;
+    }
+    .census-table tr td select{
+        height: 30px !important;
+        max-width: 140px;
+        min-width: 122px !important;
+        // -webkit-appearance: none;
+        // -moz-appearance: none;
+        // -ms-appearance: none;
+        font-size: 0.875rem;
+    }
+    .census-table tr td input[type="date"]{
+        padding-right: 0px;
+        /*padding-left: 8px;*/
+        text-overflow: unset;
+    }
+    .census-table tr td input.btn-primary{
+       /* background-color: #009bc6;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 3px !important;*/
+        color: #003764;
+        border: none;
+        outline: none;
+        border-radius: 6px !important;
+        border: 1px solid #d6b861;
+    }
+    .census-table tr td button{
+        background: none;
+        border: none;
+        outline: none;
+    }
+    .census-table tr td button i{
+        font-size: 24px;
+        color: #c70007;
+        text-align: center;
+    }
+    .census-info ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 30px;
+        border: 1px solid #ebeff5;
+        border-radius: 3px;
+    }
+    .census-info ul li p{
+        font-size: 12px;
+        font-weight: 400;
+        border-bottom: 2px solid;
+    }
+    .census-info ul li h4{
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: black;
+        margin: 3px 0px 0px;
+    }
+    .census-control{
+        // margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .census-control input, .census-control input:focus, .census-control input:hover{
+       // color: #003764;
+       color: #ffffff!important;
+        border-radius: 10px;
+       // font-size: 16px;
+       // padding: 15px 45px;
+       // font-weight: 400;
+       // margin: 0px 12px;
+       // border: 1px solid #d6b861;
+       background-color: #044da2!important;
+    
+    }
+    .census-control input.remove-census, .census-control input.remove-census:focus, .census-control input.remove-census:hover{
+        border: 2px solid #dcdcdc;
+        color: #e74c3c;
+    }
+    .census-control input:nth-child(4){
+        border: 2px solid #fc4904;
+        background: transparent;
+        color: #fc4904;
+    }
+    .census-table tr.grid{
+        border-top: 1px solid #c8d1e2;
+    }
+    .census-container{
+        width: 100%;
+    }
+    table.census-table thead {
+        border: 1px solid #c8d1e2;
+        border-right: none;
+        border-left: none;
+    }
+    form.disable-census {
+        position: relative;
+    }
+    input#NumOfEmployee {
+        display: none;
+    }
+    /*form.disable-census:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255,255,255,0.4);
+    }*/
+    .census-error-wrapper{
+        padding-bottom: 0px !important;
+        /*background-color: #f39c12 !important;*/
+    }
+    .census-error{
+        margin-top: 30px !important;
+        background-color: #f2c277 !important;    
+    }
+    table.census-table.ng-scope{
+        table-layout: fixed;
+         width: 100%;
+    }
+    @media only screen and (max-device-width: 613px), only screen and (max-width: 613px) {
+        .census-table tr td input[value="+ Add Dependent"] {
+            font-size: 6px;
+            min-width: 10px !important;
+            width: 100%;
+            margin-left:20%;
+        }
+    }
+    td.error_dob input {
+        border: 1px solid red !important;
+    }
+
+    td.error_dob select {
+        border: 1px solid red !important;
+    }
+
+    // tr.oldestMember {
+    //    border: 6px solid blue;
+    // }
+
+    
+
+    select.nds-select.ng-pristine.ng-empty.ng-invalid.ng-invalid-required.select_error.ng-touched {
+        border: 1px solid red !important;
+    }
+
+    .totalinsured li {
+        margin-left:23px;
+    }
+
+    .marginErrorsContainers{
+        margin-top: 1%;
+    }
+
+//CSS birthday info Right Card
+.birthdatetooltip {
+  position: relative;
+  display: inline-block;
+  //border-bottom: 1px dotted black;
+}
+.birthdatetooltip .birthdatetooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #005fb2;
+  text-align: center;
+  color: #ffffff;
+  right: 40%;
+  border-radius: 6px;
+  padding: 12px 0;
+     
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  //bottom: 100%;
+  left: 108%;
+  top: -30px;
+  //margin-left: -60px;
+}
+.birthdatetooltip:hover .birthdatetooltiptext {
+  visibility: visible;
+}
+
+// CSS Info ethnicity left dropdown
+.ethnicitytooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.ethnicitytooltip .ethnicitytooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ethnicitytooltip .ethnicitytooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.ethnicitytooltip:hover .ethnicitytooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+//end of Info Etnic CSS
+
+
+//Popup for SSN
+.tooltipSSN {
+  position: relative;
+}
+.tooltipSSN .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #005fb2;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 1;
+    position: absolute;
+    z-index: 1; 
+    bottom: 100%;
+    left: 10%;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.tooltipSSN:hover .tooltiptext {
+  visibility: visible;
+}
+
+#ethnicityResultSpan b {
+    font-size:1.1em; 
+}
+#OS-Myfamily .nds-form-element__control.nds-form-element__control-animated-label .nds-form-element__label {
+    top: 0.4rem;
+    left: -7px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+#OS-Myfamily .nds-form-element__control.nds-form-element__control-animated-label label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #556a8c;
+    padding: 0 .5rem 0 0;
+}
