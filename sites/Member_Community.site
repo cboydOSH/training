@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>CommunitiesLogin</authorizationRequiredPage>
+    <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>true</browserXssProtection>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <contentSniffingProtection>true</contentSniffingProtection>
+    <cspUpgradeInsecureRequests>true</cspUpgradeInsecureRequests>
+    <enableAuraRequests>true</enableAuraRequests>
+    <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <forgotPasswordPage>ForgotPassword</forgotPasswordPage>
+    <genericErrorPage>Exception</genericErrorPage>
+    <inMaintenancePage>InMaintenance</inMaintenancePage>
+    <indexPage>CommunitiesLanding</indexPage>
+    <masterLabel>Member Community</masterLabel>
+    <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <requireHttps>true</requireHttps>
+    <selfRegPage>CommunitiesSelfReg</selfRegPage>
+    <siteAdmin>cboyd@onesharehealth.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>andres.deus@arcsona.com</siteGuestRecordDefaultOwner>
+    <siteIframeWhiteListUrls>
+        <url>devvl2-paymentrequest.cs45.force.com</url>
+    </siteIframeWhiteListUrls>
+    <siteIframeWhiteListUrls>
+        <url>devvl2-oshtraining.cs45.force.com</url>
+    </siteIframeWhiteListUrls>
+    <siteIframeWhiteListUrls>
+        <url>https://onesharehealth--devvl2.my.salesforce.com</url>
+    </siteIframeWhiteListUrls>
+    <siteIframeWhiteListUrls>
+        <url>onesharehealth--devvl2.my.salesforce.com</url>
+    </siteIframeWhiteListUrls>
+    <siteIframeWhiteListUrls>
+        <url>onesharehealth--devvl2--c.visualforce.com</url>
+    </siteIframeWhiteListUrls>
+    <siteType>ChatterNetwork</siteType>
+    <subdomain>oshtraining</subdomain>
+    <urlPathPrefix>membercommunity</urlPathPrefix>
+</CustomSite>
