@@ -59,6 +59,23 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Network__c</fullName>
+        <externalId>false</externalId>
+        <label>Network</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1N</fullName>
+                    <default>false</default>
+                    <label>1N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Product__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -77,6 +94,18 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>States__c</fullName>
+        <externalId>false</externalId>
+        <label>States</label>
+        <required>true</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>States</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>Topics__c</fullName>
