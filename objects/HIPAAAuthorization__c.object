@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>AuthorizationPeriod__c</fullName>
+        <externalId>false</externalId>
+        <label>Authorization Period</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All time</fullName>
+                    <default>false</default>
+                    <label>All time</label>
+                </value>
+                <value>
+                    <fullName>Time bound</fullName>
+                    <default>false</default>
+                    <label>Time bound</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AuthorizationSubType__c</fullName>
+        <externalId>false</externalId>
+        <label>Authorization SubType</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Billing and Membership Records</fullName>
+                    <default>false</default>
+                    <label>Billing and Membership Records</label>
+                </value>
+                <value>
+                    <fullName>Change/Update of Record</fullName>
+                    <default>false</default>
+                    <label>Change/Update of Record</label>
+                </value>
+                <value>
+                    <fullName>Mental Health Records</fullName>
+                    <default>false</default>
+                    <label>Mental Health Records</label>
+                </value>
+                <value>
+                    <fullName>Alcohol/drug abuse treatment</fullName>
+                    <default>false</default>
+                    <label>Alcohol/drug abuse treatment</label>
+                </value>
+                <value>
+                    <fullName>Communicable diseases</fullName>
+                    <default>false</default>
+                    <label>Communicable diseases</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AuthorizationType__c</fullName>
+        <externalId>false</externalId>
+        <label>AuthorizationType</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full</fullName>
+                    <default>false</default>
+                    <label>Full</label>
+                </value>
+                <value>
+                    <fullName>Partial</fullName>
+                    <default>false</default>
+                    <label>Partial</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
