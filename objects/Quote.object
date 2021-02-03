@@ -3441,6 +3441,33 @@
         <fullName>AdditionalName</fullName>
     </fields>
     <fields>
+        <fullName>Age_Period_30d__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This is foeld is necesary for the information package and Enroll process</description>
+        <externalId>false</externalId>
+        <label>Age Period 30d</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Age_Period_60d__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is necesary for Information Package and Enroll Process</description>
+        <externalId>false</externalId>
+        <label>Age Period 60d</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Agent_Label__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Agent Label</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Agent Label)</relationshipLabel>
+        <relationshipName>AgentLabel</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>BillingName</fullName>
     </fields>
     <fields>
@@ -3461,6 +3488,15 @@
         <fullName>Email</fullName>
     </fields>
     <fields>
+        <fullName>Enroller_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Enroller Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ExpirationDate</fullName>
     </fields>
     <fields>
@@ -3470,6 +3506,15 @@
         <fullName>GrandTotal</fullName>
     </fields>
     <fields>
+        <fullName>Information_Packet_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Information Packet #</label>
+        <length>15</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>IsSyncing</fullName>
     </fields>
     <fields>
@@ -3477,6 +3522,14 @@
     </fields>
     <fields>
         <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>Old_MemBer_Based_Dob__c</fullName>
+        <description>This Field is necesary for know the specific Dob and Verbiage in Information Package</description>
+        <externalId>false</externalId>
+        <label>Old MemBer Based Dob</label>
+        <required>false</required>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>OpportunityId</fullName>
@@ -3490,7 +3543,37 @@
         <fullName>Phone</fullName>
     </fields>
     <fields>
+        <fullName>Price_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This is  a field for Infomation Package</description>
+        <externalId>false</externalId>
+        <label>Price Change</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>QuoteToName</fullName>
+    </fields>
+    <fields>
+        <fullName>Rating_Member__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rating Member</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Rating Member)</relationshipLabel>
+        <relationshipName>Rating_Member</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Servicing_Agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Servicing Agent</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Servicing Agent)</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ShippingHandling</fullName>
@@ -3510,6 +3593,16 @@
     </fields>
     <fields>
         <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Writing_agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Writing agent</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>vlocity_ins__AgencyBrokerageId__c</fullName>

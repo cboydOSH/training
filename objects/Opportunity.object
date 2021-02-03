@@ -896,6 +896,33 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Currently_enrolled_health_C_Program__c</fullName>
+        <description>a.	Are you currently enrolled in a health care Program? – Yes/No</description>
+        <externalId>false</externalId>
+        <label>Currently enrolled health C Program</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Date_of_Birth__c</fullName>
         <externalId>false</externalId>
         <label>Date of Birth</label>
