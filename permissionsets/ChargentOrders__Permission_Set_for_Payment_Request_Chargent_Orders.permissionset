@@ -5,14 +5,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ChargentOrders__PaymentRequestModalController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ChargentOrders__SitePaymentController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>ChargentOrders__TChargentApiHelper</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -1092,14 +1084,6 @@
         <object>ChargentOrders__Transaction__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-    <pageAccesses>
-        <apexPage>ChargentOrders__PaymentRequestModal</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>ChargentOrders__SitePayment</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
     <pageAccesses>
         <apexPage>ChargentOrders__TChargentApiHelper</apexPage>
         <enabled>true</enabled>

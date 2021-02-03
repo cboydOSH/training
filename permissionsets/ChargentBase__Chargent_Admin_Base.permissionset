@@ -309,10 +309,6 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>ChargentBase__SitePayment</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>ChargentBase__TChargentApiHelper</apexPage>
         <enabled>true</enabled>
     </pageAccesses>

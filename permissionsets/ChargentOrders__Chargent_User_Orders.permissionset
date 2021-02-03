@@ -1185,14 +1185,6 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>ChargentOrders__PaymentRequestModal</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>ChargentOrders__SitePayment</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>ChargentOrders__TransactionAction</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
