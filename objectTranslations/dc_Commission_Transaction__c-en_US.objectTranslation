@@ -9,123 +9,159 @@
         <value>Commission Transactions</value>
     </caseValues>
     <fields>
-        <label><!-- Adjustment Amount --></label>
+        <label></label>
         <name>Adjustment_Amount__c</name>
     </fields>
     <fields>
-        <label><!-- Adjustment Note --></label>
+        <label></label>
         <name>Adjustment_Note__c</name>
     </fields>
     <fields>
-        <label><!-- Adjustment Type --></label>
+        <label></label>
         <name>Adjustment_Type__c</name>
         <picklistValues>
             <masterLabel>Credit</masterLabel>
-            <translation><!-- Credit --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Debit</masterLabel>
-            <translation><!-- Debit --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Asset Product Fee --></label>
+        <label></label>
         <name>Asset_Product_Fee__c</name>
     </fields>
     <fields>
-        <label><!-- Asset --></label>
+        <label></label>
         <name>Asset__c</name>
-        <relationshipLabel><!-- Commission Transactions --></relationshipLabel>
+        <relationshipLabel></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Commission Amount --></label>
+        <label></label>
         <name>Commission_Amount__c</name>
     </fields>
     <fields>
-        <label><!-- Contract Level --></label>
+        <label></label>
         <name>Contract_Level__c</name>
     </fields>
     <fields>
-        <label><!-- Fee Amount --></label>
+        <label></label>
         <name>Fee_Amount__c</name>
     </fields>
     <fields>
-        <label><!-- Fee Recurrence --></label>
+        <label></label>
         <name>Fee_Recurrence__c</name>
         <picklistValues>
             <masterLabel>Monthly</masterLabel>
-            <translation><!-- Monthly --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>One-time</masterLabel>
-            <translation><!-- One-time --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Fee Type --></label>
+        <label></label>
         <name>Fee_Type__c</name>
         <picklistValues>
             <masterLabel>Administration</masterLabel>
-            <translation><!-- Administration --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Application</masterLabel>
-            <translation><!-- Application --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Payment Amount --></label>
+        <label></label>
         <name>Payment_Amount__c</name>
     </fields>
     <fields>
-        <label><!-- Payment Date --></label>
+        <label></label>
         <name>Payment_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Producer Commission --></label>
+        <label></label>
         <name>Producer_Commission__c</name>
-        <relationshipLabel><!-- Commission Transactions --></relationshipLabel>
+        <relationshipLabel></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Producer --></label>
+        <label></label>
         <name>Producer__c</name>
-        <relationshipLabel><!-- Commission Transactions --></relationshipLabel>
+        <relationshipLabel></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Related Commission Transaction --></label>
+        <label></label>
         <name>Related_Commission_Transaction__c</name>
-        <relationshipLabel><!-- Related Commission Transactions --></relationshipLabel>
+        <relationshipLabel></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Transaction Status --></label>
+        <label></label>
         <name>Transaction_Status__c</name>
         <picklistValues>
             <masterLabel>Cancelled</masterLabel>
-            <translation><!-- Cancelled --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>On Hold</masterLabel>
-            <translation><!-- On Hold --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Paid</masterLabel>
-            <translation><!-- Paid --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Unpaid</masterLabel>
-            <translation><!-- Unpaid --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
+    <layouts>
+        <layout>Adjustment Commission Transaction Layout</layout>
+        <sections>
+            <label></label>
+            <section>Adjustment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Commission Transaction Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Member Fee Commission Transaction Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fee Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payment Commission Transaction Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <recordTypes>
-        <label><!-- Adjustment --></label>
+        <label></label>
         <name>Adjustment</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- Member Fee --></label>
+        <label></label>
         <name>Member_Fee</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- Payment --></label>
+        <label></label>
         <name>Payment</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>

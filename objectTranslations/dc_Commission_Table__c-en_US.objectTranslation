@@ -9,46 +9,53 @@
         <value>Commission Tables</value>
     </caseValues>
     <fields>
-        <label><!-- Asset --></label>
+        <label></label>
         <name>Asset__c</name>
-        <relationshipLabel><!-- Commission Tables --></relationshipLabel>
+        <relationshipLabel></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- End Date --></label>
+        <label></label>
         <name>End_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Last Payment Date --></label>
+        <label></label>
         <name>Last_Payment_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Product Contract --></label>
+        <label></label>
         <name>Product_Contract__c</name>
-        <relationshipLabel><!-- Commission Tables --></relationshipLabel>
+        <relationshipLabel></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Start Date --></label>
+        <label></label>
         <name>Start_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Status --></label>
+        <label></label>
         <name>Status__c</name>
         <picklistValues>
             <masterLabel>Active</masterLabel>
-            <translation><!-- Active --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Inactive</masterLabel>
-            <translation><!-- Inactive --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Total Producer Commissions --></label>
+        <label></label>
         <name>Total_Producer_Commissions__c</name>
     </fields>
+    <layouts>
+        <layout>Commission Table Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
     <validationRules>
-        <errorMessage><!-- Total Producer Commissions cannot exceed 32%. --></errorMessage>
+        <errorMessage></errorMessage>
         <name>Total_Commissions_percentage_limit</name>
     </validationRules>
 </CustomObjectTranslation>
