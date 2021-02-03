@@ -28,10 +28,9 @@
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <networkMemberGroups>
         <permissionSet>ChargentOrders__Chargent_User_Orders</permissionSet>
-        <permissionSet>ChargentAnyObj_Payment_Request</permissionSet>
         <permissionSet>ChargentBase__Chargent_User_Base</permissionSet>
-        <permissionSet>vlocity_ins__Vlocity_Health</permissionSet>
         <permissionSet>vlocity_ins__Vlocity_Insurance</permissionSet>
+        <permissionSet>vlocity_ins__Vlocity_Health</permissionSet>
         <permissionSet>Knowledge_Article_Editor</permissionSet>
         <permissionSet>Assign_Client_Manager</permissionSet>
         <permissionSet>Create_Reports_and_Dashboards</permissionSet>
@@ -43,48 +42,34 @@
         <permissionSet>ltui__LMS_ILT_Instructor</permissionSet>
         <permissionSet>ltui__LearnTrac_Lightning_UI_User</permissionSet>
         <permissionSet>scormanywhere__Player_Admin</permissionSet>
-        <permissionSet>scormanywhere__Player_User</permissionSet>
+        <permissionSet>Read_Ministry_Requests</permissionSet>
         <permissionSet>vtui__ViewTrac_Lightning_UI_User</permissionSet>
         <permissionSet>rwscorm__LMS_Player_Admin</permissionSet>
         <permissionSet>rwscorm__LMS_Player_User</permissionSet>
         <permissionSet>LMS_Custom_PS</permissionSet>
         <permissionSet>LMS_ILT_Instructor_Classes_Access</permissionSet>
-        <permissionSet>Vlocity_CLM_Guest_User_OS</permissionSet>
+        <permissionSet>sfdcInternalInt__sfdc_aiplatform</permissionSet>
         <permissionSet>Reset_Passwords</permissionSet>
-        <permissionSet>Transfer_Cases</permissionSet>
         <permissionSet>Login_As_Partner_Community_User</permissionSet>
         <permissionSet>Recordings_Object</permissionSet>
         <permissionSet>dsfs__DocuSign_Administrator</permissionSet>
-        <permissionSet>vlocity_ins__VlocityMobilePermissions</permissionSet>
         <permissionSet>vlocity_ins__Vlocity_Admin</permissionSet>
         <permissionSet>ChargentBase__Chargent_Admin_Base</permissionSet>
         <permissionSet>ChargentBase__Permission_Set_for_Payment_Request_Base</permissionSet>
         <permissionSet>ChargentOrders__Chargent_Admin_Orders</permissionSet>
-        <permissionSet>ChargentOrders__Permission_Set_for_Payment_Request_Chargent_Orders</permissionSet>
         <permissionSet>Transfer_Record</permissionSet>
         <permissionSet>icAgentConsole__inContact_Agent_Permission</permissionSet>
-        <permissionSet>pi__Sales_Edge</permissionSet>
         <permissionSet>pi__Pardot_Integration_User</permissionSet>
         <permissionSet>pi__Pardot_Connector_User</permissionSet>
         <permissionSet>pi__Pardot</permissionSet>
         <permissionSet>Password_Never_Expires</permissionSet>
         <permissionSet>Manage_Billing_for_Salesforce</permissionSet>
         <permissionSet>Sales_User</permissionSet>
-        <permissionSet>sfdcInternalInt__sfdc_aiplatform</permissionSet>
-        <permissionSet>ChargentAnyObj_Payment_Console</permissionSet>
+        <permissionSet>scormanywhere__Player_User</permissionSet>
         <permissionSet>vfirst__Verified_First_Extend_Edit_Report_Access</permissionSet>
-        <permissionSet>vfirst__Verified_First_Extend_Read_Report_Access</permissionSet>
         <permissionSet>Create_Escalation_Case</permissionSet>
         <permissionSet>Create_Internal_Users</permissionSet>
-        <permissionSet>ProducerCommunityPermissionSet</permissionSet>
-        <permissionSet>Provider_Permisions_Extension</permissionSet>
         <permissionSet>Manage_Email_Templates</permissionSet>
-        <permissionSet>Read_Ministry_Requests</permissionSet>
-        <permissionSet>Community_Producer_Login_Portal_Extended</permissionSet>
-        <permissionSet>cterminal__Chargent_Terminal_Admin</permissionSet>
-        <permissionSet>cterminal__Chargent_Terminal_Unlinked_Payments</permissionSet>
-        <permissionSet>cterminal__Chargent_Terminal_User</permissionSet>
-        <permissionSet>Vlocity_CLM_Lightning_Partner_Community</permissionSet>
         <profile>admin</profile>
         <profile>member community</profile>
         <profile>member community admin test</profile>
