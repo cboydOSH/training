@@ -63,7 +63,7 @@
         <fullName>Network__c</fullName>
         <externalId>false</externalId>
         <label>Network</label>
-        <required>true</required>
+        <required>false</required>
         <type>Picklist</type>
         <valueSet>
             <valueSetDefinition>
@@ -100,7 +100,7 @@
         <fullName>Program__c</fullName>
         <externalId>false</externalId>
         <label>Program</label>
-        <required>true</required>
+        <required>false</required>
         <type>Picklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -121,6 +121,16 @@
                     <default>false</default>
                     <label>CL</label>
                 </value>
+                <value>
+                    <fullName>TH</fullName>
+                    <default>false</default>
+                    <label>TH</label>
+                </value>
+                <value>
+                    <fullName>DL</fullName>
+                    <default>false</default>
+                    <label>DL</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -128,7 +138,7 @@
         <fullName>States__c</fullName>
         <externalId>false</externalId>
         <label>States</label>
-        <required>true</required>
+        <required>false</required>
         <type>MultiselectPicklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -140,7 +150,7 @@
         <fullName>Tier__c</fullName>
         <externalId>false</externalId>
         <label>Tier</label>
-        <required>true</required>
+        <required>false</required>
         <type>MultiselectPicklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -160,6 +170,11 @@
                     <fullName>E</fullName>
                     <default>false</default>
                     <label>E</label>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
