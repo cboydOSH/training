@@ -268,7 +268,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Chargent Automated Collections</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
