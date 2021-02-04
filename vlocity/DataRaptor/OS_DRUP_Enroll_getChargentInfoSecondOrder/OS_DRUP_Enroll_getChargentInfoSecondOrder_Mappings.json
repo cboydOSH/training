@@ -1,0 +1,46 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "chargentInfo",
+        "%vlocity_namespace%__FilterGroup__c": 0,
+        "%vlocity_namespace%__FilterOperator__c": "=",
+        "%vlocity_namespace%__FilterValue__c": "paymentId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Id",
+        "%vlocity_namespace%__InterfaceObjectLookupOrder__c": 1,
+        "%vlocity_namespace%__InterfaceObjectName__c": "ChargentOrders__ChargentOrder__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_getChargentInfoSecondOrderCustom3027",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_getChargentInfoSecondOrder",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "chargentInfo:secondOrderId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "chargentInfo:Id",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_getChargentInfoSecondOrderCustom3962",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_getChargentInfoSecondOrder",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "chargentInfo:secondOrderName",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "chargentInfo:Name",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_getChargentInfoSecondOrderCustom6264",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_getChargentInfoSecondOrder",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

@@ -1,0 +1,128 @@
+#hipaa .table {
+    margin-left:auto; 
+    margin-right:auto;
+    width: 160%
+  }
+
+#hipaa .delete{
+    fill: #e02745;
+    background-color: transparent;
+    border: none;
+    width: 16px;
+
+}
+
+#hipaa svg{
+       width: 16px;
+       height: 16px; 
+}
+
+
+#hipaa .add{
+    border: 1px solid;
+    border-color: #e02745;
+    color: #e02745 !important;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background: transparent;
+    // font-weight: bold !important;
+    line-height: normal !important;
+    transition: all 0.15s ease-in-out;
+}
+
+#hipaa .clear{
+    border: 1px solid;
+    border-color: #e02745;
+    color: #fff !important;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background: red;
+    // font-weight: bold !important;
+    line-height: normal !important;
+    transition: all 0.15s ease-in-out;
+}
+
+#hipaa .nds-input {
+            border: 0; border-bottom: 1px solid #dddbda; font-size: 13px; letter-spacing: normal; position: relative; width: 100%;
+         
+        }
+
+          ::placeholder {
+                color: gainsboro !important; opacity: 1 !important;
+            }
+
+/* The container */
+#hipaa .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+#hipaa .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+#hipaa .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+#hipaa .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+#hipaa .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#hipaa .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#hipaa .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#hipaa .container .checkmark:after {
+  left: 11px;
+  top: 4px;
+  width: 7px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#label-7 {
+      font-size: 14px;
+}
+
+#hipaa{
+  margin-top: -19px;
+}

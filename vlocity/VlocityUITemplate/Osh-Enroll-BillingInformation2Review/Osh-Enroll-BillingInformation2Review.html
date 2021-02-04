@@ -1,0 +1,289 @@
+<div id="billinformation" ng-controller="oshControllerBillingInformationReview" style="width:100%;" align="center" >
+    <div class="nds-canvas" style="width:80%; word-break:break-all;" align="center">
+        <div class="nds-text-align_center nds-m-around_x-small">
+            <h1 class="nds-is-relative nds-canvas__title" style="font-size:1.4rem;font-weight:bold;">Contribution Summary</h1>
+            <h2 class="nds-m-bottom--large nds-m-top--large nds-canvas__title" style="font-size:1.3rem;font-weight:bold;">First Contribution</h2>
+            <div>
+                <table class="nds-no-row-hover nds-table__custom nds-m-bottom--large">
+                    <thead class="nds-max-small-hide">
+                        <tr class="nds-text-heading_label">
+                            <th scope="col">
+                                <p>Date</p>
+                            </th>
+                            <th scope="col">
+                                <p>Billing Date</p>
+                            </th>
+                            <th scope="col">
+                                <p>Description</p>
+                            </th>
+                            <!--
+                            <th scope="col">
+                                <p class="nds-text-align_right">Amount</p>
+                            </th>
+                            -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Plan row-->
+                        <tr class="nds-border_bottom">
+                            <td data-label="Date">
+                                <input invalid type="text" class="nds-input slds-datepicker__month" id=" dateBillingEffDate"
+                                        data-date-format="MM/dd/yyyy" ng-model="bpTree.response.myFamily.effDateEnroll"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        placeholder="mm/dd/yyyy" style="pointer-events: none;"
+                                        >
+                            </td>
+                            <td data-label="Billing Date">
+                                <div class="nds-grid"><span class="nds-required ng-scope">*
+                                        </span><input invalid type="text" class="nds-input slds-datepicker__month"
+                                        data-date-format="MM/dd/yyyy" ng-model="bpTree.response.bill.billingDatePlan"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        placeholder="mm/dd/yyyy" required style="max-width:90% !important;"
+                                        data-max-date="today + {{bpTree.response.bill.formulaCompareTodayvsEffdate}} days" data-min-date="today"
+                                        >
+                                </div>
+                            </td>
+                            <td data-label="Product Name">
+                                <p>{{bpTree.response.planSelection.selectedPlans[0].Name}}.</p>
+                            </td>
+                            <!--
+                            <td class="nds-grid" data-label="Amount">
+                                <div width="10%"><p>$</p></div>
+                                <div class="nds-text-align_right" style="min-width:90%;"><p>{{(bpTree.response.bill.formulaPriceEnrollProgramsBill).toFixed(2)}}</p></div>
+                            </td>
+                            -->
+                        </tr>
+                        <!--One time App Fee row-->
+                        <tr class="nds-border_bottom" ng-if="bpTree.response.bill.formulaAditionalFee != 0">
+                            <td data-label="Date">
+                                <input invalid type="text" class="nds-input slds-datepicker__month" id=" dateBillingEffDate"
+                                        data-date-format="MM/dd/yyyy" ng-model="bpTree.response.myFamily.effDateEnroll"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        placeholder="mm/dd/yyyy" style="pointer-events: none;"
+                                        >
+                            </td>    
+                            <td data-label="Billing Date">
+                                <div class="nds-grid"><span class="nds-required ng-scope">*
+                                        </span><input invalid type="text" class="nds-input slds-datepicker__month"
+                                        data-date-format="MM/dd/yyyy" ng-model="bpTree.response.bill.billingDateAppFee"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        placeholder="mm/dd/yyyy" required style="max-width:90% !important;"
+                                        data-max-date="today + {{(bpTree.response.bill.formulaCompareTodayvsEffdate) + 10}} days" data-min-date="today"
+                                        >
+                                        </div>
+                            </td>                           
+                            <td data-label="Description">
+                                <p>One time application fee.</p>  
+                            </td>
+                            <!--
+                            <td class="nds-grid" data-label="Amount">
+                                <div width="10%"><p>$</p></div>
+                                <div class="nds-text-align_right" style="min-width:90%;"><p>{{(bpTree.response.bill.formulaAditionalFee).toFixed(2)}}</p></div>
+                            </td>
+                            -->
+                        </tr>
+                        <!--Additional Fee more than X member row-->
+                        <tr class="nds-border_bottom" ng-if="bpTree.response.bill.formulaMoreThan6FamilyMemberAdtionalFee != 0">
+                            <td  data-label="Date">                            
+                                <input invalid type="text" class="nds-input  " id=" dateBillingEffDate"
+                                        data-date-format="MM/dd/yyyy" ng-model="bpTree.response.myFamily.effDateEnroll"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        class="nds-input slds-datepicker__month" placeholder="mm/dd/yyyy"
+                                        style="pointer-events: none;"
+                                        >
+                            </td>
+                            <td data-label="Billing Date">
+                                <input invalid type="text" class="nds-input   slds-datepicker__month" id="billingDate"
+                                        data-date-format="MM/dd/yyyy" ng-model="bpTree.response.bill.billingDatePlan"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        placeholder="mm/dd/yyyy"
+                                        style="pointer-events: none;"
+                                        >
+                            </td>
+                            <td data-label="Description">
+                               <p>Additional fee for more than 6 family members.</p>
+                            </td>
+                            <!--
+                            <td class="nds-grid" data-label="Amount">
+                                <div width="10%"><p>$</p></div>
+                                <div class="nds-text-align_right" style="min-width:90%;"><p>{{(bpTree.response.bill.formulaMoreThan6FamilyMemberAdtionalFee).toFixed(2)}}</p></div>
+                            </td>
+                            -->
+                        </tr>
+                        <!--Adtional Fee more than 6-->
+                        <tr class="nds-border_bottom" ng-if="bpTree.response.bill.formulaAditionalFeeMonthly != 0">
+                            <td data-label="Date">
+                                <input invalid type="text" class="nds-input   slds-datepicker__month" id=" dateBillingEffDate"
+                                        data-date-format="MM/dd/yyyy" ng-model="bpTree.response.myFamily.effDateEnroll"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        placeholder="mm/dd/yyyy"
+                                        style="pointer-events: none;"
+                                        >
+                            </td>
+                            <td data-label="Billing Date">
+                                <input invalid type="text"
+                                        class="nds-input slds-datepicker__month  "
+                                        data-date-format="MM/dd/yyyy" ng-model="bpTree.response.bill.billingDatePlan"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        placeholder="mm/dd/yyyy"
+                                        style="pointer-events: none;"
+                                        >
+                            </td>  
+                            <td data-label="Description">
+                               <p>Monthly Administration Fee.</p>
+                            </td>
+                            <!--
+                            <td class="nds-grid" data-label="Amount">
+                                <div width="10%"><p>$</p></div>
+                                <div class="nds-text-align_right" style="min-width:90%;"><p>{{(bpTree.response.bill.formulaAditionalFeeMonthly).toFixed(2)}}</p></div>
+                            </td>
+                            -->
+                        </tr>
+                        <!--Total row-->
+                        <!--
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="nds-text-align_right   " data-label="Total">
+                               <div class="nds-m-right_x-small">Total:</div>  
+                            </td>
+                            <td class="nds-grid" data-label="Amount" ng-if="bpTree.response.bill.formulaTotalfee != null">
+                                <div width="10%"><p>$</p></div> 
+                                <div class="nds-text-align_right" style="min-width:90%;"><p>{{(bpTree.response.bill.formulaTotalfee).toFixed(2)}}</p></div>
+                            </td>
+                            <td class="nds-grid" data-label="Amount" ng-if="bpTree.response.bill.formulaTotalfee == null">
+                                <div width="10%"><p>$</p></div> 
+                                <div class="nds-text-align_right" style="min-width:90%;"><p>0.00</p></div>
+                            </td>
+                        </tr>
+                        -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Table #2 recurring-->
+            <div class="nds-text-align_center nds-m-around_x-small">
+                <h2 class="nds-is-relative nds-canvas__title nds-m-bottom--large" style="font-size:1.3rem;font-weight:bold;">Recurring Contributions</h2>
+                <div>
+                    <table class="nds-no-row-hover nds-table__custom">
+                        <thead class="nds-max-small-hide">
+                            <tr class="nds-text-heading_label">
+                                <!-- <th scope="col">
+                                    <div>Date</div>
+                                </th> -->
+                                <th scope="col">
+                                    <p>Description</p>
+                                </th>
+                                <th scope="col">
+                                    <p>Billing Date</p>
+                                </th>
+                                <!--
+                                <th scope="col">
+                                    <p class="nds-text-align_right">Amount</p>
+                                </th>
+                                -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--Plan Price Reccurring table-->
+                            <tr class="nds-border_bottom">
+                                <!-- <td class=" dateBillingEffDate " data-label="Date">
+                                    {{bpTree.response.Quote.effDate}}
+                                </td> -->
+                                <td class=" dateBillingEffDate " data-label="Description">
+                                    <p>{{bpTree.response.planSelection.selectedPlans[0].Name}}.</p>
+                                </td>
+                                <td data-label="Billing Day">
+                                        <div class="nds-grid"><input invalid type="text"
+                                            class="nds-input slds-datepicker__month nds-text-align_center "
+                                            data-date-format="dd" ng-model="bpTree.response.bill.billingDatePlan"
+                                            model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                            placeholder="dd" style="pointer-events: none; max-width:14% !important; min-width:12% !important;"
+                                        ><p>of each Month</p></div>
+                                </td>
+                                <!--
+                                <td class="nds-grid" data-label="Amount">
+                                    <div width="10%"><p>$</p></div>
+                                    <div class="nds-text-align_right" style="min-width:90%;"><p>{{(bpTree.response.bill.formulaPriceEnrollProgramsBill).toFixed(2)}}</p></div>
+                                </td>
+                                -->
+                            </tr>
+                            <!--Add fee more than x recurring table-->
+                            <tr class="nds-border_bottom" ng-if="bpTree.response.bill.formulaMoreThan6FamilyMemberAdtionalFee != 0">
+                                <!-- <td class=" dateBillingEffDate " data-label="Date">
+                                    {{bpTree.response.Quote.effDate}}
+                                </td> -->
+                                <td class="dateBillingEffDate" data-label="Description">
+                                <p>Additional fee for more than 6 family members.</p>
+                                </td>
+                                <td data-label="Billing Day">
+                                        <div class="nds-grid"><input invalid type="text"
+                                            class="nds-input slds-datepicker__month nds-text-align_center "
+                                            data-date-format="dd" ng-model="bpTree.response.bill.billingDatePlan"
+                                            model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                            placeholder="dd" style="pointer-events: none; max-width:14% !important; min-width:12% !important;"
+                                        ><p>of each Month</p></div>
+                                </td>
+                                <!--
+                                <td class="nds-grid" data-label="Amount">
+                                    <div width="10%">$</div>
+                                    <div class="nds-text-align_right   " style="min-width:90%;"><p>{{(bpTree.response.bill.formulaMoreThan6FamilyMemberAdtionalFee).toFixed(2)}}</p></div>
+                                </td>
+                                -->
+                            </tr>
+                            <!--Monthly Fee recurring table-->
+                            <tr class="nds-border_bottom" ng-if="bpTree.response.bill.formulaAditionalFeeMonthly != 0">
+                                <!-- <td class=" dateBillingEffDate " data-label="Date">
+                                    {{bpTree.response.Quote.effDate}}
+                                </td> -->
+                                <td data-label="Description">
+                                <p>Monthly Administration Fee.</p>
+                                </td>
+                                <td data-label="Billing Day">
+                                        <div class="nds-grid"><input invalid type="text"
+                                            class="nds-input nds-text-align_center slds-datepicker__month  "
+                                            data-date-format="dd" ng-model="bpTree.response.bill.billingDatePlan"
+                                            model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                            placeholder="dd" style="pointer-events: none; max-width:14% !important; min-width:12% !important;"
+                                        ><p>of each Month</p></div>
+                                </td>
+                                <!--
+                                <td class="nds-grid" data-label="Amount">
+                                    <div width="10%"><p>$</p></div>
+                                    <div class="nds-text-align_right" style="min-width:90%;"><p>{{(bpTree.response.bill.formulaAditionalFeeMonthly).toFixed(2)}}</p></div>
+                                </td>
+                                -->
+                            </tr>
+                            <!--toatl recurring table-->
+                            <!--
+                            <tr>
+                                <td class=" dateBillingEffDate " data-label="Date">
+                                
+                                </td>
+                                <td class="nds-text-align_right">
+                                </td>
+                                <td class="nds-text-align_right" data-label="Description">
+                                <div class="nds-m-right_x-small"><p>Total:</p></div>  
+                                </td>
+                                <td class="nds-grid" data-label="Amount" ng-if="bpTree.response.bill.formulaTotalfee != null">
+                                    <div width="10%"><p>$</p></div> 
+                                    <div class="nds-text-align_right" style="min-width:90%;"><p>{{(bpTree.response.bill.formulaTotalfee - bpTree.response.bill.formulaAditionalFee).toFixed(2)}}</p></div>
+                                </td>
+                                <td class="nds-grid" data-label="Amount" ng-if="bpTree.response.bill.formulaTotalfee == null">
+                                    <div width="10%"><p>$</p></div> 
+                                    <div class="nds-text-align_right" style="min-width:90%;"><p>0.00</p></div>
+                                </td>
+                            </tr>
+                            -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="nds-m-top_x-small nds-text-align_center" ng-if="bpTree.response.planSelection.selectedPlans[0].flagDifference == true && (bpTree.response.myFamily.FormulaConForDiplayAddInfo180 == true || bpTree.response.myFamily.FormulaConForDiplayAddInfo30 == true)">
+                <p style=""><span><b role="button" tabindex="0"></b>*Contributions will change on the billing cycle following {{ bpTree.response.RatingMemberName }}'s next birthday.</span>
+                </p>
+            </div>          
+        </div>
+    </div>
+</div>

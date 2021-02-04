@@ -1,0 +1,2858 @@
+{
+    "Account": {
+        "ContactId": "0038A00000T28amQAB",
+        "Id": "0018A00000VZhQkQAL",
+        "Name": "Aldous Huxley"
+    },
+    "AccountMember": [
+    ],
+    "AccountPrimary": [
+        {
+            "%vlocity_namespace%__Gender__pc": "Male",
+            "Age__c": 29,
+            "BillingCity": "Los Angeles",
+            "BillingCountry": "United States",
+            "BillingPostalCode": "90017",
+            "BillingState": "CA",
+            "BillingStreet": "1221 West 3rd Street",
+            "Ethnicity__c": "White",
+            "FirstName": "Aldous",
+            "Id": "0018A00000VZhQkQAL",
+            "Is_Hippa_Authorized__c": true,
+            "LastName": "Huxley",
+            "Name": "Aldous Huxley",
+            "PersonBirthdate": "1991-08-08",
+            "PersonEmail": "asd@asd.com",
+            "Phone": "6516516516",
+            "RecordTypeId": "0124P000000uS4rQAE",
+            "Relationship__pc": "Primary",
+            "SSN_ITIN__c": "561-65-1651",
+            "address": "1221 West 3rd Street",
+            "age": 29,
+            "city": "Los Angeles",
+            "country": "United States",
+            "dob": "08/08/1991",
+            "email": "asd@asd.com",
+            "ethnicity": "White",
+            "fname": "Aldous",
+            "fullname": "Aldous Huxley",
+            "gender": "Male",
+            "id": "0018A00000VZhQkQAL",
+            "isHipaaAuthorized": true,
+            "lname": "Huxley",
+            "parent_id": "0018A00000VZhQkQAL",
+            "phone": "6516516516",
+            "relationship": "Primary",
+            "ssnItin": "561-65-1651",
+            "state": "CA",
+            "zipcode": "90017"
+        }
+    ],
+    "AccountsForOSHEmployees": [
+        {
+            "Id": "0018A00000Twm85QAB",
+            "Monthly_Commission_Fee__c": 100,
+            "Name": "Maris Walter",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000Twm85QAB"
+            }
+        },
+        {
+            "Id": "0018A00000TwmBUQAZ",
+            "Monthly_Commission_Fee__c": 80,
+            "Name": "Aamer Rehman",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TwmBUQAZ"
+            }
+        },
+        {
+            "Id": "0018A00000TzHtdQAF",
+            "Monthly_Commission_Fee__c": 30,
+            "Name": "Forever young",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+            }
+        },
+        {
+            "Id": "0018A00000TyjGAQAZ",
+            "Monthly_Commission_Fee__c": 45,
+            "Name": "OSH Enrollment",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+            }
+        }
+    ],
+    "AgentLabel": "0018A00000Twm6dQAB",
+    "AssetId": "02i8A000004Dg8cQAC",
+    "BlkMedicalQuestions": {
+        "Text35": null
+    },
+    "ContextId": "",
+    "ContractServiceRemoteAction": {
+        "contractId": "8008A000000Ws3cQAC",
+        "error": "OK",
+        "errorCode": "INVOKE-200"
+    },
+    "ContractServiceRemoteActionStatus": true,
+    "DRTAGetContractServiceInput": {
+        "contractJson": {
+            "AccountId": "0018A00000VZhQkQAL",
+            "additionalFields": {
+                "%vlocity_namespace%__EnrollmentStartDate__c": "2020-08-14"
+            },
+            "effectiveDate": "2020-08-18",
+            "productConfigurationDetail": {
+                "records": [
+                    {
+                        "%vlocity_namespace%__AttributeSelectedValues__c": "{\"PROCODE\":\"OSHCLASSCROWN\",\"ISAAMT\":\"5000\",\"DISCLAIMERCARD\":\"*Out-of-network member sharing reimbursement is based on the lesser of the Out-of-network provider actual billed amount or Maximum Reasonable Guidelines for the Eligible Services provided\",\"PRESDISPROG\":\"Access to Prescription Drug Discounts on Generic and Brand Name Drugs\",\"MAXLIMITINC\":\"$500,000\",\"HOSTP\":\"Eligible\",\"INOUTSURG\":\"Eligible - 90 day wait\",\"MATERNITY\":\"Eligible - Conception must be after Effective Date\",\"EMERGROOM\":\"$300 Visit Fee\",\"TELEMED\":\"Doctor Access 24/7  ($0 Consult Fee)\",\"SPEC\":\"$75 Visit Fee Referral required $0 Visit Fee After ISA\",\"DIAGXLAB\":\"PCP/Urgent Care\",\"URGCAREFAC\":\"$20 Visit Fee - 2 Per Program Year\",\"PRICAREPHY\":\"$20 Visit Fee - 5 Per Program Year\",\"PREVSVCS\":\"100% up to $1,000 Maximum per program year\",\"PROVNET\":\"First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare\"}",
+                        "%vlocity_namespace%__CalculatedPriceJSON__c": "{\"ID\":\"6\",\"Member\":457.9,\"MemberPlusOne\":570.53,\"Family\":725.4,\"MemberDiff\":524.34,\"MemberPlusOneDiff\":662.95,\"FamilyDiff\":853.56}",
+                        "%vlocity_namespace%__ItemName__c": "OneShare Classic - Crown",
+                        "%vlocity_namespace%__NeedReprice__c": false,
+                        "%vlocity_namespace%__ProductChildItemSequence__c": 0,
+                        "%vlocity_namespace%__ProductName__c": "OneShare Classic - Crown",
+                        "%vlocity_namespace%__RecordTypeName__c": "Product",
+                        "%vlocity_namespace%__TotalAmount__c": 457.9,
+                        "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                        "Id": "0QL8A000000zK8oWAE",
+                        "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                        "LineNumber": "00011764",
+                        "Name": "OneShare Classic - Crown",
+                        "Price": 457.9,
+                        "PriceDiff": 524.34,
+                        "Product2Id": "01t8A00000496ldQAA",
+                        "ProductCode": "OSHCLASSCROWN",
+                        "QuoteId": "0Q08A000000JgoqSAC",
+                        "TotalPrice": 457.9,
+                        "UnitPrice": 457.9,
+                        "attributeCategories": {
+                            "records": [
+                                {
+                                    "Code__c": "PROGCARDATT",
+                                    "Name": "Program Card Attributes",
+                                    "displaySequence": 1,
+                                    "id": "a0y8A000001oo85QAA",
+                                    "productAttributes": {
+                                        "records": [
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            },
+                                            {
+                                            }
+                                        ],
+                                        "totalSize": 16
+                                    }
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "childProducts": {
+                            "actions": {
+                                "getCandidateChildProducts": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "getListChildProducts",
+                                            "prodRecordType": "CoverageSpec",
+                                            "quoteId": "0Q08A000000JgoqSAC"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "updateAllCoverageAttribute": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateAllChildLines",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "records": [
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"DISCLAIMERMEMBERDISC2\":\"Discount Programs Not Owned or Operated by OneShare Health and  are made available to members by a fee from the contributions\",\"DISCPROGRAM\":\"Dental Discount / Diabetic Care and Supplies / Hearing Discount / Lab Discount / Vision and Lasik Discount / Lifeline Screening Discounts\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 0,
+                                    "%vlocity_namespace%__ProductName__c": "Membership Discount Program",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8vWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011771",
+                                    "Name": "Membership Discount Program",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A000004UI3lQAG",
+                                    "ProductCode": "MEMBDISCPROG",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8vWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "MEMBERDISCPROG",
+                                                "Name": "Membership Discount Program",
+                                                "displaySequence": 5,
+                                                "id": "a0y8A000001xj9MQAQ",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 2
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 0,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000EpCSQA0",
+                                    "productId": "01t8A000004UI3lQAG",
+                                    "productName": "Membership Discount Program",
+                                    "quoteLineItemId": "0QL8A000000zK8vWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"EMERROOM\":\"$300 Visit Fee Emergency room services for a Life Threatening/Life Altering medical emergency provided on an Outpatient basis at a Hospital. If at the Hospital for 24 hours or more, ER will be considered hospitalization and will apply to the Member's ISA.\",\"AMBULANCE\":\"Land or air transportation for medically necessary emergency services to the nearest medical Facility or medical transportation between Facilities; when medically necessary, after the ISA is met, up to a Maximum Sharing of $10,000 per occurrence.\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 1,
+                                    "%vlocity_namespace%__ProductName__c": "Emergency",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8zWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011775",
+                                    "Name": "Emergency",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A0000043pgSQAQ",
+                                    "ProductCode": "EMERGENCY",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8zWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 5
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 1,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep3GQAS",
+                                    "productId": "01t8A0000043pgSQAQ",
+                                    "productName": "Emergency",
+                                    "quoteLineItemId": "0QL8A000000zK8zWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"WAITPERIOD\":\"Unless stated otherwise there is a 90 day waiting period for any medical expenses other than for accidents, injuries, acute illnesses and immunizations.\",\"ISAAMOUNT\":\"5000\",\"GUIDELINE\":\"Medically necessary expenses that occur after your Effective Date. These are medical services from a health care provider which are eligible for sharing in accordance with the Membership Guidelines.\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 2,
+                                    "%vlocity_namespace%__ProductName__c": "General",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8yWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011774",
+                                    "Name": "General",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A0000043pg5QAA",
+                                    "ProductCode": "GENERAL",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8yWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 5
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 2,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep3kQAC",
+                                    "productId": "01t8A0000043pg5QAA",
+                                    "productName": "General",
+                                    "quoteLineItemId": "0QL8A000000zK8yWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SPECIALISTVISITS\":\"Inpatient Specialist Visits are subject to ISA.\",\"INPASURGERY\":\"Inpatient surgery following the 180 daywaiting period after the ISA is met, up to the Maximum Limit Per Incident. Life Threatening or Life Altering emergencies are immediately eligible for sharing.\",\"HOSPITALIZATION3\":\"Acute illness, accident or Life Threatening/Life altering emergency are immediately eligible.\",\"HOSPITALIZATION2\":\"After the 90 day waiting period, Inpatient Hospitalization is eligible for sharing, if a member is confined in a due to an eligible sickness or injury as directed by a Physician Subject to the ISA, up to the Maximum Limit Per Incident.\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 3,
+                                    "%vlocity_namespace%__ProductName__c": "Inpatient Services",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8xWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011773",
+                                    "Name": "Inpatient Services",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A0000043pgTQAQ",
+                                    "ProductCode": "INPATSVCS",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8xWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 8
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 3,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep2wQAC",
+                                    "productId": "01t8A0000043pgTQAQ",
+                                    "productName": "Inpatient Services",
+                                    "quoteLineItemId": "0QL8A000000zK8xWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"MAXSHARING\":\"Maximum Limit Per Incident $500,000* Lifetime Maximum per Member: $1,000,000. *Optional increase of $500,000 Maximum Per Incident available\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 4,
+                                    "%vlocity_namespace%__ProductName__c": "Maximum Limits",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8wWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011772",
+                                    "Name": "Maximum Limits",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A0000043pgQQAQ",
+                                    "ProductCode": "MAXLIMITS",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8wWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "PROGCARDATT",
+                                                "Name": "Program Card Attributes",
+                                                "displaySequence": 1,
+                                                "id": "a0y8A000001oo85QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 1
+                                                }
+                                            },
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 1
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 2
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 4,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep44QAC",
+                                    "productId": "01t8A0000043pgQQAQ",
+                                    "productName": "Maximum Limits",
+                                    "quoteLineItemId": "0QL8A000000zK8wWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"EQUALTCARE\":\"Non-experimental health care treatment which may deliver care that is more cost effective, less invasive and within generally accepted medical practice, may be eligible for sharing. Prior approval is required from OneShare Health.\",\"PROTHESIS\":\"Prosthesis needs, subject to review, are eligible, after the ISA is met, up to $1,500 Maximum Sharing. Replacement, repair and maintenance of are not eligible for Sharing.\",\"SLEEPAPNEA\":\"after the Member’s ISA is met. Testing must be ordered by a Physician. Limit one per member per program year.\",\"CANCERMEMNEVDIAG\":\"Sharing is eligible after a 90 day waiting period from the Member's effective date.\",\"CANCERPREEXREC\":\"Cancer Expenses are not eligible for sharing.\",\"CANCERMEMDIAGRECWITHN5\":\"If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.\",\"CANCERMEMDIAGOTRAT\":\"If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.\",\"CANCERWAITPERNDR\":\"If Cancer is diagnosed within the 90 day waiting period, the diagnosis and treatment expenses related to that specific Cancer, recurrence or metastasis are not eligible for sharing.\",\"CANREQUIRFORMEM\":\"Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 5,
+                                    "%vlocity_namespace%__ProductName__c": "Other",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8uWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011770",
+                                    "Name": "Other",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A0000043pgPQAQ",
+                                    "ProductCode": "OTHER",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8uWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 14
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 5,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep3QQAS",
+                                    "productId": "01t8A0000043pgPQAQ",
+                                    "productName": "Other",
+                                    "quoteLineItemId": "0QL8A000000zK8uWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"PRESDISCPROG\":\"Discount Services - Envision RX\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 6,
+                                    "%vlocity_namespace%__ProductName__c": "Outpatient Prescription Discount",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8tWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011769",
+                                    "Name": "Outpatient Prescription Discount",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A000004W5bkQAC",
+                                    "ProductCode": "OUTPATDISCOUNT",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8tWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 1
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 6,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep6ZQAS",
+                                    "productId": "01t8A000004W5bkQAC",
+                                    "productName": "Outpatient Prescription Discount",
+                                    "quoteLineItemId": "0QL8A000000zK8tWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"OUTPATTHERAPY3\":\"Up to a maximum of 10 combined visits per Incident.\",\"OUTPATTHERAPY2\":\"If a condition is related to an eligible diagnosis, ordered by a Physician and performed by a licensed therapist, it is Eligible for sharing after a $20 Visit Fee, per visit up to the Maximum Limit Per Incident.\",\"SPECIALISTVISITS\":\"Services provided for the diagnosis, treatment, management of an eligible illness or injury $75 Visit Fee per Outpatient visit.\",\"PREVSERVWELL\":\"Preventive Services and one Wellness Visit are eligible for sharing, not subject to the ISA, up to $1,000 Maximum Sharing during the program year.\",\"HOMEHEALTHCARE\":\"Home Care  following a Hospital stay. Home Care is limited to 30 calendar days from the discharge date of the Member's Inpatient Hospital stay, after the ISA is met, up to the Maximum Limit per Incident.\",\"LABDIAGXRAYS\":\"Included at any lab facility, after the ISA is met. If services are provided at the PCP or Urgent Care facility, the Visit Fee will apply in lieu of the ISA, subject to the program limitations.\",\"SURGERY\":\"Outpatient surgery following the 180 day waiting period after the  ISA is met, up to the Maximum Limit Per Incident. Life Threatening or Life Altering emergencies are immediately eligible for sharing.\",\"URGENTCARE\":\"For the diagnosis, treatment, management of an eligible illness or injury serious enough that a member would seek care right away, but not so severe as to require Hospital emergency department care. $20 Visit Fee; Limit 1 visit per member per program year\",\"PRICAREPHYSVISIT\":\"Visits for the diagnosis, treatment, management or prevention of an illness or injury. $20 Visit Fee; limit 3 visits per program year per member per year.\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 7,
+                                    "%vlocity_namespace%__ProductName__c": "Outpatient Services",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8sWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011768",
+                                    "Name": "Outpatient Services",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A00000496MIQAY",
+                                    "ProductCode": "OUTPATSVCS",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8sWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 24
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 7,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep2cQAC",
+                                    "productId": "01t8A00000496MIQAY",
+                                    "productName": "Outpatient Services",
+                                    "quoteLineItemId": "0QL8A000000zK8sWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"TOBACCO\":\"Tobacco Use: If a Member uses or used tobacco in any form, (this includes vaping of any nicotine products), any health-related issues are Not Eligible for Sharing.\",\"SPECICHROELI\":\"Specified Chronic Conditions that have received treatment or medication may be eligible, immediately, for physician office, or physician ordered lab visits for routine maintenance of the Chronic Condition, preventing further complications.\",\"SPECCHRONCOND\":\"Diabetes 1 &2;  Hypertension, Thyroid (Hyper/Hypo), Hyperlipidemia\",\"ROUTMAINTCHRCOND\":\"Routine Maintenance of Chronic Conditions: Care that follows diagnosis and any active care once the  health status has become stable. The goal of maintenance care is to monitor and maintain the improvement that was accomplished with active treatment.\",\"PREEXIST24DEF\":\"Any sickness or injury for which a Member received medical treatment, advice, care or services including diagnostic measures, took prescribed drugs or showed signs or symptoms, whether treated or not, within 24 months of Member's program  effective date.\",\"PREEXIST24ELE\":\"Eligibility for a Pre-Existing Condition has a 24 month waiting period.\",\"MEDNONCOMP\":\"Sharing for medical services will not be available when the conditions is shown to be the result of medical non-compliance with the Physician's recommended care, treatment or advice.\",\"CANCERLIMITS\":\"Pre-existing or Recurring Cancer are not eligible for sharing.\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 8,
+                                    "%vlocity_namespace%__ProductName__c": "Program Limitations",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8rWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011767",
+                                    "Name": "Program Limitations",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A0000043pgRQAQ",
+                                    "ProductCode": "PROGLIMITS",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8rWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 10
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 8,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep31QAC",
+                                    "productId": "01t8A0000043pgRQAQ",
+                                    "productName": "Program Limitations",
+                                    "quoteLineItemId": "0QL8A000000zK8rWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"OUTNETWORK\":\"Using a Non-PPO provider is still the Member’s choice. The Non-PPO provider services can result in higher medical bills. Non-PPO Providers and Facilities may bill members for the difference between the bill charges and the program’s allowed amount.\",\"MAXREAGUIDELINE\":\"Out of Network member sharing reimbursement is based on the lesser of the out of network provider actual billed amount or reasonable and customary charges for the Eligible services provided.\",\"FIRSTHEALTH\":\"First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 9,
+                                    "%vlocity_namespace%__ProductName__c": "Provider Network",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8qWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011766",
+                                    "Name": "Provider Network",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A000004UKKsQAO",
+                                    "ProductCode": "PROVNETWRK",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8qWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 7
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 9,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep3uQAC",
+                                    "productId": "01t8A000004UKKsQAO",
+                                    "productName": "Provider Network",
+                                    "quoteLineItemId": "0QL8A000000zK8qWAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"CANCERPREEXREC\":\"Cancer Expenses are not eligible for sharing.\",\"CANCERLIMITMEMMORE5YEAR\":\"If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.\",\"CANCERLIMITDIAGWUTHN5YEAR\":\"If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing\",\"CANCERNEEDDIAGTREATMORE5YR\":\"Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.\",\"CANCERMEMBNEVERDIAGRECTREAT\":\"Sharing is eligible after a 90 day waiting period from the Member's effective date. If Cancer is diagnosed within the 90 day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are not eligible for sharing.\",\"CANCERSHLIMT\":\"The Lifetime Limit for all Cancer is $500,000; each Incident cannot exceed the Maximum Limit Per Incident.\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 10,
+                                    "%vlocity_namespace%__ProductName__c": "Cancer",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK90WAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011776",
+                                    "Name": "Cancer",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A000004CGe5QAG",
+                                    "ProductCode": "CANCER",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK90WAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        },
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 6
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 10,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000EpAvQAK",
+                                    "productId": "01t8A000004CGe5QAG",
+                                    "productName": "Cancer",
+                                    "quoteLineItemId": "0QL8A000000zK90WAE"
+                                },
+                                {
+                                    "%vlocity_namespace%__AttributeSelectedValues__c": "{\"TELEMEDICINE\":\"$0 Consult Fee (Dialcare) 24/7/365. Talk to a doctor by phone or online video to get a diagnosis, treatment options and prescription, if medically necessary.\"}",
+                                    "%vlocity_namespace%__NeedReprice__c": false,
+                                    "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__ProductChildItemSequence__c": 11,
+                                    "%vlocity_namespace%__ProductName__c": "Telemedicine",
+                                    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                                    "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                                    "%vlocity_namespace%__TotalAmount__c": 0,
+                                    "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                                    "Id": "0QL8A000000zK8pWAE",
+                                    "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                                    "LineNumber": "00011765",
+                                    "Name": "Telemedicine",
+                                    "Price": 0,
+                                    "Product2Id": "01t8A000004UKPPQA4",
+                                    "ProductCode": "TELEMEDICINE",
+                                    "QuoteId": "0Q08A000000JgoqSAC",
+                                    "TotalPrice": 0,
+                                    "UnitPrice": 0,
+                                    "actions": {
+                                        "updateChildLine": {
+                                            "client": {
+                                                "params": {
+                                                }
+                                            },
+                                            "remote": {
+                                                "params": {
+                                                    "methodName": "updateChildLine",
+                                                    "quoteId": "0Q08A000000JgoqSAC",
+                                                    "quoteLineId": "0QL8A000000zK8pWAE",
+                                                    "reprice": true
+                                                }
+                                            },
+                                            "rest": {
+                                                "link": null,
+                                                "method": null,
+                                                "params": {
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "LEV2PROGATTR",
+                                                "Name": "Level 2 Program Attributes",
+                                                "displaySequence": 4,
+                                                "id": "a0y8A000001oo86QAA",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                        }
+                                                    ],
+                                                    "totalSize": 1
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "currencyCode": "USD",
+                                    "currencySymbol": "$",
+                                    "displaySequence": 11,
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "lineRecordType": "CoverageSpec",
+                                    "needReprice": false,
+                                    "pciId": "a6y8A000000Ep28QAC",
+                                    "productId": "01t8A000004UKPPQA4",
+                                    "productName": "Telemedicine",
+                                    "quoteLineItemId": "0QL8A000000zK8pWAE"
+                                }
+                            ],
+                            "totalSize": 12
+                        },
+                        "coverageCount": 12,
+                        "currencyCode": "USD",
+                        "currencySymbol": "$",
+                        "displaySequence": 0,
+                        "flagDifference": true,
+                        "hasAttributes": true,
+                        "isCalculated": true,
+                        "lineRecordType": "Product",
+                        "needReprice": false,
+                        "originalIndex": 0,
+                        "productId": "01t8A00000496ldQAA",
+                        "productName": "OneShare Classic - Crown",
+                        "quoteLineItemId": "0QL8A000000zK8oWAE",
+                        "recordType": "Product",
+                        "selected": true
+                    }
+                ]
+            },
+            "term": "Annual"
+        }
+    },
+    "DRTAGetContractServiceInputStatus": true,
+    "DRUpdateMemberInfo": {
+        "Account_1": [
+            {
+                "%vlocity_namespace%__Gender__pc": "Male",
+                "BillingCity": "Los Angeles",
+                "BillingCountry": "United States",
+                "BillingPostalCode": "90017",
+                "BillingState": "CA",
+                "BillingStreet": "1221 West 3rd Street",
+                "Ethnicity__c": "White",
+                "FirstName": "Aldous",
+                "Id": "0018A00000VZhQkQAL",
+                "Is_Hippa_Authorized__c": true,
+                "LastName": "Huxley",
+                "PersonEmail": "asd@asd.com",
+                "Phone": "6516516516",
+                "Relationship__pc": "Primary",
+                "SSN_ITIN__c": "561-65-1651",
+                "UpsertSuccess": true
+            }
+        ],
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "DRUpdateMemberInfoStatus": true,
+    "DocumentGenerationMode": "singleDocumentGeneration",
+    "EditFamilyMember": [
+        {
+            "$$hashKey": "object:1911",
+            "%vlocity_namespace%__Gender__pc": "Male",
+            "Age__c": 29,
+            "BillingCity": "Los Angeles",
+            "BillingCountry": "United States",
+            "BillingPostalCode": "90017",
+            "BillingState": "CA",
+            "BillingStreet": "1221 West 3rd Street",
+            "Ethnicity__c": "White",
+            "FirstName": "Aldous",
+            "Id": "0018A00000VZhQkQAL",
+            "Is_Hippa_Authorized__c": true,
+            "LastName": "Huxley",
+            "Name": "Aldous Huxley",
+            "PersonBirthdate": "1991-08-08",
+            "PersonEmail": "asd@asd.com",
+            "Phone": "6516516516",
+            "RecordTypeId": "0124P000000uS4rQAE",
+            "Relationship__pc": "Primary",
+            "SSN_ITIN__c": "561-65-1651",
+            "address": "1221 West 3rd Street",
+            "age": 29,
+            "city": "Los Angeles",
+            "country": "United States",
+            "dob": "08/08/1991",
+            "email": "asd@asd.com",
+            "ethnicity": "White",
+            "fname": "Aldous",
+            "fullname": "Aldous Huxley",
+            "gender": "Male",
+            "id": "0018A00000VZhQkQAL",
+            "isHipaaAuthorized": true,
+            "lname": "Huxley",
+            "parent_id": "0018A00000VZhQkQAL",
+            "phone": "6516516516",
+            "relationship": "Primary",
+            "ssnItin": "561-65-1651",
+            "state": "CA",
+            "zipcode": "90017"
+        }
+    ],
+    "EffectiveDateForEnrollment": "08/14/2020",
+    "GenerateDocument": {
+        "ConcatenateNamesFormula": "Aldous.Huxley",
+        "FormulaHasPdf": false,
+        "NotSelfServiceCheckBox": false,
+        "SelfServiceCheckBox": null,
+        "StateDisclaimer1Formula": false,
+        "StateDisclaimer2Formula": false,
+        "UserProfileFormula": "System Administrator"
+    },
+    "Members": "",
+    "MonthlyFee": 0,
+    "ObjectId": "8008A000000Ws3cQAC",
+    "PrimarystoredMonthlyContribution": 45,
+    "Quote": {
+        "AccountId": "0018A00000VZhQkQAL",
+        "Id": "0Q08A000000JgoqSAC",
+        "Name": "Quote 2020-08-12 19:00:00",
+        "Pricebook2Id": "01s8A000001GlohQAC",
+        "QuoteNumber": "00000418",
+        "effDate": "08/14/2020",
+        "effDateEnroll": "08/14/2020"
+    },
+    "QuoteOptions": "something",
+    "RatingMemberId": "0018A00000VZhQkQAL",
+    "RatingMemberName": "Aldous Huxley",
+    "ResponseActionStatus": true,
+    "Search": {
+        "CancelFormula": "/",
+        "EnterEnrollerID": null,
+        "FormulaEnrollerId": false,
+        "ServicingAgentDropdown": null,
+        "questionsBlock": {
+            "FormulaQuoteOptionsPresent": "Has Value",
+            "MessagingNotFoundForSearchQuotes": null,
+            "RadioForLookingThroughName": false,
+            "TxtNameForSearch": null,
+            "packetNumber": "081320-00002",
+            "preExistencePacketNumber": "Yes"
+        }
+    },
+    "SelectedServicingAgentDropdown": {
+        "Id": "0018A00000TyjGAQAZ",
+        "Monthly_Commission_Fee__c": 45,
+        "Name": "OSH Enrollment",
+        "RecordTypeId": "0124P000000uPa9QAE",
+        "attributes": {
+            "type": "Account",
+            "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+        }
+    },
+    "ServicingAgent": "Needs Dropdown selection",
+    "ThisisEnroll": true,
+    "UserEmail": "andres.deus@arcsona.com",
+    "UserType": "OSH Employee",
+    "Welcome": {
+        "Address": "1221 West 3rd Street",
+        "City": "Los Angeles",
+        "Email": "asd@asd.com",
+        "FormulaState": true,
+        "MessagingStatesoff": true,
+        "State": "CA",
+        "TAAddressGoogle-Block": {
+            "TAAddressGoogle": "1221 W 3rd St, Los Angeles, CA 90017, USA",
+            "address": "1221 West 3rd Street",
+            "buildingSuiteApartment": null,
+            "city": "Los Angeles",
+            "country": "United States",
+            "state": "CA",
+            "zipCode": "90017"
+        },
+        "Telephone": "6516516516",
+        "ZipCode": "90017",
+        "fname": "Aldous",
+        "lname": "Huxley"
+    },
+    "WelcomeFinal": {
+        "WelcomeMemberPortal": {
+            "WelcomeMemberPortalLink": "https://devvl2-oshtraining.cs45.force.com/membercommunity",
+            "WelcomeMemberPortalPassword": "E/KGy[mL9-P]T;yU",
+            "WelcomeMemberPortalUserName": null
+        },
+        "WelcomeMembershipInformation": {
+            "WelcomeEffectiveDate": null,
+            "WelcomeGroupCode": null,
+            "WelcomeMemberID": null,
+            "WelcomeMemberName": null,
+            "WelcomeProgramName": null,
+            "WelcomeRXBinFormula": null,
+            "WelcomeRXIDFormula": null,
+            "WelcomeRXPCNFormula": null
+        }
+    },
+    "WritingAgent": "0058A000004QVJdQAO",
+    "attachFileFormat": "docx",
+    "attributeFilters": {
+    },
+    "bill": {
+        "billTable": null,
+        "billingDateAppFee": "2020-18-08",
+        "billingDatePlan": "2020-17-08",
+        "billingPaymentDay": "17",
+        "formulaAditionalFee": 125,
+        "formulaAditionalFeeMonthly": 45,
+        "formulaCompareDate": false,
+        "formulaCompareDateFuture": false,
+        "formulaCompareTodayvsEffdate": 0,
+        "formulaMoreThan6FamilyMemberAdtionalFee": 0,
+        "formulaPriceEnrollProgramsBill": 354.34000000000003,
+        "formulaToday": "2020-08-17",
+        "formulaTotalFamilyMember": 1,
+        "formulaTotalfee": 524.34
+    },
+    "chargentInfo": {
+        "firstOrderId": "a978A0000005J2pQAE",
+        "paylink": "https://devvl2-paymentrequest.cs45.force.com/paymentrequest/?req=R7JDewVpJjs3XXN0ioUbT%2BTITcewzrSSxhv6sY5QnmKe%2FP%2BbkpzT%2BxXju9QGNZMXuAeNiwXvUtQ0P7gk3yBe%2Fd2z4uXISmDj%2BtbLXbfKnEE%3D"
+    },
+    "chargentStep": {
+        "ChargentPayLinkFormula": "https://devvl2-paymentrequest.cs45.force.com/paymentrequest/?req=4nt7dbyy1QWWR0KBGsQ0pHo3Q2axpSHLx5oDqK0RbmN4y3uVbc6ZGK%2FOlWSw3bTVx1gPs87cLtnW%2BOttnzn%2F%2BZgA%2Bnc63MbBGbRxtBg1r1Q%3D",
+        "payNoworLater": "Yes"
+    },
+    "contextId": "8008A000000Ws3cQAC",
+    "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+    "dependentRecordType": "0124P000000uS4qQAE",
+    "docGenContentVersionId": "0688A000000oKT6QAM",
+    "documentType": "all",
+    "enrollPrograms": {
+        "MessagingHiddenForValidation": true,
+        "SelectedProgramComprobation": true,
+        "ValidationText": "validationtext",
+        "formulaGroupCode": "OSCACLC05",
+        "formulaGroupCodeinSelectedPlan": "CLC",
+        "formulaISAGroupCode": "05",
+        "formulaMontlhyFeeAccountvsNewIncoming": 0,
+        "formulaPriceEnrollPrograms": 524.34,
+        "programsExample3": null,
+        "selectedPlansErrorMSG": null,
+        "selectedPlansErrorMSGNoProgram": null,
+        "selectedPlansFormulaValidateMSGNoProgram": false
+    },
+    "enrollmentReview": {
+        "BlkHipaa": {
+            "hipaaAuthorized": null
+        },
+        "BlkMedicalQuestions": {
+            "ConsumeAlcoholFunctionReview": null,
+            "ConsumeTobaccoFunctionReview": null,
+            "ExtremeSportsFunctionReview": null,
+            "HaveorHadCancerFunctionReview": null,
+            "MedicalQuestionsReview": null,
+            "MedicalServiceFunctionReview": null,
+            "MemberFamilybeenHospitalized6MonthsReview": null,
+            "PregnantFunctionReview": null,
+            "PrescriptionMedicationsFunctionReview": null,
+            "PresentedInaccurateData": null,
+            "havePrescriptionMedicationsFunctionReview": null,
+            "playExtremeSportsFunctionReview": null,
+            "radioConditions24monthFunctionReview": null,
+            "radioConsumeAlcoholFunctionReview": null,
+            "radioConsumeTobaccoFunctionReview": null,
+            "radioHaveorHadCancerFunctionReview": null,
+            "radioMedicalServiceFunctionReview": null,
+            "radioMemberFamilybeenHospitalized6MonthsReview": null,
+            "radioPregnantFunctionReview": null
+        },
+        "BlkMyFamily": {
+            "FamilyReview": null,
+            "PrimaryLanguageReview": "English"
+        },
+        "QuoteNumberReview": "00000418",
+        "RequestedEffectiveDateReview": "08/14/2020",
+        "SelectedProgramCodeReview": "OSHCLASSCROWN",
+        "SelectedProgramPriceReview": 524.34,
+        "SelectedProgramReview": "OneShare Classic - Crown",
+        "paymentSummary": null
+    },
+    "error": "OK",
+    "executeEmbeddedSignatureRemoteActions": true,
+    "finalList": "",
+    "generateMultipleDocument": false,
+    "havePrescriptionMedicationsFunction": null,
+    "id": "a628A00000019pLQAQ",
+    "incomingQuoteId": "0Q08A000000JgoqSAC",
+    "infoPacket": {
+        "AccountId": "0018A00000VZhQkQAL",
+        "CreateDateQuote": "08/13/2020",
+        "EffectiveDate": "08/14/2020",
+        "packetFound": true,
+        "packetNumber": "081320-00002"
+    },
+    "insuredItems": {
+    },
+    "isPDFAttachDone": false,
+    "isWordAttachDone": true,
+    "isdtp": "p1",
+    "layout": "newport",
+    "multiDocumentGenerationValue": false,
+    "myFamily": {
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaConForDiplayAddInfo180": false,
+        "FormulaConForDiplayAddInfo30": false,
+        "FormulaValidateOldMember": true,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": null,
+        "MSGRatingWillBeBasedOn30or180": null,
+        "MomentaryPigFormula": 0,
+        "MsgEffDateEnrollValid": true,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": null,
+        "RadioFamily": null,
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": "English",
+        "effDate": "08/14/2020",
+        "effDateEnroll": "2020-08-18",
+        "myFamilyTable": null
+    },
+    "oldestMemberList": [
+        {
+            "%vlocity_namespace%__Gender__pc": "Male",
+            "Age__c": 29,
+            "BillingCity": "Los Angeles",
+            "BillingCountry": "United States",
+            "BillingPostalCode": "90017",
+            "BillingState": "CA",
+            "BillingStreet": "1221 West 3rd Street",
+            "Ethnicity__c": "White",
+            "FirstName": "Aldous",
+            "Id": "0018A00000VZhQkQAL",
+            "Is_Hippa_Authorized__c": true,
+            "LastName": "Huxley",
+            "Name": "Aldous Huxley",
+            "PersonBirthdate": "1991-08-08",
+            "PersonEmail": "asd@asd.com",
+            "Phone": "6516516516",
+            "RecordTypeId": "0124P000000uS4rQAE",
+            "Relationship__pc": "Primary",
+            "SSN_ITIN__c": "561-65-1651",
+            "address": "1221 West 3rd Street",
+            "age": 29,
+            "city": "Los Angeles",
+            "country": "United States",
+            "dob": "08/08/1991",
+            "email": "asd@asd.com",
+            "ethnicity": "White",
+            "fname": "Aldous",
+            "fullname": "Aldous Huxley",
+            "gender": "Male",
+            "id": "0018A00000VZhQkQAL",
+            "isHipaaAuthorized": true,
+            "lname": "Huxley",
+            "parent_id": "0018A00000VZhQkQAL",
+            "phone": "6516516516",
+            "relationship": "Primary",
+            "ssnItin": "561-65-1651",
+            "state": "CA",
+            "zipcode": "90017"
+        }
+    ],
+    "options": {
+        "chainable": false,
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "useContinuation": false,
+        "useFuture": false,
+        "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+    },
+    "organizationCode": "OS",
+    "pdfViewer": "'VlocityClientSideViewer'",
+    "personAccountRecordType": "0128A000000ySrJQAU",
+    "planSelection": {
+        "selectedPlans": [
+            {
+                "%vlocity_namespace%__AttributeSelectedValues__c": "{\"PROCODE\":\"OSHCLASSCROWN\",\"ISAAMT\":\"5000\",\"DISCLAIMERCARD\":\"*Out-of-network member sharing reimbursement is based on the lesser of the Out-of-network provider actual billed amount or Maximum Reasonable Guidelines for the Eligible Services provided\",\"PRESDISPROG\":\"Access to Prescription Drug Discounts on Generic and Brand Name Drugs\",\"MAXLIMITINC\":\"$500,000\",\"HOSTP\":\"Eligible\",\"INOUTSURG\":\"Eligible - 90 day wait\",\"MATERNITY\":\"Eligible - Conception must be after Effective Date\",\"EMERGROOM\":\"$300 Visit Fee\",\"TELEMED\":\"Doctor Access 24/7  ($0 Consult Fee)\",\"SPEC\":\"$75 Visit Fee Referral required $0 Visit Fee After ISA\",\"DIAGXLAB\":\"PCP/Urgent Care\",\"URGCAREFAC\":\"$20 Visit Fee - 2 Per Program Year\",\"PRICAREPHY\":\"$20 Visit Fee - 5 Per Program Year\",\"PREVSVCS\":\"100% up to $1,000 Maximum per program year\",\"PROVNET\":\"First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare\"}",
+                "%vlocity_namespace%__CalculatedPriceJSON__c": "{\"ID\":\"6\",\"Member\":457.9,\"MemberPlusOne\":570.53,\"Family\":725.4,\"MemberDiff\":524.34,\"MemberPlusOneDiff\":662.95,\"FamilyDiff\":853.56}",
+                "%vlocity_namespace%__ItemName__c": "OneShare Classic - Crown",
+                "%vlocity_namespace%__NeedReprice__c": false,
+                "%vlocity_namespace%__ProductChildItemSequence__c": 0,
+                "%vlocity_namespace%__ProductName__c": "OneShare Classic - Crown",
+                "%vlocity_namespace%__RecordTypeName__c": "Product",
+                "%vlocity_namespace%__TotalAmount__c": 457.9,
+                "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                "Id": "0QL8A000000zK8oWAE",
+                "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                "LineNumber": "00011764",
+                "Name": "OneShare Classic - Crown",
+                "Price": 457.9,
+                "PriceDiff": 524.34,
+                "Product2Id": "01t8A00000496ldQAA",
+                "ProductCode": "OSHCLASSCROWN",
+                "QuoteId": "0Q08A000000JgoqSAC",
+                "TotalPrice": 457.9,
+                "UnitPrice": 457.9,
+                "attributeCategories": {
+                    "records": [
+                        {
+                            "Code__c": "PROGCARDATT",
+                            "Name": "Program Card Attributes",
+                            "displaySequence": 1,
+                            "id": "a0y8A000001oo85QAA",
+                            "productAttributes": {
+                                "records": [
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    }
+                                ],
+                                "totalSize": 16
+                            }
+                        }
+                    ],
+                    "totalSize": 1
+                },
+                "childProducts": {
+                    "actions": {
+                        "getCandidateChildProducts": {
+                            "client": {
+                                "params": {
+                                }
+                            },
+                            "remote": {
+                                "params": {
+                                    "methodName": "getListChildProducts",
+                                    "prodRecordType": "CoverageSpec",
+                                    "quoteId": "0Q08A000000JgoqSAC"
+                                }
+                            },
+                            "rest": {
+                                "link": null,
+                                "method": null,
+                                "params": {
+                                }
+                            }
+                        },
+                        "updateAllCoverageAttribute": {
+                            "client": {
+                                "params": {
+                                }
+                            },
+                            "remote": {
+                                "params": {
+                                    "methodName": "updateAllChildLines",
+                                    "quoteId": "0Q08A000000JgoqSAC",
+                                    "reprice": true
+                                }
+                            },
+                            "rest": {
+                                "link": null,
+                                "method": null,
+                                "params": {
+                                }
+                            }
+                        }
+                    },
+                    "records": [
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"DISCLAIMERMEMBERDISC2\":\"Discount Programs Not Owned or Operated by OneShare Health and  are made available to members by a fee from the contributions\",\"DISCPROGRAM\":\"Dental Discount / Diabetic Care and Supplies / Hearing Discount / Lab Discount / Vision and Lasik Discount / Lifeline Screening Discounts\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 0,
+                            "%vlocity_namespace%__ProductName__c": "Membership Discount Program",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8vWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011771",
+                            "Name": "Membership Discount Program",
+                            "Price": 0,
+                            "Product2Id": "01t8A000004UI3lQAG",
+                            "ProductCode": "MEMBDISCPROG",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8vWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "MEMBERDISCPROG",
+                                        "Name": "Membership Discount Program",
+                                        "displaySequence": 5,
+                                        "id": "a0y8A000001xj9MQAQ",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 0,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000EpCSQA0",
+                            "productId": "01t8A000004UI3lQAG",
+                            "productName": "Membership Discount Program",
+                            "quoteLineItemId": "0QL8A000000zK8vWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"EMERROOM\":\"$300 Visit Fee Emergency room services for a Life Threatening/Life Altering medical emergency provided on an Outpatient basis at a Hospital. If at the Hospital for 24 hours or more, ER will be considered hospitalization and will apply to the Member's ISA.\",\"AMBULANCE\":\"Land or air transportation for medically necessary emergency services to the nearest medical Facility or medical transportation between Facilities; when medically necessary, after the ISA is met, up to a Maximum Sharing of $10,000 per occurrence.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 1,
+                            "%vlocity_namespace%__ProductName__c": "Emergency",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8zWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011775",
+                            "Name": "Emergency",
+                            "Price": 0,
+                            "Product2Id": "01t8A0000043pgSQAQ",
+                            "ProductCode": "EMERGENCY",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8zWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 5
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 1,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep3GQAS",
+                            "productId": "01t8A0000043pgSQAQ",
+                            "productName": "Emergency",
+                            "quoteLineItemId": "0QL8A000000zK8zWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"WAITPERIOD\":\"Unless stated otherwise there is a 90 day waiting period for any medical expenses other than for accidents, injuries, acute illnesses and immunizations.\",\"ISAAMOUNT\":\"5000\",\"GUIDELINE\":\"Medically necessary expenses that occur after your Effective Date. These are medical services from a health care provider which are eligible for sharing in accordance with the Membership Guidelines.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 2,
+                            "%vlocity_namespace%__ProductName__c": "General",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8yWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011774",
+                            "Name": "General",
+                            "Price": 0,
+                            "Product2Id": "01t8A0000043pg5QAA",
+                            "ProductCode": "GENERAL",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8yWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 5
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 2,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep3kQAC",
+                            "productId": "01t8A0000043pg5QAA",
+                            "productName": "General",
+                            "quoteLineItemId": "0QL8A000000zK8yWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SPECIALISTVISITS\":\"Inpatient Specialist Visits are subject to ISA.\",\"INPASURGERY\":\"Inpatient surgery following the 180 daywaiting period after the ISA is met, up to the Maximum Limit Per Incident. Life Threatening or Life Altering emergencies are immediately eligible for sharing.\",\"HOSPITALIZATION3\":\"Acute illness, accident or Life Threatening/Life altering emergency are immediately eligible.\",\"HOSPITALIZATION2\":\"After the 90 day waiting period, Inpatient Hospitalization is eligible for sharing, if a member is confined in a due to an eligible sickness or injury as directed by a Physician Subject to the ISA, up to the Maximum Limit Per Incident.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 3,
+                            "%vlocity_namespace%__ProductName__c": "Inpatient Services",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8xWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011773",
+                            "Name": "Inpatient Services",
+                            "Price": 0,
+                            "Product2Id": "01t8A0000043pgTQAQ",
+                            "ProductCode": "INPATSVCS",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8xWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 8
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 3,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep2wQAC",
+                            "productId": "01t8A0000043pgTQAQ",
+                            "productName": "Inpatient Services",
+                            "quoteLineItemId": "0QL8A000000zK8xWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"MAXSHARING\":\"Maximum Limit Per Incident $500,000* Lifetime Maximum per Member: $1,000,000. *Optional increase of $500,000 Maximum Per Incident available\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 4,
+                            "%vlocity_namespace%__ProductName__c": "Maximum Limits",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8wWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011772",
+                            "Name": "Maximum Limits",
+                            "Price": 0,
+                            "Product2Id": "01t8A0000043pgQQAQ",
+                            "ProductCode": "MAXLIMITS",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8wWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "PROGCARDATT",
+                                        "Name": "Program Card Attributes",
+                                        "displaySequence": 1,
+                                        "id": "a0y8A000001oo85QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    },
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 2
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 4,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep44QAC",
+                            "productId": "01t8A0000043pgQQAQ",
+                            "productName": "Maximum Limits",
+                            "quoteLineItemId": "0QL8A000000zK8wWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"EQUALTCARE\":\"Non-experimental health care treatment which may deliver care that is more cost effective, less invasive and within generally accepted medical practice, may be eligible for sharing. Prior approval is required from OneShare Health.\",\"PROTHESIS\":\"Prosthesis needs, subject to review, are eligible, after the ISA is met, up to $1,500 Maximum Sharing. Replacement, repair and maintenance of are not eligible for Sharing.\",\"SLEEPAPNEA\":\"after the Member’s ISA is met. Testing must be ordered by a Physician. Limit one per member per program year.\",\"CANCERMEMNEVDIAG\":\"Sharing is eligible after a 90 day waiting period from the Member's effective date.\",\"CANCERPREEXREC\":\"Cancer Expenses are not eligible for sharing.\",\"CANCERMEMDIAGRECWITHN5\":\"If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.\",\"CANCERMEMDIAGOTRAT\":\"If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.\",\"CANCERWAITPERNDR\":\"If Cancer is diagnosed within the 90 day waiting period, the diagnosis and treatment expenses related to that specific Cancer, recurrence or metastasis are not eligible for sharing.\",\"CANREQUIRFORMEM\":\"Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 5,
+                            "%vlocity_namespace%__ProductName__c": "Other",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8uWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011770",
+                            "Name": "Other",
+                            "Price": 0,
+                            "Product2Id": "01t8A0000043pgPQAQ",
+                            "ProductCode": "OTHER",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8uWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 14
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 5,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep3QQAS",
+                            "productId": "01t8A0000043pgPQAQ",
+                            "productName": "Other",
+                            "quoteLineItemId": "0QL8A000000zK8uWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"PRESDISCPROG\":\"Discount Services - Envision RX\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 6,
+                            "%vlocity_namespace%__ProductName__c": "Outpatient Prescription Discount",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8tWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011769",
+                            "Name": "Outpatient Prescription Discount",
+                            "Price": 0,
+                            "Product2Id": "01t8A000004W5bkQAC",
+                            "ProductCode": "OUTPATDISCOUNT",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8tWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 6,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep6ZQAS",
+                            "productId": "01t8A000004W5bkQAC",
+                            "productName": "Outpatient Prescription Discount",
+                            "quoteLineItemId": "0QL8A000000zK8tWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"OUTPATTHERAPY3\":\"Up to a maximum of 10 combined visits per Incident.\",\"OUTPATTHERAPY2\":\"If a condition is related to an eligible diagnosis, ordered by a Physician and performed by a licensed therapist, it is Eligible for sharing after a $20 Visit Fee, per visit up to the Maximum Limit Per Incident.\",\"SPECIALISTVISITS\":\"Services provided for the diagnosis, treatment, management of an eligible illness or injury $75 Visit Fee per Outpatient visit.\",\"PREVSERVWELL\":\"Preventive Services and one Wellness Visit are eligible for sharing, not subject to the ISA, up to $1,000 Maximum Sharing during the program year.\",\"HOMEHEALTHCARE\":\"Home Care  following a Hospital stay. Home Care is limited to 30 calendar days from the discharge date of the Member's Inpatient Hospital stay, after the ISA is met, up to the Maximum Limit per Incident.\",\"LABDIAGXRAYS\":\"Included at any lab facility, after the ISA is met. If services are provided at the PCP or Urgent Care facility, the Visit Fee will apply in lieu of the ISA, subject to the program limitations.\",\"SURGERY\":\"Outpatient surgery following the 180 day waiting period after the  ISA is met, up to the Maximum Limit Per Incident. Life Threatening or Life Altering emergencies are immediately eligible for sharing.\",\"URGENTCARE\":\"For the diagnosis, treatment, management of an eligible illness or injury serious enough that a member would seek care right away, but not so severe as to require Hospital emergency department care. $20 Visit Fee; Limit 1 visit per member per program year\",\"PRICAREPHYSVISIT\":\"Visits for the diagnosis, treatment, management or prevention of an illness or injury. $20 Visit Fee; limit 3 visits per program year per member per year.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 7,
+                            "%vlocity_namespace%__ProductName__c": "Outpatient Services",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8sWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011768",
+                            "Name": "Outpatient Services",
+                            "Price": 0,
+                            "Product2Id": "01t8A00000496MIQAY",
+                            "ProductCode": "OUTPATSVCS",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8sWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 24
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 7,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep2cQAC",
+                            "productId": "01t8A00000496MIQAY",
+                            "productName": "Outpatient Services",
+                            "quoteLineItemId": "0QL8A000000zK8sWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"TOBACCO\":\"Tobacco Use: If a Member uses or used tobacco in any form, (this includes vaping of any nicotine products), any health-related issues are Not Eligible for Sharing.\",\"SPECICHROELI\":\"Specified Chronic Conditions that have received treatment or medication may be eligible, immediately, for physician office, or physician ordered lab visits for routine maintenance of the Chronic Condition, preventing further complications.\",\"SPECCHRONCOND\":\"Diabetes 1 &2;  Hypertension, Thyroid (Hyper/Hypo), Hyperlipidemia\",\"ROUTMAINTCHRCOND\":\"Routine Maintenance of Chronic Conditions: Care that follows diagnosis and any active care once the  health status has become stable. The goal of maintenance care is to monitor and maintain the improvement that was accomplished with active treatment.\",\"PREEXIST24DEF\":\"Any sickness or injury for which a Member received medical treatment, advice, care or services including diagnostic measures, took prescribed drugs or showed signs or symptoms, whether treated or not, within 24 months of Member's program  effective date.\",\"PREEXIST24ELE\":\"Eligibility for a Pre-Existing Condition has a 24 month waiting period.\",\"MEDNONCOMP\":\"Sharing for medical services will not be available when the conditions is shown to be the result of medical non-compliance with the Physician's recommended care, treatment or advice.\",\"CANCERLIMITS\":\"Pre-existing or Recurring Cancer are not eligible for sharing.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 8,
+                            "%vlocity_namespace%__ProductName__c": "Program Limitations",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8rWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011767",
+                            "Name": "Program Limitations",
+                            "Price": 0,
+                            "Product2Id": "01t8A0000043pgRQAQ",
+                            "ProductCode": "PROGLIMITS",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8rWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 10
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 8,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep31QAC",
+                            "productId": "01t8A0000043pgRQAQ",
+                            "productName": "Program Limitations",
+                            "quoteLineItemId": "0QL8A000000zK8rWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"OUTNETWORK\":\"Using a Non-PPO provider is still the Member’s choice. The Non-PPO provider services can result in higher medical bills. Non-PPO Providers and Facilities may bill members for the difference between the bill charges and the program’s allowed amount.\",\"MAXREAGUIDELINE\":\"Out of Network member sharing reimbursement is based on the lesser of the out of network provider actual billed amount or reasonable and customary charges for the Eligible services provided.\",\"FIRSTHEALTH\":\"First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 9,
+                            "%vlocity_namespace%__ProductName__c": "Provider Network",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8qWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011766",
+                            "Name": "Provider Network",
+                            "Price": 0,
+                            "Product2Id": "01t8A000004UKKsQAO",
+                            "ProductCode": "PROVNETWRK",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8qWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 7
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 9,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep3uQAC",
+                            "productId": "01t8A000004UKKsQAO",
+                            "productName": "Provider Network",
+                            "quoteLineItemId": "0QL8A000000zK8qWAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"CANCERPREEXREC\":\"Cancer Expenses are not eligible for sharing.\",\"CANCERLIMITMEMMORE5YEAR\":\"If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.\",\"CANCERLIMITDIAGWUTHN5YEAR\":\"If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing\",\"CANCERNEEDDIAGTREATMORE5YR\":\"Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.\",\"CANCERMEMBNEVERDIAGRECTREAT\":\"Sharing is eligible after a 90 day waiting period from the Member's effective date. If Cancer is diagnosed within the 90 day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are not eligible for sharing.\",\"CANCERSHLIMT\":\"The Lifetime Limit for all Cancer is $500,000; each Incident cannot exceed the Maximum Limit Per Incident.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 10,
+                            "%vlocity_namespace%__ProductName__c": "Cancer",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK90WAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011776",
+                            "Name": "Cancer",
+                            "Price": 0,
+                            "Product2Id": "01t8A000004CGe5QAG",
+                            "ProductCode": "CANCER",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK90WAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 6
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 10,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000EpAvQAK",
+                            "productId": "01t8A000004CGe5QAG",
+                            "productName": "Cancer",
+                            "quoteLineItemId": "0QL8A000000zK90WAE"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"TELEMEDICINE\":\"$0 Consult Fee (Dialcare) 24/7/365. Talk to a doctor by phone or online video to get a diagnosis, treatment options and prescription, if medically necessary.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 11,
+                            "%vlocity_namespace%__ProductName__c": "Telemedicine",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zK8oWAE",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-08-13T20:37:10.000+0000",
+                            "Id": "0QL8A000000zK8pWAE",
+                            "LastModifiedDate": "2020-08-13T20:37:10.000+0000",
+                            "LineNumber": "00011765",
+                            "Name": "Telemedicine",
+                            "Price": 0,
+                            "Product2Id": "01t8A000004UKPPQA4",
+                            "ProductCode": "TELEMEDICINE",
+                            "QuoteId": "0Q08A000000JgoqSAC",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JgoqSAC",
+                                            "quoteLineId": "0QL8A000000zK8pWAE",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 11,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep28QAC",
+                            "productId": "01t8A000004UKPPQA4",
+                            "productName": "Telemedicine",
+                            "quoteLineItemId": "0QL8A000000zK8pWAE"
+                        }
+                    ],
+                    "totalSize": 12
+                },
+                "coverageCount": 12,
+                "currencyCode": "USD",
+                "currencySymbol": "$",
+                "displaySequence": 0,
+                "flagDifference": true,
+                "hasAttributes": true,
+                "isCalculated": true,
+                "lineRecordType": "Product",
+                "needReprice": false,
+                "originalIndex": 0,
+                "productId": "01t8A00000496ldQAA",
+                "productName": "OneShare Classic - Crown",
+                "quoteLineItemId": "0QL8A000000zK8oWAE",
+                "recordType": "Product",
+                "selected": true
+            }
+        ]
+    },
+    "playExtremeSportsFunction": null,
+    "primaryMemberRecordType": "0124P000000uS4rQAE",
+    "productConfigurationDetail": {
+        "records": [
+        ],
+        "totalSize": 1
+    },
+    "qId": "8008A000000Ws3cQAC",
+    "quoteDetail": {
+        "%vlocity_namespace%__EffectiveDate__c": "2020-08-14",
+        "%vlocity_namespace%__RootItemTotal__c": 457.9,
+        "%vlocity_namespace%__TotalAmountTermDifference__c": 0,
+        "%vlocity_namespace%__TotalAmount__c": 457.9,
+        "%vlocity_namespace%__TotalFeeAmount__c": 0,
+        "%vlocity_namespace%__TotalFeeTermDifference__c": 0,
+        "%vlocity_namespace%__TotalPremiumTermDifference__c": 0,
+        "%vlocity_namespace%__TotalSumInsured__c": 0,
+        "%vlocity_namespace%__TotalTaxAmount__c": 0,
+        "%vlocity_namespace%__TotalTaxTermDifference__c": 0,
+        "AccountId": "0018A00000VZhQkQAL",
+        "Id": "0Q08A000000JgoqSAC",
+        "Information_Packet_Number__c": "081320-00002",
+        "attributes": {
+            "type": "Quote",
+            "url": "/services/data/v49.0/sobjects/Quote/0Q08A000000JgoqSAC"
+        }
+    },
+    "radioConditions24monthFunction": null,
+    "radioConsumeAlcoholFunction": null,
+    "radioConsumeTobaccoFunction": null,
+    "radioFamilyOption": "MySelf",
+    "radioHaveorHadCancerFunction": null,
+    "radioHospitalizedFunction": null,
+    "radioMedicalServiceFunction": null,
+    "radioPregnantFunction": null,
+    "response": {
+    },
+    "resultDateDaysEffxOld": 9,
+    "resultDateYearEffxOld": 29,
+    "selectedPlansFormulaValidateMSG": false,
+    "servicingAgentGet": {
+        "Email": "andres.deus@arcsona.com",
+        "FirstName": "Andres",
+        "LastName": "Deus",
+        "Name": "Andres Deus",
+        "ProfileId": "00e4P000001X18aQAC"
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "templateId": "a4V8A0000002Uv7UAE",
+    "templateType": "Microsoft Word .DOCX Template",
+    "timeStamp": "2020-08-17T20:53:17.188Z",
+    "urlPrefix": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/apex",
+    "useTemplateDRExtract": "No",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000004QVJdQAO",
+    "userName": "andres.deus@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userProfileTest": "Producer Community Profile",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    },
+    "waitingScreen": true
+}

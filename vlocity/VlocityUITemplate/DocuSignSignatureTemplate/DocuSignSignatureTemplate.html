@@ -1,0 +1,16 @@
+<div ng-controller="docuSignControllerTemplate" >
+    <ng-form name="loopform">
+        <!-- <iframe style="max-height:1000px; overflow-y:scroll"  ng-src="{{docusignURL}}" onLoad="goNextFunction(this)"></iframe> -->
+        <iframe class="parentIframeDS" style="max-height:1000px; overflow-y:scroll"  ng-src="{{docusignURL}}"></iframe>
+        <button
+            class="nds-button nds-button_brand nds-p-around_xx-small nds-size_1-of-1 nds-medium-size_3-of-12"
+            type="button"
+            ng-hide="true"
+            id="NextButtonCustomHidden"
+            vlc-animation-slider='test'
+            ng-mouseover="currentLocation()"
+            ng-click='nextRepeater(23,22)'> 
+            Send for Signature
+        </button>
+    </ng-form> 
+</div>

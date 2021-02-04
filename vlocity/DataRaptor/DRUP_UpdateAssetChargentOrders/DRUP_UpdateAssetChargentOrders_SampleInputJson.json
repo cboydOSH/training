@@ -1,0 +1,14 @@
+{
+    "AssetId": "02i8A000004FBOCQA4",
+    "ChargentInfo": {
+        "firstOrderId": "",
+        "paylink": "",
+        "paymentRequestId": ""
+    },
+    "chargentFirstOrderNote": "",
+    "chargentFirstOrderStatus": "--None--",
+    "chargentSecondOrderNote": "",
+    "chargentSecondOrderStatus": "--None--",
+    "contractStatus": "Awaiting Signature",
+    "productContractId": ""
+}

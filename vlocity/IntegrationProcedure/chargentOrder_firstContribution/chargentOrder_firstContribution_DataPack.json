@@ -1,0 +1,32 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Adding Changes to save the confirmation order",
+    "%vlocity_namespace%__CustomJavaScript__c": "chargentOrder_firstContribution_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "chargentOrder_firstContribution_Element_SetValuesFormulasFutureFeeOrApp.json",
+        "chargentOrder_firstContribution_Element_OS_DRUP_Enroll_createChargentOrder_Confirmation.json",
+        "chargentOrder_firstContribution_Element_OS_DRUP_Enroll_createChargentOrder_AppandFee.json",
+        "chargentOrder_firstContribution_Element_OS_DRUP_Enroll_createChargentOrder_App.json",
+        "chargentOrder_firstContribution_Element_OS_DRUP_Enroll_createChargentOrder_Fee.json",
+        "chargentOrder_firstContribution_Element_SVWhichChargentOrderToUse.json",
+        "chargentOrder_firstContribution_Element_OS_DRUP_Enroll_createChargentPaymentOrder.json",
+        "chargentOrder_firstContribution_Element_OS_DRUP_Enroll_getChargentInfo.json",
+        "chargentOrder_firstContribution_Element_SVTakeChargentIdForAsset.json",
+        "chargentOrder_firstContribution_Element_DRUP_UpdateAssetChargentOrders.json",
+        "chargentOrder_firstContribution_Element_responseAction.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "chargentOrder_firstContribution",
+    "%vlocity_namespace%__PropertySet__c": "chargentOrder_firstContribution_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "firstContribution",
+    "%vlocity_namespace%__Type__c": "chargentOrder",
+    "Name": "Chargent Orders Creation For First Contribution",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/chargentOrder/firstContribution/Procedure"
+}

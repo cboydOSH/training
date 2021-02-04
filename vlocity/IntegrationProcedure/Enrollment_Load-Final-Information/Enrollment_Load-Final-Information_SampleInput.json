@@ -1,0 +1,2100 @@
+{
+    "Account": {
+        "ContactId": "0038A00000U0mofQAB",
+        "Id": "0018A00000X1MxyQAF",
+        "Name": "Juanito Bananas"
+    },
+    "AccountProductPrivileges": [
+        {
+            "code": "OSHCAT150",
+            "id": "01t8A0000043pgeQAA",
+            "name": "OneShare Catastrophic - $150,000/$300,000",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCAT500",
+            "id": "01t8A00000496LvQAI",
+            "name": "OneShare Catastrophic - $500,000/$1,000,000",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCAT250",
+            "id": "01t8A00000496MHQAY",
+            "name": "OneShare Catastrophic - $250,000/$500,000",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCOMPCROWN",
+            "id": "01t8A00000496MbQAI",
+            "name": "OneShare Complete - Crown",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSENH",
+            "id": "01t8A00000496OOQAY",
+            "name": "OneShare Classic - Enhanced",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSBASIC",
+            "id": "01t8A00000496RdQAI",
+            "name": "OneShare Classic - Basic",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSCROWN",
+            "id": "01t8A00000496ldQAA",
+            "name": "OneShare Classic - Crown",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCOMPBASIC",
+            "id": "01t8A0000049Yz8QAE",
+            "name": "OneShare Complete - Basic",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCOMPENH",
+            "id": "01t8A000004A8QRQA0",
+            "name": "OneShare Complete - Enhanced",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHTHRIVEPREF",
+            "id": "01t8A000005q4NmQAI",
+            "name": "Thrive Preferred",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHTHRIVEPREM",
+            "id": "01t8A000005q4OuQAI",
+            "name": "Thrive Premier",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSBASIC1",
+            "id": "01t8A00000695g9QAA",
+            "name": "OneShare Classic - Basic",
+            "selectPrivilegie": "allowed"
+        }
+    ],
+    "AccountsForOSHEmployees": [
+        {
+            "Id": "0018A00000TyjGAQAZ",
+            "Monthly_Commission_Fee__c": 0,
+            "Name": "OSH Enrollment",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v50.0/sobjects/Account/0018A00000TyjGAQAZ"
+            }
+        },
+        {
+            "Id": "0018A00000TzHtdQAF",
+            "Monthly_Commission_Fee__c": 30,
+            "Name": "Forever young",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v50.0/sobjects/Account/0018A00000TzHtdQAF"
+            }
+        },
+        {
+            "Id": "0018A00000TwmBUQAZ",
+            "Monthly_Commission_Fee__c": 80,
+            "Name": "Aamer Rehman",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v50.0/sobjects/Account/0018A00000TwmBUQAZ"
+            }
+        },
+        {
+            "Id": "0018A00000Twm85QAB",
+            "Monthly_Commission_Fee__c": 100,
+            "Name": "Maris Walter",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v50.0/sobjects/Account/0018A00000Twm85QAB"
+            }
+        }
+    ],
+    "AddEditFamilyMember": [
+    ],
+    "AgentLabel": "0018A00000Twm6dQAB",
+    "ApplicablePromotions": [
+    ],
+    "AssetId": "02i8A000004FezcQAC",
+    "BlkMedicalQuestions": {
+        "Text35": null
+    },
+    "ContextId": "",
+    "CurrencyAnnualComissionFee": 125,
+    "CurrencyPricePerAdditionalMembers": 50,
+    "DateError": 0,
+    "DateErrorMessage": "",
+    "EditFamilyMember": [
+        {
+            "$$hashKey": "object:1533",
+            "address": "6000 West Van Buren Street",
+            "age": 21,
+            "asthma": false,
+            "behavioralormentalhealth": false,
+            "city": "Phoenix",
+            "congestiveheartfailure": false,
+            "copd": false,
+            "country": "United States",
+            "crohnsdisease": false,
+            "diabetesI": false,
+            "diabetesII": false,
+            "dob": "10/05/1999",
+            "eatingdisorders": false,
+            "email": "kigorin476@uniteditcare.com",
+            "ethnicity": "Hispanic or Latino",
+            "fname": "Juanito",
+            "fullname": "Juanito Bananas",
+            "gender": "Male",
+            "heartdisease": false,
+            "hearthbypasssurgery": false,
+            "herniateddisc": false,
+            "hivaids": false,
+            "hyperlipidemia": false,
+            "hypertensionorhighblood": false,
+            "id": "0018A00000X1MxyQAF",
+            "isHipaaAuthorized": true,
+            "kidneydiseaseorfailure": false,
+            "lname": "Bananas",
+            "parent_id": "0018A00000X1MxyQAF",
+            "phone": "1231232131",
+            "relationship": "Primary",
+            "ssnItin": "",
+            "state": "AZ",
+            "zipcode": "85043"
+        },
+        {
+            "$$hashKey": "object:1534",
+            "address": "6000 West Van Buren Street",
+            "age": 20,
+            "asthma": false,
+            "behavioralormentalhealth": false,
+            "city": "Phoenix",
+            "congestiveheartfailure": false,
+            "copd": false,
+            "crohnsdisease": false,
+            "diabetesI": false,
+            "diabetesII": false,
+            "dob": "10/05/2000",
+            "eatingdisorders": false,
+            "email": "test@test.comasd",
+            "ethnicity": "White",
+            "fname": "Juanita",
+            "fullname": "Juanita Bananitas",
+            "gender": "Female",
+            "heartdisease": false,
+            "hearthbypasssurgery": false,
+            "herniateddisc": false,
+            "hivaids": false,
+            "hyperlipidemia": false,
+            "hypertensionorhighblood": false,
+            "id": "0018A00000X1MxzQAF",
+            "isHipaaAuthorized": false,
+            "kidneydiseaseorfailure": false,
+            "lname": "Bananitas",
+            "parent_id": "0018A00000X1MxyQAF",
+            "phone": "1231232131",
+            "relationship": "Spouse",
+            "state": "AZ",
+            "zipcode": "85043"
+        }
+    ],
+    "FormulaLinkForRedirectToOS": false,
+    "HIPAAAuthorization": {
+        "AuthorizeOtherRatio": "No",
+        "Block7": null,
+        "Osh-HIPPA-tablemembers": null,
+        "authorizeNewMember": {
+            "FirstName": null,
+            "LastName": null,
+            "MemberAddressGoogle-Block": {
+                "MemberAddressGoogle": null,
+                "memberAddress": null,
+                "memberBuildingSuiteApartment": null,
+                "memberCity": null,
+                "memberCountry": null,
+                "memberState": null,
+                "memberZipCode": null
+            },
+            "MemberEmail": null,
+            "Phone": null,
+            "isHipaaAuthorized": false
+        },
+        "space27x12": null
+    },
+    "HaveAdultDependent": 0,
+    "MaximunNumberPerFamilyMember": 5,
+    "MonthlyFee": 0,
+    "NoAdultGreaterThan27AndLesserThan65": 0,
+    "NoChildGreaterThan27": 0,
+    "NoChildGreaterThan65": 0,
+    "NoChildWrongDate": 0,
+    "NoEmpAge18": 0,
+    "NoSpouse65": 0,
+    "OSHServicingAgent": "0018A00000TyjGAQAZ",
+    "OwnerId": "0058A000003wAujQAE",
+    "PrimarystoredMonthlyContribution": 0,
+    "Quote": {
+        "AccountId": "0018A00000X1MxyQAF",
+        "Id": "0Q08A000000JkGySAK",
+        "Name": "Quote 2020-10-20 19:00:00",
+        "Pricebook2Id": "01s8A000001GlohQAC",
+        "QuoteNumber": "00000651"
+    },
+    "QuoteOptions": {
+        "MergedAccountQuoteInfo": [
+            {
+                "AccountId": "0018A00000X1LOXQA3",
+                "AccountName": "juanito gonzalez",
+                "Information_Packet_Number__c": "102120-00006",
+                "QuoteCreatedDate": "10/21/2020",
+                "QuoteName": "Quote 2020-10-20 19:00:00"
+            },
+            {
+                "AccountId": "0018A00000X1MxyQAF",
+                "AccountName": "Juanito Bananas",
+                "Information_Packet_Number__c": "102120-00008",
+                "QuoteCreatedDate": "10/21/2020",
+                "QuoteName": "Quote 2020-10-20 19:00:00"
+            },
+            {
+                "AccountId": "0018A00000XD07uQAD",
+                "AccountName": "Juanito Guester Guester",
+                "Information_Packet_Number__c": "102820-00011",
+                "QuoteCreatedDate": "10/27/2020",
+                "QuoteName": "Quote 2020-10-27 00:00:00"
+            },
+            {
+                "AccountId": "0018A00000XDAzyQAH",
+                "AccountName": "Juanita Gutierritos",
+                "Information_Packet_Number__c": "102820-00003",
+                "QuoteCreatedDate": "10/28/2020",
+                "QuoteName": "Quote 2020-10-27 19:00:00"
+            },
+            {
+                "AccountId": "0018A00000XDCu5QAH",
+                "AccountName": "Juan Perez",
+                "Information_Packet_Number__c": "102920-00006",
+                "QuoteCreatedDate": "10/28/2020",
+                "QuoteName": "Quote 2020-10-28 00:00:00"
+            },
+            {
+                "AccountId": "0018A00000XDibdQAD",
+                "AccountName": "Juanita Perez",
+                "Information_Packet_Number__c": "102820-00015",
+                "QuoteCreatedDate": "10/28/2020",
+                "QuoteName": "Quote 2020-10-27 19:00:00"
+            }
+        ]
+    },
+    "RatingMemberId": "0018A00000X1MxyQAF",
+    "RatingMemberName": "Juanito Bananas",
+    "Search": {
+        "CancelFormula": "/",
+        "EnterEnrollerID": null,
+        "FormulaEnrollerId": false,
+        "ServicingAgentDropdown": null,
+        "questionsBlock": {
+            "FormulaLinkToRedirectToOS": false,
+            "FormulaQuoteOptionsPresent": "Has Value",
+            "MessagingNotFoundForSearchQuotes": false,
+            "RadioForLookingThroughName": true,
+            "TxtNameForSearch": "juan",
+            "packetNumber": "102120-00008",
+            "preExistencePacketNumber": "Yes"
+        }
+    },
+    "SelectedServicingAgentDropdown": {
+        "Id": "0018A00000TyjGAQAZ",
+        "Monthly_Commission_Fee__c": 0,
+        "Name": "OSH Enrollment",
+        "RecordTypeId": "0124P000000uPa9QAE",
+        "attributes": {
+            "type": "Account",
+            "url": "/services/data/v50.0/sobjects/Account/0018A00000TyjGAQAZ"
+        }
+    },
+    "ServicingAgent": "Needs Dropdown selection",
+    "ThisisEnroll": true,
+    "UserEmail": "vicente.martinez@arcsona.com",
+    "UserEmailConfirmation": "",
+    "UserExist": false,
+    "UserLastName": "Juanito",
+    "UserName": "Bananas",
+    "UserType": "OSH Employee",
+    "Welcome": {
+        "City": "Phoenix",
+        "Email": "kigorin476@uniteditcare.com",
+        "FormulaState": true,
+        "MessagingStatesoff": true,
+        "TAAddressGoogle-Block": {
+            "TAAddressGoogle": "6000 W Van Buren St, Phoenix, AZ 85043, USA",
+            "address": "6000 West Van Buren Street",
+            "buildingSuiteApartment": null,
+            "city": "Phoenix",
+            "country": "United States",
+            "state": "AZ",
+            "zipCode": "85043"
+        },
+        "Telephone": "1231232131",
+        "fname": "Juanito",
+        "lname": "Bananas"
+    },
+    "WritingAgent": "0058A000003wAujQAE",
+    "attributeFilters": {
+    },
+    "bill": {
+        "FormulaAdditionalFeeDiscount": 0,
+        "FormulaContributionAmount": 273.97,
+        "FormulaContributionAmountWithPromotions": 273.97,
+        "FormulaDistributionDiscount": 0,
+        "billTable": null,
+        "billingDateAppFee": "2020-11-21",
+        "billingDatePlan": "2020-11-19",
+        "billingPaymentDay": "19",
+        "billingPaymentDayAppFee": "21",
+        "dateDiffAppFee": 3,
+        "dateDiffPlan": 1,
+        "dateDiffPlanAppFee": -2,
+        "formulaAditionalFee": 125,
+        "formulaAditionalFeeMonthly": 0,
+        "formulaCompareTodayvsEffdate": 8,
+        "formulaInvalidDays": false,
+        "formulaMoreThan6FamilyMemberAdtionalFee": 0,
+        "formulaNow": "12:00:00 AM",
+        "formulaPriceEnrollProgramsBill": 273.97,
+        "formulaToday": "2020-11-18",
+        "formulaTodayDay": "18",
+        "formulaTotalFamilyMember": 2,
+        "formulaTotalfee": 398.97,
+        "messageInvalid": null
+    },
+    "chargentInfo": {
+        "firstOrderId": "",
+        "paylink": "",
+        "paymentRequestId": ""
+    },
+    "chargentStep": {
+        "ChargentPayLinkFormula": ""
+    },
+    "childrenInCensus": false,
+    "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+    "dependentRecordType": "0124P000000uS4qQAE",
+    "enrollPrograms": {
+        "FormulaOTAFDiscount": 125,
+        "MessagingHiddenForValidation": true,
+        "MessagingTextProgramChanged": null,
+        "SelectedProgramComprobation": true,
+        "ValidationText": "validationtext",
+        "additionalFees": 125,
+        "formulaGroupCode": "1NAZCLC05",
+        "formulaGroupCodeinSelectedPlan": "CLC",
+        "formulaISAAmount": "5000",
+        "formulaISAGroupCode": "05",
+        "formulaMontlhyFeeAccountvsNewIncoming": 0,
+        "formulaMoreThan6FamilyMemberAdtionalFee2": 0,
+        "formulaPriceEnrollPrograms": 398.97,
+        "formulaTotalFamilyMember2": 2,
+        "monthlyFee": 0,
+        "programsExample3": null,
+        "selectedPlansErrorMSG": null,
+        "selectedPlansErrorMSGNoProgram": null,
+        "selectedPlansFormulaValidateMSGNoProgram": false
+    },
+    "enrollmentReview": {
+        "BlkHipaa": {
+            "hipaaAuthorized": null
+        },
+        "BlkMedicalQuestions": {
+            "ConsumeAlcoholFunctionReview": null,
+            "ConsumeTobaccoFunctionReview": null,
+            "ExtremeSportsFunctionReview": null,
+            "HaveorHadCancerFunctionReview": null,
+            "MedicalQuestionsReview": null,
+            "MedicalServiceFunctionReview": null,
+            "MemberFamilybeenHospitalized6MonthsReview": null,
+            "PregnantFunctionReview": null,
+            "PrescriptionMedicationsFunctionReview": null,
+            "PresentedInaccurateData": null,
+            "havePrescriptionMedicationsFunctionReview": "No",
+            "playExtremeSportsFunctionReview": "No",
+            "radioConditions24monthFunctionReview": "No",
+            "radioConsumeAlcoholFunctionReview": "No",
+            "radioConsumeTobaccoFunctionReview": "No",
+            "radioHaveorHadCancerFunctionReview": "No",
+            "radioMedicalServiceFunctionReview": "No",
+            "radioMemberFamilybeenHospitalized6MonthsReview": "No",
+            "radioPregnantFunctionReview": "No"
+        },
+        "BlkMyFamily": {
+            "FamilyReview": null,
+            "PrimaryLanguageReview": "English"
+        },
+        "QuoteNumberReview": "00000651",
+        "RequestedEffectiveDateReview": null,
+        "SelectedProgramCodeReview": "OSHCLASSCROWN",
+        "SelectedProgramPriceReview": 398.97,
+        "SelectedProgramReview": "OneShare Classic - Crown",
+        "paymentSummary": null
+    },
+    "error": "OK",
+    "errorDOBList": [
+    ],
+    "guestProfileName": "Member Community Profile",
+    "havePrescriptionMedicationsFunction": "No",
+    "id": "a628A0000001EuZQAU",
+    "incomingQuoteId": "0Q08A000000JkGySAK",
+    "infoPacket": {
+        "AccountId": "0018A00000X1MxyQAF",
+        "CreateDateQuote": "10/21/2020",
+        "EffectiveDate": "10/22/2020",
+        "agentLabel": "0018A00000Twm6dQAB",
+        "agentLabelName": "associate",
+        "packetFound": true,
+        "packetNumber": "102120-00008",
+        "servicingAgent": "0018A00000TyjGAQAZ",
+        "writingAgent": "0058A000003wAujQAE",
+        "writingAgentId": "0058A000003wAujQAE",
+        "writingAgentProfile": "System Administrator"
+    },
+    "insuredItems": {
+    },
+    "isThereAInactiveProduct": false,
+    "isdtp": "p1",
+    "layout": "newport",
+    "manualCoupon": "",
+    "medicalQuestions": {
+        "CountFinalFemaleOnEditFamilyMember": true,
+        "FOCondition24month": true,
+        "SIFollowingCondition24month": null
+    },
+    "memberCommunityURL": "https://devvl2-oshtraining.cs45.force.com/membercommunity/s",
+    "myFamily": {
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaConForDiplayAddInfo180": false,
+        "FormulaConForDiplayAddInfo30": false,
+        "FormulaValidateOldMember": true,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": null,
+        "MSGRatingWillBeBasedOn30or180": null,
+        "MessagingEffectiveDateAlert": null,
+        "MomentaryPigFormula": 0,
+        "MsgEffDateEnrollValid": true,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": null,
+        "RadioFamily": null,
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": "English",
+        "effDate": "10/22/2020",
+        "effDateEnroll": "2020-11-27",
+        "myFamilyTable": null
+    },
+    "oldestMemberList": [
+        {
+            "$$hashKey": "object:1533",
+            "address": "6000 West Van Buren Street",
+            "age": 21,
+            "asthma": false,
+            "behavioralormentalhealth": false,
+            "city": "Phoenix",
+            "congestiveheartfailure": false,
+            "copd": false,
+            "country": "United States",
+            "crohnsdisease": false,
+            "diabetesI": false,
+            "diabetesII": false,
+            "dob": "10/05/1999",
+            "eatingdisorders": false,
+            "email": "kigorin476@uniteditcare.com",
+            "ethnicity": "Hispanic or Latino",
+            "fname": "Juanito",
+            "fullname": "Juanito Bananas",
+            "gender": "Male",
+            "heartdisease": false,
+            "hearthbypasssurgery": false,
+            "herniateddisc": false,
+            "hivaids": false,
+            "hyperlipidemia": false,
+            "hypertensionorhighblood": false,
+            "id": "0018A00000X1MxyQAF",
+            "isHipaaAuthorized": true,
+            "kidneydiseaseorfailure": false,
+            "lname": "Bananas",
+            "parent_id": "0018A00000X1MxyQAF",
+            "phone": "1231232131",
+            "relationship": "Primary",
+            "ssnItin": "",
+            "state": "AZ",
+            "zipcode": "85043"
+        }
+    ],
+    "organizationCode": "1N",
+    "personAccountRecordType": "0128A000000ySrJQAU",
+    "planSelection": {
+        "selectedPlans": [
+            {
+                "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIFETIMESHARMAX\":\"$1,000,000\",\"PROCODE\":\"OSHCLASSCROWN\",\"ISAAMT\":\"5000\",\"DISCLAIMERCARD\":\"*Out-of-network member sharing reimbursement is based on the lesser of the Out-of-network provider actual billed amount or Maximum Reasonable Guidelines for the Eligible Services provided\",\"PRESDISPROG\":\"Access to Prescription Drug Discounts on Generic and Brand Name Drugs\",\"MAXLIMITINC\":\"$500,000\",\"HOSTP\":\"Eligible\",\"INOUTSURG\":\"Eligible - 90 day wait\",\"MATERNITY\":\"Eligible - Conception must be after Effective Date\",\"EMERGROOM\":\"$300 Visit Fee\",\"TELEMED\":\"Doctor Access 24/7  ($0 Consult Fee)\",\"SPEC\":\"$75 Visit Fee\",\"DIAGXLAB\":\"Eligible\",\"URGCAREFAC\":\"$20 Visit Fee - 2 Per Program Year\",\"PRICAREPHY\":\"$20 Visit Fee - 5 Per Program Year\",\"PREVSVCS\":\"100% up to $1,000 Maximum per program year\",\"PROVNET\":\"First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare\"}",
+                "%vlocity_namespace%__CalculatedPriceJSON__c": "{\"ID\":\"6\",\"Member\":333.97,\"MemberPlusOne\":398.97,\"Family\":549.97,\"MemberDiff\":333.97,\"MemberPlusOneDiff\":398.97,\"FamilyDiff\":549.97}",
+                "%vlocity_namespace%__ItemName__c": "OneShare Classic - Crown",
+                "%vlocity_namespace%__NeedReprice__c": false,
+                "%vlocity_namespace%__ProductChildItemSequence__c": 0,
+                "%vlocity_namespace%__ProductName__c": "OneShare Classic - Crown",
+                "%vlocity_namespace%__RecordTypeName__c": "Product",
+                "%vlocity_namespace%__TotalAmount__c": 398.97,
+                "CreatedDate": "2020-10-21T22:58:54.000+0000",
+                "Id": "0QL8A000000zPSGWA2",
+                "LastModifiedDate": "2020-10-21T22:58:54.000+0000",
+                "LineNumber": "00017583",
+                "Name": "OneShare Classic - Crown",
+                "Price": 398.97,
+                "PriceDiff": 398.97,
+                "Product2Id": "01t8A00000496ldQAA",
+                "ProductCode": "OSHCLASSCROWN",
+                "QuoteId": "0Q08A000000JkGySAK",
+                "TotalPrice": 398.97,
+                "UnitPrice": 398.97,
+                "attributeCategories": {
+                    "records": [
+                        {
+                            "Code__c": "PROGCARDATT",
+                            "Name": "Program Card Attributes",
+                            "displaySequence": 1,
+                            "id": "a0y8A000001oo85QAA",
+                            "productAttributes": {
+                                "records": [
+                                    {
+                                        "attributeId": "a0z8A0000010r93QAA",
+                                        "cloneable": true,
+                                        "code": "PROVNET",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 0,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Provider Network",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": "First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare",
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZWQAY",
+                                        "cloneable": true,
+                                        "code": "PREVSVCS",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 1,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Preventive Services and 1 Wellness Visist",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "100% up to $1,000 Maximum per program year",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZOQAY",
+                                        "cloneable": true,
+                                        "code": "PRICAREPHY",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 2,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Primary Care Physician",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$20 Visit Fee - 5 Per Program Year",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZPQAY",
+                                        "cloneable": true,
+                                        "code": "URGCAREFAC",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 3,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Urgent Care Facility",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$20 Visit Fee - 2 Per Program Year",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZQQAY",
+                                        "cloneable": true,
+                                        "code": "DIAGXLAB",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 4,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Laboratory Services/Diagnostic/Xrays",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Eligible",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZRQAY",
+                                        "cloneable": true,
+                                        "code": "SPEC",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 5,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Specialists",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$75 Visit Fee",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZNQAY",
+                                        "cloneable": true,
+                                        "code": "TELEMED",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 6,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Telemedicine",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Doctor Access 24/7  ($0 Consult Fee)",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZSQAY",
+                                        "cloneable": true,
+                                        "code": "EMERGROOM",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 7,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Emergency Room",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$300 Visit Fee",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZKQAY",
+                                        "cloneable": true,
+                                        "code": "MATERNITY",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 8,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Maternity",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Eligible - Conception must be after Effective Date",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZVQAY",
+                                        "cloneable": true,
+                                        "code": "INOUTSURG",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 9,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "In/Out Patient Surgery (Life threatening emergencies immediately available)",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Eligible - 90 day wait",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZJQAY",
+                                        "cloneable": true,
+                                        "code": "HOSTP",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 10,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Hospitalization",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Eligible",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZMQAY",
+                                        "cloneable": true,
+                                        "code": "MAXLIMITINC",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 11,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Maximum Limit Per Incident",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$500,000",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A000001KvpvQAC",
+                                        "cloneable": true,
+                                        "code": "LIFESHARMAX",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 12,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Lifetime Sharing Maximum",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": null,
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZIQAY",
+                                        "cloneable": true,
+                                        "code": "PRESDISPROG",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 13,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Prescription Discount Program",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Access to Prescription Drug Discounts on Generic and Brand Name Drugs",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZUQAY",
+                                        "cloneable": true,
+                                        "code": "ISAAMT",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 14,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "dropdown",
+                                        "isNotTranslatable": false,
+                                        "label": "ISA Amount",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "5000",
+                                        "values": [
+                                            {
+                                                "$$hashKey": "object:1840",
+                                                "disabled": false,
+                                                "id": "0",
+                                                "label": "$5,000",
+                                                "readonly": false,
+                                                "value": "5000"
+                                            },
+                                            {
+                                                "$$hashKey": "object:1841",
+                                                "disabled": false,
+                                                "id": "1",
+                                                "label": "$7,500",
+                                                "readonly": false,
+                                                "value": "7500"
+                                            },
+                                            {
+                                                "$$hashKey": "object:1842",
+                                                "disabled": false,
+                                                "id": "2",
+                                                "label": "$10,000",
+                                                "readonly": false,
+                                                "value": "10000"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZXQAY",
+                                        "cloneable": true,
+                                        "code": "PROCODE",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 15,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": true,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Program Code",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": "OSHCLASSCROWN",
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A000001KvplQAC",
+                                        "cloneable": true,
+                                        "code": "BEHAVHEALTH",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 16,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Behavioral Health/Member Assistance Program (MAP)",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": null,
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A000001JR48QAG",
+                                        "cloneable": true,
+                                        "code": "DISCLAIMERCARD",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 17,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "textarea",
+                                        "isNotTranslatable": false,
+                                        "label": "disclaimer",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "*Out-of-network member sharing reimbursement is based on the lesser of the Out-of-network provider actual billed amount or Maximum Reasonable Guidelines for the Eligible Services provided",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A000001JRHUQA4",
+                                        "cloneable": true,
+                                        "code": "DISCLAIMERCARD2",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 18,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "disclaimer",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": null,
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A000001Kvq0QAC",
+                                        "cloneable": true,
+                                        "code": "DISCLAIMERCARD3",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 19,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "disclaimer",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": null,
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A000001Kvq5QAC",
+                                        "cloneable": true,
+                                        "code": "DISCLAIMERCARD4",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 20,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "disclaimer",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": null,
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "totalSize": 21
+                            }
+                        },
+                        {
+                            "Code__c": "MEMBERDISCPROG",
+                            "Name": "Membership Discount Program",
+                            "displaySequence": 5,
+                            "id": "a0y8A000001xj9MQAQ",
+                            "productAttributes": {
+                                "records": [
+                                    {
+                                        "attributeId": "a0z8A000001JRINQA4",
+                                        "cloneable": true,
+                                        "code": "DISCPROGRAM",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 21,
+                                        "filterable": true,
+                                        "hasRules": true,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Discount Program",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "rules": [
+                                            {
+                                                "actions": {
+                                                    "Set Value": {
+                                                        "client": {
+                                                            "params": {
+                                                            }
+                                                        },
+                                                        "remote": {
+                                                            "params": {
+                                                            }
+                                                        },
+                                                        "rest": {
+                                                            "link": null,
+                                                            "method": null,
+                                                            "params": {
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "expression": "IF(%MEMBER.STATE% == \"WA\" ,true,false)",
+                                                "ruleType": "Set Value",
+                                                "valueExpression": "\"Dental Discount, Vison, Prescription Drug\""
+                                            },
+                                            {
+                                                "actions": {
+                                                    "Set Value": {
+                                                        "client": {
+                                                            "params": {
+                                                            }
+                                                        },
+                                                        "remote": {
+                                                            "params": {
+                                                            }
+                                                        },
+                                                        "rest": {
+                                                            "link": null,
+                                                            "method": null,
+                                                            "params": {
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "expression": "IF(%MEMBER.STATE% != \"WA\" ,true,false)",
+                                                "ruleType": "Set Value",
+                                                "valueExpression": "\"Dental, Diabetic Suplies, Durable Medical Equipement, Lab Testing, Hearing Aids, Vision, Vitamins & Supplements Discounts\""
+                                            }
+                                        ],
+                                        "userValues": null,
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A000001JRHoQAO",
+                                        "cloneable": true,
+                                        "code": "DISCLAIMERMEMBERDISC2",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 22,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "disclaimer",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": null,
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "totalSize": 2
+                            }
+                        }
+                    ],
+                    "totalSize": 2
+                },
+                "availableForEnroll": true,
+                "availableForProducerToEnroll": true,
+                "childProducts": {
+                    "actions": {
+                        "getCandidateChildProducts": {
+                            "client": {
+                                "params": {
+                                }
+                            },
+                            "remote": {
+                                "params": {
+                                    "methodName": "getListChildProducts",
+                                    "prodRecordType": "CoverageSpec",
+                                    "quoteId": "0Q08A000000JkGySAK"
+                                }
+                            },
+                            "rest": {
+                                "link": null,
+                                "method": null,
+                                "params": {
+                                }
+                            }
+                        },
+                        "updateAllCoverageAttribute": {
+                            "client": {
+                                "params": {
+                                }
+                            },
+                            "remote": {
+                                "params": {
+                                    "methodName": "updateAllChildLines",
+                                    "quoteId": "0Q08A000000JkGySAK",
+                                    "reprice": true
+                                }
+                            },
+                            "rest": {
+                                "link": null,
+                                "method": null,
+                                "params": {
+                                }
+                            }
+                        }
+                    },
+                    "records": [
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"DISCLAIMERMEMBERDISC2\":\"Discount Programs Not Owned or Operated by OneShare Health and  are made available to members by a fee from the contributions\",\"DISCPROGRAM\":\"Dental Discount / Diabetic Care and Supplies / Hearing Discount / Lab Discount / Vision and Lasik Discount / Lifeline Screening Discounts\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 0,
+                            "%vlocity_namespace%__ProductName__c": "Membership Discount Program",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-10-21T22:58:54.000+0000",
+                            "Id": "0QL8A000000zPSNWA2",
+                            "LastModifiedDate": "2020-10-21T22:58:54.000+0000",
+                            "LineNumber": "00017590",
+                            "Name": "Membership Discount Program",
+                            "Price": 0,
+                            "Product2Id": "01t8A000004UI3lQAG",
+                            "ProductCode": "MEMBDISCPROG",
+                            "QuoteId": "0Q08A000000JkGySAK",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JkGySAK",
+                                            "quoteLineId": "0QL8A000000zPSNWA2",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "MEMBERDISCPROG",
+                                        "Name": "Membership Discount Program",
+                                        "displaySequence": 5,
+                                        "id": "a0y8A000001xj9MQAQ",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a0z8A000001JRINQA4",
+                                                    "cloneable": true,
+                                                    "code": "DISCPROGRAM",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": true,
+                                                    "hidden": false,
+                                                    "inputType": "textarea",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Discount Program",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "rules": [
+                                                        {
+                                                            "actions": {
+                                                                "Set Value": {
+                                                                    "client": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "remote": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "rest": {
+                                                                        "link": null,
+                                                                        "method": null,
+                                                                        "params": {
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "expression": "IF(%MEMBER.STATE% == \"MA\" ,true,false)",
+                                                            "ruleType": "Set Value",
+                                                            "valueExpression": "\"Dental / Diabetic Suplies / Durable Medical Equipement / Lab Testing / Hearing Aids / Vision / Vitamins & Supplements Discounts\""
+                                                        },
+                                                        {
+                                                            "actions": {
+                                                                "Set Value": {
+                                                                    "client": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "remote": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "rest": {
+                                                                        "link": null,
+                                                                        "method": null,
+                                                                        "params": {
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "expression": "IF(%MEMBER.STATE% == \"WA\" ,true,false)",
+                                                            "ruleType": "Set Value",
+                                                            "valueExpression": "\"Dental Discount / Vison / Prescription Drug\""
+                                                        }
+                                                    ],
+                                                    "userValues": "Dental Discount / Diabetic Care and Supplies / Hearing Discount / Lab Discount / Vision and Lasik Discount / Lifeline Screening Discounts",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A000001JRHoQAO",
+                                                    "cloneable": true,
+                                                    "code": "DISCLAIMERMEMBERDISC2",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "disclaimer",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Discount Programs Not Owned or Operated by OneShare Health and  are made available to members by a fee from the contributions",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 0,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000EpCSQA0",
+                            "productId": "01t8A000004UI3lQAG",
+                            "productName": "Membership Discount Program",
+                            "quoteLineItemId": "0QL8A000000zPSNWA2"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"MAXSHARING\":\"Maximum Limit Per Incident $500,000* Lifetime Maximum per Member: $1,000,000. *Optional increase of $500,000 Maximum Per Incident available\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 3,
+                            "%vlocity_namespace%__ProductName__c": "Maximum Limits",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-10-21T22:58:54.000+0000",
+                            "Id": "0QL8A000000zPSOWA2",
+                            "LastModifiedDate": "2020-10-21T22:58:54.000+0000",
+                            "LineNumber": "00017591",
+                            "Name": "Maximum Limits",
+                            "Price": 0,
+                            "Product2Id": "01t8A0000043pgQQAQ",
+                            "ProductCode": "MAXLIMITS",
+                            "QuoteId": "0Q08A000000JkGySAK",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JkGySAK",
+                                            "quoteLineId": "0QL8A000000zPSOWA2",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "PROGCARDATT",
+                                        "Name": "Program Card Attributes",
+                                        "displaySequence": 1,
+                                        "id": "a0y8A000001oo85QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a0z8A00000105ZHQAY",
+                                                    "cloneable": true,
+                                                    "code": "LIFESHAREMAX",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Lifetime Sharing Maximum",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    },
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a0z8A00000105ZnQAI",
+                                                    "cloneable": true,
+                                                    "code": "MAXSHARING",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Maximum Sharing",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Maximum Limit Per Incident $500,000* Lifetime Maximum per Member: $1,000,000. *Optional increase of $500,000 Maximum Per Incident available",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 2
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 3,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep44QAC",
+                            "productId": "01t8A0000043pgQQAQ",
+                            "productName": "Maximum Limits",
+                            "quoteLineItemId": "0QL8A000000zPSOWA2"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"CANCERLB\":\"If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.\",\"CANCERPREEXREC\":\"Cancer Expenses are not eligible for sharing.\",\"CANCERLIMITMEMMORE5YEAR\":\"If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.\",\"CANCERLIMITDIAGWUTHN5YEAR\":\"If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing\",\"CANCERNEEDDIAGTREATMORE5YR\":\"Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.\",\"CANCERMEMBNEVERDIAGRECTREAT\":\"Sharing is eligible after a 90 day waiting period from the Member's effective date. If Cancer is diagnosed within the 90 day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are not eligible for sharing.\",\"CANCERSHLIMT\":\"The Lifetime Limit for all Cancer is $500,000; each Incident cannot exceed the Maximum Limit Per Incident.\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 9,
+                            "%vlocity_namespace%__ProductName__c": "Cancer",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-10-21T22:58:54.000+0000",
+                            "Id": "0QL8A000000zPSSWA2",
+                            "LastModifiedDate": "2020-10-21T22:58:54.000+0000",
+                            "LineNumber": "00017595",
+                            "Name": "Cancer",
+                            "Price": 0,
+                            "Product2Id": "01t8A000004CGe5QAG",
+                            "ProductCode": "CANCER",
+                            "QuoteId": "0Q08A000000JkGySAK",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JkGySAK",
+                                            "quoteLineId": "0QL8A000000zPSSWA2",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a0z8A0000010rAQQAY",
+                                                    "cloneable": true,
+                                                    "code": "CANCERSHLIMT",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Cancer Sharing Limits",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "The Lifetime Limit for all Cancer is $500,000; each Incident cannot exceed the Maximum Limit Per Incident.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A000001JRAkQAO",
+                                                    "cloneable": true,
+                                                    "code": "CANCERMEMBNEVERDIAGRECTREAT",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "textarea",
+                                                    "isNotTranslatable": false,
+                                                    "label": "For Members who have never been diagnosed/received treatment for any Cancer",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Sharing is eligible after a 90 day waiting period from the Member's effective date. If Cancer is diagnosed within the 90 day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are not eligible for sharing.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A000001JRApQAO",
+                                                    "cloneable": true,
+                                                    "code": "CANCERNEEDDIAGTREATMORE5YR",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "textarea",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Need for member diagnosed/treated for cancer more than 5 yrs. prior to eff date",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A000001JRAuQAO",
+                                                    "cloneable": true,
+                                                    "code": "CANCERLIMITDIAGWUTHN5YEAR",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 3,
+                                                    "filterable": true,
+                                                    "hasRules": true,
+                                                    "hidden": false,
+                                                    "inputType": "textarea",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Limitations for members diagnosed/treated for cancer within 5 yrs. of eff date",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A000001JRAzQAO",
+                                                    "cloneable": true,
+                                                    "code": "CANCERLIMITMEMMORE5YEAR",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 4,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Limitation for member diagnosed/treated for cancer more than 5 yr. of eff date",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A0000010brlQAA",
+                                                    "cloneable": true,
+                                                    "code": "CANCERPREEXREC",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 5,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "textarea",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Pre-Existing or Recurrent",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Cancer Expenses are not eligible for sharing.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A000001KohjQAC",
+                                                    "cloneable": true,
+                                                    "code": "CANCERLB",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 6,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Cancer Look Back Period",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A000001L35xQAC",
+                                                    "cloneable": true,
+                                                    "code": "REQCAN5YEARS",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 7,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Requirements for members diagnosed or treated for cancer more than 5 years prior",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 8
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 9,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000EpAvQAK",
+                            "productId": "01t8A000004CGe5QAG",
+                            "productName": "Cancer",
+                            "quoteLineItemId": "0QL8A000000zPSSWA2"
+                        },
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"PRESDISCPROG\":\"Discount Services - Envision RX\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 13,
+                            "%vlocity_namespace%__ProductName__c": "Outpatient Prescription Discount",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000zPSGWA2",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-10-21T22:58:54.000+0000",
+                            "Id": "0QL8A000000zPSLWA2",
+                            "LastModifiedDate": "2020-10-21T22:58:54.000+0000",
+                            "LineNumber": "00017588",
+                            "Name": "Outpatient Prescription Discount",
+                            "Price": 0,
+                            "Product2Id": "01t8A000004W5bkQAC",
+                            "ProductCode": "OUTPATDISCOUNT",
+                            "QuoteId": "0Q08A000000JkGySAK",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JkGySAK",
+                                            "quoteLineId": "0QL8A000000zPSLWA2",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a0y8A000001oo86QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a0z8A0000015WGpQAM",
+                                                    "cloneable": true,
+                                                    "code": "PRESDISCPROG",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": true,
+                                                    "hidden": true,
+                                                    "inputType": "textarea",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Prescriptions (Discount Program is not owned or operated by OnesShare Health)",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "rules": [
+                                                        {
+                                                            "actions": {
+                                                                "Set Value": {
+                                                                    "client": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "remote": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "rest": {
+                                                                        "link": null,
+                                                                        "method": null,
+                                                                        "params": {
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "expression": "IF(%MEMBER.STATE% == \"WA\" ,true ,false)",
+                                                            "ruleType": "Set Value",
+                                                            "valueExpression": "\"Once a Member has paid $1,500 in prescription discounts through EnvisionRX, the Member is eligible for sharing of 50% of the expenses for generic or brand name prescription drugs, for the remainder of the Program year, up to $3,000 maximum.\""
+                                                        },
+                                                        {
+                                                            "actions": {
+                                                                "Set Value": {
+                                                                    "client": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "remote": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "rest": {
+                                                                        "link": null,
+                                                                        "method": null,
+                                                                        "params": {
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "expression": "IF(%MEMBER.STATE% == \"MA\" ,true ,false)",
+                                                            "ruleType": "Set Value",
+                                                            "valueExpression": "\"Discount Services - Retail and Mail Order\""
+                                                        },
+                                                        {
+                                                            "actions": {
+                                                                "Set Value": {
+                                                                    "client": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "remote": {
+                                                                        "params": {
+                                                                        }
+                                                                    },
+                                                                    "rest": {
+                                                                        "link": null,
+                                                                        "method": null,
+                                                                        "params": {
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "expression": "IF(%MEMBER.STATE% != \"MA\" && %MEMBER.STATE% != \"WA\",true ,false)",
+                                                            "ruleType": "Set Value",
+                                                            "valueExpression": "\"Discount Services - Envision RX\""
+                                                        }
+                                                    ],
+                                                    "userValues": "Discount Services - Envision RX",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 13,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000Ep6ZQAS",
+                            "productId": "01t8A000004W5bkQAC",
+                            "productName": "Outpatient Prescription Discount",
+                            "quoteLineItemId": "0QL8A000000zPSLWA2"
+                        }
+                    ],
+                    "totalSize": 4
+                },
+                "coverageCount": 12,
+                "currencyCode": "USD",
+                "currencySymbol": "$",
+                "displaySequence": 0,
+                "estimatedPriceChangeBasedOnRating": false,
+                "flagDifference": false,
+                "hasAttributes": true,
+                "hasCoverages": true,
+                "instanceKey": "OneShare Classic - Crown",
+                "isCalculated": true,
+                "lineRecordType": "Product",
+                "needReprice": false,
+                "originalIndex": 0,
+                "productId": "01t8A00000496ldQAA",
+                "productName": "OneShare Classic - Crown",
+                "quoteLineItemId": "0QL8A000000zPSGWA2",
+                "recordType": "Product",
+                "selected": true
+            }
+        ]
+    },
+    "playExtremeSportsFunction": "No",
+    "primaryMemberRecordType": "0124P000000uS4rQAE",
+    "producerCommunityURL": "https://devvl2-oshtraining.cs45.force.com/producercommunity/s",
+    "productConfigurationDetail": {
+        "records": [
+        ],
+        "totalSize": 1
+    },
+    "productsAvailability": [
+        {
+            "Id": "01t8A00000496ldQAA",
+            "IsActive": true,
+            "Name": "OneShare Classic - Crown"
+        }
+    ],
+    "quoteDetail": {
+        "%vlocity_namespace%__EffectiveDate__c": "2020-10-22",
+        "%vlocity_namespace%__RootItemTotal__c": 398.97,
+        "%vlocity_namespace%__TotalAmountTermDifference__c": 0,
+        "%vlocity_namespace%__TotalAmount__c": 398.97,
+        "%vlocity_namespace%__TotalFeeAmount__c": 0,
+        "%vlocity_namespace%__TotalFeeTermDifference__c": 0,
+        "%vlocity_namespace%__TotalPremiumTermDifference__c": 0,
+        "%vlocity_namespace%__TotalSumInsured__c": 0,
+        "%vlocity_namespace%__TotalTaxAmount__c": 0,
+        "%vlocity_namespace%__TotalTaxTermDifference__c": 0,
+        "%vlocity_namespace%__Type__c": "New Business",
+        "AccountId": "0018A00000X1MxyQAF",
+        "Id": "0Q08A000000JkGySAK",
+        "Information_Packet_Number__c": "102120-00008",
+        "attributes": {
+            "type": "Quote",
+            "url": "/services/data/v50.0/sobjects/Quote/0Q08A000000JkGySAK"
+        }
+    },
+    "radioConditions24monthFunction": "No",
+    "radioConsumeAlcoholFunction": "No",
+    "radioConsumeTobaccoFunction": "No",
+    "radioFamilyOption": "MyselfMyspouse",
+    "radioHaveorHadCancerFunction": "No",
+    "radioHospitalizedFunction": "No",
+    "radioMedicalServiceFunction": "No",
+    "radioPregnantFunction": "No",
+    "resultDateDaysEffxOld": 52,
+    "resultDateYearEffxOld": 21,
+    "selectedMonthlyContributionDiscount": {
+        "Coupon": "No Selection",
+        "Recurrency": "Never",
+        "ShortDescription": ""
+    },
+    "selectedOneTimeApplicationDiscount": {
+        "Coupon": "No Selection",
+        "Recurrency": "Never",
+        "ShortDescription": ""
+    },
+    "selectedPlan": "",
+    "selectedPlansFormulaValidateMSG": false,
+    "servicingAgentGet": {
+        "AccountId": "0018A00000S8osdQAB",
+        "ContractLevel": "16",
+        "Email": "vicente.martinez@arcsona.com",
+        "FirstName": "Vicente",
+        "LastName": "Martinez",
+        "Name": "Vicente Martinez",
+        "ProfileId": "00e4P000001X18aQAC"
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "thisIsCommunity": false,
+    "timeStamp": "2020-11-18T19:07:16.265Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wAujQAE",
+    "userName": "vicente.martinez@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -360,
+    "validCensus": true,
+    "vlcPersistentComponent": {
+    },
+    "writingAgentGet": {
+        "AccountId": "0018A00000Twm6dQAB",
+        "ContractLevel": "16",
+        "Email": "vicente.martinez@arcsona.com",
+        "FirstName": "Vicente",
+        "LastName": "Martinez",
+        "Name": "Vicente Martinez",
+        "ProfileId": "00e4P000001X18aQAC"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__InternalNotes__c": "Flow without agent data seted for guest user community",
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Enroll Load Initial Information",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Enroll/Load Initial Information with My Family Table/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "additionalInput": {
+            "HipaaMembers": "%OSH_ExtractHipaaAuthorized:AuthorizedPersonas%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRTA_FamilyInfo_LoadEnroll",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%thisIsCommunity% == true",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "ignoreCache": false,
+        "label": "DataRaptorTransformAction1",
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "OSH_Enroll_getAgentDataGuest",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "DataRaptor Transform Action",
+    "Name": "DRTA_FamilyInfo_LoadEnrollGuest",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Enroll/Load Initial Information with My Family Table/Procedure/DRTA_FamilyInfo_LoadEnrollGuest"
+}
