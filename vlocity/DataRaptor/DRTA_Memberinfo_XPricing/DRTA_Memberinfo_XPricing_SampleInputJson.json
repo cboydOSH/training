@@ -1,0 +1,371 @@
+{
+    "AccountProductPrivileges": [
+        {
+            "code": "OSHCAT150",
+            "id": "01t8A0000043pgeQAA",
+            "name": "OneShare Catastrophic - $150,000/$300,000",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCAT500",
+            "id": "01t8A00000496LvQAI",
+            "name": "OneShare Catastrophic - $500,000/$1,000,000",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCAT250",
+            "id": "01t8A00000496MHQAY",
+            "name": "OneShare Catastrophic - $250,000/$500,000",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCOMPCROWN",
+            "id": "01t8A00000496MbQAI",
+            "name": "OneShare Complete - Crown",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSENH",
+            "id": "01t8A00000496OOQAY",
+            "name": "OneShare Classic - Enhanced",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSBASIC",
+            "id": "01t8A00000496RdQAI",
+            "name": "OneShare Classic - Basic",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSCROWN",
+            "id": "01t8A00000496ldQAA",
+            "name": "OneShare Classic - Crown",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCOMPBASIC",
+            "id": "01t8A0000049Yz8QAE",
+            "name": "OneShare Complete - Basic",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCOMPENH",
+            "id": "01t8A000004A8QRQA0",
+            "name": "OneShare Complete - Enhanced",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHTHRIVEPREF",
+            "id": "01t8A000005q4NmQAI",
+            "name": "Thrive Preferred",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHTHRIVEPREM",
+            "id": "01t8A000005q4OuQAI",
+            "name": "Thrive Premier",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSBASIC1",
+            "id": "01t8A00000695g9QAA",
+            "name": "OneShare Classic - Basic",
+            "selectPrivilegie": "allowed"
+        }
+    ],
+    "AccountsForOSHEmployees": [
+        {
+            "Id": "0018A00000TyjGAQAZ",
+            "Monthly_Commission_Fee__c": 0,
+            "Name": "OSH Enrollment",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v50.0/sobjects/Account/0018A00000TyjGAQAZ"
+            }
+        },
+        {
+            "Id": "0018A00000TzHtdQAF",
+            "Monthly_Commission_Fee__c": 30,
+            "Name": "Forever young",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v50.0/sobjects/Account/0018A00000TzHtdQAF"
+            }
+        },
+        {
+            "Id": "0018A00000TwmBUQAZ",
+            "Monthly_Commission_Fee__c": 80,
+            "Name": "Aamer Rehman",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v50.0/sobjects/Account/0018A00000TwmBUQAZ"
+            }
+        },
+        {
+            "Id": "0018A00000Twm85QAB",
+            "Monthly_Commission_Fee__c": 100,
+            "Name": "Maris Walter",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v50.0/sobjects/Account/0018A00000Twm85QAB"
+            }
+        }
+    ],
+    "AddEditFamilyMember": [
+        {
+            "address": "",
+            "age": 43,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1977-11-03",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Deploy",
+            "gender": "Male",
+            "id": "1605124903955",
+            "lname": "Test3",
+            "parent_id": "1605124903955",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "AgentLabel": "0018A00000Twm6dQAB",
+    "ContextId": "",
+    "DRId_Lead": "00Q8A000004hv48UAA",
+    "DateError": 0,
+    "DateErrorMessage": "",
+    "DiscountAccountId": "0018A00000TyjGAQAZ",
+    "ExistingInfoPacket": {
+        "BlkExistingInfoPacket": {
+            "FormulaQuoteOptionsPresent": null,
+            "MessagingNotFoundForSearchQuotes": null,
+            "RadioForLookingThroughName": false,
+            "TxtInfoPacketNumber": null,
+            "TxtNameForSearch": null
+        },
+        "CancelFormula": "/",
+        "EnrollerID": null,
+        "FormulaEnrollerId": false,
+        "RadioExistingInfoPacket": "No",
+        "ServicingAgentDropdown": null
+    },
+    "HaveAdultDependent": 0,
+    "MonthlyFee": 0,
+    "NoAdultGreaterThan27AndLesserThan65": 0,
+    "NoChildGreaterThan27": 0,
+    "NoChildGreaterThan65": 0,
+    "NoChildWrongDate": 0,
+    "NoEmpAge18": 0,
+    "NoSpouse65": 0,
+    "NumOfEmployeeInternal": 1,
+    "OSHServicingAgent": "0018A00000TyjGAQAZ",
+    "QuoteOptions": "something",
+    "SelectedServicingAgentDropdown": {
+        "Id": "0018A00000TyjGAQAZ",
+        "Monthly_Commission_Fee__c": 0,
+        "Name": "OSH Enrollment",
+        "RecordTypeId": "0124P000000uPa9QAE",
+        "attributes": {
+            "type": "Account",
+            "url": "/services/data/v50.0/sobjects/Account/0018A00000TyjGAQAZ"
+        }
+    },
+    "ServicingAgent": "Needs Dropdown selection",
+    "ThisisQuote": true,
+    "UserEmail": "mateo.salles@arcsona.com",
+    "UserType": "OSH Employee",
+    "WritingAgent": "0058A000005jSHLQA2",
+    "attributeFilters": {
+    },
+    "bestMedicalPlans": [
+        "OSHCLASSCROWN",
+        "OSHTHRIVEPREM"
+    ],
+    "childrenInCensus": false,
+    "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+    "dependentRecordType": "0124P000000uS4qQAE",
+    "effDate": "",
+    "effectiveDate": "2020-11-12",
+    "error": "OK",
+    "errorDOBList": [
+    ],
+    "id": "a628A0000001EvmQAE",
+    "internalLeadRecordType": "0124P000000uPoZQAU",
+    "isdtp": "p1",
+    "layout": "newport",
+    "letsGetStarted": {
+        "BlkNoExistingInfoPacket": {
+            "Email1": "deptest@pidouno.com",
+            "FormulaEegible": false,
+            "FormulaEegibleMA": false,
+            "SelectReferer": "Referral",
+            "TAAddressGoogle-Block": {
+                "City": "Long Island",
+                "Country": "United States",
+                "State": "NY",
+                "TAAddressGoogle": "4545 Center Blvd, Long Island City, NY 11101, USA",
+                "address": "4545 Center Boulevard",
+                "buildingSuiteApartment": null,
+                "zipCode": "11101"
+            },
+            "Telephone1": "5455666541",
+            "fName": "Deploy",
+            "lName": "Test3"
+        }
+    },
+    "myFamily": {
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaConForDiplayAddInfo180": false,
+        "FormulaConForDiplayAddInfo30": false,
+        "FormulaValidateOldMember": true,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": true,
+        "MSGRatingWillBeBasedOn30or180": null,
+        "MessagingEffectiveDateAlert": null,
+        "MomentaryPigFormula": 0,
+        "MsgEffDateEnrollValid": null,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": null,
+        "RadioFamily": "MySelf",
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": "English",
+        "effDate": "2020-11-12",
+        "effDateEnroll": null,
+        "myFamilyTable": null
+    },
+    "oldestMemberList": [
+        {
+            "address": "",
+            "age": 43,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1977-11-03",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Deploy",
+            "gender": "Male",
+            "id": "1605124903955",
+            "lname": "Test3",
+            "parent_id": "1605124903955",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "opportunityRecordType": "0124P000000uPaBQAU",
+    "orderPlans": [
+        {
+            "ID": "input",
+            "Orderby": [
+                "OSHCLASSCROWN",
+                "OSHTHRIVEPREM",
+                "OSHCOMPBASIC",
+                "OSHCOMPCROWN",
+                "OSHCOMPENH",
+                "OSHCLASSBASIC",
+                "OSHCLASSENH",
+                "OSHTHRIVEPREF",
+                "OSHCAT500",
+                "OSHCAT250",
+                "OSHCAT150"
+            ]
+        }
+    ],
+    "planSelection": {
+        "selectedPlans": [
+        ]
+    },
+    "primaryMemberRecordType": "0124P000000uS4rQAE",
+    "programs": {
+        "FormulaFlagDifference": 0,
+        "SelectedProgramComprobation": false,
+        "Space15x12": null,
+        "Space16x12": null,
+        "comprobationfield": null,
+        "programsExample3": null,
+        "selectedPlansErrorMSGNoProgram": null
+    },
+    "resultDateDaysEffxOld": 9,
+    "resultDateYearEffxOld": 43,
+    "reviewQuote": {
+        "FormulaLinkForRedirectToOS2": null,
+        "Space13x12": null,
+        "Space14x12": null,
+        "Space17x3": null,
+        "Space25x3": null,
+        "Space26x3": null,
+        "downloadyourinfopacket": null,
+        "url1": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "standardAccountRecordType": "0128A000000xZjYQAU",
+    "stateofBeliefs": {
+        "MessagingStatesoff": null,
+        "Space2x4": null,
+        "Space3x4": null,
+        "msg": null,
+        "qualification": "Yes"
+    },
+    "tellUsAboutYou": {
+        "Block19": null,
+        "Block20": null,
+        "additionalFees": 125,
+        "formulaMoreThan6FamilyMemberAdtionalFee": 0,
+        "formulaTotalFamilyMember": 1,
+        "monthlyFee": 0,
+        "oneTimeContributionFee": 125,
+        "tellUsAboutYouFields": {
+            "MSHowOftenPCP": "0-1",
+            "RadioCurrExpctibgStartfamily": "Yes",
+            "RadiofamilycurrSpecialist": "No"
+        }
+    },
+    "thisIsCommunity": false,
+    "timeStamp": "2020-11-11T20:00:47.232Z",
+    "urlForVisualForcePages": "https://onesharehealth--devvl2--c.visualforce.com/",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000005jSHLQA2",
+    "userInputs": {
+        "AccountId": "0018A00000TyjGAQAZ",
+        "AdditionalFeeMoreThan6": 0,
+        "AdditionalFees": 125,
+        "Age": 43,
+        "MEMBER.AGE": 43,
+        "MEMBER.AdditionalFeeMoreThan6": 0,
+        "MEMBER.AditionalFees": 125,
+        "MEMBER.STATE": "NY",
+        "State": "NY"
+    },
+    "userName": "mateo.salles@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -360,
+    "validCensus": true,
+    "vlcPersistentComponent": {
+    },
+    "writingAgentGet": {
+        "AccountId": "0018A00000Twm6dQAB",
+        "ContractLevel": "16",
+        "Email": "mateo.salles@arcsona.com",
+        "FirstName": "Mateo",
+        "LastName": "Salles",
+        "Name": "Mateo Salles",
+        "ProfileId": "00e4P000001X18aQAC"
+    }
+}

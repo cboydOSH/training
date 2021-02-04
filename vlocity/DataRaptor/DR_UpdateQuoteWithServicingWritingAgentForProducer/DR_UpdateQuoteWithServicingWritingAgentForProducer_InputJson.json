@@ -1,0 +1,163 @@
+{
+    "AccountsForOSHEmployees": [
+        {
+            "Id": "0018A00000TzHtdQAF",
+            "Monthly_Commission_Fee__c": 30,
+            "Name": "Forever young",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+            }
+        },
+        {
+            "Id": "0018A00000TyjGAQAZ",
+            "Monthly_Commission_Fee__c": 45,
+            "Name": "OSH Enrollment",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+            }
+        }
+    ],
+    "AddEditFamilyMember": [
+        {
+            "address": "",
+            "age": 0,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": null,
+            "gender": "",
+            "id": "1591210817039",
+            "lname": null,
+            "parent_id": "1591210817039",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "ContextId": "",
+    "ExistingInfoPacket": {
+        "BlkExistingInfoPacket": {
+            "TxtInfoPacketNumber": null
+        },
+        "CancelFormula": "/",
+        "EnrollerID": "asdasdasdasd",
+        "FormulaEnrollerId": true,
+        "RadioExistingInfoPacket": null,
+        "ServicingAgentDropdown": null
+    },
+    "MonthlyFee": 0,
+    "SelectedServicingAgentDropdown": {
+        "Id": "0018A00000TzHtdQAF",
+        "Monthly_Commission_Fee__c": 30,
+        "Name": "Forever young",
+        "RecordTypeId": "0124P000000uPa9QAE",
+        "attributes": {
+            "type": "Account",
+            "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+        }
+    },
+    "ServicingAgent": "Needs Dropdown selection",
+    "ThisisQuote": true,
+    "UserType": "OSH Employee",
+    "WritingAgent": "0058A000003wAujQAE",
+    "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+    "dependentRecordType": "0124P000000uS4qQAE",
+    "error": "OK",
+    "id": "a628A00000011JhQAI",
+    "internalLeadRecordType": "0124P000000uPoZQAU",
+    "isdtp": "p1",
+    "layout": "newport",
+    "letsGetStarted": {
+        "BlkNoExistingInfoPacket": {
+            "Email1": null,
+            "FormulaEegible": null,
+            "FormulaEegibleMA": null,
+            "SelectReferer": null,
+            "TAAddressGoogle-Block": {
+                "City": null,
+                "Country": null,
+                "State": null,
+                "TAAddressGoogle": null,
+                "address": null,
+                "buildingSuiteApartment": null,
+                "zipCode": null
+            },
+            "Telephone1": null,
+            "fName": null,
+            "lName": null
+        }
+    },
+    "myFamily": {
+        "Check60daysandTodayPast": null,
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaValidateOldMember": null,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": null,
+        "MomentaryPigFormula": null,
+        "MsgEffDateEnrollValid": null,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": null,
+        "RadioFamily": null,
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": null,
+        "effDateEnroll": null,
+        "effectiveDateforQuote": null,
+        "myFamilyTable": null
+    },
+    "opportunityRecordType": "0124P000000uPaBQAU",
+    "primaryMemberRecordType": "0124P000000uS4rQAE",
+    "reviewQuote": {
+        "Space13x12": null,
+        "Space14x12": null,
+        "Space17x3": null,
+        "Space25x3": null,
+        "Space26x3": null,
+        "readyToEnroll": null,
+        "url1": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "standardAccountRecordType": "0128A000000xZjYQAU",
+    "stateofBeliefs": {
+        "MessagingStatesoff": null,
+        "Space2x4": null,
+        "Space3x4": null,
+        "msg": null,
+        "qualification": null
+    },
+    "tellUsAboutYou": {
+        "Block19": null,
+        "Block20": null,
+        "additionalFees": null,
+        "formulaMoreThan6FamilyMemberAdtionalFee": null,
+        "formulaTotalFamilyMember": null,
+        "tellUsAboutYouFields": {
+            "MSHowOftenPCP": null,
+            "RadioCurrExpctibgStartfamily": null,
+            "RadiofamilycurrSpecialist": null
+        }
+    },
+    "timeStamp": "2020-06-03T19:00:14.654Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wAujQAE",
+    "userName": "vicente.martinez@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}
