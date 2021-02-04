@@ -1,0 +1,25 @@
+{
+    "HIPAAAuthorization": {
+        "AuthorizeOtherRatio": "No",
+        "Block7": null,
+        "MemberAddressGoogle-Block": {
+            "MemberAddressGoogle": "8525 Garland Rd, Dallas, TX 75218, USA",
+            "memberAddress": "8525 Garland Road",
+            "memberBuildingSuiteApartment": null,
+            "memberCity": "Dallas",
+            "memberCountry": "United States",
+            "memberState": "TX",
+            "memberZipCode": "75218"
+        },
+        "Osh-HIPPA-tablemembers": null,
+        "authorizeNewMember": {
+            "FirstName": null,
+            "LastName": null,
+            "MemberAddress": null,
+            "MemberEmail": null,
+            "Phone": null,
+            "isHipaaAuthorized": false
+        },
+        "space27x12": null
+    }
+}

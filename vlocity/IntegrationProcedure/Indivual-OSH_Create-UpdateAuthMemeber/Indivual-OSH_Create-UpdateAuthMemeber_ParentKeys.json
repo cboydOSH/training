@@ -1,0 +1,7 @@
+[
+    "DataRaptor/DR_TransformtoCensusMemberInformation",
+    "DataRaptor/OSH-DRTransformAndMergeListNewHIPAAMembers",
+    "DataRaptor/OSH_CreateHipaaAuthorizations",
+    "DataRaptor/OSH_InsertAuthorizedMemberInCensusMemberV2",
+    "DataRaptor/OSH_UpdateHipaaAuthorizedMembers"
+]

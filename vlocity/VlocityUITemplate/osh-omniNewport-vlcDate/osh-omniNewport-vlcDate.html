@@ -6,7 +6,7 @@
 
                     <input id="effDate" name="loopname" ng-disabled="control.ro" ng-required="control.req" 
                         type="text" placement="none" class="nds-input ng-pristine ng-untouched ng-valid-max ng-valid-min ng-valid-date ng-valid-disabled-date ng-empty ng-valid ng-valid-required" 
-                        ng-model="bpTree.response.myFamily.effDate" ng-init="initValue()" data-date-format="MM/dd/yyyy" data-max-date="today + 61 days" 
+                        ng-model="bpTree.response.myFamily.effDate" ng-init="initValue()" data-date-format="MM/dd/yyyy" data-max-date="today + {{bpTree.response.numberOfDays}} days" 
                         data-min-date="today + 1 day" date-type="string" model-date-format="yyyy-MM-dd" days-of-week-disabled="" slds-date-picker="" 
                         autocomplete="off" vlc-slds-val-checker="response" aria-invalid="false">
 

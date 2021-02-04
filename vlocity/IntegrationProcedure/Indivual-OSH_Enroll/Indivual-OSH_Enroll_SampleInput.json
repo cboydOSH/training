@@ -1,0 +1,15 @@
+{
+    "Account": {
+        "ContactId": "0018A00000WQnX3QAL",
+        "Id": "0018A00000WQnX3QAL",
+        "Name": "test4 test4"
+    },
+    "AssetId": "02i8A000004EUloQAG",
+    "ContractServiceRemoteAction": {
+        "contractId": "8008A000000Wy5OQAS"
+    },
+    "chargentInfo": {
+        "firstOrderId": "a918A0000004VvyQAE",
+        "secondOrderId": "a918A0000004Vw3QAE"
+    }
+}

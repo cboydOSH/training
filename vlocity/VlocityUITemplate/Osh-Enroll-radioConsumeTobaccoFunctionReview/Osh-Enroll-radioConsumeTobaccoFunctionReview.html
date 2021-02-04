@@ -1,0 +1,45 @@
+<div class="nds-max-small-size_1-of-1 nds-size_12-of-12 nds-grid nds-wrap nds-m-bottom_medium nds-m-top_none" ng-controller="OSHapp">
+	<div class="nds-max-small-size_1-of-1 nds-size_12-of-12" ng-if="bpTree.response.radioConsumeTobaccoFunction =='Yes'">
+		<!--Table for Tobacco-->
+		<div >
+			<div class="nds-m-bottom_medium" >
+				<table class="nds-table nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right" style="width:100%;">
+					<thead>
+						<tr class="nds-text-title_caps">
+							<th scope="col">
+								<div class="nds-truncate" title="Member">Member</div>
+							</th>
+							<th item-width="400px" scope="col">
+								<div class="nds-truncate" title="Tobacco">Tobacco/Vape</div>
+							</th>
+						</tr>
+						<tr>
+						</tr>
+					</thead>
+					<tbody class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" ng-repeat="data in bpTree.response.EditFamilyMember">
+						<tr ng-show="data.relationship!='Other' && data.age>=18">
+							<!-- Member -->
+							<td scope="row">
+								<div align="left">
+									<div class="nds-form-element">
+										<div class="nds-form-element__control">
+											{{data.fullname}}
+										</div>
+									</div>
+								</div>
+                            </td>
+                            <!-- Tobacco -->
+							<td>
+								<div class="nds-form-element">
+									<div class="nds-form-element__control">
+										{{data.weeklytobacco}}
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

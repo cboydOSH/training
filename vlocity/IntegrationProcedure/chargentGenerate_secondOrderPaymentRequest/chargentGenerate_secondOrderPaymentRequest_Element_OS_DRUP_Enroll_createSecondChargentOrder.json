@@ -1,0 +1,47 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "osh",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/chargentGenerate/secondOrderPaymentRequest/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Account": "%Account%",
+            "Account:ContactId": "%Account:ContactId%",
+            "AssetId": "%AssetId%",
+            "Quote": "%Quote%",
+            "Welcome": "%Welcome%",
+            "bill": "%bill%",
+            "incomingQuoteId": "%incomingQuoteId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "OS_DRUP_Enroll_createSecondChargentOrder",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "OS_DRGT_Enroll_getSecondChargentInfo",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "DataRaptor Post Action",
+    "Name": "OS_DRUP_Enroll_createSecondChargentOrder",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/chargentGenerate/secondOrderPaymentRequest/Procedure/OS_DRUP_Enroll_createSecondChargentOrder"
+}

@@ -1,0 +1,11 @@
+{
+    "AgentLabel": "0018A00000WbIhQQAV",
+    "UserType": "Producer",
+    "planSelection": {
+        "selectedPlans": [
+            {
+                "ProductCode": "OSHCAT500"
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DREX_GetQuoteDetails": null,
+        "RemoteAction1": null
+    }
+}
