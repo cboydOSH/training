@@ -1,0 +1,77 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "OSH Programs Step",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Programs/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "OSH Programs Step",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Programs/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "programs",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Programs/English/programs",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "programs",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "ins-os-hins-small-group-plan-selection-osh",
+        "accessibleInFutureSteps": false,
+        "dataJSON": true,
+        "disOnTplt": false,
+        "itemsKey": "recSet",
+        "label": null,
+        "maxCompareSize": 3,
+        "modalConfigurationSetting": {
+            "modalController": "ModalProductCtrl",
+            "modalHTMLTemplateId": "vlcProductConfig.html",
+            "modalSize": "lg"
+        },
+        "modalController": "ModalInstanceCtrl",
+        "modalHTMLTemplateId": "ins-os-plan-compare-modal-os",
+        "modalSize": "lg",
+        "postTransformBundle": "",
+        "preTransformBundle": null,
+        "remoteClass": "InsProductService",
+        "remoteMethod": "getRatedGroupProducts",
+        "remoteOptions": {
+            "accountId": "%userId%",
+            "effectiveDate": "%effectiveDate%",
+            "evalOptionalCoverageRelationship": false,
+            "filters": "Catalog__c:Vlocity",
+            "includeFilterAttrValues": true,
+            "includeOptionalCovSelectFlag": false,
+            "includeRawCalculationResult": false,
+            "isBatchMode": false,
+            "omitChildren": true,
+            "omitEligibility": false,
+            "omitRating": false,
+            "pageSize": 10,
+            "postTransformBundle": null,
+            "preTransformBundle": null,
+            "rootPricingOnly": true,
+            "ruleAttributeSetValues": true,
+            "validateCoverageSelection": false,
+            "whereClause": "%vlocity_namespace%__Availability__c includes  ('%userInputs:State%')"
+        },
+        "remoteTimeout": 50000,
+        "responseJSONNode": "programsExample3",
+        "responseJSONPath": "result",
+        "selectMode": "Single",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Selectable Items",
+    "Name": "programsExample3",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Programs/English/programsExample3"
+}

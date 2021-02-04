@@ -1,0 +1,13 @@
+{
+    "ProgramQuoteJson": {
+        "accountId": "Text",
+        "additionalFields": {
+            "%vlocity_namespace%__EffectiveDate__c": "Text",
+            "Name": "Text"
+        },
+        "opportunityId": "Text",
+        "productConfigurationDetail": {
+            "records": "Text"
+        }
+    }
+}

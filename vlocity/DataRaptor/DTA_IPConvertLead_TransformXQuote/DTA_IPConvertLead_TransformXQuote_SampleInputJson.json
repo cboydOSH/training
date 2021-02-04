@@ -1,0 +1,1417 @@
+{
+    "ContextId": "",
+    "DRId_Lead": "00QR000000Gy9NNMAZ",
+    "attributeFilters": {
+    },
+    "id": "5JR0000000IQORMA4",
+    "isdtp": "p1",
+    "layout": "newport",
+    "letsGetStarted": {
+        "City": "Marshfield",
+        "Email1": "jimmy@google.com",
+        "FormulaEegible": true,
+        "SelectReferer": "Referral",
+        "State": "WI",
+        "Telephone1": "1231232132",
+        "address": "34 Street",
+        "fName": "Jimmy",
+        "lName": "Falcon",
+        "zipCode": "54452"
+    },
+    "planSelection": {
+        "selectedPlans": [
+            {
+                "Id": "01tR0000006565wIAA",
+                "IsConfigurable__c": true,
+                "IsRecommended__c": false,
+                "Name": "OneShare Catastrophic - $150,000/$300,000",
+                "Price": "",
+                "ProductCode": "OSHCAT150",
+                "RecordTypeName__c": "Product",
+                "attributeCategories": {
+                    "records": [
+                        {
+                            "Code__c": "PROGCARDATT",
+                            "Name": "Program Card Attributes",
+                            "displaySequence": 1,
+                            "id": "a2SR0000000dkjVMAQ",
+                            "productAttributes": {
+                                "records": [
+                                    {
+                                        "attributeId": "a2TR0000000VYR2MAO",
+                                        "cloneable": true,
+                                        "code": "DIAGXLAB",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 0,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Diagnostic / X-Ray / Labs",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Out Patient: Pre-Admission and Post-Admission",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYR7MAO",
+                                        "cloneable": true,
+                                        "code": "SPEC",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 1,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Specialists",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$75 Visit Fee - Hospitalization or Outpatient Surgery",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYRCMA4",
+                                        "cloneable": true,
+                                        "code": "TELEMED",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 2,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Telemedicine",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Doctor Access 24/7  ($0 Consult Fee)",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYRHMA4",
+                                        "cloneable": true,
+                                        "code": "PRESDISPROG",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 3,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Prescription Discount Program",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "EnvisionRX (Varies by State)",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYRMMA4",
+                                        "cloneable": true,
+                                        "code": "EMERGROOM",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 4,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Emergency Room",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$300 Visit Fee",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYRSMA4",
+                                        "cloneable": true,
+                                        "code": "INOUTSURG",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 5,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "In/Out Patient Surgery (Life threatening or emergency, immediately available)",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Eligible - 90 day wait",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYRIMA4",
+                                        "cloneable": true,
+                                        "code": "HOSTP",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 6,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Hospitalization",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Eligible",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYRgMAO",
+                                        "cloneable": true,
+                                        "code": "MAXLIMITINC",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 7,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Maximum Limit Per Incident",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$150,000",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYRlMAO",
+                                        "cloneable": true,
+                                        "code": "LIFESHAREMAX",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 8,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "dropdown",
+                                        "isNotTranslatable": false,
+                                        "label": "Lifetime Sharing Maximum",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "300000",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "id": "0",
+                                                "label": "$300,000",
+                                                "readonly": false,
+                                                "value": "300000"
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "1",
+                                                "label": "$500,000",
+                                                "readonly": false,
+                                                "value": "500000"
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "2",
+                                                "label": "$1,000,000",
+                                                "readonly": false,
+                                                "value": "1000000"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a2TR0000000VYXEMA4",
+                                        "cloneable": true,
+                                        "code": "ISAAMT",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 9,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "dropdown",
+                                        "isNotTranslatable": false,
+                                        "label": "ISA Amount",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "5000",
+                                        "values": [
+                                            {
+                                                "$$hashKey": "object:632",
+                                                "disabled": false,
+                                                "id": "0",
+                                                "label": "$5,000",
+                                                "readonly": false,
+                                                "value": "5000"
+                                            },
+                                            {
+                                                "$$hashKey": "object:633",
+                                                "disabled": false,
+                                                "id": "1",
+                                                "label": "$10,000",
+                                                "readonly": false,
+                                                "value": "10000"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "totalSize": 10
+                            }
+                        }
+                    ],
+                    "totalSize": 1
+                },
+                "childProducts": {
+                    "records": [
+                        {
+                            "Id": "01tR000000657E0IAI",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Program Options",
+                            "ProductCode": "PROGOPT",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "PROGOPT",
+                                        "Name": "Program Options",
+                                        "displaySequence": 3,
+                                        "id": "a2SR0000000dkkJMAQ",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000VYX9MAO",
+                                                    "cloneable": true,
+                                                    "code": "500000BUYUP",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "radio",
+                                                    "isNotTranslatable": false,
+                                                    "label": "$500,000 Buy Up",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Yes",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "Yes",
+                                                            "readonly": false,
+                                                            "value": "Yes"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "No",
+                                                            "readonly": false,
+                                                            "value": "No"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000VYXEMA4",
+                                                    "cloneable": true,
+                                                    "code": "ISAAMT",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "dropdown",
+                                                    "isNotTranslatable": false,
+                                                    "label": "ISA Amount",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "5000",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$5,000",
+                                                            "readonly": false,
+                                                            "value": "5000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "$10,000",
+                                                            "readonly": false,
+                                                            "value": "10000"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 9,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tyPMAQ",
+                            "productId": "01tR000000657E0IAI"
+                        },
+                        {
+                            "Id": "01tR00000067Ox6IAE",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Program Limitations",
+                            "ProductCode": "PROGLIMITS",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViOUMA0",
+                                                    "cloneable": true,
+                                                    "code": "PREEXCOND",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Pre-Existing Condition 24/24",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Pre-Existing Condition means any sickness or injury for which a Member received medical treatment, advice, care or services (including diagnostic measures) or took prescribed drugs within 24 months before the Member’s effective date of their program.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViPUMA0",
+                                                    "cloneable": true,
+                                                    "code": "SPECCHRONCOND",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Specified Chronic Conditions",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "There is a 24 month waiting period before medical expenses for a pre-existing condition are eligible for sharing.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViPZMA0",
+                                                    "cloneable": true,
+                                                    "code": "CANCERLIMITS",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Cancer Limitations",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Pre-exisiting or Recurring Cancer are not eligible for sharing",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViPeMAK",
+                                                    "cloneable": true,
+                                                    "code": "MEDNONCOMP",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 3,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Medical Non-Compliance",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Sharing for medical services will not be available when the conditions is shown to be the result of medical non-compliance with the Physician's recommended care, treatment or advice.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 4
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 8,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpcMAA",
+                            "productId": "01tR00000067Ox6IAE"
+                        },
+                        {
+                            "Id": "01tR00000067OsTIAU",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "PPO Network",
+                            "ProductCode": "PPONET",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViM9MAK",
+                                                    "cloneable": true,
+                                                    "code": "PPONET",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "PPO Network",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "PHCS Network – Hospital Only",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViMEMA0",
+                                                    "cloneable": true,
+                                                    "code": "OUTOFNET",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Out of Network",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Using a Non-PPO provider is still the Member’s choice. The Non-PPO provider services can result in higher medical bills. Non-PPO Providers and Facilities may bill members for the difference between the bill charges and the program’s allowed amount.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 3,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpTMAQ",
+                            "productId": "01tR00000067OsTIAU"
+                        },
+                        {
+                            "Id": "01tR00000067RUpIAM",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Outpatient Services",
+                            "ProductCode": "CATOUTPATIENT",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "PROGCARDATT",
+                                        "Name": "Program Card Attributes",
+                                        "displaySequence": 1,
+                                        "id": "a2SR0000000dkjVMAQ",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000VYRCMA4",
+                                                    "cloneable": true,
+                                                    "code": "TELEMED",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Telemedicine",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$0 Consult Fee (Dialcare) 24/7/365. Talk to a doctor by phone or online video to get a diagnosis, treatment options and prescription, if medically necessary.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000VYR2MAO",
+                                                    "cloneable": true,
+                                                    "code": "DIAGXLAB",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Diagnostic / X-Ray / Labs",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "100% after ISA; up to Maximum Limit Per Incident.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000VYR7MAO",
+                                                    "cloneable": true,
+                                                    "code": "SPEC",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 3,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Specialists",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "100% sharing after $75 Visit Fee due to an  Inpatient/Outpatient Surgery.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 3
+                                        }
+                                    },
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViMxMAK",
+                                                    "cloneable": true,
+                                                    "code": "SURGERY",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Outpatient Surgery",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "90 day waiting period. After the ISA is met, eligible for sharing up to the Maximum Limit Per Incident. Life Threatening or Life Altering emergencies are immediately eligible for sharing.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViN7MAK",
+                                                    "cloneable": true,
+                                                    "code": "OUTPATTHERAPY",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 4,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Outpatient Therapy:Physical Therapy (PT), Occupational Therapy (OT), and Speech",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "If a condition is related to an eligible diagnosis, ordered by a Physician and performed by a licensed therapist, it is Eligible after the ISA is met. Up to a maximum of 20 visits combined visits per Incident.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 2
+                            },
+                            "displaySequence": 5,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpYMAQ",
+                            "productId": "01tR00000067RUpIAM"
+                        },
+                        {
+                            "Id": "01tR00000067OsnIAE",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Other",
+                            "ProductCode": "OTHER",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViOKMA0",
+                                                    "cloneable": true,
+                                                    "code": "PRESCRIPTIONS",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Prescription Discounts",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "EnvisionRX - Discount Service Only (Not Owned or operated by OneShare Health)",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 7,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpaMAA",
+                            "productId": "01tR00000067OsnIAE"
+                        },
+                        {
+                            "Id": "01tR00000067Ox5IAE",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Maximum Limits",
+                            "ProductCode": "MAXLIMITS",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "PROGCARDATT",
+                                        "Name": "Program Card Attributes",
+                                        "displaySequence": 1,
+                                        "id": "a2SR0000000dkjVMAQ",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000VYRlMAO",
+                                                    "cloneable": true,
+                                                    "code": "LIFESHAREMAX",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Lifetime Sharing Maximum",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$300,000",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    },
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViO0MAK",
+                                                    "cloneable": true,
+                                                    "code": "MAXSHARING",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Maximum Sharing",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$150,000",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 2
+                            },
+                            "displaySequence": 2,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpbMAA",
+                            "productId": "01tR00000067Ox5IAE"
+                        },
+                        {
+                            "Id": "01tR00000067OsdIAE",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Inpatient Services",
+                            "ProductCode": "INPATSVCS",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViMAMA0",
+                                                    "cloneable": true,
+                                                    "code": "INPATHOSP",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Inpatient Hospitalization",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "100% after ISA up to Maximum Limit  Per Incident",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViMTMA0",
+                                                    "cloneable": true,
+                                                    "code": "INPATSURG",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Inpatient Surgery",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "100% after ISA up to Maximum Limit  Per Incident",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000Vx3wMAC",
+                                                    "cloneable": true,
+                                                    "code": "NONHOSPADM",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Non-Hospital Admissions",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000Vx41MAC",
+                                                    "cloneable": true,
+                                                    "code": "NONHOSPADMELIG",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 3,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Non-Hospital Admissions Eligibility",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 4
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 4,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpEMAQ",
+                            "productId": "01tR00000067OsdIAE"
+                        },
+                        {
+                            "Id": "01tR00000067OsJIAU",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "General",
+                            "ProductCode": "GENERAL",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViLkMAK",
+                                                    "cloneable": true,
+                                                    "code": "GUIDELINE",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Guidelines",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Medically necessary expenses that occur after your Effective Date. These are medical services from a health care provider which are eligible for sharing in accordance with the Membership Guidelines.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViM4MAK",
+                                                    "cloneable": true,
+                                                    "code": "ISAAMOUNT",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Individual Sharing Amount (ISA)",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$5,000",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViLpMAK",
+                                                    "cloneable": true,
+                                                    "code": "WAITPERIOD",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Waiting Period",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Unless stated otherwise there is a 90 day waiting period for any medical expenses other than for accidents, injuries, or acute illnesses.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 3
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 1,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpZMAQ",
+                            "productId": "01tR00000067OsJIAU"
+                        },
+                        {
+                            "Id": "01tR00000067OsYIAU",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Emergency",
+                            "ProductCode": "EMERGENCY",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViM0MAK",
+                                                    "cloneable": true,
+                                                    "code": "AMBULANCE",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Ambulance",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Land or air transportation for medically necessary emergency services to the nearest medical Facility or medical transportation between Facilities; when medically necessary, after the ISA is met, up to a Maximum Sharing of $10,000 per occurrence.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000ViMOMA0",
+                                                    "cloneable": true,
+                                                    "code": "EMERROOM",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Emergency Room (ER)",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$300 Visit Fee in/ out of network Emergency room services for a Life Threatening/Life Altering medical emergency provided on an Outpatient basis at a Hospital.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a2TR0000000Vx46MAC",
+                                                    "cloneable": true,
+                                                    "code": "EMERRM24MORE",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Emergency Room 24 hours or more (ER)",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "If at the Hospital for 24 hours or more, ER will be considered hospitalization and will apply to the ISA. In and Out of network sharing percentages will apply.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 3
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 6,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpdMAA",
+                            "productId": "01tR00000067OsYIAU"
+                        },
+                        {
+                            "Id": "01tR00000067OsOIAU",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Disclaimer",
+                            "ProductCode": "DISCLAIMER",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "LEV2PROGATTR",
+                                        "Name": "Level 2 Program Attributes",
+                                        "displaySequence": 4,
+                                        "id": "a2SR0000000eEaHMAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000ViLzMAK",
+                                                    "cloneable": true,
+                                                    "code": "HEALTHDISCLAIMER",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "OneShare Health Disclaimer",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "OneShare Health, LLC is not an insurance company but a religious health care sharing ministry. For our full disclosures, see www.onesharehealth.com/legal-notices.",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 0,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "pciId": "a6FR00000001tpeMAA",
+                            "productId": "01tR00000067OsOIAU"
+                        },
+                        {
+                            "Id": "01tR000000699MnIAI",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Member",
+                            "ProductCode": "MEMBER",
+                            "RecordTypeName__c": "InsuredItemSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "PROGOPT",
+                                        "Name": "Program Options",
+                                        "displaySequence": 3,
+                                        "id": "a2SR0000000dkkJMAQ",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a2TR0000000VvJsMAK",
+                                                    "cloneable": true,
+                                                    "code": "AGE",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "number",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Age",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": 1,
+                            "maxQuantity": 1,
+                            "minQuantity": 1,
+                            "pciId": "a6FR00000001tzDMAQ",
+                            "productId": "01tR000000699MnIAI"
+                        }
+                    ],
+                    "totalSize": 11
+                },
+                "currencyCode": "USD",
+                "currencySymbol": "$",
+                "displaySequence": -1,
+                "originalIndex": 0,
+                "productId": "01tR0000006565wIAA",
+                "selected": true
+            }
+        ]
+    },
+    "programs": {
+        "Space15x12": null,
+        "Space16x12": null,
+        "programsExample3": null
+    },
+    "reviewQuote": {
+        "Space13x12": null,
+        "Space14x12": null,
+        "Space15x3": null,
+        "Space16x3": null,
+        "Space17x3": null,
+        "readyToEnroll": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvlocity--vlocity-ins.visualforce.com",
+    "stateofBeliefs": {
+        "FormulaStatusNextButton": true,
+        "MessagingStatesoff": true,
+        "Space0x12": null,
+        "Space1x12": null,
+        "Space2x4": null,
+        "Space3x4": null,
+        "msg": null,
+        "qualification": "Yes"
+    },
+    "tellUsAboutYou": {
+        "Space8x12": null,
+        "Space9x12": null,
+        "tellUsAboutYouFields": {
+            "MSHowOftenPCP": "5-9",
+            "RadioCurrExpctibgStartfamily": "Yes",
+            "RadioEnrolledHCProgram": "Yes",
+            "RadiofamilycurrSpecialist": "Yes"
+        }
+    },
+    "timeStamp": "2020-01-14T16:54:20.665Z",
+    "userCurrencyCode": "USD",
+    "userId": "005R0000004dKYvIAM",
+    "userName": "mauricio@attentisconsulting.com.devvlocity",
+    "userProfile": "System Administrator",
+    "userTimeZone": -360,
+    "vlcPersistentComponent": {
+    }
+}

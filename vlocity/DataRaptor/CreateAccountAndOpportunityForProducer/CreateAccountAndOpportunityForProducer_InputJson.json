@@ -1,0 +1,193 @@
+{
+    "AccountsForOSHEmployees": [
+        {
+            "Id": "0018A00000Twm85QAB",
+            "Monthly_Commission_Fee__c": 100,
+            "Name": "Maris Walter",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000Twm85QAB"
+            }
+        },
+        {
+            "Id": "0018A00000TwmBUQAZ",
+            "Monthly_Commission_Fee__c": 80,
+            "Name": "Aamer Rehman",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TwmBUQAZ"
+            }
+        },
+        {
+            "Id": "0018A00000TzHtdQAF",
+            "Monthly_Commission_Fee__c": 30,
+            "Name": "Forever young",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+            }
+        },
+        {
+            "Id": "0018A00000TyjGAQAZ",
+            "Monthly_Commission_Fee__c": 45,
+            "Name": "OSH Enrollment",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+            }
+        }
+    ],
+    "AddEditFamilyMember": [
+        {
+            "address": "",
+            "age": 0,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": null,
+            "gender": "",
+            "id": "1594646288855",
+            "lname": null,
+            "parent_id": "1594646288855",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "AgentLabel": "0018A00000Twm6dQAB",
+    "ContextId": "",
+    "ExistingInfoPacket": {
+        "BlkExistingInfoPacket": {
+            "FormulaQuoteOptionsPresent": null,
+            "MessagingNotFoundForSearchQuotes": null,
+            "RadioForLookingThroughName": false,
+            "TxtInfoPacketNumber": null,
+            "TxtNameForSearch": null
+        },
+        "CancelFormula": "/",
+        "EnrollerID": null,
+        "FormulaEnrollerId": true,
+        "RadioExistingInfoPacket": null,
+        "ServicingAgentDropdown": null
+    },
+    "MonthlyFee": 0,
+    "QuoteOptions": "something",
+    "SelectedServicingAgentDropdown": {
+        "Id": "0018A00000TwmBUQAZ",
+        "Monthly_Commission_Fee__c": 80,
+        "Name": "Aamer Rehman",
+        "RecordTypeId": "0124P000000uPa9QAE",
+        "attributes": {
+            "type": "Account",
+            "url": "/services/data/v49.0/sobjects/Account/0018A00000TwmBUQAZ"
+        }
+    },
+    "ServicingAgent": "Needs Dropdown selection",
+    "ThisisQuote": true,
+    "UserEmail": "brunno@attentisconsulting.com",
+    "UserType": "OSH Employee",
+    "WritingAgent": "0058A000003wB21QAE",
+    "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+    "dependentRecordType": "0124P000000uS4qQAE",
+    "error": "OK",
+    "id": "a628A00000017COQAY",
+    "internalLeadRecordType": "0124P000000uPoZQAU",
+    "isdtp": "p1",
+    "layout": "newport",
+    "letsGetStarted": {
+        "BlkNoExistingInfoPacket": {
+            "Email1": null,
+            "FormulaEegible": null,
+            "FormulaEegibleMA": null,
+            "SelectReferer": null,
+            "TAAddressGoogle-Block": {
+                "City": null,
+                "Country": null,
+                "State": null,
+                "TAAddressGoogle": null,
+                "address": null,
+                "buildingSuiteApartment": null,
+                "zipCode": null
+            },
+            "Telephone1": null,
+            "fName": null,
+            "lName": null
+        }
+    },
+    "myFamily": {
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaConForDiplayAddInfo180": null,
+        "FormulaConForDiplayAddInfo30": null,
+        "FormulaValidateOldMember": null,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": null,
+        "MSGRatingWillBeBasedOn30or180": null,
+        "MomentaryPigFormula": null,
+        "MsgEffDateEnrollValid": null,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": null,
+        "RadioFamily": null,
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": null,
+        "effDateEnroll": null,
+        "myFamilyTable": null
+    },
+    "opportunityRecordType": "0124P000000uPaBQAU",
+    "primaryMemberRecordType": "0124P000000uS4rQAE",
+    "reviewQuote": {
+        "Space13x12": null,
+        "Space14x12": null,
+        "Space17x3": null,
+        "Space25x3": null,
+        "Space26x3": null,
+        "readyToEnroll": null,
+        "url1": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "standardAccountRecordType": "0128A000000xZjYQAU",
+    "stateofBeliefs": {
+        "MessagingStatesoff": null,
+        "Space2x4": null,
+        "Space3x4": null,
+        "msg": null,
+        "qualification": null
+    },
+    "tellUsAboutYou": {
+        "Block19": null,
+        "Block20": null,
+        "additionalFees": null,
+        "formulaMoreThan6FamilyMemberAdtionalFee": null,
+        "formulaTotalFamilyMember": null,
+        "monthlyFee": null,
+        "oneTimeContributionFee": null,
+        "tellUsAboutYouFields": {
+            "MSHowOftenPCP": null,
+            "RadioCurrExpctibgStartfamily": null,
+            "RadiofamilycurrSpecialist": null
+        }
+    },
+    "timeStamp": "2020-07-13T13:18:08.974Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wB21QAE",
+    "userName": "brunno@attentisconsulting.com.dvvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}

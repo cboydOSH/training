@@ -1,0 +1,267 @@
+{
+    "AccountsForOSHEmployees": [
+        {
+            "Id": "0018A00000TyjGAQAZ",
+            "Monthly_Commission_Fee__c": 45,
+            "Name": "OSH Enrollment",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+            }
+        },
+        {
+            "Id": "0018A00000TzHtdQAF",
+            "Monthly_Commission_Fee__c": 30,
+            "Name": "Forever young",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+            }
+        }
+    ],
+    "AddEditFamilyMember": [
+        {
+            "address": "",
+            "age": 25,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1995-06-02",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Vicente Test 2",
+            "gender": "Male",
+            "id": "1591280109578",
+            "lname": "J03 - 1",
+            "parent_id": "1591280109578",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        },
+        {
+            "address": "",
+            "age": 29,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1990-06-06",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Vicente Test 1",
+            "gender": "Female",
+            "id": "1591280109581",
+            "lname": "J03 -1",
+            "parent_id": "1591280109578",
+            "phone": "",
+            "relationship": "Spouse",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "ContextId": "",
+    "DRId_Lead": "00Q8A0000040ZgUUAU",
+    "ExistingInfoPacket": {
+        "BlkExistingInfoPacket": {
+            "TxtInfoPacketNumber": null
+        },
+        "CancelFormula": "/",
+        "EnrollerID": null,
+        "FormulaEnrollerId": false,
+        "RadioExistingInfoPacket": "No",
+        "ServicingAgentDropdown": null
+    },
+    "FamilySelection": "",
+    "FormulaEegible": "",
+    "FormulaEegibleMA": "",
+    "HaveAdultDependent": 0,
+    "MonthlyFee": 0,
+    "NoAdultGreaterThan27AndLesserThan65": 0,
+    "NoChildGreaterThan27": 0,
+    "NoChildGreaterThan65": 0,
+    "NoChildWrongDate": 0,
+    "NoEmpAge18": 0,
+    "NoSpouse65": 0,
+    "NumOfEmployeeInternal": 1,
+    "PrimaryLanguage": "",
+    "SelectedServicingAgentDropdown": {
+        "Id": "0018A00000TyjGAQAZ",
+        "Monthly_Commission_Fee__c": 45,
+        "Name": "OSH Enrollment",
+        "RecordTypeId": "0124P000000uPa9QAE",
+        "attributes": {
+            "type": "Account",
+            "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+        }
+    },
+    "ServicingAgent": "Needs Dropdown selection",
+    "TAAddressGoogle-Block": {
+        "administrative_area_level_2": "King County"
+    },
+    "ThisisQuote": true,
+    "UserType": "OSH Employee",
+    "WritingAgent": "0058A000003wAujQAE",
+    "attributeFilters": {
+    },
+    "childrenInCensus": false,
+    "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+    "dependentRecordType": "0124P000000uS4qQAE",
+    "effDate": "",
+    "effectiveDate": "2020-06-05",
+    "error": "OK",
+    "errorDOBList": [
+    ],
+    "id": "a628A00000011JhQAI",
+    "internalLeadRecordType": "0124P000000uPoZQAU",
+    "isdtp": "p1",
+    "layout": "newport",
+    "letsGetStarted": {
+        "BlkNoExistingInfoPacket": {
+            "Email1": "test@TestTest.com",
+            "FormulaEegible": false,
+            "FormulaEegibleMA": false,
+            "SSNITIN": "987897654",
+            "SelectReferer": "Internet Search",
+            "TAAddressGoogle-Block": {
+                "City": "Federal Way",
+                "Country": "United States",
+                "State": "WA",
+                "TAAddressGoogle": "952 SW Campus Dr, Federal Way, WA 98023, USA",
+                "address": "952 Southwest Campus Drive",
+                "buildingSuiteApartment": null,
+                "zipCode": "98023"
+            },
+            "Telephone1": "9874563214",
+            "fName": "Vicente Test 2",
+            "lName": "J03 - 1"
+        }
+    },
+    "myFamily": {
+        "Check60daysandTodayPast": true,
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaValidateOldMember": true,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": true,
+        "MomentaryPigFormula": 0,
+        "MsgEffDateEnrollValid": null,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": false,
+        "RadioFamily": "MyselfMyspouse",
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": "English",
+        "effDate": "2020-06-05",
+        "effDateEnroll": null,
+        "effectiveDateforQuote": "--",
+        "myFamilyTable": null
+    },
+    "oldestMemberList": [
+        {
+            "address": "",
+            "age": 29,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1990-06-06",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Vicente Test 1",
+            "gender": "Female",
+            "id": "1591280109581",
+            "lname": "J03 -1",
+            "parent_id": "1591280109578",
+            "phone": "",
+            "relationship": "Spouse",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "opportunityRecordType": "0124P000000uPaBQAU",
+    "orderPlans": [
+        {
+            "ID": "input",
+            "Orderby": [
+                "OSHCLASSCROWN",
+                "OSHCOMPBASIC",
+                "OSHCOMPCROWN",
+                "OSHCOMPENH",
+                "OSHCLASSENH",
+                "OSHCLASSBASIC",
+                "OSHCAT500",
+                "OSHCAT250",
+                "OSHCAT150"
+            ]
+        }
+    ],
+    "planSelection": {
+    },
+    "primaryMemberRecordType": "0124P000000uS4rQAE",
+    "programs": {
+        "SelectedProgramComprobation": false,
+        "Space15x12": null,
+        "Space16x12": null,
+        "comprobationfield": null,
+        "programsExample3": null,
+        "selectedPlansErrorMSGNoProgram": null
+    },
+    "reviewQuote": {
+        "Space13x12": null,
+        "Space14x12": null,
+        "Space17x3": null,
+        "Space25x3": null,
+        "Space26x3": null,
+        "readyToEnroll": null,
+        "url1": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "standardAccountRecordType": "0128A000000xZjYQAU",
+    "stateofBeliefs": {
+        "MessagingStatesoff": null,
+        "Space2x4": null,
+        "Space3x4": null,
+        "msg": null,
+        "qualification": "Yes"
+    },
+    "stateofBeliefsAnswers": {
+    },
+    "tellUsAboutYou": {
+        "Block19": null,
+        "Block20": null,
+        "additionalFees": 0,
+        "formulaMoreThan6FamilyMemberAdtionalFee": 0,
+        "formulaTotalFamilyMember": 2,
+        "tellUsAboutYouFields": {
+            "MSHowOftenPCP": "2-4",
+            "RadioCurrExpctibgStartfamily": "Yes",
+            "RadiofamilycurrSpecialist": "Yes"
+        }
+    },
+    "tellUsAboutYouAnswers": {
+    },
+    "timeStamp": "2020-06-04T14:09:33.957Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wAujQAE",
+    "userInputs": {
+        "AdditionalFeeMoreThan6": 0,
+        "AdditionalFees": 0,
+        "MEMBER.AGE": 29,
+        "MEMBER.STATE": "WA",
+        "MEMBER.isPrimary": false,
+        "RadioFamily": "MyselfMyspouse"
+    },
+    "userName": "vicente.martinez@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "validCensus": true,
+    "vlcPersistentComponent": {
+    }
+}
