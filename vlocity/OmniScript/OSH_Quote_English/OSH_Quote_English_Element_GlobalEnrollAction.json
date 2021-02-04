@@ -1,0 +1,73 @@
+{
+    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Quote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Quote/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Quote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Quote/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "reviewQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Quote/English/reviewQuote",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "reviewQuote",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": "New",
+        "controlWidth": 6,
+        "disOnTplt": false,
+        "label": "Enroll",
+        "message": {
+        },
+        "openInPrimaryTab": true,
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Yes",
+                        "field": "readyToEnroll"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "null",
+                        "field": "readyToEnroll"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "FormulaLinkForRedirectToOS"
+                    }
+                ]
+            }
+        },
+        "source": "%currentUrl%apex/%vlocity_namespace%__OmniScriptUniversalPage?id=%quoteId%&Thisisdirect=true&thisIsCommunity=%thisIsCommunity%&layout=newport#/OmniScriptType/OSH/OmniScriptSubType/Enroll/OmniScriptLang/English/ContextId/%quoteId%/PrefillDataRaptorBundle//true",
+        "ssm": true,
+        "targetLWC": "c:OSHEnrollEnglish",
+        "targetLWCParams": "c__id=%quoteId%&c__Thisisdirect=true&c__ContextId=%quoteId%",
+        "targetType": "Vlocity OmniScript",
+        "type": "URL",
+        "validationRequired": "Submit",
+        "wpm": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Done Action",
+    "Name": "GlobalEnrollAction",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Quote/English/GlobalEnrollAction"
+}

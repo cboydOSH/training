@@ -1,0 +1,191 @@
+<div role="dialog" tabindex="-1" aria-labelledby="header43"
+    class="slds-modal slds-fade-in-open nds-modal nds-fade-in-open vloc-ins-product-details-compare-modal"
+    ng-controller="insOsPlanCompareModalCtrl">
+    <div class="slds-modal__container nds-modal__container vloc-ins-product-details-compare-modal-container"
+        ng-init="initCompareModal(modalRecords)" ng-class="{'single-product': formattedContent.topRow.length === 1}">
+        <div class="slds-modal__header nds-modal__header vloc-ins-product-details-compare-modal-header">
+            <button class="slds-button nds-button vloc-ins-product-details-compare-modal-close-btn" title="Close"
+                ng-click="$slideHide()">
+                <slds-button-svg-icon sprite="'utility'" icon="'close'" size="'large'"></slds-button-svg-icon>
+                <span class="slds-assistive-text nds-assistive-text">Close</span>
+            </button>
+            <div class="slds-grid nds-grid vloc-ins-product-details-compare-modal-top">
+                <div
+                    class="slds-large-size--2-of-{{formattedContent.topRow.length + 3}} slds-large-show nds-large-size--2-of-{{formattedContent.topRow.length + 3}} nds-large-show nds-m-right_x-small">
+                    <h2 id="header43" class="nds-align_absolute-center slds-text-heading--medium nds-text-heading--medium nds-m-top_x-large">Review Programs</h2>
+                    <div>
+                        <p class="ng-binding">
+                            <h3 style="text-align: center; font-size: 0.775rem;">
+                                Unless stated otherwise in the Eligible Sharing Descriptions and Limits, there is a
+                                90-Day Waiting Period for any medical expenses except for <b>Accidents, Injuries, Acute Illnesses, and Immunizations.</b><br></h3>
+                            <ul style="list-style-type: disc !important;margin-top:2%;">
+                            <h3 style="text-align: center; font-size: 0.775rem;margin-top:2%;"><em>Pre-Existing
+                                    Condition Limitations apply.</em></h3>
+                        </p>
+                    </div>
+                </div>
+                <div class="nds-m-bottom_large slds-p-horizontal--xx-small nds-p-horizontal--xx-small vloc-ins-product-details-compare-modal-product-container"
+                    ng-class="decideHtmlClasses()" ng-repeat="product in formattedContent.topRow">
+                    <div class="vloc-ins-selectable-item-image nds-text-align_center"
+                        ng-class="{'is-custom-image': product.productData.ImageId}">
+                        <img ng-src="{{instanceHost + product.productData.ImageId}}"
+                            class="vloc-ins-selectable-custom-image" ng-if="product.productData.ImageId" />
+                        <span
+                            class="slds-icon_container nds-icon_container vloc-ins-selectable-item-image-fallback vloc-ins-selectable-item-icon"
+                            ng-if="!product.productData.ImageId"
+                            ng-class="{'bronze' : product.tier === 'Bronze', 'gold' : product.tier === 'Gold', 'silver' : product.tier === Silver}">
+                            <slds-svg-icon extra-classes="'vloc-ins-plan-icon'" sprite="'custom'" size="'medium'"
+                                icon="'custom91'"></slds-svg-icon>
+                            <span class="slds-assistive-text nds-assistive-text">Default Icon</span>
+                        </span>
+                    </div>
+                    <div style="min-height: 30%;">
+                    <h3 class="vloc-ins-product-details-compare-modal-product-name nds-text-align_center ng-binding">
+                        {{product.Name}}</h3>
+                        <div class="nds-text-align_center vloc-ins-product-details-compare-modal-product-price"
+                        ng-class="{'vloc-not-selectable' : !isSelectable}">
+                        <!-- {{product.Price | currency: currencyCode: 0}}/mo -->
+                        <!--{{ bpTree.response.myFamily.RadioFamily == 'MySelf' ? plan.CalculatedPriceData.Member :  bpTree.response.myFamily.RadioFamily == 'MyselfMyspouse' ? plan.CalculatedPriceData.MemberPlusOne :  plan.CalculatedPriceData.Family   | currency: currencyCode: 2 }}-->
+                        <div ng-if="bpTree.response.ThisisQuote==true">{{(product.productData.selectedPrice - bpTree.response.tellUsAboutYou.oneTimeContributionFee + product.productData.CalculatedPriceData.AdditionalFeesDiscountApplied) | currency: currencyCode: 2}} /mo</div>
+                        <div ng-if="bpTree.response.ThisisEnroll==true">${{product.productData.Price}} /mo</div>
+                        </div>
+                    </div>
+                    <div class="vloc-ins-product-details-compare-modal-product-bottom-wrapper">
+                        <div class="vloc-ins-product-details-compare-modal-product-price"
+                            ng-if="product.disabledByRateBand">--</div>
+                        <div align="center">
+                            <button ng-if="isSelectable" class="nds-button nds-m-top_medium vloc-plan-select-button"
+                            ng-class="{'nds-button_neutral': !product.productData.selected, 'nds-button_brand': product.productData.selected}"
+                            ng-click="toggleModalPlan(product.productData, control)">
+                            <span>{{product.productData.selected ? 'Remove from Enrollment Information Packet' : 'Add to Enrollment Information Packet'}}</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-modal__content nds-modal__content vloc-ins-product-details-compare-modal-content-container">
+
+            <div class="vloc-ins-product-details-compare-modal-attr-rows-container">
+                <div class="slds-grid slds-wrap nds-grid nds-wrap vloc-ins-product-details-compare-modal-attr-row"
+                    ng-repeat="attribute in formattedContent.attributeRows" ng-if="attribute.inputType !== 'equalizer'">
+                    <div
+                        class="slds-large-size--2-of-{{formattedContent.topRow.length + 3}} slds-size--1-of-1 slds-truncate nds-large-size--2-of-{{formattedContent.topRow.length + 3}} nds-size--1-of-1 nds-truncate vloc-ins-product-details-compare-modal-attribute-label">
+                        <div ng-hide="attribute.label == 'disclaimer'">{{attribute.label}}</div>
+                        </div>
+                    <div class="vloc-ins-product-details-compare-modal-attribute-value" ng-class="decideHtmlClasses()"
+                        ng-if="!attribute.hidden" ng-repeat="attribute in attribute.attributeValues">
+                        <div ng-if="attribute.inputType === 'checkbox' && !attribute.multiselect"
+                            class="nds-form-element margin">
+                            <div class="nds-form-element__control">
+                                <div class="nds-checkbox">
+                                    <input type="checkbox" name="options" id="vloc-checkbox-plan-{{$index}}"
+                                        ng-model="attribute.userValues" ng-disabled="true" />
+                                    <label class="nds-checkbox__label" for="vloc-checkbox-plan-{{$index}}">
+                                        <span class="nds-checkbox_faux"></span>
+                                        <span class="nds-form-element__label"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-if="attribute.formattedValues" class="margin">
+                            <span ng-repeat="val in attribute.formattedValues track by $index">{{val}}<span
+                                    ng-if="$index !== attribute.formattedValues.length - 1">, </span>
+                            </span>
+                        </div>
+                        <div ng-if="!attribute.formattedValues" class="margin">
+                            <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'currency'">
+                                {{attribute.userValues | currency: currencyCode: 0}}</p>
+                            <p class="vloc-ins-coverages-attribute-readonly"
+                                ng-if="attribute.dataType === 'percentage'">{{attribute.userValues}}%</p>
+                            <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'date'">
+                                {{formatDate(attribute.userValues)}}</p>
+                            <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'datetime'">
+                                {{formatDate(attribute.userValues, true)}}</p>
+                            <p class="vloc-ins-coverages-attribute-readonly"
+                                ng-if="attribute.inputType !== 'checkbox' && !attribute.multiselect && attribute.dataType !== 'currency' && attribute.dataType !== 'percentage' && attribute.dataType !== 'date' && attribute.dataType !== 'datetime'">
+                                <span ng-if="!attribute.labelAndValue">{{attribute.userValues}}</span>
+                                <span ng-if="attribute.labelAndValue">{{attribute.labelAndValue.valueLabel}}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div ng-if="!showDropdowns" class="slds-grid slds-wrap nds-grid nds-wrap vloc-ins-product-details-compare-modal-attr-row" style="text-align:center!important;justify-content: center;">
+                    <b>Programs and guidelines are subject to change and may vary at time of enrollment.</b>
+                </div>
+            </div>
+            <div ng-if="showDropdowns" bs-collapse data-start-collapsed="true" data-allow-multiple="true"
+                class="slds-p-top_small nds-p-top_small" ng-class="{'nds-is-open': isOpen[$index]}"
+                ng-repeat="childProductRows in formattedChildContent | orderBy: 'topRow[0].productData.displaySequence'"
+                ng-if="childProductRows.topRow[0].Name">
+                <div class="slds-grid nds-grid vloc-ins-product-details-compare-modal-top">
+                    <button ng-click="isOpen[$index] = !isOpen[$index]" bs-collapse-toggle="{{$index}}" type="button"
+                        data-toggle="collapse" data-target="{{$index}}" aria-expanded="false" aria-controls="{{$index}}"
+                        class="nds-button nds-button_reset nds-accordion__summary-action">
+                        <slds-button-svg-icon sprite="'utility'" icon="'chevrondown'"
+                            extra-classes="'nds-accordion__summary-action-icon slds-button__icon slds-button__icon_left'">
+                        </slds-button-svg-icon>
+                        <div
+                            class="slds-p-horizontal--xx-small nds-p-horizontal--xx-small vloc-ins-product-details-compare-modal-attr-row">
+                            {{childProductRows.topRow[0].Name}}
+                        </div>
+                    </button>
+                </div>
+                <div bs-collapse-target id="{{$index}}"
+                    class="collapse nds-accordion__content vloc-ins-product-details-compare-modal-attr-rows-container">
+                    <div class="slds-grid slds-wrap nds-grid nds-wrap vloc-ins-product-details-compare-modal-attr-row vloc-ins-category-contents"
+                        ng-repeat="attribute in childProductRows.attributeRows"
+                        ng-if="attribute.inputType !== 'equalizer'">
+                        <div
+                            class="margin normalText slds-p-left_small nds-p-left_small slds-large-size--2-of-{{formattedContent.topRow.length + 3}} slds-size--1-of-1 slds-truncate nds-large-size--2-of-{{formattedContent.topRow.length + 3}} nds-size--1-of-1 nds-truncate vloc-ins-product-details-compare-modal-attribute-label">
+                            <div ng-hide="attribute.label == 'disclaimer'">{{attribute.label}}</div>
+                            <span
+                                ng-if="attribute.attributeGroupType">{{attributeGroupTypeLabels[attribute.attributeGroupType]}}</span>
+                        </div>
+                       <!-- <div class="slds-large-size--2-of-{{formattedContent.topRow.length + 3}} slds-large-show nds-large-size--2-of-{{formattedContent.topRow.length + 3}} nds-large-show nds-m-right_x-small">
+                        </div>-->    
+                        <div class="vloc-ins-product-details-compare-modal-attribute-value"
+                            ng-class="decideHtmlClasses()" ng-repeat="attribute in attribute.attributeValues"
+                            ng-if="!attribute.hidden">
+                            <div ng-if="attribute.inputType === 'checkbox' && !attribute.multiselect"
+                                class="nds-form-element margin">
+                                <div class="nds-form-element__control">
+                                    <div class="nds-checkbox">
+                                        <input type="checkbox" name="options" id="vloc-checkbox-plan-{{$index}}"
+                                            ng-model="attribute.userValues" ng-disabled="true" />
+                                        <label class="nds-checkbox__label" for="vloc-checkbox-plan-{{$index}}">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <span class="nds-form-element__label"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="attribute.formattedValues" class="margin">
+                                <span ng-repeat="val in attribute.formattedValues track by $index">{{val}}<span
+                                        ng-if="$index !== attribute.formattedValues.length - 1">, </span>
+                                </span>
+                            </div>
+                            <div ng-if="!attribute.formattedValues || !attribute.formattedValues.length" class="margin">
+                                <p class="vloc-ins-coverages-attribute-readonly"
+                                    ng-if="attribute.dataType === 'currency'">
+                                    {{attribute.userValues | currency: currencyCode: 0}}</p>
+                                <p class="vloc-ins-coverages-attribute-readonly"
+                                    ng-if="attribute.dataType === 'percentage'">{{attribute.userValues}}%</p>
+                                <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'date'">
+                                    {{formatDate(attribute.userValues)}}</p>
+                                <p class="vloc-ins-coverages-attribute-readonly"
+                                    ng-if="attribute.dataType === 'datetime'">{{formatDate(attribute.userValues, true)}}
+                                </p>
+                                <p class="vloc-ins-coverages-attribute-readonly"
+                                    ng-if="attribute.inputType !== 'checkbox' && !attribute.multiselect && attribute.dataType !== 'currency' && attribute.dataType !== 'percentage' && attribute.dataType !== 'date' && attribute.dataType !== 'datetime'">
+                                    <span ng-if="!attribute.labelAndValue">{{attribute.userValues}}</span>
+                                    <span ng-if="attribute.labelAndValue">{{attribute.labelAndValue.valueLabel}}</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
