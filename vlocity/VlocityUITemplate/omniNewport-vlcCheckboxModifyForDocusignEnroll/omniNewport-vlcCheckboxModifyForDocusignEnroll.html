@@ -1,0 +1,46 @@
+<div class='nds-size_1-of-1' ng-controller="checkBoxDocusignController">
+    <ng-form name='loopform'
+             class='nds-form-element nds-m-bottom_large nds-p-around_small'
+             ng-repeat='control in child.eleArray'>
+        
+        <div class="nds-form-element__control">
+            <label class="nds-checkbox">
+                <input id='{{::control.name}}'
+                       type='checkbox'
+                       name='loopname'
+                       ng-disabled='control.ro'
+                       ng-model='control.response'
+                       ng-init='init(this, control)'
+                       vlc-slds-check-val-checker="response"
+                       ng-click="loadingScreen()"
+                       ng-change='aggregate(this, control.index, control.indexInParent, true, -1)' />
+
+                <span class="nds-checkbox_faux"></span>
+                
+                <label class="nds-checkbox__label" vlc-bubble-canceller="test">
+                    <span class="nds-form-element__label nds-form-element__control-help">{{::control.propSetMap.checkLabel}}</span>
+                    <a class="nds-tooltip_container" vlc-slds-tool-tip="test" nubbin-direction="auto top-left" ng-if="control.propSetMap.help" ng-include="'vlcHelptextInfoIcon.html'"></a>
+                    <div vlc-slds-include="vlcLabelController.html"></div>
+               </label>
+            </label>
+        </div>
+        <div ng-include="::errHTMLId"></div>
+    </ng-form>
+    <!--<div ng-show="bpTree.response.countDocuSignPopUp == true" role="alertdialog" tabindex="-1" aria-labelledby="prompt-heading-id"
+        aria-describedby="prompt-message-wrapper" class="nds-modal nds-fade-in-open nds-modal_prompt via-nds ng-scope">
+        <div id="alert-container" class="nds-modal__container">
+            <div class="nds-modal__header nds-theme_info nds-theme_alert-texture nds-theme_error"
+            ng-class="{'nds-theme_error':error,'slds-theme--warning':warning}">
+            <h2 class="nds-text-heading_medium ng-binding" id="prompt-heading-id">Successful</h2>
+            </div>
+            <div class="nds-modal__content nds-p-around_medium">
+            <p class="ng-binding">Your process is already done</p>
+            </div>
+            <div class="nds-modal__footer nds-theme_default">
+            <button id="alert-ok-button" class="nds-button nds-button_neutral ng-binding"
+                >OK</button>
+            
+            </div>
+        </div>
+    </div>-->
+</div>

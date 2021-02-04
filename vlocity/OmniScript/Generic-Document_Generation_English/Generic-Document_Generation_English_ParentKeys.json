@@ -1,0 +1,11 @@
+[
+    "DataRaptor/DREX_GetTemplateId",
+    "DataRaptor/DRUP_QuoteToAwaitingSignature",
+    "IntegrationProcedure/DocuSign_DocuSign",
+    "VlocityUITemplate/DocuSignEmbeddedSignatureButton",
+    "VlocityUITemplate/DocuSignSendSignatureButton",
+    "VlocityUITemplate/DocuSignSignatureTemplate",
+    "VlocityUITemplate/OSH-enroll-disclaimersText",
+    "VlocityUITemplate/object-document-creation-docx-template-test",
+    "VlocityUITemplate/omniNewport-vlcCheckboxModifyForDocusignEnroll"
+]

@@ -1,0 +1,71 @@
+{
+    "GetHipaaRecords": [
+        {
+            "PersonContactId": "0030n00000p7eQ1AAI",
+            "address": "666 5th Avenue",
+            "age": 37,
+            "city": "New York",
+            "country": "United States",
+            "dob": "01/06/1984",
+            "email": "lskalska@sasas.sasa",
+            "fname": "Carlos",
+            "fullname": "Carlos Sync",
+            "gender": "Neutral",
+            "hipaaName": "Stuart Taitt - Carlos Sync",
+            "id": "0010n00001BvABKAA3",
+            "isAuthorized": true,
+            "isHipaaAuthorized": false,
+            "lname": "Sync",
+            "parent_id": "0010n00001BvAAHAA3",
+            "phone": "8909089080",
+            "relationship": "Other",
+            "state": "NY",
+            "zipcode": "10103"
+        }
+    ],
+    "HIPAAAuthorization": {
+        "AuthDetailsSubType": "Billing and Membership Records, Change/Update of Record, Mental Health Records, Alcohol/drug abuse treatment, Communicable Diseases",
+        "AuthorizationCondition1": true,
+        "AuthorizationCondition2": true,
+        "AuthorizationCondition3": true,
+        "AuthorizeOtherRatio": "No",
+        "HIPAAAuthorizationEffectiveDate": null,
+        "HIPAAAuthorizationEffectiveEvent": null,
+        "HIPAAAuthorizationEffectiveUntil": null,
+        "HIPAAAuthorizationPeriod": "All time",
+        "HIPAAAuthorizationSubType": "Billing and Membership Records;Change/Update of Record;Mental Health Records;Alcohol/drug abuse treatment;Communicable Diseases",
+        "HIPAAAuthorizationType": "Partial",
+        "NumberOfAuthorizedMembers": 1,
+        "Osh-HIPPA-tablemembers": null,
+        "OtherHIPAAAuthorization": null,
+        "SubTypeContainsOther": false,
+        "SubTypeForm": [
+            "Billing and Membership Records",
+            "Change/Update of Record",
+            "Mental Health Records",
+            "Alcohol/drug abuse treatment",
+            "Communicable Diseases"
+        ],
+        "authorizeNewMember": {
+            "DateOfBirth": null,
+            "FirstName": null,
+            "IsLegalOlder": null,
+            "LastName": null,
+            "MemberAddressGoogle-Block": {
+                "MemberAddressGoogle": null,
+                "memberAddress": null,
+                "memberBuildingSuiteApartment": null,
+                "memberCity": null,
+                "memberCountry": null,
+                "memberState": null,
+                "memberZipCode": null
+            },
+            "MemberEmail": null,
+            "MemberLegalOlderMessage": null,
+            "Phone": null
+        },
+        "isDisabled": true,
+        "space27x12": null
+    },
+    "PrimaryMemberId": "0010n00001BvAAHAA3"
+}

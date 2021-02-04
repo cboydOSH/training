@@ -1,0 +1,47 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "osh",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/chargentGenerate/orderandPaymentRequest/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Account:ContactId": "%Account:ContactId%",
+            "AssetId": "%AssetId%",
+            "ContractStatus": "%ContractStatus%",
+            "bill:dateDiffAppFee": "%bill:dateDiffAppFee%",
+            "bill:dateDiffPlan": "%bill:dateDiffPlan%",
+            "bill:dateDiffPlanAppFee": "%bill:dateDiffPlanAppFee%",
+            "incomingQuoteId": "%incomingQuoteId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "OS_DRUP_Enroll_createChargentPaymentOrder",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "OS_DRUP_Enroll_createChargentOrder",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "DataRaptor Post Action",
+    "Name": "OS_DRUP_Enroll_createChargentPaymentOrder",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/chargentGenerate/orderandPaymentRequest/Procedure/OS_DRUP_Enroll_createChargentPaymentOrder"
+}
