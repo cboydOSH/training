@@ -1,0 +1,7 @@
+[
+    "DataRaptor/DRGET_INDV_OSHEnrollContractandChargentStatus",
+    "DataRaptor/DRGET_INDV_OSHProductContract",
+    "DataRaptor/DRUP_UpdateAccount",
+    "DataRaptor/DRUP_UpdateAssetChargentOrders",
+    "DataRaptor/OS_DRUP_Enroll_IndividualcreateInternalLog"
+]

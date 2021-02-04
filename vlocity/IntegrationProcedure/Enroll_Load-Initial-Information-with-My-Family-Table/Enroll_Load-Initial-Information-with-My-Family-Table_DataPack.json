@@ -1,0 +1,33 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "HIPAA AUTH CHANGES",
+    "%vlocity_namespace%__CustomJavaScript__c": "Enroll_Load-Initial-Information-with-My-Family-Table_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_DREX_GetQuoteDetails.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_SVmemberCommunityAgentInfo.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_OSH_Enroll_getAgentData.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_OSH_ExtractHipaaAuthorized.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_OSH_Enroll_getAgentDataGuest.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_DRTA_FamilyInfo_LoadEnroll.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_DRTA_FamilyInfo_LoadEnrollGuest.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_DREX_GetRatingMemberName.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_DREX_GetRatingMemberNameGuest.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_DREX_GetQuoteLineItems.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_ResponseAction1.json",
+        "Enroll_Load-Initial-Information-with-My-Family-Table_Element_ResponseAction1Guest.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "Enroll_LoadInitialInformationwithMyFamilyTable",
+    "%vlocity_namespace%__PropertySet__c": "Enroll_Load-Initial-Information-with-My-Family-Table_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "Load Initial Information with My Family Table",
+    "%vlocity_namespace%__Type__c": "Enroll",
+    "Name": "Enroll Load Initial Information",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Enroll/Load Initial Information with My Family Table/Procedure"
+}

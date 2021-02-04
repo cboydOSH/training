@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "OneShare Health, LLC",
+    "%vlocity_namespace%__CustomJavascript__c": "ChargentPaymentRequestNewVersion.js",
+    "%vlocity_namespace%__Definition__c": "",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "ChargentPaymentRequestNewVersion/1/OneShare Health, LLC/1602795104071",
+    "%vlocity_namespace%__HTML__c": "ChargentPaymentRequestNewVersion.html",
+    "%vlocity_namespace%__ParentID__c": "ChargentPaymentRequest/1/OneShare Health, LLC/1596737552495",
+    "%vlocity_namespace%__SampleJson__c": "",
+    "%vlocity_namespace%__Sass__c": "ChargentPaymentRequestNewVersion.scss",
+    "%vlocity_namespace%__Type__c": "OmniScript",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "ChargentPaymentRequestNewVersion",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/ChargentPaymentRequestNewVersion"
+}

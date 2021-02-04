@@ -1,0 +1,140 @@
+<div ng-controller="oshReviewHipaa">
+    <table
+      class="nds-table_bordered nds-table_cell-buffer nds-border_left nds-border_right"
+      role="grid" style="table-layout:fixed">
+      <span class="nds-form-element__label">You have authorized the following people to discuss or modify your Membership:</span>
+      <thead>
+        <tr>
+          <th>
+            <h4 class="nds-align_absolute-center">Relationship</h4>
+          </th>
+          <th>
+            <h4 class="nds-align_absolute-center">First Name</h4>
+          </th>
+          <th>
+            <h4 class="nds-align_absolute-center">Last Name</h4>
+          </th>
+          <th>
+            <h4 class="nds-align_absolute-center">Address</h4>
+          </th>
+          <th>
+            <h4 class="nds-align_absolute-center">Telephone</h4>
+          </th>
+          <th>
+            <h4 class="nds-align_absolute-center">Email Address</h4>
+          </th>
+        </tr>
+      </thead>
+      <!--Top Table Authorized Members-->
+      <tbody>
+        <tr ng-repeat="data in bpTree.response.HipaaList" ng-show="((data.relationship.includes('Primary')) || (data.isAuthorized == true)) && data.relationship != 'Producer' && (data.lname != null || data.fname != null )">
+          <td style="overflow-wrap:break-word">
+            <!--Relationship-->
+            <div class="nds-align_absolute-center" style="position:relative">
+              <input type="text"
+                class="nds-input nds-align_absolute-center" style="width: 100%; text-align: center; display:none;" readonly value="{{data.relationship}}">
+                {{data.relationship}}
+                <!-- <div style="border-bottom: 1px solid #dddbda; width:98%; position:absolute; bottom:-6px;"></div> -->
+            </div>
+          </td>
+          <td style="overflow-wrap:break-word">
+            <!--First Name-->
+            <div class="nds-align_absolute-center" style="position:relative">
+              <input type="text"
+                class="nds-input nds-align_absolute-center" style="width: 100%; text-align: center; display:none;" readonly value="{{data.fname}}">
+                {{data.fname}}
+                <!-- <div style="border-bottom: 1px solid #dddbda; width:80%; position:absolute; bottom:-6px;"></div> -->
+            </div> 
+          </td>
+          <!--Last Name-->
+          <td style="overflow-wrap:break-word">
+            <div class="nds-align_absolute-center" style="position:relative;">
+              <input type="text"
+                class="nds-input nds-align_absolute-center" style="width: 100%; text-align: center; display:none;" readonly value="{{data.lname}}">
+                {{data.lname}}
+                <!-- <div style="border-bottom: 1px solid #dddbda; width:80%; position:absolute; bottom:-6px;"></div> -->
+            </div> 
+          </td>
+          <!--Address-->
+          <td style="overflow-wrap:break-word">
+            <div class="nds-form-element nds-align_absolute-center" style="position:relative;padding-bottom:10px;padding-top:10px;">
+                <input style="word-wrap: break-word; text-align: center;display:none;" type="text" id="text-input-id-1" ng-model="data.address" class="nds-input"
+                  placeholder="Placeholder Text" readonly>
+                  {{data.address}}
+                  <!-- <div style="border-bottom: 1px solid #dddbda; width:80%; position:absolute; bottom:4px;"></div> -->
+            </div>
+          </td>
+          <!--Telephone-->
+          <td>
+            <div class="nds-form-element nds-align_absolute-center" style="position:relative;">
+                <input type="text" id="text-input-id-1" ng-model="data.phone" class="nds-input" vlc-slds-val-checker="telControl" ui-mask="(999) 999-9999" 
+                        ng-minlength="0" ng-maxlength="255" vlc-slds-ng-pattern="" vlc-slds-attr="placeholder" vlc-slds-toggle-help-text="" placeholder="(___) ___-____" 
+                        aria-invalid="false" style="text-align: center; border-bottom: none;" placeholder="Placeholder Text" readonly>
+                        <!-- <div style="border-bottom: 1px solid #dddbda; width:80%; position:absolute; bottom: 0px;"></div> -->
+            </div>
+          </td>
+          <!--Email-->
+          <td style="overflow-wrap:break-word; position:relative">
+            <div class="nds-form-element nds-align_absolute-center">
+                <input type="text" style="text-align: center; display:none;" id="text-input-id-1" ng-model="data.email" class="nds-input"
+                  placeholder="Placeholder Text" readonly>
+                  {{data.email}}
+                  <!-- <div style="border-bottom: 1px solid #dddbda; width:80%;position:absolute;bottom:-6px;"></div> -->
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+      <span class="nds-form-element__label" id="label-6" ng-if="bpTree.response.Agent.isAuthorized == true">You have also authorized your Producer:</span>
+      <span class="nds-form-element__label" id="label-6" ng-if="bpTree.response.Agent.isAuthorized == false">You did not authorize your Producer:</span>
+      <table class="nds-table_bordered nds-table_cell-buffer nds-border_left nds-border_right" role="grid" ng-show="bpTree.response.Agent.isAuthorized == true">
+      <div> 
+        <!--Before Bottom Table-->
+        <thead>
+          <tr>
+            <th>
+              <h4 class="nds-align_absolute-center">First Name</h4>
+            </th>
+            <th>
+              <h4 class="nds-align_absolute-center">Last Name</h4>
+            </th>
+            <th>
+              <h4 class="nds-align_absolute-center">Email Address</h4>
+            </th>
+          </tr>
+        </thead>
+      </div>
+      <div>
+        <tbody>
+          <tr>
+            <td>
+              <!--First Name-->
+              <div class="nds-align_absolute-center">
+                <input type="text"
+                  class="nds-input nds-align_absolute-center" style="width: 100%; text-align: center;" ng-value="bpTree.response.Agent.AgentFirstName" readonly>
+              </div>
+            </td>
+            <!--Last Name-->
+            <td>
+              <div class="nds-align_absolute-center">
+                <input type="text"
+                  class="nds-input nds-align_absolute-center" style="width: 100%; text-align: center;"  ng-value="bpTree.response.Agent.AgentLastName" readonly>
+              </div>
+            </td>
+            <td>
+              <div class="nds-form-element nds-align_absolute-center">
+                <div class="nds-form-element__control">
+                  <input type="text" id="text-input-id-1" class="nds-input"
+                  style="width: 100%; text-align: center;"  placeholder="Placeholder Text" readonly ng-value="bpTree.response.UserEmail">
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </div>
+    </table>
+  <span id="authDetailsTitle"> Authorization Details: <br><br></span>
+  <span id="authDetails"> {{bpTree.response.enrollmentReview.AuthDetailsForm}} <br></span>
+  <span id="authDetails"> {{bpTree.response.enrollmentReview.AuthDetailsForm2}}</span>
+  </div>

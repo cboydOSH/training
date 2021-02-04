@@ -1,0 +1,55 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Quote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Quote/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Quote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Quote/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "WeareSorry",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Quote/English/WeareSorry",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "WeareSorry",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "true",
+                        "field": "FormulaEegible"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "true",
+                        "field": "FormulaEegibleMA"
+                    }
+                ]
+            }
+        },
+        "text": "<p style=\"text-align: center;\"><em><strong>Statement of Beliefs</strong></em></p>\n<p style=\"text-align: center;\"><em><strong>With our origins in the Anabaptist faith</strong></em></p>\n<p>&nbsp;&nbsp;</p>\n<p><em><strong>We Believe</strong>&nbsp;in the authority of Scripture and the sanctity and dignity of every human life created by God with special meaning and purpose.</em></p>\n<p><em>II Timothy 3:16; Psalm 139:13-14</em></p>\n<p><em>&nbsp;</em></p>\n<p><em><strong>We Believe</strong>&nbsp;that every individual has the constitutional and religious right and duty to worship God in freedom.</em></p>\n<p><em>2 Corinthians 3:17; U.S. Const. amend. I</em></p>\n<p><em>&nbsp;</em></p>\n<p><em><strong>We Believe</strong>&nbsp;and agree in the biblical and ethical principle of sharing with those who are less fortunate and who experience medical needs.</em></p>\n<p><em>Galatians 6:2</em></p>\n<p><em>&nbsp;</em></p>\n<p><em><strong>We Believe</strong>&nbsp;and agree that it is our responsibility to God and our fellow members to engage in accountable, healthy living, and to avoid habits and behaviors which are harmful to the body.</em></p>\n<p><em>1 Corinthians 6:19-20</em></p>\n<p><em>&nbsp;</em></p>\n<p><em><strong>We Believe</strong>&nbsp;in the power of prayer to save lives, to heal lives, and to unite our members in common purpose and community, and we believe that prayer should be a fundamental practice of daily life.</em></p>\n<p><em>1 John 5:14; Philippians 4:6-7</em></p>",
+        "textKey": ""
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Text Block",
+    "Name": "TextStatementSorry",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Quote/English/TextStatementSorry"
+}

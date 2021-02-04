@@ -1,0 +1,5 @@
+[
+    "DataRaptor/OS_DRUP_CommunityProducer_createOneDollarChargentOrder",
+    "DataRaptor/OS_DRUP_Enroll_createChargentPaymentOrder",
+    "DataRaptor/OS_DRUP_Enroll_getChargentInfo"
+]

@@ -1,0 +1,7 @@
+[
+    "DataRaptor/DREX_GetAllValidChargentOrders",
+    "DataRaptor/DREX_GetChargentOrderTransactionDetails",
+    "DataRaptor/OS_DRGT_Enroll_getSecondChargentInfo",
+    "DataRaptor/OS_DRUP_CommunityMember_updateChargentOrder",
+    "DataRaptor/OS_DRUP_CommunityMember_voidChargentOrderTransaction"
+]

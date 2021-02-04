@@ -1,0 +1,13 @@
+{
+    "NewMember": [
+        {
+            "address": "Adress 1234",
+            "email": "loco@mail.com",
+            "fname": "Jhony",
+            "fullname": "Jhony Test",
+            "isHipaaAuthorized": false,
+            "lname": "Test",
+            "phone": "55555555"
+        }
+    ]
+}

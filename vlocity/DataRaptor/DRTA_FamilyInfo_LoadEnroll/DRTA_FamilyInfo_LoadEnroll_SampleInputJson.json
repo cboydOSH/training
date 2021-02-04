@@ -1,0 +1,40 @@
+{
+    "AccountMember": [
+        {
+            "isAuthorized": false
+        }
+    ],
+    "AccountPrimary": {
+        "PersonContactId": "0038A00000XfpaMQAR",
+        "address": "555 West Roosevelt Road",
+        "age": 31,
+        "city": "Chicago",
+        "country": "United States",
+        "dob": "01/07/1990",
+        "email": "moralee@tets.com",
+        "ethnicity": "",
+        "fname": "Mora",
+        "fullname": "Mora Lee",
+        "gender": "Female",
+        "id": "0018A00000aypHvQAI",
+        "isAuthorized": false,
+        "isHipaaAuthorized": true,
+        "lname": "Lee",
+        "parent_id": "0018A00000aypHvQAI",
+        "phone": "2342343243",
+        "relationship": "Primary",
+        "ssnItin": "",
+        "state": "IL",
+        "zipcode": "60607"
+    },
+    "HipaaMembers": "",
+    "RatingMemberName": "0018A00000aypHxQAI",
+    "servicingAgentGet": {
+        "AccountId": "0018A00000S8osdQAB",
+        "Email": "franca.fattoruso@arcsona.com",
+        "FirstName": "Franca",
+        "LastName": "Fattoruso",
+        "Name": "Franca Fattoruso",
+        "ProfileId": "00e4P000001X18aQAC"
+    }
+}

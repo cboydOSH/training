@@ -1,0 +1,7 @@
+[
+    "DataRaptor/DRGetAssetProductContract",
+    "DataRaptor/DRTA_GetFinalContractInput",
+    "DataRaptor/DRUP_OSH_INDIV_enrollUpdateMemberinfo",
+    "DataRaptor/DRUP_createComissionTable",
+    "DataRaptor/DRUP_createProducerAsset"
+]
