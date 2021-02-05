@@ -747,6 +747,18 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Google_Address__c</fullName>
+        <description>Address comming from google services</description>
+        <externalId>false</externalId>
+        <label>Google Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>HasOptedOutOfEmail</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>

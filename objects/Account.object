@@ -935,6 +935,18 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Google_Address__c</fullName>
+        <description>Address provided by google</description>
+        <externalId>false</externalId>
+        <label>Google Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Inactive_Date__c</fullName>
         <externalId>false</externalId>
         <label>Inactive Date</label>
