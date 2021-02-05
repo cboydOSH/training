@@ -1,0 +1,24 @@
+{
+    "NewMember": [
+        {
+            "$$hashKey": "object:1112",
+            "address": "123 William Street",
+            "age": 28,
+            "city": "New York",
+            "country": "United States",
+            "dob": "1992-04-16",
+            "email": "mail@mail.com",
+            "fname": "Mell",
+            "fullname": "Mell test",
+            "gender": "Male",
+            "id": "001R000001ZRKl0IAH",
+            "isHipaaAuthorized": true,
+            "lname": "test",
+            "parent_id": "001R000001ZRKl0IAH",
+            "phone": "1231321322",
+            "relationship": "Primary",
+            "state": "NY",
+            "zipcode": "10038"
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+<div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" ng-controller="OSHappReview">
+   <!--Medical Questions Table-->
+                <table
+                    class="nds-table nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right"
+                    style="width:100%;"
+                    ng-if="bpTree.response.radioConditions24monthFunction == 'Yes'">
+                    <thead>
+                        <tr class="nds-text-title_caps">
+                            <th scope="col">
+                                <div class="nds-truncate" title="Member">Member</div>
+                            </th>
+                            <th item-width="200px" scope="col">
+                                <div class="nds-truncate" title="Medical conditions">Medical conditions</div>
+                            </th>
+                            <th item-width="200px" scope="col">
+                                <div class="nds-truncate" title="Medical conditions2"></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12"
+                        ng-if="data.relationship == 'Primary' || data.relationship == 'Spouse' || data.relationship == 'Child' || data.relationship == 'Adult Dependent'"
+                        ng-repeat="data in bpTree.response.EditFamilyMember">
+                        <!-- <tr ng-if="medicalConditionsCheck(data)"> -->
+                        <tr>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="nds-form-element">
+                                    <label class="nds-form-element__label" for="text-input-id-1"></label>
+                                    <div class="nds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="nds-input" readonly
+                                            value="{{data.fullname}}" placeholder="Placeholder Text">
+                                    </div>
+                                </div>
+                            </td>
+                            <!--First 9 questions elements-->
+                            <td>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.diabetesI" type="checkbox" name="options2"
+                                                id="checkbox-diabetesI" value="on" disabled ng-click="medicalConditionsModified(data.diabetesI)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Diabetes I</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.diabetesII" type="checkbox" name="options2"
+                                                id="checkbox-diabetesII" value="on" disabled ng-click="medicalConditionsModified(data.diabetesII)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Diabetes II</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.kidneydiseaseorfailure" type="checkbox" name="options2"
+                                                id="checkbox-kidneydiseaseorfailure" disabled value="on" ng-click="medicalConditionsModified(data.kidneydiseaseorfailure)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Kidney
+                                                    Disease/Failure</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.heartdisease" type="checkbox" name="options2"
+                                                id="checkbox-heartdisease" value="on" disabled ng-click="medicalConditionsModified(data.heartdisease)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Heart Disease</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.hearthbypasssurgery" type="checkbox" name="options2"
+                                                id="checkbox-hearthbypasssurgery" disabled value="on" ng-click="medicalConditionsModified(data.hearthbypasssurgery)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Hearth By-Pass
+                                                    Surgery</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.congestiveheartfailure" type="checkbox" name="options2"
+                                                id="checkbox-congestiveheartfailure" disabled value="on" ng-click="medicalConditionsModified(data.congestiveheartfailure)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Congestive Heart
+                                                    Failure</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.hypertensionorhighblood" type="checkbox"
+                                                name="options2" id="checkbox-hypertensionorhighblood" disabled value="on" ng-click="medicalConditionsModified(data.hypertensionorhighblood)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Hypertension/High Blood
+                                                    Pressure</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.behavioralormentalhealth" type="checkbox"
+                                                name="options2" id="checkbox-behavioralormentalhealth" disabled value="on" ng-click="medicalConditionsModified(data.behavioralormentalhealth)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Behavioral/Mental
+                                                    Health</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                            <!--2nd 9 questions elements-->
+                            <td>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.herniateddisc" type="checkbox" name="options2"
+                                                id="checkbox-herniateddisc" value="on" disabled ng-click="medicalConditionsModified(data.herniateddisc)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Herniated Disc</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.crohnsdisease" type="checkbox" name="options2"
+                                                id="checkbox-crohnsdisease" value="on" disabled ng-click="medicalConditionsModified(data.crohnsdisease)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Crohn’s Disease</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.hivaids" type="checkbox" name="options2"
+                                                id="checkbox-hivaids" value="on" disabled ng-click="medicalConditionsModified(data.hivaids)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">HIV/Aids</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.asthma" type="checkbox" name="options2"
+                                                id="checkbox-asthma" value="on" disabled ng-click="medicalConditionsModified(data.asthma)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Asthma</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.eatingdisorders" type="checkbox" name="options2"
+                                                id="checkbox-eatingdisorders" value="on" disabled ng-click="medicalConditionsModified(data.eatingdisorders)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Eating Disorders</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.copd" type="checkbox" name="options2"
+                                                id="checkbox-copd" value="on" disabled ng-click="medicalConditionsModified(data.copd)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">COPD</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.hyperlipidemia" type="checkbox" name="options2"
+                                                id="checkbox-hyperlipidemia" value="on" disabled ng-click="medicalConditionsModified(data.hyperlipidemia)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Hyperlipidemia</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+</div>

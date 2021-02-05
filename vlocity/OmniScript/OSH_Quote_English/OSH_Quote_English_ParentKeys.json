@@ -1,0 +1,19 @@
+[
+    "CalculationProcedure/OnesShare Program Order",
+    "DataRaptor/DREX_GetUserType",
+    "DataRaptor/DREX_INDV_OSH_quotegetRecordTypes",
+    "DataRaptor/DR_TransStatofBelibeXorderPrograms",
+    "DataRaptor/OS_DRUP_QuoteLead_ElegibleandQualifi",
+    "DataRaptor/OS_DRup_QuoteCreatelead_SalesLead",
+    "IntegrationProcedure/ConverLead_FromApex",
+    "VlocityUITemplate/GeneralStyleOS",
+    "VlocityUITemplate/ins-os-attribute-component",
+    "VlocityUITemplate/ins-os-coverage-component",
+    "VlocityUITemplate/omniNewport-vlcStepEditedforOSH",
+    "VlocityUITemplate/omniNewport-vlcStepEditedforOSHQuoteSearchUsingInfoPacketNumber",
+    "VlocityUITemplate/omniNewport-vlcStepNextHQuote2",
+    "VlocityUITemplate/omniNewport-vlcStepRequiredHideEditedforOSH",
+    "VlocityUITemplate/osh-custom-dropdown",
+    "VlocityUITemplate/osh-custom-dropdown-quoteSelection",
+    "VlocityUITemplate/osh-ssn-field"
+]

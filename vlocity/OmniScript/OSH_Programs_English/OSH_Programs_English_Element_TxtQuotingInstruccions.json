@@ -1,0 +1,39 @@
+{
+    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "OSH Programs Step",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Programs/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "OSH Programs Step",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Programs/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "programs",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Programs/English/programs",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "programs",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": null,
+        "show": null,
+        "text": "<div>\n<table class=\"nds-table nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right\" style=\"height: 210px; border-color: #000000;\" width=\"100%\">\n<tbody>\n<tr>\n<td style=\"height: 200px;\" width=\"100%\">\n<p style=\"text-align: center; font-size: 0.875rem;\">&middot; Select up to three programs from the Available Programs section by clicking \"Add to Review\".</p>\n<p style=\"text-align: center; font-size: 0.875rem;\">&middot; Click \"Review Selected Program(s)\" to view a side-by-side comparison of the selected programs.</p>\n<p style=\"text-align: center; font-size: 0.875rem;\">&middot; Click \"Add to Information Packet\" to add the corresponding program to your Information Packet.</p>\n<p style=\"text-align: center; font-size: 0.875rem;\">&middot; Once you have completed your selections, navigate to the bottom of the screen and click &ldquo;Next&rdquo;</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "textKey": ""
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Text Block",
+    "Name": "TxtQuotingInstruccions",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Programs/English/TxtQuotingInstruccions"
+}

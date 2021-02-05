@@ -1,0 +1,59 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "chargentInfo",
+        "%vlocity_namespace%__FilterGroup__c": 0,
+        "%vlocity_namespace%__FilterOperator__c": "=",
+        "%vlocity_namespace%__FilterValue__c": "paymentId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Id",
+        "%vlocity_namespace%__InterfaceObjectLookupOrder__c": 1,
+        "%vlocity_namespace%__InterfaceObjectName__c": "ChargentOrders__Payment_Request__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_getChargentInfoCustom100",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_getChargentInfo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "chargentInfo:firstOrderId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "chargentInfo:ChargentOrders__ChargentOrder__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_getChargentInfoCustom6473",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_getChargentInfo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "chargentInfo:paylink",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "chargentInfo:ChargentOrders__Pay_Link__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_getChargentInfoCustom216",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_getChargentInfo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "chargentInfo:paymentRequestId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "chargentInfo:Id",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_getChargentInfoCustom74",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_getChargentInfo",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

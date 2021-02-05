@@ -1,0 +1,41 @@
+{
+    "AccountMember": [
+        {
+            "address": "",
+            "age": 28,
+            "city": "",
+            "country": "",
+            "defaultNo": "false",
+            "dob": "1992-04-23",
+            "email": "",
+            "fname": "Testest",
+            "gender": "Male",
+            "id": "1587477255961",
+            "isHipaaAuthorized": "true",
+            "lname": "Test",
+            "parent_id": "1587477255961",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "AccountPrimary": {
+        "address": "",
+        "age": 28,
+        "city": "",
+        "country": "",
+        "dob": "1992-04-23",
+        "email": "",
+        "fname": "Testest",
+        "gender": "Male",
+        "id": "1587477255961",
+        "isHipaaAuthorized": "true",
+        "lname": "Test",
+        "parent_id": "1587477255961",
+        "phone": "",
+        "relationship": "Primary",
+        "state": "",
+        "zipcode": ""
+    }
+}

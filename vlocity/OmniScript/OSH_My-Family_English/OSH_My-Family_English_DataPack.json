@@ -1,5 +1,5 @@
 {
-    "%vlocity_namespace%__AdditionalInformation__c": "Adding random number for reloading programs",
+    "%vlocity_namespace%__AdditionalInformation__c": "Dynamic number of days for effective date in Quote and Enroll",
     "%vlocity_namespace%__DisableMetadataCache__c": false,
     "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[\"GeneralStyleOS\"]}",
     "%vlocity_namespace%__Element__c": [
@@ -7,6 +7,7 @@
         "OSH_My-Family_English_Element_SVQuoteFlag.json",
         "OSH_My-Family_English_Element_SVEnrollFlag.json",
         "OSH_My-Family_English_Element_SVRadioFamily.json",
+        "OSH_My-Family_English_Element_SVNumberOfDays.json",
         "OSH_My-Family_English_Element_SVTestTodayAs293031.json",
         "OSH_My-Family_English_Element_SVEnrollEffectiveDate.json",
         "OSH_My-Family_English_Element_myFamily.json",

@@ -1,0 +1,488 @@
+{
+    "Account_1": [
+        {
+            "%vlocity_namespace%__Gender__pc": "Male",
+            "BillingCity": "Raleigh",
+            "BillingCountry": "United States",
+            "BillingPostalCode": "27612",
+            "BillingState": "NC",
+            "BillingStreet": "4433 Lead Mine Road",
+            "Currently_Enrroled_HCS_Ministry__c": "No",
+            "FirstName": "Jhon",
+            "Google_Address__c": "4433 Lead Mine Rd, Raleigh, NC 27612, USA",
+            "How_often_See_your_PCP__c": "0-1",
+            "Id": "001R000001ZPKhaIAH",
+            "LastName": "Test",
+            "PersonBirthdate": "1992-04-24",
+            "PersonEmail": "jhon@test.com",
+            "Phone": "1341234124",
+            "Primary_Language_Spoken__c": "English",
+            "RecordTypeId": "0124P000000uS4rQAE",
+            "Servicing_Agent__c": "005R0000004dKZdIAM",
+            "UpsertSuccess": true
+        }
+    ],
+    "ActualTime": 3764,
+    "AddEditFamilyMember": [
+        {
+            "address": "",
+            "age": 27,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1992-04-24",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Donald",
+            "gender": "Male",
+            "id": "1586436239902",
+            "lname": "Duck",
+            "parent_id": "1586436239902",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "ContextId": "",
+    "CpuTime": 3883,
+    "DRId_Lead": "00QR000000IWyPRMA1",
+    "HaveAdultDependent": 0,
+    "Lead_3": [
+        {
+            "Id": "00QR000000IXy3dMAD",
+            "Primary_Language_Spoken__c": "English",
+            "RecordTypeId": "0124P000000uPoZQAU",
+            "UpsertSuccess": true
+        }
+    ],
+    "NoAdultGreaterThan27AndLesserThan65": 0,
+    "NoChildGreaterThan27": 0,
+    "NoChildGreaterThan65": 0,
+    "NoChildWrongDate": 0,
+    "NoEmpAge18": 0,
+    "NoSpouse65": 0,
+    "NumOfEmployeeInternal": 1,
+    "Opportunity_2": [
+        {
+            "AccountId": "001R000001ZPKhaIAH",
+            "CloseDate": "2020-04-20",
+            "Id": "006R000000X4aLvIAJ",
+            "Name": "Jhon Test 4/20/2020 12:50 PM",
+            "RecordTypeId": "012R0000000yqzTIAQ",
+            "StageName": "Prospecting",
+            "UpsertSuccess": true
+        }
+    ],
+    "ThisisQuote": true,
+    "attributeFilters": {
+    },
+    "bestMedicalPlans": [
+        "OSHCOMPBASIC",
+        "OSHCLASSBASIC"
+    ],
+    "childrenInCensus": false,
+    "effectiveDate": "2020-04-10",
+    "error": "OK",
+    "errorDOBList": [
+    ],
+    "id": "a5JR0000000KGTcMAO",
+    "isdtp": "p1",
+    "layout": "newport",
+    "letsGetStarted": {
+        "Email1": "donald@duck.com",
+        "FormulaEegible": false,
+        "FormulaEegibleMA": false,
+        "SelectReferer": "Internet Search",
+        "TAAddressGoogle-Block": {
+            "City": "Wyandanch",
+            "Country": "Estados Unidos",
+            "State": "NY",
+            "TAAddressGoogle": "123 Melrose Street",
+            "address": "2811 Teagarden Street",
+            "buildingSuiteApartment": null,
+            "zipCode": "11798"
+        },
+        "Telephone1": "1212121212",
+        "fName": "Donald",
+        "lName": "Duck"
+    },
+    "myFamily": {
+        "Check60daysandTodayPast": true,
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaValidateOldMember": true,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": true,
+        "MomentaryPigFormula": 0,
+        "MsgEffDateEnrollValid": null,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": false,
+        "RadioFamily": "MySelf",
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": "English",
+        "effDate": "2020-04-10",
+        "effDateEnroll": null,
+        "effectiveDateforQuote": "--",
+        "myFamilyTable": null
+    },
+    "oldestMemberList": [
+        {
+            "address": "",
+            "age": 27,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1992-04-24",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Donald",
+            "gender": "Male",
+            "id": "1586436239902",
+            "lname": "Duck",
+            "parent_id": "1586436239902",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "orderPlans": [
+        {
+            "ID": "input",
+            "Orderby": [
+                "OSHCOMPBASIC",
+                "OSHCLASSBASIC",
+                "OSHCOMPENH",
+                "OSHCLASSENH",
+                "OSHCOMPCROWN",
+                "OSHCLASSCROWN",
+                "OSHCAT150",
+                "OSHCAT250",
+                "OSHCAT500"
+            ]
+        }
+    ],
+    "planSelection": {
+        "selectedPlans": [
+        ]
+    },
+    "programs": {
+        "Space15x12": null,
+        "Space16x12": null,
+        "programsExample3": null,
+        "selectedPlansErrorMSGNoProgram": null
+    },
+    "responseType": "SObject",
+    "result": {
+        "%vlocity_namespace%__GroupCensusMember__c_5": [
+        ],
+        "%vlocity_namespace%__GroupCensus__c_4": [
+        ],
+        "Account_1": [
+            {
+                "BillingCity": "Wyandanch",
+                "BillingCountry": "Estados Unidos",
+                "BillingPostalCode": "11798",
+                "BillingState": "NY",
+                "BillingStreet": "2811 Teagarden Street",
+                "Currently_Enrroled_HCS_Ministry__c": "Yes",
+                "Email_2__c": "donald@duck.com",
+                "Google_Address__c": "123 Melrose Street",
+                "How_often_See_your_PCP__c": "2-4",
+                "Name": "Donald Duck",
+                "Phone": "1212121212",
+                "Primary_Language_Spoken__c": "English",
+                "RecordTypeId": "012R0000000xEylIAE",
+                "Servicing_Agent__c": "005R0000004dKZdIAM",
+                "UpsertError": "You are creating a duplicate record. We recommend you use an existing record instead. ",
+                "UpsertSuccess": false
+            }
+        ],
+        "Contact_3": [
+        ],
+        "Lead_6": [
+        ],
+        "Opportunity_2": [
+        ],
+        "error": true,
+        "errorCode": "INVOKE-500",
+        "errors": {
+            "CreateDummyAccountAndOpportunity": {
+                "0:0": {
+                    "1": "You are creating a duplicate record. We recommend you use an existing record instead. "
+                }
+            }
+        },
+        "errorsAsJson": {
+            "": "",
+            "AddEditFamilyMember": [
+                {
+                    "address": "",
+                    "age": "",
+                    "americanIndian": "",
+                    "city": "",
+                    "defaultNo": "",
+                    "dob": "",
+                    "eligiblemedicare": "",
+                    "email": "",
+                    "fname": "",
+                    "gender": "",
+                    "id": "",
+                    "lname": "",
+                    "parent_id": "",
+                    "phone": "",
+                    "relationship": "",
+                    "state": "",
+                    "zipcode": ""
+                }
+            ],
+            "ContextId": "",
+            "DRError": "You are creating a duplicate record. We recommend you use an existing record instead.",
+            "DRId_Lead": "",
+            "HaveAdultDependent": "",
+            "NoAdultGreaterThan27AndLesserThan65": "",
+            "NoChildGreaterThan27": "",
+            "NoChildGreaterThan65": "",
+            "NoChildWrongDate": "",
+            "NoEmpAge18": "",
+            "NoSpouse65": "",
+            "NumOfEmployeeInternal": "",
+            "ThisisQuote": "",
+            "attributeFilters": {
+            },
+            "bestMedicalPlans": [
+                "",
+                ""
+            ],
+            "childrenInCensus": "",
+            "effectiveDate": "",
+            "errorDOBList": [
+            ],
+            "id": "",
+            "isdtp": "",
+            "layout": "",
+            "letsGetStarted": {
+                "City": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "Email1": "",
+                "FormulaEegible": "",
+                "FormulaEegibleMA": "",
+                "SelectReferer": "",
+                "State": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "TAAddressGoogle-Block": {
+                    "City": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "Country": "",
+                    "State": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "TAAddressGoogle": "",
+                    "Telephone1": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "USA": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "accountNameFormula": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "address": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "buildingSuiteApartment": null,
+                    "zipCode": "You are creating a duplicate record. We recommend you use an existing record instead."
+                },
+                "Telephone1": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "USA": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "accountNameFormula": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "address": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "fName": "",
+                "lName": "",
+                "zipCode": "You are creating a duplicate record. We recommend you use an existing record instead."
+            },
+            "myFamily": {
+                "Check60daysandTodayPast": "",
+                "ChildGreaterThan65Error": null,
+                "City": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+                "FormulaValidateOldMember": "",
+                "HaveAdultDependentInfoMessage": null,
+                "MSGRatingWillBeBasedOn": "",
+                "MomentaryPigFormula": "",
+                "MsgEffDateEnrollValid": null,
+                "NeedselectedaSopuse": null,
+                "NoChildGreater27Error": null,
+                "Primary18AndOlderError": "",
+                "RadioFamily": "",
+                "Space20x12": null,
+                "Space21x12": null,
+                "Space22x7": null,
+                "Space5x12": null,
+                "Space6x12": null,
+                "Spouse65AndOlderError": null,
+                "State": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "Telephone1": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "USA": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "WhatPrimaryLanguageSpoken": "",
+                "accountNameFormula": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "address": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "effDate": "",
+                "effDateEnroll": null,
+                "effectiveDateforQuote": "",
+                "myFamilyTable": null,
+                "zipCode": "You are creating a duplicate record. We recommend you use an existing record instead."
+            },
+            "oldestMemberList": [
+                {
+                    "address": "",
+                    "age": "",
+                    "americanIndian": "",
+                    "city": "",
+                    "defaultNo": "",
+                    "dob": "",
+                    "eligiblemedicare": "",
+                    "email": "",
+                    "fname": "",
+                    "gender": "",
+                    "id": "",
+                    "lname": "",
+                    "parent_id": "",
+                    "phone": "",
+                    "relationship": "",
+                    "state": "",
+                    "zipcode": ""
+                }
+            ],
+            "options": {
+                "chainable": "",
+                "postTransformBundle": "",
+                "preTransformBundle": "",
+                "useContinuation": "",
+                "useFuture": "",
+                "vlcClass": ""
+            },
+            "orderPlans": [
+                {
+                    "ID": "",
+                    "Orderby": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "planSelection": {
+                "selectedPlans": [
+                ]
+            },
+            "programs": {
+                "Space15x12": null,
+                "Space16x12": null,
+                "programsExample3": null,
+                "selectedPlansErrorMSGNoProgram": null
+            },
+            "result": {
+                "error": "",
+                "errorCode": ""
+            },
+            "reviewQuote": {
+                "Space13x12": null,
+                "Space14x12": null,
+                "Space17x3": null,
+                "Space25x3": null,
+                "Space26x3": null,
+                "readyToEnroll": ""
+            },
+            "sfdcIFrameHost": "",
+            "sfdcIFrameOrigin": "",
+            "stateofBeliefs": {
+                "MessagingStatesoff": null,
+                "Space2x4": null,
+                "Space3x4": null,
+                "msg": null,
+                "qualification": ""
+            },
+            "success": "",
+            "tellUsAboutYou": {
+                "Block19": null,
+                "Block20": null,
+                "City": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "State": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "Telephone1": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "USA": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "accountNameFormula": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "address": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                "tellUsAboutYouFields": {
+                    "City": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "MSHowOftenPCP": "",
+                    "RadioCurrExpctibgStartfamily": "",
+                    "RadioEnrolledHCProgram": "",
+                    "RadiofamilycurrSpecialist": "",
+                    "State": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "Telephone1": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "USA": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "accountNameFormula": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "address": "You are creating a duplicate record. We recommend you use an existing record instead.",
+                    "zipCode": "You are creating a duplicate record. We recommend you use an existing record instead."
+                },
+                "zipCode": "You are creating a duplicate record. We recommend you use an existing record instead."
+            },
+            "timeStamp": "",
+            "userCurrencyCode": "",
+            "userId": "",
+            "userInputs": {
+                "MEMBER.AGE": "",
+                "MEMBER.isPrimary": ""
+            },
+            "userName": "",
+            "userProfile": "",
+            "userTimeZone": "",
+            "validCensus": "",
+            "vlcPersistentComponent": {
+            }
+        },
+        "responseType": "SObject"
+    },
+    "reviewQuote": {
+        "Space13x12": null,
+        "Space14x12": null,
+        "Space17x3": null,
+        "Space25x3": null,
+        "Space26x3": null,
+        "readyToEnroll": "Yes"
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvlocity--vlocity-ins.visualforce.com",
+    "stateofBeliefs": {
+        "MessagingStatesoff": null,
+        "Space2x4": null,
+        "Space3x4": null,
+        "msg": null,
+        "qualification": "Yes"
+    },
+    "success": false,
+    "tellUsAboutYou": {
+        "Block19": null,
+        "Block20": null,
+        "tellUsAboutYouFields": {
+            "MSHowOftenPCP": "2-4",
+            "RadioCurrExpctibgStartfamily": "Yes",
+            "RadioEnrolledHCProgram": "Yes",
+            "RadiofamilycurrSpecialist": "Yes"
+        }
+    },
+    "timeStamp": "2020-04-09T12:28:47.383Z",
+    "userCurrencyCode": "USD",
+    "userId": "005R0000004dKZdIAM",
+    "userInputs": {
+        "MEMBER.AGE": 27,
+        "MEMBER.isPrimary": true
+    },
+    "userName": "brunno@attentisconsulting.com.vlocitydev",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "validCensus": true,
+    "vlcPersistentComponent": {
+    }
+}
