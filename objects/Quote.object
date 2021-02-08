@@ -3441,6 +3441,17 @@
         <fullName>AdditionalName</fullName>
     </fields>
     <fields>
+        <fullName>Agent_Label__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Agent Label</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes (Agent Label)</relationshipLabel>
+        <relationshipName>AgentLabel</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>BillingName</fullName>
     </fields>
     <fields>
@@ -3468,6 +3479,15 @@
     </fields>
     <fields>
         <fullName>GrandTotal</fullName>
+    </fields>
+    <fields>
+        <fullName>Information_Packet_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Information Packet #</label>
+        <length>15</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>IsSyncing</fullName>
@@ -3510,6 +3530,16 @@
     </fields>
     <fields>
         <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Writing_agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Writing agent</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>vlocity_ins__AgencyBrokerageId__c</fullName>

@@ -605,6 +605,18 @@
         <trackHistory>true</trackHistory>
     </fields>
     <fields>
+        <fullName>Envelope_Id__c</fullName>
+        <description>DocuSign Envelope Id</description>
+        <externalId>false</externalId>
+        <label>Envelope Id</label>
+        <length>36</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>

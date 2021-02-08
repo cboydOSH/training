@@ -633,6 +633,19 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Application_Fee_Discount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Application Fee Discount</label>
+        <referenceTo>Program_Promotion__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Approval_Status__c</fullName>
         <externalId>false</externalId>
         <label>Approval Status</label>
@@ -842,6 +855,19 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
             <restricted>true</restricted>
             <valueSetName>Contract_Type</valueSetName>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contribution_Discount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contribution Discount</label>
+        <referenceTo>Program_Promotion__c</referenceTo>
+        <relationshipLabel>Accounts (Contribution Discount)</relationshipLabel>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>County__c</fullName>
@@ -1504,6 +1530,20 @@ IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate) ) &lt;= DATE( 
         <label>Sales Team Referral</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Accounts6</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Servicing_Agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Field to check and save the top of the hierarchy tree</description>
+        <externalId>false</externalId>
+        <label>Servicing Agent</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Accounts (Servicing Agent)</relationshipLabel>
+        <relationshipName>AccountsTqeV</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
