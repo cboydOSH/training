@@ -1,0 +1,170 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "[\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AKAAZ\"\n        },\n        \"Text\": \"Text 1 \",\n        \"Number\": null,\n        \"Currency\": 24.045,\n        \"DateTime\": \"1994-11-05T08:15:30-05:00\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true,\n        \"Percent\": 20\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8A5AAJ\"\n        },\n        \"Text\": \"Text 2 \",\n        \"Number\": 43,\n        \"Date\": \"2029-02-01\",\n        \"Currency\": -23.04,\n        \"DateTime\": \"2009-12-31 23:59:59\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": false,\n        \"Percent\": 200\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8BrAAJ\"\n        },\n        \"Text\": \"Text 3 \",\n        \"Number\": 555556,\n        \"Currency\": \"23.04\",\n        \"DateTime\": \"2007-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true,\n        \"Percent\": 2\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AAAAZ\"\n        },\n        \"Text\": \"Text 4 \",\n        \"Number\": null,\n        \"Date\": \"2018-02-17\",\n        \"Currency\": 99999999.77,\n        \"DateTime\": \"2017-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AKAAZ\"\n        },\n        \"Text\": \"Text 1 \",\n        \"Number\": null,\n        \"Date\": \"2017-02-01\",\n        \"Currency\": 25.045,\n        \"DateTime\": \"1994-11-05T08:15:30-05:00\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8A5AAJ\"\n        },\n        \"Text\": \"Text 2 \",\n        \"Number\": 43,\n        \"Date\": \"2029-02-01\",\n        \"Currency\": -23.04,\n        \"DateTime\": \"2009-12-31 23:59:59\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8BrAAJ\"\n        },\n        \"Text\": \"Text 3 \",\n        \"Number\": 555556,\n        \"Date\": \"2017-02-31\",\n        \"Currency\": \"23.04\",\n        \"DateTime\": \"2007-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AAAAZ\"\n        },\n        \"Text\": \"Text 4 \",\n        \"Number\": null,\n        \"Date\": null,\n        \"Currency\": 99999999.77,\n        \"DateTime\": \"2017-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AKAAZ\"\n        },\n        \"Text\": \"Text 1 \",\n        \"Number\": null,\n        \"Date\": \"2017-02-01\",\n        \"Currency\": 26.045,\n        \"DateTime\": \"1994-11-05T08:15:30-05:00\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8A5AAJ\"\n        },\n        \"Text\": \"Text 2 \",\n        \"Number\": 43,\n        \"Date\": \"2029-02-01\",\n        \"Currency\": -23.04,\n        \"DateTime\": \"2009-12-31 23:59:59\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": false\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8BrAAJ\"\n        },\n        \"Text\": \"Text 3 \",\n        \"Number\": 555556,\n        \"Date\": \"2017-02-31\",\n        \"Currency\": \"23.04\",\n        \"DateTime\": \"2007-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AAAAZ\"\n        },\n        \"Text\": \"Text 4 \",\n        \"Number\": null,\n        \"Date\": \"2018-02-17\",\n        \"Currency\": 99999999.77,\n        \"DateTime\": \"2017-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AKAAZ\"\n        },\n        \"Text\": \"Text 1 \",\n        \"Number\": null,\n        \"Date\": \"\",\n        \"Currency\": 27.045,\n        \"DateTime\": \"1994-11-05T08:15:30-05:00\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8A5AAJ\"\n        },\n        \"Text\": \"Text 2 \",\n        \"Number\": 43,\n        \"Date\": \"2029-02-01\",\n        \"Currency\": -23.04,\n        \"DateTime\": \"2009-12-31 23:59:59\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8BrAAJ\"\n        },\n        \"Text\": \"Text 3 \",\n        \"Number\": 555556,\n        \"Date\": \"2017-02-31\",\n        \"Currency\": \"23.04\",\n        \"DateTime\": \"2007-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AAAAZ\"\n        },\n        \"Text\": \"Text 4 \",\n        \"Number\": null,\n        \"Date\": \"2018-02-17\",\n        \"Currency\": 99999999.77,\n        \"DateTime\": \"2017-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": false\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AKAAZ\"\n        },\n        \"Text\": \"Text 1 \",\n        \"Number\": null,\n        \"Date\": \"2017-02-01\",\n        \"Currency\": 28.045,\n        \"DateTime\": \"1994-11-05T08:15:30-05:00\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8A5AAJ\"\n        },\n        \"Text\": \"Text 2 \",\n        \"Number\": 43,\n        \"Date\": \"2029-02-01\",\n        \"Currency\": -23.04,\n        \"DateTime\": \"2009-12-31 23:59:59\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8BrAAJ\"\n        },\n        \"Text\": \"Text 3 \",\n        \"Number\": 555556,\n        \"Date\": \"2017-02-31\",\n        \"Currency\": \"23.04\",\n        \"DateTime\": \"2007-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": false\n    },\n    {\n        \"attributes\": {\n            \"type\": \"Account\",\n            \"url\": \"/services/data/v48.0/sobjects/Account/0013700000Lm8AAAAZ\"\n        },\n        \"Text\": \"Text 4 \",\n        \"Number\": null,\n        \"Date\": \"2018-02-17\",\n        \"Currency\": 99999999.77,\n        \"DateTime\": \"2017-02-17T20:30:12.000+0000\",\n        \"Email\": \"test123@gmail.com\",\n        \"Checkbox\": true\n    }\n]"
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfDemoDatatable_1_CardsInsDaily",
+        "Id": "0Rb8A000000Q663SAC",
+        "MasterLabel": "cfDemoDatatable_1_CardsInsDaily",
+        "NamespacePrefix": "c"
+    },
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "dataTable",
+                            "elementLabel": "Datatable-0",
+                            "name": "Datatable",
+                            "property": {
+                                "activeGroups": true,
+                                "cellLevelEdit": true,
+                                "columns": [
+                                    {
+                                        "fieldName": "Text",
+                                        "label": "Text",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Number",
+                                        "label": "Number",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Currency",
+                                        "label": "Currency",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "DateTime",
+                                        "label": "DateTime",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Email",
+                                        "label": "Email",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Checkbox",
+                                        "label": "Checkbox",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Percent",
+                                        "label": "Percent",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Date",
+                                        "label": "Date",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    }
+                                ],
+                                "confirmdeleterow": true,
+                                "draggable": true,
+                                "groupBy": "Text",
+                                "groupOrder": "asc",
+                                "issearchavailable": true,
+                                "issortavailable": true,
+                                "pagelimit": 3,
+                                "pagesize": "2",
+                                "records": "{records}",
+                                "rowDelete": true,
+                                "rowLevelEdit": true,
+                                "sortAcrossGroups": true,
+                                "userSelectableRow": true
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "slds-size_12-of-12"
+                            },
+                            "type": "element"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "class": "slds-card slds-p-around_x-small slds-m-bottom_x-small",
+                "container": {
+                    "class": "slds-card"
+                },
+                "margin": [
+                    {
+                        "size": "x-small",
+                        "type": "bottom"
+                    }
+                ],
+                "padding": [
+                    {
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12"
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "demoDatatable"
+}

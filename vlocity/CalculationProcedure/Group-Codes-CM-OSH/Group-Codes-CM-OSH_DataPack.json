@@ -1,0 +1,13 @@
+{
+    "%vlocity_namespace%__ActionClassName__c": "",
+    "%vlocity_namespace%__CalculationProcedureVersion__c": "Group-Codes-CM-OSH_Version.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "Group Codes CM OSH",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "Name": "Group Codes CM OSH",
+    "RecordTypeId": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Group Codes CM OSH"
+}

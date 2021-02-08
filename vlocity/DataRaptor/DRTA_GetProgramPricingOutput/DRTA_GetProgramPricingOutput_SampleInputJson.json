@@ -1,0 +1,65 @@
+{
+    "AdditionalFeeMoreThan6": "0",
+    "AdditionalFees": "100",
+    "Age": 32,
+    "FormatStateBasedPricingOutputStatus": true,
+    "ISA": "10000",
+    "OneShare_Calculate_Program_PricesStatus": true,
+    "OneShare_Program_Premiums": {
+        "AlabamaProgramRates__2Party": 159.97,
+        "AlabamaProgramRates__2PartyDiff": 159.97,
+        "AlabamaProgramRates__Family": 241.97,
+        "AlabamaProgramRates__FamilyDiff": 241.97,
+        "AlabamaProgramRates__Member": 97.97,
+        "AlabamaProgramRates__MemberDiff": 97.97,
+        "ID": "input:OneShare_Program_Premiums",
+        "parentProdKey": "01t8A0000043pgeQAA",
+        "productKey": "01t8A0000043pgeQAA"
+    },
+    "OneShare_Program_PremiumsStatus": true,
+    "Program": "OSHCAT150",
+    "ProgramRatesResults": [
+        {
+            "aggregationResults": {
+            },
+            "calculationResults": [
+                {
+                    "Family": 341.97,
+                    "FamilyDiff": 341.97,
+                    "ID": "input",
+                    "Member": 197.97,
+                    "MemberDiff": 197.97,
+                    "MemberPlusOne": 259.97,
+                    "MemberPlusOneDiff": 259.97,
+                    "parentProdKey": "01t8A0000043pgeQAA",
+                    "productKey": "01t8A0000043pgeQAA"
+                }
+            ]
+        }
+    ],
+    "ResponseActionStatus": true,
+    "State": "AL",
+    "formatedProgramPrices": {
+        "2PartyDiffIn": 159.97,
+        "2PartyIn": 159.97,
+        "FamilyDiffIn": 241.97,
+        "FamilyIn": 241.97,
+        "MemberDiffIn": 97.97,
+        "MemberIn": 97.97,
+        "error": "OK",
+        "errorCode": "INVOKE-200",
+        "parentProdKey": "01t8A0000043pgeQAA",
+        "productKey": "01t8A0000043pgeQAA"
+    },
+    "options": {
+        "chainable": false,
+        "ignoreCache": true,
+        "queueableChainable": false,
+        "resetCache": false,
+        "useQueueableApexRemoting": false
+    },
+    "parentProdKey": "01t8A0000043pgeQAA",
+    "productKey": "01t8A0000043pgeQAA",
+    "response": {
+    }
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 1,
+        "%vlocity_namespace%__FormulaResultPath__c": "GroupRepRecipientId",
+        "%vlocity_namespace%__Formula__c": "IF(%signers|1:recipientId% = 1 AND %signers|1:roleName% = \"Group Representative\", 1, 2)",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DocusignTokenTransformDRCustom7093",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DocusignTokenTransformDR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 2,
+        "%vlocity_namespace%__FormulaResultPath__c": "ProducerRecipientId",
+        "%vlocity_namespace%__Formula__c": "IF(%signers|2:recipientId% = 1 AND %signers|2:roleName% = \"Producer\", 1, 2)",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DocusignTokenTransformDRCustom4687",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DocusignTokenTransformDR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "GroupRepRecipientId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "GroupRepRecipientId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DocusignTokenTransformDRCustom3317",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DocusignTokenTransformDR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "ProducerRecipientId",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "ProducerRecipientId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DocusignTokenTransformDRCustom4610",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DocusignTokenTransformDR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

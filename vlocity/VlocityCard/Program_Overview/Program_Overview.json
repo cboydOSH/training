@@ -1,0 +1,61 @@
+{
+    "GlobalKey__c": "Program_Overview/OneShareHealth/1/1611937180459",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "sessionVars": [
+    ],
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "customLwc": false,
+            "customLwcAttributes": [
+                {
+                    "name": "iframeurl",
+                    "val": "['urlForIFrame']"
+                }
+            ],
+            "customLwcRepeat": true,
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['urlForIFrame']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "urlForIFrame",
+                    "name": "['urlForIFrame']",
+                    "type": "string"
+                }
+            ],
+            "flyoutAttributes": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "consoleGuidebooks",
+                "Id": "0Rb8A000000QGuASAW",
+                "MasterLabel": "consoleGuidebooks",
+                "name": "consoleGuidebooks"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ],
+    "title": "Program Overview"
+}

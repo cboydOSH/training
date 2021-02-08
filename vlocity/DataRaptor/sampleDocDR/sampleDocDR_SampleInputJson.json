@@ -1,0 +1,27 @@
+{
+    "ContextId": "",
+    "EnterObject": {
+        "ObjectId": "8008A000000Wj3V"
+    },
+    "Pick a Template Type": {
+        "DocumentGenerationMode": null,
+        "TemplateType": "Vlocity Web Template",
+        "multiDocumentGenerationValue": false
+    },
+    "id": "a628A00000011KBQAY",
+    "layout": "lightning",
+    "testData": "kashish",
+    "timeStamp": "2020-06-02T22:10:30.220Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000004SFauQAG",
+    "userName": "elamontagne@vlocity.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "EnterObject": 5744,
+        "OmniScriptSessionToken": "dc8615ac-ce08-40a5-8725-3b0395554b6d",
+        "SetValues2": 13
+    }
+}

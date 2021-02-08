@@ -1,0 +1,36 @@
+{
+    "ContextId": "",
+    "PdfActionMemberCardNational": {
+        "attachmentId": "00P8A00000433HgUAI"
+    },
+    "ShowMemberCardStep": {
+        "FormulaIFrameURL": "00P8A00000433HgUAI"
+    },
+    "id": "a628A0000001DdhQAE",
+    "iframeHostURLCommunity": "https://devvl2-oshtraining.cs45.force.com/membercommunity/servlet/servlet.FileDownload?file=",
+    "iframeHostURLSalesforce": "https://onesharehealth--devvl2--c.documentforce.com/servlet/servlet.FileDownload?file=",
+    "isdtp": "p1",
+    "layout": "newport",
+    "pdfData": {
+        "EffectiveDate": "09-13-2020",
+        "Fee1": "Preventive Care - $0",
+        "Fee2": "PCP - $20",
+        "Fee3": "Urgent Care - 20$",
+        "Fee4": "ER - $500",
+        "Fee5": "Telemedicine - 0$ Consult Fee",
+        "GroupCode": "GroupCode4321",
+        "MemberID": "MemberID1234",
+        "Name": "Eduardo Vicente Martinez Hurtado"
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "state": "CA",
+    "timeStamp": "2020-09-21T19:37:34.108Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wAujQAE",
+    "userName": "vicente.martinez@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}

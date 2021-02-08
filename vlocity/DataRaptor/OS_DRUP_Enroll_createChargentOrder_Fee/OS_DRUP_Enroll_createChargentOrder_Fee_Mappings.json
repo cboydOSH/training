@@ -45,6 +45,21 @@
         "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
     },
     {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 4,
+        "%vlocity_namespace%__FormulaResultPath__c": "DescriptionForm",
+        "%vlocity_namespace%__Formula__c": "CONCAT(\"Recurring Monthly contributions for \",enrollmentReview:SelectedProgramReview)",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_createChargentOrder_FeeCustom2553",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_createChargentOrder_Fee",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
         "%vlocity_namespace%__DomainObjectAPIName__c": "ChargentOrders__ChargentOrder__c",
         "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
         "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Asset__c",
@@ -221,6 +236,19 @@
         "%vlocity_namespace%__IsDisabled__c": false,
         "%vlocity_namespace%__IsRequiredForUpsert__c": false,
         "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_createChargentOrder_FeeCustoma4E8A000000Pv16UACItem16",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OS_DRUP_Enroll_createChargentOrder_Fee",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "ChargentOrders__ChargentOrder__c",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "ChargentOrders__Description__c",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "DescriptionForm",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OS_DRUP_Enroll_createChargentOrder_FeeCustom3812",
         "%vlocity_namespace%__UpsertKey__c": false,
         "Name": "OS_DRUP_Enroll_createChargentOrder_Fee",
         "VlocityDataPackType": "SObject",

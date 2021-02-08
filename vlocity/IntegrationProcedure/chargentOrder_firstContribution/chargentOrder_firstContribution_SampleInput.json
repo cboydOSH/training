@@ -4,57 +4,68 @@
         "Id": "0018A00000ZoG2QQAV",
         "Name": "Bandolero Hernandez"
     },
-    "AssetId": "02i8A000004FgwdQAC",
-    "ContractServiceRemoteAction": {
-        "contractId": "8008A000000X7JjQAK",
-        "error": "OK",
-        "errorCode": "INVOKE-200"
-    },
     "ContractStatus": "Signed",
-    "Welcome": {
-        "City": "Cedar Park",
-        "Email": "bandolerotest@test.com",
-        "FormulaState": true,
-        "MessagingStatesoff": true,
-        "TAAddressGoogle-Block": {
-            "TAAddressGoogle": "Cedar Park, TX 78613, USA",
-            "address": "Cedar Park, TX 78613, USA",
-            "buildingSuiteApartment": "123",
-            "city": "Cedar Park",
-            "country": "United States",
-            "state": "TX",
-            "zipCode": "78613"
+    "enrollmentReview": {
+        "AssetId": "02i8A000004FgwdQAC",
+        "AuthDetailsForm": "I allow the mentioned to receive information related to my complete health records. ",
+        "AuthDetailsForm2": "This authorization will remain in effect until revoked by the Member.",
+        "BlkMyFamily": {
+            "FamilyReview": null,
+            "PrimaryLanguageReview": "English"
         },
-        "Telephone": "1231231231",
-        "fname": "Bandolero",
-        "lname": "Hernandez"
+        "ContractServiceRemoteAction": {
+            "contractId": "8008A000000X7JjQAK",
+            "error": "OK",
+            "errorCode": "INVOKE-200"
+        },
+        "RequestedEffectiveDateReview": "02/18/2021",
+        "SelectedProgramPriceReview": 1292.97,
+        "SelectedProgramReview": "OneShare Complete - Crown",
+        "Welcome": {
+            "City": "Cedar Park",
+            "Email": "bandolerotest@test.com",
+            "FormulaState": true,
+            "MessagingStatesoff": true,
+            "TAAddressGoogle-Block": {
+                "TAAddressGoogle": "Cedar Park, TX 78613, USA",
+                "address": "Cedar Park, TX 78613, USA",
+                "buildingSuiteApartment": "123",
+                "city": "Cedar Park",
+                "country": "United States",
+                "state": "TX",
+                "zipCode": "78613"
+            },
+            "Telephone": "1231231231",
+            "fname": "Bandolero",
+            "lname": "Hernandez"
+        },
+        "bill": {
+            "FormulaAdditionalFeeDiscount": 0,
+            "FormulaContributionAmount": 341.97,
+            "FormulaContributionAmountWithPromotions": 341.97,
+            "FormulaDistributionDiscount": 0,
+            "billTable": null,
+            "billingDateAppFee": "2020-11-21",
+            "billingDatePlan": "2020-11-22",
+            "billingPaymentDay": "20",
+            "billingPaymentDayAppFee": "20",
+            "dateDiffAppFee": 0,
+            "dateDiffPlan": 0,
+            "dateDiffPlanAppFee": 0,
+            "formulaAditionalFee": 125,
+            "formulaAditionalFeeMonthly": 0,
+            "formulaCompareTodayvsEffdate": 0,
+            "formulaInvalidDays": false,
+            "formulaMoreThan6FamilyMemberAdtionalFee": 0,
+            "formulaNow": "12:00:00 AM",
+            "formulaPriceEnrollProgramsBill": 341.97,
+            "formulaToday": "2020-11-20",
+            "formulaTodayDay": "20",
+            "formulaTotalFamilyMember": 1,
+            "formulaTotalfee": 466.97,
+            "messageInvalid": null
+        },
+        "incomingQuoteId": "0Q08A000000JnSGSA0"
     },
-    "bill": {
-        "FormulaAdditionalFeeDiscount": 0,
-        "FormulaContributionAmount": 341.97,
-        "FormulaContributionAmountWithPromotions": 341.97,
-        "FormulaDistributionDiscount": 0,
-        "billTable": null,
-        "billingDateAppFee": "2020-11-21",
-        "billingDatePlan": "2020-11-22",
-        "billingPaymentDay": "20",
-        "billingPaymentDayAppFee": "20",
-        "dateDiffAppFee": 0,
-        "dateDiffPlan": 0,
-        "dateDiffPlanAppFee": 0,
-        "formulaAditionalFee": 125,
-        "formulaAditionalFeeMonthly": 0,
-        "formulaCompareTodayvsEffdate": 0,
-        "formulaInvalidDays": false,
-        "formulaMoreThan6FamilyMemberAdtionalFee": 0,
-        "formulaNow": "12:00:00 AM",
-        "formulaPriceEnrollProgramsBill": 341.97,
-        "formulaToday": "2020-11-20",
-        "formulaTodayDay": "20",
-        "formulaTotalFamilyMember": 1,
-        "formulaTotalfee": 466.97,
-        "messageInvalid": null
-    },
-    "incomingQuoteId": "0Q08A000000JnSGSA0",
     "thisIsCommunity": true
 }

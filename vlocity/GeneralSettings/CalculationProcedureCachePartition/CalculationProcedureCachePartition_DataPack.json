@@ -1,0 +1,7 @@
+{
+    "%vlocity_namespace%__Value__c": "%vlocity_namespace%.RatingCache",
+    "Name": "CalculationProcedureCachePartition",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__GeneralSettings__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__GeneralSettings__c/CalculationProcedureCachePartition"
+}

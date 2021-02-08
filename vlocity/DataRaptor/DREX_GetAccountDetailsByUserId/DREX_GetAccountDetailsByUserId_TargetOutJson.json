@@ -1,0 +1,17 @@
+{
+    "UpdateMemberDetailsStep": {
+        "Email": "hkj@asdas.com",
+        "TAAddressGoogle-Block": {
+            "SelectState": "MD",
+            "TAAddressGoogle": "h",
+            "TxtAddress": "852",
+            "TxtCity": "asdasd",
+            "TxtCountry": "sa",
+            "TxtZipCode": "sad",
+            "TxtbuildingSuiteApartment": "asd"
+        },
+        "Telephone": "5454654645",
+        "TxtFirstName": "kj",
+        "TxtLastName": "kj"
+    }
+}

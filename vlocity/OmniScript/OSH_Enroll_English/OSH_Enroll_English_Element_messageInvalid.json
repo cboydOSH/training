@@ -1,5 +1,5 @@
 {
-    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__Active__c": false,
     "%vlocity_namespace%__OmniScriptId__c": {
         "Name": "Enroll",
         "VlocityDataPackType": "VlocityMatchingKeyObject",

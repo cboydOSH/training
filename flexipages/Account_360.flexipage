@@ -170,6 +170,43 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>disableLoadInPage</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>800</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>language</name>
+                    <value>English</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>layout</name>
+                    <value>newport</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrollOffset</name>
+                    <value>90</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>subtype</name>
+                    <value>SharingModule</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>type</name>
+                    <value>communityPortal</value>
+                </componentInstanceProperties>
+                <componentName>vlocity_ins:OmniScript</componentName>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-9d78c2f2-0c51-4a8d-ab26-4bea55f5379f</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
                 <componentName>cfConsoleHipaaCanvas</componentName>
             </componentInstance>
         </itemInstances>
@@ -299,6 +336,19 @@
                 <componentInstanceProperties>
                     <name>title</name>
                     <value>Cases</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-9d78c2f2-0c51-4a8d-ab26-4bea55f5379f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Claims</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
             </componentInstance>

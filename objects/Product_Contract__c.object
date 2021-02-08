@@ -256,7 +256,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Product Contracts</pluralLabel>
-    <searchLayouts />
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

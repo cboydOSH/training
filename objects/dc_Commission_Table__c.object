@@ -261,7 +261,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Commission Tables</pluralLabel>
-    <searchLayouts />
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Total_Commissions_percentage_limit</fullName>

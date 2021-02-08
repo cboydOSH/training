@@ -1,0 +1,102 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "OSH Search Expense Sharing Requests",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Indivual/OSH/SearchExpenseShareRequests/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Columns": [
+                {
+                    "data": "Bill",
+                    "header": "Bill #",
+                    "title": "Bill #"
+                },
+                {
+                    "data": "Status",
+                    "header": "Status",
+                    "title": "Status"
+                },
+                {
+                    "data": "DOS",
+                    "header": "DOS",
+                    "title": "DOS"
+                },
+                {
+                    "data": "ReceivedDate",
+                    "header": "Received Date",
+                    "title": "Received Date"
+                },
+                {
+                    "data": "ProcessedDate",
+                    "header": "Processed Date",
+                    "title": "Processed Date"
+                },
+                {
+                    "data": "PTName",
+                    "header": "PT Name",
+                    "title": "PT Name"
+                },
+                {
+                    "data": "Billed",
+                    "header": "Billed $",
+                    "title": "Billed $"
+                },
+                {
+                    "data": "Excluded",
+                    "header": "Excluded $ ",
+                    "title": "Excluded $"
+                },
+                {
+                    "data": "Paid",
+                    "header": "Paid $",
+                    "title": "Paid $"
+                },
+                {
+                    "data": "MR",
+                    "header": "MR $",
+                    "title": "MR $"
+                },
+                {
+                    "data": "RemarkCodes",
+                    "header": "Remark Codes",
+                    "title": "Remark Codes"
+                },
+                {
+                    "data": "FacilityNPI",
+                    "header": "Facility NPI",
+                    "title": "Facility NPI"
+                },
+                {
+                    "data": "TaxID",
+                    "header": "Tax ID",
+                    "title": "Tax ID"
+                },
+                {
+                    "data": "RenderingNPI",
+                    "header": "Rendering NPI",
+                    "title": "Rendering NPI"
+                }
+            ],
+            "Data": "=DRSearchExpenseSharingRequests"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SVSetResponse",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Indivual/OSH/SearchExpenseShareRequests/Procedure/SVSetResponse"
+}

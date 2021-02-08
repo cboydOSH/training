@@ -5,6 +5,7 @@
     "DataRaptor/DRUP_OSH_INDIV_enrollUpdateMemberinfo",
     "DataRaptor/DRX_OSH_Enroll_getLegalLanguage",
     "DataRaptor/OSH_MergeEditMemberListAndHipaa",
+    "Document/CABJAJCFA4cf1cbf3e0d44e78a02121170daf21b5",
     "IntegrationProcedure/Enroll_AssetRecord",
     "IntegrationProcedure/Enroll_GetContractStatus",
     "IntegrationProcedure/Enroll_Promotions",
@@ -33,5 +34,16 @@
     "VlocityUITemplate/Osh-Enroll-radioPregnantFunctionReview",
     "VlocityUITemplate/Osh-HIPAA-tablemembers",
     "VlocityUITemplate/ins-enrollment-style-radioButtons",
-    "VlocityUITemplate/ins-os-plan-compare-modal-os"
+    "VlocityUITemplate/ins-os-plan-compare-modal-os",
+    "VlocityUITemplate/omniNewport-vlcOSHHipaaStep",
+    "VlocityUITemplate/omniNewport-vlcStepEditedforOSH",
+    "VlocityUITemplate/omniNewport-vlcStepEditedforOSHEnrollSearchUsingInfoPacketNumber",
+    "VlocityUITemplate/omniNewport-vlcStepEnrollmentSummary",
+    "VlocityUITemplate/omniNewport-vlcStepNextHEnroll",
+    "VlocityUITemplate/omniNewport-vlcStepPaymentScreenConditonalNew",
+    "VlocityUITemplate/osh-custom-dropdown",
+    "VlocityUITemplate/osh-custom-dropdown-quoteSelection-Enroll",
+    "VlocityUITemplate/osh-family-list-review",
+    "VlocityUITemplate/osh-preexisting-conditions-apply-disclosure",
+    "VlocityUITemplate/v2-refractored-ins-os-hins-small-group-plan-selection-osh-enrollment"
 ]

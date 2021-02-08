@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "ip for testing calculation procedure approach with an apex class",
+    "%vlocity_namespace%__CustomJavaScript__c": "CalculationTest_RePriceTest_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "CalculationTest_RePriceTest_Element_OneShare_Program_Premiums.json",
+        "CalculationTest_RePriceTest_Element_FormatStateBasedPricingOutput.json",
+        "CalculationTest_RePriceTest_Element_OneShare_Calculate_Program_Prices.json",
+        "CalculationTest_RePriceTest_Element_DRTA_GetProgramPricingOutput.json",
+        "CalculationTest_RePriceTest_Element_ResponseAction.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "CalculationTest_RePriceTest",
+    "%vlocity_namespace%__PropertySet__c": "CalculationTest_RePriceTest_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "RePriceTest",
+    "%vlocity_namespace%__Type__c": "CalculationTest",
+    "Name": "Re Price OSH Quote Programs Testing purposes",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/CalculationTest/RePriceTest/Procedure"
+}

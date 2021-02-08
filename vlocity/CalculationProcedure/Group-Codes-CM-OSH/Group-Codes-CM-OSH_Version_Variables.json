@@ -1,0 +1,122 @@
+[
+    {
+        "%vlocity_namespace%__Alias__c": "GroupCodesCMOSH__GroupCode",
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Group Codes CM OSH",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Group Codes CM OSH",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__DataType__c": "Text",
+        "%vlocity_namespace%__DefaultValue__c": "",
+        "%vlocity_namespace%__DuplicateAlias__c": false,
+        "%vlocity_namespace%__Index__c": 0,
+        "%vlocity_namespace%__IsEditable__c": false,
+        "%vlocity_namespace%__IsSelected__c": false,
+        "%vlocity_namespace%__MatrixName__c": "Group Codes CM OSH",
+        "%vlocity_namespace%__Precision__c": "",
+        "%vlocity_namespace%__TypeaheadDisplayName__c": "Group Code ( Group Codes CM OSH )",
+        "%vlocity_namespace%__UserDefined__c": false,
+        "Name": "Group Code",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVariable__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVariable__c/Generated1629912541"
+    },
+    {
+        "%vlocity_namespace%__Alias__c": "ISAAmount",
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Group Codes CM OSH",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Group Codes CM OSH",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__DataType__c": "Text",
+        "%vlocity_namespace%__DefaultValue__c": "",
+        "%vlocity_namespace%__DuplicateAlias__c": false,
+        "%vlocity_namespace%__Index__c": 0,
+        "%vlocity_namespace%__IsEditable__c": false,
+        "%vlocity_namespace%__IsSelected__c": false,
+        "%vlocity_namespace%__MatrixName__c": "Group Codes CM OSH",
+        "%vlocity_namespace%__Precision__c": "",
+        "%vlocity_namespace%__TypeaheadDisplayName__c": "ISA Amount",
+        "%vlocity_namespace%__UserDefined__c": false,
+        "Name": "ISA Amount",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVariable__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVariable__c/Generated2110872473"
+    },
+    {
+        "%vlocity_namespace%__Alias__c": "ProductCode",
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Group Codes CM OSH",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Group Codes CM OSH",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__DataType__c": "Text",
+        "%vlocity_namespace%__DefaultValue__c": "",
+        "%vlocity_namespace%__DuplicateAlias__c": false,
+        "%vlocity_namespace%__Index__c": 0,
+        "%vlocity_namespace%__IsEditable__c": false,
+        "%vlocity_namespace%__IsSelected__c": false,
+        "%vlocity_namespace%__MatrixName__c": "Group Codes CM OSH",
+        "%vlocity_namespace%__Precision__c": "",
+        "%vlocity_namespace%__TypeaheadDisplayName__c": "Product Code",
+        "%vlocity_namespace%__UserDefined__c": false,
+        "Name": "Product Code",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVariable__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVariable__c/Generated1015319776"
+    },
+    {
+        "%vlocity_namespace%__Alias__c": "State",
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Group Codes CM OSH",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Group Codes CM OSH",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__DataType__c": "Text",
+        "%vlocity_namespace%__DefaultValue__c": "",
+        "%vlocity_namespace%__DuplicateAlias__c": false,
+        "%vlocity_namespace%__Index__c": 0,
+        "%vlocity_namespace%__IsEditable__c": false,
+        "%vlocity_namespace%__IsSelected__c": false,
+        "%vlocity_namespace%__MatrixName__c": "Group Codes CM OSH",
+        "%vlocity_namespace%__Precision__c": "",
+        "%vlocity_namespace%__TypeaheadDisplayName__c": "State",
+        "%vlocity_namespace%__UserDefined__c": false,
+        "Name": "State",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVariable__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVariable__c/Generated1462034575"
+    },
+    {
+        "%vlocity_namespace%__Alias__c": "groupCode",
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Group Codes CM OSH",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Group Codes CM OSH",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__DataType__c": "Text",
+        "%vlocity_namespace%__DefaultValue__c": "",
+        "%vlocity_namespace%__DuplicateAlias__c": false,
+        "%vlocity_namespace%__Index__c": "",
+        "%vlocity_namespace%__IsEditable__c": true,
+        "%vlocity_namespace%__IsSelected__c": true,
+        "%vlocity_namespace%__MatrixName__c": "",
+        "%vlocity_namespace%__Precision__c": "",
+        "%vlocity_namespace%__TypeaheadDisplayName__c": "",
+        "%vlocity_namespace%__UserDefined__c": true,
+        "Name": "groupCode",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVariable__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVariable__c/Generated1699408798"
+    }
+]

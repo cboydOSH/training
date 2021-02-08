@@ -7,7 +7,7 @@
         "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
     },
     "%vlocity_namespace%__PropertySet__c": {
-        "HTMLTemplateId": "",
+        "HTMLTemplateId": "omniNewport-vlcStepEnrollmentSummary",
         "allowSaveForLater": true,
         "cancelLabel": "Cancel",
         "cancelMessage": "Are you sure?",

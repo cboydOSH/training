@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "OneShare Health, LLC",
+    "%vlocity_namespace%__CustomJavascript__c": "ins-os-hins-small-group-plan-selection-osh-enrollment.js",
+    "%vlocity_namespace%__Definition__c": "",
+    "%vlocity_namespace%__Description__c": "Deleted \"Page 1 of 2\"",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "ins-os-hins-small-group-plan-selection-osh-enrollment/10/OneShare Health, LLC/1598645804845",
+    "%vlocity_namespace%__HTML__c": "ins-os-hins-small-group-plan-selection-osh-enrollment.html",
+    "%vlocity_namespace%__ParentID__c": "ins-os-hins-small-group-plan-selection-osh/1/OneShare Health, LLC/1578686702044",
+    "%vlocity_namespace%__SampleJson__c": "ins-os-hins-small-group-plan-selection-osh-enrollment_Sample.json",
+    "%vlocity_namespace%__Sass__c": "ins-os-hins-small-group-plan-selection-osh-enrollment.scss",
+    "%vlocity_namespace%__Type__c": "OmniScript Selectable Items",
+    "%vlocity_namespace%__Version__c": 10,
+    "Name": "ins-os-hins-small-group-plan-selection-osh-enrollment",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/ins-os-hins-small-group-plan-selection-osh-enrollment"
+}

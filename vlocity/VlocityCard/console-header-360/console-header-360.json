@@ -1,0 +1,91 @@
+{
+    "GlobalKey__c": "console-header-360/OneShare Health, LLC/1/1603810995367",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "customLwc": false,
+            "customLwcRepeat": true,
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "",
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['EffectiveDate']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Effective Date",
+                    "name": "['EffectiveDate']",
+                    "type": "date"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['InactiveDate']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Inactive Date",
+                    "name": "['InactiveDate']",
+                    "type": "date"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['PaidThroughDate']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "PaidThroughDate",
+                    "name": "['PaidThroughDate']",
+                    "type": "date"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['ActivePeriod']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Active Period",
+                    "name": "['ActivePeriod']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "banner",
+                "Id": "0Rb8A000000GWvWSAW",
+                "MasterLabel": "Banner",
+                "name": "banner"
+            },
+            "name": "Active",
+            "smartAction": {
+            },
+            "templateUrl": "card-active"
+        }
+    ],
+    "title": "Banner"
+}

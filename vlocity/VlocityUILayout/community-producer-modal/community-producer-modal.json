@@ -1,0 +1,56 @@
+{
+    "Cards": [
+        "community-producer-modal"
+    ],
+    "GlobalKey__c": "community-producer-modal/1/OneShare Health, LLC/1591908557234",
+    "componentName": "cfCommunityProducerModal",
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{}"
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvas1x",
+        "Id": "0Rb8A000000ESELSA4",
+        "MasterLabel": "cardCanvas1x",
+        "name": "cardCanvas1x"
+    },
+    "previewType": "runTime",
+    "repeatCards": false,
+    "workspace": [
+        "community-producer-modal/OneShare Health, LLC/1/1591908787088"
+    ],
+    "xmlObject": {
+        "apiVersion": 46,
+        "isExplicitImport": false,
+        "isExposed": true,
+        "masterLabel": "community-producer-modal",
+        "runtimeNamespace": "%vlocity_namespace%",
+        "targetConfig": [
+        ],
+        "targets": [
+            {
+                "name": "AppPage",
+                "target": "lightning__AppPage"
+            },
+            {
+                "name": "HomePage",
+                "target": "lightning__HomePage"
+            },
+            {
+                "name": "RecordPage",
+                "target": "lightning__RecordPage"
+            },
+            {
+                "name": "CommunityPage",
+                "target": "lightningCommunity__Page"
+            },
+            {
+                "name": "CommunityDefault",
+                "target": "lightningCommunity__Default"
+            }
+        ]
+    }
+}

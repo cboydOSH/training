@@ -1,0 +1,20 @@
+{
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "ContractServiceRemoteAction": null,
+        "DRTAGetContractServiceInput": null,
+        "DRUP_createComissionTable": null,
+        "DRUP_createProducerAsset": null,
+        "DRUP_createProducerCommission": null,
+        "DRUpdateAsset": null,
+        "DRUpdateMemberInfo": null,
+        "ResponseAction": null
+    }
+}

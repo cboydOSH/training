@@ -1,0 +1,8 @@
+{
+    "%vlocity_namespace%__Description__c": "AttrMatrixInfoCachePartition",
+    "%vlocity_namespace%__SetupValue__c": "AttrMatrixInfoCachePartition",
+    "Name": "AttrMatrixInfoCachePartition",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CpqConfigurationSetup__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CpqConfigurationSetup__c/AttrMatrixInfoCachePartition"
+}

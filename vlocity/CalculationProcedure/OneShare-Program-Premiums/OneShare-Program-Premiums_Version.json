@@ -1,0 +1,542 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "OneShare Program Premiums",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Program Premiums",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Program Premiums",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "OneShare-Program-Premiums_Version_Steps.json",
+    "%vlocity_namespace%__CalculationProcedureVariable__c": "OneShare-Program-Premiums_Version_Variables.json",
+    "%vlocity_namespace%__Constants__c": [
+        {
+            "alias": "Alaska",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Alaska",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"AK\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Alabama",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Alabama",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"AL\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Arkansas",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Arkansas",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"AR\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Arizona",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Arizona",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"AZ\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "California",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "California",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"CA\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Connecticut",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Connecticut",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"CT\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Colorado",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Colorado",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"CO\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "WashDC",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Wash DC",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"DC\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Delaware",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Delaware",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"DE\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Florida",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Florida",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"FL\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Georgia",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Georgia",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"GA\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Hawaii",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Hawaii",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"HI\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Iowa",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Iowa",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"IA\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Idaho",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Idaho",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"ID\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Illinois",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Illinois",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"IL\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Indiana",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Indiana",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"IN\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Kansas",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Kansas",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"KS\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Kentucky",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Kentucky",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"KY\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Louisiana",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Louisiana",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"LA\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Massachusetts",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Massachusetts",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"MA\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Maryland",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Maryland",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"MD\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Maine",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Maine",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"ME\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Michigan",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Michigan",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"MI\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Minnesota",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Minnesota",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"MN\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Missouri",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Missouri",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"MO\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Mississippi",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Mississippi",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"MS\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Montana",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Montana",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"MT\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "NorthCarolina",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "North Carolina",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"NC\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "NorthDakota",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "North Dakota",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"ND\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Nebraska",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Nebraska",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"NE\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "NewHampshire",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "New Hampshire",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"NH\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "NewJersey",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "New Jersey",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"NJ\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "NewMexico",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "New Mexico",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"NM\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Nevada",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Nevada",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"NV\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "NewYork",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "New York",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"NY\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Ohio",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Ohio",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"OH\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Oklahoma",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Oklahoma",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"OK\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Oregon",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Oregon",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"OR\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Pennsylvania",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Pennsylvania",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"PA\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "RhodeIsland",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Rhode Island",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"RI\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "SouthCarolina",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "South Carolina",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"SC\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "SouthDakota",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "South Dakota",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"SD\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Tennesee",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Tennesee",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"TN\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Texas",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Texas",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"TX\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Utah",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Utah",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"UT\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Virginia",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Virginia",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"VA\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Vermont",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Vermont",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"VT\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Washington",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Washington",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"WA\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Wisconsin",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Wisconsin",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"WI\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "WestVirginia",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "West Virginia",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"WV\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        },
+        {
+            "alias": "Wyoming",
+            "dataType": "Text",
+            "isEditable": false,
+            "name": "Wyoming",
+            "precision": "",
+            "userDefined": true,
+            "value": "\"WY\"",
+            "valuePlaceHolder": "Enter text inside single quotes"
+        }
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OneShare Program Premiums V1",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"State\":\"MD\",\"ISA\":\"5000\",\"Age\":\"49\",\"Program\":\"OSHCAT500\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 5,
+    "%vlocity_namespace%__StartDateTime__c": "2020-06-06T05:00:00.000Z",
+    "%vlocity_namespace%__Variables__c": "",
+    "%vlocity_namespace%__VersionNumber__c": 5,
+    "Name": "OneShare Program Premiums v5 - matrices working",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/5/%vlocity_namespace%__CalculationProcedure__c/OneShare Program Premiums"
+}

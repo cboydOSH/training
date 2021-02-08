@@ -1,0 +1,17 @@
+<div class="via-slds-card--left-profile" ng-controller="viaLeftProfileController as vm">
+    <div class="banner">
+    </div>
+    <!--/banner-->
+    <div class="profile-picture big-profile-picture" >
+          <img id="user-photo" src="{{records[0].PhotoUrl}}"/>   "{{vm.getPhotoUrl(obj)}}"
+    </div>
+    <!--/pic-->
+    <div class="profile-detail">
+        <div class="profile-name slds-text-heading--medium">{{obj | getter: data.fields[0] | picker: data.fields[0].type}} &nbsp;<div class="ribbon {{vm.getSentiment(obj)}}">&#x2605;</div></div>
+        <div class="profile-info">
+            {{obj | getter: data.fields[1] | picker: data.fields[1].type}}
+            <span ng-if="data.fields.length > 2"> | {{obj | getter: data.fields[2] | picker: data.fields[2].type}}</span>
+        </div>
+       
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DREXT_GetDocumentTemplates": null,
+        "DRPOST_": null,
+        "DRPOST_AttachDocumentToContract": null,
+        "POC-drtestextractattachment": null,
+        "RA_CreateObjDocument": null,
+        "ResponseAction1": null,
+        "SV_NodesForTesting": null,
+        "SetValues1": null
+    }
+}

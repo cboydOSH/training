@@ -15,16 +15,11 @@ vlocity.cardframework.registerModule.controller('oshControllerBillingInformation
                         var firstContributionMaxDate = new Date();
                         firstContributionMaxDate.setDate(firstContributionMaxDate.getDate() + parseInt($scope.bpTree.response.bill.formulaCompareTodayvsEffdate));
                         var today = new Date();
-                        // console.log('billingDate', billingDate);
-                        // console.log('firstContributionMaxDate', firstContributionMaxDate);
-                        // console.log('today', today);
-                        // console.log('today <= billingDate && billingDate<firstContributionMaxDate', today <= billingDate && billingDate<firstContributionMaxDate);
                         if(today <= billingDate && billingDate<firstContributionMaxDate){
-                                console.log('not to reset dates');
+
                         }else{
                                 $scope.bpTree.response.bill.billingDatePlan = '';
                                 $scope.bpTree.response.bill.customBillingDateAppFee = '';
-                                console.log('reset dates');
                         }
                 }
         }
@@ -145,36 +140,37 @@ vlocity.cardframework.registerModule.controller('oshControllerBillingInformation
                 //Stablish Min date, min date if same as effective date plus one month because is the next payment
                 $scope.dateMinInScope = $scope.bpTree.response.myFamily.effDateEnroll;
                 var effectiveDateArray =  $scope.bpTree.response.myFamily.effDateEnroll.split('-');
-                //Get default date for date picker
-                var array = $scope.bpTree.response.bill.billingDatePlan.split('-');
-                var billingDatePlusOneMonth = $scope.getDate(parseInt(array[0]),parseInt(effectiveDateArray[1])-1, parseInt(array[2]));
-                var minDate = $scope.getDate(parseInt(effectiveDateArray[0]), parseInt(effectiveDateArray[1])-1, parseInt(effectiveDateArray[2]));
-                console.log('billignDate 1', billingDatePlusOneMonth);
-                console.log('effectiveDate', minDate);
-                console.log('billignDate 1', billingDatePlusOneMonth);
-                if(billingDatePlusOneMonth<minDate){
-                        console.log('IF 1');
-                        billingDatePlusOneMonth.setMonth(billingDatePlusOneMonth.getMonth()+1);
-                }
-                console.log('billignDate 2', billingDatePlusOneMonth);
-                if(billingDatePlusOneMonth.getDate()== 29 || billingDatePlusOneMonth.getDate()== 30 || billingDatePlusOneMonth.getDate()== 31){
-                        console.log('IF 2');
-                        billingDatePlusOneMonth.setDate(28);
-                        if(billingDatePlusOneMonth.getDate() < minDate.getDate()){
-                                console.log('IF 3');
-                               billingDatePlusOneMonth.setMonth(billingDatePlusOneMonth.getMonth()+1); 
-                               billingDatePlusOneMonth.setDate(1);
-                        }
-                }
-                
-                //console.log('billingDatePlusOneMonth', billingDatePlusOneMonth);
-                //console.log('$scope.getStringDate(billingDatePlusOneMonth)', $scope.getStringDate(billingDatePlusOneMonth));
-                $scope.bpTree.response.bill.customBillingDateAppFee = $scope.getStringDate(billingDatePlusOneMonth); //$scope.bpTree.response.bill.billingDatePlan;
+
                 //Stablish MAX date for date picker
-                var array2 = $scope.bpTree.response.myFamily.effDateEnroll.split('-');
-                var maxDate =$scope.getDate(parseInt(array2[0]), parseInt(array2[1]), parseInt(array2[2])-1);
-                console.log('effective date', maxDate);
+                var effDateEnrollArray = $scope.bpTree.response.myFamily.effDateEnroll.split('-');
+                var maxDate =$scope.getDate(parseInt(effDateEnrollArray[0]), parseInt(effDateEnrollArray[1]), parseInt(effDateEnrollArray[2])-1);
                 $scope.dateMaxInScope = maxDate;
+
+                //Get default date for date picker
+                var billingDatePlanArray = $scope.bpTree.response.bill.billingDatePlan.split('-');
+                var minDay = parseInt(billingDatePlanArray[2]) < 28? parseInt(billingDatePlanArray[2]): 28;
+                var billingStartDate = $scope.getDate(parseInt(billingDatePlanArray[0]), parseInt(effectiveDateArray[1])-1, minDay);
+                var effectiveDate = $scope.getDate(parseInt(effectiveDateArray[0]), parseInt(effectiveDateArray[1])-1, parseInt(effectiveDateArray[2]));
+
+                console.log('billingDatePlanArray', billingDatePlanArray);
+                console.log('minDay', minDay);
+                console.log('billingStartDate 1', billingStartDate);
+                console.log('effectiveDate', effectiveDate);
+
+                if(billingStartDate < effectiveDate){
+                        billingStartDate.setMonth(billingStartDate.getMonth()+1);
+                }
+
+                console.log('billingStartDate 2', billingStartDate);
+
+                if(billingStartDate.getDate() > 28 && billingStartDate.getDate() < effectiveDate.getDate()){
+                        billingStartDate = $scope.getDate(billingStartDate.getFullYear(), billingStartDate.getMonth()+1, 1);
+                        $scope.dateMaxInScope = billingStartDate;
+                }
+
+                console.log('billingStartDate 3', billingStartDate);
+                $scope.bpTree.response.bill.customBillingDateAppFee = $scope.getStringDate(billingStartDate); //$scope.bpTree.response.bill.billingDatePlan;
+                
         }
 
         $scope.getDate = function(year, month, day){

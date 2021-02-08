@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "OneShare Health, LLC",
+    "%vlocity_namespace%__CustomJavascript__c": "ins-os-small-group-plan-selection-for-reference.js",
+    "%vlocity_namespace%__Definition__c": "",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "ins-os-small-group-plan-selection-for-reference/1/OneShare Health, LLC/1610640782498",
+    "%vlocity_namespace%__HTML__c": "ins-os-small-group-plan-selection-for-reference.html",
+    "%vlocity_namespace%__ParentID__c": "ins-os-small-group-plan-selection/1/Vlocity/1541626322158",
+    "%vlocity_namespace%__SampleJson__c": "ins-os-small-group-plan-selection-for-reference_Sample.json",
+    "%vlocity_namespace%__Sass__c": "ins-os-small-group-plan-selection-for-reference.scss",
+    "%vlocity_namespace%__Type__c": "OmniScript Selectable Items",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "ins-os-small-group-plan-selection-for-reference",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/ins-os-small-group-plan-selection-for-reference"
+}

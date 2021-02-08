@@ -1,0 +1,15 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "full_name",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "EditFamilyMember:fullname",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "OSH_EnrollContract_Transform-V1Custom387",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "OSH_EnrollContract_Transform-V1",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

@@ -1,0 +1,51 @@
+{
+    "ContextId": null,
+    "ContractorAgreement": {
+        "Agreement": {
+        },
+        "ContactInformation": {
+            "AltPhone": null,
+            "DateOfBirth": null,
+            "EmailAddress": null,
+            "Fax": null,
+            "Phone": null
+        },
+        "IDNumbers": {
+            "SSN": null
+        },
+        "Information": {
+            "Account": null,
+            "CloseDate": null,
+            "FullLegalName": null,
+            "Stage": null
+        },
+        "PrimaryAddress": {
+            "Address1": null,
+            "Address2": null,
+            "City": null,
+            "Postal/ZipCode": null,
+            "State": null
+        },
+        "ReferralInformation": {
+            "Referal": null
+        },
+        "Signature": {
+            "Checkbox": null,
+            "Date": null,
+            "FullName": null,
+            "Signature1": null,
+            "Signature2": null
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "ContractorAgreement": null,
+        "DRUpdateOpportunity": null
+    }
+}

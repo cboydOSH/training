@@ -1,0 +1,25 @@
+{
+    "Cards": [
+        "profile-account",
+        "profile-account-info"
+    ],
+    "componentName": "cfConsoleSidebar",
+    "dataSource": {
+        "type": "Query",
+        "value": {
+            "jsonMap": "{\"params.id\":\"{{params.id}}\"}"
+        }
+    },
+    "enableLwc": false,
+    "previewType": "runTime",
+    "repeatCards": false,
+    "templates": {
+        "0": {
+            "templateUrl": "console-sidebar"
+        }
+    },
+    "workspace": [
+        "profile-account/Vlocity/1495043462713",
+        "profile-account-info/Vlocity/1495043462714"
+    ]
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "tabs:signHereTabs:tabLabel",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "AccountPrimary:fullname",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_OSH_HTMLTESTCustom1098",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_OSH_HTMLTEST",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

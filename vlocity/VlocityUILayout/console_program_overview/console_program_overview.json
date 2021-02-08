@@ -1,0 +1,106 @@
+{
+    "Cards": [
+        "Program_Overview"
+    ],
+    "GlobalKey__c": "console_program_overview/1/OneShareHealth/1611937118703",
+    "componentName": "cfConsole_program_overview",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0018A00000ZJcbWQAT"
+            }
+        ],
+        "type": "IntegrationProcedures",
+        "value": {
+            "inputMap": {
+                "ContextId": "{{params.id}}"
+            },
+            "ipMethod": "Console_guidebook",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            }
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvas1x",
+        "Id": "0Rb8A000000ESELSA4",
+        "MasterLabel": "cardCanvas1x",
+        "NamespacePrefix": "%vlocity_namespace%",
+        "name": "cardCanvas1x"
+    },
+    "previewType": "runTime",
+    "repeatCards": false,
+    "workspace": [
+        "Program_Overview/OneShareHealth/1/1611937180459"
+    ],
+    "xmlObject": {
+        "apiVersion": 46,
+        "isExplicitImport": false,
+        "isExposed": true,
+        "masterLabel": "console_program_overview",
+        "runtimeNamespace": "%vlocity_namespace%",
+        "targetConfig": [
+            {
+                "objects": [
+                ],
+                "property": [
+                    {
+                        "name": "debug",
+                        "value": {
+                            "name": "debug",
+                            "selectedProp": "debug",
+                            "type": "Boolean"
+                        }
+                    },
+                    {
+                        "name": "recordId",
+                        "value": {
+                            "name": "recordId",
+                            "selectedProp": "recordId",
+                            "type": "String"
+                        }
+                    }
+                ],
+                "target": "lightning__AppPage"
+            },
+            {
+                "objects": [
+                ],
+                "property": [
+                    {
+                        "name": "debug",
+                        "value": {
+                            "name": "debug",
+                            "selectedProp": "debug",
+                            "type": "Boolean"
+                        }
+                    }
+                ],
+                "target": "lightning__RecordPage"
+            }
+        ],
+        "targetConfigs": {
+            "asByteArray": "PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJkZWJ1ZyIgdHlwZT0iQm9vbGVhbiIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJyZWNvcmRJZCIgdHlwZT0iU3RyaW5nIi8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3RhcmdldENvbmZpZz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0YXJnZXRDb25maWcgdGFyZ2V0cz0ibGlnaHRuaW5nX19SZWNvcmRQYWdlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cHJvcGVydHkgbmFtZT0iZGVidWciIHR5cGU9IkJvb2xlYW4iLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGFyZ2V0Q29uZmlnPg==",
+            "inputStream": {
+            },
+            "length": 424,
+            "maxToKeep": 425
+        },
+        "targets": [
+            {
+                "name": "RecordPage",
+                "target": "lightning__RecordPage"
+            },
+            {
+                "name": "AppPage",
+                "target": "lightning__AppPage"
+            },
+            {
+                "name": "HomePage",
+                "target": "lightning__HomePage"
+            }
+        ]
+    }
+}

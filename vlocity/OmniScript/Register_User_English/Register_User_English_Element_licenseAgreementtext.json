@@ -1,0 +1,39 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Provider Portal  - Enrollment",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Register/User/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Provider Portal  - Enrollment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Register/User/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "licenseAgreement",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Register/User/English/licenseAgreement",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "licenseAgreement",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": null,
+        "show": null,
+        "text": "<div class=\"nds-scrollable\" style=\"height: 30rem; width: 100%;\">\n<p><span class=\"license_section\">License Grant.</span>&nbsp;This is a legal Agreement between you and the producers of this website. The terms of this Agreement govern your use of and access to this website. By using this website, you are agreeing to be bound by this Agreement. In consideration of your agreement to these terms and for other valuable consideration, you are granted a nonexclusive, non-transferable, limited, terminable license to access and use the website under the laws of the United States. The producer of this website, Healthx Inc., reserves all rights not expressly granted in this Agreement.</p>\n<p>&nbsp;</p>\n<p><span class=\"license_section\"> Restrictions. This website is protected by United States copyright law, international treaty provisions, and trade secret, trade dress and other intellectual property laws. Unauthorized copying of or access to this website is expressly forbidden. You may not copy, disclose, loan, rent, sell, lease, give away, give your password to or otherwise allow access to this website by any other person. You agree to only use this website to process your own data. You agree not to misuse, abuse, or overuse beyond reasonable amounts, this website. You agree not to attempt to view, disclose, copy, reverse engineer, disassemble, decompile, or otherwise examine the source program code behind this website. You may be held legally responsible for any copyright infringement or other unlawful act that is caused or incurred by your failure to abide by the terms of this Agreement. </span></p>\n<p>&nbsp;</p>\n<p><span class=\"license_section\">Term and Termination.</span>&nbsp;This license is effective until terminated by either you or the producers of this website. This license will automatically terminate without notice if you fail to comply with any provisions of this Agreement. The provisions of this Agreement which by their nature extend beyond the termination of this Agreement shall survive termination of this Agreement, including but not limited to the sections relating to Restrictions, Content of the Website, Links to Third Party Websites, Disclaimer of Warranties, Limitation of Liability, and Governing Law.</p>\n<p>&nbsp;</p>\n<p><span class=\"license_section\">Content of the Website.</span>&nbsp;The insurance products, data, and other information referenced in the website are provided by parties other than the producer of the website. We make no representations regarding the products, data, or any information about the products. We are not liable for errors in data or transmission or for lost data. Any questions, complaints, or claims regarding the products or data must be directed to the appropriate provider or vendor.</p>\n<p>&nbsp;</p>\n<p><span class=\"license_section\">Links to Third Party Websites.</span>&nbsp;The hypertext links in the website let you leave our website. The linked websites are not under our control, and therefore we are not responsible for the contents of any linked website. We are providing these links to you only as a convenience, and the inclusion of any link does not imply any endorsement by the producers of the site.</p>\n<p>&nbsp;</p>\n<p><span class=\"license_section\">Security.</span>&nbsp;You are responsible for changing your password upon entering the system for the first time. You are also responsible for safeguarding and maintaining the secrecy of your password at all times. We believe that we have taken all reasonable security steps to encrypt your information so that it cannot be read as the information travels over the Internet. However, nothing is entirely foolproof, and as a customer, you accept the risk of conducting financial and private transactions via the Internet.</p>\n<p>&nbsp;</p>\n<p><span class=\"license_section\">Disclaimer of Warranties.</span> TO THE EXTENT PERMITTED, THIS WEBSITE IS PROVIDED ON AN \"AS IS\" BASIS WITHOUT EXPRESS OF WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTY OF MERCHANTABILITY, NONINFRINGEMENT, OR FITNESS FOR A PARTICULAR PURPOSE, OR WARRANTIES ARISING FROM A COURSE OF DEALING, TRADE USAGE, OR TRADE PRACTICE. THERE IS NO WARRANTY THAT THE WEBSITE WILL OPERATE UNINTERRUPTED, ERROR FREE OR VIRUS FREE. WE MAKE NO WARRANTIES OF ANY KIND WHATSOEVER AS TO THE RESULTS THAT YOU WILL OBTAIN FROM RELYING UPON THE SERVICES PROVIDED TO YOU. YOU AGREE THAT WE SHALL NOT BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY LOSSES, DAMAGES, OR LIABILITIES OF ANY NATURE WHATSOEVER ON ACCOUNT OF OR ASSOCIATED WITH THE SERVICES RENDERED UNDER THIS AGREEMENT OR THE USE OF THE WEBSITE, UNLESS CAUSED BY THE GROSS NEGLIGENCE OF THE PRODUCERS OF THIS WEBSITE.</p>\n<p>&nbsp;</p>\n<p><span class=\"license_section\">Limitation of Liability.</span>&nbsp;UNDER NO CIRCUMSTANCES SHALL WE BE LIABLE TO YOU OR ANY THIRD PARTY ON ACCOUNT OF ANY CLAIM, LOSS OR DAMAGE (WHETHER BASED UPON PRINCIPLES OF CONTRACT, WARRANTY, MISREPRESENTATION, NEGLIGENCE OR OTHER TORT, BREACH OF ANY STATUTORY DUTY, PRINCIPLES OF INDEMNITY, THE FAILURE OF ANY LIMITED REMEDY TO ACHIEVE ITS ESSENTIAL PURPOSE, OR OTHERWISE) FOR ANY SPECIAL, INDIRECT, RELIANCE, CONSEQUENTIAL, INCIDENTAL, OR EXEMPLARY DAMAGES OR ATTORNEY FEES, INCLUDING BUT NOT LIMITED TO LOST PROFITS, LOST SAVINGS, LOST BENEFITS, LOST DATA, OR FOR ANY DAMAGES OR SUMS PAID BY YOU TO THIRD PARTIES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>\n<p>&nbsp;</p>\n<p><span class=\"license_section\">Governing Law.</span>&nbsp;This Agreement shall be governed by and construed in accordance with the laws of the State of Indiana (excluding its conflicts of law rules). You consent to the jurisdiction of the state and federal courts located in the State of Indiana for all disputes related to this Agreement.</p>\n</div>",
+        "textKey": ""
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Text Block",
+    "Name": "licenseAgreementtext",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Register/User/English/licenseAgreementtext"
+}

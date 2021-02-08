@@ -1,0 +1,52 @@
+{
+    "ContextId": "",
+    "EnterObject": {
+        "ObjectId": "8008A000000Wj3V"
+    },
+    "Pick a Template Type": {
+        "DocumentGenerationMode": "singleDocumentGeneration",
+        "TemplateType": "Microsoft Word .DOCX Template",
+        "multiDocumentGenerationValue": false
+    },
+    "PickTemplate": {
+        "DocumentTemplate": [
+            {
+                "$$hashKey": "object:139",
+                "Id": "a4V8A0000002Uv7UAE",
+                "Name": "OSH_Contract_Master_Test",
+                "TemplateType": "Microsoft Word .DOCX Template",
+                "VersionNumber": 1,
+                "vlcSelected": true
+            }
+        ],
+        "MultiDocumentTemplate": null
+    },
+    "attachFileFormat": "docx",
+    "contextId": "8008A000000Wj3V",
+    "documentType": "all",
+    "generateMultipleDocument": false,
+    "id": "a628A00000011KBQAY",
+    "layout": "lightning",
+    "pdfViewer": "VlocityClientSideViewer",
+    "qId": "8008A000000Wj3V",
+    "templateId": "a4V8A0000002Uv7UAE",
+    "templateType": "Microsoft Word .DOCX Template",
+    "timeStamp": "2020-06-02T21:08:15.775Z",
+    "urlPrefix": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/apex",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000004SFauQAG",
+    "userName": "elamontagne@vlocity.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "EnterObject": 1903,
+        "GetDocumentTemplates": 1375,
+        "GetMultiDocumentTemplates": 420,
+        "OmniScriptSessionToken": "42b0a0d9-7c1f-4370-87c7-0eafea988ecf",
+        "Pick a Template Type": 3455,
+        "PickTemplate": 2662,
+        "Set Values": 15
+    }
+}

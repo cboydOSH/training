@@ -5345,6 +5345,7 @@ ChargentOrders__Subtotal__c + ChargentOrders__Tax__c + ChargentOrders__Shipping_
         <columns>Asset__c</columns>
         <columns>ChargentOrders__Order_Note__c</columns>
         <columns>ChargentOrders__Payment_Frequency__c</columns>
+        <columns>ChargentOrders__Description__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ChargentOrders__Account__c</field>

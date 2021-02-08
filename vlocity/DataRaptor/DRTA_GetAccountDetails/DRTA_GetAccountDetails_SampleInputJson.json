@@ -1,0 +1,80 @@
+{
+    "AboutYou": {
+        "blockAboutYou": {
+            "emailAddress": "test@test.com",
+            "extension": "98",
+            "firstName": "Vicente",
+            "lastName": "Martinez",
+            "prefix": "Sr",
+            "suffix": "III",
+            "title": "doctor",
+            "workPhoneNumber": "8978978979"
+        }
+    },
+    "ContextId": "",
+    "PasswordToken": "97",
+    "aboutYourOffice": {
+        "blockAboutYourOffice": {
+            "HowClassifyOrganization": "Provider",
+            "practiceFacilityName": "Hospital Name"
+        },
+        "mailingAddress": {
+            "address1POBox": null,
+            "address2mailing": null,
+            "cityMailing": null,
+            "maillingAddressasPhysicalAddress": true,
+            "stateMailing": null,
+            "zipMailing": null
+        },
+        "mainOfficePhoneNumber": "9788978978",
+        "physicalAddress": {
+            "address1": "asdsdasdasdasd 1",
+            "address2": "sdasdasdasdas 2",
+            "city": "City",
+            "state": "MA",
+            "zip": "89789"
+        },
+        "primaryTaxID": "654564564"
+    },
+    "alternativeVerification": {
+        "pleaseEnterTheCodeWeSentYou": null
+    },
+    "id": "a5JR0000000KW3CMAW",
+    "isdtp": "p1",
+    "layout": "newport",
+    "licenseAgreement": {
+        "accept": true
+    },
+    "securityVerification": {
+        "nooption": null,
+        "service180DaysTaxId": "Yes",
+        "yesoption": {
+            "Member": {
+                "dateBirth": null,
+                "firstNameYesOption": null,
+                "lastNameYesOption": null,
+                "memberID": null
+            },
+            "expressVerificationPreviousShareRequest": {
+                "shareRequestDetails": {
+                    "iDontKnowRequestNumber": false,
+                    "shareRequestNumber": "sadasdasdasdasd"
+                }
+            },
+            "providers": {
+                "billingEntityTaxID": "654564564",
+                "servicingProviderNPI": null
+            }
+        }
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvlocity--vlocity-ins.visualforce.com",
+    "timeStamp": "2020-04-16T16:15:42.134Z",
+    "userCurrencyCode": "USD",
+    "userId": "005R0000005OVknIAG",
+    "userName": "vicente.martinez@oneshare.arcsona.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}

@@ -1,0 +1,33 @@
+<div id="chargentPayRequestScreen" ng-controller="customChargentController" class="nds-form-element nds-box nds-max-small-size_1-of-1 nds-size_12-of-12">
+    <ng-form name="loopform" style="overflow:hidden;">
+        <iframe id="chargentIframe" ng-src="{{chargentPaymentRequestLink}}" ng-class="{'iframeCommunity': cssClass=='community'}"></iframe>
+    </ng-form>
+</div>
+<div class="nds-max-small-size_1-of-1 nds-size_12-of-12 nds-p-top_small">
+    <h1 ng-show="bpTree.response.bill.dateDiffAppFee == 0 && bpTree.response.bill.dateDiffPlan > 0 && bpTree.response.bill.dateDiffPlanAppFee > 0" 
+        class="nds-p-top_x-small">The provided payment information will be used to process the payment of the Membership fees for {{(bpTree.response.bill.formulaTotalfee - bpTree.response.bill.formulaAditionalFee).toFixed(2)}} 
+        on {{bpTree.response.bill.billingDatePlan | date :'MM/dd/yyyy'}}</h1>
+    <h1 ng-show="bpTree.response.bill.dateDiffAppFee > 0 && bpTree.response.bill.dateDiffPlan == 0 && bpTree.response.bill.dateDiffPlanAppFee < 0" 
+    lass="nds-p-top_x-small">The provided payment information will be used to process the payment of the Application fee for $125.00 on {{bpTree.response.bill.billingDateAppFee | date :'MM/dd/yyyy'}}</h1>
+    <h1 ng-show="bpTree.response.bill.dateDiffAppFee > 0 && bpTree.response.bill.dateDiffPlan > 0 && bpTree.response.bill.dateDiffPlanAppFee == 0 && bpTree.response.bill.formulaCreateOneDollarOrder == false" 
+    class="nds-p-top_x-small">Upon clicking the "Authorize $1.00" button, the provided payment information will be validated. 
+        No charge will be made at this point. This information will then be used to process the payment of 
+        the Membership and Application fees for {{(bpTree.response.bill.formulaTotalfee).toFixed(2)}} on {{bpTree.response.bill.billingDatePlan | date :'MM/dd/yyyy'}}</h1>
+    <h1 ng-show="bpTree.response.bill.dateDiffAppFee > 0 && bpTree.response.bill.dateDiffPlan > 0 && bpTree.response.bill.dateDiffPlanAppFee > 0 && bpTree.response.bill.formulaCreateOneDollarOrder == false" 
+    class="nds-p-top_x-small">Upon clicking the "Authorize $1.00" button, the provided payment information will now be validated. No charge will be made at this point. This information will then be used to process the payment of the 
+        Application fee for $125.00 on {{bpTree.response.bill.billingDateAppFee | date :'MM/dd/yyyy'}}, and the Membership fees 
+        for {{(bpTree.response.bill.formulaTotalfee - bpTree.response.bill.formulaAditionalFee).toFixed(2)}} on {{bpTree.response.bill.billingDatePlan | date :'MM/dd/yyyy'}}</h1>
+
+    <h1 ng-show="bpTree.response.bill.formulaCreateOneDollarOrder" 
+    class="nds-p-top_x-small">Upon clicking the "Pay $1.00" button, the provided payment information will now be validated. A charge will be made and will be returned at this point. This information will then be used to process the payment of the 
+        Application fee for $125.00 on {{bpTree.response.bill.billingDateAppFee | date :'MM/dd/yyyy'}}, and the Membership fees 
+        for {{(bpTree.response.bill.formulaTotalfee - bpTree.response.bill.formulaAditionalFee).toFixed(2)}} on {{bpTree.response.bill.billingDatePlan | date :'MM/dd/yyyy'}}</h1>
+
+
+    <h1 ng-show="bpTree.response.bill.dateDiffAppFee > 0 && bpTree.response.bill.dateDiffPlan > 0 && bpTree.response.bill.dateDiffPlanAppFee < 0 && bpTree.response.bill.formulaCreateOneDollarOrder == false" 
+    class="nds-p-top_x-small">Upon clicking the "Authorize $1.00" button, the provided payment information will now be validated. 
+        No charge will be made at this point. This information will then be used to process the payment of the Membership fees 
+        for {{(bpTree.response.bill.formulaTotalfee - bpTree.response.bill.formulaAditionalFee).toFixed(2)}} on {{bpTree.response.bill.billingDatePlan | date :'MM/dd/yyyy'}},
+         and the Application fee for $125.00 on {{bpTree.response.bill.billingDateAppFee | date :'MM/dd/yyyy'}}</h1>
+    <h1 class="nds-p-top_x-small"><b>The above provided payment information will be used to automatically process the Monthly contributions. This information can be updated in the Member Portal, or by calling OSH Membership Services.</b></h1>
+</div>

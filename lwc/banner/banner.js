@@ -11,6 +11,7 @@ export default class Banner extends BaseState(LightningElement) {
     
     connectedCallback() {
     this.accountAllData = JSON.parse(JSON.stringify(this.obj.Account));
+    console.log('Test data: ', this.accountAllData);
     var InactiveDate = account.InactiveDate;
     console.log('AffiList: ', InactiveDate);
     }

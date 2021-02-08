@@ -1,0 +1,20 @@
+{
+    "Cards": [
+        "profile-account"
+    ],
+    "componentName": "cfCardAccountProfile",
+    "dataSource": {
+        "type": "Query",
+        "value": {
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "console-sidebar-slds"
+        }
+    },
+    "workspace": [
+        "profile-account/OneShare Health, LLC/1/1606141722148"
+    ]
+}

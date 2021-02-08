@@ -1,0 +1,189 @@
+.landing-container{
+  display:grid;
+//   grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: auto;
+  .container-child{
+    padding-left:125px;
+    padding-right:125px;
+  }
+  .container-100-padding-child{
+    padding-left:100px;
+    padding-right:100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+}
+
+.header{
+    height: 68px;
+    background: #1b70d2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    
+
+    a{
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+}
+.hero{
+    background-image: url("https://www.onesharehealth.com/sites/default/files/2020-01/blue-and-silver-stetoscope-40568_0.jpg");
+    background-size: cover;
+    background-color: white;
+        height: 300px;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.hero-header{
+    box-sizing: border-box;
+    border: none;
+    font: normal normal bold 35px/100px Arial, Helvetica, sans-serif;
+    color: #1b70d2;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    opacity: 0.80;
+    margin-top: 5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 25px;
+}
+.hero-desc{
+    font: normal 14px Arial, Helvetica, sans-serif;
+    //color: #020911;
+    color: transparent;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-weight: unset;
+    margin-bottom: 100px;
+}
+
+.action{
+    background: white;
+    padding-bottom: 130px;
+
+    .create-quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: -33px;
+    background: #f7f7f7;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.15);
+    box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.15);
+
+        .create-label{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: -webkit-center;
+            background-color: #f5f5f6;
+            padding-left: 40px;
+            padding-right: 40px;
+            color:#15325c;
+            
+        }
+        span{
+                border: 1px solid #cdd3dd;
+                height: 72px;
+            }
+        .select-div{
+                background-color: #f5f5f6;
+                justify-content: center;
+                padding-left: 60px;
+                padding-right: 60px;
+                width: 300px;
+
+            select{
+                 width: 165px;
+                padding: 5px;
+                font-size: 18px;
+                line-height: 1;
+                border: 0;
+                border-radius: 5px;
+                height: 34px;
+                background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+                -webkit-appearance: none;
+                color:#15325c;
+            }
+            select:focus{
+                outline: none;
+            }
+
+        }
+        .go-link{
+            text-align: center;
+            justify-content: center;
+            font-size: 25px;
+            width: 124px;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .action-header{
+        margin-top: 30px;
+        color: #15325c;
+        font-size: 26px;
+        margin-bottom: 30px;
+
+        span{
+            width: 60px;
+            border: 1px solid #ef6c38;
+            display: -webkit-box;
+            margin-top: 10px;
+        }
+    }
+    .action-url{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content:space-between;
+        grid-row-gap: 70px;
+        
+
+        .action-box{
+            padding: 21px;
+            border: 1px solid #ebf1f5;
+            height: 160px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: #f8fbfe;
+            text-decoration: none !important;
+            color: #2b456b;
+            justify-content: center;
+
+            span{
+                margin-top: 21px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+        }
+    }
+    .padding-20{
+        padding: 20px;
+    }
+    .back-blue-white{
+        background: #1b70d2;
+    }
+    .back-blue-white a{
+        color: white;
+
+    }
+}

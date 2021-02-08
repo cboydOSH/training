@@ -1,0 +1,32 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "OneShare Calculate Program Prices",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Calculate Program Prices",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "OneShare-Calculate-Program-Prices_Version_Steps.json",
+    "%vlocity_namespace%__CalculationProcedureVariable__c": "OneShare-Calculate-Program-Prices_Version_Variables.json",
+    "%vlocity_namespace%__Constants__c": [
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "OneShare Calculate Program Prices v3",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"MemberIn\":\"157.97\",\"2PartyIn\":\"256.97\",\"FamilyIn\":\"389.97\",\"MemberDiffIn\":\"157.97\",\"2PartyDiffIn\":\"256.97\",\"AdditionalFeeMoreThan6\":\"0.25\",\"AdditionalFees\":\"100.60\",\"FamilyDiffIn\":\"600.98\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 2,
+    "%vlocity_namespace%__StartDateTime__c": "2021-01-18T06:00:00.000Z",
+    "%vlocity_namespace%__Variables__c": "",
+    "%vlocity_namespace%__VersionNumber__c": 3,
+    "Name": "OneShare Calculate Program Prices v3",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices"
+}

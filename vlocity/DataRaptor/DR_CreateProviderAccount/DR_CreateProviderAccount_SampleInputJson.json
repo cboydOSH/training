@@ -1,0 +1,84 @@
+{
+    "AboutYou": {
+        "blockAboutYou": {
+            "emailAddress": "mail@mail.com",
+            "extension": null,
+            "firstName": "tes2t",
+            "lastName": "teste2ste",
+            "prefix": null,
+            "suffix": null,
+            "title": null,
+            "workPhoneNumber": "1234123412"
+        }
+    },
+    "ContextId": "",
+    "CreateAccount": {
+        "ChooseUsername": "mail@mail.com",
+        "Email": "mail@mail.com",
+        "FirstName": "test",
+        "LastName": "testeste",
+        "Password": "OSHtest.testeste90"
+    },
+    "PasswordToken": "90",
+    "aboutYourOffice": {
+        "blockAboutYourOffice": {
+            "HowClassifyOrganization": "Provider",
+            "practiceFacilityName": "234"
+        },
+        "mailingAddress": {
+            "address1POBox": null,
+            "address2mailing": null,
+            "cityMailing": null,
+            "maillingAddressasPhysicalAddress": true,
+            "stateMailing": null,
+            "zipMailing": null
+        },
+        "mainOfficePhoneNumber": "1324123412",
+        "physicalAddress": {
+            "address1": "2305 Litton Ln, Hebron, KY 41048, USA",
+            "address2": "2305 Litton Lane",
+            "city": "Hebron",
+            "state": "KY",
+            "zip": "41048"
+        },
+        "primaryTaxID": "134123412"
+    },
+    "id": "a628A0000000yeTQAQ",
+    "isdtp": "p1",
+    "layout": "newport",
+    "licenseAgreement": {
+        "accept": true
+    },
+    "securityVerification": {
+        "nooption": null,
+        "service180DaysTaxId": "Yes",
+        "yesoption": {
+            "Member": {
+                "dateBirth": null,
+                "firstNameYesOption": null,
+                "lastNameYesOption": null,
+                "memberID": null
+            },
+            "expressVerificationPreviousShareRequest": {
+                "shareRequestDetails": {
+                    "iDontKnowRequestNumber": false,
+                    "shareRequestNumber": "12341234"
+                }
+            },
+            "providers": {
+                "billingEntityTaxID": "134123412",
+                "servicingProviderNPI": null
+            }
+        }
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "timeStamp": "2020-05-05T18:09:02.178Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wB21QAE",
+    "userName": "brunno@attentisconsulting.com.dvvl2",
+    "userProfile": "Provider Community Profile",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}

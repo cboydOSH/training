@@ -1,0 +1,24 @@
+{
+    "Asset": {
+        "Id": "02i8A000004DnHYQA0"
+    },
+    "Quote": {
+        "Id": "0Q08A000000JhN2SAK"
+    },
+    "UpdateMemberDetailsStep": {
+        "AccountId": "0018A00000Vn3ESQAZ",
+        "ContactId": "0038A00000TEHDoQAP",
+        "Email": "eduardo.vicente@outlook.es",
+        "TAAddressGoogle-Block": {
+            "TAAddressGoogle": "9873 Lawrence Rd, Boynton Beach, FL 33436, USA",
+            "TxtAddress": "9873 Lawrence Road",
+            "TxtCity": "Boynton Beach",
+            "TxtCountry": "United States",
+            "TxtState": "FL",
+            "TxtZipCode": "33436"
+        },
+        "Telephone": "9878979879",
+        "TxtFirstName": "Member Community",
+        "TxtLastName": "Testing"
+    }
+}

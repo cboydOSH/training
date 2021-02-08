@@ -1,0 +1,40 @@
+{
+    "ContextId": "",
+    "ProducerInformation": {
+        "ContractLevel": null,
+        "ContractName": null,
+        "ContractType": null,
+        "DemographicGroups": null,
+        "Email": null,
+        "Ethnicity": null,
+        "FirstName": null,
+        "LastName": null,
+        "Phone": null,
+        "PreferredLanguage": null,
+        "TA_AddressGoogle-Block": {
+            "AddressType": null,
+            "City": null,
+            "Country": null,
+            "State/Province": null,
+            "Street": null,
+            "TA_AddressGoogle": null,
+            "Zip/PostalCode": null
+        },
+        "TA_ParentAccount-Block": {
+            "TA_ParentAccount": null
+        }
+    },
+    "id": "a628A00000025BbQAI",
+    "isdtp": "p1",
+    "layout": "newport",
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "timeStamp": "2021-01-20T01:26:22.004Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000004QVJdQAO",
+    "userName": "andres.deus@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -360,
+    "vlcPersistentComponent": {
+    }
+}

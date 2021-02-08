@@ -1,0 +1,46 @@
+{
+    "Cards": [
+        "console-case-card"
+    ],
+    "GlobalKey__c": "console-case-canvas/1/OneShare Health, LLC/1603805515744",
+    "componentName": "cfConsoleCaseCanvas",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0018A00000UGcV7QAL"
+            }
+        ],
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "DREX_GetAccountCases",
+            "inputMap": {
+                "AccountId": "{{params.id}}"
+            },
+            "ipMethod": "Get_AccountDetails",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            },
+            "resultVar": "['Case']",
+            "vlocityAsync": false
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvasLayout",
+        "Id": "0Rb8A000000ESEMSA4",
+        "MasterLabel": "cardCanvasLayout",
+        "NamespacePrefix": "%vlocity_namespace%",
+        "name": "cardCanvasLayout"
+    },
+    "previewType": "runTime",
+    "repeatCards": false,
+    "templates": {
+        "0": {
+            "templateUrl": "card-active"
+        }
+    },
+    "workspace": [
+        "console-case-card/OneShare Health, LLC/1/1603805734955"
+    ]
+}

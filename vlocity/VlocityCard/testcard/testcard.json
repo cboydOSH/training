@@ -1,0 +1,39 @@
+{
+    "GlobalKey__c": "testcard/OneShareHealth/1/1605812860221",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "cardAccountProfile",
+                "Id": "0Rb8A000000PNnMSAW",
+                "MasterLabel": "CardAccountProfile",
+                "name": "cardAccountProfile"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ]
+}

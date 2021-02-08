@@ -1,0 +1,307 @@
+{
+    "AccountPrimary": {
+        "address": "8727 Huebner Road",
+        "age": 48,
+        "city": "San Antonio",
+        "country": "United States",
+        "dob": "05/12/1972",
+        "email": "hhanson@test.com",
+        "fname": "Hal",
+        "fullname": "Hal Hanson",
+        "gender": "Male",
+        "id": "0018A00000U8SMeQAN",
+        "isHipaaAuthorized": true,
+        "lname": "Hanson",
+        "parent_id": "0018A00000U8SMeQAN",
+        "phone": "2342342344",
+        "relationship": "Primary",
+        "state": "TX",
+        "zipcode": "78240"
+    },
+    "ContextId": "",
+    "EditFamilyMember": [
+        {
+            "address": "8727 Huebner Road",
+            "age": 48,
+            "city": "San Antonio",
+            "congestiveheartfailure": true,
+            "country": "United States",
+            "diabetesI": true,
+            "diabetesII": true,
+            "dob": "05/12/1972",
+            "email": "hhanson@test.com",
+            "extremesporttext": "Snowboarding",
+            "fname": "Hal",
+            "fullname": "Hal Hanson",
+            "gender": "Male",
+            "hadCancerwhattype": "Lung",
+            "hadcander": "5+ Years",
+            "hospitalizedMemberDetails": [
+                {
+                    "admissionDate": "2020-05-01",
+                    "diagnosis": "Apendicitis Surgery",
+                    "facilityName": "Kaiser"
+                }
+            ],
+            "id": "0018A00000U8SMeQAN",
+            "isHipaaAuthorized": true,
+            "listMedDesc": "Diabetes I, Diabetes II, Heart Disease, Hypertension/High Blood Pressure, Congestive Heart Failure",
+            "lname": "Hanson",
+            "medicalPrescriptiontext": "Hydrocodone",
+            "medicalServiceMemberDetails": [
+                {
+                    "diagnosis": "Apendicitis",
+                    "incidentDate": "2020-06-01",
+                    "providerName": "Kaiser"
+                }
+            ],
+            "parent_id": "0018A00000U8SMeQAN",
+            "phone": "2342342344",
+            "relationship": "Primary",
+            "state": "TX",
+            "weeklyalcohol": "8+ Alcoholic Beverages",
+            "weeklytobacco": "Yes",
+            "zipcode": "78240"
+        },
+        {
+            "address": "8727 Huebner Road",
+            "age": 36,
+            "city": "San Antonio",
+            "congestiveheartfailure": true,
+            "dob": "05/15/1984",
+            "email": "hhanson@test.com",
+            "extremesporttext": "Ziplining",
+            "fname": "Heidy",
+            "fullname": "Heidy Hanson",
+            "gender": "Female",
+            "hadcander": "0-5 Years",
+            "heartdisease": true,
+            "hearthbypasssurgery": true,
+            "hospitalizedMemberDetails": [
+                {
+                    "admissionDate": "2020-04-01",
+                    "diagnosis": "Galstone Surgery",
+                    "facilityName": "Valley View Hospital"
+                }
+            ],
+            "id": "0018A00000U8SMfQAN",
+            "isHipaaAuthorized": true,
+            "listMedDesc": [
+                "Diabetes I",
+                "Diabetes II",
+                "Heart Disease",
+                "Hypertension/High Blood Pressure",
+                "Congestive Heart Failure"
+            ],
+            "lname": "Hanson",
+            "medicalPrescriptiontext": "Morphine",
+            "medicalServiceMemberDetails": [
+                {
+                    "diagnosis": "Galstones",
+                    "incidentDate": "2020-05-01",
+                    "providerName": "Valley View Hospital"
+                }
+            ],
+            "parent_id": "0018A00000U8SMeQAN",
+            "phone": "2342342344",
+            "pregnant": "Yes",
+            "relationship": "Spouse",
+            "state": "TX",
+            "weeklyalcohol": "4-7 Alcoholic Beverages",
+            "weeklytobacco": "No",
+            "zipcode": "78240"
+        },
+        {
+            "address": "8727 Huebner Road",
+            "age": 11,
+            "city": "San Antonio",
+            "congestiveheartfailure": true,
+            "dob": "01/15/2009",
+            "email": "hhanson@test.com",
+            "extremesporttext": "Skiing",
+            "fname": "Harry",
+            "fullname": "Harry Hanson",
+            "gender": "Male",
+            "hadcander": "Never",
+            "hearthbypasssurgery": true,
+            "hospitalizedMemberDetails": [
+                {
+                    "admissionDate": "2020-04-01",
+                    "diagnosis": "Kidney Surgery",
+                    "facilityName": "Summerlin Hospital"
+                }
+            ],
+            "hypertensionorhighblood": true,
+            "id": "0018A00000U8SMgQAN",
+            "isHipaaAuthorized": false,
+            "listMedDesc": [
+                "Diabetes I",
+                "Diabetes II",
+                "Heart Disease",
+                "Hypertension/High Blood Pressure",
+                "Congestive Heart Failure"
+            ],
+            "lname": "Hanson",
+            "medicalPrescriptiontext": "Sulfasalazine",
+            "medicalServiceMemberDetails": [
+                {
+                    "diagnosis": "Kidney Stones",
+                    "incidentDate": "2020-04-01",
+                    "providerName": "Summerlin Hospital"
+                }
+            ],
+            "parent_id": "0018A00000U8SMeQAN",
+            "phone": "2342342344",
+            "relationship": "Child",
+            "state": "TX",
+            "zipcode": "78240"
+        }
+    ],
+    "EnterObject": {
+        "ObjectId": "0018A00000TxA9nQAF"
+    },
+    "Generate Document": {
+    },
+    "Pick a Template Type": {
+        "DocumentGenerationMode": "singleDocumentGeneration",
+        "TemplateType": "Microsoft Word .DOCX Template",
+        "multiDocumentGenerationValue": false
+    },
+    "PickTemplate": {
+        "DocumentTemplate": [
+            {
+                "$$hashKey": "object:142",
+                "Id": "a4V8A0000002Uv7UAE",
+                "Name": "OSH_Contract_Master_Test",
+                "TemplateType": "Microsoft Word .DOCX Template",
+                "VersionNumber": 1,
+                "vlcSelected": true
+            }
+        ],
+        "MultiDocumentTemplate": null
+    },
+    "Welcome": {
+        "TAAddressGoogle-Block": {
+            "TAAddressGoogle": "9632 Hamilton Ave, Huntington Beach, CA 92646, USA",
+            "address": "9632 Hamilton Avenue",
+            "buildingSuiteApartment": "456",
+            "city": "Huntington Beach",
+            "country": "United States",
+            "state": "TX",
+            "zipCode": "92646"
+        },
+        "fname": "Vicente Test 3",
+        "lname": "T28"
+    },
+    "attachFileFormat": "docx",
+    "bill": {
+        "CreditCardBlock": null,
+        "EFTPayment": null,
+        "TypeOfPayment": null,
+        "bank": null,
+        "billTable": null,
+        "formulaAditionalFee": 0,
+        "formulaAditionalFeeMonthly": 30,
+        "formulaMoreThan6FamilyMemberAdtionalFee": 0,
+        "formulaPriceEnrollProgramsBill": 532.73,
+        "formulaTotalFamilyMember": 3,
+        "formulaTotalfee": 562.73
+    },
+    "contextId": "0018A00000TxA9nQAF",
+    "docGenContentVersionId": "0688A000000nanyQAA",
+    "documentType": "all",
+    "enrollmentReview": {
+        "BlkEnroller": {
+            "Block16": null,
+            "Block17": null,
+            "Block18": null,
+            "Block19": null,
+            "RadioEnrollerFlag": "No",
+            "TxtEnrollerId": null
+        },
+        "BlkHipaa": {
+            "hipaaAuthorized": null
+        },
+        "BlkMedicalQuestions": {
+            "ConsumeAlcoholFunctionReview": null,
+            "ConsumeTobaccoFunctionReview": null,
+            "ExtremeSportsFunctionReview": null,
+            "HaveorHadCancerFunctionReview": null,
+            "MedicalQuestionsReview": null,
+            "MedicalServiceFunctionReview": null,
+            "MemberFamilybeenHospitalized6MonthsReview": null,
+            "PregnantFunctionReview": null,
+            "PrescriptionMedicationsFunctionReview": null,
+            "PresentedInaccurateData": null,
+            "havePrescriptionMedicationsFunctionReview": "Yes",
+            "playExtremeSportsFunctionReview": "Yes",
+            "radioConditions24monthFunctionReview": "Yes",
+            "radioConsumeAlcoholFunctionReview": "Yes",
+            "radioConsumeTobaccoFunctionReview": "Yes",
+            "radioHaveorHadCancerFunctionReview": "Yes",
+            "radioMedicalServiceFunctionReview": "Yes",
+            "radioMemberFamilybeenHospitalized6MonthsReview": "Yes",
+            "radioPregnantFunctionReview": "Yes"
+        },
+        "BlkMyFamily": {
+            "FamilyReview": null,
+            "PrimaryLanguageReview": "English"
+        },
+        "QuoteNumberReview": "00000147",
+        "RequestedEffectiveDateReview": "06/03/2020",
+        "SelectedProgramCodeReview": "OSHCOMPENH",
+        "SelectedProgramPriceReview": 1114.71,
+        "SelectedProgramReview": "OneShare Complete - Enhanced",
+        "productBilling": null
+    },
+    "generateMultipleDocument": false,
+    "havePrescriptionMedicationsFunction": "Yes",
+    "id": "a628A00000011KVQAY",
+    "isPDFAttachDone": true,
+    "isWordAttachDone": true,
+    "isdtp": "p1",
+    "layout": "lightning",
+    "pdfGenContentVersionId": "0688A000000nao3QAA",
+    "pdfViewer": "VlocityClientSideViewer",
+    "playExtremeSportsFunction": "Yes",
+    "qId": "0018A00000TxA9nQAF",
+    "radioConditions24monthFunction": "Yes",
+    "radioConsumeAlcoholFunction": "Yes",
+    "radioConsumeTobaccoFunction": "Yes",
+    "radioHaveorHadCancerFunction": "Yes",
+    "radioHospitalizedFunction": "Yes",
+    "radioMedicalServiceFunction": "Yes",
+    "radioPregnantFunction": "No",
+    "servicingAgent": {
+        "Email": "leonel.garza@arcsona.com",
+        "FirstName": "Leonel",
+        "LastName": "Garza",
+        "Name": "Leonel Garza",
+        "isHipaaAuthorized": true
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "templateId": "a4V8A0000002Uv7UAE",
+    "templateType": "Microsoft Word .DOCX Template",
+    "testData": "kashish",
+    "timeStamp": "2020-06-11T04:54:10.368Z",
+    "urlPrefix": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/apex",
+    "useTemplateDRExtract": "No",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wAvTQAU",
+    "userName": "karen.valle@arcsona.com.dvvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "EnterObject": 3055,
+        "GetDocumentTemplates": 529,
+        "GetMultiDocumentTemplates": 437,
+        "OmniScriptSessionToken": "870f1063-be2a-433c-bf7c-39db924a6db6",
+        "Pick a Template Type": 3621,
+        "PickTemplate": 2830,
+        "Set Values": 13,
+        "SetValues2": 14
+    }
+}

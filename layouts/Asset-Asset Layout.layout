@@ -47,6 +47,10 @@
                 <behavior>Edit</behavior>
                 <field>Temporary_Amount__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Recurring_Monthly_Contribution_Order__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -1,0 +1,38 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "DocusignIPVoidEnvelopes",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/DocuSign/VoidEnvelopes/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "accountId": "0af88458-63f0-4e23-ae62-050b95c3f418",
+            "aud": "account.docusign.com",
+            "authToken": "https://account.docusign.com/oauth/token",
+            "baseURI": "https://na3.docusign.net/restapi/v2.1",
+            "iss": "121049ae-52cf-4d12-93e8-c4a12cccc822",
+            "privateKey": "MIIEowIBAAKCAQEAo0ksM7Wa1IY0fFFGwfoKFSdgs2dx4G9pzFOXnI1YBf7+OfSs +Jk2FdYf/1dO1u3W6ujt1GGfkV/laOmNcjNCLgLfCLwtZcOJg43R8+KZeZu57wH7 viD+GnCSSKwJx6jnxu+NPXG0ZdHNcew9kEXWmFmQcsDi1jjXE11gxpeBeWjw/Ipq CrGK5Lg9VAO3NwfYbE91qorLGEdGMGXwNtL2LKEqpd06tEf86BhaNRr2FcWy9USq kRglxR3NOmeB+0yXNvAtWl59jl2y7RWgpc+xdCEkZxG7Lk7ObOmcgg6XBeBm0DOn lBIWghkfyEIJlP4c3+Geq2jnQOnGAJg1T//MmwIDAQABAoIBABJIC4BgmUypF/BB Q0xNe9qBdaSwdMH9h1lelI9tDcliEsGXYNRWhwUr25pBgqyypUjYumP4aB6lH3C/ EVyTW5n+LU1zkBugKGHHu5V0Ld29LzSQwsg3NmvsZZxoUpH9mbGeuXADLoDl2/wg yIXCI/Qbtv36FYuJgp8C6eZiKRdYGAXmktaJGPXRG3VDYHFw3uZw59fU63ri9xgQ 1TtsQwLnsbYhO9rMmSYD+us4pn8JoLcApsJkVGVDI8cRRlKS3KPG2mGhmb2Svtrv IdDPuz5cw2pkPN4+HXi6wD51QtMWwm/TKrYbW8deL8Q4PKcbmHhXvFNsxKxWGGDB O/bmZXkCgYEA4AkSICgNOPZiao8TU8USlaPEEWA/N8RSJLTs9gAv/UvTtDJBHejJ kOyYLxYe9St3uMQ3wPBonctgvpfbgpWMUw4JJgvFa4MxlH+QqAwmc+Am20hOb+nQ QZG8lsoIhu95zDOSoBesj43OeCZfkRCTnFGFhUcvPIyax4gA0uManiMCgYEAupU2 kPxf/VPX3Qx3wGn5k0MVFvwZZNPLMc81mIgww7N5aQ9tXITctj2BtLMoHQwA2ITX eHZ75wc0XBB/ohvd2Et15QLsek3dGN/IPw+jM+kShiLW7Xfr9JrVEUKIrauMqtCg uz5Kj87ostFRBZjwj7wt/LT5Iry5lzi0htzOsykCgYEAzVHC2NGb/J5hZ8MkNVuh Qp7JrBsHFPbJSXa+zF0znfIGXVjJML4NLNKITm75hDuIBz9c0WgCmMqxKTtHI5An AF8Wp1WWYofjwnJ+gmRQQVYmhkToDcy83brQmWkjE3cZqrmBIVNRBGcz2A1i/DGy 9koIEjNA6T77Au5zwtH7rP0CgYB1Jo0dWaj3iXZHD7X89U1D/mG2jdFv8l9pxd20 CQb9SaoYohwbdDyUnGfdSoQMQOYjDL2xoEtJksd4as+IvJB9Z1v9z+klHdCN9qxn k+z4AgakfCmQ7rQTYEgZzzm8ObNX6SiSiJkOVG7dH/oMVqvsw83oFsU63150KaGH 8ApEiQKBgF2Zn2ziwey0Bi+Uj/t0HZQgbpQhAbdKmyYlVe+zZJIU4xjLiLyGKLkH WsWLdFpm+BjSOkauH/Xt9Pd2fFPY8nrefAcQ/qYKsE0DcLsh95tt5GWMEToAe0Uv HLLXYIY6TsCTnprAxKFiuw88eHCV6QoiKl5joKD41Urt5AXW1N03",
+            "scope": "signature impersonation",
+            "sendEnvelope": "https://na3.docusign.net/restapi/v2.1/accounts/",
+            "sub": "3d4fbd0f-b962-41b3-a2df-458f528726a3"
+        },
+        "executionConditionalFormula": "%RA_GetEnvelopesSentToday:existingContracts%",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "DocusignSetValues",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/DocuSign/VoidEnvelopes/Procedure/DocusignSetValues"
+}

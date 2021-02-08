@@ -1,0 +1,55 @@
+#chargentPayRequestScreen iframe{
+    min-height:850px;
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    overflow: hidden;
+
+    .slds-docked-form-footer {
+        display: none !important;
+    }
+
+    .slds-scope .slds-docked-form-footer {
+        display: none !important;
+    }
+
+    #header {
+        display: none !important;
+    }
+
+    .slds-docked-form-footer slds-grid {
+        display: none !important;
+    }
+    #PaymentRequest:j_id10 {
+        display: none !important;
+    }
+}
+
+#chargentPayRequestScreen{
+    min-width: 100%;
+}
+
+#header{
+    display: none !important;
+}
+
+#chargentPayRequestScreen .slds-docked-form-footer{
+    display: none !important;
+    visibility: hidden;
+}
+
+.slds-scope .slds-docked-form-footer{
+    display: none !important;
+}
+
+.slds-docked-form-footer slds-grid{
+    display: none !important;
+}
+
+#PaymentRequest:j_id10{
+    display: none !important;
+}
+
+.header{
+    display: none !important;
+}

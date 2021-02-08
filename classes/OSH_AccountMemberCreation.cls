@@ -12,6 +12,7 @@ global without sharing class OSH_AccountMemberCreation implements vlocity_ins.Vl
 
     public boolean createUserAccount(Map < String, Object > inputs, Map < String, Object > output, Map < String, Object > options){
         try{
+            //System.debug('createUserAccount');
             String portalUserOnSessionId = (String)inputs.get('userId');
             Map<String,Object> accountMap = (Map<String,Object>)inputs.get('Account');
             Map<String,Object> userMap = (Map<String,Object>)inputs.get('Welcome');
@@ -23,9 +24,9 @@ global without sharing class OSH_AccountMemberCreation implements vlocity_ins.Vl
             //Verify if the member already has a user
             String email = (String)userMap.get('Email');
             List<User> existingUser = [SELECT Id From User Where UserName =:email];
-            System.debug('existingUser' + existingUser);
             if(!existingUser.isEmpty()){
                 output.put('error','There is already an account associated with this email address');
+                system.debug(output.get('error'));
                 return false;
             }
             //Get the account data in order to change the ownerId as a partner user cannot be the owner of a 
@@ -36,6 +37,7 @@ global without sharing class OSH_AccountMemberCreation implements vlocity_ins.Vl
             accountShare(accountId, portalUserOnSessionId);
             //Get the member corresponding profile
             Profile pf = [Select id,name from Profile where name ='Member Community Admin Test' limit 1];
+            //System.debug('pf' + pf);
             //Create the user
             User u2 = new User(
                     contactId=con.Id, 
@@ -68,7 +70,7 @@ global without sharing class OSH_AccountMemberCreation implements vlocity_ins.Vl
                 return false;
             }
         }catch(Exception e){
-            //system.debug('exception: ' + e);
+            system.debug('exception: ' + e);
             output.put('error', e);
             return false;
         }
@@ -152,8 +154,10 @@ global without sharing class OSH_AccountMemberCreation implements vlocity_ins.Vl
                     //Insert lead sharing
                     shareLead(leadId, userId);
                     //If succesfull then redirect for direct enrolling
-                    Pagereference pageRef = Site.login(u2.Username , password , '/s/enroll-now?ContextId='+quoteId+'&Thisisdirect=true&thisIsCommunity=true');
-                    output.put('redirectUrl',pageRef.getUrl());
+                    if(!Test.isRunningTest()){
+                        Pagereference pageRef = Site.login(u2.Username , password , '/s/enroll-now?ContextId='+quoteId+'&Thisisdirect=true&thisIsCommunity=true');
+                        output.put('redirectUrl',pageRef.getUrl());
+                    }
                     return true;
                 }else{
                     output.put('error', 'error, the userId was null');

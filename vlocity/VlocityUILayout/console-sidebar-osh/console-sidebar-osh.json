@@ -1,0 +1,39 @@
+{
+    "Cards": [
+        "console-profile-card-osh",
+        "account-info"
+    ],
+    "componentName": "cfConsoleSidebarOsh",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0018A00000X13tRQAR"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "inputMap": {
+                "contextId": "{{params.id}}"
+            },
+            "ipMethod": "Get_AccountDetails",
+            "jsonMap": "{\"params.id\":\"{{params.id}}\"}",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            },
+            "resultVar": ""
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "console-sidebar"
+        }
+    },
+    "workspace": [
+        "profile-account/Vlocity/1495043462713",
+        "profile-account-info/Vlocity/1495043462714",
+        "console-profile-card-osh/OneShare Health, LLC/1/1603907937610",
+        "account-info/OneShare Health, LLC/1/1603810394220"
+    ]
+}

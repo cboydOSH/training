@@ -1,0 +1,56 @@
+<div class="nds-size_1-of-1 nds-grid nds-wrap osh-pp-expense-sharing-requests" ng-controller="OSHapp">
+    <div class="nds-size_1-of-1 nds-scrollable table-container nds-m-bottom_medium">
+        <table class="nds-table nds-table_bordered nds-table_col-bordered nds-table_cell-buffer nds-table_striped" role="grid">
+            <thead>
+                <tr class="nds-text-title_caps nds-line-height_reset">
+                    <th class="nds-text-align_right" scope="col" style="width: 3.25rem;">
+                        <div class="nds-th__action_form">
+                            <label class="nds-checkbox">
+                                <input type="checkbox" name="select-all" tabindex="0" value="on" />
+                                <span class="nds-checkbox_faux"></span>
+                                <label class="nds-checkbox__label">
+                                    <span class="nds-form-element__label nds-assistive-text">Select All</span>
+                                </label>
+                            </label>
+                        </div>
+                    </th>
+                    <th scope="col" ng-style="{'min-width': getLabelWidth(col.header)}" ng-repeat="col in bpTree.response.Columns">
+                        <div class="nds-truncate" title="{{col.title}}">{{col.header}}</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="nds-hint-parent" ng-repeat="data in bpTree.response.Data.ExpenseSharingRequests">
+                    <td class="nds-text-align_right" role="gridcell">
+                        <label class="nds-checkbox">
+                            <input type="checkbox" name="select-{$index}" tabindex="0" value="on" />
+                            <span class="nds-checkbox_faux"></span>
+                            <label class="nds-checkbox__label">
+                                <span class="nds-form-element__label nds-assistive-text">Select Expense Sharing Request {{ $index + 1 }}</span>
+                            </label>
+                        </label>
+                    </td>
+                    <th scope="row" ng-repeat="col in bpTree.response.Columns | limitTo:1">
+                        <div class="nds-truncate" title="{{data[col.data]}}">{{data[col.data]}}</div>
+                    </th>
+                    <td role="gridcell" data-label="{{data[col.data]}}" ng-repeat="col in bpTree.response.Columns | limitTo:1-bpTree.response.Columns.length">
+                        <div class="nds-truncate" title="{{data[col.data]}}">{{data[col.data]}}</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="nds-size_1-of-1 nds-grid nds-grid_vertical-align-center">
+        <div role="status" class="nds-text-align_left nds-size_1-of-1 nds-medium-size_1-of-2 nds-large-size_1-of-3" aria-live="polite">Showing 1 to {{ bpTree.response.Data.ExpenseSharingRequests.length }} of {{ bpTree.response.Data.ExpenseSharingRequests.length }} entries</div>
+        <div class="nds-text-align_center nds-size_1-of-1 nds-medium-size_1-of-2 nds-large-size_1-of-3">
+            <a href="#" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+            <a href="#" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+            <a href="#" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
+        </div>
+        <div class="nds-text-align_right nds-size_1-of-1 nds-medium-size_1-of-2 nds-large-size_1-of-3 nds-m-top_medium">
+            <a class="button-pdf" target="_blank" href="https://onesharehealth--devvlocity--c.documentforce.com/servlet/servlet.FileDownload?file=015R0000000e42J" download> Export to PDF
+                <img src="https://image.flaticon.com/icons/svg/716/716964.svg" width="40" height="40" alt="PDF Icon" title="PDF Icon">
+            </a>
+        </div>
+    </div>
+</div>

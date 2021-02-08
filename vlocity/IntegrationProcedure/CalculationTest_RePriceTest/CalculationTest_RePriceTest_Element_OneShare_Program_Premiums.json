@@ -1,0 +1,51 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__InternalNotes__c": "%vlocity_namespace%.PricingMatrixCalculationService \\ calculate",
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Re Price OSH Quote Programs Testing purposes",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/CalculationTest/RePriceTest/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Age": "%input_1:Age%",
+            "ISA": "%input_1:ISA%",
+            "Program": "%input_1:Program%",
+            "State": "%iinput_1:State%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "CalculationAction1",
+        "remoteClass": "PricingMatrixCalculationService",
+        "remoteMethod": "Calculate",
+        "remoteOptions": {
+            "configurationName": "Testing Calculation procedures",
+            "includeInputKeys": "productKey,parentProdKey",
+            "includeInputs": true
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "output:calculationResults|1",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "input",
+        "sendJSONPath": "input_1|1",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Calculation Action",
+    "Name": "OneShare_Program_Premiums",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/CalculationTest/RePriceTest/Procedure/OneShare_Program_Premiums"
+}

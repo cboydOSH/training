@@ -1,0 +1,46 @@
+{
+    "ExpenseSharingRequests": [
+        {
+            "Bill": "123"
+        },
+        {
+            "Status": "Paid"
+        },
+        {
+            "DOS": "11/01/2021"
+        },
+        {
+            "ReceivedDate": "11/02/2021"
+        },
+        {
+            "ProcessedDate": "11/03/21"
+        },
+        {
+            "PTName": "Jhon"
+        },
+        {
+            "Billed": "100"
+        },
+        {
+            "Excluded": "20"
+        },
+        {
+            "Paid": "60"
+        },
+        {
+            "MR": "0"
+        },
+        {
+            "RemarkCodes": "PP"
+        },
+        {
+            "FacilityNPI": "1236588"
+        },
+        {
+            "TaxID": "23"
+        },
+        {
+            "RenderingNPI": "6859435"
+        }
+    ]
+}

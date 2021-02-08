@@ -1,0 +1,75 @@
+{
+    "AccountProductPrivileges": "[]",
+    "accountId": "0018A00000UI0sIQAT",
+    "filterCatalog": "Vlocity",
+    "gateStep": true,
+    "id": "a628A0000001DpmQAE",
+    "isdtp": "p1",
+    "layout": "newport",
+    "productFilter": [
+        {
+            "code": "OSHCAT150",
+            "id": "01t8A0000043pgeQAA",
+            "name": "OneShare Catastrophic - $150,000/$300,000",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCAT500",
+            "id": "01t8A00000496LvQAI",
+            "name": "OneShare Catastrophic - $500,000/$1,000,000",
+            "selectPrivilegie": "not allowed"
+        },
+        {
+            "code": "OSHCAT250",
+            "id": "01t8A00000496MHQAY",
+            "name": "OneShare Catastrophic - $250,000/$500,000",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCOMPCROWN",
+            "id": "01t8A00000496MbQAI",
+            "name": "OneShare Complete - Crown",
+            "selectPrivilegie": "not allowed"
+        },
+        {
+            "code": "OSHCLASSENH",
+            "id": "01t8A00000496OOQAY",
+            "name": "OneShare Classic - Enhanced",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSBASIC",
+            "id": "01t8A00000496RdQAI",
+            "name": "OneShare Classic - Basic",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCLASSCROWN",
+            "id": "01t8A00000496ldQAA",
+            "name": "OneShare Classic - Crown",
+            "selectPrivilegie": "allowed"
+        },
+        {
+            "code": "OSHCOMPBASIC",
+            "id": "01t8A0000049Yz8QAE",
+            "name": "OneShare Complete - Basic",
+            "selectPrivilegie": "not allowed"
+        },
+        {
+            "code": "OSHCOMPENH",
+            "id": "01t8A000004A8QRQA0",
+            "name": "OneShare Complete - Enhanced",
+            "selectPrivilegie": "allowed"
+        }
+    ],
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "timeStamp": "2020-09-18T00:40:20.353Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wAujQAE",
+    "userName": "vicente.martinez@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}

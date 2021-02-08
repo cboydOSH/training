@@ -1,0 +1,76 @@
+{
+    "ProductDetails": [
+        {
+            "productName": "OneShare Complete - Crown",
+            "selectedAttributes": "{\"PROCODE\":\"OSHCOMPCROWN\",\"ISAAMT\":\"1000\",\"DISCLAIMERCARD\":\"*Out-of-network member sharing reimbursement is based on the lesser of the Out-of-network provider actual billed amount or Maximum Reasonable Guidelines for the Eligible Services provided\",\"PRESDISPROG\":\"EnvisionRX\",\"LIFESHAREMAX\":\"$1,000,000\",\"HOSTP\":\"80% after ISA\",\"INOUTSURG\":\"80% after ISA\",\"MATERNITY\":\"Eligible - Conception must be after Effective Date\",\"EMERGROOM\":\"$150 Visit Fee\",\"SPEC\":\"$75 Visit Fee\",\"DIAGXLAB\":\"80% after ISA\",\"URGCAREFAC\":\"$75 Visit Fee\",\"PRICAREPHY\":\"$20 Visit Fee\",\"PREVSVCS\":\"100% up to $1,000 maximum per program year.\",\"TELEMED\":\"Doctor Access 24/7  ($0 Consult Fee)\",\"PROVNET\":\"First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare\"}"
+        },
+        {
+            "productName": "Membership Discount Program",
+            "selectedAttributes": "{\"DISCLAIMERMEMBERDISC2\":\"Telemedicine and Discount Programs Not Owned or Operated by OneShare Health and  are made available to members by a fee from the contributions\",\"DISCPROGRAM\":\"Dental Discount / Diabetic Care and Supplies / Hearing Discount / Lab Discount / Vision and Lasik Discount / Lifeline Screening Discounts\"}"
+        },
+        {
+            "productName": "In Network",
+            "selectedAttributes": "{\"LIFESHAREMAX\":\"$1,000,000\",\"SPEC\":\"$75 Visit Fee\",\"HOSTP\":\"80% after ISA\",\"INOUTSURG\":\"80% after ISA - 90 day wait\",\"MATERNITY\":\"Eligible - Conception must be after Effective Date\",\"EMERGROOM\":\"$150 Visit Fee\",\"PRESDISPROG\":\"Access to Prescription Drug Discounts on Generic and Brand Name Drugs\",\"DIAGXLAB\":\"80% after ISA\",\"URGCAREFAC\":\"$75 Visit Fee\",\"PRICAREPHY\":\"$20 Visit Fee\",\"PREVSVCS\":\"100% up to $1,000 maximum per program year\",\"TELEMED\":\"Doctor Access 24/7  ($0 Consult Fee)\",\"PROVNET\":\"First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare\"}"
+        },
+        {
+            "productName": "Out of Network",
+            "selectedAttributes": "{\"SPEC\":\"70% after ISA\",\"HOSTP\":\"70% after ISA\",\"INOUTSURG\":\"70% after ISA - 90 day wait\",\"MATERNITY\":\"Not included unless life threatening emergency\",\"EMERGROOM\":\"$300 Visit Fee\",\"DIAGXLAB\":\"70% after ISA\",\"URGCAREFAC\":\"70% after ISA\",\"PRICAREPHY\":\"70% after ISA\",\"PREVSVCS\":\"70% after ISA, up to $1,000 maximum per program year\"}"
+        },
+        {
+            "productName": "General",
+            "selectedAttributes": "{\"HEALTHDISCLAIMER\":\"OneShare Health, LLC is not an insurance company but a religious health care sharing ministry. For our full disclosures, see www.onesharehealth.com/legal-notices\",\"WAITPERIOD\":\"Unless stated otherwise there is a 90 day waiting period for any medical expenses other than for accidents, injuries, acute illnesses and immunizations\",\"ISAAMOUNT\":\"5000\",\"GUIDELINE\":\"Medically necessary expenses that occur after your Effective Date. These are medical services from a health care provider which are eligible for sharing in accordance with the Membership Guidelines\"}"
+        },
+        {
+            "productName": "Member Responsibility",
+            "selectedAttributes": "{\"FAMOUTPOC\":\"9000\",\"INDVP1OUTPOC\":\"6000\",\"INOUTNETSHARPER3\":\"After the ISA and Out of Pocket maximum are met, sharing is payable at 100% for the remainder of the program year, up to stated limits.\",\"INOUTNETSHARPER2\":\"Unless stated otherwise sharing expenses are subject to the ISA and In/Out of Network sharing percentages In Network  80%/Out of Network 70%.\",\"INDVOUTPOCMAX\":\"3000\",\"FAMILYISA\":\"3000\",\"INDVP1ISA\":\"2000\",\"ISAAMOUNT\":\"1000\"}"
+        },
+        {
+            "productName": "Provider Network",
+            "selectedAttributes": "{\"PROVIDERNETWORK\":\"First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare\",\"MAXREASONABLE\":\"Out of Network member sharing reimbursement is based on the lesser of the out of network provider actual billed amount or reasonable and customary charges for the Eligible services provided.\"}"
+        },
+        {
+            "productName": "Inpatient Services",
+            "selectedAttributes": "{\"INPATHOSP\":\"Inpatient Hospitalization following the 90 day waiting period is eligible for sharing,  after the ISA is met, subject to in/out of network sharing percentages. Acute illness, Accident or Life Threatening/Life altering emergency are immediately eligible\"}"
+        },
+        {
+            "productName": "Outpatient Services",
+            "selectedAttributes": "{\"CHIROCARE\":\"Member may request the option of chiropractic manipulation as an alternative to Physician recommended surgery. Eligible after the ISA is met and limited to 20 visits within a 6 week period.\",\"OUTBEHAMENTHE\":\"Outpatient diagnostic evaluation purposes only, after the ISA is met. Up to a Maximum Sharing of $1,500.\",\"PRESDISCPROG\":\"Once a Member has paid $1,200 in prescription discounts through EnvisionRX, the Member is eligible for sharing of 50% of the expenses for generic or brand name prescription drugs, for the remainder of the Program year, up to $3,000 maximum.\",\"SPECIALISTVISITS\":\"Services provided for the diagnosis, treatment, management of an eligible illness or injury. In Network $75 Visit Fee per Outpatient visit, once the Member's ISA is met, visits are eligible for sharing at 100%. Out of Network 70% after ISA.\",\"PREVSERVWELL\":\"Preventive Services and 1 Wellness visit: In Network - 100%  Out of Network - 70% after the ISA is met. Up to a $1,000 Maximum/program year\",\"HOMEHEALTHCARE\":\"Home Care following a Hospital stay. Home Care is limited to 30 calendar days from the discharge date of the Member's Inpatient Hospital stay, after the ISA is met, up to the Maximum Limit per Incident.\",\"LABDIAGXRAYS\":\"Included at any lab facility, after the ISA is met. If services are provided at the PCP or Urgent Care facility, the Visit Fee will apply in lieu of the ISA, subject to the program limitations.\",\"OUTPATTHERAPY\":\"For conditions related to an eligible diagnosis, ordered by a Physician and performed by a licensed therapist, it is Eligible for sharing. In Network: $20 Visit Fee. Out of network 70% after ISA. Maximum of 20 combined visits per Incident.\",\"SURGERY\":\"Outpatient surgery following the 90 day waiting period after the ISA is met, up to the Maximum Limit Per Incident. Life Threatening or Life Altering emergencies are immediately eligible for sharing.\",\"URGENTCARE\":\"For the diagnosis, treatment, management of an eligible illness or injury serious enough that a member would seek care right away, but not so severe as to require Hospital emergency room care. In Network $75 Visit Fee. Out of Network 70% after ISA.\",\"PRICAREPHYSVISIT\":\"Visits for the diagnosis, treatment, management or prevention of an illness or injury. IN Network $20 Visit Fee; Out of Network 70% after ISA.\"}"
+        },
+        {
+            "productName": "Emergency",
+            "selectedAttributes": "{\"EMERRM24MORE\":\"If at the Hospital for 24 hours or more, ER will be considered hospitalization and will apply to the ISA. In and Out of network sharing percentages will apply.\",\"EMERROOM\":\"$150 Visit Fee Emergency room services  in network/$300 Visit fee out of network  for a Life Threatening/Life Altering medical emergency provided on an Outpatient basis at a Hospital.\",\"AMBULANCE3\":\"Maximum Sharing of $10,000 per occurrence.\",\"AMBULANCE2\":\"Land/air transportation for medically necessary emergency services to the nearest medical Facility or medical transportation between Facilities, when medically necessary, after the ISA is met, In and Out of Network percentages apply.\"}"
+        },
+        {
+            "productName": "Cancer",
+            "selectedAttributes": "{\"CANCERPREEXREC\":\"Cancer Expenses are not eligible for sharing.\",\"CANCERLIMITMEMMORE5YEAR\":\"If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.\",\"CANCERLIMITDIAGWUTHN5YEAR\":\"If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing\",\"CANCERNEEDDIAGTREATMORE5YR\":\"Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.\",\"CANCERMEMBNEVERDIAGRECTREAT\":\"Sharing is eligible after a 90 day waiting period from the Member's effective date. If Cancer is diagnosed within the 90 day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are not eligible for sharing.\",\"CANCERSHLIMT\":\"The Lifetime Limit for all Cancer is $500,000; each Incident cannot exceed the Maximum Limit Per Incident.\"}"
+        },
+        {
+            "productName": "Maternity",
+            "selectedAttributes": "{\"MATERINNETELI\":\"Medical needs for the mother's care pertaining to prenatal, delivery and mother's hospital related charges are eligible for sharing for members who conceive after the program E-DATE after the Member's ISA is met, subject to In Network sharing percentages\",\"MATEROUTNETLIM\":\"Life Threatening Emergency only.  After the ISA is met, subject to Out of Network sharing percentages,  up to a maximum of $50,000.\",\"MATERINNETLIM\":\"After the ISA is met, subject to In Network sharing percentages.  Natural delivery - up to a maximum of $5,000.  C-Section- up to a maximum of $8,000.  Complications of delivery - up to a maximum of $50,000\"}"
+        },
+        {
+            "productName": "Maximum Limits",
+            "selectedAttributes": "{\"MAXSHARING\":\"Lifetime Maximum per Member: $1,000,000.\"}"
+        },
+        {
+            "productName": "Program Limitations",
+            "selectedAttributes": "{\"SPECICHROELI\":\"Specified Chronic Conditions that have received treatment or medication may be eligible, immediately, for physician office, or physician ordered lab visits for routine maintenance of the Chronic Condition, preventing further complications.\",\"SPECCHRONCOND\":\"Diabetes 1 &2;  Hypertension, Thyroid (Hyper/Hypo), Hyperlipidemia.\",\"ROUTMAINTCHRCOND\":\"Routine Maintenance of Chronic Conditions: Care that follows diagnosis and any active care once the  health status has become stable. The goal of maintenance care is to monitor and maintain the improvement that was accomplished with active treatment.\",\"PREEXIST24DEF\":\"Any sickness or injury for which a Member received medical treatment, advice, care or services including diagnostic measures, took prescribed drugs or showed signs or symptoms, whether treated or not, within 24 months of Member's program  effective date.\",\"PREEXIST24ELE\":\"Eligibility for a Pre-Existing Condition has a 24 month waiting period.\",\"CANCERLIMITS\":\"Pre-existing or Recurring Cancer are not eligible for Sharing.\"}"
+        },
+        {
+            "productName": "Other",
+            "selectedAttributes": "{\"EQUALTCARE\":\"Non-experimental health care treatment which may deliver care that is more cost effective, less invasive and within generally accepted medical practice, may be eligible for sharing. Prior approval is required from OneShare Health.\"}"
+        },
+        {
+            "productName": "Outpatient",
+            "selectedAttributes": "{\"ELEPREVSERVCHILD4\":\"Hearing Screening /  Height, Weight, and BMI /  Autism Screening /  Hematocrit/Hemoglobin /  Hemoglobinopathies/Sickle Cell\",\"ELEPREVSERVCHILD3\":\"HIV Screening /  Immunization /  Iron Screening /  Lead Screening /  Medical History /  Obesity Screening /  Phenylketonuria Screening /  Sexually Transmitted Infection Counseling /  Tuberculin Screening /  Vision Screening\",\"ELEPREVSERVCHILD2\":\"Alcohol and Drug Use Assessment /  Behavioral Assessment /  Blood Pressure Screening /  Cervical Dysplasia Screening /  Congenital Hypothyroidism Screening /  Depression Screening /  Dyslipidemia Screening /  Gonorrhea Screening\"}"
+        },
+        {
+            "productName": "PPO Network",
+            "selectedAttributes": "{\"OUTNETWORK\":\"Using a Non-PPO provider is still the Member’s choice. The Non-PPO provider services can result in higher medical bills. Non-PPO Providers and Facilities may bill members for the difference between the bill charges and the program’s allowed amount.\",\"INOUTNETSHARPERCENT\":\"In/Out of Network Sharing expenses are subject to the Member’s ISA and In/Out of Network sharing percentages shown below for the Program selected unless stated otherwise: In Network 80% after the ISA is Met. Out of Network 70% after the ISA is met.\"}"
+        },
+        {
+            "productName": "Telemedicine",
+            "selectedAttributes": "{\"TELEMEDICINE\":\"$0 Consult Fee (DialCare) 24/7/365. Talk to a doctor by phone or online video to get a diagnosis, treatment options and prescription, if medically necessary.\"}"
+        }
+    ]
+}

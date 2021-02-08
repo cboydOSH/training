@@ -1,0 +1,14 @@
+{
+    "Step1": {
+        "City": "Durham",
+        "Female": true,
+        "FirstName": "Ellen",
+        "Gender": "Female",
+        "LastName": "Hogsworth",
+        "Male": null,
+        "SingleCheckbox": true,
+        "State": "NC",
+        "StreetAddress": "Mine",
+        "ZipCode": "27713"
+    }
+}

@@ -1,0 +1,596 @@
+<div class="vloc-small-group-plan-selection"
+    ng-if="control.vlcSI[control.itemsKey] && bpTree.asIndex == control.rootIndex">
+    <div class="vloc-small-group-plan-selection-container" ng-controller="insOsHinsSmallGroupPlanSelectionCtrl"
+        ng-init="baseCtrl.setSmallGroupPlans(baseCtrl.$scope.bpTree, control, this)">
+        <div class="nds-size_12-of-12">
+            <table class="nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right"
+                style="background: #f2f2f2 !important;">
+                <thead>
+                    <tr style="background: #f2f2f2 !important;">
+                        <th>
+                            <div class="nds-text-align_center" style="font-size: 0.875rem;">
+                                <p>Instructions</p>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody style="background: #f2f2f2 !important;">
+                    <tr>
+                        <td style="font-size: 0.875rem; pointer-events: none;">
+                            <div>
+                                <div class="nds-text-align_center">
+                                    <p class="nds-m-top_small" style="overflow-wrap: normal;">· Select one program from
+                                        the available programs below by clicking "Enroll now"</p>
+                                </div>
+                                <div class="nds-text-align_center">
+                                    <p style="overflow-wrap: normal;">· If you want to change your selected program,
+                                        click "Enroll" for the new program, and click "OK" on the pop-up</p>
+                                </div>
+                                <div class="nds-text-align_center">
+                                    <p style="overflow-wrap: normal;">· Once you have selected the program you want to
+                                        enroll in, navigate to the bottom of the screen and click "Next"</p>
+                                </div>
+                                <div class="nds-text-align_center">
+                                    <p style="overflow-wrap: normal;"> </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="nds-box nds-m-bottom_x-large" bs-collapse>
+            <div class="nds-grid">
+                <!--<button
+                    class="nds-button nds-button_neutral nds-max-small-size_1-of-3 nds-size_1-of-8 vloc-cart-plans-button"
+                    ng-disabled="prevDisabled" ng-click="paginateItems('prev')" title="Previous Products">
+                    <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'back'"></slds-button-svg-icon>
+                </button> -->
+                <div class="nds-size_8-of-8 nds-text-align_center vloc-mobile-hide">
+                    <h2 class="nds-text-heading_medium"> Selected Program</h2>
+                    <!--<p class="nds-m-top_x-small"><b>{{selectedPlansCount()}}</b> Programs selected</p>-->
+                    <!--<p ng-show="cartPlans.length != 0" class="nds-m-top_small nds-text-align_center nds-max-small-size_1-of-3 vloc-mobile-show vloc-mobile-page-count">
+                    {{displayedCartPlans[0].originalIndex + 1}} of {{cartPlans.length}}</p>-->
+                </div>
+                <!--<button
+                    class="nds-button nds-button_neutral nds-max-small-size_1-of-3 nds-size_1-of-8 vloc-cart-plans-button"
+                    ng-disabled="nextDisabled" ng-click="paginateItems('next')" title="Next Products">
+                    <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'forward'"></slds-button-svg-icon>
+                </button>-->
+            </div>
+            <div class="nds-grid nds-grid_pull-padded-medium nds-m-top_medium vloc-cart-plans-collapse"
+                bs-collapse-target>
+                <article ng-repeat="plan in displayedCartPlans track by plan.Id"
+                    class="nds-col nds-large-size_1-of-1 nds-size_1-of-1">
+                    <div class="nds-box nds-m-around_small vloc-plan-box"
+                        ng-class="{'vloc-selected-plan': plan.selected}">
+                        <header class="vloc-plan-box-header">
+                            <!--Legend Color Prices-->
+                            <div class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text">
+                            </div>
+                            <div ng-if="plan.Name.includes('Complete')"
+                                class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text"
+                                style="max-width: 98.1%;background: #F8991D;border-radius: 4px 4px 4px 4px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;border: 0px solid #000000;">
+                            </div>
+                            <div ng-if="plan.Name.includes('Classic')"
+                                class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text"
+                                style="max-width: 98.1%;background: #004FA3;border-radius: 4px 4px 4px 4px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;border: 0px solid #000000;">
+                            </div>
+                            <div ng-if="plan.Name.includes('Catastrophic')"
+                                class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text"
+                                style="max-width: 98.1%;background: #F8991D;border-radius: 4px 4px 4px 4px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;border: 0px solid #000000;">
+                            </div>
+                        </header>
+                        <div class="vloc-plan-box-body">
+                            <div class="nds-grid nds-wrap nds-p-horizontal_small grid-plan-attr">
+                                <div class="nds-col nds-large-size_8-of-12 nds-medium-size_12-of-12 plan-features">
+                                    <div class="name-plan-container nds-m-bottom_small">
+                                        <!-- <span class="vloc-includes">Includes Adult Dental + Vision + Acupunture, Upgraded Bronze</span><br> -->
+                                        <!--Catastrophic popup-->
+                                        <div ng-if="!plan.Name.includes('Catastrophic')">
+                                            <button class="nds-button nds-text-heading_small vloc-link"
+                                                ng-click="openDetailModal(plan)"><b>{{plan.Name}}</b></button>
+                                        </div>
+                                        <div ng-if="plan.Name.includes('Catastrophic')" class="tooltip">
+                                            <button class="nds-button nds-text-heading_small vloc-link tooltip"
+                                                ng-click="openDetailModal(plan)"><b>{{plan.Name}}</b></button>
+                                            <span class="tooltiptext">
+                                                <h5>"Catastrophic - A program designed to provide a safety net in the
+                                                    event of an unexpected injury and illness, with a focus on inpatient
+                                                    medical expenses and outpatient surgery"</h5>
+                                            </span>
+                                        </div>
+                                        <h5 ng-if="plan.Name.includes('OneShare Catastrophic')">Best Suited for those
+                                            who are primarily healthy and looking to join a program which shares
+                                            catastrophic medical needs.</h5>
+                                        <h5 ng-if="plan.Name.includes('OneShare Classic')">For Individuals and families
+                                            that are primarily concerned about medical needs as well as hospital
+                                            concerns.</h5>
+                                        <h5 ng-if="plan.Name.includes('OneShare Complete')">Designed for those who wish
+                                            to enroll in a more complete sharing program that serves the needs of
+                                            individuals and families.</h5>
+                                        <div class="nds-grid">
+                                            <div class="nds-col nds-large-size_9-of-12">
+                                                <div ng-class="{'vloc-renewal-flag-hidden': !plan.renewal}">
+                                                    <div
+                                                        class="nds-text-align_center nds-p-horizontal_x-small vloc-renewal-header">
+                                                        <div ng-if="plan.originalPlan">
+                                                            <p class="nds-truncate">Replaces
+                                                                {{plan.originalPlan.records[0].Name}}</p>
+                                                            <button class="nds-button vloc-link"
+                                                                ng-click="openCompareModal(plan)">View Changes</button>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="vloc-renewal-header-svg" viewBox="0 0 320 20"
+                                                        width="100%" xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <polygon points="0,0 160,20 320,0" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="vloc-ins-selectable-item-similar-plan-container"
+                                                    ng-if="plan.similarToLastYear">
+                                                    <div class="vloc-ins-selectable-item-similar-plan">
+                                                        <span
+                                                            class="vloc-ins-selectable-item-similar-plan-label">Similar
+                                                            to last year's plan</span>
+                                                        <div
+                                                            class="vloc-ins-selectable-item-similar-plan-triangle-pointing-down">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="description nds-m-top_small">
+                                                    <p>
+                                                        {{plan.Description}}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plan-links">
+                                            <div class="plan-details">
+                                                <img class="img-15"
+                                                    src="data:image/svg+xml;base64,
+        PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ3MC41ODYgNDcwLjU4NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDcwLjU4NiA0NzAuNTg2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PGc+Cgk8cGF0aCBkPSJNMzI3LjA4MSwwSDkwLjIzNEM3NC4zMzEsMCw2MS4zODEsMTIuOTU5LDYxLjM4MSwyOC44NTl2NDEyLjg2M2MwLDE1LjkyNCwxMi45NSwyOC44NjMsMjguODUzLDI4Ljg2M0gzODAuMzUgICBjMTUuOTE3LDAsMjguODU1LTEyLjkzOSwyOC44NTUtMjguODYzVjg5LjIzNEwzMjcuMDgxLDB6IE0zMzMuODkxLDQzLjE4NGwzNS45OTYsMzkuMTIxaC0zNS45OTZWNDMuMTg0eiBNMzg0Ljk3Miw0NDEuNzIzICAgYzAsMi41NDItMi4wODEsNC42MjktNC42MzUsNC42MjlIOTAuMjM0Yy0yLjU1LDAtNC42MTktMi4wODctNC42MTktNC42MjlWMjguODU5YzAtMi41NDgsMi4wNjktNC42MTMsNC42MTktNC42MTNoMjE5LjQxMXY3MC4xODEgICBjMCw2LjY4Miw1LjQ0MywxMi4wOTksMTIuMTI5LDEyLjA5OWg2My4xOThWNDQxLjcyM3ogTTEyOC4zNjQsMTI4Ljg5SDMzNC4xNWM1LjAxMywwLDkuMDc5LDQuMDY2LDkuMDc5LDkuMDc5ICAgYzAsNS4wMTMtNC4wNjYsOS4wNzktOS4wNzksOS4wNzlIMTI4LjM2NGMtNS4wMTIsMC05LjA3OS00LjA2Ni05LjA3OS05LjA3OUMxMTkuMjg1LDEzMi45NTcsMTIzLjM1MiwxMjguODksMTI4LjM2NCwxMjguODl6ICAgIE0zNDMuMjI5LDE5OC45OGMwLDUuMDEyLTQuMDY2LDkuMDc5LTkuMDc5LDkuMDc5SDEyOC4zNjRjLTUuMDEyLDAtOS4wNzktNC4wNjYtOS4wNzktOS4wNzlzNC4wNjctOS4wNzksOS4wNzktOS4wNzlIMzM0LjE1ICAgQzMzOS4xNjMsMTg5LjkwMSwzNDMuMjI5LDE5My45NjgsMzQzLjIyOSwxOTguOTh6IE0zNDMuMjI5LDI1Ny45OTNjMCw1LjAxMy00LjA2Niw5LjA3OS05LjA3OSw5LjA3OUgxMjguMzY0ICAgYy01LjAxMiwwLTkuMDc5LTQuMDY2LTkuMDc5LTkuMDc5czQuMDY3LTkuMDc5LDkuMDc5LTkuMDc5SDMzNC4xNUMzMzkuMTYzLDI0OC45MTQsMzQzLjIyOSwyNTIuOTgsMzQzLjIyOSwyNTcuOTkzeiAgICBNMzQzLjIyOSwzMTguMDExYzAsNS4wMTMtNC4wNjYsOS4wNzktOS4wNzksOS4wNzlIMTI4LjM2NGMtNS4wMTIsMC05LjA3OS00LjA2Ni05LjA3OS05LjA3OXM0LjA2Ny05LjA3OSw5LjA3OS05LjA3OUgzMzQuMTUgICBDMzM5LjE2MywzMDguOTMyLDM0My4yMjksMzEyLjk5OCwzNDMuMjI5LDMxOC4wMTF6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMwMDcwRDIiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+CjwvZz48L2c+IDwvc3ZnPg==" />
+                                                <span
+                                                    ng-init="plan.selectedPrice = bpTree.response.radioFamilyOption == 'MySelf' ? plan.CalculatedPriceData.Member :  bpTree.response.radioFamilyOption == 'MyselfMyspouse' ? plan.CalculatedPriceData.MemberPlusOne :  plan.CalculatedPriceData.Family   | currency: currencyCode: 2 "
+                                                    ng-click="openDetailModal(plan)">Program details</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="standout nds-m-bottom_small">
+                                        <img class="img-15"
+                                            src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTIgNTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUyIDUyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnPjxnPgoJPHBhdGggZD0iTTI2LDBDMTEuNjY0LDAsMCwxMS42NjMsMCwyNnMxMS42NjQsMjYsMjYsMjZzMjYtMTEuNjYzLDI2LTI2UzQwLjMzNiwwLDI2LDB6IE0yNiw1MEMxMi43NjcsNTAsMiwzOS4yMzMsMiwyNiAgIFMxMi43NjcsMiwyNiwyczI0LDEwLjc2NywyNCwyNFMzOS4yMzMsNTAsMjYsNTB6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIiBzdHlsZT0iZmlsbDojRTk3MzBEIj48L3BhdGg+Cgk8cGF0aCBkPSJNMzguMjUyLDE1LjMzNmwtMTUuMzY5LDE3LjI5bC05LjI1OS03LjQwN2MtMC40My0wLjM0NS0xLjA2MS0wLjI3NC0xLjQwNSwwLjE1NmMtMC4zNDUsMC40MzItMC4yNzUsMS4wNjEsMC4xNTYsMS40MDYgICBsMTAsOEMyMi41NTksMzQuOTI4LDIyLjc4LDM1LDIzLDM1YzAuMjc2LDAsMC41NTEtMC4xMTQsMC43NDgtMC4zMzZsMTYtMThjMC4zNjctMC40MTIsMC4zMy0xLjA0NS0wLjA4My0xLjQxMSAgIEMzOS4yNTEsMTQuODg1LDM4LjYyLDE0LjkyMiwzOC4yNTIsMTUuMzM2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgc3R5bGU9ImZpbGw6I0U5NzMwRCI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                                        <h3>Standout Features</h3>
+                                    </div>
+                                    <div class="nds-grid nds-wrap nds-p-right_medium">
+                                        <div class="nds-col nds-large-size_4-of-12 nds-size_1-of-1 plan-attr" ng-class="{'dotted-bottom': [0,1,2,3,4,5,6,7,8,9,10,11,12].includes($index) , 'dotted-right': [0,1,3,4,6,7,9,10,12,13,15].includes($index),
+                                                    'nds-p-bottom_x-small': [0,1,2,6,7,8].includes($index) ,'pl-attr': [1,2,4,5,7,8,10,11,13,14].includes($index),
+                                                    'nds-p-top_x-small': [3,4,5,9,10,11].includes($index)}"
+                                            ng-repeat="attribute in plan.attributeCategories.records[0].productAttributes.records | limitTo: 16 track by $index"
+                                            ng-init="updatePlanPriceOnUI(plan)">
+                                            <h4 ng-hide="attribute.label == 'disclaimer'"
+                                                ng-if="attribute.label != 'ISA Amount' && attribute.label != 'Program Code' && (!attribute.label.includes('Buy Up') || !plan.Name.includes('Classic'))">
+                                                {{attribute.label}}</h4>
+                                            <p class="wordsSetting"
+                                                ng-if="attribute.label != 'ISA Amount' && attribute.label != 'Program Code' && (!attribute.label.includes('Buy Up') || !plan.Name.includes('Classic'))"
+                                                ng-class="{'bold-text' : attribute.userValues.includes('180 Day Waiting Period')}">
+                                                <span
+                                                    ng-if="attribute.dataType === 'currency' && attribute.inputType !== 'dropdown' ">$</span>{{attribute.userValues}}
+                                                <!--<span
+                                                    ng-if="attribute.dataType === 'currency' && attribute.inputType !== 'dropdown' ">$</span>{{isFromMassachusettsEnvisionRX(attribute)}}-->
+                                            </p>
+                                            <div class="slds-form-element nds-form-element vloc-ins-attribute-component-limit-select"
+                                                ng-if="attribute.inputType === 'dropdown' && attribute.inputType !== 'checkbox' && !attribute.multiselect && !attribute.readonly && attribute.label != 'Lifetime Sharing Maximum' && attribute.label != 'ISA Amount' && (!attribute.label.includes('Buy Up') || !plan.Name.includes('Classic'))">
+                                                <div class="slds-form-element__control nds-form-element__control">
+                                                    <div class="slds-select_container nds-select_container"
+                                                        ng-if="!attribute.readonly">
+                                                        <select
+                                                            id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}"
+                                                            class="slds-select nds-select"
+                                                            ng-model="attribute.userValues"
+                                                            ng-options="value.value as value.label for value in attribute.values | filter: {hiddenByRule: '!true'}"
+                                                            ng-init="recallProducts(plan)"
+                                                            ng-disabled="attribute.ruleSetValue || coverage.isExcluded">{{value.label}}</select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="nds-col nds-large-size_4-of-12 nds-medium-size_12-of-12 nds-p-horizontal_small">
+                                    <div class="background-price nds-p-horizontal_medium nds-p-bottom_medium">
+                                        <div class="price-plan-container">
+                                            <p class="nds-p-top_large" style="text-align: center;"><span
+                                                    class="nds-text-heading_large price"><b>{{bpTree.response.myFamily.FormulaConForDiplayAddInfo180 == true ? plan.Price : getPriceBasedOnProductCode(plan) | currency: currencyCode: 2}}</b></span><span
+                                                    class="timelapse">/mo</b></p>
+													<div class="nds-m-top_x-small nds-text-align_center" ng-if="plan.Price != getPriceBasedOnProductCode(plan) && (bpTree.response.myFamily.FormulaConForDiplayAddInfo180 == true || bpTree.response.myFamily.FormulaConForDiplayAddInfo30 == true)" style="border: 2px solid orange; border-radius: 15px; padding: 6px;">
+														<p style=""><span><b role="button" tabindex="0">*Estimated {{getPriceBasedOnProductCode(plan) | currency: currencyCode: 2}}</b></span>
+														<span class="">/mo on the billing cycle following {{bpTree.response.RatingMemberName}}'s
+															next birthday based on current rating
+															information.</span>
+														</p>
+													</div>                                            
+
+                                            <!--Includes Isa Amount (Up Comparation)-->
+                                            <div ng-if="attribute.label == 'ISA Amount'"
+                                                class="nds-col nds-large-size_6-of-12 nds-size_1-of-1 plan-attr"
+                                                ng-repeat="attribute in plan.attributeCategories.records[0].productAttributes.records | limitTo: 16 track by $index"
+                                                style="text-align:center;margin-left:28%;margin-top:10%;">
+                                                <div class="isatooltip">
+                                                    <span class="isatooltiptext">
+                                                        <h5>The amount that a member is responsible for paying before
+                                                            medical expenses are eligible for sharing under the program.
+                                                            ISA applies to each Program YearThe amount that a member is
+                                                            responsible for paying before medical expenses are eligible
+                                                            for sharing under the program. ISA applies to each Program
+                                                            Year.</h5>
+                                                    </span>
+                                                    <h4 ng-if="attribute.label == 'ISA Amount'">{{attribute.label}} <img
+                                                            src="https://image.flaticon.com/icons/svg/2088/2088076.svg"
+                                                            width="16" height="16"></h4>
+                                                </div>
+                                                <div class="nds-m-top_xx-small slds-form-element nds-form-element vloc-ins-attribute-component-limit-select"
+                                                    ng-if="attribute.inputType === 'dropdown' && attribute.inputType !== 'checkbox' && !attribute.multiselect && !attribute.readonly && attribute.label == 'ISA Amount'">
+                                                    <div class="slds-form-element__control nds-form-element__control">
+                                                        <div class="slds-select_container nds-select_container"
+                                                            ng-if="!attribute.readonly">
+                                                            <select
+                                                                id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}"
+                                                                class="slds-select nds-select"
+                                                                ng-model="attribute.userValues"
+                                                                ng-options="value.value as value.label for value in attribute.values | filter: {hiddenByRule: '!true'}"
+                                                                ng-init="recallProducts(plan)"
+                                                                ng-disabled="true">{{value.label}}</select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Includes Dropdown Buy Up (Up Comparation)-->
+                                            <div class="nds-col nds-large-size_6-of-12 nds-size_1-of-1 plan-attr"
+                                                ng-repeat="attribute in plan.attributeCategories.records[0].productAttributes.records | limitTo: 16 track by $index"
+                                                style="text-align:center;margin-left:28%;margin-top:10%;">
+                                                <h4
+                                                    ng-if="attribute.label.includes('Buy Up') && plan.Name.includes('Classic')">
+                                                    {{attribute.label}}</h4>
+                                                <div class="slds-form-element nds-form-element vloc-ins-attribute-component-limit-select"
+                                                    ng-if="attribute.inputType === 'dropdown' && attribute.inputType !== 'checkbox' && !attribute.multiselect && !attribute.readonly && attribute.label.includes('Buy Up') && plan.Name.includes('Classic')">
+                                                    <div class="slds-form-element__control nds-form-element__control">
+                                                        <div class="slds-select_container nds-select_container"
+                                                            ng-if="!attribute.readonly">
+                                                            <select
+                                                                id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}"
+                                                                class="slds-select nds-select"
+                                                                ng-model="attribute.userValues"
+                                                                ng-options="value.value as value.label for value in attribute.values | filter: {hiddenByRule: '!true'}"
+                                                                ng-disabled="true">{{value.label}}</select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="nds-button nds-button_neutral"
+                                            ng-click="toggleModalPlan(plan, $index)">
+                                            <b>Remove</b>
+                                        </button>
+                                        <!--  <div class="compare-container">
+                                                <button ng-click="openCompareModal()" class="nds-button nds-button_brand" ng-disabled='selectedPlansCounter < 1'>Review Selected Program</button>
+                                            </div>
+                                            Above button was commented by Vicente on 03-17-2020 due to new enroll requirement
+                                                -->
+                                        <!--<div class="compare-container">
+                                            <button class="nds-text-heading_small compare-button"
+                                                ng-click="toggleCompareSelect(plan)">
+                                                <img ng-show="isAddedForCompare(plan)" class="img-10 img-offset"
+                                                    src="data:image/svg+xml;base64,
+    PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ0Mi41MzMgNDQyLjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQyLjUzMyA0NDIuNTMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+Cgk8cGF0aCBkPSJNNDM0LjUzOSw5OC40OTlsLTM4LjgyOC0zOC44MjhjLTUuMzI0LTUuMzI4LTExLjc5OS03Ljk5My0xOS40MS03Ljk5M2MtNy42MTgsMC0xNC4wOTMsMi42NjUtMTkuNDE3LDcuOTkzTDE2OS41OSwyNDcuMjQ4ICAgbC04My45MzktODQuMjI1Yy01LjMzLTUuMzMtMTEuODAxLTcuOTkyLTE5LjQxMi03Ljk5MmMtNy42MTYsMC0xNC4wODcsMi42NjItMTkuNDE3LDcuOTkyTDcuOTk0LDIwMS44NTIgICBDMi42NjQsMjA3LjE4MSwwLDIxMy42NTQsMCwyMjEuMjY5YzAsNy42MDksMi42NjQsMTQuMDg4LDcuOTk0LDE5LjQxNmwxMDMuMzUxLDEwMy4zNDlsMzguODMxLDM4LjgyOCAgIGM1LjMyNyw1LjMzMiwxMS44LDcuOTk0LDE5LjQxNCw3Ljk5NGM3LjYxMSwwLDE0LjA4NC0yLjY2OSwxOS40MTQtNy45OTRsMzguODMtMzguODI4TDQzNC41MzksMTM3LjMzICAgYzUuMzI1LTUuMzMsNy45OTQtMTEuODAyLDcuOTk0LTE5LjQxN0M0NDIuNTM3LDExMC4zMDIsNDM5Ljg2NCwxMDMuODI5LDQzNC41MzksOTguNDk5eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMDA3MEQyIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                                                <b>{{ isAddedForCompare(plan) ? 'Added to compare' : 'Add to compare'}}</b></button>
+                                            <button class="nds-text-heading_small cart-button"
+                                                ng-click="toggleCartPlan(plan)">
+                                                <img ng-show="plan.selected" class="img-10"
+                                                    src="data:image/svg+xml;base64,
+        PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ0Mi41MzMgNDQyLjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQyLjUzMyA0NDIuNTMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+Cgk8cGF0aCBkPSJNNDM0LjUzOSw5OC40OTlsLTM4LjgyOC0zOC44MjhjLTUuMzI0LTUuMzI4LTExLjc5OS03Ljk5My0xOS40MS03Ljk5M2MtNy42MTgsMC0xNC4wOTMsMi42NjUtMTkuNDE3LDcuOTkzTDE2OS41OSwyNDcuMjQ4ICAgbC04My45MzktODQuMjI1Yy01LjMzLTUuMzMtMTEuODAxLTcuOTkyLTE5LjQxMi03Ljk5MmMtNy42MTYsMC0xNC4wODcsMi42NjItMTkuNDE3LDcuOTkyTDcuOTk0LDIwMS44NTIgICBDMi42NjQsMjA3LjE4MSwwLDIxMy42NTQsMCwyMjEuMjY5YzAsNy42MDksMi42NjQsMTQuMDg4LDcuOTk0LDE5LjQxNmwxMDMuMzUxLDEwMy4zNDlsMzguODMxLDM4LjgyOCAgIGM1LjMyNyw1LjMzMiwxMS44LDcuOTk0LDE5LjQxNCw3Ljk5NGM3LjYxMSwwLDE0LjA4NC0yLjY2OSwxOS40MTQtNy45OTRsMzguODMtMzguODI4TDQzNC41MzksMTM3LjMzICAgYzUuMzI1LTUuMzMsNy45OTQtMTEuODAyLDcuOTk0LTE5LjQxN0M0NDIuNTM3LDExMC4zMDIsNDM5Ljg2NCwxMDMuODI5LDQzNC41MzksOTguNDk5eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                                                <b>{{plan.selected ? 'Added to cart' : 'Add to cart'}}</b></button>
+                                        </div>-->
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                </article>
+            </div>
+            <div class="vloc-cart-plans-collapse-toggle">
+                <button ng-click="collapsedCart = !collapsedCart; $event.stopPropagation()"
+                    ng-class="{'vloc-toggle-closed': collapsedCart}" class="nds-button vloc-link" bs-collapse-toggle>
+                    <span>{{collapsedCart ? 'Show' : 'Hide'}} Selected Program</span>
+                    <slds-svg-icon sprite="'utility'" icon="'chevronup'" size="'xx-small'"
+                        extra-classes="'nds-m-left--xx-small nds-m-right--xx-small'"></slds-svg-icon>
+                </button>
+            </div>
+        </div>
+        <div class="nds-box">
+            <div class="nds-text-align_center">
+                <h2 class="nds-text-heading_medium">Available Program(s)</h2>
+            </div>
+            <div ng-if="filtersAvailable" class="nds-grid nds-m-vertical_large">
+                <div class="nds-size_1-of-2">
+                    <div class="nds-form-element">
+                        <div class="nds-form-element__control">
+                            <div class="nds-combobox_container nds-dropdown-trigger nds-dropdown-trigger--click"
+                                ins-os-dropdown-handler ins-os-dropdown-toggle="toggleMedicalFiltersDropdown()"
+                                ng-class="{'nds-is-open': openMedicalFilterDropdown}">
+                                <div class="nds-combobox__form-element nds-input-has-icon nds-input-has-icon_right"
+                                    role="none">
+                                    <input
+                                        value="{{selectedFiltersCount() ? selectedFiltersCount() + ' Filters Selected' : 'Filter by'}}"
+                                        type="text" class="nds-input nds-combobox__input" id="combobox-id-1"
+                                        aria-controls="listbox-id-1" autoComplete="off" role="textbox" readonly="" />
+                                    <span
+                                        class="nds-icon_container nds-icon-utility-down nds-input__icon nds-input__icon_right">
+                                        <slds-button-svg-icon sprite="'utility'" icon="'down'"></slds-button-svg-icon>
+                                    </span>
+                                </div>
+                                <div class="nds-dropdown nds-dropdown_fluid nds-dropdown--left">
+                                    <ul class="nds-listbox nds-listbox_vertical" role="menu"
+                                        ng-repeat="(filterKey, filter) in filterAttrValues">
+                                        <li class="nds-listbox__item" role="presentation">
+                                            <div class="nds-media nds-listbox__option nds-listbox__option_plain nds-media_small"
+                                                role="presentation">
+                                                <h3 class="nds-text-title_caps" role="presentation">
+                                                    {{filter.attributeLabel}}</h3>
+                                            </div>
+                                        </li>
+                                        <li class="nds-listbox__item" role="presentation"
+                                            ng-repeat="value in filter.listOfValues"
+                                            ng-click="toggleFilter(filterKey, value.value)">
+                                            <div class="nds-media nds-listbox__option nds-listbox__option_plain nds-media_small"
+                                                role="option"
+                                                ng-class="{'nds-is-selected': isFilterSelected(filterKey, value.value)}">
+                                                <span class="nds-media__figure nds-listbox__option-icon">
+                                                    <slds-svg-icon sprite="'utility'" icon="'check'" size="'x-small'"
+                                                        extra-classes="'nds-listbox__icon-selected'"></slds-svg-icon>
+                                                </span>
+                                                <span class="nds-media__body">
+                                                    <span class="nds-truncate"
+                                                        title="{{value.displayText}}">{{value.value}}</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nds-grid">
+                <div class="nds-size_1-of-2">
+                    <p><b>{{unselectedNewPlans.length  || 0}}</b> Programs available</p>
+                </div>
+                <!--<div class="nds-size_1-of-2 nds-text-align_right">
+                    <button ng-click="openCompareModal()" class="nds-button nds-button_brand" ng-disabled='selectedPlansCounter < 1'>Review Selected Program(s)</button>
+                </div>
+                Above button was commented by Vicente on 03-17-2020 due to new enroll requirement
+                  -->
+            </div>
+            <div class="nds-grid nds-grid_pull-padded-medium nds-wrap">
+                <!-- ng-show="existInSelected(plan)" -->
+                <article ng-repeat="(planIndex, plan) in unselectedNewPlans track by plan.Id"
+                    class="nds-col nds-large-size_1-of-1 nds-size_1-of-1">
+                    <div class="nds-box nds-m-around_small vloc-plan-box"
+                        ng-class="{'vloc-selected-plan': plan.selected}">
+                        <header class="vloc-plan-box-header">
+                            <!--Legend Color Prices-->
+                            <div class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text">
+                            </div>
+                            <div ng-if="plan.Name.includes('Complete')"
+                                class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text"
+                                style="max-width: 98.1%;background: #8bb95b;border-radius: 4px 4px 4px 4px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;border: 0px solid #000000;">
+                            </div>
+                            <div ng-if="plan.Name.includes('Classic')"
+                                class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text"
+                                style="max-width: 98.1%;background: #014b9b;border-radius: 4px 4px 4px 4px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;border: 0px solid #000000;">
+                            </div>
+                            <div ng-if="plan.Name.includes('Catastrophic')"
+                                class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text"
+                                style="max-width: 98.1%;background: #fa9722;border-radius: 4px 4px 4px 4px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;border: 0px solid #000000;">
+                            </div>
+                        </header>
+                        <div class="vloc-plan-box-body">
+                            <div class="nds-grid nds-wrap nds-p-horizontal_small grid-plan-attr">
+                                <div class="nds-col nds-large-size_8-of-12 nds-medium-size_12-of-12 plan-features">
+                                    <div class="name-plan-container nds-m-bottom_small">
+                                        <!--Catastrophic popup-->
+                                        <div ng-if="!plan.Name.includes('Catastrophic')">
+                                            <button class="nds-button nds-text-heading_small vloc-link"
+                                                ng-click="openDetailModal(plan)"><b>{{plan.Name}}</b></button>
+                                        </div>
+                                        <div ng-if="plan.Name.includes('Catastrophic')" class="tooltip">
+                                            <button class="nds-button nds-text-heading_small vloc-link tooltip"
+                                                ng-click="openDetailModal(plan)"><b>{{plan.Name}}</b></button>
+                                            <span class="tooltiptext">
+                                                <h5>"Catastrophic - A program designed to provide a safety net in the
+                                                    event of an unexpected injury and illness, with a focus on inpatient
+                                                    medical expenses and outpatient surgery"</h5>
+                                            </span>
+                                        </div>
+                                        <h5 ng-if="plan.Name.includes('OneShare Catastrophic')">Best Suited for those
+                                            who are primarily healthy and looking to join a program which shares
+                                            catastrophic medical needs.</h5>
+                                        <h5 ng-if="plan.Name.includes('OneShare Classic')">For Individuals and families
+                                            that are primarily concerned about medical needs as well as hospital
+                                            concerns.</h5>
+                                        <h5 ng-if="plan.Name.includes('OneShare Complete')">Designed for those who wish
+                                            to enroll in a more complete sharing program that serves the needs of
+                                            individuals and families.</h5>
+                                        <div class="nds-grid">
+                                            <div class="nds-col nds-large-size_9-of-12">
+                                                <div class="description nds-m-top_small">
+                                                    <p>
+                                                        {{plan.Description}}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plan-links">
+                                            <div class="plan-details">
+                                                <img class="img-15"
+                                                    src="data:image/svg+xml;base64,
+        PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ3MC41ODYgNDcwLjU4NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDcwLjU4NiA0NzAuNTg2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PGc+Cgk8cGF0aCBkPSJNMzI3LjA4MSwwSDkwLjIzNEM3NC4zMzEsMCw2MS4zODEsMTIuOTU5LDYxLjM4MSwyOC44NTl2NDEyLjg2M2MwLDE1LjkyNCwxMi45NSwyOC44NjMsMjguODUzLDI4Ljg2M0gzODAuMzUgICBjMTUuOTE3LDAsMjguODU1LTEyLjkzOSwyOC44NTUtMjguODYzVjg5LjIzNEwzMjcuMDgxLDB6IE0zMzMuODkxLDQzLjE4NGwzNS45OTYsMzkuMTIxaC0zNS45OTZWNDMuMTg0eiBNMzg0Ljk3Miw0NDEuNzIzICAgYzAsMi41NDItMi4wODEsNC42MjktNC42MzUsNC42MjlIOTAuMjM0Yy0yLjU1LDAtNC42MTktMi4wODctNC42MTktNC42MjlWMjguODU5YzAtMi41NDgsMi4wNjktNC42MTMsNC42MTktNC42MTNoMjE5LjQxMXY3MC4xODEgICBjMCw2LjY4Miw1LjQ0MywxMi4wOTksMTIuMTI5LDEyLjA5OWg2My4xOThWNDQxLjcyM3ogTTEyOC4zNjQsMTI4Ljg5SDMzNC4xNWM1LjAxMywwLDkuMDc5LDQuMDY2LDkuMDc5LDkuMDc5ICAgYzAsNS4wMTMtNC4wNjYsOS4wNzktOS4wNzksOS4wNzlIMTI4LjM2NGMtNS4wMTIsMC05LjA3OS00LjA2Ni05LjA3OS05LjA3OUMxMTkuMjg1LDEzMi45NTcsMTIzLjM1MiwxMjguODksMTI4LjM2NCwxMjguODl6ICAgIE0zNDMuMjI5LDE5OC45OGMwLDUuMDEyLTQuMDY2LDkuMDc5LTkuMDc5LDkuMDc5SDEyOC4zNjRjLTUuMDEyLDAtOS4wNzktNC4wNjYtOS4wNzktOS4wNzlzNC4wNjctOS4wNzksOS4wNzktOS4wNzlIMzM0LjE1ICAgQzMzOS4xNjMsMTg5LjkwMSwzNDMuMjI5LDE5My45NjgsMzQzLjIyOSwxOTguOTh6IE0zNDMuMjI5LDI1Ny45OTNjMCw1LjAxMy00LjA2Niw5LjA3OS05LjA3OSw5LjA3OUgxMjguMzY0ICAgYy01LjAxMiwwLTkuMDc5LTQuMDY2LTkuMDc5LTkuMDc5czQuMDY3LTkuMDc5LDkuMDc5LTkuMDc5SDMzNC4xNUMzMzkuMTYzLDI0OC45MTQsMzQzLjIyOSwyNTIuOTgsMzQzLjIyOSwyNTcuOTkzeiAgICBNMzQzLjIyOSwzMTguMDExYzAsNS4wMTMtNC4wNjYsOS4wNzktOS4wNzksOS4wNzlIMTI4LjM2NGMtNS4wMTIsMC05LjA3OS00LjA2Ni05LjA3OS05LjA3OXM0LjA2Ny05LjA3OSw5LjA3OS05LjA3OUgzMzQuMTUgICBDMzM5LjE2MywzMDguOTMyLDM0My4yMjksMzEyLjk5OCwzNDMuMjI5LDMxOC4wMTF6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMwMDcwRDIiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+CjwvZz48L2c+IDwvc3ZnPg==" />
+                                                <span
+                                                    ng-init="plan.selectedPrice = bpTree.response.radioFamilyOption == 'MySelf' ? plan.CalculatedPriceData.Member :  bpTree.response.radioFamilyOption == 'MyselfMyspouse' ? plan.CalculatedPriceData.MemberPlusOne :  plan.CalculatedPriceData.Family   | currency: currencyCode: 2 "
+                                                    ng-click="openDetailModal(plan)"> Program details</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="standout nds-m-bottom_small">
+                                        <img class="img-15"
+                                            src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTIgNTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUyIDUyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnPjxnPgoJPHBhdGggZD0iTTI2LDBDMTEuNjY0LDAsMCwxMS42NjMsMCwyNnMxMS42NjQsMjYsMjYsMjZzMjYtMTEuNjYzLDI2LTI2UzQwLjMzNiwwLDI2LDB6IE0yNiw1MEMxMi43NjcsNTAsMiwzOS4yMzMsMiwyNiAgIFMxMi43NjcsMiwyNiwyczI0LDEwLjc2NywyNCwyNFMzOS4yMzMsNTAsMjYsNTB6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIiBzdHlsZT0iZmlsbDojRTk3MzBEIj48L3BhdGg+Cgk8cGF0aCBkPSJNMzguMjUyLDE1LjMzNmwtMTUuMzY5LDE3LjI5bC05LjI1OS03LjQwN2MtMC40My0wLjM0NS0xLjA2MS0wLjI3NC0xLjQwNSwwLjE1NmMtMC4zNDUsMC40MzItMC4yNzUsMS4wNjEsMC4xNTYsMS40MDYgICBsMTAsOEMyMi41NTksMzQuOTI4LDIyLjc4LDM1LDIzLDM1YzAuMjc2LDAsMC41NTEtMC4xMTQsMC43NDgtMC4zMzZsMTYtMThjMC4zNjctMC40MTIsMC4zMy0xLjA0NS0wLjA4My0xLjQxMSAgIEMzOS4yNTEsMTQuODg1LDM4LjYyLDE0LjkyMiwzOC4yNTIsMTUuMzM2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgc3R5bGU9ImZpbGw6I0U5NzMwRCI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                                        <h3>Standout Features</h3>
+                                    </div>
+                                    <div class="nds-grid nds-wrap nds-p-right_medium">
+                                        <div class="nds-col nds-large-size_4-of-12 nds-size_1-of-1 plan-attr" ng-class="{'dotted-bottom': [0,1,2,3,4,5,6,7,8,9,10,11,12].includes($index) , 'dotted-right': [0,1,3,4,6,7,9,10,12,13,15].includes($index),
+                                                    'nds-p-bottom_x-small': [0,1,2,6,7,8].includes($index) ,'pl-attr': [1,2,4,5,7,8,10,11,13,14].includes($index),
+                                                    'nds-p-top_x-small': [3,4,5,9,10,11].includes($index)}"
+                                            ng-repeat="attribute in plan.attributeCategories.records[0].productAttributes.records | limitTo: 16 track by $index"
+                                            ng-init="updatePlanPriceOnUI(plan)">
+                                            <h4 ng-hide="attribute.label == 'disclaimer'"
+                                                ng-if="attribute.label != 'ISA Amount' && attribute.label != 'Program Code' && (!attribute.label.includes('Buy Up') || !plan.Name.includes('Classic'))">
+                                                {{attribute.label}}</h4>
+                                            <p class="wordsSetting"
+                                                ng-if="attribute.label != 'ISA Amount' && attribute.label != 'Program Code' && (!attribute.label.includes('Buy Up') || !plan.Name.includes('Classic'))"
+                                                ng-class="{'bold-text' : attribute.userValues.includes('180 Day Waiting Period')}">
+                                                <span
+                                                    ng-if="attribute.dataType === 'currency' && attribute.inputType !== 'dropdown' ">$</span>{{attribute.userValues}}
+
+                                            </p>
+                                            <div class="slds-form-element nds-form-element vloc-ins-attribute-component-limit-select"
+                                                ng-if="attribute.inputType === 'dropdown' && attribute.inputType !== 'checkbox' && !attribute.multiselect && !attribute.readonly && attribute.label != 'Lifetime Sharing Maximum' && attribute.label != 'ISA Amount' && (!attribute.label.includes('Buy Up') || !plan.Name.includes('Classic'))">
+                                                <div class="slds-form-element__control nds-form-element__control">
+                                                    <div class="slds-select_container nds-select_container"
+                                                        ng-if="!attribute.readonly">
+                                                        <select
+                                                            id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}"
+                                                            class="slds-select nds-select"
+                                                            ng-model="attribute.userValues"
+                                                            ng-options="value.value as value.label for value in attribute.values | filter: {hiddenByRule: '!true'}"
+                                                            ng-init="recallProducts(plan)"
+                                                            ng-disabled="true">{{value.label}}</select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="nds-col nds-large-size_4-of-12 nds-medium-size_12-of-12 nds-p-horizontal_small">
+                                    <div class="background-price nds-p-horizontal_medium nds-p-bottom_medium">
+                                        <div class="price-plan-container">
+                                            <p class="nds-p-top_large" style="text-align: center;"><span
+                                                    class="nds-text-heading_large price"><b>{{bpTree.response.myFamily.FormulaConForDiplayAddInfo180 == true ? plan.Price : getPriceBasedOnProductCode(plan) | currency: currencyCode: 2}}</b></span><span
+                                                    class="timelapse">/mo</b></p>
+													<div class="nds-m-top_x-small nds-text-align_center" ng-if="plan.Price != getPriceBasedOnProductCode(plan) && (bpTree.response.myFamily.FormulaConForDiplayAddInfo180 == true || bpTree.response.myFamily.FormulaConForDiplayAddInfo30 == true)" style="border: 2px solid orange; border-radius: 15px; padding: 6px;">
+														<p style=""><span><b role="button" tabindex="0">*Estimated {{getPriceBasedOnProductCode(plan) | currency: currencyCode: 2}}</b></span>
+														<span class="">/mo on the billing cycle following {{bpTree.response.RatingMemberName}}'s
+															next birthday based on current rating
+															information.</span>
+														</p>
+													</div>
+
+                                            <!--Includes Isa Amount (Down Comparation)-->
+                                            <div ng-if="attribute.label == 'ISA Amount'"
+                                                class="nds-col nds-large-size_6-of-12 nds-size_1-of-1 plan-attr"
+                                                ng-repeat="attribute in plan.attributeCategories.records[0].productAttributes.records | limitTo: 16 track by $index"
+                                                style="text-align:center;margin-left:28%;margin-top:10%;">
+                                                <div class="isatooltip">
+                                                    <span class="isatooltiptext">
+                                                        <h5>The amount that a member is responsible for paying before
+                                                            medical expenses are eligible for sharing under the program.
+                                                            ISA applies to each Program YearThe amount that a member is
+                                                            responsible for paying before medical expenses are eligible
+                                                            for sharing under the program. ISA applies to each Program
+                                                            Year.</h5>
+                                                    </span>
+                                                    <h4 ng-if="attribute.label == 'ISA Amount'">{{attribute.label}} <img
+                                                            src="https://image.flaticon.com/icons/svg/2088/2088076.svg"
+                                                            width="16" height="16"></h4>
+                                                </div>
+                                                <div class="nds-m-top_xx-small slds-form-element nds-form-element vloc-ins-attribute-component-limit-select"
+                                                    ng-if="attribute.inputType === 'dropdown' && attribute.inputType !== 'checkbox' && !attribute.multiselect && !attribute.readonly && attribute.label == 'ISA Amount'">
+                                                    <div class="slds-form-element__control nds-form-element__control">
+                                                        <div class="slds-select_container nds-select_container"
+                                                            ng-if="!attribute.readonly">
+                                                            <select
+                                                                id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}"
+                                                                class="slds-select nds-select"
+                                                                ng-model="attribute.userValues"
+                                                                ng-options="value.value as value.label for value in attribute.values | filter: {hiddenByRule: '!true'}"
+                                                                ng-init="recallProducts(plan)"
+                                                                ng-disabled="true">{{value.label}}</select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Includes Dropdown Buy Up (Down Comparation)-->
+                                            <div class="nds-col nds-large-size_6-of-12 nds-size_1-of-1 plan-attr"
+                                                ng-repeat="attribute in plan.attributeCategories.records[0].productAttributes.records | limitTo: 16 track by $index"
+                                                style="text-align:center;margin-left:28%;margin-top:10%;">
+                                                <h4
+                                                    ng-if="attribute.label.includes('Buy Up') && plan.Name.includes('Classic')">
+                                                    {{attribute.label}}</h4>
+                                                <div class="slds-form-element nds-form-element vloc-ins-attribute-component-limit-select"
+                                                    ng-if="attribute.inputType === 'dropdown' && attribute.inputType !== 'checkbox' && !attribute.multiselect && !attribute.readonly && attribute.label.includes('Buy Up') && plan.Name.includes('Classic')">
+                                                    <div class="slds-form-element__control nds-form-element__control">
+                                                        <div class="slds-select_container nds-select_container"
+                                                            ng-if="!attribute.readonly">
+                                                            <select
+                                                                id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}"
+                                                                class="slds-select nds-select"
+                                                                ng-model="attribute.userValues"
+                                                                ng-options="value.value as value.label for value in attribute.values | filter: {hiddenByRule: '!true'}"
+                                                                ng-disabled="true">{{value.label}}</select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="compare-container nds-form-element__control">
+                                            <button class="nds-button nds-button_neutral"
+                                                ng-click="toggleModalPlan(plan, $index)">
+                                                <b>Enroll now</b>
+                                            </button>
+                                            <!-- <button ng-show="!isAddedForCompare(plan)"class="nds-button nds-button_neutral" ng-click="addPlan(plan)" ng-disabled='selectedPlansCounter >= 3'> 
+                                                <b>Add to Review</b>
+                                            </button>
+                                            <button ng-show="isAddedForCompare(plan)" class="nds-button nds-button_neutral" ng-click="removePlan(plan)"> 
+                                                <img class="img-10 img-offset"
+                                                    src="data:image/svg+xml;base64,
+    PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ0Mi41MzMgNDQyLjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQyLjUzMyA0NDIuNTMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+Cgk8cGF0aCBkPSJNNDM0LjUzOSw5OC40OTlsLTM4LjgyOC0zOC44MjhjLTUuMzI0LTUuMzI4LTExLjc5OS03Ljk5My0xOS40MS03Ljk5M2MtNy42MTgsMC0xNC4wOTMsMi42NjUtMTkuNDE3LDcuOTkzTDE2OS41OSwyNDcuMjQ4ICAgbC04My45MzktODQuMjI1Yy01LjMzLTUuMzMtMTEuODAxLTcuOTkyLTE5LjQxMi03Ljk5MmMtNy42MTYsMC0xNC4wODcsMi42NjItMTkuNDE3LDcuOTkyTDcuOTk0LDIwMS44NTIgICBDMi42NjQsMjA3LjE4MSwwLDIxMy42NTQsMCwyMjEuMjY5YzAsNy42MDksMi42NjQsMTQuMDg4LDcuOTk0LDE5LjQxNmwxMDMuMzUxLDEwMy4zNDlsMzguODMxLDM4LjgyOCAgIGM1LjMyNyw1LjMzMiwxMS44LDcuOTk0LDE5LjQxNCw3Ljk5NGM3LjYxMSwwLDE0LjA4NC0yLjY2OSwxOS40MTQtNy45OTRsMzguODMtMzguODI4TDQzNC41MzksMTM3LjMzICAgYzUuMzI1LTUuMzMsNy45OTQtMTEuODAyLDcuOTk0LTE5LjQxN0M0NDIuNTM3LDExMC4zMDIsNDM5Ljg2NCwxMDMuODI5LDQzNC41MzksOTguNDk5eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMDA3MEQyIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                                                <b>Added to Review</b>
+                                            </button>
+                                            Above 2 buttons were commented by Vicente on 03-17-2020 due to new enroll requirement
+                                             -->
+                                            <!--<button class="nds-text-heading_small cart-button"
+                                                ng-click="addNewPlan(plan, planIndex)">
+                                                <img ng-show="plan.selected" class="img-10"
+                                                    src="data:image/svg+xml;base64,
+        PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ0Mi41MzMgNDQyLjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQyLjUzMyA0NDIuNTMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+Cgk8cGF0aCBkPSJNNDM0LjUzOSw5OC40OTlsLTM4LjgyOC0zOC44MjhjLTUuMzI0LTUuMzI4LTExLjc5OS03Ljk5My0xOS40MS03Ljk5M2MtNy42MTgsMC0xNC4wOTMsMi42NjUtMTkuNDE3LDcuOTkzTDE2OS41OSwyNDcuMjQ4ICAgbC04My45MzktODQuMjI1Yy01LjMzLTUuMzMtMTEuODAxLTcuOTkyLTE5LjQxMi03Ljk5MmMtNy42MTYsMC0xNC4wODcsMi42NjItMTkuNDE3LDcuOTkyTDcuOTk0LDIwMS44NTIgICBDMi42NjQsMjA3LjE4MSwwLDIxMy42NTQsMCwyMjEuMjY5YzAsNy42MDksMi42NjQsMTQuMDg4LDcuOTk0LDE5LjQxNmwxMDMuMzUxLDEwMy4zNDlsMzguODMxLDM4LjgyOCAgIGM1LjMyNyw1LjMzMiwxMS44LDcuOTk0LDE5LjQxNCw3Ljk5NGM3LjYxMSwwLDE0LjA4NC0yLjY2OSwxOS40MTQtNy45OTRsMzguODMtMzguODI4TDQzNC41MzksMTM3LjMzICAgYzUuMzI1LTUuMzMsNy45OTQtMTEuODAyLDcuOTk0LTE5LjQxN0M0NDIuNTM3LDExMC4zMDIsNDM5Ljg2NCwxMDMuODI5LDQzNC41MzksOTguNDk5eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                                                <b>{{plan.selected ? 'Added to cart' : 'Add to cart'}}</b></button>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="nds-text-align_center" ng-if="loadMorePlansVisible()" <button ng-hide="lastResultReached"
+                ng-click="getMorePlans()" class="nds-button vloc-link"> Load more
+                Programs</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,553 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Member-Responsibility_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "FAMILYISA": "3000",
+        "FAMOUTPOC": "9000",
+        "INDVOUTPOCMAX": "3000",
+        "INDVP1ISA": "2000",
+        "INDVP1OUTPOC": "6000",
+        "INOUTNETSHARPER": null,
+        "INOUTNETSHARPER2": null,
+        "INOUTNETSHARPER3": null,
+        "ISAAMOUNT": "1000",
+        "OUTPOCKETMAXIMUM": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "LEV2PROGATTR",
+                "Name": "Level 2 Program Attributes",
+                "displaySequence": 4,
+                "id": "a0y8A000001oo86QAA",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0z8A00000105ZsQAI",
+                            "cloneable": true,
+                            "code": "ISAAMOUNT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Individual Sharing Amount (ISA)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$1,000",
+                                    "readonly": false,
+                                    "value": "1000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$2,500",
+                                    "readonly": false,
+                                    "value": "2500"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$5,000",
+                                    "readonly": false,
+                                    "value": "5000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$7,500",
+                                    "readonly": false,
+                                    "value": "7500"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "$10,000",
+                                    "readonly": false,
+                                    "value": "10000"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000010r6tQAA",
+                            "cloneable": true,
+                            "code": "INDVP1ISA",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Individual + 1 ISA",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "$2,000",
+                                    "readonly": false,
+                                    "value": "2000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$5,000",
+                                    "readonly": false,
+                                    "value": "5000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$10,000",
+                                    "readonly": false,
+                                    "value": "10000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$20,000",
+                                    "readonly": false,
+                                    "value": "20000"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000010r6uQAA",
+                            "cloneable": true,
+                            "code": "FAMILYISA",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Family ISA",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "$3,000",
+                                    "readonly": false,
+                                    "value": "3000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$7,500",
+                                    "readonly": false,
+                                    "value": "7500"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$15,000",
+                                    "readonly": false,
+                                    "value": "15000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$30,000",
+                                    "readonly": false,
+                                    "value": "30000"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000010r7RQAQ",
+                            "cloneable": true,
+                            "code": "INDVOUTPOCMAX",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Individual Out of Pocket Max",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$3,000",
+                                    "readonly": false,
+                                    "value": "3000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$7,500",
+                                    "readonly": false,
+                                    "value": "7500"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$15,000",
+                                    "readonly": false,
+                                    "value": "15000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$30,000",
+                                    "readonly": false,
+                                    "value": "30000"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000010r7MQAQ",
+                            "cloneable": true,
+                            "code": "INOUTNETSHARPER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 4,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "textarea",
+                            "isNotTranslatable": false,
+                            "label": "In and Out of Network Sharing Percentages",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000015UQEQA2",
+                            "cloneable": true,
+                            "code": "INOUTNETSHARPER2",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "textarea",
+                            "isNotTranslatable": false,
+                            "label": "In and Out of Network Sharing Percentages (1/2)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000015UQJQA2",
+                            "cloneable": true,
+                            "code": "INOUTNETSHARPER3",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 6,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "textarea",
+                            "isNotTranslatable": false,
+                            "label": "In and Out of Network Sharing Percentages (2/2)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000010r7WQAQ",
+                            "cloneable": true,
+                            "code": "INDVP1OUTPOC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 7,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Individual + 1 Out of Pocket",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "$6,000",
+                                    "readonly": false,
+                                    "value": "6000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$15,000",
+                                    "readonly": false,
+                                    "value": "15000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$30,000",
+                                    "readonly": false,
+                                    "value": "30000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$60,000",
+                                    "readonly": false,
+                                    "value": "60000"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000010r7bQAA",
+                            "cloneable": true,
+                            "code": "FAMOUTPOC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 8,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Family Out of Pocket",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "$9,000",
+                                    "readonly": false,
+                                    "value": "9000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$22,500",
+                                    "readonly": false,
+                                    "value": "22500"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$45,000",
+                                    "readonly": false,
+                                    "value": "45000"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$90,000",
+                                    "readonly": false,
+                                    "value": "90000"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001L586QAC",
+                            "cloneable": true,
+                            "code": "OUTPOCKETMAXIMUM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 9,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Out of Pocket Maximum",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 10
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalGroupKey__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "af9a315f-5213-c524-f258-f7060845936e",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "",
+    "%vlocity_namespace%__MarketSegment__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "CoverageReserve",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Term__c": "Annual",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "CanUseQuantitySchedule": true,
+    "CanUseRevenueSchedule": true,
+    "Catalog__c": "",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "ISA__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Member Responsibility",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "Organization_Code__c": "",
+    "PricebookEntry": "Member-Responsibility_PricebookEntries.json",
+    "ProductCode": "MEMBRESP",
+    "Program__c": "",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "CoverageSpec",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/CoverageSpec",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Member Responsibility",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "af9a315f-5213-c524-f258-f7060845936e",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "af9a315f-5213-c524-f258-f7060845936e",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/af9a315f-5213-c524-f258-f7060845936e",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "MEMBRESP",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/af9a315f-5213-c524-f258-f7060845936e"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/af9a315f-5213-c524-f258-f7060845936e"
+}

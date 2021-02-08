@@ -1,0 +1,95 @@
+{
+    "Alerts": [
+    ],
+    "GlobalKey__c": "profile-account-info-slds/Vlocity/1495043462802",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": false,
+    "filter": {
+    },
+    "states": [
+        {
+            "alerts": [
+            ],
+            "blankStateCheck": false,
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['BillingAddress']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Billing Address",
+                    "name": "['BillingAddress']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "fieldType": "standard",
+                    "label": "Phone",
+                    "name": "['Phone']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Email']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Email",
+                    "name": "['Email']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['PersonBirthdate']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Birthday",
+                    "name": "['PersonBirthdate']",
+                    "type": "date"
+                }
+            ],
+            "filter": "$scope.data.status == 'active'",
+            "flyout": "",
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "leftAccountInfoState",
+                "Id": "0Rbf4000000GoWsCAK",
+                "MasterLabel": "left-account-info-state",
+                "name": "leftAccountInfoState"
+            },
+            "name": "active",
+            "smartAction": {
+            },
+            "templateUrl": "left-account-info-slds"
+        }
+    ],
+    "templates": [
+        {
+            "filter": "$scope.data.status == 'active'",
+            "templateUrl": "left-account-info-slds"
+        },
+        {
+            "filter": "$scope.data.status == 'non-existent'",
+            "templateUrl": "left-account-info-slds"
+        }
+    ],
+    "title": "Profile"
+}

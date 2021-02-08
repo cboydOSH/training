@@ -1,0 +1,252 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Member-Services-not-owned-or-operated-by-OneShare-Health_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "BEHMENHEALTH": "24/7 Crisis Management - 4 Counseling Sessions",
+        "PRESDISCPROG": null,
+        "SPPRTTOOLSDISCS": "A wide range of work-life balance tools and discounts to help with a variety of challenges, such as Childcare, Elder care, Legal forms and services, ID theft  and more.",
+        "TELEMEDICINE": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "LEV2PROGATTR",
+                "Name": "Level 2 Program Attributes",
+                "displaySequence": 4,
+                "id": "a0y8A000001oo86QAA",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0z8A00000105a6QAA",
+                            "cloneable": true,
+                            "code": "TELEMEDICINE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": true,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Telemedicine (not owned or operated by OneShare Health)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105aDQAQ",
+                            "cloneable": true,
+                            "code": "BEHMENHEALTH",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Behavioral / Mental Health (not owned or operated by OneShare Health)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001KvvjQAC",
+                            "cloneable": true,
+                            "code": "SPPRTTOOLSDISCS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Support Tools and Discounts",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000015WGpQAM",
+                            "cloneable": true,
+                            "code": "PRESDISCPROG",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": true,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Prescriptions (Discount Program is not owned or operated by OnesShare Health)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 4
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{\n  \"TELEMEDICINE\" : {\n    \"attributeRules\" : [ {\n      \"ruleType\" : \"Set Value\",\n      \"expression\" : \"IF(%MEMBER.STATE% == \\\"MA\\\" ,true,false)\",\n      \"valueExpression\" : \"\\\"$0 Visit Fee (Teladoc) 24/7.  Talk to a doctor by phone or online video to get a diagnosis, treatment options and prescription, if medically necessary.\\\"\",\n      \"actions\" : {\n        \"Set Value\" : {\n          \"rest\" : {\n            \"params\" : { },\n            \"method\" : null,\n            \"link\" : null\n          },\n          \"remote\" : {\n            \"params\" : { }\n          },\n          \"client\" : {\n            \"params\" : { }\n          }\n        }\n      }\n    }, {\n      \"ruleType\" : \"Set Value\",\n      \"expression\" : \"IF(%MEMBER.STATE% != \\\"MA\\\" ,true,false)\",\n      \"valueExpression\" : \"\\\"Doctor Access 24/7 ( Consult Fee 100% Shared). Talk to a doctor by phone or online video to get a diagnosis, treatment options and prescription, if medically necessary.\\\"\",\n      \"actions\" : {\n        \"Set Value\" : {\n          \"rest\" : {\n            \"params\" : { },\n            \"method\" : null,\n            \"link\" : null\n          },\n          \"remote\" : {\n            \"params\" : { }\n          },\n          \"client\" : {\n            \"params\" : { }\n          }\n        }\n      }\n    } ]\n  },\n  \"PRESDISCPROG\" : {\n    \"attributeRules\" : [ {\n      \"ruleType\" : \"Set Value\",\n      \"expression\" : \"IF(%MEMBER.STATE% == \\\"WA\\\" ,true,false)\",\n      \"valueExpression\" : \"\\\"Once a Member has paid $1,500 in prescription discounts through EnvisionRX, the Member is eligible for sharing of 50% of the expenses for generic or brand name prescription drugs, for the remainder of the Program year, up to $3,000 maximum.\\\"\",\n      \"actions\" : {\n        \"Set Value\" : {\n          \"rest\" : {\n            \"params\" : { },\n            \"method\" : null,\n            \"link\" : null\n          },\n          \"remote\" : {\n            \"params\" : { }\n          },\n          \"client\" : {\n            \"params\" : { }\n          }\n        }\n      }\n    }, {\n      \"ruleType\" : \"Set Value\",\n      \"expression\" : \"IF(%MEMBER.STATE% != \\\"WA\\\" ,true,false)\",\n      \"valueExpression\" : \"\\\"Prescription Drug Discounts on Generic and Brand Name \\\"\",\n      \"actions\" : {\n        \"Set Value\" : {\n          \"rest\" : {\n            \"params\" : { },\n            \"method\" : null,\n            \"link\" : null\n          },\n          \"remote\" : {\n            \"params\" : { }\n          },\n          \"client\" : {\n            \"params\" : { }\n          }\n        }\n      }\n    } ]\n  }\n}",
+    "%vlocity_namespace%__Availability__c": "AK;AL;AR;AZ;CA;CO;CT;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MA;MD;ME;MI;MN;MO;MS;MT;NC;ND;NE;NH;NJ;NM;NV;NY;OH;OK;OR;PA;RI;SC;SD;TN;TX;UT;VA;VT;WA;WI;WV;WY",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalGroupKey__c": "9eec2af6-acce-b07a-2f46-5825a4908332",
+    "%vlocity_namespace%__GlobalKey__c": "224931af-9b37-f6dc-97e0-1f6767c3b137",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "",
+    "%vlocity_namespace%__MarketSegment__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "Product",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "CoverageReserve",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Term__c": "",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "CanUseQuantitySchedule": true,
+    "CanUseRevenueSchedule": true,
+    "Catalog__c": "",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "ISA__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Member Services (not owned or operated by OneShare Health)",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "Organization_Code__c": "",
+    "PricebookEntry": "Member-Services-not-owned-or-operated-by-OneShare-Health_PricebookEntries.json",
+    "ProductCode": "MMBRSRVCS",
+    "Program__c": "",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Member Services (not owned or operated by OneShare Health)",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "224931af-9b37-f6dc-97e0-1f6767c3b137",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "224931af-9b37-f6dc-97e0-1f6767c3b137",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/224931af-9b37-f6dc-97e0-1f6767c3b137",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "MMBRSRVCS",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/224931af-9b37-f6dc-97e0-1f6767c3b137"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/224931af-9b37-f6dc-97e0-1f6767c3b137"
+}

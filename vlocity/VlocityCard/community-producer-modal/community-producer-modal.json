@@ -1,0 +1,39 @@
+{
+    "GlobalKey__c": "community-producer-modal/OneShare Health, LLC/1/1591908787088",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "communityProducerModal",
+                "Id": "0Rb8A000000FHckSAG",
+                "MasterLabel": "CommunityProducerModal",
+                "name": "communityProducerModal"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "GoBackStep": null,
+    "UpdateMemberDetailsStep": {
+        "Email": "TEST@213123.com",
+        "TAAddressGoogle-Block": {
+            "TAAddressGoogle": "9825 Hospital Dr, Maple Grove, MN 55369, USA",
+            "TxtAddress": "9825 Hospital Drive",
+            "TxtCity": "Maple Grove",
+            "TxtCountry": "United States",
+            "TxtState": "MN",
+            "TxtZipCode": "55369",
+            "TxtbuildingSuiteApartment": "sdfsdf"
+        },
+        "Telephone": "1231231231",
+        "TxtFirstName": "Eduardo",
+        "TxtLastName": "Night2"
+    },
+    "timeStamp": "2020-08-05T17:16:35.354Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A0000059Ru2QAE",
+    "userName": "vicente.martinez@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": "-300"
+}

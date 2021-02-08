@@ -1,0 +1,31 @@
+{
+    "input": [
+        {
+            "Age": "50",
+            "Availability__c": null,
+            "ISA": "5000",
+            "MEMBER.instanceKey": "1",
+            "Program": "OSHCAT150",
+            "State": "NY",
+            "SubType__c": null,
+            "Type__c": null,
+            "parentProdKey": "01t8A0000043pgeQAA",
+            "productKey": "01t8A0000043pgeQAA"
+        }
+    ],
+    "output": [
+        {
+            "calculationResults": [
+                {
+                    "Family": 1001.99,
+                    "FamilyDiff": 1116.43,
+                    "ID": "0",
+                    "Member": 419.06,
+                    "MemberDiff": 378.07,
+                    "MemberPlusOne": 457.04,
+                    "MemberPlusOneDiff": 798.04
+                }
+            ]
+        }
+    ]
+}

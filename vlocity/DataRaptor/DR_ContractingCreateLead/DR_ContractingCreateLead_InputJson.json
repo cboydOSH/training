@@ -1,0 +1,47 @@
+{
+    "ContextId": "",
+    "ProducerInformation": {
+        "ContractLevel": "2",
+        "ContractName": "Wena Zapallo",
+        "ContractType": "Affinity",
+        "DemographicGroups": "English",
+        "Email": "wena@zapallo.com",
+        "Ethnicity": "White",
+        "FirstName": "Wena",
+        "LastName": "Zapallo",
+        "Phone": "1212121212",
+        "PreferredLanguage": "English",
+        "TA_AddressGoogle-Block": {
+            "AddressType": "Business",
+            "City": "Los Angeles",
+            "Country": "United States",
+            "State/Province": "CA",
+            "Street": "1221 West 3rd Street",
+            "TA_AddressGoogle": "1221 W 3rd St, Los Angeles, CA 90017, USA",
+            "Zip/PostalCode": "90017"
+        },
+        "TA_ParentAccount-Block": {
+            "TA_ParentAccount": "Chen & Associates Insurance Services, LLC"
+        }
+    },
+    "SalesLeadID": "0124P000000uPoUQAU",
+    "TA_AddressGoogle-Block": {
+        "administrative_area_level_2": "Los Angeles County"
+    },
+    "TA_ParentAccount-Block": {
+        "Id": "0018A00000UGcOiQAL"
+    },
+    "id": "a628A0000002AYNQA2",
+    "isdtp": "p1",
+    "layout": "newport",
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "timeStamp": "2021-01-20T23:42:01.282Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000004QVJdQAO",
+    "userName": "andres.deus@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -360,
+    "vlcPersistentComponent": {
+    }
+}

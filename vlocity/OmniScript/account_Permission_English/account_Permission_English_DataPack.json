@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "account_Permission_English_Element_SVProductFilter.json",
+        "account_Permission_English_Element_DREX_GetProductInfo.json",
+        "account_Permission_English_Element_DREX_GetAccountProductPrivileges.json",
+        "account_Permission_English_Element_productSecurity.json",
+        "account_Permission_English_Element_TextBlock2.json",
+        "account_Permission_English_Element_titleProductSecurity.json",
+        "account_Permission_English_Element_checkProductSecurity.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": false,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "English",
+    "%vlocity_namespace%__LastPreviewPage__c": "Newport",
+    "%vlocity_namespace%__PropertySet__c": "account_Permission_English_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "Permission",
+    "%vlocity_namespace%__Type__c": "account",
+    "Name": "oshprivilegie",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/account/Permission/English"
+}

@@ -7,5 +7,6 @@
     "VlocityUITemplate/DocuSignSignatureTemplate",
     "VlocityUITemplate/OSH-enroll-disclaimersText",
     "VlocityUITemplate/object-document-creation-docx-template-test",
-    "VlocityUITemplate/omniNewport-vlcCheckboxModifyForDocusignEnroll"
+    "VlocityUITemplate/omniNewport-vlcCheckboxModifyForDocusignEnroll",
+    "VlocityUITemplate/omniNewport-vlcStepEditedforOSHDocumentGenerator"
 ]

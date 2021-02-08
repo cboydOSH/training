@@ -1,0 +1,30 @@
+{
+    "input_1": [
+        {
+            "Age": "60",
+            "Availability__c": null,
+            "ISA": "10000",
+            "MEMBER.instanceKey": "1",
+            "Program": "OSHCAT150",
+            "State": "WY",
+            "SubType__c": null,
+            "Type__c": null,
+            "parentProdKey": "01t8A0000043pgeQAA",
+            "productKey": "01t8A0000043pgeQAA"
+        }
+    ],
+    "input_2": [
+        {
+            "Age": "30",
+            "Availability__c": null,
+            "ISA": "10000",
+            "MEMBER.instanceKey": "1",
+            "Program": "OSHCOMPBASIC",
+            "State": "LA",
+            "SubType__c": null,
+            "Type__c": null,
+            "parentProdKey": "01t8A0000049Yz8QAE",
+            "productKey": "01t8A0000049Yz8QAE"
+        }
+    ]
+}

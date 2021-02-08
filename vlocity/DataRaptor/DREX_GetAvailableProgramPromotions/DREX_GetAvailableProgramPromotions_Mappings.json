@@ -1,0 +1,48 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Promotion",
+        "%vlocity_namespace%__FilterGroup__c": 0,
+        "%vlocity_namespace%__FilterOperator__c": "INCLUDES",
+        "%vlocity_namespace%__FilterValue__c": "ProductCode",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Promotions_Program_Metadata__c",
+        "%vlocity_namespace%__InterfaceObjectLookupOrder__c": 1,
+        "%vlocity_namespace%__InterfaceObjectName__c": "Program_Promotion__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DREX_GetAvailableProgramPromotionsCustom1996",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DREX_GetAvailableProgramPromotions",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 1,
+        "%vlocity_namespace%__FormulaResultPath__c": "applicablePromotion",
+        "%vlocity_namespace%__Formula__c": "DESERIALIZE(Promotion:Promotions_Program_Metadata__c)",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DREX_GetAvailableProgramPromotionsCustom6878",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DREX_GetAvailableProgramPromotions",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "ApplicablePromotions",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "applicablePromotion",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DREX_GetAvailableProgramPromotionsCustom6180",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DREX_GetAvailableProgramPromotions",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

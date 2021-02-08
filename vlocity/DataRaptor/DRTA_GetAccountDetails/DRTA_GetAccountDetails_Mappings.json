@@ -1,0 +1,82 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 1,
+        "%vlocity_namespace%__FormulaResultPath__c": "passwordGenerated",
+        "%vlocity_namespace%__Formula__c": "CONCAT('OSH', 'temp', '.', 'pass2020', %PasswordToken%)",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_GetAccountDetailsCustom2071",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_GetAccountDetails",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "CreateAccount:ChooseUsername",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "AboutYou:blockAboutYou:emailAddress",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_GetAccountDetailsCustom1651",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_GetAccountDetails",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "CreateAccount:Email",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "AboutYou:blockAboutYou:emailAddress",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_GetAccountDetailsCustom8720",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_GetAccountDetails",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "CreateAccount:FirstName",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "AboutYou:blockAboutYou:firstName",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_GetAccountDetailsCustom3231",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_GetAccountDetails",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "CreateAccount:LastName",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "AboutYou:blockAboutYou:lastName",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_GetAccountDetailsCustom5026",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_GetAccountDetails",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "CreateAccount:Password",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "passwordGenerated",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_GetAccountDetailsCustom9318",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_GetAccountDetails",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

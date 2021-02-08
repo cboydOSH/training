@@ -1,0 +1,25 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Used to get the corresponding guidebook and displaying it opened on page 7.",
+    "%vlocity_namespace%__CustomJavaScript__c": "Console_guidebook_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "Console_guidebook_Element_DREX_GetAsset.json",
+        "Console_guidebook_Element_DREX_KnowledgeGuidebook.json",
+        "Console_guidebook_Element_TransformURL.json",
+        "Console_guidebook_Element_Response.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "Console_guidebook",
+    "%vlocity_namespace%__PropertySet__c": "Console_guidebook_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "guidebook",
+    "%vlocity_namespace%__Type__c": "Console",
+    "Name": "IP_GetKnowledgeGuidebook",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Console/guidebook/Procedure"
+}

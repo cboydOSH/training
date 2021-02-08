@@ -1,0 +1,54 @@
+{
+    "Alerts": [
+    ],
+    "dataSource": {
+        "type": null
+    },
+    "filter": {
+        "attributes": {
+            "type": "Account"
+        }
+    },
+    "states": [
+        {
+            "alerts": [
+            ],
+            "blankStateCheck": false,
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status == 'active'",
+            "flyout": "",
+            "isSmartAction": false,
+            "name": "active",
+            "smartAction": {
+            },
+            "templateUrl": "left-account-info-osh"
+        }
+    ],
+    "templates": [
+        {
+            "filter": "$scope.data.status == 'active'",
+            "templateUrl": "left-account-info"
+        },
+        {
+            "filter": "$scope.data.status == 'non-existent'",
+            "templateUrl": "left-account-info"
+        }
+    ],
+    "title": "Profile"
+}

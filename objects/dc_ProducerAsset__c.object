@@ -203,7 +203,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>ProducerAssets</pluralLabel>
-    <searchLayouts />
+    <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

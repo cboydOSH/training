@@ -1,0 +1,30 @@
+{
+    "Cards": [
+        "testcard"
+    ],
+    "GlobalKey__c": "TestLwcCard/1/OneShareHealth/1605812823771",
+    "componentName": "cfTestLwcCard",
+    "dataSource": {
+        "type": "Query",
+        "value": {
+            "body": "{}",
+            "ipMethod": "Get_AccountDetails",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            }
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvas1x",
+        "Id": "0Rb8A000000ESELSA4",
+        "MasterLabel": "cardCanvas1x",
+        "NamespacePrefix": "%vlocity_namespace%",
+        "name": "cardCanvas1x"
+    },
+    "previewType": "runTime",
+    "repeatCards": false,
+    "workspace": [
+        "testcard/OneShareHealth/1/1605812860221"
+    ]
+}

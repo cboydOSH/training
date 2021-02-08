@@ -1,0 +1,54 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "birthdate",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Step1:birthdate",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "vlocityTestDRTransformPDFCustom776",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "vlocityTestDRTransformPDF",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "firstName",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Step1:firstName",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "vlocityTestDRTransformPDFCustom3549",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "vlocityTestDRTransformPDF",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "lastName",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Step1:lastName",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "vlocityTestDRTransformPDFCustom434",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "vlocityTestDRTransformPDF",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "telephone",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Step1:telephone",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "vlocityTestDRTransformPDFCustom1155",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "vlocityTestDRTransformPDF",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

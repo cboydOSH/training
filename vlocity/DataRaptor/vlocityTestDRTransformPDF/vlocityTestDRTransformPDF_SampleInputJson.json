@@ -1,0 +1,19 @@
+{
+    "ContextId": "",
+    "Step1": {
+        "birthdate": "1979-07-24",
+        "firstName": "Scott",
+        "lastName": "Moore",
+        "telephone": "2121212121"
+    },
+    "id": "a628A0000001DoeQAE",
+    "layout": "lightning",
+    "timeStamp": "2020-09-15T21:08:50.495Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000004QVJdQAO",
+    "userName": "andres.deus@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}

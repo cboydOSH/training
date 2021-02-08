@@ -1,0 +1,85 @@
+{
+    "AboutYou": {
+        "blockAboutYou": {
+            "emailAddress": "test@test.com",
+            "extension": "222222",
+            "firstName": "first name",
+            "lastName": "last name",
+            "prefix": "prefix",
+            "suffix": "V",
+            "title": "test",
+            "workPhoneNumber": "2222222222"
+        }
+    },
+    "ContextId": "",
+    "CreateAccount": {
+        "ChooseUsername": "test@test.com",
+        "Email": "test@test.com",
+        "FirstName": "first name",
+        "LastName": "last name",
+        "Password": "97"
+    },
+    "PasswordToken": "97",
+    "aboutYourOffice": {
+        "blockAboutYourOffice": {
+            "HowClassifyOrganization": "Provider",
+            "practiceFacilityName": "asdasdasd"
+        },
+        "mailingAddress": {
+            "address1POBox": null,
+            "address2mailing": null,
+            "cityMailing": null,
+            "maillingAddressasPhysicalAddress": false,
+            "stateMailing": null,
+            "zipMailing": null
+        },
+        "mainOfficePhoneNumber": "2222222222",
+        "physicalAddress": {
+            "address1": "Constituyentes 862 - 2",
+            "address2": "Topochico, Saltillo, Coah.",
+            "city": "Saltillo",
+            "state": "MA",
+            "zip": "25284"
+        },
+        "primaryTaxID": "222222222"
+    },
+    "id": "a5JR0000000KZhsMAG",
+    "initGeneralUrl": false,
+    "isdtp": "p1",
+    "layout": "newport",
+    "licenseAgreement": {
+        "accept": true
+    },
+    "securityVerification": {
+        "nooption": null,
+        "service180DaysTaxId": "Yes",
+        "yesoption": {
+            "Member": {
+                "dateBirth": null,
+                "firstNameYesOption": null,
+                "lastNameYesOption": null,
+                "memberID": null
+            },
+            "expressVerificationPreviousShareRequest": {
+                "shareRequestDetails": {
+                    "iDontKnowRequestNumber": false,
+                    "shareRequestNumber": "22222222222222222222222"
+                }
+            },
+            "providers": {
+                "billingEntityTaxID": "222222222",
+                "servicingProviderNPI": null
+            }
+        }
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvlocity--vlocity-ins.visualforce.com",
+    "timeStamp": "2020-04-16T22:08:10.096Z",
+    "userCurrencyCode": "USD",
+    "userId": "005R0000005OVknIAG",
+    "userName": "vicente.martinez@oneshare.arcsona.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "%vlocity_namespace%__CustomJavaScript__c": "Console2_Hippa2_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "Console2_Hippa2_Element_DREX_GetDependents.json",
+        "Console2_Hippa2_Element_Response.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "Console2_Hippa2",
+    "%vlocity_namespace%__PropertySet__c": "Console2_Hippa2_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "Hippa2",
+    "%vlocity_namespace%__Type__c": "Console2",
+    "Name": "IP_ConosoleHipaaCard2",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Console2/Hippa2/Procedure"
+}

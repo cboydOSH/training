@@ -1,0 +1,40 @@
+{
+    "GlobalKey__c": "communityProducerCard/OneShare Health, LLC/1/1591819866936",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "communityProducerCards",
+                "Id": "0Rb8A000000FG7QSAW",
+                "MasterLabel": "CommunityProducerCards",
+                "name": "communityProducerCards"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ]
+}

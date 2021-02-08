@@ -1,0 +1,25 @@
+{
+    "Cards": [
+        "provider-hero-section"
+    ],
+    "componentName": "cfProviderHomePage",
+    "dataSource": {
+        "type": null
+    },
+    "previewType": "runTime",
+    "sessionVars": [
+        {
+            "name": "disableSearchBar",
+            "val": "true"
+        }
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "card-canvas-borker-1x-slds"
+        }
+    },
+    "workspace": [
+        "provider-hero-section/OneShare Health, LLC/2/1584626188966",
+        "provider-hero-section/OneShare Health, LLC/3/1584709868792"
+    ]
+}

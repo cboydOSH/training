@@ -1,0 +1,43 @@
+{
+    "GlobalKey__c": "community-member-modal/OneShare Health, LLC/1/1593184194899",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "cardActiveState",
+                "Id": "0Rb8A000000ESEKSA4",
+                "MasterLabel": "card-active-state",
+                "NamespacePrefix": "%vlocity_namespace%",
+                "attributes": {
+                    "type": "LightningComponentBundle",
+                    "url": "/services/data/v46.0/tooling/sobjects/LightningComponentBundle/0Rb8A000000ESEKSA4"
+                }
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ]
+}

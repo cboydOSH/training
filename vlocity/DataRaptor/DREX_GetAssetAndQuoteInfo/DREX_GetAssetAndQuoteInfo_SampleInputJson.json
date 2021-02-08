@@ -1,0 +1,19 @@
+{
+    "UpdateMemberDetailsStep": {
+        "AccountId": "0018A00000b1g0SQAQ",
+        "ContactId": "0038A00000Xia4CQAR",
+        "Email": "paymenttesting3@mailinator.com",
+        "TAAddressGoogle-Block": {
+            "TAAddressGoogle": "897 2nd St, Pearl City, HI 96782, USA",
+            "TxtAddress": "897 2nd Street",
+            "TxtCity": "Pearl City",
+            "TxtCountry": "United States",
+            "TxtState": "HI",
+            "TxtZipCode": "96782",
+            "TxtbuildingSuiteApartment": "32"
+        },
+        "Telephone": "2354456653",
+        "TxtFirstName": "Barbon",
+        "TxtLastName": "Covid"
+    }
+}

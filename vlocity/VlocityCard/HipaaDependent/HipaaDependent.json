@@ -1,0 +1,135 @@
+{
+    "GlobalKey__c": "HipaaDependent/OneShare Health, LLC/1/1609435418824",
+    "dataSource": {
+        "type": null,
+        "value": {
+            "resultVar": "['Accounts']"
+        }
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "leftIcon",
+            "val": "standard:contact"
+        }
+    ],
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "customLwc": false,
+            "customLwcAttributes": [
+                {
+                    "name": "header icon",
+                    "val": "standard:account"
+                }
+            ],
+            "customLwcRepeat": true,
+            "definedActions": {
+                "actions": [
+                    {
+                        "Record": {
+                            "targetAction": "view",
+                            "targetId": "['Id']",
+                            "targetName": "Account",
+                            "targetType": "Record"
+                        },
+                        "collapse": true,
+                        "displayName": "View Dependent",
+                        "hasExtraParams": false,
+                        "id": "ViewDependent",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "targetType": "Record",
+                        "type": "Custom",
+                        "url": "/apex/",
+                        "vlocityIcon": "standard:contact"
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['Name']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "",
+                    "name": "['Name']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Address']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Address",
+                    "name": "['Address']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Phone']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Phone",
+                    "name": "['Phone']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Type']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Authorization Type",
+                    "name": "['Type']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['SubType']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Details",
+                    "name": "['SubType']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Until']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Effective",
+                    "name": "['Until']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "wideCard",
+                "Id": "0Rb8A000000ESJ9SAO",
+                "MasterLabel": "wideCard",
+                "NamespacePrefix": "%vlocity_namespace%",
+                "name": "wideCard"
+            },
+            "name": "Active",
+            "smartAction": {
+            },
+            "templateUrl": "card-active"
+        }
+    ],
+    "title": "Dependent"
+}

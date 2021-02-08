@@ -1,0 +1,33 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Selectable rows + PDF",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_SetValues1.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_PreSearchAccountsTemp.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_expenseSharingRequests.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_searchBy.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_TransactionAmount.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_MemberId.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_MemberName.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_DateOfBirth.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_DateOfService.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_SharingRequestNumber.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_IPSearchExpenseSharingRequests.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_expenseSharingRequestsTable.json",
+        "Provider-Portal_Expense-Sharing-Requests_English_Element_PDFAction1.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": false,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "English",
+    "%vlocity_namespace%__LastPreviewPage__c": "Newport",
+    "%vlocity_namespace%__PropertySet__c": "Provider-Portal_Expense-Sharing-Requests_English_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "Expense Sharing Requests",
+    "%vlocity_namespace%__Type__c": "Provider Portal",
+    "Name": "Provider Portal Expense Sharing Requests",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Provider Portal/Expense Sharing Requests/English"
+}

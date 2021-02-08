@@ -1,0 +1,16 @@
+{
+    "input_1": [
+        {
+            "Age": "50",
+            "Availability__c": null,
+            "ISA": "5000",
+            "MEMBER.instanceKey": "1",
+            "Program": "OSHCAT150",
+            "State": "AK",
+            "SubType__c": null,
+            "Type__c": null,
+            "parentProdKey": "01t8A0000043pgeQAA",
+            "productKey": "01t8A0000043pgeQAA"
+        }
+    ]
+}

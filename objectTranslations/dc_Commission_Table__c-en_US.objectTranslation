@@ -9,53 +9,46 @@
         <value>Commission Tables</value>
     </caseValues>
     <fields>
-        <label></label>
+        <label><!-- Asset --></label>
         <name>Asset__c</name>
-        <relationshipLabel></relationshipLabel>
+        <relationshipLabel><!-- Commission Tables --></relationshipLabel>
     </fields>
     <fields>
-        <label></label>
+        <label><!-- End Date --></label>
         <name>End_Date__c</name>
     </fields>
     <fields>
-        <label></label>
+        <label><!-- Last Payment Date --></label>
         <name>Last_Payment_Date__c</name>
     </fields>
     <fields>
-        <label></label>
+        <label><!-- Product Contract --></label>
         <name>Product_Contract__c</name>
-        <relationshipLabel></relationshipLabel>
+        <relationshipLabel><!-- Commission Tables --></relationshipLabel>
     </fields>
     <fields>
-        <label></label>
+        <label><!-- Start Date --></label>
         <name>Start_Date__c</name>
     </fields>
     <fields>
-        <label></label>
+        <label><!-- Status --></label>
         <name>Status__c</name>
         <picklistValues>
             <masterLabel>Active</masterLabel>
-            <translation></translation>
+            <translation><!-- Active --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Inactive</masterLabel>
-            <translation></translation>
+            <translation><!-- Inactive --></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label></label>
+        <label><!-- Total Producer Commissions --></label>
         <name>Total_Producer_Commissions__c</name>
     </fields>
-    <layouts>
-        <layout>Commission Table Layout</layout>
-        <sections>
-            <label></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
     <startsWith>Consonant</startsWith>
     <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage><!-- Total Producer Commissions cannot exceed 32%. --></errorMessage>
         <name>Total_Commissions_percentage_limit</name>
     </validationRules>
 </CustomObjectTranslation>

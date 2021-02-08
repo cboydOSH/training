@@ -1,0 +1,56 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 1,
+        "%vlocity_namespace%__FormulaResultPath__c": "ISAAMOUNT",
+        "%vlocity_namespace%__Formula__c": "FILTER(LIST(%planSelection:selectedPlans:attributeCategories:records:productAttributes:records%), 'code =\"ISAAMT\"')",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_OSH_INDV_transForCPGetProductCodeCustom9740",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_OSH_INDV_transForCPGetProductCode",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "input:ISA Amount",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "ISAAMOUNT:userValues",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_OSH_INDV_transForCPGetProductCodeCustom9863",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_OSH_INDV_transForCPGetProductCode",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "input:Product Code",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "planSelection:selectedPlans:ProductCode",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_OSH_INDV_transForCPGetProductCodeCustom3217",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_OSH_INDV_transForCPGetProductCode",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "input:State",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Welcome:TAAddressGoogle-Block:state",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_OSH_INDV_transForCPGetProductCodeCustom9117",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_OSH_INDV_transForCPGetProductCode",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

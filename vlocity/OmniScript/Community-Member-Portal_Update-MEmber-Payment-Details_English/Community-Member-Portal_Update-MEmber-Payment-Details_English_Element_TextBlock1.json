@@ -1,0 +1,40 @@
+{
+    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Update Payment Information",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Community Member Portal/Update MEmber Payment Details/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Update Payment Information",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Community Member Portal/Update MEmber Payment Details/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "UpdatePaymentInformationStep",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Community Member Portal/Update MEmber Payment Details/English/UpdatePaymentInformationStep",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "UpdatePaymentInformationStep",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": "TextBlock1",
+        "sanitize": false,
+        "show": null,
+        "text": "<p><br />\"ContextId\": %ContextId%,<br />\"timeStamp\": %timeStamp%,<br />\"userId\": %userId%,<br />\"userName\": %userName%<br />\"userProfile\": %userProfile%,<br />\"userTimeZone\": -300,<br />\"userCurrencyCode\": %userCurrencyCode%,<br />\"sfdcIFrameOrigin\": %sfdcIFrameOrigin%,<br />\"sfdcIFrameHost\": %sfdcIFrameHost%,<br />\"layout\": %layout%,<br />\"id\": \"%id%\",<br />\"PrevChargentOrder\":%PrevChargentOrder%,</p>\n<p>\"NewChargentOrder\":%NewChargentOrder%,</p>\n<p>\"AccountDetails\":%AccountDetails%</p>",
+        "textKey": ""
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Text Block",
+    "Name": "TextBlock1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Community Member Portal/Update MEmber Payment Details/English/TextBlock1"
+}

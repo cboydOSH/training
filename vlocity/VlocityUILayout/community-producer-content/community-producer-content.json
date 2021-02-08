@@ -1,0 +1,25 @@
+{
+    "Cards": [
+        "communityProducerContent"
+    ],
+    "GlobalKey__c": "community-producer-content/1/OneShare Health, LLC/1594161867156",
+    "componentName": "cfCommunityProducerContent",
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{}"
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvas1x",
+        "Id": "0Rb8A000000ESELSA4",
+        "MasterLabel": "cardCanvas1x",
+        "name": "cardCanvas1x"
+    },
+    "previewType": "runTime",
+    "repeatCards": false,
+    "workspace": [
+        "communityProducerContent/OneShare Health, LLC/1/1594161943733"
+    ]
+}

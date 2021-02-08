@@ -1,0 +1,89 @@
+{
+    "AboutYou": {
+        "blockAboutYou": {
+            "emailAddress": null,
+            "extension": null,
+            "firstName": null,
+            "lastName": null,
+            "prefix": null,
+            "suffix": null,
+            "title": null,
+            "workPhoneNumber": null
+        }
+    },
+    "ContextId": null,
+    "RegistrationComplete": {
+    },
+    "aboutYourOffice": {
+        "blockAboutYourOffice": {
+            "HowClassifyOrganization": null,
+            "practiceFacilityName": null
+        },
+        "mailingAddress": {
+            "address1POBox": null,
+            "address2mailing": null,
+            "cityMailing": null,
+            "maillingAddressasPhysicalAddress": null,
+            "stateMailing": null,
+            "zipMailing": null
+        },
+        "mainOfficePhoneNumber": null,
+        "physicalAddress": {
+            "address1": null,
+            "address2": null,
+            "city": null,
+            "state": null,
+            "zip": null
+        },
+        "primaryTaxID": null
+    },
+    "alternativeVerification": {
+        "pleaseEnterTheCodeWeSentYou": null
+    },
+    "licenseAgreement": {
+        "accept": null
+    },
+    "register": {
+    },
+    "securityVerification": {
+        "nooption": {
+        },
+        "service180DaysTaxId": null,
+        "yesoption": {
+            "Member": {
+                "dateBirth": null,
+                "firstNameYesOption": null,
+                "lastNameYesOption": null,
+                "memberID": null
+            },
+            "expressVerificationPreviousShareRequest": {
+                "shareRequestDetails": {
+                    "iDontKnowRequestNumber": null,
+                    "shareRequestNumber": null
+                }
+            },
+            "providers": {
+                "billingEntityTaxID": null,
+                "servicingProviderNPI": null
+            }
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "AboutYou": null,
+        "DRSaveProviderDetails": null,
+        "RegistrationComplete": null,
+        "aboutYourOffice": null,
+        "alternativeVerification": null,
+        "licenseAgreement": null,
+        "register": null,
+        "securityVerification": null,
+        "setValuesSecurityVerification": null
+    }
+}

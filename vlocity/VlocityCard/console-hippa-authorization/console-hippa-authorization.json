@@ -1,0 +1,180 @@
+{
+    "GlobalKey__c": "console-hippa-authorization/OneShare Health, LLC/1/1606244787880",
+    "dataSource": {
+        "type": null,
+        "value": {
+            "resultVar": "['Accounts']"
+        }
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "icon": "contact",
+    "sessionVars": [
+    ],
+    "sprite": "standard",
+    "states": [
+        {
+            "actionCtxId": "",
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "active"
+                    },
+                    {
+                        "field": "['Id']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "null"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "Record": {
+                            "targetAction": "view",
+                            "targetId": "['Id']",
+                            "targetName": "Account",
+                            "targetType": "Record"
+                        },
+                        "collapse": true,
+                        "displayName": "View Dependent",
+                        "hasExtraParams": false,
+                        "id": "ViewDependent",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "targetType": "Record",
+                        "type": "Custom",
+                        "url": "/apex/",
+                        "vlocityIcon": "utility:user"
+                    }
+                ]
+            },
+            "disableAddCondition": false,
+            "editMode": false,
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['Name']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Name",
+                    "name": "['Name']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Address']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Address",
+                    "name": "['Address']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Phone']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Phone",
+                    "name": "['Phone']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['AuthType']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Authorization Type",
+                    "name": "['AuthType']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Details']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Authorization Details",
+                    "name": "['Details']",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['Id'] != null",
+            "flyoutAttributes": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "wideCard",
+                "Id": "0Rb8A000000ESJ9SAO",
+                "MasterLabel": "wideCard",
+                "NamespacePrefix": "%vlocity_namespace%",
+                "name": "wideCard"
+            },
+            "name": "HipaaAuth",
+            "sObjectType": "",
+            "smartAction": {
+            },
+            "templateUrl": ""
+        },
+        {
+            "blankCardState": false,
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "customLwc": false,
+            "customLwcRepeat": true,
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "displayName": "This Family Group does not include any dependent.",
+                        "eventName": "Empty Account Dependents",
+                        "hasExtraParams": false,
+                        "id": "ErrorMessage",
+                        "isCustomAction": true,
+                        "message": "No Dependents",
+                        "subType": "PubSub",
+                        "type": "Event",
+                        "vlocityIcon": "utility:error"
+                    }
+                ]
+            },
+            "disableAddCondition": false,
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "flyout": {
+                "lwc": ""
+            },
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "wideCard",
+                "Id": "0Rb8A000000ESJ9SAO",
+                "MasterLabel": "wideCard",
+                "NamespacePrefix": "%vlocity_namespace%",
+                "name": "wideCard"
+            },
+            "name": "HipaaDependentsValidation",
+            "smartAction": {
+                "ipMethod": ""
+            }
+        }
+    ],
+    "title": "HIPAA Authorization"
+}

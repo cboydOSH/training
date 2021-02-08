@@ -16,6 +16,12 @@
                 <field>Body__c</field>
             </layoutItems>
             <layoutItems>
+                <field>Network__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Program__c</field>
+            </layoutItems>
+            <layoutItems>
                 <field>Tier__c</field>
             </layoutItems>
             <layoutItems>
@@ -35,12 +41,6 @@
             </layoutItems>
             <layoutItems>
                 <field>ArticleCreatedDate</field>
-            </layoutItems>
-            <layoutItems>
-                <field>Network__c</field>
-            </layoutItems>
-            <layoutItems>
-                <field>Program__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

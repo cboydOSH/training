@@ -1,0 +1,45 @@
+{
+    "Cards": [
+        "console-header-360"
+    ],
+    "GlobalKey__c": "console-header/1/OneShare Health, LLC/1603810716778",
+    "componentName": "cfConsoleHeader",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0018A00000X13tRQAR"
+            }
+        ],
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "DREX_GetAccountDetails",
+            "inputMap": {
+                "AccountId": "{{params.id}}"
+            },
+            "ipMethod": "Get_AccountDetails",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            },
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvas1x",
+        "Id": "0Rb8A000000ESELSA4",
+        "MasterLabel": "cardCanvas1x",
+        "NamespacePrefix": "%vlocity_namespace%",
+        "name": "cardCanvas1x"
+    },
+    "previewType": "runTime",
+    "repeatCards": false,
+    "templates": {
+        "0": {
+            "templateUrl": "clm-runtime-header-template"
+        }
+    },
+    "workspace": [
+        "console-header-360/OneShare Health, LLC/1/1603810995367"
+    ]
+}

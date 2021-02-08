@@ -1,0 +1,47 @@
+{
+    "ContextId": "",
+    "DRId_Lead": "00Q8A000004uFWhUAM",
+    "ProducerInformation": {
+        "ContractLevel": "3",
+        "ContractName": "Guantanamo",
+        "ContractType": "Affinity",
+        "DemographicGroups": "English;Korean",
+        "Email": "roberto@xn--bolao-rta.com",
+        "Ethnicity": "Native Hawaiian or Other Pacific Islander",
+        "FirstName": "Roberto",
+        "LastName": "Bolaño",
+        "Phone": "1212121212",
+        "PreferredLanguage": "French",
+        "TA_AddressGoogle-Block": {
+            "AddressType": "Residence",
+            "City": "Los Angeles",
+            "Country": "United States",
+            "State/Province": "CA",
+            "Street": "1221 West 3rd Street",
+            "TA_AddressGoogle": "1221 W 3rd St, Los Angeles, CA 90017, USA",
+            "Zip/PostalCode": "90017"
+        },
+        "TA_ParentAccount-Block": {
+            "TA_ParentAccount": "Crowe and Associates"
+        }
+    },
+    "TA_AddressGoogle-Block": {
+        "administrative_area_level_2": "Los Angeles County"
+    },
+    "TA_ParentAccount-Block": {
+        "Id": "0018A00000TwmBsQAJ"
+    },
+    "id": "a628A00000025BbQAI",
+    "isdtp": "p1",
+    "layout": "newport",
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "timeStamp": "2021-01-20T00:55:40.506Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000004QVJdQAO",
+    "userName": "andres.deus@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -360,
+    "vlcPersistentComponent": {
+    }
+}

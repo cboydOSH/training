@@ -1,0 +1,39 @@
+{
+    "GlobalKey__c": "communityQuickActions/OneShare Health, LLC/1/1591825797571",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "communityProducerQuickActions",
+                "Id": "0Rb8A000000FG7VSAW",
+                "MasterLabel": "CommunityProducerQuickActions",
+                "name": "communityProducerQuickActions"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ]
+}

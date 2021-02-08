@@ -56,6 +56,14 @@
             <masterLabel>CO</masterLabel>
             <translation><!-- CO --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>DL</masterLabel>
+            <translation><!-- DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH</masterLabel>
+            <translation><!-- TH --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- States --></label>
@@ -64,6 +72,10 @@
     <fields>
         <label><!-- Tier --></label>
         <name>Tier__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
         <picklistValues>
             <masterLabel>B</masterLabel>
             <translation><!-- B --></translation>

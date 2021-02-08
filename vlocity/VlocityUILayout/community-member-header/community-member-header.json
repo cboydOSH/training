@@ -1,0 +1,34 @@
+{
+    "Cards": [
+        "community-member-modal"
+    ],
+    "GlobalKey__c": "community-member-header/1/OneShare Health, LLC/1593184035657",
+    "componentName": "cfCommunityMemberHeader",
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{}"
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvas1x",
+        "Id": "0Rb8A000000ESELSA4",
+        "MasterLabel": "cardCanvas1x",
+        "name": "cardCanvas1x"
+    },
+    "metatagVars": [
+    ],
+    "previewType": "runTime",
+    "repeatCards": false,
+    "sessionVars": [
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "card-canvas-1x-slds"
+        }
+    },
+    "workspace": [
+        "community-member-modal/OneShare Health, LLC/1/1593184194899"
+    ]
+}

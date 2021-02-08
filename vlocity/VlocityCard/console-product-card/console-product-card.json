@@ -1,0 +1,125 @@
+{
+    "GlobalKey__c": "console-product-card/OneShare Health, LLC/1/1603834105219",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "leftIcon",
+            "val": "standard:product_item"
+        },
+        {
+            "name": "",
+            "val": ""
+        }
+    ],
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "Navigation Item": {
+                            "targetName": "/sfc/servlet.shepherd/document/download/%test%",
+                            "targetType": "Navigation Item"
+                        },
+                        "Object": {
+                            "targetAction": "view",
+                            "targetName": "ContentDocumentLink",
+                            "targetType": "Object"
+                        },
+                        "Record": {
+                            "targetAction": "view",
+                            "targetId": "['Content']['ContentDocument']",
+                            "targetName": "ContentDocumentLink",
+                            "targetType": "Record"
+                        },
+                        "Web Page": {
+                            "targetName": "/sfc/servlet.shepherd/document/download/{!Content.ContentDocument}",
+                            "targetType": "Web Page"
+                        },
+                        "collapse": false,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "View Contract",
+                        "hasExtraParams": false,
+                        "id": "ContractView",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "targetParams": {
+                            "test": "['Content']['ContentDocument']"
+                        },
+                        "targetType": "Record",
+                        "type": "Custom",
+                        "url": "/apex/",
+                        "vlocityIcon": "standard:contract"
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['Product']['Name']",
+                    "group": "Custom Properties",
+                    "label": "Product Name",
+                    "name": "['Product']['Name']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Product']['ProductCode']",
+                    "editing": false,
+                    "group": "Custom Properties",
+                    "label": "Product Code",
+                    "name": "['Product']['ProductCode']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Asset']['EffectiveDate']",
+                    "editing": false,
+                    "group": "Custom Properties",
+                    "label": "Asset Effective Date",
+                    "name": "['Asset']['EffectiveDate']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Asset']['ISA']",
+                    "group": "Custom Properties",
+                    "label": "Asset ISA",
+                    "name": "['Asset']['ISA']",
+                    "type": "string"
+                }
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "wideCard",
+                "Id": "0Rb8A000000ESJ9SAO",
+                "MasterLabel": "wideCard",
+                "NamespacePrefix": "%vlocity_namespace%",
+                "name": "wideCard"
+            },
+            "name": "Active",
+            "sObjectType": "",
+            "smartAction": {
+            },
+            "templateUrl": "card-active"
+        }
+    ],
+    "title": "Product"
+}

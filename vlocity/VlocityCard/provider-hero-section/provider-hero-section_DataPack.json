@@ -1,0 +1,23 @@
+{
+    "%vlocity_namespace%__Author__c": "OneShare Health, LLC",
+    "%vlocity_namespace%__CardType__c": "",
+    "%vlocity_namespace%__Datasource__c": {
+        "type": "Query",
+        "value": {
+            "query": "SELECT Name,Id FROM Account LIMIT 1"
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "provider-hero-section.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "provider-hero-section/OneShare Health, LLC/3/1584709868792",
+    "%vlocity_namespace%__IsChildCard__c": false,
+    "%vlocity_namespace%__ParentID__c": "medi-care-hero-section/Vlocity/1/1561735305698",
+    "%vlocity_namespace%__SampleData__c": "",
+    "%vlocity_namespace%__Styles__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 3,
+    "Name": "provider-hero-section",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/provider-hero-section"
+}

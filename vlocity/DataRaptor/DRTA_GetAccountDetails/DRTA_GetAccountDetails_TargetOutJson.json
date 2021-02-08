@@ -1,0 +1,14 @@
+{
+    "CreateAccount": {
+        "Checkbox1": false,
+        "Checkbox2": false,
+        "ChooseUsername": null,
+        "ConfirmPassword": null,
+        "Email": null,
+        "FirstName": null,
+        "LastName": null,
+        "Password": null,
+        "SecurityAnswer": null,
+        "SecurityQuestion": null
+    }
+}

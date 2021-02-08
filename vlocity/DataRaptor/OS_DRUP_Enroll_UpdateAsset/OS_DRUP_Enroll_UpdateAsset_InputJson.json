@@ -1,0 +1,17 @@
+{
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "OS_DRGT_Enroll_getSecondChargentInfo": null,
+        "OS_DRUP_Enroll_UpdateAsset": null,
+        "OS_DRUP_Enroll_createSecondChargentOrder": null,
+        "OS_DRUP_Enroll_getChargentInfoSecondOrder": null,
+        "responseAction": null
+    }
+}

@@ -1,0 +1,776 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "OneShare-Route_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "BEHAVHEALTH": "24/7 Crisis Management 4 Counseling Sessions",
+        "DIAGXLAB": "Member shares 20% after ISA is met",
+        "DISCLAIMERCARD": "*Out-of-Network Member sharing reimbursement is based on the lesser of the Out-of-Network provider actual billed amount or Maximum Reasonable Guidelines for the Eligible Services provided.",
+        "DISCLAIMERCARD2": "Telemedicine is not owned or operated by OneShare Health, LLC",
+        "DISCLAIMERCARD3": "(MAP) is not a shared service and is not owned or operated by OneShare Health, LLC",
+        "DISCLAIMERCARD4": "Prescription Discount Programs Not Owned or Operated by OneShare Health, LLC",
+        "DISCLAIMERCARD5": "Pre-existing limitations, sharing limitations, applicable ISA, ISR and Visit Fees for all Sharing Services apply.  Unless stated otherwise, there is a 90- day waiting period for any medical expenses other than for accidents, injuries, and acute illnesses.",
+        "DISCLAIMERCARD6": "90-day wait for Inpatient and Outpatient Surgery. Life-Threatening or Life-Altering Emergencies available with no Waiting Period.",
+        "DISCLAIMERCARD7": "Visit Fee does not apply to ISA and ISR.  Visit Fee continues to apply after the Member’s ISA and ISR are met.",
+        "DISCLAIMERMEMBERDISC": "Discount Programs Not Owned or Operated by OneShare Health.",
+        "DISCPROGRAM": "Prescription Drugs Discount",
+        "EMERGROOM": "$500 Visit Fee; Shared up to $1,500, remaining amounts subject to ISA and ISR [Limit 2 Visits per Member per Program Year]",
+        "HOSTP": "Member Shares 20% after ISA is met.",
+        "INOUTSURG": "Member shares 20% after ISA is met.",
+        "ISAAMT": "1500",
+        "LIFESHAREMAX": "$1,000,000",
+        "MAXLIMITINC": "$250,000",
+        "PRESDISPROG": "Access to",
+        "PRICAREPHY": "$50 Visit Fee [Limit 2 Visits per Member per Program Year (Maximum Limit $200)]",
+        "PROCODE": "OSHROUTE1",
+        "PROVNET": "First Health Network",
+        "SPEC": "$75 Visit Fee [Limit 2 Visits per Member per Program Year (Maximum Limit $300)]",
+        "TELEMED": "Doctor Access 24/7 ( Consult Fee 100% Shared)",
+        "URGCAREFAC": "$100 Visit Fee [Limit 1 Visit per Member per Program Year (Maximum Limit $200)]"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "PROGCARDATT",
+                "Name": "Program Card Attributes",
+                "displaySequence": 1,
+                "id": "a0y8A000001oo85QAA",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0z8A0000010r93QAA",
+                            "cloneable": true,
+                            "code": "PROVNET",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Provider Network*",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZNQAY",
+                            "cloneable": true,
+                            "code": "TELEMED",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Telemedicine",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZOQAY",
+                            "cloneable": true,
+                            "code": "PRICAREPHY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Primary Care Physician",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZPQAY",
+                            "cloneable": true,
+                            "code": "URGCAREFAC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Urgent Care Facility",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZQQAY",
+                            "cloneable": true,
+                            "code": "DIAGXLAB",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 4,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Diagnostic / X-Ray / Labs",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZRQAY",
+                            "cloneable": true,
+                            "code": "SPEC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Specialists",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZSQAY",
+                            "cloneable": true,
+                            "code": "EMERGROOM",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 6,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Emergency Room",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZVQAY",
+                            "cloneable": true,
+                            "code": "INOUTSURG",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 7,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "In/Outpatient Surgery",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZJQAY",
+                            "cloneable": true,
+                            "code": "HOSTP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 8,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Hospitalization",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZUQAY",
+                            "cloneable": true,
+                            "code": "ISAAMT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 9,
+                            "filterable": true,
+                            "hasRules": true,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "ISA Amount",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$1,500",
+                                    "readonly": false,
+                                    "value": "1500"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$2,500",
+                                    "readonly": false,
+                                    "value": "2500"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZIQAY",
+                            "cloneable": true,
+                            "code": "PRESDISPROG",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Prescription Discount Program",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZMQAY",
+                            "cloneable": true,
+                            "code": "MAXLIMITINC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 11,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Maximum Limit Per Incident",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZHQAY",
+                            "cloneable": true,
+                            "code": "LIFESHAREMAX",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 12,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Lifetime Sharing Maximum",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001KvplQAC",
+                            "cloneable": true,
+                            "code": "BEHAVHEALTH",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 13,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Behavioral Health/Member Assistance Program (MAP)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001JR48QAG",
+                            "cloneable": true,
+                            "code": "DISCLAIMERCARD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 16,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "disclaimer",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001JRHUQA4",
+                            "cloneable": true,
+                            "code": "DISCLAIMERCARD2",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 17,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "disclaimer",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001Kvq0QAC",
+                            "cloneable": true,
+                            "code": "DISCLAIMERCARD3",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 18,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "disclaimer",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001Kvq5QAC",
+                            "cloneable": true,
+                            "code": "DISCLAIMERCARD4",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 19,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "disclaimer",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001URT2QAO",
+                            "cloneable": true,
+                            "code": "DISCLAIMERCARD5",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "disclaimer",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001URT7QAO",
+                            "cloneable": true,
+                            "code": "DISCLAIMERCARD6",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 21,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "disclaimer",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001URTCQA4",
+                            "cloneable": true,
+                            "code": "DISCLAIMERCARD7",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 22,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "disclaimer",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZXQAY",
+                            "cloneable": true,
+                            "code": "PROCODE",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 23,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Program Code",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 22
+                }
+            },
+            {
+                "Code__c": "MEMBERDISCPROG",
+                "Name": "Membership Discount Program",
+                "displaySequence": 5,
+                "id": "a0y8A000001xj9MQAQ",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0z8A000001JRINQA4",
+                            "cloneable": true,
+                            "code": "DISCPROGRAM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 14,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Discount Program",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001JR51QAG",
+                            "cloneable": true,
+                            "code": "DISCLAIMERMEMBERDISC",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 15,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "disclaimer",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "",
+    "%vlocity_namespace%__Availability__c": "AK;AL;AR;AZ;CA;CO;CT;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MD;ME;MI;MN;MO;MS;MT;NC;ND;NE;NH;NJ;NM;NV;NY;OH;OK;OR;PA;RI;SC;SD;TN;TX;UT;VA;VT;WI;WV;WY;DC",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CompiledAttributeOverride__c": "OneShare-Route_CompiledAttributeOverrides.json",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalGroupKey__c": "b76010c6-7d1d-b2f7-3571-dbf5db4b526a",
+    "%vlocity_namespace%__GlobalKey__c": "979cd048-1ca3-44b3-fd8b-2f9a87e53baf",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"options\":{\"effectiveDate\":\"01/05/21\"},\"inputs\":{\"01t8A0000043pg3QAA\":{\"a0w8A000000vGM9QAM\":{\"count\":6,\"attributeCode\":\"AGE\",\"attributeLabel\":\"Age\",\"objectId\":\"01t8A0000043pg3QAA\",\"ratingInput\":\"Age\",\"attributeDataType\":\"Number\",\"categoryCode\":\"PROGOPT\",\"categoryName\":\"Program Options\",\"attributeDefaultValue\":\"20\"},\"productName\":\"Member\",\"productRecordType\":\"InsuredItemSpec\",\"productCode\":\"MEMBER\",\"isOptional\":false,\"pciId\":\"a6y8A000000ErdeQAC\",\"instanceKey\":\"2\",\"a0w8A000000vGMAQA2\":{\"count\":5,\"attributeCode\":\"FAMTYPE\",\"attributeLabel\":\"Family Type\",\"objectId\":\"01t8A0000043pg3QAA\",\"ratingInput\":\"Membership\",\"attributeDataType\":\"Text\",\"categoryCode\":\"PROGOPT\",\"categoryName\":\"Program Options\",\"attributeDefaultValue\":\"1\"},\"a0w8A000000vs9CQAQ\":{\"count\":4,\"attributeCode\":\"STATE\",\"attributeLabel\":\"State\",\"objectId\":\"01t8A0000043pg3QAA\",\"ratingInput\":\"State\",\"attributeDataType\":\"Text\",\"categoryCode\":\"PROGOPT\",\"categoryName\":\"Program Options\",\"attributeDefaultValue\":\"NY\"},\"a0w8A0000015pHyQAI\":{\"count\":3,\"attributeCode\":\"AdditionalFeeMoreThan6\",\"attributeLabel\":\"Additional Fee More Than 6 Family Member\",\"objectId\":\"01t8A0000043pg3QAA\",\"ratingInput\":\"AdditionalFeeMoreThan6\",\"attributeDataType\":\"Currency\",\"categoryCode\":\"PROGOPT\",\"categoryName\":\"Program Options\",\"attributeDefaultValue\":\"2\"},\"a0w8A0000015pI3QAI\":{\"count\":2,\"attributeCode\":\"AdditionalFees\",\"attributeLabel\":\"Additional Fees\",\"objectId\":\"01t8A0000043pg3QAA\",\"ratingInput\":\"AdditionalFees\",\"attributeDataType\":\"Currency\",\"categoryCode\":\"PROGOPT\",\"categoryName\":\"Program Options\",\"attributeDefaultValue\":\"2\"}},\"01t8A000006axaoQAA\":{\"a0w8A0000016bGWQAY\":{\"count\":2,\"attributeCode\":\"PROCODE\",\"attributeLabel\":\"Program Code\",\"objectId\":\"01t8A000006axaoQAA\",\"ratingInput\":\"Program\",\"attributeDataType\":\"Text\",\"categoryCode\":\"PROGCARDATT\",\"categoryName\":\"Program Card Attributes\",\"attributeDefaultValue\":\"OSHROUTE1\"},\"productName\":\"OneShare Route\",\"productRecordType\":\"Product\",\"productCode\":\"OSHROUTE1\",\"isRoot\":true,\"a0w8A0000016bGbQAI\":{\"count\":1,\"attributeCode\":\"ISAAMT\",\"attributeLabel\":\"ISA Amount\",\"objectId\":\"01t8A000006axaoQAA\",\"ratingInput\":\"ISA\",\"attributeDataType\":\"Number\",\"categoryCode\":\"PROGCARDATT\",\"categoryName\":\"Program Card Attributes\",\"attributeDefaultValue\":\"1500\"}}}}",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "",
+    "%vlocity_namespace%__MarketSegment__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__OverrideDefinition__c": "OneShare-Route_OverrideDefinitions.json",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "OneShare-Route_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "Calculation_RePrice",
+    "%vlocity_namespace%__RatingProcedureType__c": "Integration Procedure",
+    "%vlocity_namespace%__RecordTypeName__c": "Product",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "CoverageReserve",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Term__c": "",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Catalog__c": "Vlocity",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "ISA__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "OneShare Route",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "Organization_Code__c": "5N",
+    "PricebookEntry": "OneShare-Route_PricebookEntries.json",
+    "ProductCode": "OSHROUTE1",
+    "Program__c": "",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "OneShare Route",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "979cd048-1ca3-44b3-fd8b-2f9a87e53baf",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "979cd048-1ca3-44b3-fd8b-2f9a87e53baf",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/979cd048-1ca3-44b3-fd8b-2f9a87e53baf",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "OSHROUTE1",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/979cd048-1ca3-44b3-fd8b-2f9a87e53baf"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/979cd048-1ca3-44b3-fd8b-2f9a87e53baf"
+}

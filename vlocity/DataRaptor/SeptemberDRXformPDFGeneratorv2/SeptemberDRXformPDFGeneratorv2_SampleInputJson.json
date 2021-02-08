@@ -1,0 +1,15 @@
+{
+    "Step1": {
+        "City": "Cary",
+        "Female": false,
+        "FirstName": "Scott",
+        "Gender": null,
+        "LastName": "Moore",
+        "Male": false,
+        "SingleCheckbox": false,
+        "State": "North Carolina",
+        "StreetAddress": "502",
+        "Telephone": "1112223333",
+        "ZipCode": "27519"
+    }
+}

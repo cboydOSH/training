@@ -12,9 +12,6 @@
                 <field>UrlName</field>
             </layoutItems>
             <layoutItems>
-                <field>Network__c</field>
-            </layoutItems>
-            <layoutItems>
                 <field>Program__c</field>
             </layoutItems>
             <layoutItems>

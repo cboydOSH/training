@@ -1,0 +1,39 @@
+{
+    "GlobalKey__c": "communityMemberCustomList/OneShare_Health_LLC/1/1603894998183",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "communityMemberCustomList",
+                "Id": "0Rb8A000000GV8KSAW",
+                "MasterLabel": "CommunityMemberCustomList",
+                "name": "communityMemberCustomList"
+            },
+            "name": "Active",
+            "smartAction": {
+            }
+        }
+    ]
+}

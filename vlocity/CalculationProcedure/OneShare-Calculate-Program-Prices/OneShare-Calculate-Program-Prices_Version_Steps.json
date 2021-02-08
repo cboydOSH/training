@@ -1,0 +1,478 @@
+[
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AdditionalFees + AdditionalFeeMoreThan6 + MemberIn",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AdditionalFees",
+                "dataType": "Currency",
+                "text": "AdditionalFees",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "AdditionalFeeMoreThan6",
+                "dataType": "Currency",
+                "text": "AdditionalFeeMoreThan6",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "MemberIn",
+                "dataType": "Currency",
+                "text": "MemberIn",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneShare Calculate Program Prices",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Calculate Program Prices",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFees"
+            },
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFeeMoreThan6"
+            },
+            {
+                "dataType": "Currency",
+                "name": "MemberIn"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "Member",
+            "dataType": "Currency",
+            "name": "Member"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Member\":\"Member\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AdditionalFees + AdditionalFeeMoreThan6 + 2PartyIn",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AdditionalFees",
+                "dataType": "Currency",
+                "text": "AdditionalFees",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "AdditionalFeeMoreThan6",
+                "dataType": "Currency",
+                "text": "AdditionalFeeMoreThan6",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "2PartyIn",
+                "dataType": "Currency",
+                "text": "2PartyIn",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneShare Calculate Program Prices",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Calculate Program Prices",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFees"
+            },
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFeeMoreThan6"
+            },
+            {
+                "dataType": "Currency",
+                "name": "2PartyIn"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "MemberPlusOne",
+            "dataType": "Currency",
+            "name": "MemberPlusOne"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"MemberPlusOne\":\"MemberPlusOne\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AdditionalFees + AdditionalFeeMoreThan6 + FamilyIn",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AdditionalFees",
+                "dataType": "Currency",
+                "text": "AdditionalFees",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "AdditionalFeeMoreThan6",
+                "dataType": "Currency",
+                "text": "AdditionalFeeMoreThan6",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "FamilyIn",
+                "dataType": "Currency",
+                "text": "FamilyIn",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneShare Calculate Program Prices",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Calculate Program Prices",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFees"
+            },
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFeeMoreThan6"
+            },
+            {
+                "dataType": "Currency",
+                "name": "FamilyIn"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "Family",
+            "dataType": "Currency",
+            "name": "Family"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Family\":\"Family\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AdditionalFees + AdditionalFeeMoreThan6 + MemberDiffIn",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AdditionalFees",
+                "dataType": "Currency",
+                "text": "AdditionalFees",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "AdditionalFeeMoreThan6",
+                "dataType": "Currency",
+                "text": "AdditionalFeeMoreThan6",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "MemberDiffIn",
+                "dataType": "Currency",
+                "text": "MemberDiffIn",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneShare Calculate Program Prices",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Calculate Program Prices",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFees"
+            },
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFeeMoreThan6"
+            },
+            {
+                "dataType": "Currency",
+                "name": "MemberDiffIn"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "MemberDiff",
+            "dataType": "Currency",
+            "name": "MemberDiff"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"MemberDiff\":\"MemberDiff\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AdditionalFees + AdditionalFeeMoreThan6 + 2PartyDiffIn",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AdditionalFees",
+                "dataType": "Currency",
+                "text": "AdditionalFees",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "AdditionalFeeMoreThan6",
+                "dataType": "Currency",
+                "text": "AdditionalFeeMoreThan6",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "2PartyDiffIn",
+                "dataType": "Currency",
+                "text": "2PartyDiffIn",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneShare Calculate Program Prices",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Calculate Program Prices",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFees"
+            },
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFeeMoreThan6"
+            },
+            {
+                "dataType": "Currency",
+                "name": "2PartyDiffIn"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "MemberPlusOneDiff",
+            "dataType": "Currency",
+            "name": "MemberPlusOneDiff"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"MemberPlusOneDiff\":\"MemberPlusOneDiff\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AdditionalFees + AdditionalFeeMoreThan6 + FamilyDiffIn",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AdditionalFees",
+                "dataType": "Currency",
+                "text": "AdditionalFees",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "AdditionalFeeMoreThan6",
+                "dataType": "Currency",
+                "text": "AdditionalFeeMoreThan6",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "FamilyDiffIn",
+                "dataType": "Currency",
+                "text": "FamilyDiffIn",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneShare Calculate Program Prices",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Calculate Program Prices",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFees"
+            },
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFeeMoreThan6"
+            },
+            {
+                "dataType": "Currency",
+                "name": "FamilyDiffIn"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "FamilyDiff",
+            "dataType": "Currency",
+            "name": "FamilyDiff"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"FamilyDiff\":\"FamilyDiff\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AdditionalFeesDiscountAppliedIn",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AdditionalFeesDiscountAppliedIn",
+                "dataType": "Currency",
+                "text": "AdditionalFeesDiscountAppliedIn",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneShare Calculate Program Prices",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneShare Calculate Program Prices",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/OneShare Calculate Program Prices",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "AdditionalFeesDiscountAppliedIn"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "AdditionalFeesDiscountApplied",
+            "dataType": "Currency",
+            "name": "AdditionalFeesDiscountApplied"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"AdditionalFeesDiscountApplied\":\"AdditionalFeesDiscountApplied\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

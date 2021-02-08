@@ -1,0 +1,58 @@
+{
+    "ContextId": "",
+    "EnterObject": {
+        "ObjectId": "0Q08A000000JaVoSAK"
+    },
+    "Pick a Template Type": {
+        "DocumentGenerationMode": "singleDocumentGeneration",
+        "TemplateType": "Microsoft Word .DOCX Template",
+        "multiDocumentGenerationValue": false
+    },
+    "PickTemplate": {
+        "DocumentTemplate": [
+            {
+                "$$hashKey": "object:145",
+                "Id": "a4V8A0000002V9tUAE",
+                "Name": "simpleContractTesting",
+                "TemplateType": "Microsoft Word .DOCX Template",
+                "VersionNumber": 1,
+                "vlcSelected": true
+            }
+        ],
+        "MultiDocumentTemplate": null
+    },
+    "UseTemplateDRExtract": "No",
+    "attachFileFormat": "DOCX",
+    "contextId": "0Q08A000000JaVoSAK",
+    "documentType": "all",
+    "generateMultipleDocument": false,
+    "id": "a628A00000011KQQAY",
+    "isdtp": "p1",
+    "layout": "lightning",
+    "pdfViewer": "VlocityClientSideViewer",
+    "qId": "0Q08A000000JaVoSAK",
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "templateId": "a4V8A0000002V9tUAE",
+    "templateType": "Microsoft Word .DOCX Template",
+    "test": "This is a token test",
+    "timeStamp": "2020-06-01T21:04:05.147Z",
+    "urlPrefix": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/apex",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wAvTQAU",
+    "userName": "karen.valle@arcsona.com.dvvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "EnterObject": 4477,
+        "GetDocumentTemplates": 581,
+        "GetMultiDocumentTemplates": 620,
+        "OmniScriptSessionToken": "23ed8836-8a51-4b47-97ba-e5075480af58",
+        "Pick a Template Type": 3219,
+        "PickTemplate": 4973,
+        "Set Values": 10,
+        "SetValues2": 10
+    }
+}

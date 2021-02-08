@@ -1,0 +1,43 @@
+{
+    "Cards": [
+        "HipaaDependent"
+    ],
+    "GlobalKey__c": "console-hipaa-canvas/1/OneShare Health, LLC/1609435344425",
+    "componentName": "cfConsoleHipaaCanvas",
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0018A00000bJ3DvQAK"
+            }
+        ],
+        "type": "IntegrationProcedures",
+        "value": {
+            "inputMap": {
+                "ContextId": "{{params.id}}"
+            },
+            "ipMethod": "Console_HipaaCard",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.IntegrationProcedureService"
+            }
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvas1x",
+        "Id": "0Rb8A000000ESELSA4",
+        "MasterLabel": "cardCanvas1x",
+        "NamespacePrefix": "%vlocity_namespace%",
+        "name": "cardCanvas1x"
+    },
+    "previewType": "runTime",
+    "repeatCards": false,
+    "templates": {
+        "0": {
+            "templateUrl": "card"
+        }
+    },
+    "workspace": [
+        "HipaaDependent/OneShare Health, LLC/1/1609435418824"
+    ]
+}

@@ -1,0 +1,19 @@
+<div class="nds-size_1-of-1 nds-p-bottom_medium nds-p-right_xxx-small nds-p-left_xxx-small" vlc-slds-window-scroll="test" ng-controller="productSecurity">
+    <div class="nds-size_1-of-1 nds-grid nds-box" ng-repeat="dataProductSecurity in optionsToDisplay">    
+        <div id="selectProductSecurity" class="nds-size_1-of-2 nds-border_right nds-border_left nds-p-right_x-small nds-p-left_x-small" >
+            {{dataProductSecurity.name}}
+        </div>
+        <select class="nds-size_1-of-2" ng-disabled="bpTree.response.gateStep == false" class="" ng-model="dataProductSecurity.available" name="dataProductSecurity.name" id="dataProductSecurity.name">
+                <option value="applicable">Applicable</option>
+                <option value="not applicable">Not Applicable</option>
+        </select>
+    </div>
+    <!--Buttons-->
+    <div class="nds-grid_align-center nds-align_absolute-center nds-box">
+        <div class="nds-button-group nds-grid_align-center">
+                <button ng-click="bpTree.response.gateStep = true" class="nds-button nds-button_neutral">Edit</button>
+                <button ng-click="updateProductPrivileges()" class="nds-button nds-button_neutral">Save</button>
+                <button ng-click="reload()" class="nds-button nds-button_neutral">Cancel</button>
+        </div>
+    </div>
+</div>

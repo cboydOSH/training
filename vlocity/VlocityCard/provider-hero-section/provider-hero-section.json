@@ -1,0 +1,101 @@
+{
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\n  \"Name\": \"Test\",\n  \"actions\": [\n    { \"actionName\":\"ManageYourBook\",\n      \"displayName\": \"Manage Your Book\",\n      \"url\": \"/test/1\"\n    },\n    { \"actionName\":\"GetNewLeads\",\n      \"displayName\": \"Get New Leads\",\n      \"url\": \"/test/2\"\n    },\n    { \"actionName\":\"GrowYourMarket\",\n      \"displayName\": \"Grow Your Market\",\n      \"url\": \"/test/3\"\n    },\n    { \"actionName\":\"AccessPlanResources\",\n      \"displayName\": \"Access Plan Resources\",\n      \"url\": \"/test/4\"\n    },\n    { \"actionName\":\"Access Your Commissions\",\n      \"displayName\": \"Access Your Commissions\",\n      \"url\": \"/test/5\"\n    },\n    { \"actionName\":\"CheckYourPerformance\",\n      \"displayName\": \"Check Your Performance\",\n      \"url\": \"/test/6\"\n    },\n    { \"actionName\":\"ProviderSearch\",\n      \"displayName\": \"Provider Search\",\n      \"url\": \"/test/7\"\n    },\n    { \"actionName\":\"NewsandReminders\",\n      \"displayName\": \"News and Reminders\",\n      \"url\": \"/test/8\"\n    }\n  ]\n}"
+        }
+    },
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "{{brunno}}",
+            "val": "\"brunnovalue\""
+        }
+    ],
+    "states": [
+        {
+            "blankCardState": false,
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "disableAddCondition": false,
+                        "displayName": "Member Eligibility",
+                        "extraParams": {
+                        },
+                        "filter": "",
+                        "hasExtraParams": true,
+                        "id": "Member Eligibility",
+                        "isCustomAction": true,
+                        "openUrlIn": "_self",
+                        "optionsMap": {
+                        },
+                        "type": "Custom",
+                        "url": "https://devvl2-oshtraining.cs45.force.com/providercommunity/s/member-eligibility"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Review Sharing Request status",
+                        "extraParams": {
+                            "": ""
+                        },
+                        "hasExtraParams": true,
+                        "id": "Review Sharing Request status",
+                        "inputMap": {
+                        },
+                        "isCustomAction": true,
+                        "openUrlIn": "_self",
+                        "type": "Custom",
+                        "url": "https://devvl2-oshtraining.cs45.force.com/providercommunity/s/expense-sharing-requests"
+                    },
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Custom Action",
+                        "hasExtraParams": true,
+                        "id": "Action Test",
+                        "isCustomAction": true,
+                        "openUrlIn": "_self",
+                        "type": "Custom",
+                        "url": "https://devvl2-oshtraining.cs45.force.com/providercommunity/s/quote"
+                    }
+                ]
+            },
+            "disableAddCondition": false,
+            "editMode": false,
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "isSmartAction": false,
+            "name": "medicare-hero",
+            "sObjectType": null,
+            "smartAction": {
+            },
+            "templateUrl": "provider-home-page"
+        }
+    ],
+    "title": "provider-hero-section"
+}

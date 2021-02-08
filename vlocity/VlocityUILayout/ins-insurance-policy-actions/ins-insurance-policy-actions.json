@@ -1,0 +1,26 @@
+{
+    "Cards": [
+        "ins-insurance-policy-actions-card"
+    ],
+    "GlobalKey__c": "ins-insurance-policy-actions/1/Vlocity/1586478220160",
+    "componentName": "cfInsInsurancePolicyActions",
+    "dataSource": {
+        "type": "Query",
+        "value": {
+            "jsonMap": "{\"params.id\":\"{{params.id}}\"}"
+        }
+    },
+    "enableLwc": true,
+    "lwc": {
+        "DeveloperName": "cardCanvas1x",
+        "Id": "0Rb6F000000bnvCSAQ",
+        "MasterLabel": "cardCanvas1x",
+        "NamespacePrefix": "%vlocity_namespace%",
+        "name": "cardCanvas1x"
+    },
+    "previewType": "runTime",
+    "repeatCards": false,
+    "workspace": [
+        "ins-insurance-policy-actions-card/Vlocity/1/1586478266886"
+    ]
+}

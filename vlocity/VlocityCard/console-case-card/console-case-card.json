@@ -1,0 +1,189 @@
+{
+    "GlobalKey__c": "console-case-card/OneShare Health, LLC/1/1603805734955",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": true,
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "leftIcon",
+            "val": "standard:case"
+        }
+    ],
+    "states": [
+        {
+            "actionCtxId": "['CaseId']",
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "Record": {
+                            "targetAction": "view",
+                            "targetId": "['CaseId']",
+                            "targetName": "Case",
+                            "targetType": "Record"
+                        },
+                        "collapse": true,
+                        "displayName": "View Case",
+                        "hasExtraParams": false,
+                        "id": "CaseView",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "targetType": "Record",
+                        "type": "Custom",
+                        "url": "/apex/",
+                        "vlocityIcon": "utility:case"
+                    },
+                    {
+                        "Record": {
+                            "targetAction": "edit",
+                            "targetId": "['CaseId']",
+                            "targetName": "Case",
+                            "targetType": "Record"
+                        },
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Edit Case",
+                        "hasExtraParams": false,
+                        "id": "CaseEdit",
+                        "isCustomAction": true,
+                        "openUrlIn": "_self",
+                        "targetType": "Record",
+                        "type": "Custom",
+                        "url": "/apex/",
+                        "vlocityIcon": "utility:edit"
+                    },
+                    {
+                        "Navigation Item": {
+                            "targetType": "Navigation Item"
+                        },
+                        "Object": {
+                            "targetType": "Object"
+                        },
+                        "Record": {
+                            "targetAction": "view",
+                            "targetId": "['CaseOwnerId']",
+                            "targetName": "User",
+                            "targetType": "Record"
+                        },
+                        "Record Relationship": {
+                            "targetAction": "View",
+                            "targetId": "['OwnerId']",
+                            "targetName": "Case",
+                            "targetRelationship": "User",
+                            "targetType": "Record Relationship"
+                        },
+                        "collapse": false,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Case Owner",
+                        "hasExtraParams": false,
+                        "id": "OwnerLookup",
+                        "isCustomAction": true,
+                        "null": {
+                            "targetType": null
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "targetType": "Record",
+                        "type": "Custom",
+                        "url": "/apex/lightning/r/[Contact]/{0}/view",
+                        "vlocityIcon": "utility:user"
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['CaseNumber']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Number",
+                    "name": "['CaseNumber']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['CaseStatus']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Status",
+                    "name": "['CaseStatus']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['CaseSubject']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Subject",
+                    "name": "['CaseSubject']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['CasePriority']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Priority",
+                    "name": "['CasePriority']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['CreatedDate']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Date Created",
+                    "name": "['CreatedDate']",
+                    "type": "string"
+                }
+            ],
+            "flyout": {
+                "lwc": {
+                    "DeveloperName": "cardActiveState",
+                    "Id": "0Rb8A000000ESEKSA4",
+                    "MasterLabel": "cardActiveState",
+                    "NamespacePrefix": "%vlocity_namespace%",
+                    "name": "cardActiveState"
+                }
+            },
+            "flyoutAttributes": [
+            ],
+            "isSmartAction": false,
+            "lwc": {
+                "DeveloperName": "wideCardSlim",
+                "Id": "0Rb8A000000ESJASA4",
+                "MasterLabel": "wideCardSlim",
+                "NamespacePrefix": "%vlocity_namespace%",
+                "name": "wideCardSlim"
+            },
+            "name": "Active",
+            "sObjectType": "Case",
+            "smartAction": {
+            },
+            "templateUrl": "card-active-slds"
+        }
+    ],
+    "title": "Case"
+}

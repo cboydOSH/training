@@ -1,0 +1,41 @@
+.tooltipcolor{
+fill:var(--tooltip-fill);
+}
+.word {
+  display: inline-block;
+  position: relative;
+  //background-color: red;
+}
+
+.definition { 
+  display: none;
+}
+
+.word:hover > .definition {
+  display: inline-block;
+  position: absolute;
+  bottom: 15%;
+  left: calc(50%);
+  transform: translateX(-100%);
+  padding: 5px;
+  background-color: #343741;
+  color:#FFFFFF;
+  max-height: auto;
+  //border: 1px solid blue;
+  //white-space: nowrap;
+  width: 618px;
+  overflow: visible;
+  text-overflow: ellipsis;
+  white-space: normal!important;
+  border-radius: 5px;
+  
+}
+.word:hover > .definition > p {
+  font-size: 13px !important;
+}
+.word:hover > .definition > .indent1{
+  text-indent : 1em;
+}
+.word:hover > .definition > .indent2{
+  text-indent : 2em;
+}

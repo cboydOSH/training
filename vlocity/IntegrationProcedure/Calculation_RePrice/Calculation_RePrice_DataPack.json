@@ -1,0 +1,32 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Working on Route product changes",
+    "%vlocity_namespace%__CustomJavaScript__c": "Calculation_RePrice_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "Calculation_RePrice_Element_RemoteActionSaveInput.json",
+        "Calculation_RePrice_Element_RemoteActionDiscountsForAccount.json",
+        "Calculation_RePrice_Element_SetValues1.json",
+        "Calculation_RePrice_Element_OneShare_Program_Premiums_NO_State.json",
+        "Calculation_RePrice_Element_OneShare_Program_Premiums.json",
+        "Calculation_RePrice_Element_MergeCalcResults.json",
+        "Calculation_RePrice_Element_FormatStateBasedPricingOutput.json",
+        "Calculation_RePrice_Element_MatchDiscountsRemoteAction.json",
+        "Calculation_RePrice_Element_OneShare_Calculate_Program_Prices.json",
+        "Calculation_RePrice_Element_ResponseAction.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "Calculation_RePrice",
+    "%vlocity_namespace%__ProcedureResponseCacheType__c": "Org Cache",
+    "%vlocity_namespace%__PropertySet__c": "Calculation_RePrice_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "RePrice",
+    "%vlocity_namespace%__Type__c": "Calculation",
+    "Name": "Re Price OSH Quote Programs Testing",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Calculation/RePrice/Procedure"
+}

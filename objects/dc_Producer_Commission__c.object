@@ -266,7 +266,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Producer Commissions</pluralLabel>
-    <searchLayouts />
+    <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
