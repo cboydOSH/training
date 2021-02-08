@@ -4,12 +4,14 @@ public class RecordingTriggerHelper {
         for(Recording__c newRecording : newRecordings) {
             newPhoneNumbers.add(newRecording.Phone__c);
         }
-        
+        System.debug('New Phone Numbers: ' + newPhoneNumbers);
+
     List<Account> accounts = [SELECT Id, RecordType.Name, Account__c, Phone
                               FROM Account
                               WHERE IsPersonAccount = true AND
                                     Phone IN :newPhoneNumbers];	
-        
+    System.debug('Accounts: ' + accounts);
+
     // With Map --> works for dataload of hundreds of recordings insert at a time
     Map<String, Id> phoneToAccountId = new Map<String, Id>();
 
@@ -21,6 +23,7 @@ public class RecordingTriggerHelper {
             phoneToAccountId.put(accountInfo.Phone, accountInfo.Id);
         }
     }
+    System.debug('PhoneToAccountId: ' + phoneToAccountId);
 
     for(Recording__c newRecording : newRecordings) {
         if(phoneToAccountId != null && phoneToAccountId.containsKey(newRecording.Phone__c)) {
