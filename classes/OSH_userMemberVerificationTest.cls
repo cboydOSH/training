@@ -44,6 +44,6 @@ public class OSH_userMemberVerificationTest {
 
         OSH_userMemberVerification ins = new OSH_userMemberVerification();
         Boolean ret = ins.invokeMethod('failTest', inputMap, outMap, options);
-        System.assertEquals(true, ret);
+        System.assertEquals(false, ret);
     }
 }

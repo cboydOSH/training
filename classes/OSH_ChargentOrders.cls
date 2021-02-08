@@ -31,13 +31,17 @@ global without sharing class OSH_ChargentOrders implements vlocity_ins.VlocityOp
             //Get billing information
             Map<String, Object> billingMap = (Map<String, Object>)inputs.get('bill');
             //Get plan contribution date
-            String contributionDateString = (String)billingMap.get('billingDatePlan');
-            //Convert it to 'date'
-            Date contributionDate = Date.valueOf(contributionDateString);
+            //String contributionDateString = (String)billingMap.get('billingDatePlan');
+            //Get custom recurring date
+            String customRecurringDateString = (String)billingMap.get('customBillingDateAppFee');
+            //Convert contributionDateString to 'date'
+            //Date contributionDate = Date.valueOf(contributionDateString);
+            //Convert customRecurringDateString to 'date'
+            Date customContributionDate = Date.valueOf(customRecurringDateString); //this has the start of the recurrent payment
             //system.debug('contributionDate: ' + contributionDate);
-            Date contributionDatePlusOneMonth = contributionDate.addMonths(1);
+            //Date contributionDatePlusOneMonth = contributionDate.addMonths(1);
             //system.debug('contributionDatePlusOneMonth: ' + contributionDatePlusOneMonth);
-            String contributionDay = contributionDate.day()+'';
+            String contributionDay = customContributionDate.day()+'';
             //system.debug('contributionDay: ' + contributionDay);
             //Get plan contribution amount
             Double contributionAmountWithoutDiscounts = (Double)billingMap.get('FormulaContributionAmount');
@@ -50,39 +54,39 @@ global without sharing class OSH_ChargentOrders implements vlocity_ins.VlocityOp
             if(RECURRENCY_FOREVER.equals(recurrency)){
                 //If discount is forever let's create one unending chargent order WITH discounted amount
                 createChargentOrder(chargentOrderObj, contributionAmountWithDiscounts, 'Recurring', 'Unending', 'Recurrent Contribution', 
-                 'Monthly', contributionDate.addMonths(1), null, contributionDate.addMonths(1), contributionDay);
+                 'Monthly', customContributionDate, null, customContributionDate, contributionDay);
 
             }else if(RECURRENCY_ONE_TWO_TREE.equals(recurrency)){
                 //If discount is 1,2,3 let's create one ending chargent order WITH discounted amount 
                 createChargentOrder(chargentOrderObj, contributionAmountWithDiscounts, 'Recurring', 'Date', 'Recurrent Contribution',
-                 'Monthly', contributionDate.addMonths(1), contributionDate.addMonths(3).addDays(-1), contributionDate.addMonths(1), contributionDay);
+                 'Monthly', customContributionDate, customContributionDate.addMonths(2).addDays(-1), customContributionDate, contributionDay);
                 //and other unending WITH NO discounted amount
                 createChargentOrder(chargentOrderObj, contributionAmountWithoutDiscounts, 'Recurring', 'Unending', 'Recurrent Contribution', 
-                 'Monthly', contributionDate.addMonths(3), null, contributionDate.addMonths(3), contributionDay);
+                 'Monthly', customContributionDate.addMonths(2), null, customContributionDate.addMonths(2), contributionDay);
 
             }else if(RECURRENCY_TWO_TREE.equals(recurrency)){
                 //If discount is 2,3 let's create one ending chargent order WITH discounted amount 
                 createChargentOrder(chargentOrderObj, contributionAmountWithDiscounts, 'Recurring', 'Date', 'Recurrent Contribution', 
-                 'Monthly', contributionDate.addMonths(1), contributionDate.addMonths(3).addDays(-1), contributionDate.addMonths(1), contributionDay);
+                 'Monthly', customContributionDate, customContributionDate.addMonths(2).addDays(-1), customContributionDate, contributionDay);
                 //and other unending WITH NO discounted amount
                 createChargentOrder(chargentOrderObj, contributionAmountWithoutDiscounts, 'Recurring', 'Unending', 'Recurrent Contribution', 
-                 'Monthly', contributionDate.addMonths(3), null, contributionDate.addMonths(3), contributionDay);
+                 'Monthly', customContributionDate.addMonths(2), null, customContributionDate.addMonths(2), contributionDay);
 
             }else if(RECURRENCY_FOUR.equals(recurrency)){
                 //If discount is 4 let's create one ending chargent order WITH NO discounted amount 
                 createChargentOrder(chargentOrderObj, contributionAmountWithoutDiscounts, 'Recurring', 'Date', 'Recurrent Contribution', 
-                 'Monthly', contributionDate.addMonths(1), contributionDate.addMonths(3).addDays(-1), contributionDate.addMonths(1), contributionDay);
+                 'Monthly', customContributionDate, customContributionDate.addMonths(2).addDays(-1), customContributionDate, contributionDay);
                 //and other chargent order WITH NO discounted amount 
                 createChargentOrder(chargentOrderObj, contributionAmountWithDiscounts, 'Recurring', 'Date', 'Recurrent Contribution', 
-                 'Once', contributionDate.addMonths(3), contributionDate.addMonths(4).addDays(-1), contributionDate.addMonths(3), contributionDay);
+                 'Once', customContributionDate.addMonths(2), customContributionDate.addMonths(3).addDays(-1), customContributionDate.addMonths(2), contributionDay);
                 //and other unending WITH NO discounted amount
                 createChargentOrder(chargentOrderObj, contributionAmountWithoutDiscounts, 'Recurring', 'Unending', 'Recurrent Contribution', 
-                 'Monthly', contributionDate.addMonths(4), null, contributionDate.addMonths(4), contributionDay);
+                 'Monthly', customContributionDate.addMonths(3), null, customContributionDate.addMonths(3), contributionDay);
 
             }else if(RECURRENCY_NOCOUPON.equals(recurrency)){
                  //If THERE IS NOO discount let's create one unending chargent order WITH OUT discounted amount
                 secondChargentOrder = createChargentOrder(chargentOrderObj, contributionAmountWithoutDiscounts, 'Recurring', 'Unending', 'Recurrent Contribution', 
-                 'Monthly', contributionDatePlusOneMonth, null, contributionDatePlusOneMonth, contributionDay);
+                 'Monthly', customContributionDate, null, customContributionDate, contributionDay);
 
             }else{
                 //Throw error if there is no known recurrency and show the coupon for troubleshoot

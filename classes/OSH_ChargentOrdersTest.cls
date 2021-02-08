@@ -58,6 +58,8 @@ public class OSH_ChargentOrdersTest {
         Map<String, Object> bill =new Map<String, Object>();
         String datebill = Datetime.now().format('yyyy-MM-dd');
         bill.put('billingDatePlan', datebill);
+        String customBillingDateAppFee = Datetime.now().format('yyyy-MM-dd');
+        bill.put('customBillingDateAppFee', customBillingDateAppFee);
         Double formulaCont = 093820283;
         bill.put('FormulaContributionAmount', formulaCont);
         bill.put('FormulaContributionAmountWithPromotions', 98989);
@@ -70,6 +72,7 @@ public class OSH_ChargentOrdersTest {
 
         OSH_ChargentOrders ins = new OSH_ChargentOrders();
         Boolean ret = ins.invokeMethod('createChargentOrders', inputMap, outMap, options);
+        System.debug(outMap.get('error'));
         System.assertEquals(true, ret);
     }
 
@@ -91,6 +94,8 @@ public class OSH_ChargentOrdersTest {
         Map<String, Object> bill =new Map<String, Object>();
         String datebill = Datetime.now().format('yyyy-MM-dd');
         bill.put('billingDatePlan', datebill);
+        String customBillingDateAppFee = Datetime.now().format('yyyy-MM-dd');
+        bill.put('customBillingDateAppFee', customBillingDateAppFee);
         Double formulaCont = 093820283;
         bill.put('FormulaContributionAmount', formulaCont);
         bill.put('FormulaContributionAmountWithPromotions', 98989);
@@ -124,6 +129,8 @@ public class OSH_ChargentOrdersTest {
         Map<String, Object> bill =new Map<String, Object>();
         String datebill = Datetime.now().format('yyyy-MM-dd');
         bill.put('billingDatePlan', datebill);
+        String customBillingDateAppFee = Datetime.now().format('yyyy-MM-dd');
+        bill.put('customBillingDateAppFee', customBillingDateAppFee);
         Double formulaCont = 093820283;
         bill.put('FormulaContributionAmount', formulaCont);
         bill.put('FormulaContributionAmountWithPromotions', 98989);
@@ -158,6 +165,8 @@ public class OSH_ChargentOrdersTest {
         String datebill = Datetime.now().format('yyyy-MM-dd');
         bill.put('billingDatePlan', datebill);
         Double formulaCont = 093820283;
+        String customBillingDateAppFee = Datetime.now().format('yyyy-MM-dd');
+        bill.put('customBillingDateAppFee', customBillingDateAppFee);
         bill.put('FormulaContributionAmount', formulaCont);
         bill.put('FormulaContributionAmountWithPromotions', 98989);
 
@@ -190,6 +199,8 @@ public class OSH_ChargentOrdersTest {
         Map<String, Object> bill =new Map<String, Object>();
         String datebill = Datetime.now().format('yyyy-MM-dd');
         bill.put('billingDatePlan', datebill);
+        String customBillingDateAppFee = Datetime.now().format('yyyy-MM-dd');
+        bill.put('customBillingDateAppFee', customBillingDateAppFee);
         Double formulaCont = 093820283;
         bill.put('FormulaContributionAmount', formulaCont);
         bill.put('FormulaContributionAmountWithPromotions', 98989);
