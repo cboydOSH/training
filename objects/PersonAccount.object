@@ -264,6 +264,28 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Demographic_Groups__pc</picklist>
             <values>
                 <fullName>English</fullName>
@@ -310,6 +332,17 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>FMO_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -341,6 +374,21 @@
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -611,6 +659,17 @@
             </values>
             <values>
                 <fullName>Vietnamese</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1489,6 +1548,28 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Demographic_Groups__pc</picklist>
             <values>
                 <fullName>English</fullName>
@@ -1535,6 +1616,17 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>FMO_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -1566,6 +1658,21 @@
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1836,6 +1943,17 @@
             </values>
             <values>
                 <fullName>Vietnamese</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2710,6 +2828,28 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Currently_Enrroled_HCS_Ministry__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_see_a_Specialist__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Demographic_Groups__pc</picklist>
             <values>
                 <fullName>English</fullName>
@@ -2756,6 +2896,17 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Expecting_family_grow__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>FMO_percent__c</picklist>
             <values>
                 <fullName>0</fullName>
@@ -2787,6 +2938,21 @@
             </values>
             <values>
                 <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_often_See_your_PCP__c</picklist>
+            <values>
+                <fullName>0-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 or more</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3073,6 +3239,17 @@
             </values>
             <values>
                 <fullName>Vietnamese</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

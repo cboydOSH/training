@@ -1,0 +1,109 @@
+<!--
+ - Created by ericalexander on 2/23/18.
+ -->
+
+<apex:page name="SLDS_template" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"
+           docType="html-5.0">
+
+    <head>
+        <apex:includeScript value="{!URLFOR($Resource.cterminal__StreamingAPI, 'js/jquery.js')}"/>
+
+        <apex:slds />
+
+        <apex:insert name="title"/>
+
+
+        <style>
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+
+        </style>
+
+        <script>
+            function goBack() {
+                if (ForceUI.isSalesforce1()) {
+                    sforce.one.back(true);
+                } else {
+                    goretURL();
+                }
+            }
+            function goHome() {
+                ForceUI.isSalesforce1() ? sforce.one.navigateToURL('/lightning/page/home', true) : window.location.href = '/';
+            }
+
+            function goretURL() {
+                ForceUI.isSalesforce1() ? sforce.one.navigateToURL('{!JSENCODE($CurrentPage.parameters.retURL)}') : window.location.href = '{!JSENCODE($CurrentPage.parameters.retURL)}';
+            }
+
+            function gotoURL(u, isParent) {
+                ForceUI.isSalesforce1() ? sforce.one.navigateToURL(u) : (isParent ? window.top.location.href = u : window.location.href = u);
+            }
+
+            function showProcessing(loaderId) {
+                if(!loaderId)
+                    $('#loader').show();
+                else $('#' + loaderId).show();
+            }
+
+            function hideProcessing() {
+                $('[id$=loader]').delay(300).fadeOut(400);
+            }
+
+            function checkMessages() {
+                if (hasMessages) {
+                    $('#err_text').html(errorMessage);
+
+                    $('[id$=msg_block]').slideDown(300);
+
+                    if ($('[id$=err_wrapper]').hasClass('slds-theme--success')) {
+                        //Makes the message for reset connection sticky
+                        if(typeof errorMessage !== 'undefined' && errorMessage.indexOf('Reset Terminal Connection') === -1) {
+                            setTimeout(function () {
+                                $('[id$=msg_block]').slideUp(300);
+                            }, 2000);
+                        }
+
+                    }
+
+                } else {
+                    $('[id$=msg_block]').slideUp(300);
+                }
+
+                hideProcessing();
+
+            }
+
+            (function (myContext) {
+                myContext.ForceUI = myContext.ForceUI || {};
+
+                myContext.ForceUI.isSalesforce1 = function () {
+                    return ((typeof sforce != 'undefined') && sforce && (!!sforce.one));
+                }
+            })(this);
+
+        </script>
+    </head>
+
+
+    <body class="slds-scope">
+
+    <apex:insert name="header"/>
+
+    <div id="loader" class="slds-spinner_container slds-is-fixed">
+        <div class="slds-spinner slds-spinner--brand slds-spinner--large" role="status">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+
+    <apex:insert name="body"/>
+
+    </body>
+
+
+</apex:page>

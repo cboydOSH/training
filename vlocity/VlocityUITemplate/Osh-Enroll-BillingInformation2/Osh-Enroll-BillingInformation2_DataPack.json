@@ -1,5 +1,6 @@
 {
     "%vlocity_namespace%__Author__c": "OneShare Health, LLC",
+    "%vlocity_namespace%__CSS__c": "",
     "%vlocity_namespace%__CustomJavascript__c": "Osh-Enroll-BillingInformation2.js",
     "%vlocity_namespace%__Definition__c": "",
     "%vlocity_namespace%__Description__c": "$scope.selectedPlan = $scope.bpTree.response.planSelection.selectedPlans[0].Name;\n$scope.selectedPlanFee = $scope.bpTree.response.enrollPrograms.formulaPriceEnrollPrograms;\n$scope.formulaResultfee = $scope.bpTree.response.bill.formulaTotalfee;\n$scope.formulaAditionalFee = $scope.bpTree.response.bill.formulaAditionalFee;\n$scope.formulaMoreThan6AdtionalFee = $scope.bpTree.respons.bill.formulaMoreThan6FamilyMemberAdtionalFee;",

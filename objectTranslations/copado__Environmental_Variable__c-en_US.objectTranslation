@@ -6,6 +6,11 @@
         <relationshipLabel><!-- Environment Variables --></relationshipLabel>
     </fields>
     <fields>
+        <help><!-- Use this field to define a Scope for this Environment Variable. For more information, please check our documentation about Environment Variables Scope. --></help>
+        <label><!-- Scope --></label>
+        <name>copado__Scope__c</name>
+    </fields>
+    <fields>
         <label><!-- Value --></label>
         <name>copado__Value__c</name>
     </fields>

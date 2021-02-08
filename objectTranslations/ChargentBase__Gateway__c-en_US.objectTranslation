@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select one or more AVS response codes which should automatically trigger a declined transaction, regardless of the gateway configuration --></help>
+        <label><!-- AVS Forced Failure --></label>
+        <name>ChargentBase__AVS_Forced_Failure__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E</masterLabel>
+            <translation><!-- E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G</masterLabel>
+            <translation><!-- G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P</masterLabel>
+            <translation><!-- P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U</masterLabel>
+            <translation><!-- U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>W</masterLabel>
+            <translation><!-- W --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X</masterLabel>
+            <translation><!-- X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z</masterLabel>
+            <translation><!-- Z --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Accounting Seed customers can integrate Chargent and Accounting Seed by checking this field. --></help>
+        <label><!-- Accounting Seed Integration --></label>
+        <name>ChargentBase__Accounting_Seed_Integration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>ChargentBase__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unlinked Refunds (aka Credits) enable Chargent to send money to credit cards and bank accounts.  Setting this field to TRUE allows Chargent users to send money from your bank account to other bank accounts.  Use this setting carefully and with forethought --></help>
+        <label><!-- Allow Unlinked Refund --></label>
+        <name>ChargentBase__Allow_Unlinked_Refund__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Soft Rejects --></label>
+        <name>ChargentBase__Approve_Soft_Rejects__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the values in this field that represent the card types you want to accept in the Payment Request and the Payment Console features. When a card type is not selected on this list, users will get an error when attempting to use it on PC or PR. --></help>
+        <label><!-- Available Card Types --></label>
+        <name>ChargentBase__Available_Card_Types__c</name>
+        <picklistValues>
+            <masterLabel>American Express</masterLabel>
+            <translation><!-- American Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diners Club</masterLabel>
+            <translation><!-- Diners Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discover</masterLabel>
+            <translation><!-- Discover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JCB Card</masterLabel>
+            <translation><!-- JCB Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MC Eurocard</masterLabel>
+            <translation><!-- MC Eurocard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mastercard</masterLabel>
+            <translation><!-- Mastercard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK Maestro</masterLabel>
+            <translation><!-- UK Maestro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visa</masterLabel>
+            <translation><!-- Visa --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Available Currencies --></label>
+        <name>ChargentBase__Available_Currencies__c</name>
+        <picklistValues>
+            <masterLabel>Afghan afghani</masterLabel>
+            <translation><!-- Afghan afghani --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Albanian lek</masterLabel>
+            <translation><!-- Albanian lek --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Algerian dinar</masterLabel>
+            <translation><!-- Algerian dinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Angolan kwanza</masterLabel>
+            <translation><!-- Angolan kwanza --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Argentine peso</masterLabel>
+            <translation><!-- Argentine peso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armenian dram</masterLabel>
+            <translation><!-- Armenian dram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aruban florin</masterLabel>
+            <translation><!-- Aruban florin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Australian dollar</masterLabel>
+            <translation><!-- Australian dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azerbaijani manat</masterLabel>
+            <translation><!-- Azerbaijani manat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bahamian dollar</masterLabel>
+            <translation><!-- Bahamian dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bahraini dinar</masterLabel>
+            <translation><!-- Bahraini dinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bangladeshi taka</masterLabel>
+            <translation><!-- Bangladeshi taka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barbados dollar</masterLabel>
+            <translation><!-- Barbados dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belarusian ruble</masterLabel>
+            <translation><!-- Belarusian ruble --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belize dollar</masterLabel>
+            <translation><!-- Belize dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bermudian dollar</masterLabel>
+            <translation><!-- Bermudian dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bhutanese ngultrum</masterLabel>
+            <translation><!-- Bhutanese ngultrum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boliviano</masterLabel>
+            <translation><!-- Boliviano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bosnia and Herzegovina convertible mark</masterLabel>
+            <translation><!-- Bosnia and Herzegovina convertible mark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Botswana pula</masterLabel>
+            <translation><!-- Botswana pula --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brazilian real</masterLabel>
+            <translation><!-- Brazilian real --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brunei dollar</masterLabel>
+            <translation><!-- Brunei dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulgarian lev</masterLabel>
+            <translation><!-- Bulgarian lev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burundian franc</masterLabel>
+            <translation><!-- Burundian franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CFA franc BCEAO</masterLabel>
+            <translation><!-- CFA franc BCEAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CFA franc BEAC</masterLabel>
+            <translation><!-- CFA franc BEAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CFP franc (franc Pacifique)</masterLabel>
+            <translation><!-- CFP franc (franc Pacifique) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodian riel</masterLabel>
+            <translation><!-- Cambodian riel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canadian dollar</masterLabel>
+            <translation><!-- Canadian dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cape Verde escudo</masterLabel>
+            <translation><!-- Cape Verde escudo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cayman Islands dollar</masterLabel>
+            <translation><!-- Cayman Islands dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chilean peso</masterLabel>
+            <translation><!-- Chilean peso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese yuan</masterLabel>
+            <translation><!-- Chinese yuan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colombian peso</masterLabel>
+            <translation><!-- Colombian peso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comoro franc</masterLabel>
+            <translation><!-- Comoro franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congolese franc</masterLabel>
+            <translation><!-- Congolese franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Costa Rican colon</masterLabel>
+            <translation><!-- Costa Rican colon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croatian kuna</masterLabel>
+            <translation><!-- Croatian kuna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuban peso</masterLabel>
+            <translation><!-- Cuban peso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech koruna</masterLabel>
+            <translation><!-- Czech koruna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish krone</masterLabel>
+            <translation><!-- Danish krone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Djiboutian franc</masterLabel>
+            <translation><!-- Djiboutian franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominican peso</masterLabel>
+            <translation><!-- Dominican peso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Caribbean dollar</masterLabel>
+            <translation><!-- East Caribbean dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Egyptian pound</masterLabel>
+            <translation><!-- Egyptian pound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eritrean nakfa</masterLabel>
+            <translation><!-- Eritrean nakfa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethiopian birr</masterLabel>
+            <translation><!-- Ethiopian birr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Euro</masterLabel>
+            <translation><!-- Euro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falkland Islands pound</masterLabel>
+            <translation><!-- Falkland Islands pound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiji dollar</masterLabel>
+            <translation><!-- Fiji dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gambian dalasi</masterLabel>
+            <translation><!-- Gambian dalasi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgian lari</masterLabel>
+            <translation><!-- Georgian lari --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ghanaian cedi</masterLabel>
+            <translation><!-- Ghanaian cedi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gibraltar pound</masterLabel>
+            <translation><!-- Gibraltar pound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guatemalan quetzal</masterLabel>
+            <translation><!-- Guatemalan quetzal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guinean franc</masterLabel>
+            <translation><!-- Guinean franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guyanese dollar</masterLabel>
+            <translation><!-- Guyanese dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haitian gourde</masterLabel>
+            <translation><!-- Haitian gourde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honduran lempira</masterLabel>
+            <translation><!-- Honduran lempira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hong Kong dollar</masterLabel>
+            <translation><!-- Hong Kong dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hungarian forint</masterLabel>
+            <translation><!-- Hungarian forint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic króna</masterLabel>
+            <translation><!-- Icelandic króna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indian rupee</masterLabel>
+            <translation><!-- Indian rupee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian rupiah</masterLabel>
+            <translation><!-- Indonesian rupiah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iranian rial</masterLabel>
+            <translation><!-- Iranian rial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iraqi dinar</masterLabel>
+            <translation><!-- Iraqi dinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Israeli new shekel</masterLabel>
+            <translation><!-- Israeli new shekel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jamaican dollar</masterLabel>
+            <translation><!-- Jamaican dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese yen</masterLabel>
+            <translation><!-- Japanese yen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jordanian dinar</masterLabel>
+            <translation><!-- Jordanian dinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kazakhstani tenge</masterLabel>
+            <translation><!-- Kazakhstani tenge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenyan shilling</masterLabel>
+            <translation><!-- Kenyan shilling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kuwaiti dinar</masterLabel>
+            <translation><!-- Kuwaiti dinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyrgyzstani som</masterLabel>
+            <translation><!-- Kyrgyzstani som --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lao kip</masterLabel>
+            <translation><!-- Lao kip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lebanese pound</masterLabel>
+            <translation><!-- Lebanese pound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lesotho loti</masterLabel>
+            <translation><!-- Lesotho loti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberian dollar</masterLabel>
+            <translation><!-- Liberian dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libyan dinar</masterLabel>
+            <translation><!-- Libyan dinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macanese pataca</masterLabel>
+            <translation><!-- Macanese pataca --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macedonian denar</masterLabel>
+            <translation><!-- Macedonian denar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malagasy ariary</masterLabel>
+            <translation><!-- Malagasy ariary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malawian kwacha</masterLabel>
+            <translation><!-- Malawian kwacha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malaysian ringgit</masterLabel>
+            <translation><!-- Malaysian ringgit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maldivian rufiyaa</masterLabel>
+            <translation><!-- Maldivian rufiyaa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauritanian ouguiya</masterLabel>
+            <translation><!-- Mauritanian ouguiya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauritian rupee</masterLabel>
+            <translation><!-- Mauritian rupee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexican peso</masterLabel>
+            <translation><!-- Mexican peso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moldovan leu</masterLabel>
+            <translation><!-- Moldovan leu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mongolian tögrög</masterLabel>
+            <translation><!-- Mongolian tögrög --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moroccan dirham</masterLabel>
+            <translation><!-- Moroccan dirham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mozambican metical</masterLabel>
+            <translation><!-- Mozambican metical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Myanmar kyat</masterLabel>
+            <translation><!-- Myanmar kyat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Namibian dollar</masterLabel>
+            <translation><!-- Namibian dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nepalese rupee</masterLabel>
+            <translation><!-- Nepalese rupee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netherlands Antillean guilder</masterLabel>
+            <translation><!-- Netherlands Antillean guilder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Taiwan dollar</masterLabel>
+            <translation><!-- New Taiwan dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Zealand dollar</masterLabel>
+            <translation><!-- New Zealand dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicaraguan córdoba</masterLabel>
+            <translation><!-- Nicaraguan córdoba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nigerian naira</masterLabel>
+            <translation><!-- Nigerian naira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Korean won</masterLabel>
+            <translation><!-- North Korean won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian krone</masterLabel>
+            <translation><!-- Norwegian krone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omani rial</masterLabel>
+            <translation><!-- Omani rial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pakistani rupee</masterLabel>
+            <translation><!-- Pakistani rupee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panamanian balboa</masterLabel>
+            <translation><!-- Panamanian balboa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Papua New Guinean kina</masterLabel>
+            <translation><!-- Papua New Guinean kina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paraguayan guaraní</masterLabel>
+            <translation><!-- Paraguayan guaraní --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peruvian nuevo sol</masterLabel>
+            <translation><!-- Peruvian nuevo sol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philippine peso</masterLabel>
+            <translation><!-- Philippine peso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish złoty</masterLabel>
+            <translation><!-- Polish złoty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pound sterling</masterLabel>
+            <translation><!-- Pound sterling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qatari riyal</masterLabel>
+            <translation><!-- Qatari riyal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Romanian leu</masterLabel>
+            <translation><!-- Romanian leu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian ruble</masterLabel>
+            <translation><!-- Russian ruble --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rwandan franc</masterLabel>
+            <translation><!-- Rwandan franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Helena pound</masterLabel>
+            <translation><!-- Saint Helena pound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samoan tala</masterLabel>
+            <translation><!-- Samoan tala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saudi riyal</masterLabel>
+            <translation><!-- Saudi riyal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serbian dinar</masterLabel>
+            <translation><!-- Serbian dinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seychelles rupee</masterLabel>
+            <translation><!-- Seychelles rupee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sierra Leonean leone</masterLabel>
+            <translation><!-- Sierra Leonean leone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singapore dollar</masterLabel>
+            <translation><!-- Singapore dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solomon Islands dollar</masterLabel>
+            <translation><!-- Solomon Islands dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somali shilling</masterLabel>
+            <translation><!-- Somali shilling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South African rand</masterLabel>
+            <translation><!-- South African rand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Korean won</masterLabel>
+            <translation><!-- South Korean won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Sudanese pound</masterLabel>
+            <translation><!-- South Sudanese pound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sri Lankan rupee</masterLabel>
+            <translation><!-- Sri Lankan rupee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sudanese pound</masterLabel>
+            <translation><!-- Sudanese pound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surinamese dollar</masterLabel>
+            <translation><!-- Surinamese dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swazi lilangeni</masterLabel>
+            <translation><!-- Swazi lilangeni --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish krona/kronor</masterLabel>
+            <translation><!-- Swedish krona/kronor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swiss franc</masterLabel>
+            <translation><!-- Swiss franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syrian pound</masterLabel>
+            <translation><!-- Syrian pound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>São Tomé and Príncipe dobra</masterLabel>
+            <translation><!-- São Tomé and Príncipe dobra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tajikistani somoni</masterLabel>
+            <translation><!-- Tajikistani somoni --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tanzanian shilling</masterLabel>
+            <translation><!-- Tanzanian shilling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai baht</masterLabel>
+            <translation><!-- Thai baht --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tongan paʻanga</masterLabel>
+            <translation><!-- Tongan paʻanga --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trinidad and Tobago dollar</masterLabel>
+            <translation><!-- Trinidad and Tobago dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tunisian dinar</masterLabel>
+            <translation><!-- Tunisian dinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish lira</masterLabel>
+            <translation><!-- Turkish lira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkmenistani manat</masterLabel>
+            <translation><!-- Turkmenistani manat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ugandan shilling</masterLabel>
+            <translation><!-- Ugandan shilling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukrainian hryvnia</masterLabel>
+            <translation><!-- Ukrainian hryvnia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Arab Emirates dirham</masterLabel>
+            <translation><!-- United Arab Emirates dirham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States dollar</masterLabel>
+            <translation><!-- United States dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uruguayan peso</masterLabel>
+            <translation><!-- Uruguayan peso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uzbekistan som</masterLabel>
+            <translation><!-- Uzbekistan som --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vanuatu vatu</masterLabel>
+            <translation><!-- Vanuatu vatu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venezuelan bolívar</masterLabel>
+            <translation><!-- Venezuelan bolívar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese dong</masterLabel>
+            <translation><!-- Vietnamese dong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yemeni rial</masterLabel>
+            <translation><!-- Yemeni rial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zambian kwacha</masterLabel>
+            <translation><!-- Zambian kwacha --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Charge Full Amount/none will send the total value as an auth and capture
+Authorize Full Amount will send the total value as a preauth. aka auth only
+Authorize Minimum Amount will send a $0.00, $0.01 or $1 whichever is allowed by the card network/gateway --></help>
+        <label><!-- Available PR Transaction Types --></label>
+        <name>ChargentBase__Available_PR_Transaction_Types__c</name>
+        <picklistValues>
+            <masterLabel>Authorize Full Amount</masterLabel>
+            <translation><!-- Authorize Full Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorize Minimum Amount</masterLabel>
+            <translation><!-- Authorize Minimum Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charge Full Amount</masterLabel>
+            <translation><!-- Charge Full Amount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- In Payment Console this field controls which Payment Methods are available to users. --></help>
+        <label><!-- Available Payment Methods --></label>
+        <name>ChargentBase__Available_Payment_Methods__c</name>
+        <picklistValues>
+            <masterLabel>Bank Transfer</masterLabel>
+            <translation><!-- Bank Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Transfer</masterLabel>
+            <translation><!-- Cash Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eCheck</masterLabel>
+            <translation><!-- eCheck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- In Payment Console you can control how the Charge Amount field is populated. --></help>
+        <label><!-- Charge Amount Behavior --></label>
+        <name>ChargentBase__Charge_Amount_Behavior__c</name>
+        <picklistValues>
+            <masterLabel>Allow User to Edit in Console</masterLabel>
+            <translation><!-- Allow User to Edit in Console --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Gateway Charge    Amount (Fixed)</masterLabel>
+            <translation><!-- Use Gateway Charge    Amount (Fixed) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Opportunity/Order/Case Charge Amount</masterLabel>
+            <translation><!-- Use Opportunity/Order/Case Charge Amount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field tells when to clear the credit card information on your records. --></help>
+        <label><!-- Credit Card / Bank Account Data Handling --></label>
+        <name>ChargentBase__Credit_Card_Data_Handling__c</name>
+        <picklistValues>
+            <masterLabel>Clear After All Transactions</masterLabel>
+            <translation><!-- Clear After All Transactions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clear After Successful Charge</masterLabel>
+            <translation><!-- Clear After Successful Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clear When Token Present</masterLabel>
+            <translation><!-- Clear When Token Present --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Clear</masterLabel>
+            <translation><!-- Never Clear --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency (OLD - do not use) --></label>
+        <name>ChargentBase__Currency__c</name>
+        <picklistValues>
+            <masterLabel>Australian Dollar</masterLabel>
+            <translation><!-- Australian Dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belgian Franc</masterLabel>
+            <translation><!-- Belgian Franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canadian Dollar</masterLabel>
+            <translation><!-- Canadian Dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deutsche Mark</masterLabel>
+            <translation><!-- Deutsche Mark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Euro</masterLabel>
+            <translation><!-- Euro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French Franc</masterLabel>
+            <translation><!-- French Franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese Yen</masterLabel>
+            <translation><!-- Japanese Yen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luxembourg Franc</masterLabel>
+            <translation><!-- Luxembourg Franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Zealand Dollar</masterLabel>
+            <translation><!-- New Zealand Dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pound Sterling</masterLabel>
+            <translation><!-- Pound Sterling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian Ruble</masterLabel>
+            <translation><!-- Russian Ruble --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singapore Dollar</masterLabel>
+            <translation><!-- Singapore Dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swiss Franc</masterLabel>
+            <translation><!-- Swiss Franc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US Dollar</masterLabel>
+            <translation><!-- US Dollar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will return the entire string sent from the gateway for debugging purposes. --></help>
+        <label><!-- Debug --></label>
+        <name>ChargentBase__Debug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Payment Method for PC --></label>
+        <name>ChargentBase__Default_Payment_Method_for_PC__c</name>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eCheck</masterLabel>
+            <translation><!-- eCheck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Payment Method for PR --></label>
+        <name>ChargentBase__Default_Payment_Method_for_PR__c</name>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eCheck</masterLabel>
+            <translation><!-- eCheck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Value in seconds. Maximum is 28800. Use 0 to disable duplicate transaction validation. --></help>
+        <label><!-- Duplicate Transaction Window --></label>
+        <name>ChargentBase__Duplicate_Transaction_Window__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this if you want to enable Refunds for Ezidebit gateway. The feature should be enabled on Merchant side first. --></help>
+        <label><!-- Enable Refund --></label>
+        <name>ChargentBase__Enable_Refund__c</name>
+    </fields>
+    <fields>
+        <help><!-- The endpoint override allows you to point the Chargent gateway record to a new endpoint for your gateway.  This is very useful if the gateway has an outage and has a secondary endpoint to send transactions to. --></help>
+        <label><!-- Endpoint Override --></label>
+        <name>ChargentBase__Endpoint_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ezidebit Pass Fees to Payer --></label>
+        <name>ChargentBase__Ezidebit_Pass_Fees_to_Payer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway Version --></label>
+        <name>ChargentBase__Gateway_Version__c</name>
+        <picklistValues>
+            <masterLabel>Vantiv v12</masterLabel>
+            <translation><!-- Vantiv v12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vantiv v8</masterLabel>
+            <translation><!-- Vantiv v8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When set to TRUE, Cybersource will not decline transactions which failed AVS check. This enables you to accept &quot;soft declines&quot; from Cybersource. This also means you might be storing bad card data at the gateway. --></help>
+        <label><!-- Ignore AVS Results --></label>
+        <name>ChargentBase__Ignore_AVS_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inherit Chargent Currency --></label>
+        <name>ChargentBase__Inherit_Chargent_Currency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that micro deposits have been turned off in your merchant account. This does not disable the feature in your merchant account but optimizes the Chargent code when it has already been turned off in the merchant account. --></help>
+        <label><!-- Micro Deposits Disabled --></label>
+        <name>ChargentBase__Micro_Deposits_Disabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the test mode for gateway (ModusLink, PlanetPayment, VeriPay). --></help>
+        <label><!-- Open Payment Platform Test Mode --></label>
+        <name>ChargentBase__ModusLink_Test_Mode__c</name>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Omit CC expiry --></label>
+        <name>ChargentBase__Omit_CC_expiry__c</name>
+    </fields>
+    <fields>
+        <help><!-- On the Chase Paymentech (Orbital) gateway, this field allows you to set which of their systems you connect to.  The Tampa Platform is sometimes called the PNS Platform. --></help>
+        <label><!-- Orbital Platform --></label>
+        <name>ChargentBase__Orbital_Platform__c</name>
+        <picklistValues>
+            <masterLabel>Salem Platform (BIN 000001)</masterLabel>
+            <translation><!-- Salem Platform (BIN 000001) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tampa Platform (BIN 000002)</masterLabel>
+            <translation><!-- Tampa Platform (BIN 000002) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This checkbox is only applicable to the PayFlow Pro gateway.  When checked Chargent will create Recurring Profiles to be used in payment transactions. When unchecked Chargent will use the PayFlow Reference Transaction features for tokenization. --></help>
+        <label><!-- PayFlow Use Recurring Profiles --></label>
+        <name>ChargentBase__PayFlow_Use_Recurring_Profiles__c</name>
+    </fields>
+    <fields>
+        <help><!-- When this is set to TRUE Chargent requires that the Address on the record matches the billing address of the credit card.  If they do not match or the address is blank the transaction will be declined by Chargent before being sent to the gateway. --></help>
+        <label><!-- Require AVS --></label>
+        <name>ChargentBase__Require_AVS__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, Chargent requires that the Card Security Code is entered in a popup window before the first transaction is sent to the gateway. --></help>
+        <label><!-- Require Card Security Code --></label>
+        <name>ChargentBase__Require_CCV__c</name>
+    </fields>
+    <fields>
+        <help><!-- When this field is set to TRUE card security code is required. --></help>
+        <label><!-- Require CVV in Payment Console --></label>
+        <name>ChargentBase__Require_CVV__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCA enabled --></label>
+        <name>ChargentBase__SCA_enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- In Payment Console setting this field to TRUE shows the Authorize button to your users. --></help>
+        <label><!-- Show Authorize Button --></label>
+        <name>ChargentBase__Show_Authorize_Button__c</name>
+    </fields>
+    <fields>
+        <help><!-- In Payment Console setting this field to TRUE shows the Charge button to your users. --></help>
+        <label><!-- Show Charge Button --></label>
+        <name>ChargentBase__Show_Charge_Button__c</name>
+    </fields>
+    <fields>
+        <help><!-- In Payment Console setting this field to TRUE shows the Create Token or Update Token (whichever is relevant in the situation) button to your users. --></help>
+        <label><!-- Show Create/Update Token Button --></label>
+        <name>ChargentBase__Show_Create_Update_Token_Button__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Setup Recurring Button --></label>
+        <name>ChargentBase__Show_Setup_Recurring_Button__c</name>
+    </fields>
+    <fields>
+        <help><!-- In Payment Console this field defines the static amount used, if the Charge Amount Behavior is set to Use Chargent Gateway Amount (Fixed). --></help>
+        <label><!-- Static Charge Amount --></label>
+        <name>ChargentBase__Static_Charge_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will send transactions from this Gateway record through the gateway&apos;s test endpoint, rather than the production endpoint. --></help>
+        <label><!-- Test Endpoint --></label>
+        <name>ChargentBase__Test_Mode__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is deprecated. --></help>
+        <label><!-- Use PF Pro Reference Trx (deprecated) --></label>
+        <name>ChargentBase__Use_Reference_Transactions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tokenization is a feature that helps lower your PCI scope.  Tokenization works on a number of our gateways, check AppFrontier.com for a complete list. --></help>
+        <label><!-- Use Tokenization --></label>
+        <name>ChargentBase__Use_Tokenization__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select one or more security code verification responses which should automatically result in a declined transaction, regardless of the gateway configuration --></help>
+        <label><!-- Verification Forced Failures --></label>
+        <name>ChargentBase__Verification_Forced_Failures__c</name>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P</masterLabel>
+            <translation><!-- P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U</masterLabel>
+            <translation><!-- U --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Web Payment Status Endpoint --></label>
+        <name>ChargentBase__Web_Payment_Status_Endpoint__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Record type for Adyen Gateway --></description>
+        <label><!-- Adyen --></label>
+        <name>ChargentBase__Adyen</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the AstroPay gateway. --></description>
+        <label><!-- AstroPay --></label>
+        <name>ChargentBase__Astropay</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Authorize.net gateway. --></description>
+        <label><!-- Authorize.net --></label>
+        <name>ChargentBase__Authorizenet</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Barclaycard ePDQ Gateway (UK / EU) --></description>
+        <label><!-- Barclaycard ePDQ --></label>
+        <name>ChargentBase__Barclays_ePDQ</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the BlueSnap Gateway. --></description>
+        <label><!-- BlueSnap --></label>
+        <name>ChargentBase__BlueSnap</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Braintree Gateway. --></description>
+        <label><!-- Braintree --></label>
+        <name>ChargentBase__Braintree</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Cybersource Gateway. --></description>
+        <label><!-- Cybersource --></label>
+        <name>ChargentBase__Cybersource</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the EPX Gateway. --></description>
+        <label><!-- EPX payments --></label>
+        <name>ChargentBase__EPX_payments</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Ezidebit Gateway --></description>
+        <label><!-- Ezidebit --></label>
+        <name>ChargentBase__Ezidebit</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the FatZebra Gateway. --></description>
+        <label><!-- FatZebra --></label>
+        <name>ChargentBase__FatZebra</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Forte Gateway. --></description>
+        <label><!-- Forte --></label>
+        <name>ChargentBase__Forte</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Linked2Pay Gateway. --></description>
+        <label><!-- Linked2Pay --></label>
+        <name>ChargentBase__Linked2Pay</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Vantiv Gateway and Payment Processsing network. --></description>
+        <label><!-- Vantiv --></label>
+        <name>ChargentBase__Litle</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Merchant Warrior Gateway --></description>
+        <label><!-- Merchant Warrior --></label>
+        <name>ChargentBase__MerchantWarrior</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the ModusLink Gateway --></description>
+        <label><!-- ModusLink --></label>
+        <name>ChargentBase__ModusLink</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Moneris eSELECT Plus Gateway (Canada) --></description>
+        <label><!-- Moneris (CA) --></label>
+        <name>ChargentBase__Moneris_CA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Moneris eSELECT Plus Gateway (United States) --></description>
+        <label><!-- Moneris (US) --></label>
+        <name>ChargentBase__Moneris_US</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Netbanx (aka Optimal) --></description>
+        <label><!-- Paysafe Netbanx --></label>
+        <name>ChargentBase__Netbanx</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Network Merchants Gateway --></description>
+        <label><!-- Network Merchants Incorporated (NMI) --></label>
+        <name>ChargentBase__Network_Merchants_Incorporated_NMI</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Network Merchants Gateway (Authorize.net Emulator) --></description>
+        <label><!-- Network Merchants (NMI) - Auth.net emulator --></label>
+        <name>ChargentBase__Network_Merchants_NMI</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Chase Orbital Gateway (for Chase Paymentech). --></description>
+        <label><!-- Orbital (Chase Paymentech) --></label>
+        <name>ChargentBase__Orbital</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the PayTrace Gateway. --></description>
+        <label><!-- PayTrace --></label>
+        <name>ChargentBase__PayTrace</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the PayU Gateway. --></description>
+        <label><!-- PayU --></label>
+        <name>ChargentBase__PayU</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Payflow Pro (Paypal) Gateway. --></description>
+        <label><!-- Payflow Pro (PayPal) --></label>
+        <name>ChargentBase__PayflowProPayPal</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Planet Payment Gateway. --></description>
+        <label><!-- PlanetPayment --></label>
+        <name>ChargentBase__PlanetPayment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Platinum Payments Gateway (Authorize.net Emulator) --></description>
+        <label><!-- Platinum Payments --></label>
+        <name>ChargentBase__Platinum_Payments</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Realex payment gateway. (UK/IE/EU) --></description>
+        <label><!-- Realex Payments --></label>
+        <name>ChargentBase__Realex_Payment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the SecureCo Gateway. --></description>
+        <label><!-- SecureCo --></label>
+        <name>ChargentBase__SecureCo</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Stripe Gateway --></description>
+        <label><!-- Stripe --></label>
+        <name>ChargentBase__Stripe</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Transact Pro (1st Payments) Gateway. --></description>
+        <label><!-- TransactPro --></label>
+        <name>ChargentBase__TransactPro</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the Merchant eSolutions Gateway --></description>
+        <label><!-- Merchant e-Solutions --></label>
+        <name>ChargentBase__Trident_Gateway_MeS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the USAePay Gateway --></description>
+        <label><!-- USAePay --></label>
+        <name>ChargentBase__USAePay</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the VeriPay Gateway. --></description>
+        <label><!-- VeriPay --></label>
+        <name>ChargentBase__VeriPay</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the eProcessingNetwork Gateway. --></description>
+        <label><!-- eProcessingNetwork --></label>
+        <name>ChargentBase__eProcessingNetwork</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the eWay gateway --></description>
+        <label><!-- eWay --></label>
+        <name>ChargentBase__eWay</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Choose this to connect to the iATS Payments Gateway. --></description>
+        <label><!-- iATS Payments --></label>
+        <name>ChargentBase__iATS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Default Payment Method for Payment Console must be available. --></errorMessage>
+        <name>ChargentBase__Check_Default_Payment_Method_for_PC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Default Payment Method for Payment Request must be available. --></errorMessage>
+        <name>ChargentBase__Check_Default_Payment_Method_for_PR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error! “PayFlow Use Recurring Profiles” can be used with Payflow Pro (PayPal) gateway only. --></errorMessage>
+        <name>ChargentBase__Recurring_Profiles_Record_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error! “PayFlow Use Recurring Profiles” can be used with Tokenization enabled only. --></errorMessage>
+        <name>ChargentBase__Recurring_Profiles_Tokenization_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Static Charge Amount is NULL or has a negative amount. Please review the record making the value positive. --></errorMessage>
+        <name>ChargentBase__Static_Charge_Amount_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

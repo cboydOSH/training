@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Acquirer --></label>
+        <name>cterminal__Acquirer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>cterminal__Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Id --></label>
+        <name>cterminal__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Id --></label>
+        <name>cterminal__Business_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Expiration Month --></label>
+        <name>cterminal__Card_Expiration_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Expiration Year --></label>
+        <name>cterminal__Card_Expiration_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Holder Name --></label>
+        <name>cterminal__Card_Holder_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Last 4 --></label>
+        <name>cterminal__Card_Last_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Type --></label>
+        <name>cterminal__Card_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>cterminal__Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Presence Status --></label>
+        <name>cterminal__Customer_Presence_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit --></label>
+        <name>cterminal__Debit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>cterminal__Device_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entry Mode --></label>
+        <name>cterminal__Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Source --></label>
+        <name>cterminal__Funding_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indexed field set by system to indicate that the payment is not related to any SObject when configuration has SObject Definitions configured. --></help>
+        <label><!-- Needs Reconciled --></label>
+        <name>cterminal__Needs_Reconciled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>cterminal__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Amount --></label>
+        <name>cterminal__Order_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Id --></label>
+        <name>cterminal__Parent_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processor Status --></label>
+        <name>cterminal__Processor_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processor --></label>
+        <name>cterminal__Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Id --></label>
+        <name>cterminal__Reference_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Terminal Payment --></label>
+        <name>cterminal__Related_Terminal_Payment__c</name>
+        <relationshipLabel><!-- Terminal Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>cterminal__Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settled --></label>
+        <name>cterminal__Settled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature Captured --></label>
+        <name>cterminal__Signature_Captured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code --></label>
+        <name>cterminal__Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Message --></label>
+        <name>cterminal__Status_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Status --></label>
+        <name>cterminal__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Id --></label>
+        <name>cterminal__Store_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Name --></label>
+        <name>cterminal__Store_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terminal Business --></label>
+        <name>cterminal__Terminal_Business__c</name>
+        <relationshipLabel><!-- Terminal Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tip Amount --></label>
+        <name>cterminal__Tip_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Amount --></label>
+        <name>cterminal__Transaction_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Creation Error --></label>
+        <name>cterminal__Transaction_Creation_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Date --></label>
+        <name>cterminal__Transaction_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Id --></label>
+        <name>cterminal__Transaction_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date time the transaction was last updated --></help>
+        <label><!-- Updated At --></label>
+        <name>cterminal__Updated_At__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voided --></label>
+        <name>cterminal__Voided__c</name>
+    </fields>
+</CustomObjectTranslation>

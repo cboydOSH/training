@@ -1,0 +1,13 @@
+<apex:page standardController="ChargentOrders__ChargentOrder__c" extensions="ChargentBase.CurrencyPicklistController">
+	<apex:form id="frm1" rendered="true">
+		<apex:selectList value="{!selectedCurrency}" size="1" id="theTextInput">
+			<apex:actionSupport event="onchange" action="{!setCurrencyString}" reRender="frm1"/>
+			<apex:selectOptions value="{!currencyString}"/>
+		</apex:selectList>
+		<apex:outputPanel rendered="{!IF(errorMessage = null, false, true)}">
+		<script>
+			function s(){window.alert('{!JSENCODE(errorMessage)}');}s();
+		</script>
+		</apex:outputPanel>
+	</apex:form>
+</apex:page>

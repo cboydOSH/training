@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- GetContactDetailsField --></label>
+        <name>vlocity_ins__DuplicateMatchFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Household Member --></label>
+        <name>vlocity_ins__HouseholdMember</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- InteractionFieldList --></label>
+        <name>vlocity_ins__InteractionFieldList</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ListMember --></label>
+        <name>vlocity_ins__ListMember</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Producer List --></label>
+        <name>vlocity_ins__ProducerList</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ProviderNetworkSearch --></label>
+        <name>vlocity_ins__ProviderNetworkSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Segment List Export --></label>
+        <name>vlocity_ins__SegmentListExport</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Address 2 --></label>
+        <name>Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Member Created Date --></label>
+        <name>Admin_Member_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Code --></label>
+        <name>Agent_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent ID --></label>
+        <name>Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Label --></label>
+        <name>Agent_Label__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Fee --></label>
+        <name>Application_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the name of the County where the Contact is located --></help>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Groups --></label>
+        <name>Demographic_Groups__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filipino</masterLabel>
+            <translation><!-- Filipino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin/Spanish</masterLabel>
+            <translation><!-- Latin/Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dependent ID --></label>
+        <name>Dependent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- E&amp;O Expiration Date --></label>
+        <name>E_O_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enroller ID --></label>
+        <name>Enroller_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enroller Name --></label>
+        <name>Enroller_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>American Indian/Alaska Native</masterLabel>
+            <translation><!-- American Indian/Alaska Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black/African American</masterLabel>
+            <translation><!-- Black/African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic/Latino</masterLabel>
+            <translation><!-- Hispanic/Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian/Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian/Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White/Caucasian</masterLabel>
+            <translation><!-- White/Caucasian --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold Amount --></label>
+        <name>Hold_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold Date --></label>
+        <name>Hold_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold Reason --></label>
+        <name>Hold_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal ID --></label>
+        <name>Internal_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Learning Evaluation Result --></label>
+        <name>Learning_Evaluation_Result__c</name>
+        <picklistValues>
+            <masterLabel>Failed-Completed</masterLabel>
+            <translation><!-- Failed-Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed-Not Completed</masterLabel>
+            <translation><!-- Failed-Not Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed</masterLabel>
+            <translation><!-- Passed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Member ID --></label>
+        <name>Member_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Step --></label>
+        <name>Next_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paid --></label>
+        <name>Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent ID --></label>
+        <name>Parent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>ACH</masterLabel>
+            <translation><!-- ACH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Bill</masterLabel>
+            <translation><!-- List Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll</masterLabel>
+            <translation><!-- Payroll --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone 2 --></label>
+        <name>Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin/Spanish</masterLabel>
+            <translation><!-- Latin/Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prospect/Lead --></label>
+        <name>Prospect_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral --></label>
+        <name>Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund Comment --></label>
+        <name>Refund_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund Provided Date --></label>
+        <name>Refund_Provided_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund Provided --></label>
+        <name>Refund_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund Requested Date --></label>
+        <name>Refund_Requested_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund Requested --></label>
+        <name>Refund_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>Relationship__c</name>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse</masterLabel>
+            <translation><!-- Spouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Detail --></label>
+        <name>Source_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Student --></label>
+        <name>Student__c</name>
+    </fields>
+    <fields>
+        <label><!-- System ID --></label>
+        <name>System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TPV Code --></label>
+        <name>TPV_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- TPV Date --></label>
+        <name>TPV_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tobacco Use --></label>
+        <name>Tobacco_Use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Score Synced --></label>
+        <name>pi__Needs_Score_Synced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Scored At --></label>
+        <name>pi__Pardot_Last_Scored_At__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Campaign --></label>
+        <name>pi__campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Comments --></label>
+        <name>pi__comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Date --></label>
+        <name>pi__conversion_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Name --></label>
+        <name>pi__conversion_object_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Type --></label>
+        <name>pi__conversion_object_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Created Date --></label>
+        <name>pi__created_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Activity --></label>
+        <name>pi__first_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Query --></label>
+        <name>pi__first_search_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Type --></label>
+        <name>pi__first_search_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer --></label>
+        <name>pi__first_touch_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Grade --></label>
+        <name>pi__grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Activity --></label>
+        <name>pi__last_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Notes --></label>
+        <name>pi__notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Hard Bounced --></label>
+        <name>pi__pardot_hard_bounced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Score --></label>
+        <name>pi__score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot URL --></label>
+        <name>pi__url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Campaign --></label>
+        <name>pi__utm_campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Content --></label>
+        <name>pi__utm_content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Medium --></label>
+        <name>pi__utm_medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Source --></label>
+        <name>pi__utm_source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Term --></label>
+        <name>pi__utm_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjudication --></label>
+        <name>vfirst__Adjudication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initiate Background Check --></label>
+        <name>vfirst__Initiate_Background_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Guest Access Helper --></label>
+        <name>vfirst__Site_Guest_Access_Helper__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>vfirst__Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Report --></label>
+        <name>vfirst__Verification_Report_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Background Checks Ordered --></label>
+        <name>vfirst__of_Background_Checks_Ordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>vlocity_ins__Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Commission --></label>
+        <name>vlocity_ins__AnnualCommission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Income --></label>
+        <name>vlocity_ins__AnnualIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Premium --></label>
+        <name>vlocity_ins__AnnualPremium__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAQHIdentifier --></label>
+        <name>vlocity_ins__CAQHIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Sentiment --></label>
+        <name>vlocity_ins__CustomerSentiment__c</name>
+        <picklistValues>
+            <masterLabel>Disgruntled</masterLabel>
+            <translation><!-- Disgruntled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promoter</masterLabel>
+            <translation><!-- Promoter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Contact --></label>
+        <name>vlocity_ins__DaysSinceLastContact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Driver&apos;s License Number --></label>
+        <name>vlocity_ins__DriversLicenseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Status --></label>
+        <name>vlocity_ins__EmploymentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Employed Full-Time</masterLabel>
+            <translation><!-- Employed Full-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Part-Time</masterLabel>
+            <translation><!-- Employed Part-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Employed</masterLabel>
+            <translation><!-- Self-Employed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed</masterLabel>
+            <translation><!-- Unemployed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>vlocity_ins__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 24x7 Support --></label>
+        <name>vlocity_ins__Has24x7Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image --></label>
+        <name>vlocity_ins__Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee --></label>
+        <name>vlocity_ins__IsEmployee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner --></label>
+        <name>vlocity_ins__IsPartner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Person Account --></label>
+        <name>vlocity_ins__IsPersonAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages Spoken --></label>
+        <name>vlocity_ins__LanguagesSpoken__c</name>
+        <picklistValues>
+            <masterLabel>Cantonese</masterLabel>
+            <translation><!-- Cantonese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaiian</masterLabel>
+            <translation><!-- Hawaiian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ilocano</masterLabel>
+            <translation><!-- Ilocano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandarin</masterLabel>
+            <translation><!-- Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Language</masterLabel>
+            <translation><!-- Other Language --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samoan</masterLabel>
+            <translation><!-- Samoan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sign Language</masterLabel>
+            <translation><!-- Sign Language --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tagalog</masterLabel>
+            <translation><!-- Tagalog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation><!-- Thai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tongan</masterLabel>
+            <translation><!-- Tongan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Contact by Record Owner --></label>
+        <name>vlocity_ins__LastContactbyRecordOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>vlocity_ins__Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name --></label>
+        <name>vlocity_ins__MiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- National Producer Number --></label>
+        <name>vlocity_ins__NPNNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Worth --></label>
+        <name>vlocity_ins__NetWorth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>vlocity_ins__Occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Tier --></label>
+        <name>vlocity_ins__PartnerTier__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>vlocity_ins__PartyId__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Premium Year --></label>
+        <name>vlocity_ins__PremiumYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Agency/Brokerage Party --></label>
+        <name>vlocity_ins__PrimaryAgencyBrokeragePartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- PrimaryAgency/Brokerage Record Type --></label>
+        <name>vlocity_ins__PrimaryAgencyBrokerageRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer --></label>
+        <name>vlocity_ins__PrimaryEmployerId__c</name>
+        <relationshipLabel><!-- Employees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Provider Account --></label>
+        <name>vlocity_ins__PrimaryLocationAccountId__c</name>
+        <relationshipLabel><!-- Contacts (Primary Provider Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Producer Number --></label>
+        <name>vlocity_ins__ProducerNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Identifier --></label>
+        <name>vlocity_ins__ProviderIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepts new patients --></label>
+        <name>vlocity_ins__ProviderIsAcceptingNewPatients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Security Number --></label>
+        <name>vlocity_ins__SocialSecurityNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- State of Issuance --></label>
+        <name>vlocity_ins__StateOfIssuance__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax ID --></label>
+        <name>vlocity_ins__TaxId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tobacco Use --></label>
+        <name>vlocity_ins__TobaccoUse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Associate Agent</masterLabel>
+            <translation><!-- Associate Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broker</masterLabel>
+            <translation><!-- Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensed Agent</masterLabel>
+            <translation><!-- Licensed Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing Agent</masterLabel>
+            <translation><!-- Managing Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employee Number --></label>
+        <name>vlocity_ins__UserEmployeeNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserId --></label>
+        <name>vlocity_ins__UserId__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Web Site --></label>
+        <name>vlocity_ins__WebSite__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Concierge --></label>
+        <name>Concierge</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General --></label>
+        <name>General</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Member Enrollment --></label>
+        <name>Member_Enrollment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Producer --></label>
+        <name>Producer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Contact --></label>
+        <name>vlocity_ins__Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MobilePhoneContact --></label>
+        <name>vlocity_ins__MobilePhoneContact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Producer --></label>
+        <name>vlocity_ins__Producer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Provider --></label>
+        <name>vlocity_ins__Provider</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Social Security Number is 9-digit number --></errorMessage>
+        <name>vlocity_ins__EnforceSocialSecurityNumberlength</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateGroup --></label>
+        <name>vlocity_ins__CreateGroup</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateHousehold --></label>
+        <name>vlocity_ins__CreateHousehold</name>
+    </webLinks>
+</CustomObjectTranslation>

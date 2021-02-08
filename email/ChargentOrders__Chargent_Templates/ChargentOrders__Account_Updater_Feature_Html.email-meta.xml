@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Account Updater Feature Html</name>
+    <style>none</style>
+    <subject>Your Credit Card Will Expire Soon</subject>
+    <textOnly>Dear {!ChargentOrders__Email_Notification__c.ChargentOrders__First_Name__c} {!ChargentOrders__Email_Notification__c.ChargentOrders__Last_Name__c},
+
+Your card will expire soon. 
+
+You can use Chargent account Updater feature by clicking 
+
+{!ChargentOrders__Email_Notification__c.ChargentOrders__Account_Updater_Link__c}
+
+Thanks,
+{!Organization.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

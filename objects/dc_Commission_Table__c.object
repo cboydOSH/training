@@ -225,11 +225,6 @@
         </valueSet>
     </fields>
     <label>Commission Table</label>
-    <listViews>
-        <fullName>All</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
     <nameField>
         <displayFormat>{00000000}</displayFormat>
         <label>Commission Table</label>
@@ -237,7 +232,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Commission Tables</pluralLabel>
-    <searchLayouts />
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
