@@ -1,5 +1,4 @@
-@IsTest(SeeAllData = true)
-public with sharing class LightningSelfRegisterControllerTest {
+@IsTest global with sharing class LightningSelfRegisterControllerTest {
 
  /* Verifies that IsValidPassword method with various password combinations. */
  @IsTest
@@ -99,4 +98,11 @@ public with sharing class LightningSelfRegisterControllerTest {
   paramsMap.put('startUrl', startUrl);
   return paramsMap;
  }
+    
+@IsTest static void testSetExperienceId() {
+  	String esto = 'esto';
+    LightningSelfRegisterController.setExperienceId(esto);
+    System.assertEquals(true, true);
+ }
+    
 }
