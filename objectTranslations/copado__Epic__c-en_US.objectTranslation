@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <label><!-- Application --></label>
+        <name>copado__Application__c</name>
+        <relationshipLabel><!-- Epics --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Cancelled Reason --></label>
         <name>copado__Cancelled_Reason__c</name>
     </fields>

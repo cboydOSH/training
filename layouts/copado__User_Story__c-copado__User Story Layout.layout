@@ -436,6 +436,11 @@
             <sortOrder>7</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>copado__Run_Compliance_Scan</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>8</sortOrder>
@@ -479,11 +484,6 @@
             <actionName>copado__Add_Apex_Tests</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>16</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedLists>
@@ -537,6 +537,10 @@
         <relatedList>copado__Static_Code_Analysis_Result__c.copado__User_Story__c</relatedList>
         <sortField>CREATED_DATE</sortField>
         <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>copado__Result__c.copado__User_Story__c</relatedList>
     </relatedLists>
     <relatedLists>
         <excludeButtons>New</excludeButtons>

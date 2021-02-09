@@ -287,6 +287,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>dsfs__DSProSFUsername__c</fullName>
+        <deprecated>false</deprecated>
+        <description>DocuSign username</description>
+        <externalId>false</externalId>
+        <label>DSProSFUsername</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>icAgentConsole__incCustomScreenpop__c</fullName>
         <deprecated>false</deprecated>
         <description>Value of this field to be updated from inContact Agent Console app, use this field to get the value of inContact script variables.</description>
@@ -541,7 +553,7 @@
     <sharingModel>Read</sharingModel>
     <validationRules>
         <fullName>Manager_field_req_during_user_creation</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 OR(
 ISNEW(),

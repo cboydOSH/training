@@ -31,7 +31,7 @@
         "label": null,
         "sanitize": false,
         "show": null,
-        "text": "<div><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"../servlet/servlet.ImageServer?id=0158A000000WiyhQAC&amp;&amp;docName=CACBABBAA0066a47a44834f1ea190650393be4eb2&amp;&amp;oid=00D8A0000005sUvUAI\" alt=\"SignalsDirections\" width=\"100\" height=\"100\" /></div>\n<h1 style=\"text-align: center;\">You're Almost Done!</h1>",
+        "text": "<div><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"../servlet/servlet.ImageServer?id=0158A000000X2spQAC&amp;&amp;docName=CACBABBAA0066a47a44834f1ea190650393be4eb2&amp;&amp;oid=00D8A000000HlATUA0\" alt=\"SignalsDirections\" width=\"100\" height=\"100\" /></div>\n<h1 style=\"text-align: center;\">You're Almost Done!</h1>",
         "textKey": ""
     },
     "%vlocity_namespace%__ReusableOmniScript__c": true,

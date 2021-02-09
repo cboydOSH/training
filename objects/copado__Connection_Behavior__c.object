@@ -162,7 +162,7 @@
         <description>How should user stories be moved back from higher environments (prod/test) to lower environments (test/dev)</description>
         <externalId>false</externalId>
         <inlineHelpText>How should user stories be moved back from higher environments (prod/test) to lower environments (test/dev)</inlineHelpText>
-        <label>Back-Promotion Behavior</label>
+        <label>Back-Promotion Execution</label>
         <required>true</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -188,6 +188,17 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__Back_Promotion_Criteria__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Only user stories that meet this criteria will be eligible to be automatically back promoted.</inlineHelpText>
+        <label>Back-Promotion Criteria</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>copado__Back_Promotion_Schedule__c</fullName>
@@ -230,13 +241,33 @@
         <type>TextArea</type>
     </fields>
     <fields>
+        <fullName>copado__Execute_back_promotions_in_parallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Execute back-promotions in parallel</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>copado__Execute_promotions_in_parallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Execute promotions in parallel</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>copado__Max_Scheduled_Back_Promotion_Batch_Size__c</fullName>
         <defaultValue>10</defaultValue>
         <deprecated>false</deprecated>
         <description>The maximum number of user stories that will be deployed together when a deployment is scheduled</description>
         <externalId>false</externalId>
         <inlineHelpText>Set to 1 to deploy each story individually. Batching deployments speeds up the process but causes all stories in a batch to succeed or fail together. This can delay the deployment of some stories and make it harder to identify the cause of errors.</inlineHelpText>
-        <label>Scheduled Back-Promotions Max Batch Size</label>
+        <label>Scheduled Back-Promotion US Group Size</label>
         <precision>4</precision>
         <required>false</required>
         <scale>0</scale>
@@ -252,7 +283,7 @@
         <description>The maximum number of user stories that will be deployed together when a deployment is scheduled</description>
         <externalId>false</externalId>
         <inlineHelpText>Set to 1 to deploy each story individually. Batching deployments speeds up the process but causes all stories in a batch to succeed or fail together. This can delay the deployment of some stories and make it harder to identify the cause of errors.</inlineHelpText>
-        <label>Scheduled Deployment Max Batch Size</label>
+        <label>Scheduled Promotion US Group Size</label>
         <precision>4</precision>
         <required>false</required>
         <scale>0</scale>
@@ -267,7 +298,7 @@
         <description>How should user stories be deployed from lower (dev/test) environments to higher environments (test/prod)</description>
         <externalId>false</externalId>
         <inlineHelpText>How should user stories be deployed from lower (dev/test) environments to higher environments (test/prod)</inlineHelpText>
-        <label>Deployment Behavior</label>
+        <label>Promotion Execution</label>
         <required>true</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -278,12 +309,23 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>copado__Promotion_Criteria__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Only user stories that meet this criteria will be eligible to be automatically promoted.</inlineHelpText>
+        <label>Promotion Criteria</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>copado__Promotion_Schedule__c</fullName>
         <deprecated>false</deprecated>
         <description>The schedule for deployments (if they are scheduled)</description>
         <externalId>false</externalId>
         <inlineHelpText>The schedule for deployments (if they are scheduled)</inlineHelpText>
-        <label>Deployment Schedule</label>
+        <label>Promotion Schedule</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -313,11 +355,11 @@
         <formula>IF($Setup.copado__Settings__c.copado__Namespace__c != &apos;none&apos;,
 IF(
 TEXT(copado__Back_Promotion_Behavior__c) == &apos;Scheduled&apos;, 
-HYPERLINK(&quot;/apex/copado__ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;promotionType=Back_Promotion&quot;, &quot;Schedule Back-Promotion&quot;,&apos;_self&apos;),
+HYPERLINK(&quot;/apex/copado__ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;promotionType=Back_Promotion&quot;, IF(   ISBLANK(copado__Back_Promotion_Schedule__c), &quot;Schedule Back-Promotion&quot;, copado__Back_Promotion_Schedule__c),&apos;_self&apos;),
 &apos;&apos;),
 IF(
 TEXT(copado__Back_Promotion_Behavior__c) == &apos;Scheduled&apos;, 
-HYPERLINK(&quot;/apex/ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;promotionType=Back_Promotion&quot;, &quot;Schedule Back-Promotion&quot;,&apos;_self&apos;),
+HYPERLINK(&quot;/apex/ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;promotionType=Back_Promotion&quot;, IF(   ISBLANK(copado__Back_Promotion_Schedule__c), &quot;Schedule Back-Promotion&quot;, copado__Back_Promotion_Schedule__c),&apos;_self&apos;),
 &apos;&apos;)
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -336,15 +378,15 @@ HYPERLINK(&quot;/apex/ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;pro
         <externalId>false</externalId>
         <formula>IF($Setup.copado__Settings__c.copado__Namespace__c != &apos;none&apos;,
 IF(
-TEXT(copado__Promotion_Behavior__c) == &apos;Scheduled&apos;, HYPERLINK(&quot;/apex/copado__ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;promotionType=Promotion&quot;, &quot;Schedule Deployments&quot;,&apos;_self&apos;),
+TEXT(copado__Promotion_Behavior__c) == &apos;Scheduled&apos;, HYPERLINK(&quot;/apex/copado__ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;promotionType=Promotion&quot;,  IF( ISBLANK(copado__Promotion_Schedule__c) , &quot;Schedule Promotions&quot;, copado__Promotion_Schedule__c) ,&apos;_self&apos;),
 &apos;&apos;),
 IF(
-TEXT(copado__Promotion_Behavior__c) == &apos;Scheduled&apos;, HYPERLINK(&quot;/apex/ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;promotionType=Promotion&quot;, &quot;Schedule Deployments&quot;,&apos;_self&apos;),
+TEXT(copado__Promotion_Behavior__c) == &apos;Scheduled&apos;, HYPERLINK(&quot;/apex/ScheduleConnectionBehavior?id=&quot; + Id + &quot;&amp;promotionType=Promotion&quot;, IF( ISBLANK(copado__Promotion_Schedule__c) , &quot;Schedule Promotions&quot;, copado__Promotion_Schedule__c) ,&apos;_self&apos;),
 &apos;&apos;)
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <inlineHelpText>An action link to schedule deployments</inlineHelpText>
-        <label>Schedule Deployments</label>
+        <label>Schedule Promotion</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -357,7 +399,7 @@ TEXT(copado__Promotion_Behavior__c) == &apos;Scheduled&apos;, HYPERLINK(&quot;/a
         <description>Automatically change the status of user stories after deploying them to the target environment</description>
         <externalId>false</externalId>
         <inlineHelpText>What status should user stories be set to after they are successfully deployed?</inlineHelpText>
-        <label>Story Status After Deployment</label>
+        <label>User Story Status After Promotion</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>

@@ -6,7 +6,7 @@
     <label>ChargentOrderAction</label>
     <packageVersions>
         <majorNumber>5</majorNumber>
-        <minorNumber>91</minorNumber>
+        <minorNumber>92</minorNumber>
         <namespace>ChargentBase</namespace>
     </packageVersions>
 </ApexPage>

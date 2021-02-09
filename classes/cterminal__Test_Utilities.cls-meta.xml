@@ -3,7 +3,7 @@
     <apiVersion>50.0</apiVersion>
     <packageVersions>
         <majorNumber>5</majorNumber>
-        <minorNumber>90</minorNumber>
+        <minorNumber>93</minorNumber>
         <namespace>cterminal</namespace>
     </packageVersions>
     <status>Active</status>
