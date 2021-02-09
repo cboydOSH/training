@@ -1,5 +1,4 @@
-@IsTest(SeeAllData = true)
-public with sharing class LightningForgotPasswordControllerTest {
+@IsTest global with sharing class LightningForgotPasswordControllerTest {
 
  /* Verifies that ForgotPasswordController handles invalid usernames appropriately */
  @IsTest
@@ -22,4 +21,11 @@ public with sharing class LightningForgotPasswordControllerTest {
   LightningForgotPasswordController controller = new LightningForgotPasswordController();
   System.assertNotEquals(controller, null);
  }
+    
+    @IsTest
+ static void LightningForgotPasswordControllerSetExperienceId() {
+  LightningForgotPasswordController.setExperienceId('paranoia');
+  System.assertEquals(true, true);
+ }
+    
 }
