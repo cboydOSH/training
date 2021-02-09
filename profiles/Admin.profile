@@ -60976,14 +60976,6 @@
         <recordType>PersonAccount.Dependent</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PersonAccount-Dependent Account Layout</layout>
-        <recordType>PersonAccount.Dependent</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PersonAccount-Primary Member Account Layout</layout>
-        <recordType>PersonAccount.Primary_Member</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>PersonAccount-Primary Member Account Layout</layout>
         <recordType>PersonAccount.Primary_Member</recordType>
     </layoutAssignments>
@@ -73719,6 +73711,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManageTranslation</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManageTrustMeasures</name>
     </userPermissions>
     <userPermissions>
@@ -73992,9 +73988,5 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewTrustMeasures</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>ViewUserPII</name>
     </userPermissions>
 </Profile>
