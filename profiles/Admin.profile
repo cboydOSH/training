@@ -73711,6 +73711,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManageTranslation</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManageTrustMeasures</name>
     </userPermissions>
     <userPermissions>
@@ -73984,9 +73988,5 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewTrustMeasures</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>ViewUserPII</name>
     </userPermissions>
 </Profile>
