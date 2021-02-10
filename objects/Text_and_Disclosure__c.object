@@ -172,6 +172,19 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>Number_or_Currency__c</fullName>
         <externalId>false</externalId>
         <label>Number or Currency</label>
