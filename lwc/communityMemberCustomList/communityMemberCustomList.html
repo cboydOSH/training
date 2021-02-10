@@ -1,0 +1,74 @@
+<template>
+	<!-- <lightning-spinner size="large"></lightning-spinner> -->
+    <div if:true={showTable} class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Information Packet Number</th>
+									<th class="cell100 column2">Created Date</th>
+									<th class="cell100 column3"></th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody if:true={isOneElement}>
+									<tr class="row100 body">
+										<td class="cell100 column1">{firstQuote.InformationPacket}</td>
+										<td class="cell100 column2">{firstQuote.CreatedDate}</td>
+										<td class="cell100 column3">
+											<a class="enrollNowButton" href={firstQuote.EnrollLink}>Enroll</a>
+										</td>
+									</tr>
+							</tbody>
+							<tbody if:false={isOneElement}>
+								<template for:each={quotes} for:item="quote">
+									<tr class="row100 body" key={quote.Id}>
+										<td class="cell100 column1">{quote.InformationPacket}</td>
+										<td class="cell100 column2">{quote.CreatedDate}</td>
+										<td class="cell100 column3">
+											<a class="enrollNowButton" href={quote.EnrollLink}>Enroll</a>
+										</td>
+									</tr>
+								</template>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+        </div>
+	</div>
+	<div if:true={showMessage} class="limiter" style="width: 50%;">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">You have no Information Packets</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								<tr class="row100 body">
+									<td class="cell100 column1"><a href={newInfoPacketLink} class="newInformationPacketLink">Create a New Information Packet ></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+        </div>
+	</div> 
+</template>

@@ -1,0 +1,65 @@
+.communityProducerNumbersContainer{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 90%;
+}
+
+.communityProducerNumber{
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    height: 400px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
+    float: left;
+}
+
+.communityProducerNumberLabel{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    color: black;
+    font-size: 16px;
+}
+
+.communityProducerNumberSquare{
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    background-color: #091A3E;
+    border-radius: 3px;
+}
+
+.communityProducerNumberMoney{
+    position: relative;
+    overflow: hidden;
+    padding: 20%;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: #21716B;
+}
+
+.allMembers{
+    background: url("https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1591204224000/DashboardAllMembers") no-repeat;
+    background-size: 100%;
+}
+
+.activeMembers{
+    background: url("https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1591204260000/DashboardTotalActiveMembers") no-repeat;
+    background-size: 100%;
+}
+
+.commissionsMonth{
+    background: url("https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1591215677000/DashboardCommissionsMonth") no-repeat;
+    background-size: 100%;
+}
+
+.commissions{
+    background: url("https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1591215641000/DashboardCommissions") no-repeat;
+    background-size: 100%;
+}
