@@ -67906,10 +67906,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>false</enabled>
-        <name>ManageTranslation</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>false</enabled>
         <name>ManageTrustMeasures</name>
     </userPermissions>
     <userPermissions>
