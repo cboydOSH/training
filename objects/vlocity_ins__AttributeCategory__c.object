@@ -241,6 +241,17 @@
         <label>VlocityAdmin</label>
     </fieldSets>
     <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>vlocity_ins__ApplicableSubType__c</fullName>
         <deprecated>false</deprecated>
         <description>Applicable Sub Types by functionality eg Profiling, Product Selection,Product Configuration</description>
