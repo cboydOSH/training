@@ -1,0 +1,75 @@
+.communityProducerCardsContainer{
+    position: absolute;
+    top: 34%;
+    width: 91%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.communityProducerCard{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 19%;
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 3px solid #2480a7;
+    box-shadow: 2px 2px 5px 1px #d3d3d3;
+    float: left;
+    margin: 3%;
+    border-radius: 5px;
+}
+
+.communityProducerCardIconContainer{
+    position: relative;
+    float: left;
+    padding: 10px;
+    margin-top: 23px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #6b6d701c;
+}
+
+.communityProducerCardIcon{
+    padding: 5px;
+}
+
+.communityProducerCardInfo{
+    position: relative;
+    float: left;
+    width: auto;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.communityProducerCardNumber{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.communityProducerCardDescription{
+    position: relative;
+    width: 100%;
+    color: black;
+    text-align: left;
+    font-size: 12px;
+}
+
+.communityProducerCardLink{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: #64cae4;
+}
+
+.communityProducerNotificationIcon{
+    position: absolute;
+    right: 260px;
+    top: 26px;
+    cursor: pointer;
+}

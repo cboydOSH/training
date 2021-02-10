@@ -1,0 +1,99 @@
+.communityProducerQuickActionsContainer{
+    position: relative;
+    margin: 400px auto 0;
+    margin-bottom: 105px;
+    width: 98%;
+    height: 140px;
+    background-color: #fff;
+    border: 1px solid #f7f7f7;
+}
+
+.communityProducerQuickActionsLabel{
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    position: absolute;
+    margin-top: -32px;
+}
+
+.communityProducerQuickAction{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 1px #d3d3d3;
+    float: left;
+    border-radius: 5px;
+    width: 15%;
+    margin-top: 37px;
+    cursor: pointer;
+    margin-right: 17.5%;
+    margin-left: 17.5%;
+}
+
+.communityProducerQuickAction2{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 1px #d3d3d3;
+    float: left;
+    border-radius: 5px;
+    width: 15%;
+    margin-top: 37px;
+    cursor: pointer;
+    margin-right: 17.5%;
+    margin-left: 17.5%;
+}
+
+
+.communityProducerQuickAction2:hover{
+    background-color:#00bcd41f;
+}
+
+.communityProducerQuickAction:hover{
+    background-color:#00bcd41f;
+}
+
+.communityProducerQuickActionIcon{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin: 12px;
+}
+
+.communityProducerQuickActionText{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    color: black;
+    float: left;
+    margin-top: 22px;
+    margin-right: 14px;
+}
+
+.communityProducerQuickActionArrow{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin-top: 24px;
+    margin-right: 14px;
+}
+
+@media only screen and (max-width: 1590px) {
+    .communityProducerQuickAction2{
+        width: 20%;
+        margin-right: 6%;
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .communityProducerQuickAction2{
+        width: 23%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
