@@ -345,7 +345,7 @@
         "%vlocity_namespace%__ValueDataType__c": "Text",
         "%vlocity_namespace%__ValueDecoder__c": "",
         "%vlocity_namespace%__ValueDescription__c": "",
-        "%vlocity_namespace%__Value__c": "Doctor Access 24/7  ($100 Consult Fee)",
+        "%vlocity_namespace%__Value__c": "Doctor Access 24/7 (Consult Fee 100% Shared)",
         "Name": "Telemedicine (not owned or operated by OneShare Health)",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
