@@ -4652,6 +4652,17 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>First_Billing_Date__c</fullName>
         <externalId>false</externalId>
         <label>First Billing Date</label>
