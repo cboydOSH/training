@@ -182,6 +182,18 @@
         <type>DateTime</type>
     </fields>
     <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>Last_Payment_Date__c</fullName>
         <externalId>false</externalId>
         <label>Last Payment Date</label>
@@ -232,7 +244,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Commission Tables</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
