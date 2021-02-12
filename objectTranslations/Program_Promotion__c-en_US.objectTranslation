@@ -37,6 +37,10 @@
         <name>End_Date__c</name>
     </fields>
     <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Long Description --></label>
         <name>Long_Description__c</name>
     </fields>

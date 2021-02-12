@@ -13,6 +13,10 @@
         <name>Active__c</name>
     </fields>
     <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Number or Currency --></label>
         <name>Number_or_Currency__c</name>
     </fields>

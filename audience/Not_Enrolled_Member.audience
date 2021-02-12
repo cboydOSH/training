@@ -57,5 +57,11 @@
             <targetType>ExperienceVariation</targetType>
             <targetValue>Default_Theme_Navigation_Menu_1_Component_Properties</targetValue>
         </target>
+        <target>
+            <groupName>74e01835-07c1-4b09-a857-f0dd4c8fb915$#$a0a1ad71-725a-41c3-a6f7-d70314e78109</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Default_Customizable_User_Profile_Menu_Component_Properties</targetValue>
+        </target>
     </targets>
 </Audience>

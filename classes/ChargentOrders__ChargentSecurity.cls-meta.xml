@@ -3,12 +3,12 @@
     <apiVersion>43.0</apiVersion>
     <packageVersions>
         <majorNumber>5</majorNumber>
-        <minorNumber>92</minorNumber>
+        <minorNumber>91</minorNumber>
         <namespace>ChargentBase</namespace>
     </packageVersions>
     <packageVersions>
         <majorNumber>5</majorNumber>
-        <minorNumber>93</minorNumber>
+        <minorNumber>91</minorNumber>
         <namespace>ChargentOrders</namespace>
     </packageVersions>
     <status>Active</status>

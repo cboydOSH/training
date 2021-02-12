@@ -2915,8 +2915,9 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <columns>Effective_Date__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Main_Asset__c</field>
-            <operation>notEqual</operation>
+            <field>ACCOUNT.NAME</field>
+            <operation>contains</operation>
+            <value>enrollment</value>
         </filters>
         <label>All</label>
     </listViews>

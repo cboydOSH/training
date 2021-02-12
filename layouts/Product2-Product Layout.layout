@@ -101,6 +101,13 @@
         </platformActionListItems>
     </platformActionList>
     <relatedLists>
+        <fields>TITLE</fields>
+        <fields>ARTICLE_NUMBER</fields>
+        <fields>LAST_PUBLISHED_DATE</fields>
+        <fields>UPDATEDBY_USER</fields>
+        <relatedList>Knowledge__kav.Product__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <relatedList>RelatedStandardPriceList</relatedList>
     </relatedLists>
     <relatedLists>

@@ -18,6 +18,10 @@
         <name>End_Date__c</name>
     </fields>
     <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Last Payment Date --></label>
         <name>Last_Payment_Date__c</name>
     </fields>

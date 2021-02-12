@@ -3,7 +3,7 @@
     <apiVersion>50.0</apiVersion>
     <isExposed>True</isExposed>
     <masterLabel xmlns="">consoleGuidebooks</masterLabel>
-    <runtimeNamespace>vlocity_ins</runtimeNamespace>
+    <runtimeNamespace xmlns="http://soap.sforce.com/2006/04/metadata">vlocity_ins</runtimeNamespace>
     <targets xmlns="http://soap.sforce.com/2006/04/metadata">
         <target>lightning__RecordPage</target>
         <target>lightning__AppPage</target>

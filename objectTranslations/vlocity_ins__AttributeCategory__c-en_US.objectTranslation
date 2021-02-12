@@ -9,6 +9,10 @@
         <name>vlocity_ins__VlocityAdmin</name>
     </fieldSets>
     <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Applicable Sub Type --></label>
         <name>vlocity_ins__ApplicableSubType__c</name>
         <picklistValues>

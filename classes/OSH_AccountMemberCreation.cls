@@ -41,7 +41,7 @@ global without sharing class OSH_AccountMemberCreation implements vlocity_ins.Vl
             //Create the user
             User u2 = new User(
                     contactId=con.Id, 
-                    username=email, 
+                    username='member'+'.'+email, 
                     firstname=con.FirstName,
                     lastname=con.LastName, 
                     email=email,
@@ -124,7 +124,7 @@ global without sharing class OSH_AccountMemberCreation implements vlocity_ins.Vl
                 //Create the user object for creation
                 User u2 = new User(
                         contactId=con.Id, 
-                        username=con.email, 
+                        username='member'+'.'+con.email, 
                         firstname=con.FirstName,
                         lastname=con.LastName, 
                         email=con.email,

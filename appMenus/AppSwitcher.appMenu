@@ -248,20 +248,4 @@
         <name>ContentDistributionForGuest</name>
         <type>ConnectedApp</type>
     </appMenuItems>
-    <appMenuItems>
-        <name>cterminal__Chargent_Terminal</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>ChargentOrders__Chargent</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>ChargentOrders__Chargent_Lightning</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>dsfs__DocuSign_For_Salesforce</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
 </AppMenu>

@@ -2160,6 +2160,20 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <label>New Leads</label>
     </listViews>
     <listViews>
+        <fullName>Sales_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lead.Sales_Lead</value>
+        </filters>
+        <label>Sales Leads</label>
+    </listViews>
+    <listViews>
         <fullName>TodaysLeads</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.STATE</columns>

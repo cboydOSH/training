@@ -13,6 +13,10 @@
         <name>End_Date__c</name>
     </fields>
     <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Producer --></label>
         <name>Producer__c</name>
         <relationshipLabel><!-- Product Contracts --></relationshipLabel>

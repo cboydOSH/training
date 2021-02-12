@@ -6,7 +6,7 @@
     <label>InternalPayment</label>
     <packageVersions>
         <majorNumber>5</majorNumber>
-        <minorNumber>92</minorNumber>
+        <minorNumber>91</minorNumber>
         <namespace>ChargentBase</namespace>
     </packageVersions>
 </ApexPage>

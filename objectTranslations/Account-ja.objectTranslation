@@ -176,6 +176,10 @@
         <name>Expecting_family_grow__c</name>
     </fields>
     <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- FMO --></label>
         <name>FMO__c</name>
         <relationshipLabel><!-- Accounts (FMO) --></relationshipLabel>

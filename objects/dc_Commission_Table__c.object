@@ -261,6 +261,11 @@
         <type>Summary</type>
     </fields>
     <label>Commission Table</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <displayFormat>{00000000}</displayFormat>
         <label>Commission Table</label>

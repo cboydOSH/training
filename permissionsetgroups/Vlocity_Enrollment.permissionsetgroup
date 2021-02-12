@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Vlocity_Enrollment</label>
+    <permissionSets>ChargentAnyObj_Payment_Console</permissionSets>
+    <permissionSets>ChargentAnyObj_Payment_Request</permissionSets>
+    <permissionSets>ChargentAnyObj__ChargentAnyObj_Payment_Console</permissionSets>
+    <permissionSets>ChargentAnyObj__ChargentAnyObj_Payment_Request</permissionSets>
+    <permissionSets>ChargentBase__Chargent_Admin_Base</permissionSets>
+    <permissionSets>ChargentBase__Chargent_User_Base</permissionSets>
+    <permissionSets>ChargentBase__Permission_Set_for_Payment_Request_Base</permissionSets>
+    <permissionSets>ChargentOrders__Permission_Set_for_Payment_Request_Chargent_Orders</permissionSets>
+    <permissionSets>Enrollment</permissionSets>
+    <permissionSets>Vlocity_CLM_Guest_User_OS</permissionSets>
+    <permissionSets>Vlocity_CLM_Lightning_Partner_Community</permissionSets>
+    <permissionSets>cterminal__Chargent_Terminal_Admin</permissionSets>
+    <permissionSets>cterminal__Chargent_Terminal_Unlinked_Payments</permissionSets>
+    <permissionSets>cterminal__Chargent_Terminal_User</permissionSets>
+    <permissionSets>dfsle__CLM_Administrator</permissionSets>
+    <permissionSets>dfsle__CLM_User</permissionSets>
+    <permissionSets>dfsle__CLM_Viewer</permissionSets>
+    <permissionSets>dfsle__DocuSign_Administrator</permissionSets>
+    <permissionSets>dfsle__DocuSign_Generator</permissionSets>
+    <permissionSets>dfsle__DocuSign_Negotiator</permissionSets>
+    <permissionSets>dfsle__DocuSign_Sender</permissionSets>
+    <permissionSets>dfsle__DocuSign_User</permissionSets>
+    <permissionSets>dsfs__DocuSign_Administrator</permissionSets>
+    <permissionSets>dsfs__DocuSign_Sender</permissionSets>
+    <permissionSets>dsfs__DocuSign_User</permissionSets>
+    <permissionSets>vlocity_ins__VlocityMobilePermissions</permissionSets>
+    <permissionSets>vlocity_ins__Vlocity_Health</permissionSets>
+    <permissionSets>vlocity_ins__Vlocity_Insurance</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

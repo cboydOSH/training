@@ -3,4 +3,32 @@
     <container>Member Community</container>
     <containerType>Network</containerType>
     <label>Default User Profile Menu</label>
+    <navigationMenuItem>
+        <label>Home</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Update Password</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/settings/home</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Update Payment Details</label>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/update-member-payment-details</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Log Out</label>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>Logout</target>
+        <type>Event</type>
+    </navigationMenuItem>
 </NavigationMenu>

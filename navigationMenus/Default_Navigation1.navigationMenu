@@ -18,22 +18,8 @@
                 <type>InternalLink</type>
             </navigationMenuItem>
             <navigationMenuItem>
-                <label>Update Member Details</label>
-                <position>1</position>
-                <publiclyAvailable>false</publiclyAvailable>
-                <target>/update-member-profile</target>
-                <type>InternalLink</type>
-            </navigationMenuItem>
-            <navigationMenuItem>
-                <label>Update Payment Details</label>
-                <position>2</position>
-                <publiclyAvailable>false</publiclyAvailable>
-                <target>/update-member-payment-details</target>
-                <type>InternalLink</type>
-            </navigationMenuItem>
-            <navigationMenuItem>
                 <label>OneShare Box</label>
-                <position>3</position>
+                <position>1</position>
                 <publiclyAvailable>true</publiclyAvailable>
                 <target>https://onesharemember.simtraction.com/login_member.asp</target>
                 <targetPreference>OpenExternalLinkInSameTab</targetPreference>
@@ -41,21 +27,21 @@
             </navigationMenuItem>
             <navigationMenuItem>
                 <label>FirstHealth Provider Search</label>
-                <position>4</position>
+                <position>2</position>
                 <publiclyAvailable>true</publiclyAvailable>
                 <target>http://providerlocator.firsthealth.com/oneshare</target>
                 <type>ExternalLink</type>
             </navigationMenuItem>
             <navigationMenuItem>
                 <label>Telemedicine</label>
-                <position>5</position>
+                <position>3</position>
                 <publiclyAvailable>false</publiclyAvailable>
                 <target>/Telemedicine</target>
                 <type>InternalLink</type>
             </navigationMenuItem>
             <navigationMenuItem>
                 <label>Guidebook</label>
-                <position>6</position>
+                <position>4</position>
                 <publiclyAvailable>false</publiclyAvailable>
                 <target>/guidebook</target>
                 <type>InternalLink</type>

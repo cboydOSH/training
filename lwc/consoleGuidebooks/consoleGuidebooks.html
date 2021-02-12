@@ -1,7 +1,10 @@
 <template>
     <lightning-card >
-            <div class="slds-m-around_medium">
+            <div if:true={showGuidebook} class="slds-m-around_medium">
                 <iframe width="100%" height="800" src={programURL}></iframe>
-            </div>    
+            </div>        
     </lightning-card>
+    <div if:true={showMessage} class="slds-m-around_medium">
+        <h1>There is no active asset for this account.</h1>
+    </div>
 </template>
