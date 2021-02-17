@@ -21168,6 +21168,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.External_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.Fax</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -53725,16 +53730,8 @@
         <recordType>PersonAccount.Dependent</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PersonAccount-Dependent Account Layout</layout>
-        <recordType>PersonAccount.Dependent</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>PersonAccount-Person Account Layout</layout>
         <recordType>PersonAccount.PersonAccount</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PersonAccount-Primary Member Account Layout</layout>
-        <recordType>PersonAccount.Primary_Member</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>PersonAccount-Primary Member Account Layout</layout>
