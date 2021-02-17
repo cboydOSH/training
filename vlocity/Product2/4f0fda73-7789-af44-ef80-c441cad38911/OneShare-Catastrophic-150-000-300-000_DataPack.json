@@ -5,9 +5,10 @@
     "%vlocity_namespace%__AttributeDefaultValues__c": {
         "BEHAVHEALTH": "24/7 Crisis Management - 4 Counseling Sessions",
         "DIAGXLAB": "Out Patient: For Pre/Post Admission Hospitalization or Outpatient Surgery",
+        "DISCLAIMER1": "A wide range of work-life balance tools and discounts to help with a variety of challenges, such as Childcare, Elder care, Legal forms and services, ID theft and more.",
         "DISCLAIMERCARD": "*Out-of-network member sharing reimbursement is based on the lesser of the Out-of-network provider actual billed amount or Maximum Reasonable Guidelines for the Eligible Services provided",
         "DISCLAIMERCARD2": "Telemedicine is not owned or operated by OneShare Health, LLC",
-        "DISCLAIMERCARD3": "(MAP) is not a shared service and is not owned or operated by OneShare Health, LLC",
+        "DISCLAIMERCARD3": "MAP is not a shared service and is not owned or operated by OneShare Health, LLC",
         "DISCLAIMERCARD4": "Prescription Discount Programs Not Owned or Operated by OneShare Health, LLC",
         "DISCLAIMERMEMBERDISC": "Discount Programs Not Owned or Operated by OneShare Health",
         "DISCPROGRAM": "Diabetics Care and Supplies / Hearing Discounts / Lab Discounts / Vitamins & Supplements Discounts / Prescription Discount Program",
@@ -23,7 +24,7 @@
         "PROCODE": "OSHCAT150",
         "PROVNET": "First Health Network",
         "SPEC": "$75 Visit Fee - Visits due to Hospitalization or Outpatient Surgery",
-        "TELEMED": "Doctor Access 24/7 ( Consult Fee 100% Shared)"
+        "TELEMED": "Doctor Access 24/7 (Consult Fee 100% Shared)"
     },
     "%vlocity_namespace%__AttributeMetadata__c": {
         "records": [
@@ -238,7 +239,7 @@
                             "hidden": false,
                             "inputType": "text",
                             "isNotTranslatable": false,
-                            "label": "In/Out Patient Surgery (Life threatening emergencies immediately available)",
+                            "label": "IN/OUT PATIENT SURGERY-Life Threatening Emergency Sharing Immediately Available",
                             "multiselect": false,
                             "readonly": false,
                             "required": false,
@@ -386,7 +387,7 @@
                             "code": "DISCLAIMERCARD",
                             "dataType": "text",
                             "disabled": false,
-                            "displaySequence": 16,
+                            "displaySequence": 17,
                             "filterable": true,
                             "hasRules": false,
                             "hidden": false,
@@ -410,7 +411,7 @@
                             "code": "DISCLAIMERCARD2",
                             "dataType": "text",
                             "disabled": true,
-                            "displaySequence": 17,
+                            "displaySequence": 18,
                             "filterable": true,
                             "hasRules": false,
                             "hidden": false,
@@ -434,7 +435,7 @@
                             "code": "DISCLAIMERCARD3",
                             "dataType": "text",
                             "disabled": true,
-                            "displaySequence": 18,
+                            "displaySequence": 19,
                             "filterable": true,
                             "hasRules": false,
                             "hidden": false,
@@ -458,7 +459,7 @@
                             "code": "DISCLAIMERCARD4",
                             "dataType": "text",
                             "disabled": true,
-                            "displaySequence": 19,
+                            "displaySequence": 20,
                             "filterable": true,
                             "hasRules": false,
                             "hidden": false,
@@ -482,7 +483,7 @@
                             "code": "PROCODE",
                             "dataType": "text",
                             "disabled": true,
-                            "displaySequence": 20,
+                            "displaySequence": 21,
                             "filterable": true,
                             "hasRules": false,
                             "hidden": true,
@@ -517,7 +518,7 @@
                             "code": "DISCPROGRAM",
                             "dataType": "text",
                             "disabled": true,
-                            "displaySequence": 14,
+                            "displaySequence": 15,
                             "filterable": true,
                             "hasRules": true,
                             "hidden": false,
@@ -541,7 +542,7 @@
                             "code": "DISCLAIMERMEMBERDISC",
                             "dataType": "text",
                             "disabled": true,
-                            "displaySequence": 15,
+                            "displaySequence": 16,
                             "filterable": true,
                             "hasRules": false,
                             "hidden": false,
@@ -562,9 +563,44 @@
                     ],
                     "totalSize": 2
                 }
+            },
+            {
+                "Code__c": "MMBRASSPROG",
+                "Name": "Member Assistance Program (MAP)",
+                "displaySequence": 8,
+                "id": "a0y8A000001yQXLQA2",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0z8A000001KvzWQAS",
+                            "cloneable": true,
+                            "code": "DISCLAIMER1",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 14,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Member Assistance Program (MAP) Support tools and discounts.",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
             }
         ],
-        "totalSize": 2
+        "totalSize": 3
     },
     "%vlocity_namespace%__AttributeRules__c": "{\n  \"DISCPROGRAM\" : {\n    \"attributeRules\" : [ {\n      \"ruleType\" : \"Set Value\",\n      \"expression\" : \"IF(%MEMBER.STATE% == \\\"WA\\\" ,true,false)\",\n      \"valueExpression\" : \"\\\"Prescription Drug Program\\\"\",\n      \"actions\" : {\n        \"Set Value\" : {\n          \"rest\" : {\n            \"params\" : { },\n            \"method\" : null,\n            \"link\" : null\n          },\n          \"remote\" : {\n            \"params\" : { }\n          },\n          \"client\" : {\n            \"params\" : { }\n          }\n        }\n      }\n    }, {\n      \"ruleType\" : \"Set Value\",\n      \"expression\" : \"IF(%MEMBER.STATE% == \\\"MA\\\" ,true,false)\",\n      \"valueExpression\" : \"\\\"Durable Medical Equipment / Dental / Diabetic Supplies / Lab Testing / Hearing Aids / Vision / Vitamins / MyEWellness.com / MRI & CT Scans\\\"\",\n      \"actions\" : {\n        \"Set Value\" : {\n          \"rest\" : {\n            \"params\" : { },\n            \"method\" : null,\n            \"link\" : null\n          },\n          \"remote\" : {\n            \"params\" : { }\n          },\n          \"client\" : {\n            \"params\" : { }\n          }\n        }\n      }\n    }, {\n      \"ruleType\" : \"Set Value\",\n      \"expression\" : \"IF(%MEMBER.STATE% != \\\"MA\\\" && %MEMBER.STATE% != \\\"WA\\\",true,false)\",\n      \"valueExpression\" : \"\\\"Diabetics Care and Supplies / Hearing Discounts / Lab Discounts / Vitamins & Supplements Discounts / Prescription Discount Program\\\"\",\n      \"actions\" : {\n        \"Set Value\" : {\n          \"rest\" : {\n            \"params\" : { },\n            \"method\" : null,\n            \"link\" : null\n          },\n          \"remote\" : {\n            \"params\" : { }\n          },\n          \"client\" : {\n            \"params\" : { }\n          }\n        }\n      }\n    } ]\n  }\n}",
     "%vlocity_namespace%__Availability__c": "AK;AL;AR;AZ;CA;CO;CT;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MA;MD;ME;MI;MN;MO;MS;MT;NC;ND;NE;NH;NJ;NM;NV;NY;OH;OK;OR;PA;RI;SC;SD;TN;TX;UT;VA;VT;WA;WI;WV;WY;DC",
@@ -662,6 +698,7 @@
     },
     "RevenueInstallmentPeriod": "",
     "RevenueScheduleType": "",
+    "SourceOrgProductId__c": ":01t8A0000043pgeQAA:",
     "StandardPricebookEntry": [
         {
             "%vlocity_namespace%__FloorPrice__c": "",

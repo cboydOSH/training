@@ -5,7 +5,7 @@
     "%vlocity_namespace%__AttributeDefaultValues__c": {
         "INNETWORK": "First Health Network",
         "MAXREAGUIDELINE": "Maximum Reasonable Guideline is the allowed charge made for medical services, drugs, procedures, supplies or treatment furnished for cases of comparable severity and nature in the geographical area in which the services are provided.",
-        "OUTNETWORK": "Using an Out of Network provider is still the Member’s choice. These provider services can result in higher medical bills and Out of Network providers may bill members for the difference between the billed charges and the program’s allowed amount"
+        "OUTNETWORK": "Using an Out-of-Network provider is still the Member’s choice. These provider services can result in higher medical bills and Out-of-Network providers may bill members for the difference between the bill charges and the program’s allowed amount"
     },
     "%vlocity_namespace%__AttributeMetadata__c": {
         "records": [
@@ -52,7 +52,7 @@
                             "hidden": false,
                             "inputType": "text",
                             "isNotTranslatable": false,
-                            "label": "Out of Network",
+                            "label": "Out-of-Network",
                             "multiselect": false,
                             "readonly": false,
                             "required": false,
@@ -188,6 +188,7 @@
     },
     "RevenueInstallmentPeriod": "",
     "RevenueScheduleType": "",
+    "SourceOrgProductId__c": ":01t8A00000697AEQAY:",
     "StandardPricebookEntry": [
         {
             "%vlocity_namespace%__FloorPrice__c": "",

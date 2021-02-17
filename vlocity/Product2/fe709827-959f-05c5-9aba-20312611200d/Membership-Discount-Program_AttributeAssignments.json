@@ -169,7 +169,7 @@
         "%vlocity_namespace%__ValueDataType__c": "Text",
         "%vlocity_namespace%__ValueDecoder__c": "",
         "%vlocity_namespace%__ValueDescription__c": "",
-        "%vlocity_namespace%__Value__c": "Telemedicine and Discount Programs Not Owned or Operated by OneShare Health.",
+        "%vlocity_namespace%__Value__c": "Telemedicine and Discount Programs not owned or operated by OneShare Health.",
         "Name": "disclaimer",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
