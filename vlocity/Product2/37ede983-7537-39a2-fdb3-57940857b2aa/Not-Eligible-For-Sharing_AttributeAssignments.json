@@ -40,7 +40,7 @@
         "%vlocity_namespace%__IsDynamic__c": false,
         "%vlocity_namespace%__IsEligibilityAttribute__c": false,
         "%vlocity_namespace%__IsEncrypted__c": false,
-        "%vlocity_namespace%__IsHidden__c": false,
+        "%vlocity_namespace%__IsHidden__c": true,
         "%vlocity_namespace%__IsNotAssetizable__c": false,
         "%vlocity_namespace%__IsNotTranslatable__c": false,
         "%vlocity_namespace%__IsOverride__c": false,
@@ -102,7 +102,7 @@
         "%vlocity_namespace%__AttributeCategorySubType__c": "Product Attribute",
         "%vlocity_namespace%__AttributeCategory__c": "",
         "%vlocity_namespace%__AttributeCode__c": "",
-        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Refer to Information Packet for services not Eligible for sharing",
+        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Refer to Information Packet for services Not Eligible for Sharing",
         "%vlocity_namespace%__AttributeDisplaySequence__c": "0",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "NOTELIGIBLEFORSHARING",
@@ -169,8 +169,8 @@
         "%vlocity_namespace%__ValueDataType__c": "Text",
         "%vlocity_namespace%__ValueDecoder__c": "",
         "%vlocity_namespace%__ValueDescription__c": "",
-        "%vlocity_namespace%__Value__c": "Refer to Information Packet for services not Eligible for sharing",
-        "Name": "Refer to Information Packet for services not Eligible for sharing",
+        "%vlocity_namespace%__Value__c": "If a medical need is related to a diagnosis, treatment or procedure that is ineligible for sharing in any way, that medical need is Not Eligible for Sharing.",
+        "Name": "Refer to Information Packet for services Not Eligible for Sharing",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
         "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/587de97f-a986-68d0-146e-85954cde241c"

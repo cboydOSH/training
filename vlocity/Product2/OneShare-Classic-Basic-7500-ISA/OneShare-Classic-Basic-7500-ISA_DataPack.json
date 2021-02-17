@@ -67,6 +67,7 @@
     "%vlocity_namespace%__VersionStartDateTime__c": "",
     "CanUseQuantitySchedule": true,
     "CanUseRevenueSchedule": true,
+    "Catalog__c": "",
     "Description": "",
     "DisplayUrl": "",
     "ExternalDataSourceId": "",
@@ -78,6 +79,8 @@
     "Name": "OneShare Classic Basic $7500 ISA",
     "NumberOfQuantityInstallments": "",
     "NumberOfRevenueInstallments": "",
+    "Organization_Code__c": "",
+    "PricebookEntry": "OneShare-Classic-Basic-7500-ISA_PricebookEntries.json",
     "ProductCode": "21658",
     "Program__c": "",
     "QuantityInstallmentPeriod": "",
@@ -86,8 +89,40 @@
     "RecordTypeId": "",
     "RevenueInstallmentPeriod": "",
     "RevenueScheduleType": "",
+    "SourceOrgProductId__c": ":01t4P000009MqxrQAC:",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "OneShare Classic Basic $7500 ISA",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": null,
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/Generated-2015812636",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "21658",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/Generated-2015812636"
+        }
+    ],
     "StockKeepingUnit": "",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "Product2",
-    "VlocityRecordSourceKey": "Product2/Generated-1239348117"
+    "VlocityRecordSourceKey": "Product2/Generated-2015812636"
 }

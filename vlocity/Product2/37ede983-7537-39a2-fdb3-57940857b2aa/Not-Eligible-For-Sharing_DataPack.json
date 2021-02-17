@@ -3,7 +3,7 @@
     "%vlocity_namespace%__ApprovedOn__c": "",
     "%vlocity_namespace%__AttributeAssignment__c": "Not-Eligible-For-Sharing_AttributeAssignments.json",
     "%vlocity_namespace%__AttributeDefaultValues__c": {
-        "NOTELIGIBLEFORSHARING": "Refer to Information Packet for services not Eligible for sharing",
+        "NOTELIGIBLEFORSHARING": "If a medical need is related to a diagnosis, treatment or procedure that is ineligible for sharing in any way, that medical need is Not Eligible for Sharing.",
         "NOTELIGSHAR": "If a medical need is related to a diagnosis, treatment or procedure that is ineligible for sharing in any way, that medical need is Not Eligible for Sharing."
     },
     "%vlocity_namespace%__AttributeMetadata__c": {
@@ -27,7 +27,7 @@
                             "hidden": false,
                             "inputType": "text",
                             "isNotTranslatable": false,
-                            "label": "Refer to Information Packet for services not Eligible for sharing",
+                            "label": "Refer to Information Packet for services Not Eligible for Sharing",
                             "multiselect": false,
                             "readonly": false,
                             "required": false,
@@ -48,7 +48,7 @@
                             "displaySequence": 1,
                             "filterable": true,
                             "hasRules": false,
-                            "hidden": false,
+                            "hidden": true,
                             "inputType": "text",
                             "isNotTranslatable": false,
                             "label": "Not eligible for sharing",
@@ -163,6 +163,7 @@
     },
     "RevenueInstallmentPeriod": "",
     "RevenueScheduleType": "",
+    "SourceOrgProductId__c": ":01t8A0000067FjIQAU:",
     "StandardPricebookEntry": [
         {
             "%vlocity_namespace%__FloorPrice__c": "",

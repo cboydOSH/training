@@ -190,7 +190,7 @@
         "%vlocity_namespace%__AttributeCategorySubType__c": "Product Attribute",
         "%vlocity_namespace%__AttributeCategory__c": "",
         "%vlocity_namespace%__AttributeCode__c": "",
-        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Out of Network",
+        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Out-of-Network",
         "%vlocity_namespace%__AttributeDisplaySequence__c": "1",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "OUTNETWORK",
@@ -257,8 +257,8 @@
         "%vlocity_namespace%__ValueDataType__c": "Text",
         "%vlocity_namespace%__ValueDecoder__c": "",
         "%vlocity_namespace%__ValueDescription__c": "",
-        "%vlocity_namespace%__Value__c": "Using an Out of Network provider is still the Member’s choice. These provider services can result in higher medical bills and Out of Network providers may bill members for the difference between the billed charges and the program’s allowed amount",
-        "Name": "Out of Network",
+        "%vlocity_namespace%__Value__c": "Using an Out-of-Network provider is still the Member’s choice. These provider services can result in higher medical bills and Out-of-Network providers may bill members for the difference between the bill charges and the program’s allowed amount",
+        "Name": "Out-of-Network",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
         "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/d6821189-e260-c5d2-a7bf-ab3899b16a4c"

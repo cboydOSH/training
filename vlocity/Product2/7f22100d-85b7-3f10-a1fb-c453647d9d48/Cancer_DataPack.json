@@ -6,9 +6,9 @@
         "CANCERLB": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.",
         "CANCERLIMITDIAGWUTHN5YEAR": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.",
         "CANCERLIMITMEMMORE5YEAR": "If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90-day waiting period",
-        "CANCERMEMBNEVERDIAGRECTREAT": "Sharing is eligible after a 90-day waiting period from the Member's effective date. If Cancer is diagnosed within the 90-day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are not eligible for sharing.",
+        "CANCERMEMBNEVERDIAGRECTREAT": "Sharing is eligible after a 90-day waiting period from the Member's effective date. If Cancer is diagnosed within the 90-day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are Not Eligible for Sharing.",
         "CANCERNEEDDIAGTREATMORE5YR": "Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.",
-        "CANCERPREEXREC": "Cancer Expenses are not eligible for sharing",
+        "CANCERPREEXREC": "Cancer Expenses are Not Eligible for Sharing",
         "CANCERSHLIMT": "The Lifetime Limit for all Cancer is $500,000; each Incident cannot exceed the Maximum Limit Per Incident.",
         "REQCAN5YEARS": "Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines."
     },
@@ -313,6 +313,7 @@
     },
     "RevenueInstallmentPeriod": "",
     "RevenueScheduleType": "",
+    "SourceOrgProductId__c": ":01t8A000004CGe5QAG:",
     "StandardPricebookEntry": [
         {
             "%vlocity_namespace%__FloorPrice__c": "",
