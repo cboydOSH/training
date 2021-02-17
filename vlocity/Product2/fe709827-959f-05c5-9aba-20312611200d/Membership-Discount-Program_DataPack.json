@@ -3,7 +3,7 @@
     "%vlocity_namespace%__ApprovedOn__c": "",
     "%vlocity_namespace%__AttributeAssignment__c": "Membership-Discount-Program_AttributeAssignments.json",
     "%vlocity_namespace%__AttributeDefaultValues__c": {
-        "DISCLAIMERMEMBERDISC2": "Telemedicine and Discount Programs Not Owned or Operated by OneShare Health.",
+        "DISCLAIMERMEMBERDISC2": "Telemedicine and Discount Programs not owned or operated by OneShare Health.",
         "DISCPROGRAM": "Diabetics Care and Supplies / Hearing Discounts / Lab Discounts / Vitamins & Supplements Discounts / Prescription Discount Program (Elixir)"
     },
     "%vlocity_namespace%__AttributeMetadata__c": {
@@ -163,6 +163,7 @@
     },
     "RevenueInstallmentPeriod": "",
     "RevenueScheduleType": "",
+    "SourceOrgProductId__c": ":01t8A000004UI3lQAG:",
     "StandardPricebookEntry": [
         {
             "%vlocity_namespace%__FloorPrice__c": "",
