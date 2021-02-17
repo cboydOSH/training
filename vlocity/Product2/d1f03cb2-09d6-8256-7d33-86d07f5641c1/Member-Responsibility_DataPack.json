@@ -323,6 +323,7 @@
     },
     "RevenueInstallmentPeriod": "",
     "RevenueScheduleType": "",
+    "SourceOrgProductId__c": ":01t8A000006972nQAA:",
     "StandardPricebookEntry": [
         {
             "%vlocity_namespace%__FloorPrice__c": "",

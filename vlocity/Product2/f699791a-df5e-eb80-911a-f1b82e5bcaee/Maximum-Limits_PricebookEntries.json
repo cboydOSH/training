@@ -1,0 +1,62 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Maximum Limits",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "f699791a-df5e-eb80-911a-f1b82e5bcaee",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "f699791a-df5e-eb80-911a-f1b82e5bcaee",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f699791a-df5e-eb80-911a-f1b82e5bcaee",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "MAXLIMITSROUTE",
+        "UnitPrice": 0,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/f699791a-df5e-eb80-911a-f1b82e5bcaee"
+    },
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Maximum Limits",
+        "Pricebook2.Name": "Standard",
+        "Pricebook2Id": {
+            "Name": "Standard",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "f699791a-df5e-eb80-911a-f1b82e5bcaee",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "f699791a-df5e-eb80-911a-f1b82e5bcaee",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f699791a-df5e-eb80-911a-f1b82e5bcaee",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "MAXLIMITSROUTE",
+        "UnitPrice": 0,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard/Product2/f699791a-df5e-eb80-911a-f1b82e5bcaee"
+    }
+]

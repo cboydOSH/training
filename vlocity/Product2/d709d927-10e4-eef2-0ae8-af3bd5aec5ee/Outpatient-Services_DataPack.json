@@ -1,0 +1,603 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Outpatient-Services_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "DIAXRAYLAB": "Included at any lab facility, after the Member’s In/Out-of -Network ISA is met, and subject to In/Out-of Network ISR.  Up to a maximum of $4,000 per Program Year.",
+        "INNETPRYCARE": "Non-Surgical Services for the diagnosis, treatment, management of an illness or injury  - In Network $50 Visit Fee, up to $200.",
+        "INNETSPECVIS": "Non-Surgical services for the diagnosis, treatment, management of an eligible illness/injury. In Network $75 Visit Fee per Outpatient visit. Up to $300.",
+        "INNETURGCA": "$100 Visit Fee. OneShare Membership shares up to $200 per visit. Diagnostic imaging such as MRI, Cat Scans, Pet Scans, pathology labs are not included in the Visit Fee. The ISA will separately apply",
+        "OUTNETPRYCARE": "Non-Surgical Services for the diagnosis, treatment, management of an illness or injury  - Out-of-Network $75 Visit Fee, up to $200.",
+        "OUTNETSPECVIS": "Non-Surgical services provided for the diagnosis, treatment, management of an eligible illness or injury. After the Out-of-Network ISA is met, eligible expenses are shared at 50%, up to $300, subject to Out-of-Network ISR.",
+        "OUTNETURGCA": "After the Out-of-Network ISA is met, Member shares 50%. OneShare Membership shares up to $200 per visit. Maximum Reasonable Guidelines apply to Out-of-Network expenses.",
+        "OUTPATSURGERY": "After the ISA is met, eligible expenses are shared subject to the in/Out-of-Network ISR. Life Threatening or Life Altering emergencies are immediately eligible for sharing. Maximum Reasonable Guidelines apply to Out-of-Network expenses.",
+        "OUTPATTHE": "After the Member’s In/Out-of -Network ISA is met, subject to In/Out-of- Network ISR  and related to an Eligible diagnosis.  As ordered by a Dr. and performed by a licensed therapist. Maximum of 10 combined visits per Incident.",
+        "OUTTHRPHOCSPLMT": "After the Member’s ISA is met, and subject to In/Out-of-Network ISR must be related to an Eligible diagnosis. Limit: 10 Combined Visits per incident.",
+        "PRICAFREMAX": "Limit 2 Visits Per Program Year (in/out network combined). OneShare Membership shares up to $200 per visit.",
+        "PRICARLIM": "Diagnostic imaging such as MRI, Cat Scans, Pet Scans and pathology labs are not included in the Visit Fee and the In/Out-of-Network ISA and In/Out-of-Network ISR will separately apply and subject to the Diagnostic/X-Ray/Labs Program Year Maximum.",
+        "SPEFREMAX": "Limit 2 Visits Per Program Year (in/out network combined).  OneShare Membership shares up to $300 per visit.",
+        "SPELIM": "Diagnostic imaging such as MRI, Cat Scans, Pet Scans and pathology labs are not included in the Visit Fee and the In/Out-of-Network ISA and In/Out-of-Network ISR will separately apply and subject to the Diagnostic/X-Ray/Labs Program Year Maximum.",
+        "URGECARELIM": "Diagnostic imaging such as MRI, Cat Scans, Pet Scans and pathology labs are not included in the Visit Fee and the In/Out-of-Network ISA and In/Out-of-Network ISR will separately apply and subject to the Diagnostic/X-Ray /Labs Program Year Maximum.",
+        "URGENTCARE": "For the diagnosis, treatment, of an eligible illness/injury serious enough that a member would seek care right away. 1 Visit per Program year",
+        "WELLNESS": "12 month waiting period. After In/Out-of-Network ISA is met, subject to In/Out-of-Network ISR, Preventive Screening Colonoscopy procedures for Members age 50+ Preventive Screening Mammogram procedures for Members age 40+",
+        "WELLNESS2": "Frequency and Maximum Sharing limits apply."
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "LEV2PROGATTR",
+                "Name": "Level 2 Program Attributes",
+                "displaySequence": 4,
+                "id": "a0y8A000001oo86QAA",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0z8A000001L59EQAS",
+                            "cloneable": true,
+                            "code": "INNETPRYCARE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "In Network Primary Care Physician Visit",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001L59JQAS",
+                            "cloneable": true,
+                            "code": "OUTNETPRYCARE",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Out-of-Network Primary Care Physician Visit",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001L59OQAS",
+                            "cloneable": true,
+                            "code": "INNETSPECVIS",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "In Network Specialist Visits",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001L59TQAS",
+                            "cloneable": true,
+                            "code": "OUTNETSPECVIS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Out-of-Network Specialist Visits",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A00000105ZdQAI",
+                            "cloneable": true,
+                            "code": "URGENTCARE",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 4,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Urgent Care",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKNNQA4",
+                            "cloneable": true,
+                            "code": "INNETURGCA",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "In Network Urgent Care",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKNJQA4",
+                            "cloneable": true,
+                            "code": "OUTNETURGCA",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 6,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Out-of-Network Urgent Care",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKNSQA4",
+                            "cloneable": true,
+                            "code": "URGECARELIM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 7,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Urgent Care Limitation",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000010r8UQAQ",
+                            "cloneable": true,
+                            "code": "OUTPATSURGERY",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 8,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Surgery",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001L81gQAC",
+                            "cloneable": true,
+                            "code": "OUTTHRPHOCSPLMT",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 9,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Therapy: Physical, Occupational, and Speech Therapy Limits",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A0000010r8PQAQ",
+                            "cloneable": true,
+                            "code": "DIAXRAYLAB",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Diagnostic / X-Ray / Labs",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKN3QAO",
+                            "cloneable": true,
+                            "code": "PRICAFREMAX",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 11,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Primary Care Frequencey and Maximum",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKN8QAO",
+                            "cloneable": true,
+                            "code": "PRICARLIM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 12,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Primary Care Limitation",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKNDQA4",
+                            "cloneable": true,
+                            "code": "SPEFREMAX",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 13,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Specialist Frequency and Maximum",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKNIQA4",
+                            "cloneable": true,
+                            "code": "SPELIM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 14,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Specialist Limitation",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKJqQAO",
+                            "cloneable": true,
+                            "code": "WELLNESS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 15,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Wellness",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKNXQA4",
+                            "cloneable": true,
+                            "code": "WELLNESS2",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 16,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Wellness",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0z8A000001UKNcQAO",
+                            "cloneable": true,
+                            "code": "OUTPATTHE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 17,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Out Patient Therapy",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 18
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalGroupKey__c": "a124285a-2af7-661d-3511-1fc2726853b5",
+    "%vlocity_namespace%__GlobalKey__c": "d709d927-10e4-eef2-0ae8-af3bd5aec5ee",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "",
+    "%vlocity_namespace%__MarketSegment__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "CoverageReserve",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Term__c": "Annual",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Catalog__c": "",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "ISA__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Outpatient Services",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "Organization_Code__c": "",
+    "PricebookEntry": "Outpatient-Services_PricebookEntries.json",
+    "ProductCode": "OUTPATSVCSROUTE",
+    "Program__c": "",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "CoverageSpec",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/CoverageSpec",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "SourceOrgProductId__c": ":01t8A000006boyMQAQ:",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Outpatient Services",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "d709d927-10e4-eef2-0ae8-af3bd5aec5ee",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "d709d927-10e4-eef2-0ae8-af3bd5aec5ee",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/d709d927-10e4-eef2-0ae8-af3bd5aec5ee",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "OUTPATSVCSROUTE",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/d709d927-10e4-eef2-0ae8-af3bd5aec5ee"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/d709d927-10e4-eef2-0ae8-af3bd5aec5ee"
+}

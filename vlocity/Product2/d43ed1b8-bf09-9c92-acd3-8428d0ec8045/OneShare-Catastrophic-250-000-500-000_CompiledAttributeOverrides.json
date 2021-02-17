@@ -191,7 +191,7 @@
                                 "hidden": false,
                                 "inputType": "text",
                                 "isNotTranslatable": false,
-                                "label": "Telemedicine (not owned or operated by OneShare Health)",
+                                "label": "Telemedicine",
                                 "multiselect": false,
                                 "readonly": false,
                                 "required": false,
@@ -215,7 +215,7 @@
                                 "hidden": false,
                                 "inputType": "text",
                                 "isNotTranslatable": false,
-                                "label": "Behavioral / Mental Health (not owned or operated by OneShare Health)",
+                                "label": "Behavioral / Mental Health",
                                 "multiselect": false,
                                 "readonly": false,
                                 "required": false,
@@ -263,7 +263,7 @@
                                 "hidden": false,
                                 "inputType": "text",
                                 "isNotTranslatable": false,
-                                "label": "Prescriptions (Discount Program is not owned or operated by OnesShare Health)",
+                                "label": "Prescriptions",
                                 "multiselect": false,
                                 "readonly": false,
                                 "required": false,
@@ -298,16 +298,16 @@
         },
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
-        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated795081552"
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated1843335336"
     },
     {
         "%vlocity_namespace%__AttributeDefaultValues__c": {
             "CANCERLB": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.",
             "CANCERLIMITDIAGWUTHN5YEAR": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.",
             "CANCERLIMITMEMMORE5YEAR": "If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90-day waiting period",
-            "CANCERMEMBNEVERDIAGRECTREAT": "Sharing is eligible after a 90-day waiting period from the Member's effective date. If Cancer is diagnosed within the 90-day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are not eligible for sharing.",
+            "CANCERMEMBNEVERDIAGRECTREAT": "Sharing is eligible after a 90-day waiting period from the Member's effective date. If Cancer is diagnosed within the 90-day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are Not Eligible for Sharing.",
             "CANCERNEEDDIAGTREATMORE5YR": "Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.",
-            "CANCERPREEXREC": "Cancer Expenses are not eligible for sharing",
+            "CANCERPREEXREC": "Cancer Expenses are Not Eligible for Sharing",
             "CANCERSHLIMT": "The Lifetime Limit for all Cancer is $500,000; each Incident cannot exceed the Maximum Limit Per Incident.",
             "REQCAN5YEARS": "Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines."
         },
@@ -536,11 +536,249 @@
         },
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
-        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated2132909207"
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated893468629"
     },
     {
         "%vlocity_namespace%__AttributeDefaultValues__c": {
-            "DISCLAIMERMEMBERDISC2": "Telemedicine and Discount Programs Not Owned or Operated by OneShare Health.",
+            "CANCERLB": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.",
+            "CANCERLIMITS": "Pre-existing or Recurring Cancer are not eligible for sharing",
+            "MEDNONCOMP": "Sharing for medical services will not be available when the conditions is shown to be the result of medical non-compliance with the Physician's recommended care, treatment or advice",
+            "PREEXCONDLIMT": "There is a 24 month waiting period before medical expenses for a pre-existing condition are eligible for sharing.",
+            "PREEXIST24DEF": "Any sickness or injury for which a Member received medical treatment, advice, care or services including diagnostic measures, took prescribed drugs or showed signs or symptoms, whether treated or not, within 24 months of Member's Program  effective date.",
+            "PREEXIST24ELE": "Eligibility for a Pre-Existing Condition has a 24 month waiting period.",
+            "PREEXISTCOND": "Pre-Existing Condition means any sickness or injury for which a Member received medical treatment, advice, care or services (including diagnostic measures) or took prescribed drugs within 24 months before the Member’s effective date of their Program.",
+            "TOBACCO": "If a Member used or uses tobacco in any form (this includes vaping of any nicotine products), any health-related issues are Not Eligible for Sharing."
+        },
+        "%vlocity_namespace%__AttributeMetadataChanges__c": "",
+        "%vlocity_namespace%__AttributeMetadata__c": {
+            "records": [
+                {
+                    "Code__c": "LEV2PROGATTR",
+                    "Name": "Level 2 Program Attributes",
+                    "displaySequence": 4,
+                    "id": "a0y8A000001oo86QAA",
+                    "productAttributes": {
+                        "records": [
+                            {
+                                "attributeId": "a0z8A00000105a0QAA",
+                                "cloneable": true,
+                                "code": "MEDNONCOMP",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 0,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Medical Non-Compliance",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A00000105ZrQAI",
+                                "cloneable": true,
+                                "code": "CANCERLIMITS",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 1,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Cancer Limitations",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A000001KohjQAC",
+                                "cloneable": true,
+                                "code": "CANCERLB",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 2,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Cancer Look Back Period",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A0000010f5WQAQ",
+                                "cloneable": true,
+                                "code": "PREEXIST24ELE",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 3,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Pre-Existing Condition 24/24: Eligibililty",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A0000010f5RQAQ",
+                                "cloneable": true,
+                                "code": "PREEXIST24DEF",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 4,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Pre-Existing Condition 24/24: Definition",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A0000010sJwQAI",
+                                "cloneable": true,
+                                "code": "PREEXISTCOND",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 5,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Pre-Existing Condition",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A0000010sJXQAY",
+                                "cloneable": true,
+                                "code": "PREEXCONDLIMT",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 6,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Pre-Existing Condition Limitation",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A00000105ZhQAI",
+                                "cloneable": true,
+                                "code": "TOBACCO",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 7,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Tobacco Use",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "totalSize": 8
+                    }
+                }
+            ],
+            "totalSize": 1
+        },
+        "%vlocity_namespace%__AttributeRules__c": "",
+        "%vlocity_namespace%__JSONAttribute__c": "",
+        "%vlocity_namespace%__ProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3b4381a2-15ee-f48c-99d6-4a0c2eacbc7b",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/3b4381a2-15ee-f48c-99d6-4a0c2eacbc7b",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d43ed1b8-bf09-9c92-acd3-8428d0ec8045",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/d43ed1b8-bf09-9c92-acd3-8428d0ec8045",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated1398953235"
+    },
+    {
+        "%vlocity_namespace%__AttributeDefaultValues__c": {
+            "DISCLAIMERMEMBERDISC2": "Telemedicine and Discount Programs not owned or operated by OneShare Health.",
             "DISCPROGRAM": "Diabetics Care and Supplies / Hearing Discounts / Lab Discounts / Vitamins & Supplements Discounts / Prescription Discount Program"
         },
         "%vlocity_namespace%__AttributeMetadataChanges__c": "",
@@ -675,7 +913,7 @@
         },
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
-        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-1171530730"
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-1903520778"
     },
     {
         "%vlocity_namespace%__AttributeDefaultValues__c": {
@@ -1050,6 +1288,119 @@
     },
     {
         "%vlocity_namespace%__AttributeDefaultValues__c": {
+            "INNETWORK": "First Health Network",
+            "MAXREAGUIDELINE": "Maximum Reasonable Guideline is the allowed charge made for medical services, drugs, procedures, supplies or treatment furnished for cases of comparable severity and nature in the geographical area in which the services are provided.",
+            "OUTNETWORK": "Using an Out-of-Network provider is still the Member’s choice. These provider services can result in higher medical bills and Out-of-Network providers may bill members for the difference between the bill charges and the Program’s allowed amount"
+        },
+        "%vlocity_namespace%__AttributeMetadataChanges__c": "",
+        "%vlocity_namespace%__AttributeMetadata__c": {
+            "records": [
+                {
+                    "Code__c": "LEV2PROGATTR",
+                    "Name": "Level 2 Program Attributes",
+                    "displaySequence": 4,
+                    "id": "a0y8A000001oo86QAA",
+                    "productAttributes": {
+                        "records": [
+                            {
+                                "attributeId": "a0z8A000001L58LQAS",
+                                "cloneable": true,
+                                "code": "INNETWORK",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 0,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "In Network",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A0000010f5lQAA",
+                                "cloneable": true,
+                                "code": "OUTNETWORK",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 1,
+                                "filterable": true,
+                                "hasRules": true,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Out-of-Network",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0z8A0000010r8ZQAQ",
+                                "cloneable": true,
+                                "code": "MAXREAGUIDELINE",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 2,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "text",
+                                "isNotTranslatable": false,
+                                "label": "Maximum Reasonable Guidelines",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "readonly": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "totalSize": 3
+                    }
+                }
+            ],
+            "totalSize": 1
+        },
+        "%vlocity_namespace%__AttributeRules__c": "",
+        "%vlocity_namespace%__JSONAttribute__c": "",
+        "%vlocity_namespace%__ProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "63dd3f4c-fb15-5bd9-36d0-abf3b092449e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/63dd3f4c-fb15-5bd9-36d0-abf3b092449e",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d43ed1b8-bf09-9c92-acd3-8428d0ec8045",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/d43ed1b8-bf09-9c92-acd3-8428d0ec8045",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated1471130332"
+    },
+    {
+        "%vlocity_namespace%__AttributeDefaultValues__c": {
             "LIFETIMESHARMAX": "$500,000",
             "MAXLIMITPERINC": "$250,000"
         },
@@ -1064,9 +1415,9 @@
                     "productAttributes": {
                         "records": [
                             {
-                                "attributeId": "a0z8A0000010r7HQAQ",
+                                "attributeId": "a0z8A0000010r7CQAQ",
                                 "cloneable": true,
-                                "code": "LIFETIMESHARMAX",
+                                "code": "MAXLIMITPERINC",
                                 "dataType": "text",
                                 "disabled": false,
                                 "displaySequence": 0,
@@ -1075,7 +1426,7 @@
                                 "hidden": false,
                                 "inputType": "text",
                                 "isNotTranslatable": false,
-                                "label": "Lifetime Sharing Maximum",
+                                "label": "Maximum Limit Per Incident",
                                 "multiselect": false,
                                 "readonly": false,
                                 "required": false,
@@ -1088,9 +1439,9 @@
                                 ]
                             },
                             {
-                                "attributeId": "a0z8A0000010r7CQAQ",
+                                "attributeId": "a0z8A0000010r7HQAQ",
                                 "cloneable": true,
-                                "code": "MAXLIMITPERINC",
+                                "code": "LIFETIMESHARMAX",
                                 "dataType": "text",
                                 "disabled": false,
                                 "displaySequence": 1,
@@ -1099,7 +1450,7 @@
                                 "hidden": false,
                                 "inputType": "text",
                                 "isNotTranslatable": false,
-                                "label": "Maximum Limit Per Incident",
+                                "label": "Lifetime Sharing Maximum",
                                 "multiselect": false,
                                 "readonly": false,
                                 "required": false,
@@ -1134,7 +1485,7 @@
         },
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
-        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated847469028"
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated1845477284"
     },
     {
         "%vlocity_namespace%__AttributeDefaultValues__c": {

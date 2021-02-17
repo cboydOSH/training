@@ -1,0 +1,62 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Provider Network",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "407d67f4-2fc7-45c5-0f49-28e7e745138e",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "407d67f4-2fc7-45c5-0f49-28e7e745138e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/407d67f4-2fc7-45c5-0f49-28e7e745138e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "PROVIDERNETROUTE",
+        "UnitPrice": 0,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/407d67f4-2fc7-45c5-0f49-28e7e745138e"
+    },
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Provider Network",
+        "Pricebook2.Name": "Standard",
+        "Pricebook2Id": {
+            "Name": "Standard",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "407d67f4-2fc7-45c5-0f49-28e7e745138e",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "407d67f4-2fc7-45c5-0f49-28e7e745138e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/407d67f4-2fc7-45c5-0f49-28e7e745138e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "PROVIDERNETROUTE",
+        "UnitPrice": 0,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard/Product2/407d67f4-2fc7-45c5-0f49-28e7e745138e"
+    }
+]
