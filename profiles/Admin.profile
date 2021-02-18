@@ -35555,6 +35555,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>dc_Commission_Table__c.Product_Contract__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>dc_Commission_Table__c.Start_Date__c</field>
         <readable>false</readable>
