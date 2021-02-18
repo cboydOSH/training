@@ -1293,6 +1293,11 @@
         </picklistValues>
     </recordTypes>
     <recordTypes>
+        <fullName>Program_Overview</fullName>
+        <active>true</active>
+        <label>Program Overview</label>
+    </recordTypes>
+    <recordTypes>
         <fullName>Tutorial</fullName>
         <active>true</active>
         <label>Tutorial</label>
