@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Email Template --></label>
+        <name>ChargentOrders__Email_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry On Day --></label>
+        <name>ChargentOrders__Retry_On_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry Option --></label>
+        <name>ChargentOrders__Retry_Option__c</name>
+    </fields>
+    <fields>
+        <help><!-- Organization wide email address for sending AC emails. --></help>
+        <label><!-- Sender Email Address --></label>
+        <name>ChargentOrders__Sender_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>ChargentOrders__Stage__c</name>
+    </fields>
+</CustomObjectTranslation>

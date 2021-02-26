@@ -1,0 +1,18 @@
+<template>
+  <lightning-accordion allow-multiple-sections-open onsectiontoggle={handleToggleSection}>
+        <template for:each={products} for:item="product">
+            <lightning-accordion-section key={product.name} label={product.name}>
+                    <template for:each={product.attributes} for:item="att" >
+                        <div class="row" key={att.key}>
+                            <div class="column">
+                                <h2>{att.key}</h2>
+                            </div>
+                            <div class="column2">
+                                <h2>{att.value}</h2>
+                            </div>
+                        </div>
+                    </template>
+            </lightning-accordion-section>
+        </template>
+    </lightning-accordion>
+</template>

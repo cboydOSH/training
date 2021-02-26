@@ -1,0 +1,14 @@
+{
+    "userInputs": {
+        "AccountId": "Text",
+        "AdditionalFeeMoreThan6": "0",
+        "AdditionalFees": "1000",
+        "Age": "38",
+        "MEMBER.AGE": "Number",
+        "MEMBER.AdditionalFeeMoreThan6": "Currency",
+        "MEMBER.STATE": "Text",
+        "MEMBER.additionalFees": "Currency",
+        "MEMBER.instanceKey": "Text",
+        "State": "LA"
+    }
+}

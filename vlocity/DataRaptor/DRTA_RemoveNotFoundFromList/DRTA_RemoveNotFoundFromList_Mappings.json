@@ -1,0 +1,60 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 1,
+        "%vlocity_namespace%__FormulaResultPath__c": "MergedAccountQuoteInfoFiltred",
+        "%vlocity_namespace%__Formula__c": "FILTER(LIST(MergedAccountQuoteInfo) 'Information_Packet_Number__c != \"Not Found\"')",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_RemoveNotFoundFromListCustom1855",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_RemoveNotFoundFromList",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 2,
+        "%vlocity_namespace%__FormulaResultPath__c": "MergedAccountQuoteInfoFiltredWithValidQuotes",
+        "%vlocity_namespace%__Formula__c": "FILTER(LIST(MergedAccountQuoteInfoFiltred) 'ADDDAY(TODAY(),-30) < QuoteCreatedDate')",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_RemoveNotFoundFromListCustom5697",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_RemoveNotFoundFromList",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "MergedAccountQuoteInfo",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "List<Map>",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "MergedAccountQuoteInfoFiltred",
+        "%vlocity_namespace%__IsDisabled__c": true,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_RemoveNotFoundFromListCustom2129",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_RemoveNotFoundFromList",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "MergedAccountQuoteInfo",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "List<Map>",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "MergedAccountQuoteInfoFiltredWithValidQuotes",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DRTA_RemoveNotFoundFromListCustom535",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DRTA_RemoveNotFoundFromList",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

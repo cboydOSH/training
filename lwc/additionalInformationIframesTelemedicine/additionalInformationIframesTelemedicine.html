@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title={discountName} icon-name="custom:custom59">
+        <template if:true={found}>
+            <div class="slds-m-around_medium">
+                <iframe height="400" src={urlForIFrame} class="iframe"></iframe>
+            </div>    
+        </template>
+        <template if:false={found}>
+                Not available for your Program  
+            </template>
+    </lightning-card>
+</template>

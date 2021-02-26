@@ -1,0 +1,32 @@
+{
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DR_ChangeContractStatus": null,
+        "DocusignSetValues": null,
+        "HTTPCreateEnvelope": null,
+        "HTTPGetEmbededSignedURL": null,
+        "HTTPRequestAccessToken": null,
+        "HTTPSendEnvelope": null,
+        "RA_CreateEmailBody": null,
+        "RA_CreateEnvelope": null,
+        "RA_JWT_convertToBase64Url": null,
+        "RA_JWT_getAssertion": null,
+        "RA_JWT_getBody": null,
+        "RA_JWT_getInput": null,
+        "Response": null,
+        "SV_Assertion": null,
+        "SV_CreateEmailBody": null,
+        "SV_CreateEnvelope": null,
+        "SV_RequestBody": null,
+        "SV_TransformBodyAsInput": null,
+        "SV_TransformInputForAssertion": null,
+        "SV_UsedValues": null
+    }
+}

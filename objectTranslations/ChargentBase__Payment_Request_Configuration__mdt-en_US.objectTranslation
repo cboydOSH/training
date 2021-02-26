@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cancel Message --></label>
+        <name>ChargentBase__Cancel_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Id of the Salesforce Document that contains the externally available logo. Only valid when using default payment request page and not when using custom pages --></help>
+        <label><!-- Company Logo --></label>
+        <name>ChargentBase__Company_Logo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Payment Request --></label>
+        <name>ChargentBase__Create_Payment_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Message --></label>
+        <name>ChargentBase__Failure_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature Activation Request Was Sent --></label>
+        <name>ChargentBase__Feature_Activation_Request_Was_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Country Field --></label>
+        <name>ChargentBase__Hide_Country_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Email Field --></label>
+        <name>ChargentBase__Hide_Email_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page Footer --></label>
+        <name>ChargentBase__Page_Footer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applicable ONLY when using default pages and not custom pages --></help>
+        <label><!-- PayForm Location --></label>
+        <name>ChargentBase__PayForm_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>ChargentBase__Payment_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of DAYS in which the payment link is valid. After this timeframe the links will no longer work and the user will be presented with an expired message --></help>
+        <label><!-- Payment Request Link Expiration --></label>
+        <name>ChargentBase__Payment_Request_Link_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Sites Page URL --></label>
+        <name>ChargentBase__Salesforce_Sites_Page_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Country Field --></label>
+        <name>ChargentBase__Show_Country_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wen set to true an email notification record with the request / response for the Gateway is created for each attempted payment via payment request --></help>
+        <label><!-- Show Debug --></label>
+        <name>ChargentBase__Show_Debug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Email Field --></label>
+        <name>ChargentBase__Show_Email_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Phone Number Field --></label>
+        <name>ChargentBase__Show_Phone_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Id --></label>
+        <name>ChargentBase__Site_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Label --></label>
+        <name>ChargentBase__Site_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Success Message --></label>
+        <name>ChargentBase__Success_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Default Pages --></label>
+        <name>ChargentBase__Use_Default_Pages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Text --></label>
+        <name>ChargentBase__Welcome_Text__c</name>
+    </fields>
+</CustomObjectTranslation>

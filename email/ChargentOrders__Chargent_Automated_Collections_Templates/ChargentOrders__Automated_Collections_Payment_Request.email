@@ -1,0 +1,6 @@
+{!Recipient.FirstName},<br><br>
+
+Your payment of [[merge field for amount due]] was declined on [[decline date]]. <br>
+Please update your payment details and submit the payment again by clicking here: [[payment request link]].
+<br>
+​​​​​​​Thank you.

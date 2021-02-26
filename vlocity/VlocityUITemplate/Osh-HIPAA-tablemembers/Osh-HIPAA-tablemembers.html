@@ -1,0 +1,565 @@
+<div id="hipaa" ng-controller="oshHipaa">
+    <!--<div>counterSpouse {{counterSpouse}}</div>
+    <div>counterChild {{counterChild}}</div>
+    <div>counterAdultDependent {{counterAdultDependent}}</div>
+    <div>counterOther {{counterOther}}</div>
+    <div>-->
+    
+    <span class="nds-form-element__label" id="label-7">I {{bpTree.response.Account.Name}}, authorize One Share Health to use and disclose protected health information (PHI) and/or personally identifiable information (PII) with the following parties:</span>    
+        <div class="nds-size_12-of-12">
+        <table
+            class="nds-table nds-table_bordered nds-table_resizable-cols nds-table_fixed-layout nds-border_left nds-border_right"
+            role="grid">
+            <thead
+                <tr>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Relationship</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">First Name</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Last Name</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Address</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Telephone</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Email Address</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Remove User?</h4>
+                    </th>
+                </tr>
+            </thead>
+            <!--Top Table Authorized Members-->
+            <tbody>
+                <tr class="nds-transition-show" ng-repeat="data in bpTree.response.HipaaList" ng-show="((data.relationship.includes('Primary')) || (data.isAuthorized == true)) && data.relationship != 'Producer' && (data.lname != null || data.fname != null )">
+                    <!--Avatar Icons-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <div class=" "
+                                ng-if="data.gender.includes('Male') && (data.relationship.includes('Primary') || data.relationship.includes('Spouse'))">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/912/912214.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                            </div>
+                            <div class=" "
+                                ng-if="data.gender.includes('Female') && (data.relationship.includes('Primary') || data.relationship.includes('Spouse'))">
+
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/2154/2154981.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Child') && data.gender.includes('Female')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/145/145866.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                            </div>
+                            <div class=" "
+                                ng-if="data.relationship.includes('Child') && data.gender.includes('Male')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/163/163801.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Adult Dependent')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name"
+                                               src="https://image.flaticon.com/icons/svg/2512/2512440.svg"
+                                               title="{{data.fullname}}">
+                                </span><span>Adult</span>
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Other')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/727/727399.svg"
+                                        title="{{data.fullname}}">
+                                </span><span>Other</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <!--First Name-->
+                        <div class="nds-align_absolute-center">
+                            <input type="text" class="nds-input nds-align_absolute-center" style="width: 100%;" readonly
+                                value="{{data.fname}}">
+                        </div>
+                    </td>
+                    <!--Last Name-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <input type="text" class="nds-input nds-align_absolute-center" style="width: 100%;" readonly
+                                value="{{data.lname}}">
+                        </div>
+                    </td>
+                    <!--Address-->
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                                <!-- react-text: 5 -->
+                                <!-- /react-text -->
+                                <!-- react-text: 6 -->
+                                <!-- /react-text -->
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.address" class="nds-input"
+                                    placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <!--Telephone-->
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                                <!-- react-text: 5 -->
+                                <!-- /react-text -->
+                                <!-- react-text: 6 -->
+                                <!-- /react-text -->
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.phone" class="nds-input"
+                                    vlc-slds-val-checker="telControl" ui-mask="(999) 999-9999" ng-minlength="0"
+                                    ng-maxlength="255" vlc-slds-ng-pattern="" vlc-slds-attr="placeholder"
+                                    vlc-slds-toggle-help-text="" placeholder="(___) ___-____" aria-invalid="false"
+                                    style="" placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <!--Email-->
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                                <!-- react-text: 5 -->
+                                <!-- /react-text -->
+                                <!-- react-text: 6 -->
+                                <!-- /react-text -->
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.email" class="nds-input"
+                                    placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <!--Authorize Button-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <button ng-if="data.relationship != 'Primary'" class="nds-button nds-button_neutral  "
+                                ng-click="AddremoveMember(data,'remove');  ">Remove</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="nds-m-top_large nds-size_12-of-12" ng-show="bpTree.response.UserType == 'Producer'">
+        <span class="nds-form-element__label" id="label-7">{{bpTree.response.Agent.isAuthorized == true ?
+             'Additionally, you have authorized your Producer:' : 'Additionally, you can authorize your Producer:'}}</span>
+        <table
+            class="nds-table nds-table_bordered nds-table_resizable-cols nds-table_fixed-layout nds-border_left nds-border_right"
+            role="grid">
+            <!--Before Bottom Table-->
+            <thead>
+                <tr>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Relationship</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">First Name</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Last Name</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Email Address</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Authorize?</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!--Avatar Icons-->
+                    <td>
+                        <div>
+                            <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                <img alt="Person name" src="https://image.flaticon.com/icons/png/512/2169/2169169.png"
+                                    title="{{data.fullname}}">
+                            </span><span> </span>Producer
+                        </div>
+                    </td>
+                    <td>
+                        <!--First Name-->
+                        <div class="nds-align_absolute-center">
+                            <input type="text" class="nds-input nds-align_absolute-center" style="width: 100%;"
+                                ng-value="bpTree.response.Agent.AgentFirstName" readonly>
+                        </div>
+                    </td>
+                    <!--Last Name-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <input type="text" class="nds-input nds-align_absolute-center" style="width: 100%;"
+                                ng-value="bpTree.response.Agent.AgentLastName" readonly>
+                        </div>
+                    </td>
+                    <!--Email Address-->
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" class="nds-input" placeholder="Placeholder Text"
+                                    readonly ng-value="bpTree.response.UserEmail">
+                            </div>
+                        </div>
+                    </td>
+                    <!--Authorize Button Agent-->
+                    <td>
+                        <div class="nds-align_absolute-center  "
+                            ng-if="bpTree.response.Agent.isAuthorized != true">
+                            <button class="nds-button nds-button_neutral"
+                                ng-click="AddremoveServicingAgent(bpTree.response.Agent,'authorize',true);  ">Authorize</button>
+                        </div>
+                        <div class="nds-align_absolute-center  "
+                            ng-if="bpTree.response.Agent.isAuthorized == true">
+                            <button class="nds-button nds-button_neutral"
+                                ng-click="AddremoveServicingAgent(bpTree.response.Agent,'unauthorize',false);  ">Unauthorize</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="nds-m-top_large nds-size_12-of-12" ng-hide="counterSpouse == 0 && counterChild == 0 && counterAdultDependent== 0">
+        <span ng-if="scope.bpTree.response.radioFamilyOption != 'MySelf'" class="nds-form-element__label  "
+            id="label-7">Other members of your family who can be authorized
+        </span>
+        <table ng-if="scope.bpTree.response.radioFamilyOption != 'MySelf'"
+            class="nds-table nds-table_bordered nds-table_resizable-cols nds-table_fixed-layout nds-border_left nds-border_right  "
+            role="grid">
+            <!--Midle Table-->
+            <thead>
+                <tr>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Relationship</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">First Name</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Last Name</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Address</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Telephone</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Email Address</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Authorize?</h4>
+                    </th>
+                </tr>
+            </thead>
+            <!--Midle Table Avaliable-->
+            <tbody>
+                <tr ng-repeat="data in bpTree.response.HipaaList" class="nds-transition-show"
+                    ng-show="data.isAuthorized == false && data.relationship != 'Other' && data.relationship != 'Primary' && data.relationship != 'Producer' " ng-if="18 <= data.age">
+                    <!--Avatar Icons-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <div class=" "
+                                ng-if="data.gender.includes('Male') && (data.relationship.includes('Primary') || data.relationship.includes('Spouse'))">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle ">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/912/912214.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                            <div class=" "
+                                ng-if="data.gender.includes('Female') && (data.relationship.includes('Primary') || data.relationship.includes('Spouse'))">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/2154/2154981.svg"
+                                        title="{{data.fullname}}">
+                                    <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                                </span><span> </span>{{data.relationship}}
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Child') && data.gender.includes('Female')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/145/145866.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Child') && data.gender.includes('Male')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/163/163801.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Adult Dependent')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                      <img alt="Person name"
+                                                src="https://image.flaticon.com/icons/svg/2512/2512440.svg"
+                                                title="{{data.fullname}}">
+                                </span><span>Adult</span>
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                            <div class=" "
+                                ng-if="data.relationship.includes('Other')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/727/727399.svg"
+                                        title="{{data.fullname}}">
+                                </span><span>Other</span>
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <!--First Name-->
+                        <div class="nds-align_absolute-center">
+                            <input type="text" class="nds-input nds-align_absolute-center" style="width: 100%;" readonly
+                                value="{{data.fname}}">
+                        </div>
+                    </td>
+                    <!--Last Name-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <input type="text" class="nds-input nds-align_absolute-center" style="width: 100%;" readonly
+                                value="{{data.lname}}">
+                        </div>
+                    </td>
+                    <!--Address-->
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                                <!-- react-text: 5 -->
+                                <!-- /react-text -->
+                                <!-- react-text: 6 -->
+                                <!-- /react-text -->
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.address" class="nds-input"
+                                    placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                                <!-- react-text: 5 -->
+                                <!-- /react-text -->
+                                <!-- react-text: 6 -->
+                                <!-- /react-text -->
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.phone" class="nds-input"
+                                    vlc-slds-val-checker="telControl" ui-mask="(999) 999-9999" ng-minlength="0"
+                                    ng-maxlength="255" vlc-slds-ng-pattern="" vlc-slds-attr="placeholder"
+                                    vlc-slds-toggle-help-text="" placeholder="(___) ___-____" aria-invalid="false"
+                                    style="" placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                                <!-- react-text: 5 -->
+                                <!-- /react-text -->
+                                <!-- react-text: 6 -->
+                                <!-- /react-text -->
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.email" class="nds-input"
+                                    placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <button class="nds-button nds-button_neutral"
+                                ng-click="AddremoveMember(data,'authorize');">Authorize</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="nds-m-top_large nds-size_12-of-12" ng-hide="counterOther == 0">
+        <!--Other Perons Table Others Label-->
+        <span class="nds-form-element__label" id="label-7">Other persons
+        </span>
+        <table
+            class="nds-table nds-table_bordered nds-table_resizable-cols nds-table_fixed-layout nds-border_left nds-border_right"
+            role="grid">
+            <!--Bottom Table // Other Persons Header-->
+            <thead>
+                <tr>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Relationship</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">First Name</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Last Name</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Address</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Telephone</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Email Address</h4>
+                    </th>
+                    <th>
+                        <h4 class="nds-align_absolute-center">Authorize?</h4>
+                    </th>
+                </tr>
+            </thead>
+            <!--Bottom Table Avaliable // Other persons-->
+            <tbody>
+                <tr ng-repeat="data in bpTree.response.HipaaList" class="nds-transition-show"
+                    ng-show="data.isAuthorized == false && data.relationship == 'Other'">
+                    <!--Avatar Icons-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <div class=" "
+                                ng-if="data.gender.includes('Male') && (data.relationship.includes('Primary') || data.relationship.includes('Spouse'))">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/912/912214.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                            <div class=" "
+                                ng-if="data.gender.includes('Female') && (data.relationship.includes('Primary') || data.relationship.includes('Spouse'))">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/2154/2154981.svg"
+                                        title="{{data.fullname}}">
+                                    <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                                </span><span> </span>{{data.relationship}}
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Child') && data.gender.includes('Female')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/145/145866.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Child') && data.gender.includes('Male')">
+                                <span cclass="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/163/163801.svg"
+                                        title="{{data.fullname}}">
+                                </span><span> </span>{{data.relationship}}
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Adult Dependent')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                      <img alt="Person name"
+                                                src="https://image.flaticon.com/icons/svg/2512/2512440.svg"
+                                                title="{{data.fullname}}">
+                                </span><span>Adult</span>
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                            <div class=" " 
+                                ng-if="data.relationship.includes('Other')">
+                                <span class="nds-avatar nds-avatar_large nds-avatar_circle">
+                                    <img alt="Person name" src="https://image.flaticon.com/icons/svg/727/727399.svg"
+                                        title="{{data.fullname}}">
+                                </span><span>Other</span>
+                                <!--from: <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <!--First Name Others table-->
+                        <div class="nds-align_absolute-center">
+                            <input type="text" class="nds-input nds-align_absolute-center" style="width: 100%;" readonly
+                                value="{{data.fname}}">
+                        </div>
+                    </td>
+                    <!--Last Name Other Table-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <input type="text" class="nds-input nds-align_absolute-center" style="width: 100%;" readonly
+                                value="{{data.lname}}">
+                        </div>
+                    </td>
+                    <!--Address Other table-->
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.address" class="nds-input"
+                                    placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <!--Phone Others table-->
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.phone" class="nds-input"
+                                    vlc-slds-val-checker="telControl" ui-mask="(999) 999-9999" ng-minlength="0"
+                                    ng-maxlength="255" vlc-slds-ng-pattern="" vlc-slds-attr="placeholder"
+                                    vlc-slds-toggle-help-text="" placeholder="(___) ___-____" aria-invalid="false"
+                                    style="" placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <!--Email Others table-->
+                    <td>
+                        <div class="nds-form-element nds-align_absolute-center">
+                            <label class="nds-form-element__label" for="text-input-id-1">
+                                <abbr class="nds-required" title="required"></abbr>
+                            </label>
+                            <div class="nds-form-element__control">
+                                <input type="text" id="text-input-id-1" ng-model="data.email" class="nds-input"
+                                    placeholder="Placeholder Text" readonly>
+                            </div>
+                        </div>
+                    </td>
+                    <!--Authorize Button Others table-->
+                    <td>
+                        <div class="nds-align_absolute-center">
+                            <button class="nds-button nds-button_neutral"
+                                ng-click="AddremoveMember(data, 'authorize');  ">Authorize</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

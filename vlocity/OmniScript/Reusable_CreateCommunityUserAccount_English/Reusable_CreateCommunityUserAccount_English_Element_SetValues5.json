@@ -1,0 +1,61 @@
+{
+    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateMemberUser",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Reusable/CreateCommunityUserAccount/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "ThisisEnroll": true,
+            "UserExist": true,
+            "UserType": "Member2",
+            "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+            "letsGetStarted": {
+                "BlkNoExistingInfoPacket": {
+                    "Email1": "MAIL@MAI2L.COM"
+                }
+            },
+            "planSelection": {
+                "selectedPlans": [
+                    {
+                        "Id": "01t8A000004UKPPQA4",
+                        "IsConfigurable__c": true,
+                        "IsRecommended__c": false,
+                        "Name": "Telemedicine",
+                        "ProductCode": "TELEMEDICINE",
+                        "RecordTypeName__c": "CoverageSpec",
+                        "Term__c": "Annual",
+                        "compared": true,
+                        "displaySequence": 11,
+                        "isOptional": false,
+                        "isSelected": true,
+                        "pciId": "a6y8A000000Ep28QAC",
+                        "productId": "01t8A000004UKPPQA4"
+                    }
+                ]
+            }
+        },
+        "label": "SetValues2",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SetValues5",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Reusable/CreateCommunityUserAccount/English/SetValues5"
+}

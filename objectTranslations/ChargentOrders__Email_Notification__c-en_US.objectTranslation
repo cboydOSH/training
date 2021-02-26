@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Updater Link Formatted --></label>
+        <name>ChargentOrders__Account_Updater_Link_Formatted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Updater Link --></label>
+        <name>ChargentOrders__Account_Updater_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>ChargentOrders__ChargentOrder__c</name>
+        <relationshipLabel><!-- Email Notifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>ChargentOrders__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>ChargentOrders__First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>ChargentOrders__Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notification Message --></label>
+        <name>ChargentOrders__Notification_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Transaction --></label>
+        <name>ChargentOrders__Related_Transaction__c</name>
+        <relationshipLabel><!-- Email Notifications (Related Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>ChargentOrders__Status__c</name>
+        <picklistValues>
+            <masterLabel>Account Updater</masterLabel>
+            <translation><!-- Account Updater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Request Debug</masterLabel>
+            <translation><!-- Payment Request Debug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unresolved Transaction</masterLabel>
+            <translation><!-- Unresolved Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction JSON --></label>
+        <name>ChargentOrders__Transaction_JSON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>ChargentOrders__Transaction__c</name>
+        <relationshipLabel><!-- Email Notifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unresolved Transaction --></label>
+        <name>ChargentOrders__Unresolved_Transaction__c</name>
+    </fields>
+</CustomObjectTranslation>

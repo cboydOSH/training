@@ -1,0 +1,43 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateMemberUser",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Reusable/CreateCommunityUserAccount/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "CreateMemberUser",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Reusable/CreateCommunityUserAccount/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "UserAlreadyExistEnroll",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Reusable/CreateCommunityUserAccount/English/UserAlreadyExistEnroll",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "UserAlreadyExistEnroll",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "documentNames": [
+            "CACABBADA09a7adb8e3294accbba722d31927a7f8"
+        ],
+        "label": "TextBlock20",
+        "sanitize": false,
+        "show": null,
+        "text": "<div><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"../servlet/servlet.ImageServer?id=0158A000000X2snQAC&amp;&amp;docName=CACABBADA09a7adb8e3294accbba722d31927a7f8&amp;&amp;oid=00D8A000000HlATUA0\" alt=\"SignalsDirections\" width=\"120\" height=\"120\" /></div>\n<h1 style=\"text-align: center;\">You're Almost Done!</h1>",
+        "textKey": ""
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Text Block",
+    "Name": "TextBlock20",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Reusable/CreateCommunityUserAccount/English/TextBlock20"
+}

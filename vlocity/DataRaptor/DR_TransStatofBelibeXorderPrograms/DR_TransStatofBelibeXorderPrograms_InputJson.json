@@ -1,0 +1,142 @@
+{
+    "AddEditFamilyMember": [
+        {
+            "address": "",
+            "age": 27,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1992-04-15T03:00:00.000Z",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Donald",
+            "id": "1586356829322",
+            "lname": "Duck",
+            "parent_id": "1586356829322",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "ContextId": "",
+    "DRId_Lead": "00QR000000IWpVmMAL",
+    "HaveAdultDependent": 0,
+    "NoAdultGreaterThan27AndLesserThan65": 0,
+    "NoChildGreaterThan27": 0,
+    "NoChildGreaterThan65": 0,
+    "NoChildWrongDate": 0,
+    "NoEmpAge18": 0,
+    "NoSpouse65": 0,
+    "NumOfEmployeeInternal": 1,
+    "ThisisQuote": true,
+    "attributeFilters": {
+    },
+    "bestMedicalPlans": [
+        "OSHCAT150",
+        "OSHCAT250"
+    ],
+    "childrenInCensus": false,
+    "effectiveDate": "2020-04-09",
+    "error": "OK",
+    "errorDOBList": [
+    ],
+    "id": "a5JR0000000JhR3MAK",
+    "isdtp": "p1",
+    "layout": "newport",
+    "letsGetStarted": {
+        "Email1": "donald@duck.com",
+        "FormulaEegible": false,
+        "FormulaEegibleMA": false,
+        "SelectReferer": "Referral",
+        "TAAddressGoogle-Block": {
+            "City": "Montevideo",
+            "Country": "Uruguay",
+            "State": "Montevideo",
+            "TAAddressGoogle": "123 Melrose Street",
+            "address": "Plácido Ellauri 3330",
+            "buildingSuiteApartment": null,
+            "zipCode": "11300"
+        },
+        "Telephone1": "1212121212",
+        "fName": "Donald",
+        "lName": "Duck"
+    },
+    "myFamily": {
+        "Check60daysandTodayPast": true,
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaValidateOldMember": false,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": null,
+        "MsgEffDateEnrollValid": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": null,
+        "RadioFamily": "MySelf",
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": "English",
+        "effDate": "2020-04-09",
+        "effDateEnroll": null,
+        "effectiveDateforQuote": "--",
+        "myFamilyTable": null
+    },
+    "oldestMemberList": [
+    ],
+    "output": [
+    ],
+    "planSelection": {
+        "selectedPlans": [
+        ]
+    },
+    "programs": {
+        "Space15x12": null,
+        "Space16x12": null,
+        "programsExample3": null,
+        "selectedPlansErrorMSGNoProgram": null
+    },
+    "reviewQuote": {
+        "Space13x12": null,
+        "Space14x12": null,
+        "Space17x3": null,
+        "Space25x3": null,
+        "Space26x3": null,
+        "readyToEnroll": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvlocity--vlocity-ins.visualforce.com",
+    "stateofBeliefs": {
+        "MessagingStatesoff": null,
+        "Space2x4": null,
+        "Space3x4": null,
+        "msg": null,
+        "qualification": "Yes"
+    },
+    "tellUsAboutYou": {
+        "Block19": null,
+        "Block20": null,
+        "tellUsAboutYouFields": {
+            "MSHowOftenPCP": "0-1",
+            "RadioCurrExpctibgStartfamily": "Yes",
+            "RadioEnrolledHCProgram": "Yes",
+            "RadiofamilycurrSpecialist": "Yes"
+        }
+    },
+    "timeStamp": "2020-04-08T14:32:38.641Z",
+    "userCurrencyCode": "USD",
+    "userId": "005R0000004dKZdIAM",
+    "userInputs": {
+        "MEMBER.AGE": 27,
+        "MEMBER.isPrimary": true
+    },
+    "userName": "brunno@attentisconsulting.com.vlocitydev",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "validCensus": true,
+    "vlcPersistentComponent": {
+    }
+}

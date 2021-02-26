@@ -1,0 +1,16 @@
+{
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DR_UpdateTokenAndPaymentBasicInfo": null,
+        "OS_DRGT_CommunityMember": null,
+        "OS_DRGT_Enroll_getSecondChargentInfo": null,
+        "responseAction": null
+    }
+}

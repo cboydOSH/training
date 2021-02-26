@@ -1,0 +1,13 @@
+Hello {!ChargentOrders__Payment_Request__c.ChargentOrders__Billing_Contact__c} <br/>
+<br/>
+{!ChargentOrders__ChargentOrder__c.OwnerFullName} has sent you a payment request. <br/>
+<br/>
+<b>Please click on the link below to make a secure online payment:</b> <br/>
+<br/>
+{!ChargentOrders__Payment_Request__c.ChargentOrders__Payment_Link_Formatted__c} <br/>
+<br/>
+Original message : <br/>
+{!ChargentOrders__Payment_Request__c.ChargentOrders__Notes__c} <br/>
+<br/>
+Thanks, <br/>
+{!Organization.Name}<br/>

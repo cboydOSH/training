@@ -1,0 +1,48 @@
+<apex:page showHeader="false" standardStylesheets="false" sideBar="false">
+    <style type="text/css">
+		body {
+			background-color: white !important;
+		}
+	</style>
+    <apex:includeLightning />
+    <apex:slds />
+
+  <div id="container" ></div>
+
+    <script>
+        $Lightning.use("ChargentBase:ChargentPaymentRequestSetupWizard", function() {
+            $Lightning.createComponent(
+                "ChargentBase:chargentPaymentRequestSetup",
+                {},
+                "container",
+                function(cmp) {
+                    var loadingDivElt = document.getElementById("loading-spinner");
+                    loadingDivElt.style.display = 'none';
+
+                    uploadMediaLwc = cmp;
+                    uploadMediaLwc.getElement().addEventListener("doneupload", 
+                    function(event) {
+                        if (event.detail && event.detail.refreshMediaPage) {
+                            parent.postMessage(JSON.stringify({'reload':"true"}), "/");
+                        }
+                    })
+                    uploadMediaLwc.getElement().addEventListener("changeframeheight", 
+                    function(event) {
+                        if (event.detail && event.detail.height) {
+                            parent.postMessage(JSON.stringify({ 'height' : event.detail.height }), "/");
+                        }
+                    })
+                }
+            );
+        });
+    </script>
+
+    <div class="slds-scope slds-grid slds-grid_frame" id="loading-spinner">
+        <div role="status" class="slds-spinner  slds-spinner_brand slds-spinner_medium">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+
+</apex:page>

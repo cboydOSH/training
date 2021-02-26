@@ -1,0 +1,54 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "input:Effective Date",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "myFamily:effDate",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DR_TransStatofBelibeXorderProgramsCustom9510",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DR_TransStatofBelibeXorderPrograms",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "input:PCP Visits",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "tellUsAboutYou:tellUsAboutYouFields:MSHowOftenPCP",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DR_TransStatofBelibeXorderProgramsCustom3031",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DR_TransStatofBelibeXorderPrograms",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "input:Pregnancy",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "tellUsAboutYou:tellUsAboutYouFields:RadioCurrExpctibgStartfamily",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DR_TransStatofBelibeXorderProgramsCustom7146",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DR_TransStatofBelibeXorderPrograms",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "input:Specialist",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "tellUsAboutYou:tellUsAboutYouFields:RadiofamilycurrSpecialist",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "DR_TransStatofBelibeXorderProgramsCustom1075",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "DR_TransStatofBelibeXorderPrograms",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

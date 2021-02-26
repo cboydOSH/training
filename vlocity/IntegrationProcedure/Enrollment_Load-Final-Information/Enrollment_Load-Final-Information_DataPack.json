@@ -1,0 +1,30 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "DRUpdateAsset to Apex Class Without Sharing",
+    "%vlocity_namespace%__CustomJavaScript__c": "Enrollment_Load-Final-Information_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "Enrollment_Load-Final-Information_Element_SVAccountFormula.json",
+        "Enrollment_Load-Final-Information_Element_DRUpdateMemberInfo.json",
+        "Enrollment_Load-Final-Information_Element_DRTAGetContractServiceInput.json",
+        "Enrollment_Load-Final-Information_Element_ContractServiceRemoteAction.json",
+        "Enrollment_Load-Final-Information_Element_RemoteActionUpdateAsset.json",
+        "Enrollment_Load-Final-Information_Element_DRGetAssetProductContract.json",
+        "Enrollment_Load-Final-Information_Element_DRUP_createComissionTable.json",
+        "Enrollment_Load-Final-Information_Element_DRUP_createProducerAsset.json",
+        "Enrollment_Load-Final-Information_Element_ResponseAction.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__IsTest__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "Enrollment_LoadFinalInformation",
+    "%vlocity_namespace%__PropertySet__c": "Enrollment_Load-Final-Information_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "Load Final Information",
+    "%vlocity_namespace%__Type__c": "Enrollment",
+    "Name": "OSH Final Enroll IP",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Enrollment/Load Final Information/Procedure"
+}

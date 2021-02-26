@@ -1,0 +1,12 @@
+{
+    "%vlocity_namespace%__DestinationFieldName__c": "Name",
+    "%vlocity_namespace%__DestinationSObjectType__c": "Quote",
+    "%vlocity_namespace%__SourceFieldName__c": "Name",
+    "%vlocity_namespace%__SourceFieldSObjectType__c": "",
+    "%vlocity_namespace%__SourceFieldType__c": "string",
+    "%vlocity_namespace%__SourceSObjectType__c": "Asset",
+    "Name": "Asset_Name_Quote_Name",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CustomFieldMap__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CustomFieldMap__c/Asset_Name_Quote_Name"
+}

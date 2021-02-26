@@ -1,0 +1,1099 @@
+<div class="nds-size_12-of-12" ng-controller="OSHapp" style="width:100%;" align="center">
+    <div style="max-width:100%" class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-size_12-of-12">
+        <!--Medical Conditions-->
+        <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+            <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                <!--Have you or any member of your family had any of the following conditions in the past 24 months?-->
+                <div align="left" style="max-width:60%;" class="nds-form-element__legend nds-form-element__label nds-form-element__control-help"
+                    for="radioHaveorHadCancerFunction">
+                    <span class="ng-binding" for="radioConditions24monthFunction">Have you or any member of your
+                        family had any of the following conditions in the past 24 months?</span>
+                    <span class="nds-required ng-scope">*
+                    </span>
+                    <div class="nds-control-action__container">
+                    </div>
+                </div>
+                <!--Medical Condition Example Table-->
+                <table style="max-width:70%;"
+                    class="nds-table nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right">
+                    <thead>
+                    </thead>
+                    <tbody class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                        <tr>
+                            <!--First 9 questions elements-->
+                            <td>
+                                <div class="nds-form-element" ng-repeat="data in medicalConditionsForDisplayColumn1">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">{{data}}</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                            <!--2nd 9 questions elements-->
+                            <td>
+                                <div class="nds-form-element" ng-repeat="data in medicalConditionsForDisplayColumn2">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">{{data}}</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Radio Button Medical Question-->
+                <div style="max-width:60%;" class="nds-m-top_small nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                    <fieldset class="nds-form-element" align="left">
+                        <div class="nds-form-element__control nds-m-top_xx-small">
+                            <div class="nds-radio_button-group">
+                                <span class="nds-button nds-radio_button">
+                                    <input ng-click="radioConditions24monthFunction(true)" type="radio"
+                                        name="radioConditions24monthFunction" id="radioConditions24monthFunction-Yes"
+                                        value="Yes" ng-model="bpTree.response.radioConditions24monthFunction" required>
+                                    <label class="nds-radio_button__label" for="radioConditions24monthFunction-Yes">
+                                        <span class="nds-radio_faux">Yes</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                                <span class="nds-button nds-radio_button">
+                                    <div class="nds-radio-overlay"></div>
+                                    <input ng-click="radioConditions24monthFunction(false)" type="radio"
+                                        name="radioConditions24monthFunction" id="radioConditions24monthFunction-No"
+                                        value="No" ng-model="bpTree.response.radioConditions24monthFunction">
+                                    <label class="nds-radio_button__label" for="radioConditions24monthFunction-No">
+                                        <span class="nds-radio_faux">No</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Medical Questions Table-->
+                <table style="max-width:70%;"
+                    class="nds-m-top_xx-large nds-table nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right"
+                    ng-if="radioConditions24monthFlag">
+                    <thead>
+                        <tr class="nds-text-title_caps">
+                            <th scope="col">
+                                <div class="nds-truncate" title="Member">Member</div>
+                            </th>
+                            <th item-width="200px" scope="col">
+                                <div class="nds-truncate" title="Medical conditions">Medical conditions</div>
+                            </th>
+                            <th item-width="200px" scope="col">
+                                <div class="nds-truncate" title="Medical conditions2"></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12"
+                        ng-repeat="data in bpTree.response.EditFamilyMember | filter: filterForRelationship">
+                        <tr>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="nds-form-element">
+                                    <label class="nds-form-element__label" for="text-input-id-1"></label>
+                                    <div class="nds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="nds-input" readonly
+                                            value="{{data.fullname}}" placeholder="Placeholder Text">
+                                    </div>
+                                </div>
+                            </td>
+                            <!--First 9 questions elements-->
+                            <td>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.diabetesI" type="checkbox" name="options"
+                                                id="checkbox-diabetesI" value="on"
+                                                ng-click="medicalConditionsModified(data.diabetesI, 'Diabetes I', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Diabetes I</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.diabetesII" type="checkbox" name="options"
+                                                id="checkbox-diabetesII" value="on"
+                                                ng-click="medicalConditionsModified(data.diabetesII, 'Diabetes II', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Diabetes II</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.kidneydiseaseorfailure" type="checkbox" name="options"
+                                                id="checkbox-kidneydiseaseorfailure" value="on"
+                                                ng-click="medicalConditionsModified(data.kidneydiseaseorfailure, 'Kidney Disease/Failure', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Kidney
+                                                    Disease/Failure</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.heartdisease" type="checkbox" name="options"
+                                                id="checkbox-heartdisease" value="on"
+                                                ng-click="medicalConditionsModified(data.heartdisease, 'Heart Disease', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Heart Disease</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.hearthbypasssurgery" type="checkbox" name="options"
+                                                id="checkbox-hearthbypasssurgery" value="on"
+                                                ng-click="medicalConditionsModified(data.hearthbypasssurgery, 'Heart Bypass Surgery', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Heart Bypass
+                                                    Surgery</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.congestiveheartfailure" type="checkbox" name="options"
+                                                id="checkbox-congestiveheartfailure" value="on"
+                                                ng-click="medicalConditionsModified(data.congestiveheartfailure, 'Congestive Heart Failure', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Congestive Heart
+                                                    Failure</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.hypertensionorhighblood" type="checkbox"
+                                                name="options" id="checkbox-hypertensionorhighblood" value="on"
+                                                ng-click="medicalConditionsModified(data.hypertensionorhighblood, 'Hypertension/High Blood Pressure', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Hypertension/High Blood
+                                                    Pressure</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.behavioralormentalhealth" type="checkbox"
+                                                name="options" id="checkbox-behavioralormentalhealth" value="on"
+                                                ng-click="medicalConditionsModified(data.behavioralormentalhealth, 'Behavioral/Mental Health', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Behavioral/Mental
+                                                    Health</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                            <!--2nd 9 questions elements-->
+                            <td>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.herniateddisc" type="checkbox" name="options"
+                                                id="checkbox-herniateddisc" value="on"
+                                                ng-click="medicalConditionsModified(data.herniateddisc, 'Herniated Disc', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Herniated Disc</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.crohnsdisease" type="checkbox" name="options"
+                                                id="checkbox-crohnsdisease" value="on"
+                                                ng-click="medicalConditionsModified(data.crohnsdisease, 'Crohn’s Disease', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Crohn’s Disease</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.hivaids" type="checkbox" name="options"
+                                                id="checkbox-hivaids" value="on"
+                                                ng-click="medicalConditionsModified(data.hivaids, 'HIV/Aids', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">HIV/Aids</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.asthma" type="checkbox" name="options"
+                                                id="checkbox-asthma" value="on"
+                                                ng-click="medicalConditionsModified(data.asthma, 'Asthma', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Asthma</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.eatingdisorders" type="checkbox" name="options"
+                                                id="checkbox-eatingdisorders" value="on"
+                                                ng-click="medicalConditionsModified(data.eatingdisorders, 'Eating Disorders', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Eating Disorders</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.copd" type="checkbox" name="options"
+                                                id="checkbox-copd" value="on"
+                                                ng-click="medicalConditionsModified(data.copd, 'COPD', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">COPD</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="nds-form-element">
+                                    <div class="nds-form-element__control">
+                                        <label class="nds-checkbox">
+                                            <input ng-model="data.hyperlipidemia" type="checkbox" name="options"
+                                                id="checkbox-hyperlipidemia" value="on"
+                                                ng-click="medicalConditionsModified(data.hyperlipidemia, 'Hyperlipidemia', data)">
+                                            <span class="nds-checkbox_faux"></span>
+                                            <label class="nds-checkbox__label">
+                                                <span class="nds-form-element__label">Hyperlipidemia</span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <input hidden ng-model="vmedicalConditionsModified" type="text" id="inputforvalidations"
+                        ng-click="medicalConditionsModified()" ng-if="radioConditions24monthFlag" required>
+                </table>
+            </div>
+        </div>
+        <!--DIV Master Questions-->
+        <div align="center"
+            class="nds-m-top_xx-large nds-m-top_large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+            <!--In the past 24 months have you or any member of your family who are enrolling, received medical service, treatment or advice?-->
+            <div class="nds-m-top_xx-large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                <div style="max-width:60%;" class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                    <div class="nds-form-element__legend nds-form-element__label nds-form-element__control-help"
+                        for="radioMedicalServiceFunction" align="left">
+                        <span class="ng-binding" for="radioMedicalServiceFunction">Have you or
+                            any
+                            member of
+                            your family
+                            received medical service, treatment, or advice for a condition different than the ones
+                            listed above in the past 24 months?</span>
+                        <span class="nds-required ng-scope">*
+                        </span>
+                        <div class="nds-control-action__container">
+                        </div>
+                    </div>
+                    <!--Radio 24 month-->
+                </div>
+                <div style="max-width:60%;" class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                    <fieldset class="nds-form-element" align="left">
+                        <div class="nds-form-element__control nds-m-top_xx-small">
+                            <div class="nds-radio_button-group">
+                                <span class="nds-button nds-radio_button">
+                                    <input ng-click="radioMedicalServiceFunction(true)" type="radio"
+                                        name="radioMedicalServiceFunction" id="radioMedicalServiceFunction-Yes"
+                                        value="Yes" ng-model="bpTree.response.radioMedicalServiceFunction" required>
+                                    <label class="nds-radio_button__label" for="radioMedicalServiceFunction-Yes">
+                                        <span class="nds-radio_faux">Yes</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                                <span class="nds-button nds-radio_button">
+                                    <div class="nds-radio-overlay"></div>
+                                    <input ng-click="radioMedicalServiceFunction(false)" type="radio"
+                                        name="radioMedicalServiceFunction" id="radioMedicalServiceFunction-No"
+                                        value="No" ng-model="bpTree.response.radioMedicalServiceFunction">
+                                    <label class="nds-radio_button__label" for="radioMedicalServiceFunction-No">
+                                        <span class="nds-radio_faux">No</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Table In the past 24 months have you or any member of your family who are enrolling, received medical service, treatment or advice?-->
+                <div class="nds-m-top_large nds-m-bottom_large">
+                    <div style="max-width:88%;"
+                        class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                        <div class="nds-m-top_medium" ng-if="radioMedicalServiceFlag">
+                            <table
+                                class="nds-table nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right"
+                                style="width:100%;">
+                                <thead>
+                                    <tr class="nds-text-title_caps">
+                                        <th scope="col">
+                                            <div class="nds-truncate" title="Member">Member</div>
+                                        </th>
+                                        <th item-width="200px" scope="col">
+                                            <div class="nds-truncate" title="Incident Date">Incident Date</div>
+                                        </th>
+                                        <th item-width="200px" scope="col">
+                                            <div class="nds-truncate" title="Providers Name">Provider’s Name</div>
+                                        </th>
+                                        <th item-width="200px" scope="col">
+                                            <div class="nds-truncate" title="Diagnosis">Diagnosis</div>
+                                        </th>
+                                        <th item-width="200px" scope="col">
+                                            <div class="nds-truncate" title="Diagnosis">Remove</div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <button class="nds-button nds-button_neutral" ng-click="addMedicalService()">Add
+                                            Medical Service</button>
+                                    </tr>
+                                </thead>
+                                <tbody class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12"
+                                    ng-repeat="medicalServiceDetail in medicalServiceDetails track by $index">
+                                    <tr>
+                                        <!-- Member -->
+                                        <td scope="row">
+                                            <div align="left">
+                                                <div class="nds-form-element__control">
+                                                    <div class="nds-select_container">
+                                                        <select class="nds-select"
+                                                            ng-options="memberSelected.id as memberSelected.fname for memberSelected in bpTree.response.EditFamilyMember | filter: filterForRelationship"
+                                                            ng-model="medicalServiceDetail.id"
+                                                            ng-change="synchMedicalServiceTableDataToOS()"
+                                                            required></select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- Incident Date -->
+                                        <td>
+                                            <div class="nds-form-element">
+                                                <input invalid type="text" class="nds-input"
+                                                    data-date-format="MM-dd-yyyy"
+                                                    ng-model="medicalServiceDetail.incidentDate"
+                                                    model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                                    class="nds-input slds-datepicker__month" placeholder="mm/dd/yyyy"
+                                                    style="width: 90%;" required
+                                                    ng-change="synchMedicalServiceTableDataToOS();">
+                                            </div>
+                                        </td>
+                                        <!-- Provider’s Name -->
+                                        <td>
+                                            <div class="nds-form-element">
+                                                <div class="nds-form-element__control">
+                                                    <input type="text" ng-model="medicalServiceDetail.providerName"
+                                                        ng-change="synchMedicalServiceTableDataToOS()" required>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- Diagnosis -->
+                                        <td>
+                                            <div class="nds-form-element">
+                                                <div class="nds-form-element__control">
+                                                    <input type="text" ng-model="medicalServiceDetail.diagnosis"
+                                                        ng-change="synchMedicalServiceTableDataToOS()" required>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- Delete button -->
+                                        <td>
+                                            <button class="nds-button nds-button_neutral"
+                                                ng-click="deleteMedicalService(medicalServiceDetail)">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Have you, or any Family Member been Hospitalized in the past 6 Months? -->
+            <div class="nds-m-top_xx-large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                <div style="max-width:60%;" class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12"
+                    align="left">
+
+                    <div class="nds-form-element__legend nds-form-element__label nds-form-element__control-help">
+                        <span class="ng-binding" for="radioHospitalizedFunction">Have you or any member of your
+                            family been hospitalized in the past 6 months?</span>
+                        <span class="nds-required ng-scope">
+                        </span>
+                        <div class="nds-control-action__container"></div>
+                    </div>
+                </div>
+                <!--Radio button family hospitalized-->
+                <div style="max-width:60%;" class="nds-radio_button-group">
+                    <span class="nds-button nds-radio_button">
+                        <input ng-click="radioHospitalizedFunction(true)" type="radio" name="radioHospitalizedFunction"
+                            id="radioHospitalizedFunction-Yes" ng-model="bpTree.response.radioHospitalizedFunction"
+                            value="Yes" required>
+                        <label class="nds-radio_button__label" for="radioHospitalizedFunction-Yes">
+                            <span class="nds-radio_faux">Yes</span>
+                            <div class="nds-radio-overlay"></div>
+                        </label>
+                    </span>
+                    <span class="nds-button nds-radio_button">
+                        <div class="nds-radio-overlay"></div>
+                        <input ng-click="radioHospitalizedFunction(false)" type="radio" name="radioHospitalizedFunction"
+                            id="radioHospitalizedFunction-No" ng-model="bpTree.response.radioHospitalizedFunction"
+                            value="No">
+                        <label class="nds-radio_button__label" for="radioHospitalizedFunction-No">
+                            <span class="nds-radio_faux">No</span>
+                            <div class="nds-radio-overlay"></div>
+                        </label>
+                    </span>
+                </div>
+                <!--Disclaimers Requirement for Hospitalized person within a month based on admission date-->
+                <div style="max-width:60%;" ng-if="radioHospitalizedFlag" class="nds-m-top_large nds-m-bottom_large">
+
+                    <div class="nds-m-top_xx-small  nds-notify nds-notify_alert nds-theme_alert-texture nds-theme_warning disclaimerCancer"
+                        role="alert">
+                        <img src="https://image.flaticon.com/icons/svg/497/497738.svg" width="20px" height="20px">
+                        <span class="nds-assistive-text">warning</span>
+                        <span class="nds-icon_container nds-icon-utility-warning nds-m-right_x-small"
+                            title="Warning Cancer Coverage">
+                        </span>
+                        <h2 class="fontfordisclaimers">
+                            Please be aware that Waiting Periods and Pre-Existing Condition Limitations apply. If
+                            you
+                            are
+                            currently hospitalized, this hospitalization is Not Eligible for Sharing.
+                            <a href="javascript:void(0);"></a>
+                        </h2>
+                    </div>
+                </div>
+                <!--Table Have you, or any Family Member been Hospitalized in the past 6 Months?-->
+                <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12 nds-m-top_large nds-m-top_large" style="max-width:88%;"
+                    align="left">
+                    <div class="nds-m-top_medium" ng-if="radioHospitalizedFlag">
+                        <table
+                            class="nds-table nds-table_bordered nds-table_cell-buffer nds-table_striped nds-border_left nds-border_right"
+                            style="width:100%;">
+                            <thead>
+                                <tr class="nds-text-title_caps">
+                                    <th scope="col">
+                                        <div class="nds-truncate" title="Member">Member</div>
+                                    </th>
+                                    <th item-width="200px" scope="col">
+                                        <div class="nds-truncate" title="Admission Date">Admission Date</div>
+                                    </th>
+                                    <th item-width="200px" scope="col">
+                                        <div class="nds-truncate" title="Facilitys Name">Facility’s Name</div>
+                                    </th>
+                                    <th item-width="200px" scope="col">
+                                        <div class="nds-truncate" title="Diagnosis">Diagnosis</div>
+                                    </th>
+                                    <th item-width="200px" scope="col">
+                                        <div class="nds-truncate" title="Diagnosis">Remove</div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <button class="nds-button nds-button_neutral"
+                                        ng-click="addHospitalizedDetails()">Add
+                                        Event</button>
+                                </tr>
+                            </thead>
+                            <tbody class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12"
+                                ng-repeat="hospitalizedDetail in hospitalizedDetails track by $index">
+                                <tr>
+                                    <!-- Member -->
+                                    <td scope="row">
+                                        <div align="left">
+                                            <div class="nds-form-element__control">
+                                                <div class="nds-select_container">
+                                                    <select class="nds-select"
+                                                        ng-options="memberSelected.id as memberSelected.fname for memberSelected in bpTree.response.EditFamilyMember | filter: filterForRelationship"
+                                                        ng-model="hospitalizedDetail.id"
+                                                        ng-change="synchHospitalizedTableDataToOS()" required></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!-- Admission Date -->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <input invalid type="text" class="nds-input" data-date-format="MM-dd-yyyy"
+                                                ng-model="hospitalizedDetail.admissionDate"
+                                                ng-keyup="updateRelationShip()" model-date-format="yyyy-MM-dd"
+                                                slds-date-picker date-type="string"
+                                                class="nds-input slds-datepicker__month" placeholder="mm/dd/yyyy"
+                                                style="width: 90%;" required
+                                                ng-change="synchHospitalizedTableDataToOS(); dateUpdated()">
+                                        </div>
+                                    </td>
+                                    <!-- Facility’s Name -->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div class="nds-form-element__control">
+                                                <input type="text" ng-model="hospitalizedDetail.facilityName"
+                                                    ng-change="synchHospitalizedTableDataToOS()" required>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!-- Diagnosis -->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div class="nds-form-element__control">
+                                                <input type="text" ng-model="hospitalizedDetail.diagnosis"
+                                                    ng-change="synchHospitalizedTableDataToOS()" required>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!-- Delete button -->
+                                    <td>
+                                        <button class="nds-button nds-button_neutral"
+                                            ng-click="deleteHospitalizedDetails(hospitalizedDetail); dateUpdated();">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--Had Cancer Question?-->
+            <div style="max-width:60%;"
+                class="nds-m-top_xx-large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                <div class="nds-form-element">
+                    <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                        <div class="nds-form-element__legend nds-form-element__label nds-form-element__control-help"
+                            for="radioHaveorHadCancerFunction">
+                            <span class="ng-binding" for="radioHaveorHadCancerFunction">Do you or any member of your family have or have ever had Cancer and if so, how long ago?</span>
+                            <span class="nds-required ng-scope">*
+                            </span>
+                            <div class="nds-control-action__container">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                        <fieldset class="nds-form-element" align="left">
+                            <div class="nds-form-element__control nds-m-top_xx-small">
+                                <div class="nds-radio_button-group">
+                                    <span class="nds-button nds-radio_button">
+                                        <input ng-click="radioHaveorHadCancerFunction(true)" type="radio"
+                                            name="radioHaveorHadCancerFunction" id="radioHaveorHadCancerFunction-Yes"
+                                            ng-model="bpTree.response.radioHaveorHadCancerFunction" value="Yes"
+                                            required>
+                                        <label class="nds-radio_button__label" for="radioHaveorHadCancerFunction-Yes">
+                                            <span class="nds-radio_faux">Yes</span>
+                                            <div class="nds-radio-overlay"></div>
+                                        </label>
+                                    </span>
+                                    <span class="nds-button nds-radio_button">
+                                        <div class="nds-radio-overlay"></div>
+                                        <input ng-click="radioHaveorHadCancerFunction(false)" type="radio"
+                                            name="radioHaveorHadCancerFunction" id="radioHaveorHadCancerFunction-No"
+                                            ng-model="bpTree.response.radioHaveorHadCancerFunction" value="No">
+                                        <label class="nds-radio_button__label" for="radioHaveorHadCancerFunction-No">
+                                            <span class="nds-radio_faux">No</span>
+                                            <div class="nds-radio-overlay"></div>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div ng-if="radioHaveorHadCancerFlag" class="nds-m-top_large"
+                    ng-repeat="data in bpTree.response.EditFamilyMember | filter: filterForRelationship" align="left">
+                    <legend
+                        class="nds-form-element__legend nds-form-element__label nds-form-element__control-help fontfornames">
+                        {{data.fullname}} <span class="nds-required ng-scope">*
+                        </span>
+                        <div class="nds-control-action__container">
+                        </div>
+                    </legend>
+                    <div class="nds-form-element__control nds-m-top_small">
+                        <div class="nds-select_container">
+                            <select ng-model="data.hadcander" class="nds-select" id="selecthadcancer{{data.fullname}}"
+                                required="" ng-init="data.hadcander = 'Never'">
+                                <option label="0-5 Years" value="0-5 Years">Less than 5 years</option>
+                                <option label="5+ Years" value="5+ Years">5 or more Years</option>
+                                <option label="Never" value="Never">Never</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div ng-if="data.hadcander == '5+ Years'"
+                        class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                        <div class="nds-form-element">
+                            <div class="nds-form-element__control nds-m-top_small">
+                                <label class="nds-form-element__label" for="textarea-{{data.fullname}}">
+                                    <abbr class="nds-required" title="required">*</abbr>What type?</label>
+                                <div class="nds-form-element__control nds-m-top_small">
+                                    <input ng-model="data.hadCancerwhattype" type="text" ng-init="data.hadCancerwhattype=''"
+                                        id="text-input-cancer-{{data.fullname}}" class="nds-input" required
+                                        placeholder="Placeholder Text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Disclaimers Requirement for Cancer-->
+                    <div ng-if="data.hadcander == '0-5 Years'"
+                        class="nds-m-top_large nds-m-bottom_large nds-notify nds-notify_alert nds-theme_alert-texture nds-theme_warning disclaimerCancer"
+                        role="alert">
+                        <img src="https://image.flaticon.com/icons/svg/497/497738.svg" width="20px" height="20px">
+                        <span class="nds-assistive-text">warning</span>
+                        <span class="nds-icon_container nds-icon-utility-warning nds-m-right_x-small"
+                            title="Warning Cancer Coverage">
+                        </span>
+                        <h2 class="fontfordisclaimers">
+                            Please be aware that if Cancer was diagnosed, or treatment was received, for Cancer
+                            within 5
+                            years of your Effective Date, Cancer expenses are Not Eligible for Sharing.
+                            <a href="javascript:void(0);"></a>
+                        </h2>
+                    </div>
+
+                    <div ng-if="data.hadcander == '5+ Years'"
+                        class="nds-m-top_large nds-m-bottom_large nds-notify nds-notify_alert nds-theme_alert-texture nds-theme_warning disclaimerCancer"
+                        role="alert">
+                        <img src="https://image.flaticon.com/icons/svg/497/497738.svg" width="20px" height="20px">
+                        <span class="nds-assistive-text">warning</span>
+                        <span class="nds-icon_container nds-icon-utility-warning nds-m-right_x-small"
+                            title="Warning Cancer Coverage">
+                        </span>
+                        <h2 class="fontfordisclaimers">
+                            Please be aware that If you were
+                            diagnosed, or treatment was received, for Cancer more than 5 years prior to your
+                            Effective
+                            Date,
+                            that Member will be eligible for sharing in newly diagnosed
+                            Cancer expenses, after the 90 Day Waiting Period, according to the Membership
+                            Guidelines.
+                            Recurring Cancer is Not Eligible for Sharing.
+                            <a href="javascript:void(0);"></a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <!--Prescription Medications-->
+            <div style="max-width:60%;"
+                class="nds-m-top_xx-large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                    <div class="nds-form-element__legend nds-form-element__label nds-form-element__control-help">
+                        <span class="ng-binding" for="havePrescriptionMedicationsFunction">Are you or any
+                            members of your
+                            family currently taking, or have you or any member of your family taken in the last
+                            6 months, any prescription medications? Please provide details for each member
+                            below</span>
+                        <span class="nds-required ng-scope">*
+                        </span>
+                        <div class="nds-control-action__container"></div>
+                    </div>
+                </div>
+                <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                    <fieldset class="nds-form-element">
+                        <div class="nds-form-element__control nds-m-top_xx-small"
+                            class="width: 90% margin: 5px 5px 5px 5px">
+                            <div class="nds-radio_button-group">
+                                <span class="nds-button nds-radio_button">
+                                    <input type="radio" name="havePrescriptionMedicationsFunction"
+                                        id="havePrescriptionMedicationsFunction-Yes" value="Yes"
+                                        ng-model="bpTree.response.havePrescriptionMedicationsFunction" required
+                                        ng-click="havePrescriptionMedicationsFunction(true)">
+                                    <label class="nds-radio_button__label"
+                                        for="havePrescriptionMedicationsFunction-Yes">
+                                        <span class="nds-radio_faux">Yes</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                                <span class="nds-button nds-radio_button">
+                                    <input type="radio" name="havePrescriptionMedicationsFunction"
+                                        id="havePrescriptionMedicationsFunction-No" value="No"
+                                        ng-model="bpTree.response.havePrescriptionMedicationsFunction"
+                                        ng-click="havePrescriptionMedicationsFunction(false)">
+                                    <label class="nds-radio_button__label" for="havePrescriptionMedicationsFunction-No">
+                                        <span class="nds-radio_faux">No</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div ng-if="havePrescriptionMedicationsFlag"
+                        ng-repeat="data in bpTree.response.EditFamilyMember | filter: filterForRelationship"
+                        class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12 nds-m-top_small" align="left">
+                        <legend class="nds-form-element__legend nds-form-element__label fontfornames">
+                            {{data.fullname}} <span class="nds-required ng-scope">*
+                            </span>
+                            <div class="nds-control-action__container">
+                            </div>
+                        </legend>
+                        <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                            <div class="nds-form-element nds-m-top_small">
+                                <label class="nds-form-element__label" for="text-input-id-1">
+                                    <abbr class="nds-required" title="required">*</abbr>Please list your
+                                    prescription medications here:</label>
+                                <div class="nds-form-element__control nds-m-top_small">
+                                    <textarea required ng-model="data.medicalPrescriptiontext"
+                                        id="textarea-medicalPrescription-{{data.fullname}}"
+                                        class="nds-textarea nds-has-value"
+                                        ng-init="data.medicalPrescriptiontext='N/A'"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Pregnant?-->
+            <div style="max-width:60%;"
+                class="nds-m-top_xx-large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12"
+                ng-if="bpTree.response.medicalQuestions.CountFinalFemaleOnEditFamilyMember == true">
+                <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                    <div class="nds-form-element__legend nds-form-element__label nds-form-element__control-help">
+                        <span class="ng-binding" for="radioPregnantFunction">Are you or any of the members
+                            of your family pregnant or could be pregnant?</span>
+                        <span class="nds-required ng-scope">
+                        </span>
+                        <div class="nds-control-action__container"></div>
+                    </div>
+                </div>
+                <div class="nds-radio_button-group">
+                    <span class="nds-button nds-radio_button">
+                        <input ng-click="radioPregnantFunction(true)" type="radio" name="radioPregnantFunction"
+                            id="radioPregnantFunction-Yes" ng-model="bpTree.response.radioPregnantFunction" value="Yes"
+                            required>
+                        <label class="nds-radio_button__label" for="radioPregnantFunction-Yes">
+                            <span class="nds-radio_faux">Yes</span>
+                            <div class="nds-radio-overlay"></div>
+                        </label>
+                    </span>
+                    <span class="nds-button nds-radio_button">
+                        <div class="nds-radio-overlay"></div>
+                        <input ng-click="radioPregnantFunction(false)" type="radio" name="radioPregnantFunction"
+                            id="radioPregnantFunction-No" ng-model="bpTree.response.radioPregnantFunction" value="No">
+                        <label class="nds-radio_button__label" for="radioPregnantFunction-No">
+                            <span class="nds-radio_faux">No</span>
+                            <div class="nds-radio-overlay"></div>
+                        </label>
+                    </span>
+                </div>
+                <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12 nds-m-top_large"
+                    ng-repeat="data in bpTree.response.EditFamilyMember | filter: filterForRelationship" align="left">
+                    <div class="nds-m-top_medium"
+                        ng-if="data.age >= '12' && data.gender == 'Female' && radioPregnantFlag">
+                        <fieldset class="nds-form-element">
+                            <legend class="nds-form-element__legend nds-form-element__label fontfornames nds-m-top_small">
+                                {{data.fullname}} <span class="nds-required ng-scope">*
+                                </span>
+                                <div class="nds-control-action__container">
+                                </div>
+                            </legend>
+                            <div class="nds-form-element__control"
+                                class="width: 90% margin: 5px 5px 5px 5px">
+                                <div align="left">
+                                    <div class="nds-form-element__control nds-m-top_small">
+                                        <div class="nds-select_container">
+                                            <select ng-model="data.pregnant" class="nds-select"
+                                                id="pregnant{{data.fullname}}" required=""
+                                                ng-init="data.pregnant = 'No'">
+                                                <option label="Yes" value="Yes">Yes</option>
+                                                <option label="No" value="No">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Disclaimers Requirement for Pregnant-->
+                                <div ng-if="data.pregnant == 'Yes'"
+                                    class="nds-m-top_large nds-m-bottom_large  nds-notify nds-notify_alert nds-theme_alert-texture nds-theme_warning disclaimerCancer"
+                                    role="alert">
+                                    <img src="https://image.flaticon.com/icons/svg/497/497738.svg" width="20px"
+                                        height="20px">
+                                    <span class="nds-assistive-text">warning</span>
+                                    <span class="nds-icon_container nds-icon-utility-warning nds-m-right_x-small"
+                                        title="Warning Cancer Coverage">
+                                    </span>
+                                    <h2 class="fontfordisclaimers">
+                                        Maternity may not be eligible for sharing, depending on the Program you have
+                                        selected.
+                                        For a Member whose Program is effective prior to conception, the medical
+                                        needs
+                                        for
+                                        the
+                                        mother’s care pertaining to prenatal delivery and related hospital expenses
+                                        are
+                                        eligible
+                                        for sharing according to the Membership Guidelines.
+                                        <a href="javascript:void(0);"></a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <!--Profesional or extreme Sport?-->
+            <div style="max-width:60%;"
+                class="nds-m-top_xx-large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                    <div class="nds-form-element__legend nds-form-element__label nds-form-element__control-help">
+                        <span class="ng-binding" for="playExtremeSportsFunction">Do you or any member of your family play any extreme and/or professional sports?</span>
+                        <span class="nds-required ng-scope">*
+                        </span>
+                        <div class="nds-control-action__container"></div>
+                    </div>
+                </div>
+                <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                    <fieldset class="nds-form-element">
+                        <div class="nds-form-element__control nds-m-top_xx-small"
+                            class="width: 90% margin: 5px 5px 5px 5px">
+                            <div class="nds-radio_button-group">
+                                <span class="nds-button nds-radio_button">
+                                    <input type="radio" name="playExtremeSportsFunction"
+                                        id="playExtremeSportsFunction-Yes" value="Yes"
+                                        ng-model="bpTree.response.playExtremeSportsFunction" required
+                                        ng-click="playExtremeSportsFunction(true)">
+                                    <label class="nds-radio_button__label" for="playExtremeSportsFunction-Yes">
+                                        <span class="nds-radio_faux">Yes</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                                <span class="nds-button nds-radio_button">
+                                    <input type="radio" name="playExtremeSportsFunction"
+                                        id="playExtremeSportsFunction-No" value="No"
+                                        ng-model="bpTree.response.playExtremeSportsFunction"
+                                        ng-click="playExtremeSportsFunction(false)">
+                                    <label class="nds-radio_button__label" for="playExtremeSportsFunction-No">
+                                        <span class="nds-radio_faux">No</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div ng-if="playExtremeSportsFlag"
+                        ng-repeat="data in bpTree.response.EditFamilyMember | filter: filterForRelationship"
+                        class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12 nds-m-top_large" align="left">
+                        <legend class="nds-form-element__legend nds-form-element__label fontfornames">
+                            {{data.fullname}} <span class="nds-required ng-scope">*
+                            </span>
+                            <div class="nds-control-action__container">
+                            </div>
+                        </legend>
+                        <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12 nds-m-top-small">
+                            <div class="nds-form-element">
+                                <label class="nds-form-element__label" for="text-input-id-1">
+                                    <abbr class="nds-required" title="required">*</abbr>Please list your extreme or
+                                    professional
+                                    sports here:</label>
+                                <div class="nds-form-element__control nds-m-top-small">
+                                    <textarea required ng-model="data.extremesporttext" id="textarea-{{data.fullname}}"
+                                        class="nds-textarea nds-has-value"
+                                        ng-init="data.extremesporttext='N/A'"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--Alcohol?-->
+            <div style="max-width:60%;"
+                class="nds-m-top_xx-large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                <div class="nds-form-element">
+                    <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                        <div class="nds-form-element__legend nds-form-element__label nds-form-element__control-help">
+                            <span class="ng-binding" for="radioConsumeAlcoholFunction">Do you or any member of your family consume alcohol?</span>
+                            <span class="nds-required ng-scope">*
+                            </span>
+                            <div class="nds-control-action__container"></div>
+                        </div>
+                    </div>
+                    <fieldset class="nds-form-element" align="left">
+                        <div class="nds-form-element__control nds-m-top_xx-small">
+                            <div class="nds-radio_button-group">
+                                <span class="nds-button nds-radio_button">
+                                    <input ng-click="radioConsumeAlcoholFunction(true)" type="radio"
+                                        name="radioConsumeAlcoholFunction" id="radioConsumeAlcoholFunction-Yes"
+                                        value="Yes" ng-model="bpTree.response.radioConsumeAlcoholFunction" required>
+                                    <label class="nds-radio_button__label" for="radioConsumeAlcoholFunction-Yes">
+                                        <span class="nds-radio_faux">Yes</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                                <span class="nds-button nds-radio_button">
+                                    <div class="nds-radio-overlay"></div>
+                                    <input ng-click="radioConsumeAlcoholFunction(false)" type="radio"
+                                        name="radioConsumeAlcoholFunction" id="radioConsumeAlcoholFunction-No"
+                                        value="No" ng-model="bpTree.response.radioConsumeAlcoholFunction"
+                                        checked="checked">
+                                    <label class="nds-radio_button__label" for="radioConsumeAlcoholFunction-No">
+                                        <span class="nds-radio_faux">No</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div ng-if="radioConsumeAlcoholFlag"
+                        ng-repeat="data in bpTree.response.EditFamilyMember | filter: filterForRelationship"
+                        align="left">
+                        <div ng-if="data.age >= '18'">
+                            <legend class="nds-form-element__legend nds-form-element__label nds-m-top_small">Approximately how many alcoholic drinks does
+                                {{data.fullname}} consume per week? <span class="nds-required ng-scope">*
+                                </span>
+                                <div class="nds-control-action__container">
+                                </div>
+                            </legend>
+                            <div class="nds-form-element__control">
+                                <div class="nds-select_container nds-m-top_small">
+                                    <select ng-model="data.weeklyalcohol" class="nds-select"
+                                        id="weeklyalcohol{{data.fullname}}" required=""
+                                        ng-init="data.weeklyalcohol = 'None'">
+                                        <option label="1-3 Alcoholic Beverages" value="1-3 Alcoholic Beverages">1-3
+                                            Alcoholic Beverages</option>
+                                        <option label="4-7 Alcoholic Beverages" value="4-7 Alcoholic Beverages">4-7
+                                            Alcoholic Beverages</option>
+                                        <option label="8+ Alcoholic Beverages" value="8+ Alcoholic Beverages">8+
+                                            Alcoholic Beverages</option>
+                                        <option label="None" value="None">None</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Tobacco?-->
+            <div style="max-width:60%;"
+                class="nds-m-top_xx-large nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12">
+                <div class="nds-form-element">
+                    <div class="nds-size_1-of-1 nds-max-small-size_1-of-1 nds-small-size_12-of-12" align="left">
+                        <div class="nds-form-element__legend nds-form-element__label nds-form-element__control-help">
+                            <span class="ng-binding" for="radioConsumeTobaccoFunction">Do you or any member of your family use tobacco/vape?</span>
+                            <span class="nds-required ng-scope">*
+                            </span>
+                            <div class="nds-control-action__container"></div>
+                        </div>
+                    </div>
+                    <fieldset class="nds-form-element" align="left">
+                        <div class="nds-form-element__control nds-m-top_xx-small">
+                            <div class="nds-radio_button-group">
+                                <span class="nds-button nds-radio_button">
+                                    <input ng-click="radioConsumeTobaccoFunction(true)" type="radio"
+                                        name="radioConsumeTobaccoFunction" id="radioConsumeTobaccoFunction-Yes"
+                                        value="Yes" ng-model="bpTree.response.radioConsumeTobaccoFunction" required>
+                                    <label class="nds-radio_button__label" for="radioConsumeTobaccoFunction-Yes">
+                                        <span class="nds-radio_faux">Yes</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                                <span class="nds-button nds-radio_button">
+                                    <div class="nds-radio-overlay"></div>
+                                    <input ng-click="radioConsumeTobaccoFunction(false)" type="radio"
+                                        name="radioConsumeTobaccoFunction" id="radioConsumeTobaccoFunction-No"
+                                        value="No" ng-model="bpTree.response.radioConsumeTobaccoFunction"
+                                        checked="checked">
+                                    <label class="nds-radio_button__label" for="radioConsumeTobaccoFunction-No">
+                                        <span class="nds-radio_faux">No</span>
+                                        <div class="nds-radio-overlay"></div>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!--Disclaimers Requirement for Tobacco-->
+                    <div ng-if="radioConsumeTobaccoFlag"
+                        class="nds-m-top_large nds-m-bottom_large nds-notify nds-notify_alert nds-theme_alert-texture nds-theme_warning disclaimerCancer"
+                        role="alert">
+                        <img src="https://image.flaticon.com/icons/svg/497/497738.svg" width="20px" height="20px">
+                        <span class="nds-assistive-text">warning</span>
+                        <span class="nds-icon_container nds-icon-utility-warning nds-m-right_x-small"
+                            title="Warning Tobacco/Vape Coverage">
+                        </span>
+                        <h2 class="fontfordisclaimers">
+                            If medical records indicate you have presented inaccurate data regarding tobacco use (including vaping of any nicotine products) we reserve the right to terminate Membership.
+                            <a href="javascript:void(0);"></a>
+                        </h2>
+                    </div>
+                    <div ng-if="radioConsumeTobaccoFlag"
+                        ng-repeat="data in bpTree.response.EditFamilyMember | filter: filterForRelationship"
+                        align="left">
+                        <div ng-if="data.age >= '18'">
+                            <legend class="nds-form-element__legend nds-form-element__label nds-m-top_small">{{data.fullname}}?
+                                <span class="nds-required ng-scope">*
+                                </span>
+                                <div class="nds-control-action__container">
+                                </div>
+                            </legend>
+                            <div class="nds-form-element__control nds-m-top_small">
+                                <div class="nds-select_container">
+                                    <select ng-model="data.weeklytobacco" class="nds-select"
+                                        id="weeklytobacco{{data.fullname}}" required=""
+                                        ng-init="data.weeklytobacco = 'No'">
+                                        <option label="Yes" value="Yes">Yes</option>
+                                        <option label="No" value="No">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Pop-up flotante -->
+            <div id="medicalQuestPopup">
+            <div class="flotingpopup nds-scoped-notification nds-media nds-media_center nds-scoped-notification_light" role="status" ng-if="validate()">
+                <span class="nds-icon_container nds-icon_container_circle" style="border: 3px solid #ffffff; !important padding: .2rem;!important">
+                    <svg aria-hidden="true" style="fill: #ffffff;!important" class="slds-icon slds-icon--small nds-icon nds-icon_small " xmlns="http://www.w3.org/2000/svg" 
+                    preserveAspectRatio="xMidYMid meet" sprite="'utility'" icon="icon[msg.type]" size="'small'" viewBox="0 0 52 52" alt="chat">
+                        <path fill="inherit" xmlns="http://www.w3.org/2000/svg" 
+                        d="m26 4c-13.3 0-23.9 9.8-23.9 21.9 0 3.8 1.1 7.4 2.9 10.6 0.3 0.5 0.4 1.1 0.2 1.7l-3.1 8.5c-0.3 0.8 0.5 1.5 1.3 1.3l8.6-3.3c0.5-0.2 1.1-0.1 1.7 0.2 3.6 2 7.9 3.2 12.5 3.2 13.1-0.1 23.8-9.8 23.8-22-0.1-12.3-10.8-22.1-24-22.1z m-12 26c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z m12 0c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z m12 0c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="nds-m-left_small ng-binding nds-media__body">
+                        <b>If medical records indicate you have presented inaccurate data regarding your age, tobacco use, or any medical condition, we reserve the right to terminate your Membership.</b>
+                </span>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

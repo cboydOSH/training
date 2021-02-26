@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Country Alpha-2 ISO code --></label>
+        <name>ChargentBase__Country_Alpha_2_ISO_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country Numeric ISO Code --></label>
+        <name>ChargentBase__Country_Numeric_ISO_Code__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -80,6 +80,10 @@
             <translation><!-- Manual Task --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Salesforce Flow</masterLabel>
+            <translation><!-- Salesforce Flow --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>URL Callout</masterLabel>
             <translation><!-- URL Callout --></translation>
         </picklistValues>

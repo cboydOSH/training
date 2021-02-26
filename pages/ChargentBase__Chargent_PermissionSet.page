@@ -1,0 +1,28 @@
+<apex:page showHeader="false" sideBar="false">
+    <style type="text/css">
+        body {
+            background-color: transparent;
+        }
+    </style>
+
+    <apex:includeLightning />
+
+    <div id="Chargent_PermissionSet"/>
+
+    <script>
+        $Lightning.use("ChargentBase:Chargent_PermissionSet_Application", function () {
+            $Lightning.createComponent("ChargentBase:chargentSetupPermissionSet", {},
+                    "Chargent_PermissionSet",
+                    function (component, status, errorMessage) {
+                        if (status === "SUCCESS") {
+                            console.log("Custom component loaded.");
+                        } else if (status === "INCOMPLETE") {
+                            console.log("No response from server or client is offline.")
+                        } else if (status === "ERROR") {
+                            console.log("Error:" + errorMessage);
+                        }
+                    }
+            );
+        });
+    </script>
+</apex:page>

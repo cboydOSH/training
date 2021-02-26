@@ -27,4 +27,8 @@
         <label><!-- Disable Auto-Resolve --></label>
         <name>copado__Disable_Auto_Resolve__c</name>
     </fields>
+    <fields>
+        <label><!-- Disable Re-Create Feature Branch in US --></label>
+        <name>copado__Disable_Re_Create_Feature_Branch_in_US__c</name>
+    </fields>
 </CustomObjectTranslation>

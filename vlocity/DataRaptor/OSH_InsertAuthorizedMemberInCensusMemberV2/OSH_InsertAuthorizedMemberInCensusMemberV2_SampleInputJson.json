@@ -1,0 +1,54 @@
+{
+    "EditFamilyMember": [
+        {
+            "$$hashKey": "object:1112",
+            "address": "123 William Street",
+            "age": 28,
+            "asthma": false,
+            "behavioralormentalhealth": false,
+            "city": "New York",
+            "congestiveheartfailure": false,
+            "copd": false,
+            "country": "United States",
+            "crohnsdisease": false,
+            "diabetesI": false,
+            "diabetesII": false,
+            "dob": "1992-04-16",
+            "eatingdisorders": false,
+            "email": "mail@mail.com",
+            "fname": "Mell",
+            "fullname": "Mell test",
+            "gender": "Male",
+            "heartdisease": false,
+            "hearthbypasssurgery": false,
+            "herniateddisc": false,
+            "hivaids": false,
+            "hyperlipidemia": false,
+            "hypertensionorhighblood": false,
+            "id": "001R000001ZRKl0IAH",
+            "isHipaaAuthorized": true,
+            "kidneydiseaseorfailure": false,
+            "lname": "test",
+            "parent_id": "001R000001ZRKl0IAH",
+            "phone": "1231321322",
+            "relationship": "Primary",
+            "state": "NY",
+            "zipcode": "10038"
+        }
+    ],
+    "HIPAAAuthorization": {
+        "AuthorizeOtherRatio": null,
+        "Block7": null,
+        "Osh-HIPPA-tablemembers": null,
+        "authorizeNewMember": {
+            "FirstName": "testesre",
+            "LastName": "asdfa",
+            "MemberAddress": "123",
+            "MemberEmail": "nuads@dsd.com",
+            "Phone": "5555555",
+            "isHipaaAuthorized": true
+        },
+        "space27x12": null
+    },
+    "personAccountRecordType": "0124P000000uRRXQA2"
+}

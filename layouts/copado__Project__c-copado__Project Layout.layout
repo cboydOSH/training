@@ -141,6 +141,8 @@
         <relatedList>Callout_Log__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <fields>Salesforce_Field_Name__c</fields>
+        <fields>Third_Party_Field_Name__c</fields>
         <fields>NAME</fields>
         <relatedList>Field_Mapping__c.Project__c</relatedList>
     </relatedLists>

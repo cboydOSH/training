@@ -1,0 +1,3 @@
+.nds-checkbox [type=checkbox][disabled] + .nds-checkbox--faux:after, .nds-checkbox [type=checkbox][disabled] + .nds-checkbox__label .nds-checkbox--faux:after, .nds-checkbox [type=checkbox][disabled] + .nds-checkbox__label .nds-checkbox_faux:after, .nds-checkbox [type=checkbox][disabled] + .nds-checkbox_faux:after, .nds-checkbox [type=checkbox][disabled] ~ .nds-checkbox--faux:after, .nds-checkbox [type=checkbox][disabled] ~ .nds-checkbox_faux:after {
+    border-color: #f79c33;
+}

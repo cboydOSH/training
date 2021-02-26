@@ -1,0 +1,27 @@
+//CSS for ISA Amount Right Card
+.tooltippreexisting {
+  position: relative;
+  display: inline-block;
+  //border-bottom: 1px dotted black;
+}
+.tooltippreexisting .tooltippreexistingtext {
+  visibility: hidden;
+  width: 200%;
+  min-width: 250px !important;
+  min-height: 250px !important;
+  background-color: #005fb2;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 12px 0;
+     
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  //bottom: 100%;
+  left: 108%;
+  top: -30px;
+}
+.tooltippreexisting:hover .tooltippreexistingtext {
+  visibility: visible;
+}
