@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- StoryFieldSet --></label>
+        <name>vlocity_ins__StoryFieldSet</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ACH Auth Form &amp; Voided Check --></label>
+        <name>ACH_Auth_Form_Voided_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- AcctOpp Lock --></label>
+        <name>AcctOpp_Lock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active in Admin123 --></label>
+        <name>Active_in_Admin123__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affinity --></label>
+        <name>Affinity__c</name>
+        <relationshipLabel><!-- Opportunities (Affinity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Affinity % --></label>
+        <name>Affinity_percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Agent ID from Admin123 --></help>
+        <label><!-- Agent ID --></label>
+        <name>Agent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Admin Comm % --></label>
+        <name>Annual_Admin_Comm_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Admin Fee Paid --></label>
+        <name>Annual_Admin_Fee_Paid__c</name>
+        <relationshipLabel><!-- Opportunities (Annual Admin Fee Paid) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Annual Admin Fee --></label>
+        <name>Annual_Admin_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Memberships --></label>
+        <name>Annual_Memberships__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Approved Date --></label>
+        <name>Application_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Approved --></label>
+        <name>Application_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Link Sent Date --></label>
+        <name>Application_Link_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Link Sent --></label>
+        <name>Application_Link_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Received Date --></label>
+        <name>Application_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Received --></label>
+        <name>Application_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Background Check Completed Date --></label>
+        <name>Background_Check_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Check Sent Date --></label>
+        <name>Background_Check_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Check Sent --></label>
+        <name>Background_Check_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Check Completed --></label>
+        <name>Background_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>Business_Type__c</name>
+        <picklistValues>
+            <masterLabel>Corp</masterLabel>
+            <translation><!-- Corp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LLC</masterLabel>
+            <translation><!-- LLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Profit</masterLabel>
+            <translation><!-- Non Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S Corp</masterLabel>
+            <translation><!-- S Corp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Proprietorship</masterLabel>
+            <translation><!-- Sole Proprietorship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Center --></label>
+        <name>Call_Center__c</name>
+        <relationshipLabel><!-- Opportunities (Call Center) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call Center % --></label>
+        <name>Call_Center_percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- An .xls or .csv file is preferred --></help>
+        <label><!-- Census --></label>
+        <name>Census__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Manager --></label>
+        <name>Client_Manager__c</name>
+        <relationshipLabel><!-- Opportunities (Client Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract Executed Date --></label>
+        <name>Contract_Executed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Executed --></label>
+        <name>Contract_Executed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Level --></label>
+        <name>Contract_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct Employee Contact Info --></label>
+        <name>Correct_Employee_Contact_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct Monthly Contribution Amt --></label>
+        <name>Correct_Monthly_Contribution_Amt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct No. of Enrolled Employees --></label>
+        <name>Correct_No_of_Enrolled_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currently enrolled health C Program --></label>
+        <name>Currently_enrolled_health_C_Program__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deck Page Received Date --></label>
+        <name>Deck_Page_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deck Page Received --></label>
+        <name>Deck_Page_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Groups --></label>
+        <name>Demographic_Groups__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filipino</masterLabel>
+            <translation><!-- Filipino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin/Spanish</masterLabel>
+            <translation><!-- Latin/Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Received --></label>
+        <name>DocuSign_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Sent --></label>
+        <name>DocuSign_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- E&amp;O Date --></label>
+        <name>E_O_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- E&amp;O Link Sent Date --></label>
+        <name>E_O_Link_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- E&amp;O Link Sent --></label>
+        <name>E_O_Link_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- If E&amp;O is &apos;Current&apos;, please upload to Files section. --></help>
+        <label><!-- E&amp;O --></label>
+        <name>E_O__c</name>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased</masterLabel>
+            <translation><!-- Purchased --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Acknowledgement --></label>
+        <name>Employer_Acknowledgement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Link --></label>
+        <name>Enrollment_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Method --></label>
+        <name>Enrollment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Live Enrollment</masterLabel>
+            <translation><!-- Live Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual</masterLabel>
+            <translation><!-- Virtual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimated Participation --></label>
+        <name>Estimated_Participation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>American Indian/Alaska Native</masterLabel>
+            <translation><!-- American Indian/Alaska Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black/African American</masterLabel>
+            <translation><!-- Black/African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic/Latino</masterLabel>
+            <translation><!-- Hispanic/Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian/Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian/Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White/Caucasian</masterLabel>
+            <translation><!-- White/Caucasian --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Export documents to Admin123 --></help>
+        <label><!-- Export Documents --></label>
+        <name>Export_Documents__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMO --></label>
+        <name>FMO__c</name>
+        <relationshipLabel><!-- Opportunities (FMO) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- FMO % --></label>
+        <name>FMO_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Time Employees --></label>
+        <name>Full_Time_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- How Many Locations --></label>
+        <name>How_Many_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Created Date --></label>
+        <name>LOI_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Created --></label>
+        <name>LOI_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Executed Date --></label>
+        <name>LOI_Executed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Executed --></label>
+        <name>LOI_Executed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 4 SSN --></label>
+        <name>Last_4_SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Name/DBA --></label>
+        <name>Legal_Name_DBA__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Bill Application --></label>
+        <name>List_Bill_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Bill Producer --></label>
+        <name>List_Bill_Producer__c</name>
+        <relationshipLabel><!-- Opportunities (List Bill Producer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- List Bill --></label>
+        <name>List_Bill__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please choose an option before marking the opportunity as lost. --></help>
+        <label><!-- Lost Reason --></label>
+        <name>Lost_Reason__c</name>
+        <picklistValues>
+            <masterLabel>All efforts extended, no response</masterLabel>
+            <translation><!-- All efforts extended, no response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget / Lost Funding</masterLabel>
+            <translation><!-- No Budget / Lost Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opened in error</masterLabel>
+            <translation><!-- Opened in error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MGP2 --></label>
+        <name>MGP2__c</name>
+        <relationshipLabel><!-- Opportunities (MGP2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MGP2 % --></label>
+        <name>MGP2_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- MGP --></label>
+        <name>MGP__c</name>
+        <relationshipLabel><!-- Opportunities (MGP) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MGP % --></label>
+        <name>MGP_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Admin Comm % --></label>
+        <name>Monthly_Admin_Comm_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Admin Fee Paid --></label>
+        <name>Monthly_Admin_Fee_Paid__c</name>
+        <relationshipLabel><!-- Opportunities (Monthly Admin Paid) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monthly Admin Fee --></label>
+        <name>Monthly_Admin_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Contribution --></label>
+        <name>Monthly_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Memberships --></label>
+        <name>Monthly_Memberships__c</name>
+    </fields>
+    <fields>
+        <help><!-- 100 EE min. per location --></help>
+        <label><!-- Multiple Invoices --></label>
+        <name>Multiple_Invoices__c</name>
+    </fields>
+    <fields>
+        <label><!-- NDA Executed Date --></label>
+        <name>NDA_Executed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- NDA Executed --></label>
+        <name>NDA_Executed__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPN No. --></label>
+        <name>NPN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Loss Letter Received Date --></label>
+        <name>No_Loss_Letter_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Loss Letter Received --></label>
+        <name>No_Loss_Letter_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Of Projected Members --></label>
+        <name>No_Of_Projected_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Producers --></label>
+        <name>No_of_Producers__c</name>
+    </fields>
+    <fields>
+        <label><!-- One Time Admin Fee --></label>
+        <name>One_Time_Admin_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMO Required --></label>
+        <name>PMO_Required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent Account --></label>
+        <name>Parent_Account__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Part Time Employees --></label>
+        <name>Part_Time_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Enrolling --></label>
+        <name>Person_Enrolling__c</name>
+        <picklistValues>
+            <masterLabel>OSH</masterLabel>
+            <translation><!-- OSH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer</masterLabel>
+            <translation><!-- Producer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin/Spanish</masterLabel>
+            <translation><!-- Latin/Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Producer2 --></label>
+        <name>Producer2__c</name>
+        <relationshipLabel><!-- Opportunities (Producer2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Producer2 % --></label>
+        <name>Producer2_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Producer Acknowledgement --></label>
+        <name>Producer_Acknowledgement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Producer --></label>
+        <name>Producer__c</name>
+        <relationshipLabel><!-- Opportunities (Producer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Producer % --></label>
+        <name>Producer_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Close Date --></label>
+        <name>Projected_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral --></label>
+        <name>Referral__c</name>
+        <relationshipLabel><!-- Opportunities (Referral) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referral % --></label>
+        <name>Referral_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Sales Director --></label>
+        <name>Regional_Sales_Director__c</name>
+        <relationshipLabel><!-- Opportunities (Regional Sales Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SSN --></label>
+        <name>SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team Referral --></label>
+        <name>Sales_Team_Referral__c</name>
+        <relationshipLabel><!-- Opportunities (Sales Team Referral) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please upload Salesforce ID for the ACCOUNT (not Opportunity) into Admin123 for the Producer. It will start with &apos;001&apos; and look like: 001XXXXXXXXXXXX. --></help>
+        <label><!-- Salesforce ID in Admin123 --></label>
+        <name>Salesforce_ID_in_Admin123__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seasonal Employees --></label>
+        <name>Seasonal_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Servicing Representative --></label>
+        <name>Servicing_Representative__c</name>
+        <relationshipLabel><!-- Opportunities (Servicing Representative) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Set up group in Admin123. --></help>
+        <label><!-- Set Up Group --></label>
+        <name>Set_Up_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Sales Director --></label>
+        <name>State_Sales_Director__c</name>
+        <relationshipLabel><!-- Opportunities (State Sales Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>Alabama</masterLabel>
+            <translation><!-- Alabama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>California</masterLabel>
+            <translation><!-- California --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montana</masterLabel>
+            <translation><!-- Montana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Texas</masterLabel>
+            <translation><!-- Texas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test Passed Date --></label>
+        <name>Test_Passed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Passed --></label>
+        <name>Test_Passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Annual Contributions --></label>
+        <name>Total_Annual_Contributions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Comm % --></label>
+        <name>Total_Comm_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Contributions --></label>
+        <name>Total_Monthly_Contributions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Prospects --></label>
+        <name>Total_Prospects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Link Sent Date --></label>
+        <name>Training_Link_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Link Sent --></label>
+        <name>Training_Link_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- VP Sales --></label>
+        <name>VP_Sales__c</name>
+        <relationshipLabel><!-- Opportunities (VP Sales) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- W-9 Received Date --></label>
+        <name>W_9_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- W-9 Received --></label>
+        <name>W_9_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Call --></label>
+        <name>Welcome_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1099 IC --></label>
+        <name>X1099_IC__c</name>
+    </fields>
+    <fields>
+        <label><!-- vfirst Email address --></label>
+        <name>vfirst_Email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- vfirst First Name --></label>
+        <name>vfirst_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- vfirst Last Name --></label>
+        <name>vfirst_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjudication --></label>
+        <name>vfirst__Adjudication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified First Site Guest Access Helper --></label>
+        <name>vfirst__Site_Guest_Access_Helper__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>vfirst__Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Report --></label>
+        <name>vfirst__Verification_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Background Checks Ordered --></label>
+        <name>vfirst__of_Background_Checks_Ordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency/Brokerage --></label>
+        <name>vlocity_ins__AgencyBrokerageId__c</name>
+        <relationshipLabel><!-- Opportunities (Agency/Brokerage) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Follow Up To --></label>
+        <name>vlocity_ins__FollowUpTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frame Contract --></label>
+        <name>vlocity_ins__FrameContractId__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Require Contract --></label>
+        <name>vlocity_ins__IsContractRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Originating Contract --></label>
+        <name>vlocity_ins__OriginatingContractId__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referral Source --></label>
+        <name>vlocity_ins__PartyId__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price List --></label>
+        <name>vlocity_ins__PriceListId__c</name>
+        <relationshipLabel><!-- Opportunities Using This Price List --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Producer --></label>
+        <name>vlocity_ins__PrimaryBroker__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>vlocity_ins__TrackingNumber__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Call Center/FMO --></label>
+        <name>Call_Center_FMO</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Individual Producer --></label>
+        <name>Individual_Producer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- List Bill --></label>
+        <name>List_Bill</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Mobile Phone Opportunity --></description>
+        <label><!-- MobilePhoneOpportunity --></label>
+        <name>vlocity_ins__MobilePhoneOpportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot create a new opportunity without going through the lead conversion process. Please create a lead and then convert it to an opportunity and account. --></errorMessage>
+        <name>AcctOpp_Lock_field_must_be_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must check the &apos;Active in Admin123&apos; and &apos;Salesforce ID in Admin123&apos; boxes to confirm these have been done before closing the opportunity. --></errorMessage>
+        <name>Active_and_ID_in_Admin123</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Leads with contract type &apos;Affinity&apos; and contract level greater than 3 should be Submitted for Approval. Please contact your Sales Coordinator or Sales VP for further instructions. --></errorMessage>
+        <name>Affinity_Level_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter the Agent ID before converting the Opportunity. --></errorMessage>
+        <name>Agent_ID_Needed_To_Convert</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All fields in the Contracting section need to be completed before opportunity can be won. --></errorMessage>
+        <name>All_Contracting_fields_should_be_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check the Application link checkbox before opportunity can be moved to Contracting --></errorMessage>
+        <name>Application_Link_in_application_stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check the Application Received checkbox before opportunity can be moved to Contracting --></errorMessage>
+        <name>Application_Receive_in_application_stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Background Check must be completed before the opportunity can move to the Application stage. --></errorMessage>
+        <name>Background_check_completed_in_Compliance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the Referral, Producer, MGP, Call Center, and Affinity percentage (%) fields while the opportunity is in the Qualification stage. --></errorMessage>
+        <name>Commission_fields_req_in_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Application Approved and PMO Required fields must be completed before completing the Compliance stage. --></errorMessage>
+        <name>Compliance_fields_must_be_completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Individual Producers with a contract level greater than 19 needs approval during lead stage --></errorMessage>
+        <name>Contract_Level_19_needs_approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the Contract Level field while the opportunity is in the Qualification stage. --></errorMessage>
+        <name>Contract_Level_req_during_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the Contract Type field while the opportunity is in the Qualification stage. --></errorMessage>
+        <name>Contract_Type_req_during_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date of Birth is required before Opportunity stage can be changed to Compliance. --></errorMessage>
+        <name>DOB_required_at_Verbal_Yes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Last 4 SSN must be a four digit number. --></errorMessage>
+        <name>Last_4_SSN_must_be_a_number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Values for commissions fields must be &quot;0%&quot; or the following: Affinity 0.25%, Call Center 25-32%, FMO 20-22%, MGP 2-5%, Producer 16-19%, or Referral 1%. --></errorMessage>
+        <name>Limit_on_commission_percentages</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- List Bill producer must be certified. --></errorMessage>
+        <name>List_Bill_producer_must_be_certified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit an opportunity that has been closed. --></errorMessage>
+        <name>Lock_closed_opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Lost Reason is required when an opportunity is lost. --></errorMessage>
+        <name>Lost_Reason_when_Opportunity_is_lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- MGP% and MGP2% cannot exceed 5%. --></errorMessage>
+        <name>MGP_and_MGP2_cannot_exceed_5</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Sales Executives can Save an Opportunity with the Management Contract Type --></errorMessage>
+        <name>Management_level_only_for_Sales_Execs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the No. of Producers field with a value of at least 1. --></errorMessage>
+        <name>No_of_Prod_required_during_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity must have a Parent Account to move --></errorMessage>
+        <name>Parent_Acct_required_in_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Producer% and Producer2% cannot exceed 18%. --></errorMessage>
+        <name>Producer_and_Producer2_cannot_exceed_18</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the Projected Close Date field while the opportunity is in the Qualification stage. --></errorMessage>
+        <name>Proj_Close_required_during_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the Sales Team fields while the opportunity is in the Qualification stage. --></errorMessage>
+        <name>Sales_Team_req_during_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Total Commissions percentage cannot be zero. Please enter commission percentage(s). --></errorMessage>
+        <name>Total_Commissions_cannot_be_zero</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Background_Check --></label>
+        <name>Background_Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateContract --></label>
+        <name>vlocity_ins__CreateContract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreatingContractAloha --></label>
+        <name>vlocity_ins__CreatingContractAloha</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DeliveryStatus --></label>
+        <name>vlocity_ins__DeliveryStatus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocumentPDF --></label>
+        <name>vlocity_ins__GenerateDocumentPDF</name>
+    </webLinks>
+</CustomObjectTranslation>

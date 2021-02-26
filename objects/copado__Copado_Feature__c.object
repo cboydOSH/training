@@ -155,7 +155,63 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>copado__Application__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>copado__Application__c</referenceTo>
+        <relationshipLabel>Features</relationshipLabel>
+        <relationshipName>Features</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>copado__Architect__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Architect</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Features1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>copado__Complexity__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Complexity</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__Description__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
         <fullName>copado__Epic__c</fullName>
+        <businessStatus>Hidden</businessStatus>
         <deleteConstraint>SetNull</deleteConstraint>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -167,6 +223,19 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>copado__Estimated_Value__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Estimated Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>copado__Feature_Title__c</fullName>
@@ -181,27 +250,158 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>copado__Release__c</fullName>
+        <fullName>copado__Priority__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__Product_Owner__c</fullName>
+        <businessStatus>Hidden</businessStatus>
         <deleteConstraint>SetNull</deleteConstraint>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Release</label>
-        <referenceTo>copado__Release__c</referenceTo>
-        <relationshipLabel>Features</relationshipLabel>
+        <label>Product Owner</label>
+        <referenceTo>User</referenceTo>
         <relationshipName>Features</relationshipName>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <label>Feature</label>
+    <fields>
+        <fullName>copado__Release__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Release</label>
+        <referenceTo>copado__Release__c</referenceTo>
+        <relationshipName>Features</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>copado__Status__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>false</default>
+                    <label>Requested</label>
+                </value>
+                <value>
+                    <fullName>Under Review</fullName>
+                    <default>false</default>
+                    <label>Under Review</label>
+                </value>
+                <value>
+                    <fullName>Refinement</fullName>
+                    <default>false</default>
+                    <label>Refinement</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Coming Soon</fullName>
+                    <default>false</default>
+                    <label>Coming Soon</label>
+                </value>
+                <value>
+                    <fullName>Delivered</fullName>
+                    <default>false</default>
+                    <label>Delivered</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__Technical_Assumptions__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Technical Assumptions</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copado__Users__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label># Users</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__Value_Type__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Value Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Time Savings</fullName>
+                    <default>false</default>
+                    <label>Time Savings</label>
+                </value>
+                <value>
+                    <fullName>New Revenue</fullName>
+                    <default>false</default>
+                    <label>New Revenue</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Feature (deprecated)</label>
     <nameField>
         <displayFormat>F-{0000000000}</displayFormat>
         <label>Feature Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Features</pluralLabel>
+    <pluralLabel>Features (deprecated)</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

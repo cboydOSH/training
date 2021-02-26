@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Acquirer --></label>
+        <name>cterminal__Acquirer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>cterminal__Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>cterminal__Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Id --></label>
+        <name>cterminal__Business_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>cterminal__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>cterminal__Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA --></label>
+        <name>cterminal__DBA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Business --></label>
+        <name>cterminal__Default_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>cterminal__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Type --></label>
+        <name>cterminal__Industry_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Name --></label>
+        <name>cterminal__Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MCC --></label>
+        <name>cterminal__MCC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processor --></label>
+        <name>cterminal__Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC --></label>
+        <name>cterminal__SIC__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>cterminal__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>cterminal__Time_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>cterminal__Zip__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,10 @@
+Dear {!ChargentOrders__Email_Notification__c.ChargentOrders__First_Name__c} {!ChargentOrders__Email_Notification__c.ChargentOrders__Last_Name__c},<br/>
+<br/>
+Your card will expire soon. <br/>
+<br/>
+You can use Chargent account Updater feature by clicking <br/>
+<br/>
+{!ChargentOrders__Email_Notification__c.ChargentOrders__Account_Updater_Link_Formatted__c}<br/>
+<br/>
+Thanks,<br/>
+{!Organization.Name}

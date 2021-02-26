@@ -1,0 +1,756 @@
+<apex:page standardController="ChargentOrders__ChargentOrder__c" extensions="ChargentOrders.ClassicActionBtnController">
+
+	<apex:includeScript value="/soap/ajax/31.0/connection.js" />
+	<apex:includeScript value="/soap/ajax/31.0/apex.js" />
+	<apex:includeScript value="/support/console/22.0/integration.js" />
+	<apex:includeScript value="/js/functions.js" />
+	<apex:includeScript value="/resource/ChargentBase__ChargentStyling/js/jquery.min.js" />
+
+	<apex:detail subject="{!ChargentOrders__ChargentOrder__c.Id}" inlineEdit="true"/>
+
+	<script type="text/javascript">
+		sforce.connection.sessionId = '{!$Api.Session_ID}';
+	</script>
+
+	<!-- AstroPay_Charge -->
+	<apex:outputPanel rendered="{!action == 'AstroPay_Charge'}">
+		<script type="text/javascript">
+			console.log('AstroPay_Charge');
+			try {
+				var queryResult = sforce.connection.query("SELECT Id, ChargentOrders__Gateway__c, ChargentOrders__Gateway__r.RecordType.DeveloperName FROM ChargentOrders__ChargentOrder__c WHERE Id = '{!ChargentOrders__ChargentOrder__c.Id}' LIMIT 1");
+				var currentObject = queryResult.records;
+
+				if (currentObject.ChargentOrders__Gateway__c != null && currentObject.ChargentOrders__Gateway__r.RecordType.DeveloperName == 'Astropay') {
+					var astresult = sforce.apex.execute("ChargentOrders.TChargentOperations", "ChargeOrder_Click", {
+						OrderId: "{!ChargentOrders__ChargentOrder__c.Id}"
+					});
+					astresult = astresult[0];
+					if (astresult.DebugString) {
+						alert(astresult.Message + '\n\n' + astresult.DebugString);
+					} else if (astresult.ReturnURL == null && astresult.Message != null && astresult.Reload == 'false') {
+						alert(astresult.Message);
+					}
+					if (astresult.Message != null && astresult.Reload == 'true') {
+						alert(astresult.Message);
+						window.location.reload();
+					} else if (astresult.ReturnURL != null && astresult.ReturnURL.indexOf('https://') >= 0 && astresult.ReturnURL.indexOf('javascript:') == -1) {
+						window.location = astresult.ReturnURL;
+					}
+				} else {
+					alert('This operation can be used only with AstroPay gateway.');
+				}
+			} catch (e) {
+				var responseMessage = e.faultstring;
+				if ((pos = e.faultstring.indexOf("FIELD_CUSTOM_VALIDATION_EXCEPTION")) > -1) {
+					faultString = e.faultstring.substring(pos);
+					faultString = faultString.replace(/&quot;/g, '\"');
+					beginpos = faultString.indexOf(", ");
+					endpos = faultString.indexOf(":");
+					faultString = faultString.substring(beginpos + 2, endpos);
+					responseMessage = faultString;
+				} else if (e.faultstring.indexOf("CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY") > -1) {
+					responseMessage = 'An error occurred while recording to Database your Transaction data. Please contact your Administrator.';
+				}
+
+				alert(responseMessage);
+			} finally {
+				window.location = '/{!ooc.Id}';
+			}
+		</script>
+	</apex:outputPanel>
+
+	<!-- Authorize -->
+	<apex:outputPanel rendered="{!action == 'Authorize'}">
+		<script type="text/javascript">
+			console.log('Authorize');
+			disableButtons();
+			processOperation();
+			enableButtons();
+
+			function processOperation() {
+				try {
+					var result;
+					var isRequireCvv;
+					var showPopup;
+					var cvv;
+					if ("{!JSENCODE(ChargentOrders__ChargentOrder__c.ChargentOrders__Payment_Method__c)}" == "Credit Card") {
+						isRequireCvv = sforce.apex.execute("ChargentBase.TChargentStaticHelper", "isRequireCvv", {
+							objectId: "{!ChargentOrders__ChargentOrder__c.Id}",
+							action: "Authorize"
+						});
+
+						if (isRequireCvv[0] == "true") {
+							isRequireCvv = true;
+							showPopup = true;
+						} else if (isRequireCvv[0] == "false") {
+							isRequireCvv = false;
+							showPopup = true;
+						} else {
+							isRequireCvv = false;
+							showPopup = false;
+						}
+
+						if (showPopup) {
+							var promptMessage = isRequireCvv ? "{!$Label.chargentbase__csc_is_required_message}" : "{!$Label.chargentbase__csc_is_not_required_message}";
+							cvv = prompt(promptMessage);
+
+							if (cvv == null) {
+								return;
+							}
+						}
+					}
+
+					if (isRequireCvv || (!isRequireCvv && cvv)) {
+						if (!isCvvValid(cvv)) {
+							var message = cvv ? "{!$Label.chargentbase__csc_is_not_valid_error}" : "{!$Label.chargentbase__csc_is_required_error}";
+							alert(message);
+							return;
+						} else {
+							var chd = {
+								ObjectId: "{!ChargentOrders__ChargentOrder__c.Id}",
+								CardSecurity: cvv
+							};
+							result = sforce.apex.execute("ChargentOrders.TChargentOperations", "AuthorizeOrder_ClickJSON", {
+								OrderId: JSON.stringify(chd)
+							});
+						}
+					} else {
+						result = sforce.apex.execute("ChargentOrders.TChargentOperations", "AuthorizeOrder_Click", {
+							OrderId: "{!ChargentOrders__ChargentOrder__c.Id}"
+						});
+					}
+					result = result[0];
+
+					var chargentMessage = getChargentMessage(result);
+					if (result.DebugString) {
+						alert(chargentMessage + '\n\n' + result.DebugString);
+					} else {
+						alert(chargentMessage);
+					}
+
+				} catch (e) {
+					var responseMessage = e.faultstring;
+					if ((pos = e.faultstring.indexOf("FIELD_CUSTOM_VALIDATION_EXCEPTION")) > -1) {
+						faultString = e.faultstring.substring(pos);
+						faultString = faultString.replace(/&quot;/g, '\"');
+						beginpos = faultString.indexOf(", ");
+						endpos = faultString.indexOf(":");
+						faultString = faultString.substring(beginpos + 2, endpos);
+						responseMessage = faultString;
+					} else if (e.faultstring.indexOf("CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY") > -1) {
+						responseMessage = 'An error occurred while recording to Database your Transaction data. Please contact your Administrator.';
+					} else if (e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}") > -1) {
+						responseMessage = e.faultstring.substring(e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}"), e.faultstring.indexOf("\n"));
+					}
+
+					alert(responseMessage);
+				} finally {
+					window.location = '/{!ooc.Id}';
+				}
+			}
+
+			function getChargentMessage(result) {
+				var chargentMessage = result.Message;
+				if (result.responseData) {
+					var responseData = JSON.parse(result.responseData);
+					if (responseData.chargentMessage) {
+						chargentMessage = responseData.chargentMessage;
+					}
+				}
+				chargentMessage = chargentMessage.replace(/\r\n/g, '\n');
+				return chargentMessage;
+			}
+
+			function isCvvValid(cvv) {
+				if (isNaN(parseInt(cvv)) || cvv.length < 3 || cvv.length > 4) {
+					return false;
+				}
+				return true;
+			}
+
+			function disableButtons() {
+				var buttons = document.getElementsByName('chargentorders__authorize');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].setAttribute('disabled', 'true');
+					}
+				}
+			}
+
+			function enableButtons() {
+				var buttons = document.getElementsByName('chargentorders__authorize');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].removeAttribute('disabled');
+					}
+				}
+			}
+		</script>
+	</apex:outputPanel>
+
+	<!-- Charge -->
+	<apex:outputPanel rendered="{!action == 'Charge'}">
+		<script type="text/javascript">
+			console.log('Charge');
+			disableButtons();
+			processOperation();
+			enableButtons();
+
+			function processOperation() {
+				try {
+					var result;
+					var isRequireCvv;
+					var showPopup;
+					var cvv;
+					if ("{!JSENCODE(ChargentOrders__ChargentOrder__c.ChargentOrders__Payment_Method__c)}" == "Credit Card") {
+						isRequireCvv = sforce.apex.execute("ChargentBase.TChargentStaticHelper", "isRequireCvv", {
+							objectId: "{!ChargentOrders__ChargentOrder__c.Id}",
+							action: "Charge"
+						});
+
+						if (isRequireCvv[0] == "true") {
+							isRequireCvv = true;
+							showPopup = true;
+						} else if (isRequireCvv[0] == "false") {
+							isRequireCvv = false;
+							showPopup = true;
+						} else {
+							isRequireCvv = false;
+							showPopup = false;
+						}
+
+						if (showPopup) {
+							var promptMessage = isRequireCvv ? "{!$Label.chargentbase__csc_is_required_message}" : "{!$Label.chargentbase__csc_is_not_required_message}";
+							cvv = prompt(promptMessage);
+
+							if (cvv == null) {
+								return;
+							}
+						}
+					}
+
+					if (isRequireCvv || (!isRequireCvv && cvv)) {
+						if (!isCvvValid(cvv)) {
+							var message = cvv ? "{!$Label.chargentbase__csc_is_not_valid_error}" : "{!$Label.chargentbase__csc_is_required_error}";
+							alert(message);
+							return;
+						} else {
+							var chd = {
+								ObjectId: "{!ChargentOrders__ChargentOrder__c.Id}",
+								CardSecurity: cvv
+							};
+							result = sforce.apex.execute("ChargentOrders.TChargentOperations", "ChargeOrder_ClickJSON", {
+								OrderId: JSON.stringify(chd)
+							});
+						}
+					} else {
+						result = sforce.apex.execute("ChargentOrders.TChargentOperations", "ChargeOrder_Click", {
+							OrderId: "{!ChargentOrders__ChargentOrder__c.Id}"
+						});
+					}
+					result = result[0];
+
+					var chargentMessage = getChargentMessage(result);
+					if (result.DebugString) {
+						alert(chargentMessage + '\n\n' + result.DebugString);
+					} else {
+						alert(chargentMessage);
+					}
+				} catch (e) {
+					var responseMessage = e.faultstring;
+					if ((pos = e.faultstring.indexOf("FIELD_CUSTOM_VALIDATION_EXCEPTION")) > -1) {
+						faultString = e.faultstring.substring(pos);
+						faultString = faultString.replace(/&quot;/g, '\"');
+						beginpos = faultString.indexOf(", ");
+						endpos = faultString.indexOf(":");
+						faultString = faultString.substring(beginpos + 2, endpos);
+						responseMessage = faultString;
+					} else if (e.faultstring.indexOf("CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY") > -1) {
+						responseMessage = 'An error occurred while recording to Database your Transaction data. Please contact your Administrator.';
+					} else if (e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}") > -1) {
+						responseMessage = e.faultstring.substring(e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}"), e.faultstring.indexOf("\n"));
+					}
+
+					alert(responseMessage);
+				} finally {
+					window.location = '/{!ooc.Id}';
+				}
+			}
+
+			function getChargentMessage(result) {
+				var chargentMessage = result.Message;
+				if (result.responseData) {
+					var responseData = JSON.parse(result.responseData);
+					if (responseData.chargentMessage) {
+						chargentMessage = responseData.chargentMessage;
+					}
+				}
+				chargentMessage = chargentMessage.replace(/\r\n/g, '\n');
+				return chargentMessage;
+			}
+
+			function isCvvValid(cvv) {
+				if (isNaN(parseInt(cvv)) || cvv.length < 3 || cvv.length > 4) {
+					return false;
+				}
+				return true;
+			}
+
+			function disableButtons() {
+				var buttons = document.getElementsByName('chargentorders__charge');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].setAttribute('disabled', 'true');
+					}
+				}
+			}
+
+			function enableButtons() {
+				var buttons = document.getElementsByName('chargentorders__charge');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].removeAttribute('disabled');
+					}
+				}
+			}
+		</script>
+	</apex:outputPanel>
+
+	<!-- Credit -->
+	<apex:outputPanel rendered="{!action == 'Credit'}">
+		<script type="text/javascript">
+			console.log('Credit');
+			try {
+				var queryResult = sforce.connection.query("SELECT Id, ChargentOrders__Gateway__c, ChargentOrders__Gateway__r.RecordType.DeveloperName, ChargentOrders__Payment_Method__c, ChargentOrders__Credit_Amount__c, ChargentOrders__Bank_Account_Name__c, ChargentOrders__Bank_Account_Type__c, ChargentOrders__Bank_Name__c FROM ChargentOrders__ChargentOrder__c WHERE Id = '{!ChargentOrders__ChargentOrder__c.Id}' LIMIT 1");
+
+				var currentObject = queryResult.records;
+
+				if (currentObject.ChargentOrders__Gateway__c != null && currentObject.ChargentOrders__Gateway__r.RecordType.DeveloperName != 'USAePay' &&
+					currentObject.ChargentOrders__Gateway__r.RecordType.DeveloperName != 'Linked2Pay' &&
+					currentObject.ChargentOrders__Gateway__r.RecordType.DeveloperName != 'Forte' &&
+					currentObject.ChargentOrders__Gateway__r.RecordType.DeveloperName != 'PayTrace' &&
+					currentObject.ChargentOrders__Gateway__r.RecordType.DeveloperName != 'FatZebra') {
+					alert('Credits are not yet supported for this gateway. Please contact Chargent support for more information.');
+				} else if (currentObject.ChargentOrders__Gateway__c != null && currentObject.ChargentOrders__Payment_Method__c != 'Check') {
+					alert('Credits are only supported for ACH. Please contact Chargent support for more information.');
+				} else if (currentObject.ChargentOrders__Gateway__c == null) {
+					alert('Gateway field is empty. Please select the gateway.');
+				} else {
+					var amount = '';
+					var aname = '';
+					var anumber = '';
+					var atype = '';
+					var bname = '';
+					var bnumber = '';
+					if (currentObject != null) {
+						amount = currentObject.ChargentOrders__Credit_Amount__c;
+						aname = currentObject.ChargentOrders__Bank_Account_Name__c;
+						anumber = currentObject.ChargentOrders__Bank_Account_Number__c;
+						atype = currentObject.ChargentOrders__Bank_Account_Type__c;
+						bname = currentObject.ChargentOrders__Bank_Name__c;
+						bnumber = currentObject.ChargentOrders__Bank_Routing_Number__c;
+					}
+
+					var CHD = new Object();
+					CHD.ObjectId = "{!ChargentOrders__ChargentOrder__c.Id}";
+					CHD.ChargeAmount = Number(amount).toFixed(2);
+					CHD.BankRoutingNumber = bnumber;
+					CHD.BankAccountNumber = anumber;
+					CHD.BankAccountType = atype;
+					CHD.BankName = bname;
+					CHD.BankAccountName = aname;
+					CHD.CustomTransactionType = "ACH_Credit";
+
+					var result = sforce.apex.execute("ChargentOrders.TChargentOperations", "ChargeOrder_ClickJSON", {
+						InputParams: JSON.stringify(CHD)
+					});
+
+					result = result[0];
+
+					var chargentMessage = getChargentMessage(result);
+					if (result.DebugString) {
+						alert(chargentMessage + '\n\n' + result.DebugString);
+					} else {
+						alert(chargentMessage);
+					}
+				}
+			} catch (e) {
+				var responseMessage = e.faultstring;
+				if ((pos = e.faultstring.indexOf("FIELD_CUSTOM_VALIDATION_EXCEPTION")) > -1) {
+					faultString = e.faultstring.substring(pos);
+					faultString = faultString.replace(/&quot;/g, '\"');
+					beginpos = faultString.indexOf(", ");
+					endpos = faultString.indexOf(":");
+					faultString = faultString.substring(beginpos + 2, endpos);
+					responseMessage = faultString;
+				} else if (e.faultstring.indexOf("CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY") > -1) {
+					responseMessage = 'An error occurred while recording to Database your Transaction data. Please contact your Administrator.';
+				} else if (e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}") > -1) {
+					responseMessage = e.faultstring.substring(e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}"), e.faultstring.indexOf("\n"));
+				}
+
+				alert(responseMessage);
+			} finally {
+				window.location = '/{!ooc.Id}';
+			}
+
+			function getChargentMessage(result) {
+				var chargentMessage = result.Message;
+				if (result.responseData) {
+					var responseData = JSON.parse(result.responseData);
+					if (responseData.chargentMessage) {
+						chargentMessage = responseData.chargentMessage;
+					}
+				}
+				chargentMessage = chargentMessage.replace(/\r\n/g, '\n');
+				return chargentMessage;
+			}
+		</script>
+	</apex:outputPanel>
+
+	<!-- Payment Console -->
+	<apex:outputPanel rendered="{!action == 'Payment_Console'}">
+		<script type="text/javascript">
+			console.log('Payment_Console');
+			var sd;
+			$(document).ready(function(){
+				$('input[value="Credit Card"]').on('click', function(){
+					var h = $(".internal-content").height();
+					$("#iframeContentId").height(h);
+
+				});
+
+				$('input[value="Check"]').on('click', function(){
+					var h = $(".internal-content").height();
+					h=h+30;
+					$("#iframeContentId").height(h);
+				});
+
+			});
+
+			var iframesize;
+			var isscroll = 'yes';
+
+			if (document.documentElement.clientHeight > 833) {
+				iframesize = 833;
+			} else {
+				iframesize = document.documentElement.clientHeight - 100;
+			}
+
+			function createPaymentDialog() {
+				sd = new SimpleDialog("PaymentDialog", true);
+				sd.setWidth(455);
+				// sd.setTitle('<a id="dialog-title" title="Close" tabindex="0" href="" class="dialogClose">Close</a><h2 id="title">Payment Console</h2>');
+				sd.setTitle('<h2 id="title">Payment Console</h2>');
+				sd.createDialog();
+				window.parent.sd = sd;
+				var iframe_url;
+				if (sforce.console != undefined) {
+					if (sforce.console.isInConsole()) {
+						iframe_url = '{!URLFOR("/apex/ChargentBase__internalpayment", null, [objId=ChargentOrder__c.Id])}';
+					} else {
+						iframe_url = '{!URLFOR("/apex/ChargentBase__internalpayment")}' + '?objId=' + '{!ChargentOrders__ChargentOrder__c.Id}';
+					}
+				} else {
+					iframe_url = '{!URLFOR("/apex/ChargentBase__internalpayment")}' + '?objId=' + '{!ChargentOrders__ChargentOrder__c.Id}';
+				}
+				sd.setContentInnerHTML('<iframe id="iframeContentId" src="' + iframe_url + '" frameborder="0" height="' + iframesize + '" width="430" marginheight="0" marginwidth="0" align="center" scrolling="yes" style="overflow-y: auto; overflow-x= hidden !important;" />');
+			}
+
+			function setElements() {
+				try{
+					document.getElementById("PaymentDialogContent").style.padding = "20px";
+					document.getElementById("PaymentDialogContent").style.overflowY = "hidden";
+					document.getElementById("PaymentDialogContent").style.overflowX = "hidden";
+					document.getElementsByClassName("middle")[0].style.background = '#aaa';
+					document.getElementsByClassName("middle")[1].style.background = '#aaa';
+					document.getElementsByClassName("middle")[1].style.borderBottomRightRadius= '10px';
+					document.getElementsByClassName("middle")[1].style.borderBottomLeftRadius= '10px';
+					document.getElementsByClassName("bottomRight")[1].style.display = 'none';
+					document.getElementById('PaymentDialog').style.overflow = "auto";
+				} catch(e) {}
+			}
+
+			function showPaymentDialog(){
+				if (window.parent.sd == undefined) {
+					createPaymentDialog();
+					sd.show();
+				} else {
+					window.parent.sd.show();
+				}
+
+				setElements();
+			}
+
+			showPaymentDialog();
+
+			<!--document.getElementById('dialog-title').onclick = function() {-->
+			<!--	window.parent.sd.cancel();-->
+			<!--	window.location = '/{!ooc.Id}';-->
+			<!--	return false;-->
+			<!--}-->
+		</script>
+	</apex:outputPanel>
+
+	<!-- Refund -->
+	<apex:outputPanel rendered="{!action == 'Refund'}">
+		<script type="text/javascript">
+			console.log('Refund');
+			disableButtons();
+			processOperation();
+			enableButtons();
+
+			function processOperation() {
+				try {
+					var result;
+					var isRequireCvv;
+					var showPopup;
+					var cvv;
+					if ("{!JSENCODE(ChargentOrder__c.Payment_Method__c)}" == "Credit Card") {
+						isRequireCvv = sforce.apex.execute("ChargentBase.TChargentStaticHelper", "isRequireCvv", {
+							objectId: "{!ChargentOrders__ChargentOrder__c.Id}",
+							action: "Refund"
+						});
+
+						if (isRequireCvv[0] == "true") {
+							isRequireCvv = true;
+							showPopup = true;
+						} else if (isRequireCvv[0] == "false") {
+							isRequireCvv = false;
+							showPopup = true;
+						} else {
+							isRequireCvv = false;
+							showPopup = false;
+						}
+
+						if (showPopup) {
+							var promptMessage = isRequireCvv ? "{!$Label.chargentbase__csc_is_required_message}" : "{!$Label.chargentbase__csc_is_not_required_message}";
+							cvv = prompt(promptMessage);
+
+							if (cvv == null) {
+								return;
+							}
+						}
+					}
+
+					if (isRequireCvv || (!isRequireCvv && cvv)) {
+						if (!isCvvValid(cvv)) {
+							var message = cvv ? "{!$Label.chargentbase__csc_is_not_valid_error}" : "{!$Label.chargentbase__csc_is_required_error}";
+							alert(message);
+							return;
+						} else {
+							var chd = {
+								ObjectId: "{!ChargentOrders__ChargentOrder__c.Id}",
+								CardSecurity: cvv
+							};
+							result = sforce.apex.execute("ChargentOrders.TChargentOperations", "RefundOrder_ClickJSON", {
+								OrderId: JSON.stringify(chd)
+							});
+						}
+					} else {
+						result = sforce.apex.execute("ChargentOrders.TChargentOperations", "RefundOrder_Click", {
+							OrderId: "{!ChargentOrders__ChargentOrder__c.Id}"
+						});
+					}
+					result = result[0];
+					var chargentMessage = getChargentMessage(result);
+					if (result.DebugString) {
+						alert(chargentMessage + '\n\n' + result.DebugString);
+					} else {
+						alert(chargentMessage);
+					}
+
+				} catch (e) {
+					var responseMessage = e.faultstring;
+					if ((pos = e.faultstring.indexOf("FIELD_CUSTOM_VALIDATION_EXCEPTION")) > -1) {
+						faultString = e.faultstring.substring(pos);
+						faultString = faultString.replace(/"/g, '\"');
+						beginpos = faultString.indexOf(", ");
+						endpos = faultString.indexOf(":");
+						faultString = faultString.substring(beginpos + 2, endpos);
+						responseMessage = faultString;
+					} else if (e.faultstring.indexOf("CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY") > -1) {
+						responseMessage = 'An error occurred while recording to Database your Transaction data. Please contact your Administrator.';
+					} else if (e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}") > -1) {
+						responseMessage = e.faultstring.substring(e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}"), e.faultstring.indexOf("\n"));
+					}
+
+					alert(responseMessage);
+				} finally {
+					window.location = '/{!ooc.Id}';
+				}
+			}
+
+			function getChargentMessage(result) {
+				var chargentMessage = result.Message;
+				if (result.responseData) {
+					var responseData = JSON.parse(result.responseData);
+					if (responseData.chargentMessage) {
+						chargentMessage = responseData.chargentMessage;
+					}
+				}
+				chargentMessage = chargentMessage.replace(/\r\n/g, '\n');
+				return chargentMessage;
+			}
+
+			function isCvvValid(cvv) {
+				if (isNaN(parseInt(cvv)) || cvv.length < 3 || cvv.length > 4) {
+					return false;
+				}
+				return true;
+			}
+
+			function disableButtons() {
+				var buttons = document.getElementsByName('chargentorders__refund');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].setAttribute('disabled', 'true');
+					}
+				}
+			}
+
+			function enableButtons() {
+				var buttons = document.getElementsByName('chargentorders__refund');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].removeAttribute('disabled');
+					}
+				}
+			}
+		</script>
+	</apex:outputPanel>
+
+	<!-- Send_Pay_Request -->
+	<apex:outputPanel rendered="{!action == 'Send_Pay_Request'}">
+		<script type="text/javascript">
+			console.log('Send_Pay_Request');
+			function createPaymentDialog() {
+				sd = new SimpleDialog("PaymentDialog", true);
+				sd.setWidth(455);
+				sd.setTitle('<a id="dialog-title" title="Close" tabindex="0" href="" class="dialogClose">Close</a><h2 id="title">Send Payment Request</h2>');
+				sd.createDialog();
+				window.parent.sd = sd;
+
+				var iframe_url;
+				if (sforce.console != undefined) {
+					if (sforce.console.isInConsole()) {
+						iframe_url = '{!URLFOR("/apex/ChargentBase__PaymentRequestModal", null, [objId=ChargentOrder__c.Id])}';
+					} else {
+						iframe_url = '{!URLFOR("/apex/ChargentBase__PaymentRequestModal")}' + '?objId=' + '{!ChargentOrders__ChargentOrder__c.Id}';
+					}
+				} else {
+					iframe_url = '{!URLFOR("/apex/ChargentBase__PaymentRequestModal")}' + '?objId=' + '{!ChargentOrders__ChargentOrder__c.Id}';
+				}
+
+				sd.setContentInnerHTML('<iframe id="iframeContentId" src="' + iframe_url + '" frameborder="0" height="260" width="410" marginheight="0" marginwidth="0" align="center" scrolling="no" style="overflow-y: hidden !important; overflow-x: hidden !important;" />');
+			}
+
+			function setElements() {
+				try {
+					document.getElementById("PaymentDialogContent").style.padding = "20px";
+					document.getElementById("PaymentDialogContent").style.overflowY = "hidden";
+					document.getElementById("PaymentDialogContent").style.overflowX = "hidden";
+					document.getElementsByClassName("middle")[0].style.background = '#aaa';
+					document.getElementsByClassName("middle")[1].style.background = '#aaa';
+					document.getElementsByClassName("middle")[1].style.borderBottomRightRadius = '10px';
+					document.getElementsByClassName("middle")[1].style.borderBottomLeftRadius = '10px';
+					document.getElementsByClassName("bottomRight")[1].style.display = 'none';
+					document.getElementById('PaymentDialog').style.overflow = "auto";
+				} catch (e) {}
+			}
+
+			function showPaymentDialog() {
+				if (window.parent.sd == undefined) {
+					createPaymentDialog();
+					sd.show();
+				} else {
+					window.parent.sd.show();
+				}
+
+				setElements();
+			}
+
+			showPaymentDialog();
+
+			document.getElementById('dialog-title').onclick = function() {
+				window.parent.sd.cancel();
+				window.location = '/{!ooc.Id}';
+				return false;
+			}
+		</script>
+	</apex:outputPanel>
+
+	<!-- Void -->
+	<apex:outputPanel rendered="{!action == 'Void'}">
+		<script type="text/javascript">
+			console.log('Void');
+			disableButtons();
+			processOperation();
+			enableButtons();
+
+			function processOperation() {
+				try {
+					var result = sforce.apex.execute("ChargentOrders.TChargentOperations", "VoidOrder_Click", {
+						OrderId: "{!ChargentOrders__ChargentOrder__c.Id}"
+					});
+					result = result[0];
+					var chargentMessage = getChargentMessage(result);
+					if (result.DebugString) {
+						alert(chargentMessage + '\n\n' + result.DebugString);
+					} else {
+						alert(chargentMessage);
+					}
+				} catch (e) {
+					var responseMessage = e.faultstring;
+					if ((pos = e.faultstring.indexOf("FIELD_CUSTOM_VALIDATION_EXCEPTION")) > -1) {
+						faultString = e.faultstring.substring(pos);
+						faultString = faultString.replace(/"/g, '\"');
+						beginpos = faultString.indexOf(", ");
+						endpos = faultString.indexOf(":");
+						faultString = faultString.substring(beginpos + 2, endpos);
+						responseMessage = faultString;
+					} else if (e.faultstring.indexOf("CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY") > -1) {
+						responseMessage = 'An error occurred while recording to Database your Transaction data. Please contact your Administrator.';
+					} else if (e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}") > -1) {
+						responseMessage = e.faultstring.substring(e.faultstring.indexOf("{!$Label.chargentbase__no_value_in_mapper}"), e.faultstring.indexOf("\n"));
+					}
+
+					alert(responseMessage);
+				} finally {
+					window.location = '/{!ooc.Id}';
+				}
+			}
+
+			function getChargentMessage(result) {
+				var chargentMessage = result.Message;
+				if (result.responseData) {
+					var responseData = JSON.parse(result.responseData);
+					if (responseData.chargentMessage) {
+						chargentMessage = responseData.chargentMessage;
+					}
+				}
+				chargentMessage = chargentMessage.replace(/\r\n/g, '\n');
+				return chargentMessage;
+			}
+
+			function disableButtons() {
+				var buttons = document.getElementsByName('chargentorders__void');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].setAttribute('disabled', 'true');
+					}
+				}
+			}
+
+			function enableButtons() {
+				var buttons = document.getElementsByName('chargentorders__void');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].removeAttribute('disabled');
+					}
+				}
+			}
+		</script>
+	</apex:outputPanel>
+
+</apex:page>

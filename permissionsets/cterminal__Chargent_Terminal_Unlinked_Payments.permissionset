@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Adds ability for a Chargent Terminal User to reconcile unlinked Chargent Terminal Payment matching them up with the related Salesforce Objects. This is not needed for those with the Chargent Terminal Admin Profile</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Chargent Terminal Unlinked Payments</label>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>cterminal__Terminal_Payment__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>cterminal__Chargent_Terminal_Unlinked_Payments</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

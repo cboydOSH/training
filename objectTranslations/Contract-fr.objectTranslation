@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- FrameContractList --></label>
+        <name>vlocity_ins__FrameContractList</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- GetContractDetailFields --></label>
+        <name>vlocity_ins__GetContractDetailFields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Envelope Id --></label>
+        <name>Envelope_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Payment Order --></label>
+        <name>Recurring_Payment_Order__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Market Segment --></label>
+        <name>vlocity_ins__AccountMarketSegment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Contract Document --></label>
+        <name>vlocity_ins__ActiveContractVersionId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agency/Brokerage --></label>
+        <name>vlocity_ins__AgencyBrokerageId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel Partner License --></label>
+        <name>vlocity_ins__AgencyLicenseId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>vlocity_ins__ApplicationId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Renewal Notification Object --></label>
+        <name>vlocity_ins__AutoRenewObjectCreation__c</name>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Reference Number --></label>
+        <name>vlocity_ins__ContractReferenceNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>vlocity_ins__ContractType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Contract Document --></label>
+        <name>vlocity_ins__CountofContractVersion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Census --></label>
+        <name>vlocity_ins__EnrollmentCensusId__c</name>
+        <relationshipLabel><!-- Contracts (Enrollment Census) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enrollment End Date --></label>
+        <name>vlocity_ins__EnrollmentEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Start Date --></label>
+        <name>vlocity_ins__EnrollmentStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Waiting Period --></label>
+        <name>vlocity_ins__EnrollmentWaitingPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Reason --></label>
+        <name>vlocity_ins__ExpirationReason__c</name>
+        <picklistValues>
+            <masterLabel>Does not want to renew</masterLabel>
+            <translation><!-- Does not want to renew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moving to M2M</masterLabel>
+            <translation><!-- Moving to M2M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expired Contract --></label>
+        <name>vlocity_ins__ExpiredContractId__c</name>
+        <relationshipLabel><!-- Replacement Contract --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fee Schedule --></label>
+        <name>vlocity_ins__FeeScheduleId__c</name>
+        <relationshipLabel><!-- ContractFeeSchedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Final Rating Census --></label>
+        <name>vlocity_ins__FinalRatingGroupCensusId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Active Document Locked --></label>
+        <name>vlocity_ins__IsActiveDocumentLocked__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsActiveVersionBatchTemplate --></label>
+        <name>vlocity_ins__IsActiveVersionBatchTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Renew --></label>
+        <name>vlocity_ins__IsAutoRenew__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Frame Contract --></label>
+        <name>vlocity_ins__IsFrameContract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Standard --></label>
+        <name>vlocity_ins__IsNonStandard__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Batch Job Error --></label>
+        <name>vlocity_ins__LastDocumentBatchJobError__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Batch Job Id --></label>
+        <name>vlocity_ins__LastDocumentBatchJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Batch Job Status --></label>
+        <name>vlocity_ins__LastDocumentBatchJobStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>vlocity_ins__LocaleCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>vlocity_ins__OpportunityId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>vlocity_ins__OrderId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Contract --></label>
+        <name>vlocity_ins__OriginalContractId__c</name>
+        <relationshipLabel><!-- Amendment Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Contract --></label>
+        <name>vlocity_ins__ParentContractId__c</name>
+        <relationshipLabel><!-- Sub Contract --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price List --></label>
+        <name>vlocity_ins__PriceListId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Producer --></label>
+        <name>vlocity_ins__ProducerId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>vlocity_ins__QuoteId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Renewal Notification Term --></label>
+        <name>vlocity_ins__RenewalNotificationTerm__c</name>
+        <picklistValues>
+            <masterLabel>Days</masterLabel>
+            <translation><!-- Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Months</masterLabel>
+            <translation><!-- Months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Notification Period --></label>
+        <name>vlocity_ins__RenewalNotification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Notification Date --></label>
+        <name>vlocity_ins__RenewalStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Renewal Notification --></label>
+        <name>vlocity_ins__SendRenewalNotification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terminate Date --></label>
+        <name>vlocity_ins__TerminateDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Reason --></label>
+        <name>vlocity_ins__TerminationReason__c</name>
+        <picklistValues>
+            <masterLabel>Customer Not Compliance</masterLabel>
+            <translation><!-- Customer Not Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination without Cause</masterLabel>
+            <translation><!-- Termination without Cause --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Termination Type --></label>
+        <name>vlocity_ins__TerminationType__c</name>
+        <picklistValues>
+            <masterLabel>With Cause</masterLabel>
+            <translation><!-- With Cause --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Without Cause</masterLabel>
+            <translation><!-- Without Cause --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Term of Eligibility --></label>
+        <name>vlocity_ins__TermofEligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Underwriter --></label>
+        <name>vlocity_ins__UnderwriterId__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Carrier --></label>
+        <name>vlocity_ins__Carrier</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contract --></label>
+        <name>vlocity_ins__Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Group --></label>
+        <name>vlocity_ins__Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Producer --></label>
+        <name>vlocity_ins__Producer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Provider --></label>
+        <name>vlocity_ins__Provider</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Read Only --></label>
+        <name>vlocity_ins__ReadOnlyContract</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneContract --></label>
+        <name>vlocity_ins__CloneContract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- TagForRenewal --></label>
+        <name>vlocity_ins__TagForRenewal</name>
+    </webLinks>
+</CustomObjectTranslation>

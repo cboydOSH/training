@@ -1,0 +1,50 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__InternalNotes__c": "Flow without agent data seted for guest user community",
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Enroll Load Initial Information",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Enroll/Load Initial Information with My Family Table/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "additionalOutput": {
+            "Account": "%DREX_GetQuoteDetails:Account%",
+            "CurrencyAnnualComissionFee": "%DREX_GetQuoteDetails:CurrencyAnnualComissionFee%",
+            "CurrencyPricePerAdditionalMembers": "%DREX_GetQuoteDetails:CurrencyPricePerAdditionalMembers%",
+            "HipaaList": "%OSH_ExtractHipaaAuthorized:HipaaList%",
+            "MaximunNumberPerFamilyMember": "%DREX_GetQuoteDetails:MaximunNumberPerFamilyMember%",
+            "PrimarystoredMonthlyContribution": "%DREX_GetQuoteDetails:PrimarystoredMonthlyContribution%",
+            "Quote": "%DREX_GetQuoteDetails:Quote%",
+            "RatingMemberId": "%DREX_GetQuoteDetails:RatingMemberId%",
+            "Welcome": "%DREX_GetQuoteDetails:Welcome%",
+            "dependentRecordType": "%DREX_GetQuoteDetails:dependentRecordType%",
+            "myFamily": "%DREX_GetQuoteDetails:myFamily%",
+            "personAccountRecordType": "%DREX_GetQuoteDetails:personAccountRecordType%",
+            "primaryMemberRecordType": "%DREX_GetQuoteDetails:primaryMemberRecordType%",
+            "servicingAgentGet": "%OSH_Enroll_getAgentDataGuest:servicingAgentGet%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%thisIsCommunity% == true",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Response Action",
+    "Name": "ResponseAction1Guest",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Enroll/Load Initial Information with My Family Table/Procedure/ResponseAction1Guest"
+}

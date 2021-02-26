@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Automated Collections Payment Request</name>
+    <style>none</style>
+    <subject>Attention: Your payment was not successful.</subject>
+    <textOnly>{!Recipient.FirstName},
+
+        Your payment of [[merge field for amount due]] was declined on [[decline date]].
+        Please update your payment details and submit the payment again by clicking here: [[payment request link]].
+
+        ​​​​​​​Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

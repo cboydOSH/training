@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <customValue>
+        <fullName>Automation</fullName>
+        <default>true</default>
+        <label>Automation</label>
+    </customValue>
+    <customValue>
         <fullName>Apex Test with Validation</fullName>
         <default>false</default>
         <label>Apex Test with Validation</label>
@@ -46,16 +51,16 @@
         <label>URL Callout</label>
     </customValue>
     <customValue>
-        <fullName>Compliance</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Compliance</label>
-    </customValue>
-    <customValue>
         <fullName>Static Analysis</fullName>
         <default>false</default>
         <isActive>false</isActive>
         <label>Static Analysis</label>
+    </customValue>
+    <customValue>
+        <fullName>Compliance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Compliance</label>
     </customValue>
     <masterLabel>Quality Gate Types</masterLabel>
     <sorted>false</sorted>

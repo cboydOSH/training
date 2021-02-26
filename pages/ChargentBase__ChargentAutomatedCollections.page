@@ -1,0 +1,28 @@
+<apex:page showHeader="false" sideBar="false">
+    <style type="text/css">
+        body {
+            background-color: transparent;
+        }
+    </style>
+
+    <apex:includeLightning />
+
+    <div id="ChargentAutomatedCollections"/>
+
+    <script>
+        $Lightning.use("ChargentBase:ChargentAutomatedCollectionsApplication", function () {
+            $Lightning.createComponent("ChargentBase:ChargentAutomatedCollections", {},
+                    "ChargentAutomatedCollections",
+                    function (component, status, errorMessage) {
+                        if (status === "SUCCESS") {
+                            console.log("Custom component loaded.");
+                        } else if (status === "INCOMPLETE") {
+                            console.log("No response from server or client is offline.")
+                        } else if (status === "ERROR") {
+                            console.log("Error: " + errorMessage);
+                        }
+                    }
+            );
+        });
+    </script>
+</apex:page>

@@ -279,7 +279,7 @@
         <fullName>copado__Story_points__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Story points</label>
+        <label>Total Capacity (Points)</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>

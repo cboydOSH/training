@@ -584,12 +584,12 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>copado__Destination_Environment__c</field>
+            <field>copado__Source_Environment__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>copado__Source_Environment__c</field>
+            <field>copado__Destination_Environment__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>

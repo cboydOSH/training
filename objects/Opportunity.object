@@ -255,6 +255,23 @@
             <default>false</default>
         </values>
     </businessProcesses>
+    <businessProcesses>
+        <fullName>vlocity_ins__Vlocity Sales Process</fullName>
+        <description>Vlocity Sales Process</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
     <compactLayoutAssignment>Opportunity_Compact_Layout</compactLayoutAssignment>
     <compactLayouts>
         <fullName>List_Bill_Opportunity_Compact_Layout</fullName>
@@ -277,6 +294,31 @@
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <externalSharingModel>Read</externalSharingModel>
+    <fieldSets>
+        <fullName>vlocity_ins__StoryFieldSet</fullName>
+        <description>Story board</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CloseDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>StageName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>NextStep</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>StoryFieldSet</label>
+    </fieldSets>
     <fields>
         <fullName>ACH_Auth_Form_Voided_Check__c</fullName>
         <defaultValue>false</defaultValue>
@@ -852,6 +894,33 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Currently_enrolled_health_C_Program__c</fullName>
+        <description>a.	Are you currently enrolled in a health care Program? – Yes/No</description>
+        <externalId>false</externalId>
+        <label>Currently enrolled health C Program</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Date_of_Birth__c</fullName>
@@ -2405,6 +2474,138 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>vlocity_ins__AgencyBrokerageId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency/Brokerage</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Opportunities (Agency/Brokerage)</relationshipLabel>
+        <relationshipName>AgencyBrokerageOpportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__FollowUpTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If this activity is a follow up to a previous activity.</description>
+        <externalId>false</externalId>
+        <label>Follow Up To</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__FrameContractId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Frame contract linked to this opportunity</description>
+        <externalId>false</externalId>
+        <label>Frame Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsContractRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Denotes if opportunity requires a contract</description>
+        <externalId>false</externalId>
+        <label>Require Contract</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OriginatingContractId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Points to the contract from which this opportunity was created</description>
+        <externalId>false</externalId>
+        <label>Originating Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PartyId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The referral source of an opportunity</description>
+        <externalId>false</externalId>
+        <label>Referral Source</label>
+        <referenceTo>vlocity_ins__Party__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PriceListId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Price List</label>
+        <referenceTo>vlocity_ins__PriceList__c</referenceTo>
+        <relationshipLabel>Opportunities Using This Price List</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PrimaryBroker__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Primary Producer</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TrackingNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tracking Number</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <listViews>
         <fullName>All_Opportunities</fullName>
         <columns>OPPORTUNITY.NAME</columns>
@@ -2804,6 +3005,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_enrolled_health_C_Program__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3375,6 +3587,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_enrolled_health_C_Program__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3977,6 +4200,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Currently_enrolled_health_C_Program__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Demographic_Groups__c</picklist>
             <values>
                 <fullName>English</fullName>
@@ -4301,6 +4535,575 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>18</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>Alabama</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>California</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__MobilePhoneOpportunity</fullName>
+        <active>true</active>
+        <businessProcess>vlocity_ins__Vlocity Sales Process</businessProcess>
+        <description>Mobile Phone Opportunity</description>
+        <label>MobilePhoneOpportunity</label>
+        <picklistValues>
+            <picklist>Affinity_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0%2E25</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Type__c</picklist>
+            <values>
+                <fullName>Corp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LLC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S Corp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Proprietorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Center_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>32</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Level__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0%2E25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>32</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Type__c</picklist>
+            <values>
+                <fullName>Affinity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currently_enrolled_health_C_Program__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Demographic_Groups__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filipino</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Latin%2FSpanish</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>E_O__c</picklist>
+            <values>
+                <fullName>Current</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Enrollment_Method__c</picklist>
+            <values>
+                <fullName>Live Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ethnicity__c</picklist>
+            <values>
+                <fullName>American Indian%2FAlaska Native</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black%2FAfrican American</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hispanic%2FLatino</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Native Hawaiian%2FPacific Islander</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White%2FCaucasian</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FMO_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>All efforts extended%2C no response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost to Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Budget %2F Lost Funding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opened in error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MGP2_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MGP_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Multiple_Invoices__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMO_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Person_Enrolling__c</picklist>
+            <values>
+                <fullName>OSH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Preferred_Language__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Latin%2FSpanish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vietnamese</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Producer2_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Producer_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referral_percent__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4825,6 +5628,18 @@ ISCHANGED(Contract_Type__c)
         <url>https://onesharehealth--vfirst.visualforce.com/apex/vfirst__Portal?redirect_url={!URLENCODE(&apos;order-report?sf_object_id=&apos; + CASESAFEID(Opportunity.Id) + &apos;&amp;sf_object_name=opportunity&apos;)}</url>
     </webLinks>
     <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Opportunity</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromOpportunity</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
         <fullName>pi__Send_Pardot_Emails</fullName>
         <availability>online</availability>
         <displayType>massActionButton</displayType>
@@ -4846,5 +5661,112 @@ ISCHANGED(Contract_Type__c)
         <openType>sidebar</openType>
         <page>pi__MicroCampaignSingleOpportunity</page>
         <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__CreateContract</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Contract</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+var namespace_prefix = &apos;&apos;; 
+
+
+
+var result = sforce.connection.describeGlobal();
+
+var TOKEN_OBJ = &quot;Party__c&quot;;
+
+var sobjects = result.getArray(&quot;sobjects&quot;);
+
+
+
+for(var i=0; i&lt;sobjects.length; i++) {
+
+var sobjName = sobjects[i].name;
+
+var str = sobjName.split(&quot;__&quot;);
+
+//if there are 3 values there is a namespace
+
+if (str.length == 3){
+
+//Is it one of ours?
+
+var sobj = str[1].valueOf() +&apos;__c&apos;;
+
+if(sobj == TOKEN_OBJ) {
+
+namespace_prefix = str[0].valueOf();
+
+}
+
+} 
+
+}
+
+if(namespace_prefix != &quot;&quot;){
+
+namespace_prefix+= &apos;.&apos;;
+
+} 
+
+
+
+var result = sforce.apex.execute(namespace_prefix+&quot;ContractServiceResource&quot;,&quot;createContractWithTemplate&quot;, {contextId: &apos;{!Opportunity.Id}&apos;});
+window.location.href = &apos;/&apos; + result + &apos;/e?retURL=%2F&apos; + result;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__CreatingContractAloha</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Contract</masterLabel>
+        <openType>sidebar</openType>
+        <page>vlocity_ins__CreateContractFromOpty</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__DeliveryStatus</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Delivery Status</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://www.fedex.com/cgi-bin/tracking?tracknumbers={!Opportunity.vlocity_ins__TrackingNumber__c}&amp;action=track&amp;language=english&amp;cntry_code=us</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__GenerateDocumentPDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Generate Document PDF</masterLabel>
+        <openType>newWindow</openType>
+        <page>vlocity_ins__OpportunityDocumentPdf</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
     </webLinks>
 </CustomObject>

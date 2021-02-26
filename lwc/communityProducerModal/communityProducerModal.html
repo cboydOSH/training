@@ -1,0 +1,77 @@
+<template>
+    <!--Use template if:true to display/hide popup based on isModalOpen value--> 
+    <template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container" style="width:65%;max-width:65rem;">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate modalTitle">OneShare Health News</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="newsCard">
+                        <div class="newsCardInfoContainer">
+                            <div class="newsCardPresentationTitle">Hot Off The Press</div>
+                            <div class="newsCardPresentationDescription">Click the card to read more information and view the pres release.</div>
+                            <div class="newsCardPresentationMediaTitle">For Media Inquiries:</div>
+                            <div class="newsCardPresentationMediaPhone">(682)200-1599</div>
+                            <div class="newsCardPresentationMediaMail">media@onesharehealth.com</div>
+                        </div>
+                    </div>
+                    <div class="newsCard opacityTransition">
+                        <div class="newsCardPlusSign">+</div>
+                        <div class="newsCardInfoContainer">
+                            <div class="newsCardTitle">
+                                Former Arkansas Governor, Mike Huckabee,
+                                Joins OneShare Board of Directors
+                            </div>
+                            <div class="newsCardContent">
+                                <img src="https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1591297126000/communityNewsMike" class="newsCardImage">
+                                <div class="newsCardDescription">
+                                    Huckabee served as the 44th Governor of the State of Arkansas from 1996
+                                    to 2007. In addition to educational reform, Huckabee continues
+                                    to push for making wide-scale changes to U.S. healthcare.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsCard opacityTransition">
+                        <div class="newsCardPlusSign">+</div>
+                        <div class="newsCardInfoContainer">
+                            <div class="newsCardTitle">
+                                OneShare Health Names Allen Kerr
+                                as Head of Regulatory Affairs
+                            </div>
+                            <div class="newsCardContent">
+                                <img src="https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1591297153000/communityNewsAllen" class="newsCardImage">
+                                <div class="newsCardDescription">
+                                    Kerr was appointed as Arkansas State Insurance
+                                    Comminssioner in 2015 and was an elected member in the Arkansas House of Representatives
+                                    from 2008-2014.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                          <div class="slds-checkbox" style="float: left;">
+                            <abbr class="slds-required" title="required">*</abbr>
+                            <input type="checkbox" name="options" id="agreementCheckbox" value={agreementValue} onchange={handleAgreementChange}/>
+                            <label class="slds-checkbox__label" for="agreementCheckbox">
+                              <span class="slds-checkbox_faux"></span>
+                              <span class="slds-form-element__label">I’ve read and am up to date on the latest information</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    <button if:true={agreementValue} class="slds-button slds-button_brand" onclick={submitDetails} title="OK">OK</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+ </template>

@@ -1,0 +1,83 @@
+.communityProducerFooterContainer{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    width: 90%;
+}
+
+.communityProducerFooterElement{
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 310px;
+    float: left;
+    box-shadow: 2px 2px 5px 1px #d3d3d3;
+    border-radius: 5px;
+    opacity: 0.7;
+    transition: opacity .6s;
+    cursor: pointer;
+}
+
+.communityProducerFooterElement:hover{
+    opacity: 1;
+}
+
+.communityProducerFooterElementImage{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60%;
+}
+
+.communityProducerFooterElementDescription{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40%;
+    color: black;
+}
+
+.communityProducerFooterElementDescriptionTitle{
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.communityProducerFooterElementDescriptionText{
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 90%;
+}
+
+.communityProducerFooterElementDescriptionArrow{
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+.contactUs{
+    background: url("https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1590700063000/TypeWriterImage") no-repeat;
+    background-size: 100%;
+}
+
+.productNewsletter{
+    background: url("https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1590700829000/ProductNewsletterImage") no-repeat;
+    background-size: 100%;
+}
+
+.knowledge{
+    background: url("https://devvl2-oshtraining.cs45.force.com/producercommunity/resource/1590700899000/KnowledgeImage") no-repeat;
+    background-size: 100%;
+}

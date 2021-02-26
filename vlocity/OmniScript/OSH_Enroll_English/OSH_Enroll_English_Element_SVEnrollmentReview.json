@@ -1,0 +1,54 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Enroll",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Enroll/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "BlkMedicalQuestions": {
+                "Text35": null,
+                "havePrescriptionMedicationsFunctionReview": "%havePrescriptionMedicationsFunction%",
+                "playExtremeSportsFunctionReview": "%playExtremeSportsFunction%",
+                "radioConditions24monthFunctionReview": "%radioConditions24monthFunction%",
+                "radioConsumeAlcoholFunctionReview": "%radioConsumeAlcoholFunction%",
+                "radioConsumeTobaccoFunctionReview": "%radioConsumeTobaccoFunction%",
+                "radioHaveorHadCancerFunctionReview": "%radioHaveorHadCancerFunction%",
+                "radioMedicalServiceFunctionReview": "%radioMedicalServiceFunction%",
+                "radioMemberFamilybeenHospitalized6MonthsReview": "%radioHospitalizedFunction%",
+                "radioPregnantFunctionReview": "%radioPregnantFunction%"
+            },
+            "enrollmentReview": {
+                "FamilyReview": "%EditFamilyMember%",
+                "PrimaryLanguageReview": "%myFamily:WhatPrimaryLanguageSpoken%",
+                "QuoteNumberReview": "%Quote:QuoteNumber%",
+                "RequestedEffectiveDateReview": "=CONCATENATE(SUBSTRING(%myFamily:effDateEnroll%, 5, 7), \"/\", SUBSTRING(%myFamily:effDateEnroll%, 8, 10),\"/\" ,SUBSTRING(%myFamily:effDateEnroll%, 0, 4))",
+                "SelectedProgramCodeReview": "%planSelection:selectedPlans|1:ProductCode%",
+                "SelectedProgramPriceReview": "%enrollPrograms:formulaPriceEnrollPrograms%",
+                "SelectedProgramReview": "%planSelection:selectedPlans|1:Name%"
+            }
+        },
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SVEnrollmentReview",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Enroll/English/SVEnrollmentReview"
+}
