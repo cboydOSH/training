@@ -1,0 +1,51 @@
+<!-- <div class="nds-step__next-link"
+    ng-style="!(child.bHasNext && child.propSetMap.nextWidth > 0) ? {'visibility' : 'hidden'}:{'text-align' : 'right'}"
+    id="{{::child.name + '_nextBtn'}}"
+    ng-click='nextRepeater(child.nextIndex, child.indexInParent)'
+    ng-disabled='checkValidity(this, child.index, child.indexInParent, "Step", null, true)'
+    vlc-animation-slider='test'>
+    <span class="nds-step__link-button">{{::child.propSetMap.nextLabel}}</span>
+    <slds-svg-icon aria-hidden="true"
+        sprite="'utility'"
+        icon="'chevronright'"
+        size="'small'"
+        extra-classes="'nds-button__icon'">
+    </slds-svg-icon>
+</div> -->
+<!-- <div class='nds-wrap'> -->
+<!-- <div ng-init="currentLocation()">    
+    <section id='{{::child.name}}'>
+        <form novalidate role='form' stepForm name='{{::bpTree.sOmniScriptId}}-{{$index}}'
+              id='{{::bpTree.sOmniScriptId}}-{{$index}}' vlc-slds-disable-auto-complete="testing"> -->
+            <div class="nds-align_absolute-center" ng-controller="docuSignEmbeddedSignatureButtonController">
+                <button
+                    class="nds-button nds-button_brand nds-p-around_xx-small nds-size_1-of-1 nds-medium-size_3-of-12"
+                    type="button"
+                    id="{{::child.name + '_nextBtn'}}"
+                    vlc-animation-slider='test'
+                    ng-mouseover="currentLocation()"
+                    ng-click='setEmbededToTrue();nextRepeater2()'> 
+                    Sign Now
+                </button>
+            </div>
+        <!-- </form>
+    </section>
+</div> -->
+<!-- ng-click='nextRepeater(15, 14)'> -->
+<!-- </div> -->
+<!-- <div class='nds-size_1-of-1 nds-header__desktop' >
+    <div class='nds-wrap'>
+        <div class="nds-align_absolute-center">
+            <button class="nds-button nds-button_brand nds-p-around_xx-small nds-size_1-of-1 nds-medium-size_{{::child.propSetMap.nextWidth}}-of-12"
+                    type="button"
+                    ng-show='child.bHasNext && child.propSetMap.nextWidth > 0'
+                    id="{{::child.name + '_nextBtn'}}"
+                    ng-click='nextRepeater(child.nextIndex, child.indexInParent)'
+                    ng-disabled='checkValidity(this, child.index, child.indexInParent, "Step", null, true)'
+                    ng-disabled="!hasPDF"
+                    vlc-animation-slider='test'>
+                    {{::child.propSetMap.nextLabel}}
+            </button>
+        </div>
+    </div>
+</div> -->

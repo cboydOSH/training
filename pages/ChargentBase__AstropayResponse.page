@@ -1,0 +1,2 @@
+<apex:page action="{!CheckStatus}" controller="ChargentBase.AstropayResponseController">
+</apex:page>

@@ -1,0 +1,414 @@
+{
+    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "OSH Programs Step",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/Programs/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "AccountProductPrivileges": [
+                {
+                    "code": "OSHCAT150",
+                    "id": "01t8A0000043pgeQAA",
+                    "name": "OneShare Catastrophic - $150,000/$300,000",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHROUTE1",
+                    "id": "01t8A000006axaoQAA",
+                    "name": "OneShare Route",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHCAT500",
+                    "id": "01t8A00000496LvQAI",
+                    "name": "OneShare Catastrophic - $500,000/$1,000,000",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHCAT250",
+                    "id": "01t8A00000496MHQAY",
+                    "name": "OneShare Catastrophic - $250,000/$500,000",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHCOMPCROWN",
+                    "id": "01t8A00000496MbQAI",
+                    "name": "OneShare Complete - Crown",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHCLASSENH",
+                    "id": "01t8A00000496OOQAY",
+                    "name": "OneShare Classic - Enhanced",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHCLASSBASIC",
+                    "id": "01t8A00000496RdQAI",
+                    "name": "OneShare Classic - Basic",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHCLASSCROWN",
+                    "id": "01t8A00000496ldQAA",
+                    "name": "OneShare Classic - Crown",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHCOMPBASIC",
+                    "id": "01t8A0000049Yz8QAE",
+                    "name": "OneShare Complete - Basic",
+                    "selectPrivilegie": "not allowed"
+                },
+                {
+                    "code": "OSHCOMPENH",
+                    "id": "01t8A000004A8QRQA0",
+                    "name": "OneShare Complete - Enhanced",
+                    "selectPrivilegie": "not allowed"
+                },
+                {
+                    "code": "OSHTHRIVEPREF",
+                    "id": "01t8A000005q4NmQAI",
+                    "name": "Thrive Preferred",
+                    "selectPrivilegie": "allowed"
+                },
+                {
+                    "code": "OSHTHRIVEPREM",
+                    "id": "01t8A000005q4OuQAI",
+                    "name": "Thrive Premier",
+                    "selectPrivilegie": "allowed"
+                }
+            ],
+            "AccountsForOSHEmployees": [
+                {
+                    "Id": "0018A00000TyjGAQAZ",
+                    "Monthly_Commission_Fee__c": 0,
+                    "Name": "OSH Enrollment",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v50.0/sobjects/Account/0018A00000TyjGAQAZ"
+                    }
+                },
+                {
+                    "Id": "0018A00000TzHtdQAF",
+                    "Monthly_Commission_Fee__c": 30,
+                    "Name": "Forever young",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v50.0/sobjects/Account/0018A00000TzHtdQAF"
+                    }
+                },
+                {
+                    "Id": "0018A00000TwmBUQAZ",
+                    "Monthly_Commission_Fee__c": 80,
+                    "Name": "Aamer Rehman",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v50.0/sobjects/Account/0018A00000TwmBUQAZ"
+                    }
+                },
+                {
+                    "Id": "0018A00000Twm85QAB",
+                    "Monthly_Commission_Fee__c": 100,
+                    "Name": "Maris Walter",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v50.0/sobjects/Account/0018A00000Twm85QAB"
+                    }
+                }
+            ],
+            "AddEditFamilyMember": [
+                {
+                    "address": "",
+                    "age": 39,
+                    "americanIndian": "",
+                    "city": "",
+                    "defaultNo": "false",
+                    "dob": "1980-11-29",
+                    "eligiblemedicare": "",
+                    "email": "",
+                    "fname": "Testing programs",
+                    "gender": "Male",
+                    "id": "1604086066412",
+                    "lname": "Programs",
+                    "parent_id": "1604086066412",
+                    "phone": "",
+                    "relationship": "Primary",
+                    "state": "",
+                    "zipcode": ""
+                }
+            ],
+            "AgentLabel": "0018A00000Twm6dQAB",
+            "ContextId": "",
+            "DRId_Lead": "00Q8A000004UhNSUA0",
+            "DateError": 0,
+            "DateErrorMessage": "",
+            "ExistingInfoPacket": {
+                "BlkExistingInfoPacket": {
+                    "FormulaQuoteOptionsPresent": null,
+                    "MessagingNotFoundForSearchQuotes": null,
+                    "RadioForLookingThroughName": false,
+                    "TxtInfoPacketNumber": null,
+                    "TxtNameForSearch": null
+                },
+                "CancelFormula": "/",
+                "EnrollerID": null,
+                "FormulaEnrollerId": false,
+                "RadioExistingInfoPacket": "No",
+                "ServicingAgentDropdown": null
+            },
+            "HaveAdultDependent": 0,
+            "MonthlyFee": 0,
+            "NoAdultGreaterThan27AndLesserThan65": 0,
+            "NoChildGreaterThan27": 0,
+            "NoChildGreaterThan65": 0,
+            "NoChildWrongDate": 0,
+            "NoEmpAge18": 0,
+            "NoSpouse65": 0,
+            "NumOfEmployeeInternal": 1,
+            "OSHServicingAgent": "0018A00000TyjGAQAZ",
+            "QuoteOptions": "something",
+            "SelectedServicingAgentDropdown": {
+                "Id": "0018A00000TyjGAQAZ",
+                "Monthly_Commission_Fee__c": 0,
+                "Name": "OSH Enrollment",
+                "RecordTypeId": "0124P000000uPa9QAE",
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0018A00000TyjGAQAZ"
+                }
+            },
+            "ServicingAgent": "Needs Dropdown selection",
+            "TAAddressGoogle-Block": {
+                "administrative_area_level_2": "Osceola County"
+            },
+            "ThisisQuote": true,
+            "UserEmail": "vicente.martinez@arcsona.com",
+            "UserType": "OSH Employee",
+            "WritingAgent": "0058A000003wAujQAE",
+            "attributeFilters": {
+            },
+            "bestMedicalPlans": [
+                "OSHCLASSCROWN",
+                "OSHCLASSENH"
+            ],
+            "childrenInCensus": false,
+            "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+            "dependentRecordType": "0124P000000uS4qQAE",
+            "effDate": "",
+            "effectiveDate": "2021-01-06",
+            "error": "OK",
+            "errorDOBList": [
+            ],
+            "id": "a628A0000001EZzQAM",
+            "internalLeadRecordType": "0124P000000uPoZQAU",
+            "isdtp": "p1",
+            "layout": "newport",
+            "letsGetStarted": {
+                "BlkNoExistingInfoPacket": {
+                    "Email1": "programs@programs.com",
+                    "FormulaEegible": false,
+                    "FormulaEegibleMA": false,
+                    "SelectReferer": "Internet Search",
+                    "TAAddressGoogle-Block": {
+                        "City": "Kissimmee",
+                        "Country": "United States",
+                        "State": "FL",
+                        "TAAddressGoogle": "Kissimmee, FL 34746, USA",
+                        "address": "Kissimmee, FL 34746, USA",
+                        "buildingSuiteApartment": "12",
+                        "zipCode": "34746"
+                    },
+                    "Telephone1": "1212121212",
+                    "fName": "Testing programs",
+                    "lName": "Programs"
+                }
+            },
+            "myFamily": {
+                "ChildGreaterThan65Error": null,
+                "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+                "FormulaConForDiplayAddInfo180": true,
+                "FormulaConForDiplayAddInfo30": true,
+                "FormulaValidateOldMember": true,
+                "HaveAdultDependentInfoMessage": null,
+                "MSGRatingWillBeBasedOn": true,
+                "MSGRatingWillBeBasedOn30or180": true,
+                "MessagingEffectiveDateAlert": null,
+                "MomentaryPigFormula": 0,
+                "MsgEffDateEnrollValid": null,
+                "NeedselectedaSopuse": null,
+                "NoChildGreater27Error": null,
+                "Primary18AndOlderError": false,
+                "RadioFamily": "MySelf",
+                "Space20x12": null,
+                "Space21x12": null,
+                "Space22x7": null,
+                "Space5x12": null,
+                "Space6x12": null,
+                "Spouse65AndOlderError": null,
+                "WhatPrimaryLanguageSpoken": "English",
+                "effDate": "2021-01-06",
+                "effDateEnroll": null,
+                "myFamilyTable": null
+            },
+            "oldestMemberList": [
+                {
+                    "address": "",
+                    "age": 39,
+                    "americanIndian": "",
+                    "city": "",
+                    "defaultNo": "false",
+                    "dob": "1980-11-29",
+                    "eligiblemedicare": "",
+                    "email": "",
+                    "fname": "Testing programs",
+                    "gender": "Male",
+                    "id": "1604086066412",
+                    "lname": "Programs",
+                    "parent_id": "1604086066412",
+                    "phone": "",
+                    "relationship": "Primary",
+                    "state": "",
+                    "zipcode": ""
+                }
+            ],
+            "opportunityRecordType": "0124P000000uPaBQAU",
+            "orderPlans": [
+                {
+                    "ID": "input",
+                    "Orderby": [
+                        "OSHCLASSCROWN",
+                        "OSHROUTE1",
+                        "OSHTHRIVEPREM",
+                        "OSHCOMPBASIC",
+                        "OSHCOMPCROWN",
+                        "OSHCOMPENH",
+                        "OSHCLASSENH",
+                        "OSHCLASSBASIC",
+                        "OSHTHRIVEPREF",
+                        "OSHCAT500",
+                        "OSHCAT250",
+                        "OSHCAT150"
+                    ]
+                }
+            ],
+            "planSelection": {
+                "selectedPlans": [
+                ]
+            },
+            "primaryMemberRecordType": "0124P000000uS4rQAE",
+            "programs": {
+                "FormulaFlagDifference": 0,
+                "SelectedProgramComprobation": false,
+                "Space15x12": null,
+                "Space16x12": null,
+                "comprobationfield": null,
+                "programsExample3": null,
+                "selectedPlansErrorMSGNoProgram": null
+            },
+            "resultDateDaysEffxOld": -29,
+            "resultDateYearEffxOld": 39,
+            "reviewQuote": {
+                "FormulaLinkForRedirectToOS": null,
+                "Space13x12": null,
+                "Space14x12": null,
+                "Space17x3": null,
+                "Space25x3": null,
+                "Space26x3": null,
+                "UserCreationBlock": {
+                    "Block16": null,
+                    "ConfirmUserEmailMessaging": null,
+                    "ConfirmUserPasswordMessaging": null,
+                    "UserEmailConfirmation": null,
+                    "UserLastName": null,
+                    "UserName": null,
+                    "UserPassword": null,
+                    "UserPassword2": null
+                },
+                "readyToEnroll": null,
+                "url1": null
+            },
+            "sfdcIFrameHost": "web",
+            "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+            "standardAccountRecordType": "0128A000000xZjYQAU",
+            "stateofBeliefs": {
+                "MessagingStatesoff": null,
+                "Space2x4": null,
+                "Space3x4": null,
+                "msg": null,
+                "qualification": "Yes"
+            },
+            "tellUsAboutYou": {
+                "Block19": null,
+                "Block20": null,
+                "additionalFees": 125,
+                "formulaMoreThan6FamilyMemberAdtionalFee": 0,
+                "formulaTotalFamilyMember": 1,
+                "monthlyFee": 0,
+                "oneTimeContributionFee": 125,
+                "tellUsAboutYouFields": {
+                    "MSHowOftenPCP": "0-1",
+                    "RadioCurrExpctibgStartfamily": "No",
+                    "RadiofamilycurrSpecialist": "No"
+                }
+            },
+            "thisIsCommunity": false,
+            "timeStamp": "2020-10-30T19:26:49.446Z",
+            "urlForVisualForcePages": "https://onesharehealth--devvl2--c.visualforce.com/",
+            "userCurrencyCode": "USD",
+            "userId": "0058A000003wAujQAE",
+            "userInputs": {
+                "AdditionalFeeMoreThan6": 0,
+                "AdditionalFees": 125,
+                "Age": 39,
+                "MEMBER.AGE": 39,
+                "MEMBER.AdditionalFeeMoreThan6": 0,
+                "MEMBER.AditionalFees": 125,
+                "MEMBER.STATE": "FL",
+                "State": "FL"
+            },
+            "userName": "vicente.martinez@arcsona.com.devvl2",
+            "userProfile": "System Administrator",
+            "userTimeZone": -300,
+            "validCensus": true,
+            "vlcPersistentComponent": {
+            },
+            "writingAgentGet": {
+                "AccountId": "0018A00000Twm6dQAB",
+                "ContractLevel": "16",
+                "Email": "vicente.martinez@arcsona.com",
+                "FirstName": "Vicente",
+                "LastName": "Martinez",
+                "Name": "Vicente Martinez",
+                "ProfileId": "00e4P000001X18aQAC"
+            }
+        },
+        "label": "SetValues4",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SetValues4",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/Programs/English/SetValues4"
+}

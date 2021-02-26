@@ -21,7 +21,6 @@
     <enableMassEnableReportBuilder>true</enableMassEnableReportBuilder>
     <enableNewChartsEngine>true</enableNewChartsEngine>
     <enableOrgHasWatchlistEnabled>true</enableOrgHasWatchlistEnabled>
-    <enablePowerInsights>false</enablePowerInsights>
     <enableQueryLiveConnectors>false</enableQueryLiveConnectors>
     <enableRemoveFooterForRepDisplay>false</enableRemoveFooterForRepDisplay>
     <enableRemoveFooterFromRepExp>true</enableRemoveFooterFromRepExp>
@@ -32,7 +31,6 @@
     <enableS3OutputConnector>false</enableS3OutputConnector>
     <enableSFXJoinedReportsEnable>false</enableSFXJoinedReportsEnable>
     <enableSecureImageSharing>false</enableSecureImageSharing>
-    <enableSmartDataDiscovery>true</enableSmartDataDiscovery>
     <enableSnowflakeOutputConnector>false</enableSnowflakeOutputConnector>
     <enableUseOldChartsLookAndFeel>false</enableUseOldChartsLookAndFeel>
     <enableWaveAssetsNewDateVersion>false</enableWaveAssetsNewDateVersion>

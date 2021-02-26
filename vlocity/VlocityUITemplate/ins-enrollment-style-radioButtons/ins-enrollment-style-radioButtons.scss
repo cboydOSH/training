@@ -1,0 +1,11 @@
+.nds-radio--button [type=radio]:checked+.nds-radio_button__label .nds-radio-overlay, .nds-radio_button [type=radio]:checked+.nds-radio_button__label .nds-radio-overlay {
+    position: absolute;
+    border: 2px solid #F8991D;
+    top: -.125rem;
+    right: -.125rem;
+    left: -.125rem;
+    bottom: -.125rem;
+    display: block;
+    z-index: 999;
+    border-radius: .25rem;
+}

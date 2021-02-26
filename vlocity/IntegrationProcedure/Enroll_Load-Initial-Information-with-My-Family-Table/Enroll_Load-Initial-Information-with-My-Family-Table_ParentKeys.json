@@ -1,0 +1,9 @@
+[
+    "DataRaptor/DREX_GetQuoteDetails",
+    "DataRaptor/DREX_GetQuoteLineItems",
+    "DataRaptor/DRTA_FamilyInfo_LoadEnroll",
+    "DataRaptor/DR_GetRatingMemberName",
+    "DataRaptor/OSH_Enroll_getAgentData",
+    "DataRaptor/OSH_Enroll_getAgentDataV2",
+    "DataRaptor/OSH_ExtractHipaaAuthorized"
+]

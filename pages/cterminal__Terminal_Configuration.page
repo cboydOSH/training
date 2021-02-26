@@ -1,0 +1,1200 @@
+<!--
+ - Created by ericalexander on 3/6/18.
+ - Multiple form tags were required because the buttonMenu component lacked a type attribute and refreshed the page when under a form tag.
+ - If that ever gets fixed we can remove the multiple forms
+ -->
+
+<apex:page id="Terminal_Configuration" controller="cterminal.Terminal_Configuration_Controller" standardStylesheets="false"
+           showHeader="false"
+           sidebar="true" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" cache="false"
+           action="{!pageProcessCheck}">
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <apex:includeScript value="{!URLFOR($Resource.cterminal__StreamingAPI, 'js/chargent-mdapi.js')}"/>
+    <apex:includeLightning />
+
+    <style>
+        .slds-gutters .slds-col {
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+        }
+
+        .slds-scope [hidden], .slds-scope template {
+            display: block;
+        }
+
+        .stepNotAllowed a {
+            opacity: 0.3;
+        }
+
+        .stepNotAllowed a, button:disabled, input[type=submit]:disabled, option:disabled {
+            cursor: not-allowed !important;
+        }
+
+        .slds-spinner_container {
+            z-index: 10001 !important;
+        }
+
+        .slds-scope [id$=assigned-select].slds-select option, .slds-scope [id$=available-select].slds-select option {
+            padding: 0.2rem;
+        }
+
+        .slds-scope [id$=auth-complete], .slds-scope [id$=auth-start], .slds-scope [id$=push-topic-start], .slds-scope [id$=push-topic-complete],
+        .slds-scope [id$=auth-complete] svg, .slds-scope [id$=auth-start] svg, .slds-scope [id$=push-topic-start] svg, .slds-scope [id$=push-topic-complete] svg,
+        .slds-scope [id$=all-done-complete], .slds-scope [id$=all-done-complete] svg, .slds-scope [id$=not-all-done], .slds-scope [id$=not-all-done] svg {
+            width: 10rem !important;
+            height: 10rem !important;
+        }
+
+        .slds-scope [id$=auth-complete][class*=slds-icon-action], [id$=push-topic-complete][class*=slds-icon-action], [id$=all-done-complete][class*=slds-icon-action] {
+            border-radius: 50%;
+        }
+
+        .slds-scope [id$=auth-complete] svg[class*=slds-icon-action], .slds-scope [id$=push-topic-complete] svg[class*=slds-icon-action], .slds-scope [id$=all-done-complete] svg[class*=slds-icon-action] {
+            border-radius: 50%;
+            margin-top: -.5rem;
+            margin-left: -.5rem;
+        }
+
+        .slds-section__content[aria-hidden="true"] {
+            display: none;
+        }
+
+        .ttl-section:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            opacity: 0.20;
+            background-image: url("{!URLFOR($Resource.cterminal__StreamingAPI, '/img/ResetBackground.jpg')}");
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        /*.ttl-section{*/
+        /*    background-image: url("{!URLFOR($Resource.cterminal__StreamingAPI, '/img/ResetBackground.jpg')}");*/
+        /*    background-size: contain;*/
+        /*}*/
+        [id$=ttl-div]{
+            height: 64vh;
+        }
+
+    </style>
+
+    <apex:composition template="cterminal__SLDS_Template">
+
+        <apex:define name="title">
+            <title>Chargent Terminal Configuration</title>
+        </apex:define>
+
+        <apex:define name="body">
+
+            <apex:outputPanel layout="none"> <!--Admin Only -->
+                <!-- PAGE CONTENT -->
+                <div class="slds-grid slds-grid_vertical slds-grid_frame slds-is-relative">
+
+                    <!-- HEADER DIV -->
+                    <apex:define name="header">
+                        <div class="xslds-is-fixed slds-size_1-of-1 slds-p-top_small slds-p-bottom_small slds-notify xslds-notify_alert slds-theme_shade"
+                             role="alert" xstyle="z-index: 9000;">
+                            <div class="slds-size_1-of-1 slds-grid">
+                                <div class="slds-size_1-of-3 slds-p-left_medium">
+                                    <img src="{!URLFOR($Resource.StreamingAPI, '/img/Chargent-terminal-logo.png')}"
+                                         height="40%"
+                                         width="40%" align="left"/>
+                                </div>
+
+                                <div class="slds-size_1-of-3 slds-align_absolute-center slds-text-heading_large">
+                                    Chargent Terminal Configuration
+                                </div>
+
+                                <div class="xslds-media__figure slds-size_1-of-3">
+
+                                    <svg aria-hidden="true"
+                                         class="slds-float_right slds-m-right_medium slds-icon slds-icon-text-default slds-icon_medium"
+                                         style="cursor: pointer;"
+                                         onclick="goHome();">
+                                        <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/standard-sprite/svg/symbols.svg#home')}"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </apex:define>
+                    <!-- ERROR ALERT DIV -->
+                    <apex:outputPanel styleClass="slds-size_1-of-1" layout="block" id="msg_block"
+                                      style="display: none;">
+                        <div id="err_wrapper"
+                             class="slds-notify slds-notify_alert slds-theme_{!alertType} slds-theme_alert-texture"
+                             role="alert">
+                            <button type="button"
+                                    class="slds-button slds-button_icon slds-button_icon-small slds-notify__close "
+                                    title="Close" onclick="$('[id$=msg_block]').slideUp(300);">
+                                <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <svg aria-hidden="true"
+                                         class="slds-icon slds-button_icon slds-icon_x-small">
+                                        <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+                                    </svg>
+                                    <span class="slds-assistive-text">Close</span>
+                                </div>
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2>
+                                <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <svg aria-hidden="true"
+                                         class="slds-icon icon-text-email slds-icon_small slds-m-right_x-small">
+                                        <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#' + if(alertType = 'success','check',if(alertType == 'warning', 'warning', 'ban')))}"></use>
+                                    </svg>
+                                    <span id="err_text"></span>
+                                </div>
+                            </h2>
+                        </div>
+
+                    </apex:outputPanel>
+
+                    <apex:outputPanel id="main-div" layout="block" styleClass="xslds-size_1-of-1 slds-grid"
+                                      style="flex: 1 1 auto; xmargin-top: 3.7rem; xposition: fixed;">
+                        <!-- Left Nav -->
+                        <div style="xheight:100vh;"
+                             class="slds-theme_shade slds-grid_vertical-stretch slds-large-size_2-of-12 slds-border_right slds-border_top">
+                            <nav class="slds-nav-vertical slds-nav-vertical_shade" aria-label="Sub page">
+                                <div class="slds-nav-vertical__section">
+                                    <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps">
+                                        Welcome</h2>
+                                    <ul>
+                                        <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'Welcome','slds-is-active','')}">
+                                            <a href="javascript:showProcessing('right-loader'); setItem('Welcome');"
+                                               class="slds-nav-vertical__action"
+                                               aria-describedby="entity-header" aria-current="page">Welcome</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <apex:outputPanel layout="none" rendered="{!userHasAdmin}">
+                                    <div class="slds-nav-vertical__section">
+                                        <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps">
+                                            Initial
+                                            Setup</h2>
+                                        <ul>
+                                            <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'Wizard','slds-is-active','')}">
+                                                <a href="javascript:showProcessing('right-loader'); setItem('Wizard');"
+                                                   class="slds-nav-vertical__action"
+                                                   aria-describedby="entity-header" aria-current="page">Setup Wizard
+                                                    <span class="slds-badge slds-theme_{!if(wizardRequired,'warning','success')} slds-col_bump-left">
+                                                        <span class="slds-icon_container slds-icon-utility-{!if(wizardRequired,'check','ban')} slds-line-height_reset"
+                                                              title="Complete">
+                                                            <apex:outputPanel layout="inline"
+                                                                              rendered="{!wizardRequired}">
+                                                                TODO
+                                                            </apex:outputPanel>
+                                                            <apex:outputPanel layout="inline"
+                                                                              rendered="{!!wizardRequired}">
+                                                                <svg class="slds-icon slds-icon-text-inverse slds-icon_x-small"
+                                                                     aria-hidden="true"
+                                                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#' + if(wizardRequired,'ban','check'))}"></use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Complete</span>
+                                                            </apex:outputPanel>
+
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <apex:outputPanel layout="block" styleClass="slds-nav-vertical__section"
+                                                      rendered="{!!wizardRequired}">
+
+                                        <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps">
+                                            Configuration</h2>
+                                        <ul>
+                                            <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'PermSet','slds-is-active','')}">
+                                                <a href="javascript:showProcessing('right-loader'); setItem('PermSet');"
+                                                   class="slds-nav-vertical__action"
+                                                   aria-describedby="entity-header" aria-current="page">Permission Set
+                                                    Assignment(s)</a>
+                                            </li>
+                                            <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'businessAuth','slds-is-active','')}">
+                                                <a href="javascript:showProcessing('right-loader'); setItem('businessAuth');"
+                                                   class="slds-nav-vertical__action"
+                                                   aria-describedby="entity-header">Business Authorization</a>
+                                            </li>
+                                            <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'PushTopic','slds-is-active','')}">
+                                                <a href="javascript:showProcessing('right-loader'); setItem('PushTopic');"
+                                                   class="slds-nav-vertical__action"
+                                                   aria-describedby="entity-header">Push Topic</a>
+                                            </li>
+	                                        <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'DeviceGroup','slds-is-active','')}">
+		                                        <a href="javascript:showProcessing('right-loader'); setItem('DeviceGroup');"
+		                                           class="slds-nav-vertical__action"
+		                                           aria-describedby="entity-header">Device Group Implementation</a>
+	                                        </li>
+
+                                        </ul>
+                                    </apex:outputPanel>
+
+                                    <apex:outputPanel layout="block" styleClass="slds-nav-vertical__section"
+                                                      rendered="{!!wizardRequired}">
+
+                                        <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps">
+                                            Batch Processes</h2>
+                                        <ul>
+                                            <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'BatchSync','slds-is-active','')}">
+                                                <a href="javascript:showProcessing('right-loader'); setItem('BatchSync');"
+                                                   class="slds-nav-vertical__action"
+                                                   aria-describedby="entity-header">CT Transaction Sync</a>
+                                            </li>
+                                        </ul>
+
+
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+
+
+                                    <apex:outputPanel layout="block" styleClass="slds-nav-vertical__section"
+                                                      rendered="{!!wizardRequired}">
+
+                                        <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps">
+                                            Troubleshooting</h2>
+                                        <ul>
+                                            <apex:outputPanel layout="none" rendered="{!userHasAdmin}">
+                                                <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'Debug','slds-is-active','')}">
+                                                    <a href="javascript:showProcessing('right-loader'); setItem('Debug');"
+                                                       class="slds-nav-vertical__action"
+                                                       aria-describedby="entity-header">Debug</a>
+                                                </li>
+                                            </apex:outputPanel>
+                                            <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'TTL','slds-is-active','')}">
+                                                <a href="javascript:showProcessing('right-loader'); setItem('TTL');"
+                                                   class="slds-nav-vertical__action"
+                                                   aria-describedby="entity-header">Reset Terminal Connection</a>
+                                            </li>
+
+                                        </ul>
+
+
+                                    </apex:outputPanel>
+<!--                                </apex:outputPanel> &lt;!&ndash; END ADMIN REQUIRED &ndash;&gt;-->
+
+                                <apex:outputPanel layout="block" styleClass="slds-nav-vertical__section"
+                                                  rendered="{!!wizardRequired}">
+                                    <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps">
+                                        User Defaults</h2>
+                                    <ul>
+                                        <li class="slds-nav-vertical__item {!if(currentConfigurationItem == 'UserTerminal','slds-is-active','')}">
+                                            <a href="javascript:showProcessing('right-loader'); setItem('UserTerminal');"
+                                               class="slds-nav-vertical__action"
+                                               aria-describedby="entity-header">User Terminal</a>
+                                        </li>
+                                    </ul>
+                                    <!--</div>-->
+                                </apex:outputPanel>
+
+                            </nav>
+
+                        </div>
+
+                        <!-- RIGHT CONTENT -->
+                        <apex:outputPanel style="xheight: calc(100vh - 3.7rem); xoverflow: auto;" layout="block"
+                                          id="right-content"
+                                          styleClass="slds-grid_vertical-stretch xslds-m-left_small slds-size_10-of-12 slds-border_top slds-is-relative">
+                            <div id="right-loader" class="slds-spinner_container" style="display: none;">
+                                <div class="slds-spinner slds-spinner_brand slds-spinner_large" role="status">
+                                    <span class="slds-assistive-text">Loading</span>
+                                    <div class="slds-spinner__dot-a"></div>
+                                    <div class="slds-spinner__dot-b"></div>
+                                </div>
+                            </div>
+                            <apex:form >
+                                <apex:actionFunction onComplete="hideProcessing('right-loader')" name="doTTL" action="{!sendConnectivityMessage}" reRender="msg_block, post_processing">
+                                    <apex:param name="ttlTerminal" value=""/>
+                                </apex:actionFunction>
+
+                                <apex:actionFunction name="childDone" reRender="setup-wizard, post_processing"/>
+                                <apex:actionFunction name="setItem" action="{!checkConfiguration}"
+                                                     reRender="main-div, post_processing">
+                                    <apex:param name="configurationItem" value=""
+                                                assignTo="{!currentConfigurationItem}"/>
+                                </apex:actionFunction>
+                                <apex:actionFunction name="afterMetadataCall" action="{!afterMetadataCall}"
+                                                     reRender="msg_block, setup-wizard, post_processing">
+                                    <apex:param name="metadataResponse" assignTo="{!metadataResponse}" value=""/>
+                                </apex:actionFunction>
+                                <apex:actionFunction name="nextStep" action="{!nextStep}"
+                                                     reRender="setup-wizard, post_processing"/>
+                                <apex:actionFunction name="previousStep" action="{!previousStep}"
+                                                     reRender="setup-wizard, post_processing"/>
+                                <apex:actionFunction name="pathStep" action="{!doStepRedirect}"
+                                                     reRender="setup-wizard, post_processing">
+                                    <apex:param name="newStep" value="" assignTo="{!newStep}"/>
+                                </apex:actionFunction>
+
+                                <apex:actionFunction name="wizardDone" action="{!reload}"/>
+
+                                <!-- Welcome -->
+                                <apex:outPutPanel layout="block" id="welcome"
+                                                  rendered="{!currentConfigurationItem == 'Welcome'}">
+                                    <div class="slds-size_1-of-1 slds-p-around_small">
+                                        <h3 class="slds-text-heading_medium"><b>Chargent Terminal</b></h3>
+                                    </div>
+                                    <div class="slds-size_10-of-12 slds-m-top_small slds-align_absolute-center">
+                                        <apex:image height="20%" width="50%"
+                                                    value="{!URLFOR($Resource.cterminal__StreamingAPI,'img/PoyntPluggedIn.png')}"/>
+                                    </div>
+                                    <div class="slds-m-top_small slds-size_8-of-12 slds-grid slds-wrap slds-align_absolute-center">
+                                        <div class="slds-size_1-of-1">
+                                            <p class="slds-text-body_regular">
+                                                With Chargent Terminal your business can now accept card present
+                                                payments from your customers using smart terminal devices. Chargent
+                                                Terminal supports EMV (chip), swipe (classic magnetic stripe), and NFC
+                                                (tap) options such as Apple Pay, and Google Pay in situations where the
+                                                customer is with you in person, presenting a payment source.
+                                            </p>
+                                            <p class="slds-text-body_regular slds-p-top_small">
+                                                To get started you will need to have your smart terminal device on hand
+                                                and set up. Before continuing be sure that you have completed these
+                                                steps:
+                                            </p>
+                                            <p class="slds-text-body_regular slds-p-top_small">
+                                            <ul class="slds-list_vertical">
+                                                <li class="slds-list__item">
+                                                    Step 1 - Get your device from your payment processor.
+                                                </li>
+                                                <li class="slds-list__item">
+                                                    Step 2 - Set up your account and register your device.
+                                                </li>
+                                                <li class="slds-list__item">
+                                                    Step 3 - Click the <i>Continue to Setup</i> button to launch the
+                                                    Chargent Terminal setup wizard.
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="slds-size_1-of-1 slds-text-align_center slds-m-top_small">
+
+                                            <apex:commandButton onClick="showProcessing('right-loader'); setItem('Wizard'); return false;"
+                                                    styleClass="slds-button slds-button_brand"
+                                                    disabled="{!!wizardRequired}"
+                                                    value="{!if(wizardRequired,'Continue to Setup','Setup Completed')}"
+                                                    rendered="{!or(not(wizardRequired),userHasAdmin)}"/>
+
+                                            <apex:outputPanel layout="inline"
+                                                              rendered="{!AND(wizardRequired,not(userHasAdmin))}">
+                                                <div class="slds-text-title_caps">
+                                                    Setup Not Complete
+                                                </div>
+                                                <div>
+                                                    <span style="margin-left: -2.5rem;">
+                                                        <svg aria-hidden="true"
+                                                             class="slds-icon slds-icon-text-default slds-icon_small slds-m-right_x-small"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#ban')}"></use>
+                                                        </svg>
+                                                        Admin Permission Set Required
+                                                    </span>
+                                                </div>
+                                            </apex:outputPanel>
+
+                                        </div>
+                                    </div>
+                                </apex:outPutPanel>
+                            </apex:form>
+                                <!-- SETUP WIZARD -->
+                                <apex:outputPanel layout="block" id="setup-wizard"
+                                                  rendered="{!currentConfigurationItem == 'Wizard'}">
+                                    <div class="slds-size_1-of-1 slds-box slds-theme_shade xslds-m-bottom_large">
+                                        <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+                                            Setup Wizard
+                                        </h3>
+                                    </div>
+                                    <!-- PATH GRID -->
+                                    <apex:outputPanel id="path_grid" layout="block"
+                                                      styleClass="slds-m-top_small slds-size_1-of-1 slds-grid slds-grid_align-center slds-p-bottom_small">
+                                        <div class="slds-size_11-of-12 slds-m-top_x-small">
+                                            <div class="slds-tabs_path" role="application">
+                                                <ul class="slds-tabs_path__nav" role="tablist">
+                                                    <li class="slds-tabs_path__item {!if(step != 1,'slds-is-complete','slds-is-current')}"
+                                                        role="presentation"
+                                                        id="step-1">
+                                                        <a class="slds-tabs_path__link" id="tabs-path-amount"
+                                                           role="option"
+                                                           href="javascript:if({!step != 1}) {showProcessing('right-loader');pathStep(1);}"
+                                                           data-step="1" tabindex="0">
+                                                            <span class="slds-tabs_path__stage"
+                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <svg class="slds-icon slds-icon_x-small"
+                                                                     aria-hidden="true">
+                                                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="slds-tabs_path__title">
+                                                                Remote Site Settings
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="slds-tabs_path__item {!if(stepAllowed[2],'','stepNotAllowed')} {!if(step < 2,'slds-is-incomplete','')} {!if(step > 2,'slds-is-complete','')} {!if(step = 2,'slds-is-current','')}"
+                                                        role="presentation" id="step-2">
+                                                        <a class="slds-tabs_path__link"
+                                                           id="tabs-path-oneTimeType"
+                                                           tabindex="-1" role="option"
+                                                           href="javascript:if({!step != 2 && stepAllowed[2]}) {showProcessing('right-loader');pathStep(2);}"
+                                                           data-step="2">
+                                                            <span class="slds-tabs_path__stage"
+                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <svg class="slds-icon slds-icon_x-small"
+                                                                     aria-hidden="true">
+                                                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="slds-tabs_path__title">
+                                                                Permissions
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="slds-tabs_path__item {!if(stepAllowed[3],'','stepNotAllowed')} {!if(step < 3,'slds-is-incomplete','')} {!if(step > 3,'slds-is-complete','')} {!if(step = 3,'slds-is-current','')}"
+                                                        role="presentation" id="step-3">
+                                                        <a class="slds-tabs_path__link"
+                                                           id="tabs-path-oneTimeType"
+                                                           tabindex="-1" role="option"
+                                                           href="javascript:if({!step != 3 && stepAllowed[3]}) {showProcessing('right-loader');pathStep(3);}"
+                                                           data-step="3">
+                                                            <span class="slds-tabs_path__stage"
+                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <svg class="slds-icon slds-icon_x-small"
+                                                                     aria-hidden="true">
+                                                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="slds-tabs_path__title">
+                                                                Business Authorization
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="slds-tabs_path__item {!if(stepAllowed[4],'','stepNotAllowed')} {!if(step < 4,'slds-is-incomplete','')} {!if(step > 4,'slds-is-complete','')} {!if(step = 4,'slds-is-current','')}"
+                                                        role="presentation" id="step-4">
+                                                        <a class="slds-tabs_path__link"
+                                                           id="tabs-path-oneTimeType"
+                                                           tabindex="-1" role="option"
+                                                           href="javascript:if({!step != 4 && stepAllowed[4]}) {showProcessing('right-loader');pathStep(4);}"
+                                                           data-step="4">
+                                                            <span class="slds-tabs_path__stage"
+                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <svg class="slds-icon slds-icon_x-small"
+                                                                     aria-hidden="true">
+                                                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="slds-tabs_path__title">
+                                                                Push Topic Setup
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="slds-tabs_path__item {!if(stepAllowed[5],'','stepNotAllowed')} {!if(step < 5,'slds-is-incomplete','')} {!if(step > 5,'slds-is-complete','')} {!if(step = 5,'slds-is-current','')}"
+                                                        role="presentation" id="step-5">
+                                                        <a class="slds-tabs_path__link"
+                                                           id="tabs-path-oneTimeType"
+                                                           tabindex="-1" role="option"
+                                                           href="javascript:if({!step != 5 && stepAllowed[5]}) {showProcessing('right-loader');pathStep(5);}"
+                                                           data-step="5">
+                                                            <span class="slds-tabs_path__stage"
+                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <svg class="slds-icon slds-icon_x-small"
+                                                                     aria-hidden="true">
+                                                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="slds-tabs_path__title">
+                                                                Finish
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </apex:outputPanel>
+
+                                    <!-- MAIN CONTENT -->
+                                    <apex:outputPanel id="config_wrapper" layout="block">
+                                        <!--Remote Site Block-->
+                                        <apex:outputPanel id="remote_site_block" layout="block"
+                                                          styleClass="slds-size_1-of-1 slds-grid_vertical slds-align_absolute-center slds-m-top_large"
+                                                          rendered="{!step == 1}">
+
+                                            <div class="slds-card slds-theme_shade slds-small-size_6-of-6 slds-large-size_6-of-12">
+                                                <div class="slds-card__header slds-grid">
+                                                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                                        <div class="slds-media__figure"
+                                                             xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <svg aria-hidden="true"
+                                                                 class="slds-icon slds-icon-custom-custom30 slds-icon_small">
+                                                                <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/custom-sprite/svg/symbols.svg#custom30')}"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="slds-media__body slds-truncate">
+                                                            <h2>
+                                                                <a href="javascript:void(0);"
+                                                                   class="slds-text-link_reset">
+                                                                    <span class="slds-text-heading_small">Remote Site
+                                                                        Settings</span>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </header>
+                                                    <div class="slds-no-flex">
+                                                        <button id="tooling_btn"
+                                                                class="slds-button slds-button_neutral"
+                                                                onclick="$(this).attr('disabled','disabled'); showProcessing('right-loader'); createRemoteSite(remoteSiteHosts,afterMetadataCall);">
+                                                            Add Remote Site
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                                <div class="slds-card__body xslds-text-align_center slds-p-around_medium">
+                                                    <div class="slds-text-title_caps slds-text-align_center">
+                                                        Remote site settings for the following are required
+                                                    </div>
+                                                    <div class="slds-grid slds-grid_align-center slds-m-top--small">
+                                                        <ul class="slds-list--dotted">
+                                                            <li class="slds-m-top--small slds-list__item">
+                                                                <b>Chargent Business Authorization and API Services</b>
+                                                                <ul class="slds-m-top_small">
+                                                                    <li class="slds-list__item">
+                                                                        To support Terminal oAuth and Transaction services
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <apex:outputPanel layout="block"
+                                                                  styleClass="slds-card__footer slds-text-align_center slds-modal__header"
+                                                                  rendered="{!!stepStatus[1]}">
+                                                    <div class="slds-notify_container">
+                                                        <div class="slds-notify slds-notify_alert slds-theme_offline slds-theme_alert-texture"
+                                                             role="alert">
+                                                            <h2>
+                                                                <svg aria-hidden="true"
+                                                                     class="slds-icon icon-text-email slds-icon_small slds-m-right_x-small"
+                                                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
+                                                                </svg>
+                                                                Remote Site Setting Not Detected
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </apex:outputPanel>
+                                                <apex:outputPanel layout="block"
+                                                                  styleClass="slds-card__footer slds-text-align_center slds-modal__header"
+                                                                  rendered="{!stepStatus[1]}">
+                                                    <div class="slds-notify_container">
+                                                        <div class="slds-notify slds-notify_alert slds-theme_success slds-theme_alert-texture"
+                                                             role="alert">
+                                                            <h2>
+                                                                <svg aria-hidden="true"
+                                                                     class="slds-icon icon-text-email slds-icon_small slds-m-right_x-small"
+                                                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+                                                                </svg>
+                                                                All Good
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+
+                                                </apex:outputPanel>
+
+
+                                            </div>
+
+                                        </apex:outputPanel>
+
+                                        <!--Permission Set Assignment Block-->
+                                        <apex:form >
+                                        <apex:outputPanel id="permission-set-assignment_block" layout="block"
+                                                          styleClass="slds-is-relative slds-size_1-of-1 slds-grid slds-wrap xslds-grid_vertical slds-align_absolute-center slds-m-top_large"
+                                                          rendered="{!step == 2}">
+                                            <c:Profile_Assignment />
+
+                                        </apex:outputPanel>
+                                        </apex:form>
+
+                                        <!-- Poynt oAuth -->
+                                        <apex:outputPanel id="poynt-oauth" layout="block" rendered="{!step == 3}"
+                                                          styleClass="slds-is-relative slds-size_1-of-1 slds-grid slds-wrap xslds-grid_vertical slds-align_absolute-center slds-m-top_large">
+
+                                            <div id="businesses-wizard" class="slds-grid slds-wrap slds-align_absolute-center slds-grid_vertical-stretch"
+                                                 style="min-height: 50vh;">
+                                                <apex:outputPanel layout="none" rendered="{!!stepStatus[3]}">
+                                                    <div class="slds-size_1-of-1">
+                                                        <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_medium">
+                                                            <h3 class="slds-text-title_caps slds-text-align_center">
+                                                                Looks like you need
+                                                                to complete this step</h3>
+                                                            <p class="slds-m-top_small slds-text-align_center">In
+                                                                order to send
+                                                                transactions to Chargent Terminal you will need to authorize this
+                                                                application</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-size_1-of-1 slds-align_absolute-center">
+                                                        <span class="slds-icon_container slds-icon-text-default"
+                                                              id="auth-start">
+                                                            <svg aria-hidden="true"
+                                                                 class="slds-icon slds-icon-text-default slds-icon_large"
+                                                                 xmlns="http://www.w3.org/2000/svg"
+                                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#offline')}"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <apex:form >
+                                                    <div class="slds-size_1-of-1 slds-align_absolute-center slds-m-top_medium">
+
+                                                            <apex:commandButton styleClass="slds-button slds-button_brand"
+                                                                            action="{!businessAuth}" value="Authorize"/>
+
+                                                    </div>
+                                                    </apex:form>
+
+                                                </apex:outputPanel>
+                                                <apex:outputPanel layout="none" rendered="{!stepStatus[3]}">
+
+                                                <script>
+                                                    $Lightning.use("cterminal:Terminal_Lightning_Out", function () {
+                                                        $Lightning.createComponent(
+                                                            "cterminal:Terminal_Businesses",
+                                                            {
+                                                            },
+                                                            "businesses-wizard",
+                                                            function (cmp) {
+                                                                $A.eventService.addHandler({
+                                                                    event: 'force:navigateToURL',
+                                                                    handler: function (event) {
+                                                                        if (typeof sforce != 'undefined' && sforce.one) {
+                                                                            // VF page in S1 or Lightning Exp
+                                                                            // VF page in Classic
+                                                                            sforce.one.navigateToURL(event.getParams().url);
+
+                                                                        } else {
+                                                                            //From the Payment Entry Modal if opened from this VF then the URL will simply end with this records id
+                                                                            //So navigate to it
+                                                                            window.parent.location.href = event.getParams().url;
+
+                                                                        }
+
+                                                                    }
+                                                                });
+
+                                                            });
+                                                    });
+
+                                                </script>
+                                                </apex:outputPanel>
+
+                                            </div>
+
+                                        </apex:outputPanel>
+
+                                        <!-- Push Topic -->
+
+                                        <apex:outputPanel id="push-topic" layout="block" rendered="{!step == 4}"
+                                                          styleClass="slds-is-relative slds-size_1-of-1 slds-grid slds-wrap xslds-grid_vertical slds-align_absolute-center slds-m-top_large">
+                                            <apex:form >
+                                            <div class="slds-grid slds-wrap slds-align_absolute-center slds-grid_vertical-stretch"
+                                                 style="min-height: 50vh;">
+                                                <c:Push_Topic this="{!instance}" isComplete="{!stepStatus[4]}"/>
+                                            </div>
+                                        </apex:form>
+                                        </apex:outputPanel>
+
+                                        <!-- All Done -->
+                                        <apex:outputPanel id="all-done" layout="block" rendered="{!step == 5}"
+                                                          styleClass="slds-is-relative slds-size_1-of-1 slds-grid slds-wrap xslds-grid_vertical slds-align_absolute-center slds-m-top_large">
+
+                                            <apex:outputPanel layout="none" rendered="{!stepStatus[5]}">
+                                                <div class="slds-grid slds-wrap slds-align_absolute-center slds-grid_vertical-stretch"
+                                                     style="min-height: 50vh;">
+
+                                                    <div class="slds-size_1-of-1">
+                                                        <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_medium">
+                                                            <h3 class="slds-text-title_caps slds-text-align_center">
+                                                                Looks like you have
+                                                                the initial setup complete</h3>
+                                                            <p class="slds-text-body_regular slds-m-top_small slds-text-align_center">
+                                                                You can return to this wizard at any time to view / redo
+                                                                any of the previous steps as needed
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-size_1-of-1 slds-align_absolute-center">
+                                                        <span class="slds-icon_container slds-icon-action-approval"
+                                                              id="all-done-complete">
+                                                            <svg aria-hidden="true"
+                                                                 class="slds-icon slds-icon-action-approval slds-icon_large"
+                                                                 xmlns="http://www.w3.org/2000/svg"
+                                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#check')}"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel layout="none" rendered="{!!stepStatus[5]}">
+                                                <div class="slds-grid slds-wrap slds-align_absolute-center slds-grid_vertical-stretch"
+                                                     style="min-height: 50vh;">
+                                                    <div class="slds-size_1-of-1">
+                                                        <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_medium">
+                                                            <h3 class="slds-text-title_caps slds-text-align_center">
+                                                                Looks like you have not completed the initial setup</h3>
+                                                            <p class="slds-m-top_small slds-text-align_center">
+                                                                Please review the previous steps for completion</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-size_1-of-1 slds-align_absolute-center">
+                                                        <span class="slds-icon_container slds-icon-text-default"
+                                                              id="not-all-done">
+                                                            <svg aria-hidden="true"
+                                                                 class="slds-icon slds-icon-text-default slds-icon_large"
+                                                                 xmlns="http://www.w3.org/2000/svg"
+                                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                            </apex:outputPanel>
+
+
+                                        </apex:outputPanel>
+
+                                        <!-- BUTTONS -->
+                                        <div class="slds-m-top_medium slds-m-bottom_medium slds-grid slds-grid_align-center">
+                                            <div class="slds-size_8-of-12 slds-grid">
+                                                <div>
+                                                    <button type="button"
+                                                            onclick="showProcessing('right-loader'); previousStep();"
+                                                            id="prev-button"
+                                                            class="slds-button slds-button_neutral">
+                                                        Previous
+                                                    </button>
+                                                </div>
+                                                <div class="slds-col_bump-left">
+                                                    <button type="button"
+                                                            onclick="if({!step} == {!finalStep}) {showProcessing(); wizardDone();} else{showProcessing('right-loader');  nextStep();}"
+                                                            id="next-button"
+                                                            class="slds-button slds-button_brand">
+                                                        {!if(step == finalStep,'Finish','Next')}
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </apex:outputPanel>
+
+                                </apex:outputPanel>
+
+                                <!--Permission Set Assignment Item-->
+                                <apex:outputPanel styleClass="xslds-size_1-of-1 slds-grid slds-wrap slds-align_absolute-center xslds-m-top_large"
+                                        layout="block" id="permission-set-item"
+                                        rendered="{!currentConfigurationItem == 'PermSet'}">
+                                    <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_large">
+                                        <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+                                            Permission Set Assignment Utility
+                                        </h3>
+                                    </div>
+                                    <apex:form styleClass="slds-size_1-of-1">
+                                    <div class="slds-grid slds-wrap slds-size_1-of-1 slds-align_absolute-center"
+                                         style="min-height: 60vh;">
+                                        <c:Profile_Assignment parentDivId="permission-set-item"/>
+                                    </div>
+                                    </apex:form>
+                                </apex:outputPanel>
+
+                                <!--POYNT OAUTH ITEM-->
+                                <apex:outputPanel styleClass="slds-grid slds-wrap slds-grid_vertical-stretch"
+                                                  rendered="{!currentConfigurationItem == 'businessAuth'}">
+                                    <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_large">
+                                        <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+                                            Business Authentication Utility
+                                        </h3>
+                                    </div>
+                                    <div id="businesses-no-wizard" class="slds-size_1-of-1 slds-wrap slds-align_absolute-center" style="min-height: 60vh;">
+
+                                        <script>
+                                            $Lightning.use("cterminal:Terminal_Lightning_Out", function () {
+                                                $Lightning.createComponent(
+                                                    "cterminal:Terminal_Businesses",
+                                                    {
+                                                    },
+                                                    "businesses-no-wizard",
+                                                    function (cmp) {
+                                                        $A.eventService.addHandler({
+                                                            event: 'force:navigateToURL',
+                                                            handler: function (event) {
+                                                                if (typeof sforce != 'undefined' && sforce.one) {
+                                                                    // VF page in S1 or Lightning Exp
+                                                                    // VF page in Classic
+                                                                    sforce.one.navigateToURL(event.getParams().url);
+
+                                                                } else {
+                                                                    //From the Payment Entry Modal if opened from this VF then the URL will simply end with this records id
+                                                                    //So navigate to it
+                                                                    window.parent.location.href = event.getParams().url;
+
+                                                                }
+
+                                                            }
+                                                        });
+
+                                                    });
+                                            });
+
+                                        </script>
+                                    </div>
+                                </apex:outputPanel>
+
+                            <apex:form >
+                                <apex:actionFunction name="setDebug" action="{!updateConfiguration}"
+                                                     reRender="debug-div, post_processing"/>
+	                            <apex:actionFunction name="setDeviceGroup" action="{!updateConfiguration}"
+	                                                 reRender="deviceGroup-div, post_processing"/>
+	                            <apex:actionFunction name="deleteDeviceGroup" action="{!deleteDeviceGroup}"
+	                                                 reRender="deviceGroup-div, post_processing"/>
+
+                                <!--PUSH TOPIC-->
+                                <apex:outputPanel styleClass="slds-grid slds-wrap slds-grid_vertical-stretch"
+                                                  rendered="{!currentConfigurationItem == 'PushTopic'}">
+                                    <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_large">
+                                        <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+                                            Push Topic Utility
+                                        </h3>
+                                    </div>
+                                    <div class="slds-align_absolute-center slds-wrap" style="min-height: 60vh;">
+                                        <c:Push_Topic showBox="false" this="{!instance}"
+                                                      isComplete="{!stepStatus[4]}"/>
+                                    </div>
+                                </apex:outputPanel>
+
+	                            <!-- Device Group Implementation -->
+	                            <apex:outputPanel styleClass="slds-grid slds-wrap slds-grid_vertical-stretch"
+	                                              rendered="{!currentConfigurationItem == 'DeviceGroup'}">
+		                            <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_large">
+			                            <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+				                            Device Group Implementation
+			                            </h3>
+		                            </div>
+
+		                            <div class="slds-align_absolute-center slds-size_6-of-12 slds-box slds-theme_warning slds-m-bottom_large">
+			                            <div class="slds-size_1-of-12 slds-float_left">
+				                            <svg aria-hidden="true"
+				                                 class="slds-icon icon-text-email slds-icon_small slds-m-right_x-small"
+				                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+					                            <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use>
+				                            </svg>
+			                            </div>
+			                            <div class="slds-size_11-of-12 slds-float_left">
+				                            <p class="slds-text-body_regular">
+					                            When defined, the class set here will filter the list of terminals based on your implementation of the cterminal.DeviceGroup class
+				                            </p>
+			                            </div>
+		                            </div>
+
+		                            <apex:outputPanel layout="block"
+		                                              styleClass="slds-grid slds-wrap slds-size_1-of-1 slds-align_absolute-center"
+		                                              id="deviceGroup-div"
+		                                              style="min-height: 50vh;">
+			                            <div class="slds-size_1-of-1 slds-align_absolute-center">
+				                            <div class="slds-form-element">
+					                            <label class="slds-form-element__label" for="device-group-input">
+						                            API Name of class implementing cterminal.DeviceGroup</label>
+					                            <div class="slds-form-element__control">
+						                            <apex:inputText value="{!deviceGroup}" styleClass="slds-input" disabled="{!!ISBLANK(deviceGroup)}"/>
+					                            </div>
+				                            </div>
+			                            </div>
+
+			                            <div class="slds-m-top_medium">
+				                            <apex:commandButton styleClass="slds-button slds-button_brand"
+				                                                onClick="showProcessing('right-loader');"
+				                                                action="{!updateConfiguration}"
+				                                                value="Save"
+				                                                reRender="deviceGroup-div, post_processing"/>
+				                            <apex:commandButton styleClass="slds-button slds-button_destructive"
+				                                                onClick="showProcessing('right-loader');"
+				                                                action="{!deleteDeviceGroup}"
+				                                                value="Delete"
+				                                                reRender="deviceGroup-div, post_processing"/>
+
+			                            </div>
+		                            </apex:outputPanel>
+
+	                            </apex:outputPanel>
+
+                                <!-- Batch Management -->
+                                <apex:outPutPanel styleClass="xslds-grid slds-wrap xslds-align_absolute-center"
+                                        layout="block" id="batch-management_block"
+                                        rendered="{!currentConfigurationItem == 'BatchSync'}">
+                                    <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_large">
+                                        <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+                                            CT Transaction Sync Configuration
+                                        </h3>
+                                    </div>
+
+                                    <div class="slds-grid slds-wrap slds-size_1-of-1 slds-align_absolute-center"
+                                         style="min-height: 40vh;">
+                                        <c:Batch_Management parentDivId="batch-management_block"/>
+                                    </div>
+
+                                </apex:outPutPanel>
+
+
+                                <!--DEBUG-->
+                                <apex:outputPanel styleClass="slds-grid slds-wrap slds-grid_vertical-stretch"
+                                                  rendered="{!currentConfigurationItem == 'Debug'}">
+
+                                    <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_large">
+                                        <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+                                            Toggle Debug Logging
+                                        </h3>
+                                    </div>
+
+                                    <div class="slds-align_absolute-center slds-size_6-of-12 slds-box slds-theme_warning slds-m-bottom_large">
+                                        <div class="slds-size_1-of-12 slds-float_left">
+                                            <svg aria-hidden="true"
+                                                 class="slds-icon icon-text-email slds-icon_small slds-m-right_x-small"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="slds-size_11-of-12 slds-float_left">
+                                            <p class="slds-text-body_regular">
+                                                When enabled, additional debug info will be present in the debug logs
+                                                with a logging level of <i>ERROR</i>
+                                            </p>
+
+                                            <p class="slds-text-body_regular slds-m-top_small">
+                                                Disable when not troubleshooting as logging reduces performance
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <apex:outputPanel layout="block"
+                                                      styleClass="slds-size_1-of-1 slds-align_absolute-center"
+                                                      id="debug-div"
+                                                      style="min-height: 50vh;">
+                                        <div class="slds-size_1-of-2 slds-align_absolute-center">
+                                            <div class="slds-form-element">
+                                                <label class="slds-checkbox_toggle slds-grid">
+                                                    <span class="slds-form-element__label slds-m-bottom_none">Toggle
+                                                        Debug</span>
+                                                    <apex:inputCheckbox value="{!debugMode}"
+                                                                        html-aria-describedby="toggle-desc"
+                                                                        onChange="setDebug();"
+                                                                        />
+                                                    <span id="toggle-desc" class="slds-checkbox_faux_container"
+                                                          aria-live="assertive">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-checkbox_on">Enabled</span>
+                                                        <span class="slds-checkbox_off">Disabled</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+
+                                <!--TTL-->
+                                <apex:outputPanel styleClass="slds-grid slds-wrap slds-grid_vertical-stretch ttl-section"
+                                                  rendered="{!currentConfigurationItem == 'TTL'}">
+
+                                    <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_large">
+                                        <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+                                            Terminal Connectivity
+                                        </h3>
+                                    </div>
+
+                                    <div class="slds-align_absolute-center slds-size_10-of-12 slds-box slds-theme_warning slds-m-bottom_large">
+                                        <div class="slds-size_1-of-12 slds-float_left">
+                                            <svg aria-hidden="true"
+                                                 class="slds-icon icon-text-email slds-icon_small slds-m-right_x-small"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="slds-size_10-of-12 xslds-float_left">
+                                            <p class="slds-text-body_regular">
+                                                The Reset Terminal Connection tool was designed to make payments show up on the Chargent Terminal lightning fast. Just look up your terminal below to initiate the update.
+                                            </p>
+
+                                            <div class="slds-grid slds-wrap slds-p-left_medium slds-size_10-of-12">
+                                                <h1 class="slds-text-heading_small slds-p-top_medium">What exactly is this doing?</h1>
+                                                <p>
+                                                    The Chargent Terminals are designed to have an always-on connection, however that connection can be interrupted. This tool changes the default connection refresh time from 5 minutes to just 30 seconds. Our testing shows that this will keep the connection alive, allowing retail agents to see very fast response times when sending payments from Salesforce to the Terminal.
+
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <apex:outputPanel layout="block"
+                                                      styleClass="slds-size_1-of-1 slds-align_absolute-center"
+                                                      id="ttl-div"
+                                                      style="min-height: 50vh;">
+                                        <div class="slds-size_1-of-2 slds-align_absolute-center">
+                                            <div class="slds-size_1-of-1 slds-align_absolute-center"
+                                                 style="min-height: 50vh;">
+                                                <div class="slds-size_1-of-1 slds-grid slds-grid_align-center slds-scope" id="ttl-terminal-div"></div>
+                                                <script>
+                                                    $Lightning.use("cterminal:Terminal_Lightning_Out", function () {
+                                                        $Lightning.createComponent(
+                                                                "cterminal:Terminal_Select",
+                                                                {
+                                                                    "isLex" : false,
+                                                                    "buttonText" : "Reset Terminal Connection",
+                                                                    "inputLabel" : "Which terminal needs a connection reset"
+                                                                },
+                                                                "ttl-terminal-div",
+                                                                function (cmp) {
+                                                                    $A.eventService.addHandler(
+                                                                            {
+                                                                                event: 'cterminal:StreamingAPIEvent',
+                                                                                handler: function (event) {
+	                                                                                $('[id$=msg_block]').hide();
+                                                                                	showProcessing('right-loader');
+                                                                                    doTTL(event.getParams().topic);
+                                                                                }
+                                                                            }
+                                                                    );
+
+                                                                });
+                                                    });
+
+                                                </script>
+
+                                            </div>
+
+                                        </div>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+
+                                <!--USER TERMINAL-->
+                                <apex:outputPanel id="terminal-select"
+                                                  styleClass="slds-grid slds-wrap slds-grid_vertical-stretch"
+                                                  rendered="{!currentConfigurationItem == 'UserTerminal'}">
+                                    <div class="slds-size_1-of-1 slds-box slds-theme_shade slds-m-bottom_small">
+                                        <h3 class="slds-text-title_caps slds-text-heading_medium slds-text-align_center">
+                                            Set Your Default Terminal
+                                        </h3>
+                                    </div>
+                                    <div class="slds-align_absolute-center slds-size_6-of-12 slds-box slds-theme_warning slds-m-bottom_large">
+                                        <!--<div class="slds-align&#45;&#45;absolute-center">-->
+                                        <div class="slds-size_1-of-12 slds-float_left">
+                                            <svg aria-hidden="true"
+                                                 class="slds-icon icon-text-email slds-icon_small slds-m-right_x-small"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="slds-size_11-of-12 slds-float_left">
+                                            <p class="slds-text-body_regular">
+                                                Setting a value here will cause all transactions to be sent to the
+                                                selected terminal
+                                            </p>
+
+                                            <p class="slds-text-body_regular slds-m-top_small">
+                                                If the terminal no longer exists this setting will be ignored.
+                                                Additionally, if you wish to stop the behavior clear the value
+                                            </p>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-align_absolute-center"
+                                         style="min-height: 50vh;">
+                                        <div id="user-default-div"></div>
+                                        <script>
+                                            $Lightning.use("cterminal:Terminal_Lightning_Out", function () {
+                                                $Lightning.createComponent(
+                                                    "cterminal:User_Default_Terminal",
+                                                    {
+                                                        "isLex" : false
+                                                    },
+                                                    "user-default-div",
+                                                    function (cmp) {
+                                                    });
+                                            });
+
+                                        </script>
+
+                                    </div>
+                                </apex:outputPanel>
+                            </apex:form>
+
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                </div>
+            </apex:outputPanel>
+
+            <!--APEX VARIABLES DIV-->
+            <apex:outputPanel id="post_processing" layout="inline">
+
+                <script>
+                    var hasMessages = {!hasMessages}; //Escaped in code, no user input
+                    var errorMessage = '{!errorMessage}'; //Escaped in code, no user input
+                    var sessionId = '{!$Api.Session_ID}'; //From server
+                    var sfVFHost = '{!Host}'; //From code, no user input
+
+                    checkMessages();
+
+                    var remoteSiteHosts = [];
+
+                    remoteSiteHosts.push({
+                        name: 'Chargent_Terminal_API',
+                        description: 'Poynt API Endpoint',
+                        host: 'https://services.poynt.net'
+                    });
+
+                    remoteSiteHosts.push({
+                        name: 'Chargent_Terminal_oAuth',
+                        description: 'Poynt Authorization Endpoint',
+                        host: 'https://poynt.net'
+                    });
+
+                    $('#tooling_btn').prop('disabled',{!stepStatus[1]});
+                    $('#prev-button').prop('disabled',{!step ==1});
+
+                </script>
+
+            </apex:outputPanel>
+
+        </apex:define>
+    </apex:composition>
+
+
+    </html>
+
+</apex:page>

@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- ListMember --></label>
+        <name>vlocity_ins__ListMember</name>
+    </fieldSets>
+    <fields>
+        <label><!-- AcctOpp Lock --></label>
+        <name>AcctOpp_Lock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Type --></label>
+        <name>Address_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agree to SOB --></label>
+        <name>Agree_to_SOB__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Building / Suite / Apartment --></label>
+        <name>Building_Suite_Apartment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Level --></label>
+        <name>Contract_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the name of the County where the lead is located --></help>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field gives the profile of the user who created this lead (used in the back end) --></help>
+        <label><!-- Created By Profile --></label>
+        <name>Created_By_Profile__c</name>
+    </fields>
+    <fields>
+        <help><!-- List each dependent with their date of birth. --></help>
+        <label><!-- Dependents, DOB --></label>
+        <name>Dependents_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Effective Date --></label>
+        <name>Desired_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible --></label>
+        <name>Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Address --></label>
+        <name>Google_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hear about us --></label>
+        <name>Hear_about_us__c</name>
+        <picklistValues>
+            <masterLabel>Internet Search</masterLabel>
+            <translation><!-- Internet Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Lost Reason --></label>
+        <name>Lead_Lost_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Commissions</masterLabel>
+            <translation><!-- Commissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t do health share</masterLabel>
+            <translation><!-- Doesn&apos;t do health share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer Paid Plan</masterLabel>
+            <translation><!-- Employer Paid Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Reasons</masterLabel>
+            <translation><!-- Financial Reasons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group only</masterLabel>
+            <translation><!-- Group only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient Coverage</masterLabel>
+            <translation><!-- Insufficient Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost in Verification</masterLabel>
+            <translation><!-- Lost in Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network issues</masterLabel>
+            <translation><!-- Network issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No contact</masterLabel>
+            <translation><!-- No contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No response</masterLabel>
+            <translation><!-- No response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-acceptance of Sharing Eligibility</masterLabel>
+            <translation><!-- Non-acceptance of Sharing Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-acceptance of Statement of Beliefs</masterLabel>
+            <translation><!-- Non-acceptance of Statement of Beliefs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-acceptance of Waiting Periods</masterLabel>
+            <translation><!-- Non-acceptance of Waiting Periods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician Network</masterLabel>
+            <translation><!-- Physician Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too many health shares</masterLabel>
+            <translation><!-- Too many health shares --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional Health Plan</masterLabel>
+            <translation><!-- Traditional Health Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working with Producer</masterLabel>
+            <translation><!-- Working with Producer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- List Bill Producer --></label>
+        <name>List_Bill_Producer__c</name>
+        <relationshipLabel><!-- Leads (List Bill Producer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- List Bill --></label>
+        <name>List_Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- List of States --></label>
+        <name>List_of_States__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Medical --></label>
+        <name>Medical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Size --></label>
+        <name>Membership_Size__c</name>
+        <picklistValues>
+            <masterLabel>6 + Members</masterLabel>
+            <translation><!-- 6 + Members --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member + 1</masterLabel>
+            <translation><!-- Member + 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please use the Associate Account if parent account is not known. --></help>
+        <label><!-- Parent Account --></label>
+        <name>Parent_Account__c</name>
+        <relationshipLabel><!-- Leads (Parent Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Language Spoken --></label>
+        <name>Primary_Language_Spoken__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Projected Close Date --></label>
+        <name>Projected_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Offered --></label>
+        <name>Quote_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Sales Director --></label>
+        <name>Regional_Sales_Director__c</name>
+        <relationshipLabel><!-- Leads (Regional Sales Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SSN/ITIN --></label>
+        <name>SSN_ITIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team Referral --></label>
+        <name>Sales_Team_Referral__c</name>
+        <relationshipLabel><!-- Leads (Sales Team Referral) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Servicing Representative --></label>
+        <name>Servicing_Representative__c</name>
+        <relationshipLabel><!-- Leads (Servicing Representative) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State Sales Director --></label>
+        <name>State_Sales_Director__c</name>
+        <relationshipLabel><!-- Leads (State Sales Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VP Sales --></label>
+        <name>VP_Sales__c</name>
+        <relationshipLabel><!-- Leads (VP Sales) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Formstack Auto-Assign --></label>
+        <name>VisualAntidote__Fast_Forms_Auto_Assign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Formstack Autoresponse --></label>
+        <name>VisualAntidote__Fast_Forms_Autoresponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Score Synced --></label>
+        <name>pi__Needs_Score_Synced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Scored At --></label>
+        <name>pi__Pardot_Last_Scored_At__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Campaign --></label>
+        <name>pi__campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Comments --></label>
+        <name>pi__comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Date --></label>
+        <name>pi__conversion_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Name --></label>
+        <name>pi__conversion_object_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Type --></label>
+        <name>pi__conversion_object_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Created Date --></label>
+        <name>pi__created_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Activity --></label>
+        <name>pi__first_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Query --></label>
+        <name>pi__first_search_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Type --></label>
+        <name>pi__first_search_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer --></label>
+        <name>pi__first_touch_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Grade --></label>
+        <name>pi__grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Activity --></label>
+        <name>pi__last_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Notes --></label>
+        <name>pi__notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Hard Bounced --></label>
+        <name>pi__pardot_hard_bounced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Score --></label>
+        <name>pi__score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot URL --></label>
+        <name>pi__url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Campaign --></label>
+        <name>pi__utm_campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Content --></label>
+        <name>pi__utm_content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Medium --></label>
+        <name>pi__utm_medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Source --></label>
+        <name>pi__utm_source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Term --></label>
+        <name>pi__utm_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjudication --></label>
+        <name>vfirst__Adjudication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initiate Background Check --></label>
+        <name>vfirst__Initiate_Background_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Guest Access Helper --></label>
+        <name>vfirst__Site_Guest_Access_Helper__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>vfirst__Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Report --></label>
+        <name>vfirst__Verification_Report_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Background Checks Ordered --></label>
+        <name>vfirst__of_Background_Checks_Ordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>vlocity_ins__BirthDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>vlocity_ins__Primary__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred By --></label>
+        <name>vlocity_ins__ReferredByContactId__c</name>
+        <relationshipLabel><!-- Leads (Referred By) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Leads generated by Contracting, Producer Onboarding, or Producer Support. --></description>
+        <label><!-- Internal Lead --></label>
+        <name>Internal_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- List Bill --></label>
+        <name>List_Bill</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Leads generated by Member Enrollment --></description>
+        <label><!-- Member Lead --></label>
+        <name>Member_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Leads generated by the Sales Team. --></description>
+        <label><!-- Sales Lead --></label>
+        <name>Sales_Lead</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Address Cannot be Blank --></errorMessage>
+        <name>Address_Cannot_Be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Leads with contract type &apos;Affinity&apos; and contract level greater than 3 should be &apos;Submitted for Approval&apos; --></errorMessage>
+        <name>Affinity_Level_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Leads with contract type &apos;Producer&apos; and contract level greater than 19% should be &apos;Submitted for Approval&apos; --></errorMessage>
+        <name>Contract_Level_19_needs_approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The First Name field cannot be blank. --></errorMessage>
+        <name>First_name_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Sales Executives can Save a lead with the Management Contract Type --></errorMessage>
+        <name>Management_level_only_for_Sales_Execs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a phone number and email address before converting this lead to an opportunity. --></errorMessage>
+        <name>Must_have_phone_and_email_to_convert</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select a Lead Lost Reason before the lead can be lost. --></errorMessage>
+        <name>Needs_lead_lost_reason</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

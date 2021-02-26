@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Payment Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact --></label>
+        <name>ChargentOrders__Billing_Contact__c</name>
+        <relationshipLabel><!-- Payment Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>ChargentOrders__ChargentOrder__c</name>
+        <relationshipLabel><!-- Payment Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What email address should this Payment Request be sent to?
+This will override the email address of the Contact. --></help>
+        <label><!-- Email Address --></label>
+        <name>ChargentOrders__Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hash Sum --></label>
+        <name>ChargentOrders__Hash_Sum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Parent ID --></label>
+        <name>ChargentOrders__Include_Parent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>ChargentOrders__Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This link will take you to the payment page. Users may send this link directly to a payer. --></help>
+        <label><!-- Pay Link --></label>
+        <name>ChargentOrders__Pay_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Link Formatted --></label>
+        <name>ChargentOrders__Payment_Link_Formatted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Request Transaction Type --></label>
+        <name>ChargentOrders__Payment_Request_Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Authorize Full Amount</masterLabel>
+            <translation><!-- Authorize Full Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorize Minimum Amount</masterLabel>
+            <translation><!-- Authorize Minimum Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charge Full Amount</masterLabel>
+            <translation><!-- Charge Full Amount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When you check this box it will automatically send a Payment Request Email, based on your defined default template. --></help>
+        <label><!-- Send Payment Request Email --></label>
+        <name>ChargentOrders__Send_Payment_Request_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field shows the current state of the payment request. --></help>
+        <label><!-- Status --></label>
+        <name>ChargentOrders__Status__c</name>
+        <picklistValues>
+            <masterLabel>Auto Sent</masterLabel>
+            <translation><!-- Auto Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manually Sent</masterLabel>
+            <translation><!-- Manually Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- Chargent Payment Requests --></relationshipLabel>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Transaction Type is not allowed. --></errorMessage>
+        <name>ChargentOrders__Block_inactive_PR_transaction_types</name>
+    </validationRules>
+</CustomObjectTranslation>

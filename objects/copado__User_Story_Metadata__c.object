@@ -324,6 +324,14 @@ TEXT(copado__Status__c)
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <label>User Story Metadata</label>
+    <listViews>
+        <fullName>All_User_Story_Metadata</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__User_Story__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>All User Story Metadata</label>
+    </listViews>
     <nameField>
         <label>User Story Metadata Name</label>
         <type>Text</type>

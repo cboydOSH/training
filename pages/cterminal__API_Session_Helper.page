@@ -1,0 +1,7 @@
+<!--
+ - Created by ericalexander on 5/12/18.
+ -->
+
+<apex:page id="API_Session_Helper" contentType="application/json">
+    { "sessionId": "{!$Api.Session_ID}" }
+</apex:page>

@@ -1,7 +1,7 @@
 /**
  * An apex page controller that supports self registration of users in communities that allow self registration
  */
-public class CommunitiesSelfRegController {
+public without sharing class CommunitiesSelfRegController {
 
     public String firstName {get; set;}
     public String lastName {get; set;}
@@ -30,9 +30,14 @@ public class CommunitiesSelfRegController {
             return null;
         }    
 
-        String profileId = null; // To be filled in by customer.
+        Account ac = new Account();
+        ac.Name = 'Test';
+        ac.OwnerId = UserInfo.getUserId();
+        insert ac;
+
+        String profileId = '00eR0000000PU5s'; // To be filled in by customer.
         String roleEnum = null; // To be filled in by customer.
-        String accountId = ''; // To be filled in by customer.
+        String accountId = '001R000001YsMK1IAN'; // To be filled in by customer.
         
         String userName = email;
 
@@ -42,17 +47,19 @@ public class CommunitiesSelfRegController {
         u.FirstName = firstName;
         u.LastName = lastName;
         u.CommunityNickname = communityNickname;
-		u.ProfileId = profileId;
-		
+		//u.ProfileId = profileId;
+		//u.userRoleId = '00E4P000000zr1IUAQ';
         String userId;
 
         try {
             userId = Site.createExternalUser(u, accountId, password);
-        } catch(Site.ExternalUserCreateException ex) {
-            List<String> errors = ex.getDisplayMessages();
-            for (String error : errors)  {
-                ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, error));
-            }
+        // } catch(Site.ExternalUserCreateException ex) {
+        } catch(Exception ex) {
+            //List<String> errors = ex.getDisplayMessages();
+           // for (String error : errors)  {
+                // ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'Vicente'));
+                ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, ex.getMessage()));
+          //  }
             
             // This message is used for debugging. Do not display this in the UI to the end user.
             // It has the information around why the user creation failed.

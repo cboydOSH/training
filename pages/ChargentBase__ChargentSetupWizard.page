@@ -1,0 +1,46 @@
+<apex:page showHeader="{!showHeader}" sideBar="{!showSidebar}" standardController="ChargentBase__Gateway__c"
+           extensions="ChargentBase.ChargentSetupWizardController">
+	<style type="text/css">
+		body {
+			background-color: transparent;
+		}
+	</style>
+
+	<apex:includeLightning />
+
+	<div id="ChargentSetupWizard"></div>
+
+	<script>
+		$Lightning.use("ChargentBase:ChargentSetupWizardApplication", function () {
+			$Lightning.createComponent(
+				"ChargentBase:ChargentSetupWizard",
+				{
+					"OOCNotInstalled": {!OOCNotInstalled}
+				},
+				"ChargentSetupWizard",
+				function (cmp, status, errorMessage) {
+					//Add the new button to the body array
+					if (status === "SUCCESS") {
+						console.log("Custom component loaded.");
+					} else if (status === "INCOMPLETE") {
+						console.log("No response from server or client is offline.")
+					} else if (status === "ERROR") {
+						console.log("Error: " + errorMessage);
+					}
+
+					$A.eventService.addHandler({
+						event: 'force:navigateToURL',
+						handler: function (event) {
+							if (typeof sforce != 'undefined' && sforce.one) {
+								sforce.one.navigateToURL(event.getParams().url);
+
+							} else {
+								window.parent.location.href = event.getParams().url
+							}
+						}
+					});
+				}
+			);
+		});
+	</script>
+</apex:page>

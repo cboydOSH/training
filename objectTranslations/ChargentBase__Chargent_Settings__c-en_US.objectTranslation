@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If this field is set to TRUE users of your Payment Request page will be able to choose to use an eCheck to pay the amount due. --></help>
+        <label><!-- Accept eCheck --></label>
+        <name>ChargentBase__Accept_eCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Updater Confirmation Text --></label>
+        <name>ChargentBase__Account_Updater_Confirmation_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Updater Error Text --></label>
+        <name>ChargentBase__Account_Updater_Error_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Updater Expiration Hours --></label>
+        <name>ChargentBase__Account_Updater_Expiration_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activate Automated Collections --></label>
+        <name>ChargentBase__Activate_Automated_Collections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automated Collections Batch Chunk Limit --></label>
+        <name>ChargentBase__Automated_Collections_Batch_Chunk_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automated Collections Disabled --></label>
+        <name>ChargentBase__Automated_Collections_Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automated Collections Expiration Hours --></label>
+        <name>ChargentBase__Automated_Collections_Expiration_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automatically Create PR Record --></label>
+        <name>ChargentBase__Automatically_Create_PR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chargent Activation Key --></label>
+        <name>ChargentBase__Chargent_Activation_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chargent Admin Email Address --></label>
+        <name>ChargentBase__Chargent_Admin_Email_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- When this is checked Chargent will automatically copy the Billing Address information from the Account. --></help>
+        <label><!-- Copy Billing Address from Account --></label>
+        <name>ChargentBase__Copy_Billing_Address_from_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Currency --></label>
+        <name>ChargentBase__Default_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Page --></label>
+        <name>ChargentBase__Error_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC Auth Type --></label>
+        <name>ChargentBase__MC_Auth_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Updater Search Criteria --></label>
+        <name>ChargentBase__Opportunity_Search_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- WARNING: Update only when advised by support
+
+This setting changes the number of records per set sent to the gateway during batches. Lowering this will slow the speed of your batch increasing this may cause errors. Please email support for assistance. --></help>
+        <label><!-- Payment Batch Chunk Size Limit --></label>
+        <name>ChargentBase__Payment_Batch_Chunk_Size_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Confirmation Text --></label>
+        <name>ChargentBase__Payment_Confirmation_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Error Text --></label>
+        <name>ChargentBase__Payment_Error_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Link Expiration Hours --></label>
+        <name>ChargentBase__Payment_Link_Expiration_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Request Confirmation Text --></label>
+        <name>ChargentBase__Payment_Request_Confirmation_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Sites Page --></label>
+        <name>ChargentBase__SFDC_Sites_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Debug --></label>
+        <name>ChargentBase__Show_Debug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thank You Page --></label>
+        <name>ChargentBase__Thank_You_Page__c</name>
+    </fields>
+    <fields>
+        <help><!-- WARNING: Update only when advised by support
+
+This setting changes the number of records per set sent to the gateway during batches. Lowering this will slow the speed of your batch increasing this may cause errors. Please email support for assistance. --></help>
+        <label><!-- Transaction Status Batch Chunk Limit --></label>
+        <name>ChargentBase__Transaction_Status_Batch_Chunk_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use RealEx Rebate Method --></label>
+        <name>ChargentBase__Use_RealEx_Rebate_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Simple Account Updater Feature --></label>
+        <name>ChargentBase__Use_Simple_Account_Updater_Feature__c</name>
+    </fields>
+</CustomObjectTranslation>

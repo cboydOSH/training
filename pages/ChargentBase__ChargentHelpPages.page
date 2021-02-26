@@ -1,0 +1,151 @@
+<apex:page showHeader="{!isChargentHelp}" controller="ChargentBase.ChargentConfigurationController">
+	<apex:outputText escape="false" value="{!"<!DOCTYPE html>"}"/>
+	<html lang="en" class=" js canvas canvastext geolocation crosswindowmessaging websqldatabase indexeddb hashchange historymanagement draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions  video audio localstorage sessionstorage webworkers applicationcache svg smil svgclippaths   cufon-active cufon-ready fontface"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta charset="utf-8"/>
+
+		<!-- www.phpied.com/conditional-comments-block-downloads/ -->
+		<!--[if IE]><![endif]-->
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame  -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<title>Chargent Frequently Asked Questions (FAQ)</title>
+		<meta name="description" content=""/>
+		<meta name="author" content=""/>
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="{!faviconIconUrl}"/>
+		<link rel="apple-touch-icon" href="{!appleTouchIconUrl}"/>
+
+		<!-- CSS - Setup -->
+		<apex:stylesheet value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'css/style.css')}"/>
+		<apex:stylesheet value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'css/base.css')}"/>
+		<apex:stylesheet value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'css/grid.css')}"/>
+		<!-- CSS - Theme -->
+		<apex:stylesheet value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'css/light.css')}"/>
+		<apex:stylesheet value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'css/blue.css')}"/>
+		<style>
+			.bodyDiv {
+				font: 13px/1.22 sans-serif;
+
+				background: #f2f2f2 url({!URLFOR($Resource.ChargentBase__ChargentStyling, 'img/bg.jpg')}) repeat-x top;
+			}
+			}
+			.bodyDiv a, .bodyDiv a:active, .bodyDiv a:visited, .bodyDiv a:hover {
+				color: #1D94C3;
+
+			}
+			body h3 {
+				font-size: 180%;
+				font-weight: bold;
+				margin-bottom: 15px;
+				display: block;
+			}
+			body h2 {
+				font-size: 200%;
+			}</style>
+		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/ga.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/modernizr-1.5.min.js')}"/>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-34878956-1']);
+			_gaq.push(['_setDomainName', 'appfrontier.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		<style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style></head>
+
+	<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<body>
+	<!--<![endif]-->
+	<div id="wrapper">
+
+		<!-- start header -->
+		<header>
+			<!-- logo -->
+			<h1 id="logo"><a href="{!chargentIndexPageUrl}" >AppFrontier</a></h1>
+			<br class="cl"></br>
+		</header>
+		<!-- end header -->
+		<!-- page container -->
+		<div id="page">
+			<!-- page title -->
+			<h2 class="ribbon blue full">Chargent Payment Processing Resources</h2>
+			<div class="triangle-ribbon blue"></div>
+			<br class="cl"></br>
+			<!-- page content -->
+			<div id="page-content" class="two-col container_12">
+
+				<div class="grid_12">
+
+					<h3>Installation &amp; Updates</h3>
+
+					<p><a href="{!chargentInstallationPageUrl}" >Chargent Installation</a></p>
+
+					<h3>Documentation</h3>
+
+					<p><a href="{!chargentDocumentationPageUrl}" >Chargent Documentation</a></p>
+					<p><a href="{!chargentBestPracticiesPageUrl}" >Using Chargent: Best Practices</a></p>
+					<p><a href="{!chargentFAQPageUrl}" >FAQ</a></p>
+
+					<h3>Contact Information</h3>
+
+					<p><a href="{!chargentSupportPageUrl}" >Support Overview</a></p>
+					<p><a href="{!chargentContactPageUrl}" >Contact Us</a></p>
+
+				</div>
+				<br class="cl"></br>
+				<br/>
+			</div>
+
+
+
+			<!-- page sidebar -->
+			<aside>
+				<br class="cl"></br>
+				<div class="block">
+					<h3>Connect With Us</h3>
+
+					<ul class="social-list">
+						<li><a href="{!twitterUrl}" target="_blank"><img class="tooltip" src="{!URLFOR($Resource.ChargentStyling, 'img/twitter.png')}" alt="twitter" original-title="Follow us on Twitter"/></a></li>
+						<li><a href="{!facebookUrl}" target="_blank"><img class="tooltip" src="{!URLFOR($Resource.ChargentStyling, 'img/facebook.png')}" alt="facebook" title="Our Facebook page"/></a></li>
+						<li><a href="{!linkedinUrl}" target="_blank"><img class="tooltip" src="{!URLFOR($Resource.ChargentStyling, 'img/linkedin.png')}" alt="linkedin" title="Our LinkedIn profile"/></a></li>
+						<li><a href="{!plusGoogleUrl}" target="_blank"><img class="tooltip" src="{!URLFOR($Resource.ChargentStyling, 'img/google.png')}" title="Our Google Plus Page" alt="Google Plus"/></a></li>
+					</ul>
+				</div>
+			</aside>
+			<br class="cl"></br>
+			<br class="cl"></br>
+		</div>
+
+		<p>Copyright © 2012-14 AppFrontier LLC &nbsp; <a href="{!chargentPrivacyPageUrl}" >Privacy Policy</a></p>
+
+		<!-- footer end -->
+
+		<!-- Javascript at the bottom for fast page loading -->
+		<!-- Grab Google CDN's jQuery + jQuery UI. fall back to local if necessary -->
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/jquery.min.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/jquery.tools.min.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/jquery.lightbox-0.5.min.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/jquery.form.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/cufon-yui.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/Aller.font.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/jquery.tipsy.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.ChargentBase__ChargentStyling, 'js/functions.js')}"/>
+
+		<!--[if lt IE 7 ]>
+		<apex:includeScript value="js/dd_belatedpng.js"/>
+		<![endif]-->
+	</div>
+
+	</body></html>
+</apex:page>

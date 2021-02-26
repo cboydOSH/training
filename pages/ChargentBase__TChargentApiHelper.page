@@ -1,0 +1,3 @@
+<apex:page controller="ChargentBase.TChargentApiHelper" action="{!doAction}" sidebar="false" showheader="false" contentType="application/json" >
+{!Result}
+</apex:page>

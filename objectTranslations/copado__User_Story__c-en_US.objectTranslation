@@ -740,11 +740,11 @@
         <name>copado__Stop_Indexing_Metadata__c</name>
     </fields>
     <fields>
-        <label><!-- Story Points Other --></label>
+        <label><!-- Planned Points --></label>
         <name>copado__Story_Points_Other__c</name>
     </fields>
     <fields>
-        <label><!-- Story Points SFDC --></label>
+        <label><!-- Actual Points --></label>
         <name>copado__Story_Points_SFDC__c</name>
     </fields>
     <fields>
@@ -776,6 +776,11 @@
         <help><!-- Number of triggers without the minimum required coverage. --></help>
         <label><!-- Triggers Without Coverage --></label>
         <name>copado__Triggers_Without_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature --></label>
+        <name>copado__US_Feature__c</name>
+        <relationshipLabel><!-- User Stories --></relationshipLabel>
     </fields>
     <fields>
         <help><!-- Short description of the User Story or requirement. Technical and non-technical team members should be able to understand the description. --></help>
@@ -816,6 +821,10 @@
         <label><!-- User Story --></label>
         <name>copado__User_Story</name>
     </recordTypes>
+    <validationRules>
+        <errorMessage><!-- This user story needs approval to proceed --></errorMessage>
+        <name>Promote_after_approval_completed</name>
+    </validationRules>
     <validationRules>
         <errorMessage><!-- A cancellation reason must be given. --></errorMessage>
         <name>copado__Cancellation_reason_required</name>
@@ -875,6 +884,10 @@
     <webLinks>
         <label><!-- Mass_Add_User_Stories_Sprint --></label>
         <name>copado__Mass_Add_User_Stories_Sprint</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Open_Org --></label>
+        <name>copado__Open_Org</name>
     </webLinks>
     <webLinks>
         <label><!-- Perform_Validation --></label>

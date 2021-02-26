@@ -1,0 +1,275 @@
+{
+    "Account_1": {
+        "Id": "0018A00000U7zteQAB"
+    },
+    "AccountsForOSHEmployees": [
+        {
+            "Id": "0018A00000TzHtdQAF",
+            "Monthly_Commission_Fee__c": 30,
+            "Name": "Forever young",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+            }
+        },
+        {
+            "Id": "0018A00000TyjGAQAZ",
+            "Monthly_Commission_Fee__c": 45,
+            "Name": "OSH Enrollment",
+            "RecordTypeId": "0124P000000uPa9QAE",
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+            }
+        }
+    ],
+    "AddEditFamilyMember": [
+        {
+            "address": "",
+            "age": 26,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1994-06-01",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Vicente Test 2",
+            "gender": "Male",
+            "id": "0018A00000U7zteQAB",
+            "lname": "J03",
+            "parent_id": "0018A00000U7zteQAB",
+            "phone": "",
+            "relationship": "Primary",
+            "state": "",
+            "zipcode": ""
+        },
+        {
+            "address": "",
+            "age": 29,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1990-06-08",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Vicente Test 2",
+            "gender": "Female",
+            "id": "0018A00000U7ztfQAB",
+            "lname": "J03",
+            "parent_id": "0018A00000U7zteQAB",
+            "phone": "",
+            "relationship": "Spouse",
+            "state": "",
+            "zipcode": ""
+        },
+        {
+            "address": "",
+            "age": 20,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "2000-04-09",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Vicente Test 2",
+            "gender": "Female",
+            "id": "1591199433673",
+            "lname": "J03",
+            "parent_id": "0018A00000U7zteQAB",
+            "phone": "",
+            "relationship": "Child",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "ContextId": "",
+    "DRId_Lead": "00Q8A0000040YvrUAE",
+    "EffectiveDate": "06/04/2020",
+    "ExistingInfoPacket": {
+        "BlkExistingInfoPacket": {
+            "TxtInfoPacketNumber": "060320-00001"
+        },
+        "CancelFormula": "/",
+        "EnrollerID": null,
+        "FormulaEnrollerId": 0,
+        "RadioExistingInfoPacket": "Yes",
+        "ServicingAgentDropdown": null
+    },
+    "FamilySelection": "MyselfMyspouse",
+    "FormulaEegible": false,
+    "FormulaEegibleMA": false,
+    "HaveAdultDependent": 0,
+    "MonthlyFee": 0,
+    "NoAdultGreaterThan27AndLesserThan65": 0,
+    "NoChildGreaterThan27": 0,
+    "NoChildGreaterThan65": 0,
+    "NoChildWrongDate": 0,
+    "NoEmpAge18": 0,
+    "NoSpouse65": 0,
+    "NumOfEmployeeInternal": 1,
+    "PrimaryLanguage": "English",
+    "SelectedServicingAgentDropdown": {
+        "Id": "0018A00000TzHtdQAF",
+        "Monthly_Commission_Fee__c": 30,
+        "Name": "Forever young",
+        "RecordTypeId": "0124P000000uPa9QAE",
+        "attributes": {
+            "type": "Account",
+            "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+        }
+    },
+    "ServicingAgent": "Needs Dropdown selection",
+    "ThisisQuote": true,
+    "UserType": "OSH Employee",
+    "WritingAgent": "0058A000003wAujQAE",
+    "childrenInCensus": false,
+    "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+    "dependentRecordType": "0124P000000uS4qQAE",
+    "effDate": "06/04/2020",
+    "error": "OK",
+    "errorDOBList": [
+    ],
+    "id": "a628A00000011JhQAI",
+    "internalLeadRecordType": "0124P000000uPoZQAU",
+    "isdtp": "p1",
+    "layout": "newport",
+    "letsGetStarted": {
+        "BlkNoExistingInfoPacket": {
+            "Email1": "test@testingemail.com",
+            "FormulaEegible": false,
+            "FormulaEegibleMA": false,
+            "SSNITIN": "232131231",
+            "SelectReferer": "Internet Search",
+            "TAAddressGoogle-Block": {
+                "City": "Orlando",
+                "Country": "United States",
+                "State": "FL",
+                "TAAddressGoogle": "9840 International Dr, Orlando, FL 32819, USA",
+                "address": "9840 International Drive",
+                "buildingSuiteApartment": null,
+                "zipCode": "32819"
+            },
+            "Telephone1": "8974561235",
+            "fName": "Vicente Test 2",
+            "lName": "J03"
+        }
+    },
+    "letsGetStartedAnswers": {
+        "BlkNoExistingInfoPacket": {
+            "Email1": "test@testingemail.com",
+            "FormulaEegible": false,
+            "FormulaEegibleMA": false,
+            "SSNITIN": "232131231",
+            "SelectReferer": "Internet Search",
+            "TAAddressGoogle-Block": {
+                "City": "Orlando",
+                "Country": "United States",
+                "State": "FL",
+                "TAAddressGoogle": "9840 International Dr, Orlando, FL 32819, USA",
+                "address": "9840 International Drive",
+                "zipCode": "32819"
+            },
+            "Telephone1": "8974561235",
+            "fName": "Vicente Test 2",
+            "lName": "J03"
+        }
+    },
+    "myFamily": {
+        "Check60daysandTodayPast": true,
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaValidateOldMember": true,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": true,
+        "MomentaryPigFormula": 0,
+        "MsgEffDateEnrollValid": null,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": null,
+        "RadioFamily": "MyselfSpouseDependents",
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": "English",
+        "effDate": "2020-06-04",
+        "effDateEnroll": null,
+        "effectiveDateforQuote": "--",
+        "myFamilyTable": null
+    },
+    "oldestMemberList": [
+        {
+            "address": "",
+            "age": 29,
+            "americanIndian": "",
+            "city": "",
+            "defaultNo": "false",
+            "dob": "1990-06-08",
+            "eligiblemedicare": "",
+            "email": "",
+            "fname": "Vicente Test 2",
+            "gender": "Female",
+            "id": "0018A00000U7ztfQAB",
+            "lname": "J03",
+            "parent_id": "0018A00000U7zteQAB",
+            "phone": "",
+            "relationship": "Spouse",
+            "state": "",
+            "zipcode": ""
+        }
+    ],
+    "opportunityRecordType": "0124P000000uPaBQAU",
+    "primaryMemberRecordType": "0124P000000uS4rQAE",
+    "reviewQuote": {
+        "Space13x12": null,
+        "Space14x12": null,
+        "Space17x3": null,
+        "Space25x3": null,
+        "Space26x3": null,
+        "readyToEnroll": null,
+        "url1": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "standardAccountRecordType": "0128A000000xZjYQAU",
+    "stateofBeliefs": {
+        "MessagingStatesoff": null,
+        "Space2x4": null,
+        "Space3x4": null,
+        "msg": null,
+        "qualification": "Yes"
+    },
+    "stateofBeliefsAnswers": {
+        "MessagingStatesoff": false,
+        "qualification": "Yes"
+    },
+    "tellUsAboutYou": {
+        "Block19": null,
+        "Block20": null,
+        "additionalFees": null,
+        "formulaMoreThan6FamilyMemberAdtionalFee": null,
+        "formulaTotalFamilyMember": null,
+        "tellUsAboutYouFields": {
+            "MSHowOftenPCP": null,
+            "RadioCurrExpctibgStartfamily": null,
+            "RadiofamilycurrSpecialist": null
+        }
+    },
+    "tellUsAboutYouAnswers": {
+        "MSHowOftenPCP": "0-1",
+        "RadioCurrExpctibgStartfamily": "No",
+        "RadiofamilycurrSpecialist": "Yes"
+    },
+    "timeStamp": "2020-06-03T15:50:12.318Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003wAujQAE",
+    "userName": "vicente.martinez@arcsona.com.devvl2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "validCensus": true,
+    "vlcPersistentComponent": {
+    }
+}

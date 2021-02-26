@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Program Promotion</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Program Promotions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Applicable Item --></label>
+        <name>Applicable_Item__c</name>
+        <picklistValues>
+            <masterLabel>Monthly Contribution</masterLabel>
+            <translation><!-- Monthly Contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One Time Application Fee</masterLabel>
+            <translation><!-- One Time Application Fee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Automatic Discount --></label>
+        <name>Automatic_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coupon --></label>
+        <name>Coupon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Description --></label>
+        <name>Long_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Channel --></label>
+        <name>Promotion_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSH Employee</masterLabel>
+            <translation><!-- OSH Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer</masterLabel>
+            <translation><!-- Producer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promotion type --></label>
+        <name>Promotion_type__c</name>
+        <picklistValues>
+            <masterLabel>Discount code</masterLabel>
+            <translation><!-- Discount code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed period discount</masterLabel>
+            <translation><!-- Fixed period discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-time discount</masterLabel>
+            <translation><!-- One-time discount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promotions Program Metadata --></label>
+        <name>Promotions_Program_Metadata__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurrency --></label>
+        <name>Recurrency__c</name>
+        <picklistValues>
+            <masterLabel>1,2,3</masterLabel>
+            <translation><!-- 1,2,3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2,3</masterLabel>
+            <translation><!-- 2,3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forever</masterLabel>
+            <translation><!-- Forever --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Once</masterLabel>
+            <translation><!-- Once --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Short Description --></label>
+        <name>Short_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of discount --></label>
+        <name>Type_of_discount__c</name>
+        <picklistValues>
+            <masterLabel>Flat-dollar</masterLabel>
+            <translation><!-- Flat-dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

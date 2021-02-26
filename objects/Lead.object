@@ -349,6 +349,86 @@
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <externalSharingModel>ReadWriteTransfer</externalSharingModel>
+    <fieldSets>
+        <fullName>vlocity_ins__ListMember</fullName>
+        <availableFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>DoNotCall</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Fax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>HasOptedOutOfEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>HasOptedOutOfFax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LeadSource</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Lead fields displayed in campaign member list.</description>
+        <displayedFields>
+            <field>Company</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Salutation</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Title</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>ListMember</label>
+    </fieldSets>
     <fields>
         <fullName>AcctOpp_Lock__c</fullName>
         <defaultValue>true</defaultValue>
@@ -374,6 +454,32 @@
         <valueSet>
             <restricted>true</restricted>
             <valueSetName>Address_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agree_to_SOB__c</fullName>
+        <description>Field used in Vlocity OS to capture whether a Lead agreed to the Statement of Beliefs.</description>
+        <externalId>false</externalId>
+        <label>Agree to SOB</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
@@ -410,6 +516,18 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Building_Suite_Apartment__c</fullName>
+        <description>Specific Building, Suite or Apartment where the Lead resides</description>
+        <externalId>false</externalId>
+        <label>Building / Suite / Apartment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CampaignId</fullName>
@@ -609,6 +727,16 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Eligible__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field used in the Vlocity OS to determine whether a Lead is eligible based on the State they live in.</description>
+        <externalId>false</externalId>
+        <label>Eligible</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Email</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -619,6 +747,18 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Google_Address__c</fullName>
+        <description>Address comming from google services</description>
+        <externalId>false</externalId>
+        <label>Google Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>HasOptedOutOfEmail</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -627,6 +767,36 @@
         <fullName>HasOptedOutOfFax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Hear_about_us__c</fullName>
+        <externalId>false</externalId>
+        <label>Hear about us</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internet Search</fullName>
+                    <default>false</default>
+                    <label>Internet Search</label>
+                </value>
+                <value>
+                    <fullName>Referral</fullName>
+                    <default>false</default>
+                    <label>Referral</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IndividualId</fullName>
@@ -797,6 +967,277 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>List_of_States__c</fullName>
+        <description>List of States</description>
+        <externalId>false</externalId>
+        <label>List of States</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AK</fullName>
+                    <default>false</default>
+                    <label>AK</label>
+                </value>
+                <value>
+                    <fullName>AL</fullName>
+                    <default>false</default>
+                    <label>AL</label>
+                </value>
+                <value>
+                    <fullName>AR</fullName>
+                    <default>false</default>
+                    <label>AR</label>
+                </value>
+                <value>
+                    <fullName>AZ</fullName>
+                    <default>false</default>
+                    <label>AZ</label>
+                </value>
+                <value>
+                    <fullName>CA</fullName>
+                    <default>false</default>
+                    <label>CA</label>
+                </value>
+                <value>
+                    <fullName>CO</fullName>
+                    <default>false</default>
+                    <label>CO</label>
+                </value>
+                <value>
+                    <fullName>CT</fullName>
+                    <default>false</default>
+                    <label>CT</label>
+                </value>
+                <value>
+                    <fullName>DC</fullName>
+                    <default>false</default>
+                    <label>DC</label>
+                </value>
+                <value>
+                    <fullName>DE</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>FL</fullName>
+                    <default>false</default>
+                    <label>FL</label>
+                </value>
+                <value>
+                    <fullName>GA</fullName>
+                    <default>false</default>
+                    <label>GA</label>
+                </value>
+                <value>
+                    <fullName>HI</fullName>
+                    <default>false</default>
+                    <label>HI</label>
+                </value>
+                <value>
+                    <fullName>IA</fullName>
+                    <default>false</default>
+                    <label>IA</label>
+                </value>
+                <value>
+                    <fullName>ID</fullName>
+                    <default>false</default>
+                    <label>ID</label>
+                </value>
+                <value>
+                    <fullName>IL</fullName>
+                    <default>false</default>
+                    <label>IL</label>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>KS</fullName>
+                    <default>false</default>
+                    <label>KS</label>
+                </value>
+                <value>
+                    <fullName>KY</fullName>
+                    <default>false</default>
+                    <label>KY</label>
+                </value>
+                <value>
+                    <fullName>LA</fullName>
+                    <default>false</default>
+                    <label>LA</label>
+                </value>
+                <value>
+                    <fullName>MA</fullName>
+                    <default>false</default>
+                    <label>MA</label>
+                </value>
+                <value>
+                    <fullName>MD</fullName>
+                    <default>false</default>
+                    <label>MD</label>
+                </value>
+                <value>
+                    <fullName>ME</fullName>
+                    <default>false</default>
+                    <label>ME</label>
+                </value>
+                <value>
+                    <fullName>MI</fullName>
+                    <default>false</default>
+                    <label>MI</label>
+                </value>
+                <value>
+                    <fullName>MN</fullName>
+                    <default>false</default>
+                    <label>MN</label>
+                </value>
+                <value>
+                    <fullName>MO</fullName>
+                    <default>false</default>
+                    <label>MO</label>
+                </value>
+                <value>
+                    <fullName>MS</fullName>
+                    <default>false</default>
+                    <label>MS</label>
+                </value>
+                <value>
+                    <fullName>MT</fullName>
+                    <default>false</default>
+                    <label>MT</label>
+                </value>
+                <value>
+                    <fullName>NC</fullName>
+                    <default>false</default>
+                    <label>NC</label>
+                </value>
+                <value>
+                    <fullName>ND</fullName>
+                    <default>false</default>
+                    <label>ND</label>
+                </value>
+                <value>
+                    <fullName>NE</fullName>
+                    <default>false</default>
+                    <label>NE</label>
+                </value>
+                <value>
+                    <fullName>NH</fullName>
+                    <default>false</default>
+                    <label>NH</label>
+                </value>
+                <value>
+                    <fullName>NJ</fullName>
+                    <default>false</default>
+                    <label>NJ</label>
+                </value>
+                <value>
+                    <fullName>NM</fullName>
+                    <default>false</default>
+                    <label>NM</label>
+                </value>
+                <value>
+                    <fullName>NV</fullName>
+                    <default>false</default>
+                    <label>NV</label>
+                </value>
+                <value>
+                    <fullName>NY</fullName>
+                    <default>false</default>
+                    <label>NY</label>
+                </value>
+                <value>
+                    <fullName>OH</fullName>
+                    <default>false</default>
+                    <label>OH</label>
+                </value>
+                <value>
+                    <fullName>OK</fullName>
+                    <default>false</default>
+                    <label>OK</label>
+                </value>
+                <value>
+                    <fullName>OR</fullName>
+                    <default>false</default>
+                    <label>OR</label>
+                </value>
+                <value>
+                    <fullName>PA</fullName>
+                    <default>false</default>
+                    <label>PA</label>
+                </value>
+                <value>
+                    <fullName>RI</fullName>
+                    <default>false</default>
+                    <label>RI</label>
+                </value>
+                <value>
+                    <fullName>SC</fullName>
+                    <default>false</default>
+                    <label>SC</label>
+                </value>
+                <value>
+                    <fullName>SD</fullName>
+                    <default>false</default>
+                    <label>SD</label>
+                </value>
+                <value>
+                    <fullName>TN</fullName>
+                    <default>false</default>
+                    <label>TN</label>
+                </value>
+                <value>
+                    <fullName>TX</fullName>
+                    <default>false</default>
+                    <label>TX</label>
+                </value>
+                <value>
+                    <fullName>UT</fullName>
+                    <default>false</default>
+                    <label>UT</label>
+                </value>
+                <value>
+                    <fullName>VA</fullName>
+                    <default>false</default>
+                    <label>VA</label>
+                </value>
+                <value>
+                    <fullName>VT</fullName>
+                    <default>false</default>
+                    <label>VT</label>
+                </value>
+                <value>
+                    <fullName>WA</fullName>
+                    <default>false</default>
+                    <label>WA</label>
+                </value>
+                <value>
+                    <fullName>WI</fullName>
+                    <default>false</default>
+                    <label>WI</label>
+                </value>
+                <value>
+                    <fullName>WV</fullName>
+                    <default>false</default>
+                    <label>WV</label>
+                </value>
+                <value>
+                    <fullName>WY</fullName>
+                    <default>false</default>
+                    <label>WY</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Medical__c</fullName>
         <externalId>false</externalId>
         <label>Medical</label>
@@ -868,15 +1309,6 @@
         <externalId>false</externalId>
         <inlineHelpText>Please use the Associate Account if parent account is not known.</inlineHelpText>
         <label>Parent Account</label>
-        <lookupFilter>
-            <active>true</active>
-            <filterItems>
-                <field>Account.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>Producer</value>
-            </filterItems>
-            <isOptional>false</isOptional>
-        </lookupFilter>
         <referenceTo>Account</referenceTo>
         <relationshipLabel>Leads (Parent Account)</relationshipLabel>
         <relationshipName>Leads5</relationshipName>
@@ -895,6 +1327,32 @@
         <fullName>Phone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Primary_Language_Spoken__c</fullName>
+        <description>the primary language spoken in your household</description>
+        <externalId>false</externalId>
+        <label>Primary Language Spoken</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English</fullName>
+                    <default>true</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product__c</fullName>
@@ -955,6 +1413,17 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SSN_ITIN__c</fullName>
+        <externalId>false</externalId>
+        <label>SSN/ITIN</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Sales_Team_Referral__c</fullName>
@@ -1500,6 +1969,56 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>vlocity_ins__BirthDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Date of Birth</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Primary__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Primary</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ReferredByContactId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>ID of the contact who referred this lead.</description>
+        <externalId>false</externalId>
+        <label>Referred By</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Leads (Referred By)</relationshipLabel>
+        <relationshipName>ReferredLeads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
     <listViews>
         <fullName>All_Sales_Leads</fullName>
         <columns>FULL_NAME</columns>
@@ -1566,6 +2085,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Residence</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Agree_to_SOB__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1699,6 +2229,21 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Hear_about_us__c</picklist>
+            <values>
+                <fullName>Internet Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1940,6 +2485,213 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>List_of_States__c</picklist>
+            <values>
+                <fullName>AK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Membership_Size__c</picklist>
             <values>
                 <fullName>6 %2B Members</fullName>
@@ -1982,6 +2734,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -1993,6 +2756,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Primary__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2010,6 +2784,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Residence</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Agree_to_SOB__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2139,6 +2924,21 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Hear_about_us__c</picklist>
+            <values>
+                <fullName>Internet Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2368,6 +3168,213 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>List_of_States__c</picklist>
+            <values>
+                <fullName>AK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Membership_Size__c</picklist>
             <values>
                 <fullName>6 %2B Members</fullName>
@@ -2410,6 +3417,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -2421,6 +3439,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Primary__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2440,6 +3469,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Residence</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Agree_to_SOB__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2573,6 +3613,21 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Hear_about_us__c</picklist>
+            <values>
+                <fullName>Internet Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2818,6 +3873,213 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>List_of_States__c</picklist>
+            <values>
+                <fullName>AK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Membership_Size__c</picklist>
             <values>
                 <fullName>6 %2B Members</fullName>
@@ -2860,6 +4122,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -2871,6 +4144,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Primary__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2889,6 +4173,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Residence</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Agree_to_SOB__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3026,6 +4321,21 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Hear_about_us__c</picklist>
+            <values>
+                <fullName>Internet Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3263,6 +4573,213 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>List_of_States__c</picklist>
+            <values>
+                <fullName>AK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Membership_Size__c</picklist>
             <values>
                 <fullName>6 %2B Members</fullName>
@@ -3305,6 +4822,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Primary_Language_Spoken__c</picklist>
+            <values>
+                <fullName>English</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -3316,6 +4844,17 @@ IF(vfirst__Site_Guest_Access_Helper__r.vfirst__Adjudication__c = &quot;-&quot;,
             </values>
             <values>
                 <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Primary__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3492,6 +5031,18 @@ $Profile.Name &lt;&gt; &quot;Sales Executive&quot;
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://www.google.com/search?q={!Lead_Company}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Lead</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromLead</page>
+        <protected>false</protected>
     </webLinks>
     <webLinks>
         <fullName>pi__Send_Pardot_Email</fullName>

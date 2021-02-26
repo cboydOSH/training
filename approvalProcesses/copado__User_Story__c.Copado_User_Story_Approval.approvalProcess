@@ -13,16 +13,8 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>cboyd@onesharehealth.com</name>
-                <type>user</type>
-            </approver>
-            <approver>
-                <name>jpasupuleti@onesharehealth.com</name>
-                <type>user</type>
-            </approver>
-            <approver>
-                <name>kwagura@onesharehealth.com</name>
-                <type>user</type>
+                <name>Copado_Approvers_to_QA</name>
+                <type>queue</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
@@ -31,8 +23,14 @@
     </approvalStep>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
-        <formula>AND( copado__Promote_Change__c = TRUE,  copado__Environment__r.Name = &quot;trnDevOSH&quot;)</formula>
+        <formula>copado__Environment__r.Name = &quot;trnDevOSH&quot;</formula>
     </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Update_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <label>Copado User Story Approval</label>

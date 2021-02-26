@@ -1,0 +1,365 @@
+{
+    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "OSH My Family Step",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/OSH/My Family/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Account": {
+                "ContactId": "0038A00000TTGATQA5",
+                "Id": "0018A00000WCj70QAD",
+                "Name": "Vicente Full Full Test"
+            },
+            "AccountsForOSHEmployees": [
+                {
+                    "Id": "0018A00000Twm85QAB",
+                    "Monthly_Commission_Fee__c": 100,
+                    "Name": "Maris Walter",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v49.0/sobjects/Account/0018A00000Twm85QAB"
+                    }
+                },
+                {
+                    "Id": "0018A00000TwmBUQAZ",
+                    "Monthly_Commission_Fee__c": 80,
+                    "Name": "Aamer Rehman",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v49.0/sobjects/Account/0018A00000TwmBUQAZ"
+                    }
+                },
+                {
+                    "Id": "0018A00000TzHtdQAF",
+                    "Monthly_Commission_Fee__c": 30,
+                    "Name": "Forever young",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v49.0/sobjects/Account/0018A00000TzHtdQAF"
+                    }
+                },
+                {
+                    "Id": "0018A00000TyjGAQAZ",
+                    "Monthly_Commission_Fee__c": 45,
+                    "Name": "OSH Enrollment",
+                    "RecordTypeId": "0124P000000uPa9QAE",
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+                    }
+                }
+            ],
+            "AgentLabel": "0018A00000Twm6dQAB",
+            "ContextId": "0Q08A000000JibySAC",
+            "CurrencyAnnualComissionFee": 125,
+            "CurrencyPricePerAdditionalMembers": 50,
+            "EditFamilyMember": [
+                {
+                    "address": "123 East Palm Drive",
+                    "age": 21,
+                    "city": "Edinburg",
+                    "country": "United States",
+                    "dob": "09/01/1999",
+                    "email": "testingfullvicente@vicente.com",
+                    "ethnicity": "",
+                    "fname": "Vicente Full",
+                    "fullname": "Vicente Full Full Test",
+                    "gender": "Male",
+                    "id": "0018A00000WCj70QAD",
+                    "isHipaaAuthorized": true,
+                    "lname": "Full Test",
+                    "parent_id": "0018A00000WCj70QAD",
+                    "phone": "8978978978",
+                    "relationship": "Primary",
+                    "ssnItin": "",
+                    "state": "TX",
+                    "zipcode": "78539"
+                },
+                {
+                    "address": "123 East Palm Drive",
+                    "age": 29,
+                    "city": "Edinburg",
+                    "dob": "10/22/1990",
+                    "fname": "Vicente FullSpouse",
+                    "fullname": "Vicente FullSpouse Full Spouse",
+                    "gender": "Female",
+                    "id": "0018A00000WCj71QAD",
+                    "isHipaaAuthorized": false,
+                    "lname": "Full Spouse",
+                    "parent_id": "0018A00000WCj70QAD",
+                    "phone": "8978978978",
+                    "relationship": "Spouse",
+                    "state": "TX",
+                    "zipcode": "78539"
+                }
+            ],
+            "HIPAAAuthorization": {
+                "AuthorizeOtherRatio": null,
+                "Block7": null,
+                "Osh-HIPPA-tablemembers": null,
+                "authorizeNewMember": {
+                    "FirstName": null,
+                    "LastName": null,
+                    "MemberAddressGoogle-Block": {
+                        "MemberAddressGoogle": null,
+                        "memberAddress": null,
+                        "memberBuildingSuiteApartment": null,
+                        "memberCity": null,
+                        "memberCountry": null,
+                        "memberState": null,
+                        "memberZipCode": null
+                    },
+                    "MemberEmail": null,
+                    "Phone": null,
+                    "isHipaaAuthorized": false
+                },
+                "space27x12": null
+            },
+            "MonthlyFee": 0,
+            "PrimarystoredMonthlyContribution": 100,
+            "Quote": {
+                "AccountId": "0018A00000WCj70QAD",
+                "Id": "0Q08A000000JiOLSA0",
+                "Name": "Quote 2020-09-09 19:00:00",
+                "Pricebook2Id": "01s8A000001GlohQAC",
+                "QuoteNumber": "00000464"
+            },
+            "QuoteOptions": "something",
+            "RatingMemberId": "0018A00000WCj71QAD",
+            "RatingMemberName": "Vicente FullSpouse Full Spouse",
+            "Search": {
+                "CancelFormula": "/",
+                "EnterEnrollerID": null,
+                "FormulaEnrollerId": false,
+                "ServicingAgentDropdown": null,
+                "questionsBlock": {
+                    "FormulaQuoteOptionsPresent": "Has Value",
+                    "MessagingNotFoundForSearchQuotes": null,
+                    "RadioForLookingThroughName": false,
+                    "TxtNameForSearch": null,
+                    "packetNumber": "091020-00002",
+                    "preExistencePacketNumber": "Yes"
+                }
+            },
+            "SelectedServicingAgentDropdown": {
+                "Id": "0018A00000TyjGAQAZ",
+                "Monthly_Commission_Fee__c": 45,
+                "Name": "OSH Enrollment",
+                "RecordTypeId": "0124P000000uPa9QAE",
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v49.0/sobjects/Account/0018A00000TyjGAQAZ"
+                }
+            },
+            "ServicingAgent": "Needs Dropdown selection",
+            "ThisisEnroll": true,
+            "Thisisdirect": true,
+            "UserEmail": "vicente.martinez@arcsona.com",
+            "UserType": "OSH Employee",
+            "Welcome": {
+                "City": "Edinburg",
+                "Email": "testingfullvicente@vicente.com",
+                "FormulaState": true,
+                "MessagingStatesoff": true,
+                "TAAddressGoogle-Block": {
+                    "TAAddressGoogle": "123 E Palm Dr, Edinburg, TX 78539, USA",
+                    "address": "123 East Palm Drive",
+                    "buildingSuiteApartment": null,
+                    "city": "Edinburg",
+                    "country": "United States",
+                    "state": "TX",
+                    "zipCode": "78539"
+                },
+                "Telephone": "8978978978",
+                "fname": "Vicente Full",
+                "lname": "Full Test"
+            },
+            "WelcomeFinal": {
+                "WelcomeMemberPortal": {
+                    "WelcomeMemberPortalLink": "https://devvl2-oshtraining.cs45.force.com/membercommunity",
+                    "WelcomeMemberPortalPassword": "E/KGy[mL9-P]T;yU",
+                    "WelcomeMemberPortalUserName": null
+                },
+                "WelcomeMembershipInformation": {
+                    "WelcomeEffectiveDate": null,
+                    "WelcomeGroupCode": null,
+                    "WelcomeMemberID": null,
+                    "WelcomeMemberName": null,
+                    "WelcomeProgramName": null,
+                    "WelcomeRXBinFormula": null,
+                    "WelcomeRXIDFormula": null,
+                    "WelcomeRXPCNFormula": null
+                }
+            },
+            "WritingAgent": "0058A000003wAujQAE",
+            "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+            "dependentRecordType": "0124P000000uS4qQAE",
+            "enrollmentReview": {
+                "BlkHipaa": {
+                    "hipaaAuthorized": null
+                },
+                "BlkMedicalQuestions": {
+                    "ConsumeAlcoholFunctionReview": null,
+                    "ConsumeTobaccoFunctionReview": null,
+                    "ExtremeSportsFunctionReview": null,
+                    "HaveorHadCancerFunctionReview": null,
+                    "MedicalQuestionsReview": null,
+                    "MedicalServiceFunctionReview": null,
+                    "MemberFamilybeenHospitalized6MonthsReview": null,
+                    "PregnantFunctionReview": null,
+                    "PrescriptionMedicationsFunctionReview": null,
+                    "PresentedInaccurateData": null,
+                    "havePrescriptionMedicationsFunctionReview": null,
+                    "playExtremeSportsFunctionReview": null,
+                    "radioConditions24monthFunctionReview": null,
+                    "radioConsumeAlcoholFunctionReview": null,
+                    "radioConsumeTobaccoFunctionReview": null,
+                    "radioHaveorHadCancerFunctionReview": null,
+                    "radioMedicalServiceFunctionReview": null,
+                    "radioMemberFamilybeenHospitalized6MonthsReview": null,
+                    "radioPregnantFunctionReview": null
+                },
+                "BlkMyFamily": {
+                    "FamilyReview": null,
+                    "PrimaryLanguageReview": null
+                },
+                "RequestedEffectiveDateReview": null,
+                "SelectedProgramPriceReview": null,
+                "SelectedProgramReview": null,
+                "paymentSummary": null
+            },
+            "error": "OK",
+            "havePrescriptionMedicationsFunction": null,
+            "id": "0Q08A000000JibySAC",
+            "incomingQuoteId": "0Q08A000000JiOLSA0",
+            "infoPacket": {
+                "AccountId": "0018A00000WCj70QAD",
+                "CreateDateQuote": "09/10/2020",
+                "EffectiveDate": "09/11/2020",
+                "packetFound": true,
+                "packetNumber": "091020-00002"
+            },
+            "insuredItems": {
+            },
+            "isdtp": "p1",
+            "layout": "newport",
+            "myFamily": {
+                "ChildGreaterThan65Error": null,
+                "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+                "FormulaConForDiplayAddInfo180": false,
+                "FormulaConForDiplayAddInfo30": false,
+                "FormulaValidateOldMember": false,
+                "HaveAdultDependentInfoMessage": null,
+                "MSGRatingWillBeBasedOn": null,
+                "MSGRatingWillBeBasedOn30or180": null,
+                "MomentaryPigFormula": 0,
+                "MsgEffDateEnrollValid": false,
+                "NeedselectedaSopuse": null,
+                "NoChildGreater27Error": null,
+                "Primary18AndOlderError": null,
+                "RadioFamily": null,
+                "Space20x12": null,
+                "Space21x12": null,
+                "Space22x7": null,
+                "Space5x12": null,
+                "Space6x12": null,
+                "Spouse65AndOlderError": null,
+                "WhatPrimaryLanguageSpoken": "English",
+                "effDate": "09/11/2020",
+                "effDateEnroll": "2020-09-26",
+                "myFamilyTable": null
+            },
+            "organizationCode": "OS",
+            "personAccountRecordType": "0128A000000ySrJQAU",
+            "planSelection": null,
+            "playExtremeSportsFunction": null,
+            "primaryMemberRecordType": "0124P000000uS4rQAE",
+            "productsAvailability": [
+                {
+                    "Id": "01t8A00000496MbQAI",
+                    "IsActive": true,
+                    "Name": "OneShare Complete - Crown"
+                },
+                {
+                    "Id": "01t8A00000496ldQAA",
+                    "IsActive": true,
+                    "Name": "OneShare Classic - Crown"
+                }
+            ],
+            "quoteDetail": {
+                "%vlocity_namespace%__EffectiveDate__c": "2020-09-11",
+                "%vlocity_namespace%__RootItemTotal__c": 948.14,
+                "%vlocity_namespace%__TotalAmountTermDifference__c": 0,
+                "%vlocity_namespace%__TotalAmount__c": 948.14,
+                "%vlocity_namespace%__TotalFeeAmount__c": 0,
+                "%vlocity_namespace%__TotalFeeTermDifference__c": 0,
+                "%vlocity_namespace%__TotalPremiumTermDifference__c": 0,
+                "%vlocity_namespace%__TotalSumInsured__c": 0,
+                "%vlocity_namespace%__TotalTaxAmount__c": 0,
+                "%vlocity_namespace%__TotalTaxTermDifference__c": 0,
+                "%vlocity_namespace%__Type__c": "New Business",
+                "AccountId": "0018A00000WCj70QAD",
+                "Id": "0Q08A000000JiOLSA0",
+                "Information_Packet_Number__c": "091020-00002",
+                "attributes": {
+                    "type": "Quote",
+                    "url": "/services/data/v49.0/sobjects/Quote/0Q08A000000JiOLSA0"
+                }
+            },
+            "radioConditions24monthFunction": null,
+            "radioConsumeAlcoholFunction": null,
+            "radioConsumeTobaccoFunction": null,
+            "radioFamilyOption": "MyselfMyspouse",
+            "radioHaveorHadCancerFunction": null,
+            "radioHospitalizedFunction": null,
+            "radioMedicalServiceFunction": null,
+            "radioPregnantFunction": null,
+            "servicingAgentGet": {
+                "AccountId": "0018A00000S8osdQAB",
+                "ContractLevel": "16",
+                "Email": "vicente.martinez@arcsona.com",
+                "FirstName": "Vicente",
+                "LastName": "Martinez",
+                "Name": "Vicente Martinez",
+                "ProfileId": "00e4P000001X18aQAC"
+            },
+            "sfdcIFrameHost": "web",
+            "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+            "testDate": "2020-09-30",
+            "timeStamp": "2020-09-10T21:00:29.776Z",
+            "userCurrencyCode": "USD",
+            "userId": "0058A000003wAujQAE",
+            "userName": "vicente.martinez@arcsona.com.devvl2",
+            "userProfile": "System Administrator",
+            "userTimeZone": -300,
+            "vlcPersistentComponent": {
+            }
+        },
+        "label": "SetValues6",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SVEnrollFlag",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/OSH/My Family/English/SVEnrollFlag"
+}

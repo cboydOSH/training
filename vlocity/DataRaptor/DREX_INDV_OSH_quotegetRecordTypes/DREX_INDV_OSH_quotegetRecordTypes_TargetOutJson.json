@@ -1,0 +1,27 @@
+{
+    "dependentRecordType": "Text",
+    "internalLeadRecordType": "Text",
+    "letsGetStarted": {
+        "BlkNoExistingInfoPacket": {
+            "Email1": null,
+            "FormulaEegible": false,
+            "FormulaEegibleMA": false,
+            "SelectReferer": null,
+            "TAAddressGoogle-Block": {
+                "City": null,
+                "Country": null,
+                "State": null,
+                "TAAddressGoogle": null,
+                "address": null,
+                "buildingSuiteApartment": null,
+                "zipCode": null
+            },
+            "Telephone1": null,
+            "fName": null,
+            "lName": null
+        }
+    },
+    "opportunityRecordType": "Text",
+    "primaryMemberRecordType": "Text",
+    "standardAccountRecordType": "Text"
+}

@@ -1,0 +1,45 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "DocusignIntegrationIP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/DocuSign/DocuSign/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "accountId": "1dd076d3-2c76-48c9-81b3-d668b1506e0b",
+            "aud": "account-d.docusign.com",
+            "authToken": "https://account-d.docusign.com/oauth/token",
+            "baseURI": "https://demo.docusign.net/restapi/v2.1",
+            "contentVersionId": "%contentVersionId%",
+            "contractId": "%contractId%",
+            "email": "%recipientEmail%",
+            "isEmbeded": "%isEmbeded%",
+            "iss": "2be92358-1833-49b8-b9b0-f6f5f0c79d57",
+            "name": "%recipientName%",
+            "privateKey": "MIIEogIBAAKCAQEAma5F/PNRrykm5ue2/ZTO9W32XVcXVR8i5waS+1vqGSLcl7W9 UKgAiUwzlYKmnp2tsr65kZGB5XrW3Kgm0ieMU8geAJMFYNRqXg1Nud9mlXDoXxI0 eV1nY/ssYwN1YGNdx+dVxbevPHMtSwmiCC+UKucabFmPBntXyRengOhKfrf1Q4ER 61EdT6YvZFxhc4LjeRsdjbhGpjibVK8U5TXyhY4XIERPpb5kfxPUsXYHlZqYbM18 PuPQlauz7o1uKyIbLUe083C7VHwlcQE0KxBuVMHZfTR0jNl0uIBUUAczPkl8appT yld+C3PfnsXPMiCrBJ1wifGgaWknqN6IVrL9ZwIDAQABAoIBADwrjyyEKfG+V4Rl qfBsIIHYfXK7RB/oUnaIzOiMasJPs3XUytw3Awq+op3BqzIEQ3tuEGLtySGLsG9x iM2UfW1aN2D7L0pjsIfFhq6lSNlu/RQoIRJ5nx72u0DDHGRSU2gO67a/feVZpRyx l1bEJiuME3zjrcuYZF0QHV2r1Wr6SRzsdd1gqVXp9SZK3/YxZRc5WU4O7ZnF8RkO wPO7mDhl05zuS6PDdy+bfov3l+czl+FVdbFUptvN4eN6Bevtq/rSZq70ZeaCnicK MvH4a/u+v+k0KGECoMI8ZuD/nXUeWt2vh9IhW7eAu5Tl0GP1afS5KFr00GJEFPl4 WEIe8/UCgYEAz0tBZxmgmlKg9VCgT4UdVmJOoNg2cLZ+NinVEmmk2M1Y4UM4CTzj dgeLx253qd3rttCkdIoX5k4O9ZCWcOTV7kuog4eO3zOock0envDvttMSUWfyDXD4 tjP0op9tWsWBQ9qQYNaDwAwql68v5bYVYm5bhAXEQl/hL53N00a98e0CgYEAvcou Fxlbj94f0cWiy9al9/RZdY57BRrT16LncDpNkqiWtCW63RGfNLFmcDoguPesp9hR KqMb9QzWI2dUNCcMm+X7n4gs+gtr6MyDv5yimvsw4R8e616sLwXLLi52px/JLIPn MdrJ3JZmiYMdHrK5VHKwZXbNNmDsYM3hGHyRUiMCgYArjsmoa2cm5lPyGEYHT5ZR j4isHaKa3o34vaOLIe3ErKmPc/tzXXsCUyWY+2pjpEEiggb8ggPxnddg3EfwYvVd BELdmH96ATXVBsV3anNEfGet+WSQVHu+dX5jKZLl7vhxlJyf7JN0qFnO074By9gE feH3BOsvc0wzIDqeuY+yJQKBgAEeKbtVGOb2BfX0VgshToTxWX2Jw0u6ZrkEapyM m1xbxdd1yW335pom2VWb4gl02/15FrFLmKSO2MwIlcRg3oAkkKDV6n3mh1ItsjD0 uTh0dks9Ja95NUZpoFK7T1OYqlSqyjfO9BVqhVwV+5vsrY7Dxioy0u6ZD4taaxL7 2NdFAoGAd6qN5lwQZACmThYNyKRCn6XVfiVGuEdapTbuhMBwwdkoT8HZRRdBm5ND gkYAB3APN0M41ngMwMrDOAUwsKCsi/kyaOogz8eEGZHrW7hEn5qGFA0x0e9h+dL7 wuJFEt5FSwCUM/N6aNGF04xi0ZcX5DfnT59ag+OluXVOszgo6Q8=",
+            "role": "Signer",
+            "scope": "signature impersonation",
+            "sendEnvelope": "https://demo.docusign.net/restapi/v2.1/accounts/",
+            "sub": "fe9d6772-d1b2-44ff-bbb2-5f69909d0153",
+            "subject": "DocuSign Signature Document"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "DocusignSetValues",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/DocuSign/DocuSign/Procedure/DocusignSetValues"
+}

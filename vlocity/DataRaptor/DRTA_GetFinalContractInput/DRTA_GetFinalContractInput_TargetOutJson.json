@@ -1,0 +1,13 @@
+{
+    "contractJson": {
+        "AccountId": "12345",
+        "GroupCensusId__c": "2468",
+        "Id": "67890",
+        "effectiveDate": "1/4/2019",
+        "productConfigurationDetail": {
+            "records": [
+            ]
+        },
+        "term": "Annual"
+    }
+}

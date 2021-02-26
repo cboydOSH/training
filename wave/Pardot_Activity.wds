@@ -3,4 +3,5 @@
     <application>Pardot_Embedded_Analytics</application>
     <masterLabel>Pardot Engagement History</masterLabel>
     <templateAssetSourceName>Pardot_Activity_tp</templateAssetSourceName>
+    <type>default</type>
 </WaveDataset>
