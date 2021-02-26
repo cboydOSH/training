@@ -1,0 +1,53 @@
+<template>
+    <div if:true={certified} class="communityProducerQuickActionsContainer">
+        <div class="communityProducerQuickActionsLabel">Quick Actions</div>
+        <a href="new-prospect">
+            <div class="communityProducerQuickAction">
+                <!-- <lightning-helptext style="position:absolute;right:5px;top:0px;" content="IFP"></lightning-helptext> -->
+                <lightning-icon class="communityProducerQuickActionIcon" size="small" icon-name="action:user" alternative-text="User" title="User"></lightning-icon>
+                <div class="communityProducerQuickActionText">New Prospect</div>
+                <lightning-icon class="communityProducerQuickActionArrow"  size="x-small" icon-name="utility:forward" alternative-text="Arrow" title="Arrow"></lightning-icon>
+            </div>
+        </a>
+        <a href="new-application">
+            <div class="communityProducerQuickAction">
+                <lightning-icon class="communityProducerQuickActionIcon" size="small" icon-name="action:user" alternative-text="User" title="User"></lightning-icon>
+                <div class="communityProducerQuickActionText">New Application</div>
+                <lightning-icon class="communityProducerQuickActionArrow"  size="x-small" icon-name="utility:forward" alternative-text="Arrow" title="Arrow"></lightning-icon>
+            </div>
+        </a>
+        <div class="communityProducerQuickAction" style="display:none">
+            <lightning-icon class="communityProducerQuickActionIcon" size="small" icon-name="action:user" alternative-text="User" title="User"></lightning-icon>
+            <div class="communityProducerQuickActionText">New List Bill Application</div>
+            <lightning-icon class="communityProducerQuickActionArrow"  size="x-small" icon-name="utility:forward" alternative-text="Arrow" title="Arrow"></lightning-icon>
+        </div>
+        <div class="communityProducerQuickAction" style="display:none">
+            <lightning-icon class="communityProducerQuickActionIcon" size="small" icon-name="action:user" alternative-text="User" title="User"></lightning-icon>
+            <div class="communityProducerQuickActionText">New Producer</div>
+            <lightning-icon class="communityProducerQuickActionArrow"  size="x-small" icon-name="utility:forward" alternative-text="Arrow" title="Arrow"></lightning-icon>
+        </div>
+    </div>
+    <div if:false={certified} class="communityProducerQuickActionsContainer">
+        <div class="communityProducerQuickActionsLabel">Quick Actions</div>
+        <a href="new-prospect">
+            <div class="communityProducerQuickAction2">
+                <!-- <lightning-helptext style="position:absolute;right:5px;top:0px;" content="IFP"></lightning-helptext> -->
+                <lightning-icon class="communityProducerQuickActionIcon" size="small" icon-name="action:user" alternative-text="User" title="User"></lightning-icon>
+                <div class="communityProducerQuickActionText">New Prospect</div>
+                <lightning-icon class="communityProducerQuickActionArrow"  size="x-small" icon-name="utility:forward" alternative-text="Arrow" title="Arrow"></lightning-icon>
+            </div>
+        </a>
+        <a href="new-application">
+            <div class="communityProducerQuickAction2">
+                <lightning-icon class="communityProducerQuickActionIcon" size="small" icon-name="action:user" alternative-text="User" title="User"></lightning-icon>
+                <div class="communityProducerQuickActionText">New Application</div>
+                <lightning-icon class="communityProducerQuickActionArrow"  size="x-small" icon-name="utility:forward" alternative-text="Arrow" title="Arrow"></lightning-icon>
+            </div>
+        </a>
+        <div class="communityProducerQuickAction2" style="display:none">
+            <lightning-icon class="communityProducerQuickActionIcon" size="small" icon-name="action:user" alternative-text="User" title="User"></lightning-icon>
+            <div class="communityProducerQuickActionText">New Producer</div>
+            <lightning-icon class="communityProducerQuickActionArrow"  size="x-small" icon-name="utility:forward" alternative-text="Arrow" title="Arrow"></lightning-icon>
+        </div>
+    </div>
+</template>

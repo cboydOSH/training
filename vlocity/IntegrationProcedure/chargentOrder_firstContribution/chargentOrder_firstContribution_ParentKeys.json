@@ -1,0 +1,9 @@
+[
+    "DataRaptor/DRUP_UpdateAssetChargentOrders",
+    "DataRaptor/OS_DRUP_Enroll_createChargentOrder_App",
+    "DataRaptor/OS_DRUP_Enroll_createChargentOrder_AppandFee",
+    "DataRaptor/OS_DRUP_Enroll_createChargentOrder_Confirmation",
+    "DataRaptor/OS_DRUP_Enroll_createChargentOrder_Fee",
+    "DataRaptor/OS_DRUP_Enroll_createChargentPaymentOrder",
+    "DataRaptor/OS_DRUP_Enroll_getChargentInfo"
+]

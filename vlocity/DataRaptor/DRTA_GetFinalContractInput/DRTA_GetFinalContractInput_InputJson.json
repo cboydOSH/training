@@ -1,0 +1,1179 @@
+{
+    "Account": {
+        "Name": "Andres Test 1 Deus Test 1"
+    },
+    "AccountPrimary": {
+        "address": "2220 East Rosedale Street",
+        "age": 43,
+        "city": "Fort Worth",
+        "country": "United States",
+        "dob": "1977-05-06",
+        "email": "ew@12.com",
+        "fname": "Andres Test 1",
+        "fullname": "Andres Test 1 Deus Test 1",
+        "gender": "Female",
+        "id": "0018A00000TIaJSQA1",
+        "isHipaaAuthorized": true,
+        "lname": "Deus Test 1",
+        "parent_id": "0018A00000TIaJSQA1",
+        "phone": "2222222222",
+        "relationship": "Primary",
+        "state": "TX",
+        "zipcode": "76105"
+    },
+    "AgentId": "0058A000004QVJdQAO",
+    "ContextId": "0Q08A000000JWIBSA4",
+    "DRId_Account": "0018A00000TIaJSQA1",
+    "EditFamilyMember": [
+        {
+            "$$hashKey": "object:1180",
+            "address": "2220 East Rosedale Street",
+            "age": 43,
+            "city": "Fort Worth",
+            "country": "United States",
+            "dob": "1977-05-06",
+            "email": "ew@12.com",
+            "fname": "Andres Test 1",
+            "fullname": "Andres Test 1 Deus Test 1",
+            "gender": "Female",
+            "id": "0018A00000TIaJSQA1",
+            "isHipaaAuthorized": true,
+            "lname": "Deus Test 1",
+            "parent_id": "0018A00000TIaJSQA1",
+            "phone": "2222222222",
+            "relationship": "Primary",
+            "state": "TX",
+            "zipcode": "76105"
+        }
+    ],
+    "HIPAAAuthorization": {
+        "AuthorizeOtherRatio": null,
+        "Block7": null,
+        "Osh-HIPPA-tablemembers": null,
+        "authorizeNewMember": {
+            "FirstName": null,
+            "LastName": null,
+            "MemberAddressGoogle-Block": {
+                "MemberAddressGoogle": null,
+                "memberAddress": null,
+                "memberBuildingSuiteApartment": null,
+                "memberCity": null,
+                "memberCountry": null,
+                "memberState": null,
+                "memberZipCode": null
+            },
+            "MemberEmail": null,
+            "Phone": null,
+            "isHipaaAuthorized": false
+        },
+        "space27x12": null
+    },
+    "Members": "",
+    "Quote": {
+        "AccountId": "0018A00000TIaJSQA1",
+        "Id": "0Q08A000000JWIBSA4",
+        "Name": "Andres Test 1 Quote 2020-05-13 19:00:00",
+        "Pricebook2Id": "01s8A000001GlohQAC",
+        "QuoteNumber": "00000040",
+        "effDate": "2020-05-15",
+        "effDateEnroll": "2020-05-15"
+    },
+    "ThisisEnroll": true,
+    "Welcome": {
+        "Address": "2220 East Rosedale Street",
+        "City": "Fort Worth",
+        "Email": "ew@12.com",
+        "FormulaState": true,
+        "MessagingStatesoff": true,
+        "State": "TX",
+        "TAAddressGoogle-Block": {
+            "TAAddressGoogle": "2220 E Rosedale St, Fort Worth, TX 76105, USA",
+            "address": "2220 East Rosedale Street",
+            "buildingSuiteApartment": null,
+            "city": "Fort Worth",
+            "country": "United States",
+            "state": "TX",
+            "zipCode": "76105"
+        },
+        "Telephone": "2222222222",
+        "ZipCode": "76105",
+        "fname": "Andres Test 1",
+        "lname": "Deus Test 1"
+    },
+    "attributeFilters": {
+    },
+    "bill": {
+        "CreditCardBlock": null,
+        "EFTPayment": null,
+        "TypeOfPayment": null,
+        "bank": null,
+        "billTable": null,
+        "docuSignCheckbox": false,
+        "formulaAditionalFee": null,
+        "formulaAditionalFeeMonthly": null,
+        "formulaMoreThan6FamilyMemberAdtionalFee": null,
+        "formulaTotalFamilyMember": null,
+        "formulaTotalfee": null
+    },
+    "currentUrl": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com/",
+    "dependentRecordType": "0124P000000uS4qQAE",
+    "enrollPrograms": {
+        "SelectedProgramComprobation": true,
+        "comprobationfield": null,
+        "formulaPriceEnrollPrograms": 438.88,
+        "programsExample3": null,
+        "selectedPlansErrorMSG": null,
+        "selectedPlansErrorMSGNoProgram": null,
+        "selectedPlansFormulaValidateMSGNoProgram": false
+    },
+    "enrollmentReview": {
+        "BlkMedicalQuestions": {
+            "ConsumeAlcoholFunctionReview": null,
+            "ConsumeTobaccoFunctionReview": null,
+            "ExtremeSportsFunctionReview": null,
+            "HaveorHadCancerFunctionReview": null,
+            "MedicalQuestionsReview": null,
+            "MedicalServiceFunctionReview": null,
+            "MemberFamilybeenHospitalized6MonthsReview": null,
+            "PregnantFunctionReview": null,
+            "PrescriptionMedicationsFunctionReview": null,
+            "PresentedInaccurateData": null,
+            "havePrescriptionMedicationsFunctionReview": null,
+            "playExtremeSportsFunctionReview": null,
+            "radioConditions24monthFunctionReview": null,
+            "radioConsumeAlcoholFunctionReview": null,
+            "radioConsumeTobaccoFunctionReview": null,
+            "radioHaveorHadCancerFunctionReview": null,
+            "radioMedicalServiceFunctionReview": null,
+            "radioMemberFamilybeenHospitalized6MonthsReview": null,
+            "radioPregnantFunctionReview": null
+        },
+        "BlkMyFamily": {
+            "FamilyReview": null,
+            "PrimaryLanguageReview": null
+        },
+        "QuoteNumberReview": null,
+        "RequestedEffectiveDateReview": null,
+        "SelectedProgramCodeReview": null,
+        "SelectedProgramPriceReview": null,
+        "SelectedProgramReview": null
+    },
+    "error": "OK",
+    "finalList": "",
+    "id": "a628A0000000yeKQAQ",
+    "insuredItems": {
+    },
+    "isdtp": "p1",
+    "layout": "newport",
+    "medicalQuestions": {
+        "CountFinalFemaleOnEditFamilyMember": true,
+        "FOCondition24month": true,
+        "SIFollowingCondition24month": null
+    },
+    "myFamily": {
+        "Check60daysandTodayPast": null,
+        "ChildGreaterThan65Error": null,
+        "DisabledChildGreaterThan27AndLess65ErrorMessage": null,
+        "FormulaValidateOldMember": false,
+        "HaveAdultDependentInfoMessage": null,
+        "MSGRatingWillBeBasedOn": null,
+        "MomentaryPigFormula": 0,
+        "MsgEffDateEnrollValid": true,
+        "NeedselectedaSopuse": null,
+        "NoChildGreater27Error": null,
+        "Primary18AndOlderError": null,
+        "RadioFamily": null,
+        "Space20x12": null,
+        "Space21x12": null,
+        "Space22x7": null,
+        "Space5x12": null,
+        "Space6x12": null,
+        "Spouse65AndOlderError": null,
+        "WhatPrimaryLanguageSpoken": "Spanish",
+        "effDate": "2020-05-15",
+        "effDateEnroll": "2020-05-28",
+        "effectiveDateforQuote": "--",
+        "myFamilyTable": null
+    },
+    "personAccountRecordType": "0128A000000ySrJQAU",
+    "planSelection": {
+        "selectedPlans": [
+            {
+                "%vlocity_namespace%__AttributeSelectedValues__c": "{\"PROCODE\":\"OSHCOMPCROWN\",\"ISAAMT\":\"10000\",\"ENDLIFESHARE\":\"Primary Member $10,000, Spouse $6,000, Dependent $2,000 - Must be enrolled in program for 12 continuous months | Certified death certificate required\",\"LIFESHAREMAX\":\"$1,000,000\",\"MAXLIMITINC\":\"N/A\",\"HOSTP\":\"80% after ISA\",\"INOUTSURG\":\"80% after ISA\",\"MATERNITY\":\"Eligible - Conception must be after Effective Date\",\"EMERGROOM\":\"$150 Visit Fee\",\"PRESDISPROG\":\"EnvisionRX\",\"TELEMED\":\"Doctor Access 24/7  ($0 Consult Fee)\",\"SPEC\":\"$75 Visit Fee - $0 Visit Fee After ISA\",\"DIAGXLAB\":\"80% after ISA\",\"URGCAREFAC\":\"$75 Visit Fee\",\"PRICAREPHY\":\"$20 Visit Fee\",\"PREVSVCS\":\"100%\"}",
+                "%vlocity_namespace%__ItemName__c": "OneShare Complete - Crown",
+                "%vlocity_namespace%__NeedReprice__c": false,
+                "%vlocity_namespace%__ProductChildItemSequence__c": 0,
+                "%vlocity_namespace%__ProductName__c": "OneShare Complete - Crown",
+                "%vlocity_namespace%__RecordTypeName__c": "Product",
+                "%vlocity_namespace%__TotalAmount__c": 438.88,
+                "CreatedDate": "2020-05-14T20:39:17.000+0000",
+                "Id": "0QL8A000000z6fsWAA",
+                "LastModifiedDate": "2020-05-14T20:39:17.000+0000",
+                "LineNumber": "00000817",
+                "Name": "OneShare Complete - Crown",
+                "Price": 438.88,
+                "Product2Id": "01t8A00000496MbQAI",
+                "ProductCode": "OSHCOMPCROWN",
+                "QuoteId": "0Q08A000000JWIBSA4",
+                "TotalPrice": 438.88,
+                "UnitPrice": 438.88,
+                "attributeCategories": {
+                    "records": [
+                        {
+                            "Code__c": "PROGCARDATT",
+                            "Name": "Program Card Attributes",
+                            "displaySequence": 1,
+                            "id": "a0y8A000001oo85QAA",
+                            "productAttributes": {
+                                "records": [
+                                    {
+                                        "attributeId": "a0z8A00000105ZWQAY",
+                                        "cloneable": true,
+                                        "code": "PREVSVCS",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 0,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Preventive Services",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "100%",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZOQAY",
+                                        "cloneable": true,
+                                        "code": "PRICAREPHY",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 1,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Primary Care Physician",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$20 Visit Fee",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZPQAY",
+                                        "cloneable": true,
+                                        "code": "URGCAREFAC",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 2,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Urgent Care Facility",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$75 Visit Fee",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZQQAY",
+                                        "cloneable": true,
+                                        "code": "DIAGXLAB",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 3,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Diagnostic / X-Ray / Labs",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "80% after ISA",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZRQAY",
+                                        "cloneable": true,
+                                        "code": "SPEC",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 4,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Specialists",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$75 Visit Fee - $0 Visit Fee After ISA",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZNQAY",
+                                        "cloneable": true,
+                                        "code": "TELEMED",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 5,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Telemedicine",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Doctor Access 24/7  ($0 Consult Fee)",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZIQAY",
+                                        "cloneable": true,
+                                        "code": "PRESDISPROG",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 6,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Prescription Discount Program",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "EnvisionRX",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZSQAY",
+                                        "cloneable": true,
+                                        "code": "EMERGROOM",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 7,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Emergency Room",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$150 Visit Fee",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZKQAY",
+                                        "cloneable": true,
+                                        "code": "MATERNITY",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 8,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Maternity",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Eligible - Conception must be after Effective Date",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZVQAY",
+                                        "cloneable": true,
+                                        "code": "INOUTSURG",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 9,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "In/Outpatient Surgery",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "80% after ISA",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZJQAY",
+                                        "cloneable": true,
+                                        "code": "HOSTP",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 10,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Hospitalization",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "80% after ISA",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZMQAY",
+                                        "cloneable": true,
+                                        "code": "MAXLIMITINC",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 11,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Maximum Limit Per Incident",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "N/A",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZHQAY",
+                                        "cloneable": true,
+                                        "code": "LIFESHAREMAX",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 12,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Lifetime Sharing Maximum",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "$1,000,000",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZLQAY",
+                                        "cloneable": true,
+                                        "code": "ENDLIFESHARE",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 13,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "End of Life Sharing",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "Primary Member $10,000, Spouse $6,000, Dependent $2,000 - Must be enrolled in program for 12 continuous months | Certified death certificate required",
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "readonly": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZUQAY",
+                                        "cloneable": true,
+                                        "code": "ISAAMT",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 14,
+                                        "filterable": true,
+                                        "hasRules": true,
+                                        "hidden": false,
+                                        "inputType": "dropdown",
+                                        "isNotTranslatable": false,
+                                        "label": "ISA Amount",
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "10000",
+                                        "values": [
+                                            {
+                                                "$$hashKey": "object:1439",
+                                                "disabled": false,
+                                                "id": "0",
+                                                "label": "$1,000",
+                                                "readonly": false,
+                                                "rules": [
+                                                    {
+                                                        "actions": {
+                                                            "Hide": {
+                                                                "client": {
+                                                                    "params": {
+                                                                    }
+                                                                },
+                                                                "remote": {
+                                                                    "params": {
+                                                                    }
+                                                                },
+                                                                "rest": {
+                                                                    "link": null,
+                                                                    "method": null,
+                                                                    "params": {
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "expression": "IF(%MEMBER.STATE% == \"MA\" || %MEMBER.STATE% == \"WA\" ,true ,false)",
+                                                        "ruleType": "Hide"
+                                                    }
+                                                ],
+                                                "value": "1000"
+                                            },
+                                            {
+                                                "$$hashKey": "object:1440",
+                                                "disabled": false,
+                                                "id": "1",
+                                                "label": "$2,500",
+                                                "readonly": false,
+                                                "rules": [
+                                                    {
+                                                        "actions": {
+                                                            "Hide": {
+                                                                "client": {
+                                                                    "params": {
+                                                                    }
+                                                                },
+                                                                "remote": {
+                                                                    "params": {
+                                                                    }
+                                                                },
+                                                                "rest": {
+                                                                    "link": null,
+                                                                    "method": null,
+                                                                    "params": {
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "expression": "IF(%MEMBER.STATE% == \"MA\" || %MEMBER.STATE% == \"WA\" ,true ,false)",
+                                                        "ruleType": "Hide"
+                                                    }
+                                                ],
+                                                "value": "2500"
+                                            },
+                                            {
+                                                "$$hashKey": "object:1441",
+                                                "disabled": false,
+                                                "id": "2",
+                                                "label": "$5,000",
+                                                "readonly": false,
+                                                "value": "5000"
+                                            },
+                                            {
+                                                "$$hashKey": "object:1442",
+                                                "disabled": false,
+                                                "id": "3",
+                                                "label": "$10,000",
+                                                "readonly": false,
+                                                "value": "10000"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributeId": "a0z8A00000105ZXQAY",
+                                        "cloneable": true,
+                                        "code": "PROCODE",
+                                        "dataType": "text",
+                                        "disabled": true,
+                                        "displaySequence": 15,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": true,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Program Code",
+                                        "multiselect": false,
+                                        "readonly": true,
+                                        "required": false,
+                                        "userValues": "OSHCOMPCROWN",
+                                        "values": [
+                                            {
+                                                "disabled": true,
+                                                "readonly": true
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "totalSize": 16
+                            }
+                        }
+                    ],
+                    "totalSize": 1
+                },
+                "childProducts": {
+                    "actions": {
+                        "getCandidateChildProducts": {
+                            "client": {
+                                "params": {
+                                }
+                            },
+                            "remote": {
+                                "params": {
+                                    "methodName": "getListChildProducts",
+                                    "prodRecordType": "CoverageSpec",
+                                    "quoteId": "0Q08A000000JWIBSA4"
+                                }
+                            },
+                            "rest": {
+                                "link": null,
+                                "method": null,
+                                "params": {
+                                }
+                            }
+                        },
+                        "updateAllCoverageAttribute": {
+                            "client": {
+                                "params": {
+                                }
+                            },
+                            "remote": {
+                                "params": {
+                                    "methodName": "updateAllChildLines",
+                                    "quoteId": "0Q08A000000JWIBSA4",
+                                    "reprice": true
+                                }
+                            },
+                            "rest": {
+                                "link": null,
+                                "method": null,
+                                "params": {
+                                }
+                            }
+                        }
+                    },
+                    "records": [
+                        {
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"ENDLIFESHARE\":\"Primary Member $10,000, Spouse $6,000, Dependent $2,000 - Must be enrolled in program for 12 continuous months | Certified death certificate required\",\"LIFESHAREMAX\":\"$1,000,000\",\"MAXLIMITINC\":\"N/A\",\"HOSTP\":\"80% after ISA\",\"INOUTSURG\":\"80% after ISA - 90 day wait\",\"MATERNITY\":\"Eligible - Conception must be after Effective Date\",\"EMERGROOM\":\"$150 Visit Fee\",\"PRESDISPROG\":\"EnvisionRX (Varies by State)\",\"TELEMED\":\"Doctor Access 24/7  ($0 Consult Fee)\",\"SPEC\":\"$75 Visit Fee\",\"DIAGXLAB\":\"80% after ISA\",\"URGCAREFAC\":\"$75 Visit Fee\",\"PRICAREPHY\":\"$20 Visit Fee\",\"PREVSVCS\":\"100%\"}",
+                            "%vlocity_namespace%__NeedReprice__c": false,
+                            "%vlocity_namespace%__ParentItemId2__c": "0QL8A000000z6fsWAA",
+                            "%vlocity_namespace%__ParentItemId__c": "0QL8A000000z6fsWAA",
+                            "%vlocity_namespace%__ProductChildItemSequence__c": 0,
+                            "%vlocity_namespace%__ProductName__c": "In Network",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "%vlocity_namespace%__SubParentItemId__c": "0QL8A000000z6fsWAA",
+                            "%vlocity_namespace%__TotalAmount__c": 0,
+                            "CreatedDate": "2020-05-14T20:39:18.000+0000",
+                            "Id": "0QL8A000000z6ftWAA",
+                            "LastModifiedDate": "2020-05-17T21:32:34.000+0000",
+                            "LineNumber": "00000818",
+                            "Name": "In Network",
+                            "Price": 0,
+                            "Product2Id": "01t8A00000496L9QAI",
+                            "ProductCode": "INNET",
+                            "QuoteId": "0Q08A000000JWIBSA4",
+                            "TotalPrice": 0,
+                            "UnitPrice": 0,
+                            "actions": {
+                                "updateChildLine": {
+                                    "client": {
+                                        "params": {
+                                        }
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "methodName": "updateChildLine",
+                                            "quoteId": "0Q08A000000JWIBSA4",
+                                            "quoteLineId": "0QL8A000000z6ftWAA",
+                                            "reprice": true
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": null,
+                                        "method": null,
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "PROGCARDATT",
+                                        "Name": "Program Card Attributes",
+                                        "displaySequence": 1,
+                                        "id": "a0y8A000001oo85QAA",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "attributeId": "a0z8A0000010r93QAA",
+                                                    "cloneable": true,
+                                                    "code": "PROVNET",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 0,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Provider Network",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZNQAY",
+                                                    "cloneable": true,
+                                                    "code": "TELEMED",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Telemedicine",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Doctor Access 24/7  ($0 Consult Fee)",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZWQAY",
+                                                    "cloneable": true,
+                                                    "code": "PREVSVCS",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Preventive Services and 1 Wellness Visit",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "100%",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZOQAY",
+                                                    "cloneable": true,
+                                                    "code": "PRICAREPHY",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 3,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Primary Care Physician",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$20 Visit Fee",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZPQAY",
+                                                    "cloneable": true,
+                                                    "code": "URGCAREFAC",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 4,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Urgent Care Facility",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$75 Visit Fee",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZQQAY",
+                                                    "cloneable": true,
+                                                    "code": "DIAGXLAB",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 5,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Diagnostic / X-Ray / Labs",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "80% after ISA",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZIQAY",
+                                                    "cloneable": true,
+                                                    "code": "PRESDISPROG",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 6,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Prescription Discount Program",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "EnvisionRX (Varies by State)",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZSQAY",
+                                                    "cloneable": true,
+                                                    "code": "EMERGROOM",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 7,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Emergency Room",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$150 Visit Fee",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZKQAY",
+                                                    "cloneable": true,
+                                                    "code": "MATERNITY",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 8,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Maternity",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Eligible - Conception must be after Effective Date",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZVQAY",
+                                                    "cloneable": true,
+                                                    "code": "INOUTSURG",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 9,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "In/Outpatient Surgery",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "80% after ISA - 90 day wait",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZJQAY",
+                                                    "cloneable": true,
+                                                    "code": "HOSTP",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 10,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Hospitalization",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "80% after ISA",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZRQAY",
+                                                    "cloneable": true,
+                                                    "code": "SPEC",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 11,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Specialists",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$75 Visit Fee",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a0z8A00000105ZHQAY",
+                                                    "cloneable": true,
+                                                    "code": "LIFESHAREMAX",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 12,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "text",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Lifetime Sharing Maximum",
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "$1,000,000",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 13
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "currencyCode": "USD",
+                            "currencySymbol": "$",
+                            "displaySequence": 0,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lineRecordType": "CoverageSpec",
+                            "needReprice": false,
+                            "pciId": "a6y8A000000EoypQAC",
+                            "productId": "01t8A00000496L9QAI",
+                            "productName": "In Network",
+                            "quoteLineItemId": "0QL8A000000z6ftWAA"
+                        }
+                    ],
+                    "totalSize": 1
+                },
+                "coverageCount": 1,
+                "currencyCode": "USD",
+                "currencySymbol": "$",
+                "displaySequence": 0,
+                "hasAttributes": true,
+                "lineRecordType": "Product",
+                "needReprice": false,
+                "originalIndex": 0,
+                "productId": "01t8A00000496MbQAI",
+                "productName": "OneShare Complete - Crown",
+                "quoteLineItemId": "0QL8A000000z6fsWAA",
+                "recordType": "Product",
+                "selected": true
+            }
+        ]
+    },
+    "primaryMemberRecordType": "0124P000000uS4rQAE",
+    "productConfigurationDetail": {
+        "records": [
+        ],
+        "totalSize": 1
+    },
+    "quoteDetail": {
+        "%vlocity_namespace%__EffectiveDate__c": "2020-05-15",
+        "%vlocity_namespace%__RootItemTotal__c": 438.88,
+        "%vlocity_namespace%__TotalAmount__c": 438.88,
+        "%vlocity_namespace%__TotalFeeAmount__c": 0,
+        "%vlocity_namespace%__TotalSumInsured__c": 0,
+        "%vlocity_namespace%__TotalTaxAmount__c": 0,
+        "AccountId": "0018A00000TIaJSQA1",
+        "Id": "0Q08A000000JWIBSA4",
+        "attributes": {
+            "type": "Quote",
+            "url": "/services/data/v48.0/sobjects/Quote/0Q08A000000JWIBSA4"
+        }
+    },
+    "radioFamilyOption": "MySelf",
+    "selectedPlansFormulaValidateMSG": false,
+    "servicingAgent": {
+        "Email": "andres.deus@arcsona.com",
+        "FirstName": "Andres",
+        "LastName": "Deus",
+        "Name": "Andres Deus"
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://onesharehealth--devvl2--vlocity-ins.visualforce.com",
+    "testContextId": "0Q08A000000JWIBSA4",
+    "timeStamp": "2020-05-22T17:23:46.429Z",
+    "userCurrencyCode": "USD",
+    "userId": "0058A000003w9pZQAQ",
+    "userName": "mauricio@attentisconsulting.com.devvlocity2",
+    "userProfile": "System Administrator",
+    "userTimeZone": -300,
+    "vlcPersistentComponent": {
+    }
+}

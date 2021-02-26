@@ -1,0 +1,9 @@
+Hello {!ChargentOrders__Transaction__c.ChargentOrders__Billing_First__c} {!ChargentOrders__Transaction__c.ChargentOrders__Billing_Last__c}
+
+Your recurring subscription payment of {!ChargentOrders__Transaction__c.ChargentOrders__Amount__c} returned a response of "{!ChargentOrders__Transaction__c.ChargentOrders__Response_Status__c}" by your bank on {!ChargentOrders__Transaction__c.CreatedDate}. The card we have on file ends in {!ChargentOrders__Transaction__c.ChargentOrders__Card_Last_4__c}. 
+
+Please contact us to update your billing information and prevent suspension of service.
+
+{!Organization.Name}
+{!Organization.Address}
+{!Organization.Phone}

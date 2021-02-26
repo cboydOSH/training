@@ -1,0 +1,17 @@
+//nds class Datepicker
+#billinformation .nds-input{
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    transition: border .1s linear, background-color .1s linear;
+    box-shadow: none;
+    display: inline-block;
+    padding: 0;
+    line-height: 1.875rem;
+    min-height: calc(1.875rem + (1px * 2));
+}
+.nds-descriptionBI{
+    line-height: 1rem !important;
+    word-break: normal !important;
+}

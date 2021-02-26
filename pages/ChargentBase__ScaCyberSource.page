@@ -1,0 +1,138 @@
+<apex:page showHeader="false" applyBodyTag="false">
+    <script>
+        window.onload = function() {
+            sendNotification ( 'GETENVIRONMENT', '' );
+        };
+        var targetOrigin = window.location.origin;
+        //Event listener for the notification from the parent LightningWebComponent
+        window.addEventListener("message", receiveMessage);
+
+        function receiveMessage(event) {
+            if (event.origin === targetOrigin) {
+                processNotification(event.data);
+            }else {
+                console.log('On Visualforce - Origin didn\'t match. Origin ' + event.origin + '. Location ' + window.location.origin);
+            }
+        }
+
+        function processNotification(message){
+            switch(message.actionName){
+                case "SENDJWT":
+                    window.removeEventListener("message", receiveMessage);
+                    cardinalSetup(message.actionData.generatedJwt, message.actionData.cardBinNumber);
+                    break;
+                case "CARDINALCONTINUE":
+                    window.removeEventListener("message", receiveMessage);
+                    cardinalContinue(message.actionData.enrollReplyAcsURL, message.actionData.referenceID, message.actionData.payload);
+                    break;
+                case "LOADJAVASCRIPT":
+                    loadScript (message.actionData.isSandbox);
+                    break;
+                default:
+				    console.log('On Visualforce ProcessNotification - Unrecognized Event ', message);
+            }
+        }
+
+        function loadScript(isTest) {
+            var firstScript = document.getElementsByTagName('script')[0],
+            js = document.createElement('script');
+            if (isTest){
+                js.src = 'https://songbirdstag.cardinalcommerce.com/edge/v1/songbird.js';
+            }else{
+                js.src = 'https://songbird.cardinalcommerce.com/edge/v1/songbird.js';
+            }
+            js.async = true;
+            js.onload = function () {
+                if (!Cardinal) {
+                    console.log('Error');
+                    permanent_error('Cruise Songbird library could not be loaded');
+                }else{
+                    cardinalConfigure();
+                    console.log('Cardinal JavaScript Loaded');
+                }
+            };
+            firstScript.parentNode.insertBefore(js, firstScript);
+        }
+        
+        function sendNotification ( actionName, actionResponse ) {
+            let messageData;
+            switch(actionName){
+                case "JWTRESPONSE":
+                    messageData = {
+                        actionName: actionName,
+                        actionData: {
+                            ReferenceId: actionResponse.sessionId
+                        }
+                    };
+                    break;
+                case "CARDINALCONTINUERESPONSE":
+                    messageData = {
+                        actionName: actionName,
+                        actionData: actionResponse
+                    };
+                    window.addEventListener("message", receiveMessage);
+                    break;
+                case "GETENVIRONMENT":
+                    messageData = {
+                        actionName: actionName
+                    };
+                    break;                    
+                default:
+				    console.log('On Visualforce sendNotification - Unrecognized event ', message);
+            }
+            parent.postMessage(messageData, targetOrigin);
+        }
+
+        function cardinalConfigure(){
+            Cardinal.configure({
+                logging: {
+                    debug: 'on',
+                    level: 'verbose'
+                }
+            });
+            Cardinal.on('payments.setupComplete', function(setupCompleteData){
+                sendNotification ( 'JWTRESPONSE', setupCompleteData );
+                window.addEventListener("message", receiveMessage);
+            });
+            Cardinal.on("payments.validated", function (data, jwt) {
+                var validatedEvent = {
+                    actionCode: data.ActionCode,
+                    data: data,
+                    dataString: JSON.stringify(data),
+                    jwt: jwt
+                }
+                sendNotification ( 'CARDINALCONTINUERESPONSE', validatedEvent);
+            });
+        }
+
+        function cardinalSetup (jwt, cardBinNumber){
+            var orderObject = {
+                Consumer: {
+                    Account: {
+                        AccountNumber: cardBinNumber
+                    }
+                }
+            };
+            //https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/311984510/BIN+Detection SEE EXAMPLE 3
+            Cardinal.setup("init", {
+                jwt: jwt,
+                order: orderObject
+            });
+        }
+        
+        function cardinalContinue ( enrollReplyAcsURL, transactionId, payload ) {
+            Cardinal.continue(
+                "cca",
+                {
+                    "AcsUrl": enrollReplyAcsURL,
+                    "Payload" : payload
+                }, 
+                {
+                    "OrderDetails":{
+                        "TransactionId" : transactionId
+                    }
+                }
+            );
+        }
+    </script>
+</apex:page>

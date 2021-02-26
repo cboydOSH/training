@@ -1,0 +1,48 @@
+<template>
+    <div class="communityProducerCardsContainer">
+        <div class="communityProducerCard">
+            <div class="communityProducerCardIconContainer">
+                <lightning-icon class="communityProducerCardIcon" size="small" icon-name="utility:multi_picklist" alternative-text="Applications" title="Applications"></lightning-icon>
+            </div>
+            <div class="communityProducerCardInfo">
+                <div class="communityProducerCardNumber">{prospects}</div>
+                <div class="communityProducerCardDescription">My Prospects</div>
+                <a class="communityProducerCardLink" href="prospects">View Prospects ></a>
+            </div>
+            <div class="communityProducerCardLine"></div>
+        </div>
+        <div class="communityProducerCard">
+            <div class="communityProducerCardIconContainer">
+                <lightning-icon class="communityProducerCardIcon" size="small" icon-name="utility:multi_picklist" alternative-text="Applications" title="Applications"></lightning-icon>
+            </div>
+            <div class="communityProducerCardInfo">
+                <div class="communityProducerCardNumber">{applications}</div>
+                <div class="communityProducerCardDescription">Applications in Progress</div>
+                <a class="communityProducerCardLink" href="applications-in-progress">View Applications ></a>
+            </div>
+            <div class="communityProducerCardLine"></div>
+        </div>
+        <div class="communityProducerCard">
+            <div class="communityProducerCardIconContainer">
+                <lightning-icon class="communityProducerCardIcon" size="small" icon-name="utility:multi_picklist" alternative-text="Applications" title="Applications"></lightning-icon>
+            </div>
+            <div class="communityProducerCardInfo">
+                <div class="communityProducerCardNumber">{cases}</div>
+                <div class="communityProducerCardDescription">Open Cases</div>
+                <a class="communityProducerCardLink" href={URL}>View Cases ></a>
+            </div>
+            <div class="communityProducerCardLine"></div>
+        </div>
+        <div class="communityProducerCard">
+            <div class="communityProducerCardIconContainer">
+                <lightning-icon class="communityProducerCardIcon" size="small" icon-name="utility:multi_picklist" alternative-text="Applications" title="Applications"></lightning-icon>
+            </div>
+            <div class="communityProducerCardInfo" style="margin-top: 30px;">
+                <div class="communityProducerCardDescription">FirstHealth Provider Search</div>
+                <a class="communityProducerCardLink" target="_blank" href="http://providerlocator.firsthealth.com/oneshare">Find my Provider ></a>
+            </div>
+            <div class="communityProducerCardLine"></div>
+        </div>
+    </div>
+    <!-- <lightning-icon class="communityProducerNotificationIcon"  size="x-small" icon-name="utility:notification" alternative-text="Notifications" title="Notifications"></lightning-icon> -->
+</template>

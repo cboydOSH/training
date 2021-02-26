@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>ChargentOrders__Account__c</name>
+        <relationshipLabel><!-- Chargent Automated Collections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Chargent Order --></label>
+        <name>ChargentOrders__Chargent_Order__c</name>
+        <relationshipLabel><!-- Chargent Automated Collections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Emailed --></label>
+        <name>ChargentOrders__Contact_Emailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Auto-Delete Date --></label>
+        <name>ChargentOrders__Delete_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Received --></label>
+        <name>ChargentOrders__Payment_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Stage Activated --></label>
+        <name>ChargentOrders__Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>ChargentOrders__Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

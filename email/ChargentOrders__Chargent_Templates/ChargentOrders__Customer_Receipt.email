@@ -1,0 +1,35 @@
+Thank you for your order! 
+
+Order Information 
+Merchant: {!Organization.Name} 
+Description: {!ChargentOrders__ChargentOrder__c.ChargentOrders__Order_Information__c} 
+Invoice Number: {!ChargentOrders__ChargentOrder__c.ChargentOrders__Invoice_Number__c} 
+Total: {!ChargentOrders__Transaction__c.ChargentOrders__Amount__c} 
+Card Type: {!CASE(ChargentOrders__Transaction__c.ChargentOrders__Payment_Method__c, 
+"Check", "Check", 
+"Credit Card", CASE(ChargentOrders__Transaction__c.ChargentOrders__Credit_Card_Type__c, 
+"Visa", "Visa", 
+"Mastercard", "Mastercard", 
+"Discover", "Discover", 
+"American Express", "American Express", 
+"AMEX", "American Express", 
+"MC Eurocard", "MC Eurocard", 
+"UK Maestro", "UK Maestro", 
+"JCB Card", "JCB Card", 
+"Solo", "Solo", 
+"Electron", "Electron", 
+""), 
+"")} 
+Date/Time: {!ChargentOrders__Transaction__c.ChargentOrders__Gateway_Date__c} 
+Transaction ID: {!ChargentOrders__Transaction__c.Id}
+
+__________________________________________
+Billing Information 
+Name: {! IF(ChargentOrders__Transaction__c.ChargentOrders__Credit_Card_Name__c != NULL, ChargentOrders__Transaction__c.ChargentOrders__Credit_Card_Name__c, ChargentOrders__Transaction__c.ChargentOrders__Billing_First__c + ' ' + ChargentOrders__Transaction__c.ChargentOrders__Billing_Last__c)} 
+Company: {!ChargentOrders__Transaction__c.ChargentOrders__Billing_Company__c} 
+Email: {!ChargentOrders__Transaction__c.ChargentOrders__Billing_Email__c} 
+Billing Address:
+{!ChargentOrders__Transaction__c.ChargentOrders__Billing_Address__c} 
+{!ChargentOrders__Transaction__c.ChargentOrders__Billing_Address_Line_2__c}
+{!ChargentOrders__Transaction__c.ChargentOrders__Billing_City__c}, {!ChargentOrders__Transaction__c.ChargentOrders__Billing_State__c} 
+{!ChargentOrders__Transaction__c.ChargentOrders__Billing_Postal_Code__c}

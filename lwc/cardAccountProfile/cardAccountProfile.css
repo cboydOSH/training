@@ -1,0 +1,37 @@
+.banner {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background-color: #009EDB !important;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 1%;
+}
+
+.icon{
+    background-color: #009EDB;
+}
+.mainContainer {
+    background-color: white;
+}
+
+.accTitle {
+    margin-left: 6px;
+}
+
+.actionIcons {
+    padding-left: 55px;
+}
+
+.emailIcon {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.infoColumns{
+    padding-left: 3%;
+}
+
+.tableStyle {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

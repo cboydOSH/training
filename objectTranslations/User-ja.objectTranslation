@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- API_URL --></label>
+        <name>copado__API_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The visibility of the message asking users to rate &amp; feedback Copado on the AppExchange is controlled here. --></help>
+        <label><!-- Hide Copado feedback --></label>
+        <name>copado__Hide_Copado_feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Copado Tips --></label>
+        <name>copado__Show_Copado_Tips__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Manager Panels --></label>
+        <name>copado__Work_Manager_Panels__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- inContact Custom Screenpop --></label>
+        <name>icAgentConsole__incCustomScreenpop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can View Not Assigned Prospects --></label>
+        <name>pi__Can_View_Not_Assigned_Prospects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Key --></label>
+        <name>pi__Pardot_Api_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Version --></label>
+        <name>pi__Pardot_Api_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Id --></label>
+        <name>pi__Pardot_User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Key --></label>
+        <name>pi__Pardot_User_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Role --></label>
+        <name>pi__Pardot_User_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Email --></label>
+        <name>vlocity_ins__DocuSignEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked a user will be marked for export to OMplus platform. User will be enabled in OMplus once catalog synchronisation job is complete in Vlocity XOM Administration tab. --></help>
+        <label><!-- OMplus Enabled --></label>
+        <name>vlocity_ins__OMplusSyncEnabled__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Manager field has to be filled before creating users --></errorMessage>
+        <name>Manager_field_req_during_user_creation</name>
+    </validationRules>
+</CustomObjectTranslation>

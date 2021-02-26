@@ -1,0 +1,345 @@
+{
+    "Account_1": [
+        {
+            "%vlocity_namespace%__Gender__pc": "Male",
+            "Agent_Label__pc": "0018A00000Twm6dQAB",
+            "BillingCity": "Hebron",
+            "BillingCountry": "Estados Unidos",
+            "BillingPostalCode": "41048",
+            "BillingState": "KY",
+            "BillingStreet": "2305 Litton Lane",
+            "Building_Suite_Apartment__c": "134",
+            "Currently_see_a_Specialist__c": "Yes",
+            "Expecting_family_grow__c": "Yes",
+            "FirstName": "test",
+            "Google_Address__c": "2305 Litton Ln, Hebron, KY 41048, USA",
+            "How_often_See_your_PCP__c": "0-1",
+            "Id": "0018A00000UJ2PkQAL",
+            "Is_Hippa_Authorized__c": true,
+            "LastName": "testeste",
+            "PersonBirthdate": "1990-06-20",
+            "PersonEmail": "brunnoben@MAIL.COM",
+            "Phone": "1234123412",
+            "Primary_Language_Spoken__c": "English",
+            "Relationship__pc": "Primary",
+            "UpsertSuccess": true,
+            "Writing_agent__c": "0058A000003wB21QAE"
+        }
+    ],
+    "ActualTime": 9809,
+    "CpuTime": 3432,
+    "Lead_3": [
+        {
+            "Id": "00Q8A0000040uPEUAY",
+            "Parent_Account__c": "0018A00000UJ2PkQAL",
+            "Primary_Language_Spoken__c": "English",
+            "UpsertSuccess": true
+        }
+    ],
+    "Opportunity_2": [
+        {
+            "AccountId": "0018A00000UJ2PkQAL",
+            "CloseDate": "2020-06-18",
+            "Id": "0068A0000089czTQAQ",
+            "Monthly_Contribution__c": 45,
+            "Name": "test testeste 2020-06-17 19:00:00",
+            "StageName": "Prospecting",
+            "UpsertSuccess": true
+        }
+    ],
+    "ProgramQuoteJson": {
+        "CalculatedPriceData": {
+            "Family": 725.4,
+            "ID": "6",
+            "Member": 457.9,
+            "MemberPlusOne": 570.53
+        },
+        "IsConfigurable__c": true,
+        "IsRecommended__c": false,
+        "Name": "OneShare Classic - Crown",
+        "Price": 457.9,
+        "ProductCode": "OSHCLASSCROWN",
+        "accountId": "0018A00000UJ2PkQAL",
+        "additionalFields": {
+            "Name": "  Quote 2020-06-17 19:00:00",
+            "Status": "Draft"
+        },
+        "bestMatch": true,
+        "coverages": {
+            "CANCER": {
+                "Id": "01t8A000004CGe5QAG",
+                "Price": null,
+                "ProductCode": "CANCER",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000EpAvQAK",
+                "productId": "01t8A000004CGe5QAG",
+                "productName": "Cancer",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "CANCERLIMITDIAGWUTHN5YEAR": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing",
+                    "CANCERLIMITMEMMORE5YEAR": "If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.",
+                    "CANCERMEMBNEVERDIAGRECTREAT": "Sharing is eligible after a 90 day waiting period from the Member's effective date. If Cancer is diagnosed within the 90 day waiting period, the diagnosis/treatment expenses related to that Cancer, recurrence or metastasis are not eligible for sharing.",
+                    "CANCERNEEDDIAGTREATMORE5YR": "Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.",
+                    "CANCERPREEXREC": "Cancer Expenses are not eligible for sharing.",
+                    "CANCERSHLIMT": "The Lifetime Limit for all Cancer is $500,000; each Incident cannot exceed the Maximum Limit Per Incident."
+                }
+            },
+            "EMERGENCY": {
+                "Id": "01t8A0000043pgSQAQ",
+                "Price": null,
+                "ProductCode": "EMERGENCY",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep3GQAS",
+                "productId": "01t8A0000043pgSQAQ",
+                "productName": "Emergency",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "AMBULANCE": "Land or air transportation for medically necessary emergency services to the nearest medical Facility or medical transportation between Facilities; when medically necessary, after the ISA is met, up to a Maximum Sharing of $10,000 per occurrence.",
+                    "EMERROOM": "$300 Visit Fee Emergency room services for a Life Threatening/Life Altering medical emergency provided on an Outpatient basis at a Hospital. If at the Hospital for 24 hours or more, ER will be considered hospitalization and will apply to the Member's ISA."
+                }
+            },
+            "GENERAL": {
+                "Id": "01t8A0000043pg5QAA",
+                "Price": null,
+                "ProductCode": "GENERAL",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep3kQAC",
+                "productId": "01t8A0000043pg5QAA",
+                "productName": "General",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "GUIDELINE": "Medically necessary expenses that occur after your Effective Date. These are medical services from a health care provider which are eligible for sharing in accordance with the Membership Guidelines.",
+                    "ISAAMOUNT": "5000",
+                    "WAITPERIOD": "Unless stated otherwise there is a 90 day waiting period for any medical expenses other than for accidents, injuries, acute illnesses and immunizations."
+                }
+            },
+            "INPATSVCS": {
+                "Id": "01t8A0000043pgTQAQ",
+                "Price": null,
+                "ProductCode": "INPATSVCS",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep2wQAC",
+                "productId": "01t8A0000043pgTQAQ",
+                "productName": "Inpatient Services",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "HOSPITALIZATION2": "After the 90 day waiting period, Inpatient Hospitalization is eligible for sharing, if a member is confined in a due to an eligible sickness or injury as directed by a Physician Subject to the ISA, up to the Maximum Limit Per Incident.",
+                    "HOSPITALIZATION3": "Acute illness, accident or Life Threatening/Life altering emergency are immediately eligible.",
+                    "INPASURGERY": "Inpatient surgery following the 180 daywaiting period after the ISA is met, up to the Maximum Limit Per Incident. Life Threatening or Life Altering emergencies are immediately eligible for sharing.",
+                    "SPECIALISTVISITS": "Inpatient Specialist Visits are subject to ISA."
+                }
+            },
+            "MAXLIMITS": {
+                "Id": "01t8A0000043pgQQAQ",
+                "Price": null,
+                "ProductCode": "MAXLIMITS",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep44QAC",
+                "productId": "01t8A0000043pgQQAQ",
+                "productName": "Maximum Limits",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "MAXSHARING": "Maximum Limit Per Incident $500,000* Lifetime Maximum per Member: $1,000,000. *Optional increase of $500,000 Maximum Per Incident available"
+                }
+            },
+            "MEMBDISCPROG": {
+                "Id": "01t8A000004UI3lQAG",
+                "Price": null,
+                "ProductCode": "MEMBDISCPROG",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000EpCSQA0",
+                "productId": "01t8A000004UI3lQAG",
+                "productName": "Membership Discount Program",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "DISCLAIMERMEMBERDISC2": "Discount Programs Not Owned or Operated by OneShare Health and  are made available to members by a fee from the contributions",
+                    "DISCPROGRAM": "Dental Discount / Diabetic Care and Supplies / Hearing Discount / Lab Discount / Vision and Lasik Discount / Lifeline Screening Discounts"
+                }
+            },
+            "OTHER": {
+                "Id": "01t8A0000043pgPQAQ",
+                "Price": null,
+                "ProductCode": "OTHER",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep3QQAS",
+                "productId": "01t8A0000043pgPQAQ",
+                "productName": "Other",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "CANCERMEMDIAGOTRAT": "If a Member was diagnosed, or treatment was received, for Cancer more than 5 years prior to the Member effective date, expenses for a newly diagnosed Cancer may be eligible for sharing, after a 90 day waiting period.",
+                    "CANCERMEMDIAGRECWITHN5": "If a Member was diagnosed, or treatment was received, for Cancer within 5 years of the Member effective date, Cancer expenses are Not Eligible for Sharing.",
+                    "CANCERMEMNEVDIAG": "Sharing is eligible after a 90 day waiting period from the Member's effective date.",
+                    "CANCERPREEXREC": "Cancer Expenses are not eligible for sharing.",
+                    "CANCERWAITPERNDR": "If Cancer is diagnosed within the 90 day waiting period, the diagnosis and treatment expenses related to that specific Cancer, recurrence or metastasis are not eligible for sharing.",
+                    "CANREQUIRFORMEM": "Medical records must show member was Cancer free 5 years immediately prior to the effective date, indicating no ongoing treatment or future treatment was prescribed/planned and the member has followed Cancer screening and healthy lifestyle guidelines.",
+                    "EQUALTCARE": "Non-experimental health care treatment which may deliver care that is more cost effective, less invasive and within generally accepted medical practice, may be eligible for sharing. Prior approval is required from OneShare Health.",
+                    "PROTHESIS": "Prosthesis needs, subject to review, are eligible, after the ISA is met, up to $1,500 Maximum Sharing. Replacement, repair and maintenance of are not eligible for Sharing.",
+                    "SLEEPAPNEA": "after the Member’s ISA is met. Testing must be ordered by a Physician. Limit one per member per program year."
+                }
+            },
+            "OUTPATDISCOUNT": {
+                "Id": "01t8A000004W5bkQAC",
+                "Price": null,
+                "ProductCode": "OUTPATDISCOUNT",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep6ZQAS",
+                "productId": "01t8A000004W5bkQAC",
+                "productName": "Outpatient Prescription Discount",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "PRESDISCPROG": "Discount Services - Envision RX"
+                }
+            },
+            "OUTPATSVCS": {
+                "Id": "01t8A00000496MIQAY",
+                "Price": null,
+                "ProductCode": "OUTPATSVCS",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep2cQAC",
+                "productId": "01t8A00000496MIQAY",
+                "productName": "Outpatient Services",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "HOMEHEALTHCARE": "Home Care  following a Hospital stay. Home Care is limited to 30 calendar days from the discharge date of the Member's Inpatient Hospital stay, after the ISA is met, up to the Maximum Limit per Incident.",
+                    "LABDIAGXRAYS": "Included at any lab facility, after the ISA is met. If services are provided at the PCP or Urgent Care facility, the Visit Fee will apply in lieu of the ISA, subject to the program limitations.",
+                    "OUTPATTHERAPY2": "If a condition is related to an eligible diagnosis, ordered by a Physician and performed by a licensed therapist, it is Eligible for sharing after a $20 Visit Fee, per visit up to the Maximum Limit Per Incident.",
+                    "OUTPATTHERAPY3": "Up to a maximum of 10 combined visits per Incident.",
+                    "PREVSERVWELL": "Preventive Services and one Wellness Visit are eligible for sharing, not subject to the ISA, up to $1,000 Maximum Sharing during the program year.",
+                    "PRICAREPHYSVISIT": "Visits for the diagnosis, treatment, management or prevention of an illness or injury. $20 Visit Fee; limit 3 visits per program year per member per year.",
+                    "SPECIALISTVISITS": "Services provided for the diagnosis, treatment, management of an eligible illness or injury $75 Visit Fee per Outpatient visit.",
+                    "SURGERY": "Outpatient surgery following the 180 day waiting period after the  ISA is met, up to the Maximum Limit Per Incident. Life Threatening or Life Altering emergencies are immediately eligible for sharing.",
+                    "URGENTCARE": "For the diagnosis, treatment, management of an eligible illness or injury serious enough that a member would seek care right away, but not so severe as to require Hospital emergency department care. $20 Visit Fee; Limit 1 visit per member per program year"
+                }
+            },
+            "PROGLIMITS": {
+                "Id": "01t8A0000043pgRQAQ",
+                "Price": null,
+                "ProductCode": "PROGLIMITS",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep31QAC",
+                "productId": "01t8A0000043pgRQAQ",
+                "productName": "Program Limitations",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "CANCERLIMITS": "Pre-existing or Recurring Cancer are not eligible for sharing.",
+                    "MEDNONCOMP": "Sharing for medical services will not be available when the conditions is shown to be the result of medical non-compliance with the Physician's recommended care, treatment or advice.",
+                    "PREEXIST24DEF": "Any sickness or injury for which a Member received medical treatment, advice, care or services including diagnostic measures, took prescribed drugs or showed signs or symptoms, whether treated or not, within 24 months of Member's program  effective date.",
+                    "PREEXIST24ELE": "Eligibility for a Pre-Existing Condition has a 24 month waiting period.",
+                    "ROUTMAINTCHRCOND": "Routine Maintenance of Chronic Conditions: Care that follows diagnosis and any active care once the  health status has become stable. The goal of maintenance care is to monitor and maintain the improvement that was accomplished with active treatment.",
+                    "SPECCHRONCOND": "Diabetes 1 &2;  Hypertension, Thyroid (Hyper/Hypo), Hyperlipidemia",
+                    "SPECICHROELI": "Specified Chronic Conditions that have received treatment or medication may be eligible, immediately, for physician office, or physician ordered lab visits for routine maintenance of the Chronic Condition, preventing further complications.",
+                    "TOBACCO": "Tobacco Use: If a Member uses or used tobacco in any form, (this includes vaping of any nicotine products), any health-related issues are Not Eligible for Sharing."
+                }
+            },
+            "PROVNETWRK": {
+                "Id": "01t8A000004UKKsQAO",
+                "Price": null,
+                "ProductCode": "PROVNETWRK",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep3uQAC",
+                "productId": "01t8A000004UKKsQAO",
+                "productName": "Provider Network",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "FIRSTHEALTH": "First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare",
+                    "MAXREAGUIDELINE": "Out of Network member sharing reimbursement is based on the lesser of the out of network provider actual billed amount or reasonable and customary charges for the Eligible services provided.",
+                    "OUTNETWORK": "Using a Non-PPO provider is still the Member’s choice. The Non-PPO provider services can result in higher medical bills. Non-PPO Providers and Facilities may bill members for the difference between the bill charges and the program’s allowed amount."
+                }
+            },
+            "TELEMEDICINE": {
+                "Id": "01t8A000004UKPPQA4",
+                "Price": null,
+                "ProductCode": "TELEMEDICINE",
+                "isOptional": false,
+                "isSelected": true,
+                "pciId": "a6y8A000000Ep28QAC",
+                "productId": "01t8A000004UKPPQA4",
+                "productName": "Telemedicine",
+                "recordType": "CoverageSpec",
+                "selectedValues": {
+                    "TELEMEDICINE": "$0 Consult Fee (Dialcare) 24/7/365. Talk to a doctor by phone or online video to get a diagnosis, treatment options and prescription, if medically necessary."
+                }
+            }
+        },
+        "currencyCode": "USD",
+        "currencySymbol": "$",
+        "effectiveDate": "2020-06-19",
+        "insuredItemSpec": {
+            "MEMBER": {
+                "Id": "01t8A0000043pg3QAA",
+                "Price": null,
+                "ProductCode": "MEMBER",
+                "pciId": "a6y8A000000EozYQAS",
+                "productId": "01t8A0000043pg3QAA",
+                "productName": "Member",
+                "recordType": "InsuredItemSpec",
+                "selectedValues": {
+                    "AGE": 29,
+                    "FAMTYPE": "null",
+                    "STATE": "KY"
+                }
+            }
+        },
+        "opportunityId": "0068A0000089czTQAQ",
+        "originalIndex": 0,
+        "productId": "01t8A00000496ldQAA",
+        "recordType": "Product",
+        "selected": true,
+        "selectedPrice": 457.9,
+        "selectedValues": {
+            "DIAGXLAB": "PCP/Urgent Care",
+            "DISCLAIMERCARD": "*Out-of-network member sharing reimbursement is based on the lesser of the Out-of-network provider actual billed amount or Maximum Reasonable Guidelines for the Eligible Services provided",
+            "EMERGROOM": "$300 Visit Fee",
+            "HOSTP": "Eligible",
+            "INOUTSURG": "Eligible - 90 day wait",
+            "ISAAMT": "5000",
+            "MATERNITY": "Eligible - Conception must be after Effective Date",
+            "MAXLIMITINC": "$500,000",
+            "PRESDISPROG": "Access to Prescription Drug Discounts on Generic and Brand Name Drugs",
+            "PREVSVCS": "100% up to $1,000 Maximum per program year",
+            "PRICAREPHY": "$20 Visit Fee - 5 Per Program Year",
+            "PROCODE": "OSHCLASSCROWN",
+            "PROVNET": "First Health Network HealthShare Program ProviderLocator.FirstHealth.com/OneShare",
+            "SPEC": "$75 Visit Fee Referral required $0 Visit Fee After ISA",
+            "TELEMED": "Doctor Access 24/7  ($0 Consult Fee)",
+            "URGCAREFAC": "$20 Visit Fee - 2 Per Program Year"
+        }
+    },
+    "Quote_1": [
+        {
+            "Id": "0Q08A000000Jc0NSAS",
+            "Information_Packet_Number__c": "061820-00001",
+            "UpsertSuccess": true
+        },
+        {
+            "Agent_Label__c": "0018A00000Twm6dQAB",
+            "Id": "0Q08A000000Jc0NSAS",
+            "Servicing_Agent__c": "0018A00000TyjGAQAZ",
+            "UpsertSuccess": true,
+            "Writing_agent__c": "0058A000003wB21QAE"
+        },
+        {
+            "Agent_Label__c": "0018A00000Twm6dQAB",
+            "Id": "0Q08A000000Jc0NSAS",
+            "Servicing_Agent__c": "0018A00000TyjGAQAZ",
+            "UpsertSuccess": true,
+            "Writing_agent__c": "0058A000003wB21QAE"
+        }
+    ],
+    "error": "OK",
+    "errorCode": "INVOKE-200",
+    "infoPacketNumber": "061820-00001",
+    "quoteId": "0Q08A000000Jc0NSAS",
+    "responseType": "SObject"
+}

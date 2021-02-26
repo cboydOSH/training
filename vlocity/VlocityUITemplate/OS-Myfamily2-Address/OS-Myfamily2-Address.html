@@ -1,0 +1,578 @@
+<div id="OS-Myfamily">
+    <div class="census-container " ng-controller="OSHController">
+        <div ng-if="ableToProceed">
+            <input type="text" ng-model="test" required hidden />
+        </div>
+        <div ng-init="getOldestMemberListForEnroll();getOldestMemberListForQuote()">
+            <form ng-class="bpTree.response.isCensusReadOnly==true ? 'disable-census' : ''" name="censusForm"
+                style="    flex-wrap: wrap;justify-content: center;align-items: baseline;">
+                <div class="form-group census-control"
+                    ng-if="bpTree.response.ThisisQuote == true && bpTree.response.myFamily.effDate != null">
+                    <!--<input style="display: none;" type="file" id="fileContent" data-file-reader-directive="fileContent"
+                        census-details="censusDetails" accept=".csv" multiple>
+                    <input type="button" class="btn btn-primary add-census clearbutton" value="Clear data"
+                        ng-click="deleteAllCensus()"/>-->
+                </div>
+
+                <div
+                    ng-if="bpTree.response.ThisisQuote == true && bpTree.response.myFamily.effDate != null && bpTree.response.myFamily.RadioFamily != null && censusDetails.length > 0">
+                    <input type="text" style="display:none;" ng-model="bpTree.response.membersData" />
+                    <table class="census-table" ng-if="censusDetails.length > 0" elem-ready="fetchCensus()">
+                        <thead>
+                            <tr>
+                                <th>
+                                     <h4>First Name <div class="birthdatetooltip"><span class="birthdatetooltiptext">
+                                                <h5>
+                                                   Please make sure to enter your legal First and Last Name.
+                                                </h5>
+                                            </span><img src="https://image.flaticon.com/icons/svg/2088/2088076.svg"
+                                                width="18" height="18"></div>
+                                    </h4>
+
+                                </th>
+                                <th>Last Name</th>
+                                <th>
+
+                                    <h4>Date of Birth <div class="birthdatetooltip"><span class="birthdatetooltiptext">
+                                                <h5>
+                                                    Primary Member must be 18 or older. All OneShare Memberships
+                                                    terminate at the end of the month the Member reaches age 65.
+                                                </h5>
+                                            </span><img src="https://image.flaticon.com/icons/svg/2088/2088076.svg"
+                                                width="18" height="18"></div>
+                                    </h4>
+
+                                </th>
+                                <!-- <th>Tobacco/Vape Usage </th> -->
+                                <th>Relationship</th>
+                                <th>Gender </th>
+                                <th>Dependents</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="censusDetail in censusDetails | orderBy: 'parent_id' track by $index"
+                                ng-class="{grid: censusDetail.relationship=='Primary', gridend: censusDetails[$index + 1].relationship=='Primary'  }">
+                                <td>
+                                    <div class="nds-form-element">
+                                        <div class="nds-form-element__control nds-form-element__control-animated-label">
+                                            <input type="text" class="nds-input" ng-model="censusDetail.fname"
+                                                ng-maxlength='40' ng-change="updateRelationShip()" required />
+                                            <label class="nds-form-element__label" for="text-input-id-1">
+                                                <abbr class="nds-required" title="required">*</abbr>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="nds-form-element">
+                                        <div class="nds-form-element__control nds-form-element__control-animated-label">
+                                            <input type="text" class="nds-input" ng-model="censusDetail.lname"
+                                                ng-maxlength='40' ng-change="updateRelationShip()" required />
+                                            <label class="nds-form-element__label" for="text-input-id-1">
+                                                <abbr class="nds-required" title="required">*</abbr>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="width"
+                                    ng-class="{'error_dob': errorDOBList.indexOf(censusDetail.id) >= 0 || censusDetail.dob == ''}">
+                                    <input invalid type="text" class="nds-input"
+                                        ng-class="{'ng-invalid': censusDetail.relationship == 'Child' && isTwentySevenOlder(censusDetail.dob) }"
+                                        data-date-format="MM/dd/yyyy" ng-model="censusDetail.dob"
+                                        ng-change="updateRelationShip()" ng-keyup="updateRelationShip()"
+                                        model-date-format="yyyy-MM-dd" slds-date-picker date-type="string"
+                                        class="nds-input slds-datepicker__month" placeholder="mm/dd/yyyy"
+                                        style="width: 90%;" required>
+                                    <!-- {{ censusDetail.dob | date: 'MM-dd-yyyy'}} -->
+                                </td>
+                                <!--<td>
+                                    <!--  ng-show=" isTwentyOneAndOlder(censusDetail.dob) "
+                                     <select ng-model="censusDetail.tobacco" class="nds-select"
+                                        ng-class="{'select_error': censusForm.censusDetailTobacco.$invalid}"
+                                        name="censusDetailTobacco" ng-options="type for type in tobacco"
+                                        ng-change="updateRelationShip()">
+                                        <option>Select</option>
+                                    </select> 
+                                </td>-->
+                                <td ng-class="{'error_dob': censusDetail.relationship == ''}" align="center"
+                                    style="text-align:center">
+
+                                    <!-- Iterate on Primary Only -->
+                                    <select ng-model="censusDetail.relationship" class="nds-select"
+                                        ng-class="{'select_error': censusForm.censusDetailRelationship.$invalid}"
+                                        name="censusDetailRelationship"
+                                        ng-if="censusDetail.id == censusDetail.parent_id"
+                                        ng-change="updateRelationShip()"
+                                        ng-options="type for type in primaryRelationships" ng-required="true"></select>
+
+                                    <!-- Iterate if Spouse Selected -->
+                                    <select ng-model="censusDetail.relationship" class="nds-select"
+                                        ng-class="{'select_error': censusForm.censusDetailRelationship.$invalid}"
+                                        name="censusDetailRelationship"
+                                        ng-if="censusDetail.id != censusDetail.parent_id && (censusDetail.relationship == 'Spouse' && isSpouseOnly(censusDetail))"
+                                        ng-change="updateRelationShip()"
+                                        ng-options="type for type in spouseRelationships" ng-required="true"></select>
+
+                                    <!-- Iterate if Spouse Selected with Family members -->
+                                    <select ng-model="censusDetail.relationship" class="nds-select"
+                                        ng-class="{'select_error': censusForm.censusDetailRelationship.$invalid}"
+                                        name="censusDetailRelationship"
+                                        ng-if="censusDetail.id != censusDetail.parent_id && (!hasSpouseInFamily(censusDetail) || censusDetail.relationship == 'Spouse' && !isSpouseOnly(censusDetail))"
+                                        ng-change="updateRelationShip()"
+                                        ng-options="type for type in dependentRelationship" ng-required="true"></select>
+
+                                    <!-- Iterate if Primary and Spouse were Selected so Children -->
+                                    <select ng-model="censusDetail.relationship" class="nds-select"
+                                        ng-class="{'select_error': censusForm.censusDetailRelationship.$invalid}"
+                                        name="censusDetailRelationship"
+                                        ng-if="censusDetail.id != censusDetail.parent_id && hasSpouseInFamily(censusDetail) && censusDetail.relationship != 'Spouse' "
+                                        ng-change="updateRelationShip()" ng-options="type for type in childRelationship"
+                                        ng-required="true"></select>
+
+                                    <!--<div >
+                                                 <div class="disabledeptooltip nds-m-around_small"
+                                                ng-if="censusDetail.id != censusDetail.parent_id && bpTree.response.myFamily.RadioFamily != 'MySelf' && bpTree.response.myFamily.RadioFamily != 'Myself & My Spouse' && censusDetail.relationship == 'Disabled Dependent'">
+                                                 <span class="disabledeptooltiptext">
+                                                        <h5>Disabled dependent is achildren over age 27 and who are financially dependent </h5>
+                                                    </span>
+                                                    <h4><img
+                                                            src="https://image.flaticon.com/icons/svg/2088/2088076.svg" width="18" height="18"></h4>
+                                                            </div>
+                                                            </div>
+                                                -->
+                                </td>
+                                <td
+                                    ng-class="{'error_dob': censusDetail.gender == '' ||  censusDetail.gender == 'Yes'}">
+                                    <select ng-model="censusDetail.gender" class="nds-select"
+                                        name="censusDetailEligibleMedicare" ng-options="type for type in gender"
+                                        ng-change="updateRelationShip()" required>
+                                        <option>Select</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <!--<input type="button" class="btn btn-primary add-census" value="+ Add Dependent"
+                                        ng-click="addNewMember(true, censusDetail)"
+                                        ng-if=" censusDetail.id == censusDetail.parent_id && bpTree.response.myFamily.RadioFamily !='MyselfMyspouse' && bpTree.response.myFamily.RadioFamily !='MySelf'"
+                                        style="border: unset;color: #ffffff ;background-color: #094fa3;" />-->
+                                    <a ng-click="deleteCensus(censusDetail)" role="button"
+                                        class="nds-button nds-button_icon nds-button_icon-small nds-float_right nds-popover__close delete-census"
+                                        title="Delete Record"
+                                        ng-if="censusDetail.id != censusDetail.parent_id && bpTree.response.myFamily.RadioFamily !='MyselfMyspouse'"
+                                        style="margin-right: 50%;">
+                                        <svg height="100%" viewBox="0 0 512 512" id="delete" width="100%"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                                                fill="#f44336" />
+                                            <path
+                                                d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0" />
+                                            <path
+                                                d="m176.8125 351.210938c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382813 0-22.632813l158.398438-158.398437c6.253906-6.253906 16.386718-6.253906 22.636718 0 6.25 6.25 6.25 16.382813 0 22.632813l-158.402343 158.398437c-3.15625 3.136719-7.25 4.695313-11.324219 4.695313zm0 0" />
+                                            <path
+                                                d="m335.1875 351.210938c-4.09375 0-8.191406-1.558594-11.304688-4.695313l-158.398437-158.398437c-6.253906-6.25-6.253906-16.382813 0-22.632813 6.25-6.253906 16.382813-6.253906 22.632813 0l158.398437 158.398437c6.253906 6.25 6.253906 16.382813 0 22.632813-3.132813 3.136719-7.230469 4.695313-11.328125 4.695313zm0 0" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input hidden type="text" ng-model="blank" ng-if="bpTree.response.NoEmpAge18 > 0"
+                        id="validationForAge18" required>
+                    <input hidden type="text" ng-model="blank" ng-if="bpTree.response.NoSpouse65 > 0"
+                        id="validationForSpouse65" required>
+                    <input hidden type="text" ng-model="blank" ng-if="bpTree.response.NoChildGreaterThan27 > 0"
+                        id="validationForNoChildGreaterthan27" required>
+                    <input hidden type="text" ng-model="blank" ng-if="bpTree.response.NoChildGreaterThan65 > 0"
+                        id="validationForNoChildGreatherthan65" required>
+                    <input hidden type="text" ng-model="blank"
+                        ng-if="bpTree.response.NoAdultGreaterThan27AndLesserThan65 > 0" id="validationforAdultDependent"
+                        required>
+                </div>
+                <div>
+                    <!--Enroll Autopopulation Table -->
+                    <div>
+                        <table class="census-table" ng-if="bpTree.response.ThisisEnroll == true">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Date of Birth</th>
+                                    <!-- <th>Tobacco/Vape Usage </th> -->
+                                    <th>Relationship</th>
+                                    <th style="display: flex;flex-wrap: wrap;">
+                                        <div>SSN/ITIN</div>
+                                        <div class="tooltipSSN">
+                                            <svg style="margin-left: 5px; width: 1.2rem; height: 1.2rem; fill: #54698d; cursor: pointer;"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" id="info">
+                                                <path
+                                                    d="M26 2C12.7 2 2 12.7 2 26s10.7 24 24 24 24-10.7 24-24S39.3 2 26 2zm0 12.1c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm5 21c0 .5-.4.9-1 .9h-8c-.5 0-1-.3-1-.9v-2c0-.5.4-1.1 1-1.1.5 0 1-.3 1-.9v-4c0-.5-.4-1.1-1-1.1-.5 0-1-.3-1-.9v-2c0-.5.4-1.1 1-1.1h6c.5 0 1 .5 1 1.1v8c0 .5.4.9 1 .9.5 0 1 .5 1 1.1v2z">
+                                                </path>
+                                            </svg>
+                                            <span class="tooltiptext">
+                                                <h5>A Social Security number (SSN) is a nine-digit number issued to U.S.
+                                                    citizens, permanent residents, and temporary (working) residents
+                                                    under section 205(c)(2) of the Social Security Act, codified as 42
+                                                    U.S.C. § 405(c)(2).
+                                                    <br>
+                                                    An Individual Taxpayer Identification Number (ITIN) is a tax
+                                                    processing number issued by the Internal Revenue Service.
+                                                    The IRS issues ITINs to individuals who are required to have a U.S.
+                                                    taxpayer identification number
+                                                    but who do not have, and are not eligible to obtain, a Social
+                                                    Security number (SSN) from the Social Security Administration (SSA).
+                                                </h5>
+                                            </span>
+                                        </div>
+                                        (optional)
+                                    </th>
+                                    <th>Gender</th>
+                                    <th>Ethnicity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="censusDetail in bpTree.response.EditFamilyMember"
+                                    ng-if="censusDetail.relationship == 'Primary' || censusDetail.relationship == 'Spouse' || censusDetail.relationship == 'Child' || censusDetail.relationship == 'Adult Dependent' || censusDetail.relationship == 'Disabled Dependent'"
+                                    ng-class="{grid: censusDetail.relationship=='Primary', gridend: censusDetails[$index + 1].relationship=='Primary'  }">
+                                    <!--First Name-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text" class="nds-input" ng-model="censusDetail.fname"
+                                                    ng-maxlength='40' required />
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required">*</abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--Last Name-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text" class="nds-input" ng-model="censusDetail.lname"
+                                                    ng-maxlength='40' required />
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required">*</abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--Bith Date-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text" class="nds-input" ng-model="censusDetail.dob"
+                                                    ng-maxlength='40' ng-change="updateRelationShip()" readonly />
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required"></abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--<td>
+                                          ng-show=" isTwentyOneAndOlder(censusDetail.dob) "
+                                        <select ng-model="censusDetail.tobacco" class="nds-select"
+                                            ng-class="{'select_error': censusForm.censusDetailTobacco.$invalid}"
+                                            name="censusDetailTobacco" ng-options="type for type in tobacco"
+                                            ng-change="updateRelationShip()">
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td> -->
+                                    <!--<td ng-class="{'error_dob': censusDetail.relationship == ''}" align="center"
+                                            style="text-align:center">
+
+                                           
+                                            <select ng-model="censusDetail.relationship" class="nds-select"
+                                                ng-class="{'select_error': censusForm.censusDetailRelationship.$invalid}"
+                                                name="censusDetailRelationship"
+                                                ng-readonly="readonly"
+                                                data-ng-readonly="readonly"
+                                                ng-required="true">
+                                                <option>Primary</option>
+                                                <option>Spouse</option>
+                                                <option>Child</option>
+                                                <option>Disabled Dependent</option>
+                                                </select>
+                                        </td>-->
+                                    <!--Relationship-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text" class="nds-input"
+                                                    ng-model="censusDetail.relationship" ng-maxlength='40'
+                                                    ng-change="updateRelationShip()" readonly />
+                                                <label for="fName" class="nds-form-element__label ng-binding">
+                                                    <span class="nds-required ng-scope" ng-if="control.req">
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--SSN / ITIN -->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text"
+                                                    class="nds-input ng-valid-mask ng-empty ng-valid ng-valid-required ng-dirty ng-valid-parse ng-touched"
+                                                    ng-model="censusDetail.ssnItin" ui-mask="999-99-9999"
+                                                    model-view-value="true">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--Gender-->
+                                    <td
+                                        ng-class="{'error_dob': censusDetail.gender == '' ||  censusDetail.gender == 'Yes'}">
+                                        <select ng-model="censusDetail.gender" class="nds-select"
+                                            name="censusDetailEligibleMedicare" ng-options="type for type in gender">
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </td>
+                                    <!--Ethnicity-->
+                                    <td ng-init="ethnicityUpdateDescripFunction()">
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <select class="nds-select" ng-model="censusDetail.ethnicity" required
+                                                    ng-change="ethnicityUpdateDescripFunction()">
+                                                    <option ng-repeat="item in ethnicityAndDesc" value="{{item.name}}">
+                                                        {{item.name}}</option>
+                                                    <!-- <option ng-repeat='item.name as item.name for item in ethnicityAndDesc track by item.name' ></option> -->
+                                                </select>
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required">*</abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="nds-m-top_medium nds-m-bot_medium">
+                            <span ng-bind-html="ethnicityResult" id="ethnicityResultSpan"></span>
+                        </div>
+                    </div>
+                    <!-- Address Table -->
+                    <div class="nds-m-top_x-large">
+                        <table ng-if="bpTree.response.ThisisEnroll == true" class="census-table"
+                            ng-if="censusDetails.length > 0" elem-ready="fetchCensus()">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Address</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Zip Code</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody class="nds-m-bottom_xx-small">
+                                <tr ng-repeat="censusDetail in bpTree.response.EditFamilyMember"
+                                    ng-if="censusDetail.relationship == 'Primary' || censusDetail.relationship == 'Spouse' || censusDetail.relationship == 'Child' || censusDetail.relationship == 'Adult Dependent' || censusDetail.relationship == 'Disabled Dependent'"
+                                    ng-class="{grid: censusDetail.relationship=='Primary', gridend: censusDetails[$index + 1].relationship=='Primary'  }">
+                                    <!--First Name-->
+                                    <td>
+                                        <input type="text" class="nds-input" ng-model="censusDetail.fname"
+                                            ng-maxlength='40' ng-change="updateRelationShip()" readonly />
+                                    </td>
+                                    <!--Last Name-->
+                                    <td>
+
+                                        <input type="text" class="nds-input" ng-model="censusDetail.lname"
+                                            ng-maxlength='40' ng-change="updateRelationShip()" readonly />
+
+                                    </td>
+                                    <!--Adress-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text" class="nds-input" ng-model="censusDetail.address"
+                                                    ng-maxlength='40' ng-change="updateRelationShip()"
+                                                    ng-readonly="censusDetail.relationship =='Primary'"
+                                                    ng-required="censusDetail.relationship !='Primary'" />
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required">*</abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--City-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text" class="nds-input" ng-model="censusDetail.city"
+                                                    ng-maxlength='40' ng-change="updateRelationShip()"
+                                                    ng-readonly="censusDetail.relationship =='Primary'"
+                                                    ng-required="censusDetail.relationship !='Primary'" />
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required">*</abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--State-->
+                                    <td>
+                                        <div class="nds-form-element__control nds-select_container nds-form-element__control-animated-label"
+                                            ng-style="{'height':'2rem'}" style="height: 2rem;">
+
+                                            <!-- this select control should not be visible to the user -->
+                                            <select name="loopname" id="State"
+                                                ng-readonly="censusDetail.relationship =='Primary'"
+                                                ng-required="censusDetail.relationship !='Primary'"
+                                                ng-disabled="censusDetail.relationship =='Primary'" chainup="test"
+                                                ng-model="censusDetail.state"
+                                                class="nds-select ng-not-empty ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched"
+                                                ng-options='item as item for item in statelist track by item'
+                                                vlc-slds-val-checker="response"
+                                                ng-change="autoAdvance(control.response.autoAdv);" required="required"
+                                                aria-invalid="false" style="">
+                                            </select>
+                                            <span class="nds-required ng-scope" ng-if="control.req">*
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <!--Zip Code-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text" ng-model="censusDetail.zipcode" name="loopname"
+                                                    ng-readonly="censusDetail.relationship =='Primary'"
+                                                    ng-required="censusDetail.relationship !='Primary'"
+                                                    ng-change="updateRelationShip()"
+                                                    class="nds-input ng-valid-mask ng-invalid-required ng-empty ng-dirty ng-valid-parse ng-touched"
+                                                    ui-mask="99999" ng-maxlength="255" ng-minlength="0"
+                                                    placeholder="_____" required="required" aria-invalid="true"
+                                                    style="" />
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required">*</abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--Phone-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="text" ng-model="censusDetail.phone" type="text"
+                                                    name="loopname"
+                                                    class="nds-input ng-valid-mask ng-invalid-required ng-valid-minlength ng-valid-maxlength ng-empty ng-dirty ng-valid-parse ng-touched"
+                                                    vlc-slds-val-checker="telControl" ui-mask="(999) 999-9999"
+                                                    ng-minlength="0" ng-maxlength="255" vlc-slds-attr="placeholder"
+                                                    placeholder="(___) ___-____" required="required" aria-invalid="true"
+                                                    style="">
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required">*</abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--Email-->
+                                    <td>
+                                        <div class="nds-form-element">
+                                            <div
+                                                class="nds-form-element__control nds-form-element__control-animated-label">
+                                                <input type="email" name="emails" class="nds-input"
+                                                    ng-model="censusDetail.email" ng-maxlength='40'
+                                                    ng-change="updateRelationShip()" required />
+                                                <label class="nds-form-element__label" for="text-input-id-1">
+                                                    <abbr class="nds-required" title="required">*</abbr>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    </svg>
+                                    </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--New Buttons Add dependet and Clear data on the midle of the table-->
+                <div class="nds-align_absolute-center">
+                    <div class="nds-align_absolute-center">
+                        <div ng-if="bpTree.response.ThisisQuote == true &amp;&amp; bpTree.response.myFamily.effDate != null"
+                            class="form-group census-control ng-scope " style=" position:absolute;right:50%;">
+                            <input style="display: none;" type="file" id="fileContent"
+                                data-file-reader-directive="fileContent" census-details="censusDetails" accept=".csv"
+                                multiple="">
+                            <input type="button" class="btn btn-primary add-census nds-m-right_xx-small clearbutton"
+                                value="Clear data" ng-click="clearAllCensus()">
+                            <input type="button" class="btn btn-primary add-census ng-scope" value="Add Dependent"
+                                ng-click="addNewMember(true)"
+                                ng-if=" censusDetail.id == censusDetail.parent_id &amp;&amp; bpTree.response.myFamily.RadioFamily !='MyselfMyspouse' &amp;&amp; bpTree.response.myFamily.RadioFamily !='MySelf'"
+                                style="border: unset; color: rgb(255, 255, 255); background-color: rgb(9, 79, 163);">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ng-form
+                        class="nds-form-element vlc-flex vlc-nds-message ng-scope ng-invalid ng-invalid-vlc-val-error ng-dirty census-error-wrapper">
+                        <div class="nds-form-element__control">
+                            <div class="vlc-control-wrapper">
+                                <div class="census-error" msg=Requirement ng-if="showCensusError()"
+                                    class="marginErrorsContainers">
+                                    {{censusErrorMsg}}
+                                </div>
+                                <div class="census-error" msg=Requirement ng-if="censusAgeErrorMsg"
+                                    class="marginErrorsContainers">
+                                    <div class="nds-notify nds-notify_alert nds-theme_alert-texture nds-theme_error"
+                                        role="alert">
+                                        <span class="nds-assistive-text">error</span>
+                                        <span class="nds-icon_container nds-icon-utility-ban nds-m-right_x-small"
+                                            title="Description of icon when needed">
+                                        </span>
+                                        <h2>
+                                            {{censusAgeErrorMsg}}
+                                        </h2>
+                                        <button
+                                            class="nds-button nds-button_icon nds-notify__close nds-button_icon-inverse"
+                                            title="Close">
+                                            <span class="nds-assistive-text">Close</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--
+                                <div  msg=Requirement ng-if="censusAgeOldest" class="marginErrorsContainers">
+                                    <div class="nds-notify nds-notify_alert nds-theme_alert-texture nds-theme_warning"
+                                        role="alert">
+                                        <span class="nds-assistive-text">warning</span>
+                                        <span class="nds-icon_container nds-icon-utility-warning nds-m-right_x-small"
+                                            title="Description of icon when needed">
+                                            <svg aria-hidden="true"
+                                                class="slds-icon slds-icon--small nds-icon nds-icon_small "
+                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
+                                                sprite="'utility'" icon="icon[msg.type]" size="'small'"
+                                                viewBox="0 0 52 52" alt="warning">
+                                                <path fill="inherit" xmlns="http://www.w3.org/2000/svg"
+                                                    d="m51.4 42.5l-22.9-37c-1.2-2-3.8-2-5 0l-22.9 37c-1.4 2.3 0 5.5 2.5 5.5h45.8c2.5 0 4-3.2 2.5-5.5z m-25.4-2.5c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z m3-9c0 0.6-0.4 1-1 1h-4c-0.6 0-1-0.4-1-1v-13c0-0.6 0.4-1 1-1h4c0.6 0 1 0.4 1 1v13z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <h1>
+                                            <b>
+                                            {{censusAgeOldest}}
+                                            </b>
+                                        </h1>
+                                        <button
+                                            class="nds-button nds-button_icon nds-notify__close nds-button_icon-inverse"
+                                            title="Close">
+                                            <svg class="nds-button__icon" aria-hidden="true">
+                                                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close">
+                                                </use>
+                                            </svg>
+                                            <span class="nds-assistive-text">Close</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                    </ng-form>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class='nds-col_padded nds-size_1-of-1'>
+    <table class="nds-table nds-table_bordered nds-table_cell-buffer nds-border_left nds-border_right" ng-class="[compareWindowWidth(1024,'vlc-slds-table_stacked'),compareWindowWidth(375,'vertical')]" ng-init=digestOnResize()>
+       <thead>
+            <tr class="nds-text-heading_label">
+                <th scope="col">
+                    <div class="nds-truncate">First Name</div>
+                </th>
+                <th scope="col">
+                    <div class="nds-truncate">Last Name</div>
+                </th>
+                <th scope="col">
+                    <div class="nds-truncate">Date of Birth</div>
+                </th>
+                <th scope="col">
+                    <div class="nds-truncate">Gender</div>
+                </th>
+                <th scope="col">
+                    <div class="nds-truncate">SSN/ITIN</div>
+                </th>
+                <th scope="col">
+                    <div class="nds-truncate">Relationship</div>
+                </th>
+                <th scope="col">
+                    <div class="nds-truncate">Ethnicity</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr
+            ng-if="data.relationship == 'Primary' || data.relationship == 'Spouse' || data.relationship == 'Child' || data.relationship == 'Adult Dependent'" 
+            ng-repeat='data in control.vlcSI[control.itemsKey]' ng-class="{ 'vlc-selectableitem-selected' : data.vlcSelected }" >
+                <td data-label='First Name'>
+                    <div class="nds-truncate">{{data.fname}}</div>
+                </td>
+                <td data-label='Last Name'>
+                    <div class="nds-truncate">{{data.lname}}</div>
+                </td>
+                <td data-label='Date of Birth'>
+                    <div class="nds-truncate">{{data.dob}}</div>
+                </td>
+                <td data-label='Gender'>
+                    <div class="nds-truncate">{{data.gender}}</div>
+                </td>
+                <td data-label='SSN/ITIN'>
+                    <div class="nds-truncate">{{data.ssnItin}}</div>
+                </td>
+                <td data-label='Relationship'>
+                    <div class="nds-truncate">{{data.relationship}}</div>
+                </td>
+                <td data-label='Ethnicity'>
+                    <div class="nds-truncate">{{data.ethnicity}}</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+</div>

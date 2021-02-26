@@ -13,6 +13,11 @@
         <name>copado__Pipeline_Deployment_Modal</name>
     </fieldSets>
     <fields>
+        <help><!-- Only Active Templates are available when searching for them, for example in deployment steps --></help>
+        <label><!-- Active --></label>
+        <name>copado__Active__c</name>
+    </fields>
+    <fields>
         <label><!-- Build Task --></label>
         <name>copado__Build_Task__c</name>
         <relationshipLabel><!-- Deployments --></relationshipLabel>
@@ -61,6 +66,22 @@
     <fields>
         <label><!-- Deployment command sent --></label>
         <name>copado__Deployment_command_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution Context --></label>
+        <name>copado__Execution_Context__c</name>
+        <picklistValues>
+            <masterLabel>Deployment</masterLabel>
+            <translation><!-- Deployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Flag Status --></label>
@@ -146,6 +167,32 @@
             <translation><!-- Scheduled --></translation>
         </picklistValues>
     </fields>
+    <fields>
+        <help><!-- The automation template that defined the steps of this deployment. --></help>
+        <label><!-- Template --></label>
+        <name>copado__Template__c</name>
+        <relationshipLabel><!-- Template Execution --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Create multiple types of deployment steps. (Technical knowledge needed) --></description>
+        <label><!-- Advanced (multi-step) --></label>
+        <name>copado__Advanced_multi_step</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Group of steps to be executed in the future. --></description>
+        <label><!-- Automation Template --></label>
+        <name>copado__Automation_Template</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Select a Data Template to be deployed in a point and click process. --></description>
+        <label><!-- Data Deployment --></label>
+        <name>copado__Data_Deployment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Select the metadata manually to be deployed in a point and click process. --></description>
+        <label><!-- Metadata Deployment --></label>
+        <name>copado__Metadata_Deployment</name>
+    </recordTypes>
     <webLinks>
         <label><!-- Cancel_Deployment --></label>
         <name>copado__Cancel_Deployment</name>
@@ -153,5 +200,9 @@
     <webLinks>
         <label><!-- Deploy --></label>
         <name>copado__Deploy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Import_Template --></label>
+        <name>copado__Import_Template</name>
     </webLinks>
 </CustomObjectTranslation>

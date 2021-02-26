@@ -1,0 +1,122 @@
+.modalTitle{
+    color: #004fa3;
+    font-family: communityFontBold;
+}
+
+.newsCard{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 29%;
+    height: 90%;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 1px #d3d3d3;
+    float: left;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.opacityTransition{
+    opacity: 0.7;
+    transition: opacity .6s;
+}
+
+.opacityTransition:hover{
+    opacity: 1;
+}
+
+.newsCardInfoContainer{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.newsCardPresentationTitle{
+    color: #004fa3;
+    font-family: communityFontBold;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15%;
+}
+
+.newsCardPresentationDescription{
+    color: #28211f;
+    font-family: communityFontLight;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 7%;
+}
+
+.newsCardPresentationMediaTitle{
+    color: #28211f;
+    font-family: communityFontMedium;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 11%;
+}
+
+.newsCardPresentationMediaPhone{
+    color: #28211f;
+    font-family: communityFontLight;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 3%;
+}
+
+.newsCardPresentationMediaMail{
+    color: #004fa3;
+    font-family: communityFontLight;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.newsCardPlusSign{
+    position: absolute;
+    overflow: hidden;
+    color: #004fa3;
+    font-family: communityFontBold;
+    right: 6px;
+    top: -5px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.newsCardTitle{
+    position: relative;
+    overflow: hidden;
+    font-family: communityFontBold;
+    width: 100%;
+    color: #28211f;
+    text-align: left;
+    font-size: 13px;
+    height: 4rem;
+}
+
+.newsCardContent{
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 9rem;
+}
+
+.newsCardImage{
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    float: left;
+    border-radius: 3px;
+}
+
+.newsCardDescription{
+    position: relative;
+    overflow: hidden;
+    color: #28211f;
+    font-family: communityFontLight;
+    width: 58%;
+    margin-left: 2%;
+    float: left;
+    font-size: 11px;
+}

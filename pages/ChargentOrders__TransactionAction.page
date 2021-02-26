@@ -1,0 +1,245 @@
+<apex:page standardController="ChargentOrders__Transaction__c" extensions="ChargentOrders.ClassicActionBtnController">
+
+    <apex:includeScript value="/soap/ajax/31.0/connection.js" />
+    <apex:includeScript value="/soap/ajax/31.0/apex.js" />
+    <apex:includeScript value="/support/console/22.0/integration.js" />
+    <apex:includeScript value="/js/functions.js" />
+    <apex:includeScript value="/resource/ChargentBase__ChargentStyling/js/jquery.min.js" />
+
+    <apex:detail subject="{!ChargentOrders__Transaction__c.Id}" inlineEdit="true"/>
+
+    <script type="text/javascript">
+		sforce.connection.sessionId = '{!$Api.Session_ID}';
+    </script>
+
+    <!-- Charge_Authorized -->
+    <apex:outputPanel rendered="{!action == 'Charge_Authorized'}">
+        <script type="text/javascript">
+			disableButtons();
+			processOperation();
+			enableButtons();
+
+			function processOperation() {
+				try {
+					var result = sforce.apex.execute("ChargentOrders.TChargentOperations", "ChargeAuthorizedTransaction_Click", {
+						TransactionId: "{!ChargentOrders__Transaction__c.Id}"
+					});
+					result = result[0];
+					var chargentMessage = getChargentMessage(result);
+					if (result.DebugString) {
+						alert(chargentMessage + '\n\n' + result.DebugString);
+					} else {
+						alert(chargentMessage);
+					}
+				} catch (e) {
+					var responseMessage = e.faultstring;
+					alert(responseMessage);
+				} finally {
+					window.location = '/{!ChargentOrders__Transaction__c.Id}';
+				}
+			}
+
+			function getChargentMessage(result) {
+				var chargentMessage = result.Message;
+				if (result.responseData) {
+					var responseData = JSON.parse(result.responseData);
+					if (responseData.chargentMessage) {
+						chargentMessage = responseData.chargentMessage;
+					}
+				}
+				chargentMessage = chargentMessage.replace(/\r\n/g, '\n');
+				return chargentMessage;
+			}
+
+			function disableButtons() {
+				var buttons = document.getElementsByName('chargentorders__charge_authorized');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].setAttribute('disabled', 'true');
+					}
+				}
+			}
+
+			function enableButtons() {
+				var buttons = document.getElementsByName('chargentorders__charge_authorized');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].removeAttribute('disabled');
+					}
+				}
+			}
+        </script>
+    </apex:outputPanel>
+
+    <!-- Partial_Refund -->
+    <apex:outputPanel rendered="{!action == 'Partial_Refund'}">
+        <script type="text/javascript">
+			function createPaymentDialog() {
+				sd = new SimpleDialog("PaymentDialog", true);
+				sd.setWidth("400");
+				sd.setTitle('<a id="dialog-title" title="Close" tabindex="0" href="" class="dialogClose">Close</a><h2 id="title">Partial Refund</h2>');
+				sd.createDialog();
+				window.parent.sd = sd;
+				var iframe_url = '{!URLFOR($Site.Prefix + "/apex/ChargentBase__PaymentRequestModal")}';
+				if (iframe_url.indexOf("?") == -1) {
+					iframe_url = '{!URLFOR($Site.Prefix + "/apex/ChargentBase__PaymentRequestModal")}' + '?objId=' + '{!ChargentOrders__Transaction__c.Id}';
+				} else {
+					iframe_url = '{!URLFOR($Site.Prefix + "/apex/ChargentBase__PaymentRequestModal")}' + '&objId=' + '{!ChargentOrders__Transaction__c.Id}';
+				}
+				sd.setContentInnerHTML('<iframe id="iframeContentId" src="' + iframe_url + '" frameborder="0" height="190" width="350" marginheight="0" marginwidth="0" align="center" scrolling="yes" style="overflow-y: hidden !important; overflow-x: hidden !important;" />');
+			}
+
+			function setElements() {
+				try {
+					document.getElementById("PaymentDialogContent").style.padding = "20px";
+					document.getElementById("PaymentDialogContent").style.overflowY = "hidden";
+					document.getElementById("PaymentDialogContent").style.overflowX = "hidden";
+					document.getElementsByClassName("middle")[0].style.background = '#aaa';
+					document.getElementsByClassName("middle")[1].style.background = '#aaa';
+					document.getElementsByClassName("middle")[1].style.borderBottomRightRadius = '10px';
+					document.getElementsByClassName("middle")[1].style.borderBottomLeftRadius = '10px';
+					document.getElementsByClassName("bottomRight")[1].style.display = 'none';
+					document.getElementById('PaymentDialog').style.overflow = "auto";
+				} catch (e) {}
+			}
+
+			function showPaymentDialog() {
+				if (window.parent.sd == undefined) {
+					createPaymentDialog();
+					sd.show();
+				} else {
+					window.parent.sd.show();
+				}
+
+				setElements();
+			}
+
+			showPaymentDialog();
+
+			document.getElementById('dialog-title').onclick = function() {
+				window.parent.sd.cancel();
+				window.location = '/{!ChargentOrders__Transaction__c.Id}';
+				return false;
+			}
+        </script>
+    </apex:outputPanel>
+
+    <!-- Refund -->
+    <apex:outputPanel rendered="{!action == 'Refund'}">
+        <script type="text/javascript">
+			disableButtons();
+			processOperation();
+			enableButtons();
+
+			function processOperation() {
+				try {
+					var result = sforce.apex.execute("ChargentOrders.TChargentOperations", "RefundTransaction_Click", {
+						TransactionId: "{!ChargentOrders__Transaction__c.Id}"
+					});
+					result = result[0];
+					var chargentMessage = getChargentMessage(result);
+					if (result.DebugString) {
+						alert(chargentMessage + '\n\n' + result.DebugString);
+					} else {
+						alert(chargentMessage);
+					}
+				} catch (e) {
+					var responseMessage = e.faultstring;
+					alert(responseMessage);
+				} finally {
+					window.location = '/{!ChargentOrders__Transaction__c.Id}';
+				}
+			}
+
+			function getChargentMessage(result) {
+				var chargentMessage = result.Message;
+				if (result.responseData) {
+					var responseData = JSON.parse(result.responseData);
+					if (responseData.chargentMessage) {
+						chargentMessage = responseData.chargentMessage;
+					}
+				}
+				chargentMessage = chargentMessage.replace(/\r\n/g, '\n');
+				return chargentMessage;
+			}
+
+			function disableButtons() {
+				var buttons = document.getElementsByName('chargentorders__refund');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].setAttribute('disabled', 'true');
+					}
+				}
+			}
+
+			function enableButtons() {
+				var buttons = document.getElementsByName('chargentorders__refund');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].removeAttribute('disabled');
+					}
+				}
+			}
+        </script>
+    </apex:outputPanel>
+
+    <!-- Void -->
+    <apex:outputPanel rendered="{!action == 'Void'}">
+        <script type="text/javascript">
+			disableButtons();
+			processOperation();
+			enableButtons();
+
+			function processOperation() {
+				try {
+					var result = sforce.apex.execute("ChargentOrders.TChargentOperations", "VoidTransaction_Click", {
+						TransactionId: "{!ChargentOrders__Transaction__c.Id}"
+					});
+					result = result[0];
+					var chargentMessage = getChargentMessage(result);
+					if (result.DebugString) {
+						alert(chargentMessage + '\n\n' + result.DebugString);
+					} else {
+						alert(chargentMessage);
+					}
+				} catch (e) {
+					var responseMessage = e.faultstring;
+					alert(responseMessage);
+				} finally {
+					window.location = '/{!ChargentOrders__Transaction__c.Id}';
+				}
+			}
+
+			function getChargentMessage(result) {
+				var chargentMessage = result.Message;
+				if (result.responseData) {
+					var responseData = JSON.parse(result.responseData);
+					if (responseData.chargentMessage) {
+						chargentMessage = responseData.chargentMessage;
+					}
+				}
+				chargentMessage = chargentMessage.replace(/\r\n/g, '\n');
+				return chargentMessage;
+			}
+
+			function disableButtons() {
+				var buttons = document.getElementsByName('chargentorders__void');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].setAttribute('disabled', 'true');
+					}
+				}
+			}
+
+			function enableButtons() {
+				var buttons = document.getElementsByName('chargentorders__void');
+				if (buttons != null) {
+					for (i = 0; i < buttons.length; i++) {
+						buttons[i].removeAttribute('disabled');
+					}
+				}
+			}
+        </script>
+    </apex:outputPanel>
+
+</apex:page>

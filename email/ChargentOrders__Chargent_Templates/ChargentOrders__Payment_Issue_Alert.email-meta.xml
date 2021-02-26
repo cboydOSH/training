@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to customers when their card is declined or the charge has an error.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Payment Issue Alert</name>
+    <style>none</style>
+    <subject>Issue with Payment ({!ChargentOrders__Transaction__c.ChargentOrders__Response_Status__c})</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

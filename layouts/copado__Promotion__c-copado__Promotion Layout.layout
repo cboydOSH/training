@@ -109,6 +109,10 @@
         <fields>copado__Status__c</fields>
     </miniLayout>
     <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>copado__Result__c.copado__Promotion__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>CreatedDate</fields>
         <fields>StepStatus</fields>
         <fields>OriginalActor</fields>
@@ -135,7 +139,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0Y000000UiJK</masterLabel>
+        <masterLabel>00h8A000001w4kI</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -1,0 +1,40 @@
+<!--
+ - Created by ericalexander on 3/5/18.
+ -->
+
+<apex:page id="PostInstall"
+           standardStylesheets="false"
+           showHeader="false"
+           sidebar="true" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" cache="false">
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <apex:composition template="cterminal__SLDS_Template">
+        <apex:define name="body">
+
+            <div class="slds-grid slds-grid--frame slds-grid--align-center slds-grid--vertical-align-center slds-theme--warning">
+                <div class="slds-grid--vertical-stretch">
+
+                    <div class="slds-text-color_inverse slds-m-bottom--medium">
+                        <h3 class="slds-text-heading--large">Chargent Terminal</h3>
+                    </div>
+
+                    <div class="slds-text-align--center">
+                        <button class="slds-button slds-button--neutral" type="button"
+                                onclick="gotoURL('/apex/cterminal__Terminal_Configuration',true)">
+                            Let's Get Started
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </apex:define>
+
+    </apex:composition>
+
+    <script>
+        hideProcessing();
+    </script>
+    </html>
+</apex:page>

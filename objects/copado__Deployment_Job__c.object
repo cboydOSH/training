@@ -255,6 +255,21 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>copado__Last_Result__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest result with more details of the job execution.</inlineHelpText>
+        <label>Last Result</label>
+        <referenceTo>copado__Result__c</referenceTo>
+        <relationshipLabel>Deployment Jobs</relationshipLabel>
+        <relationshipName>Deployment_Jobs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>copado__Status_Flag__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>

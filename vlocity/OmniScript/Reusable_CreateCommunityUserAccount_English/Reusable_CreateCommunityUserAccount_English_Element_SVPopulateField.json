@@ -1,0 +1,37 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateMemberUser",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Reusable/CreateCommunityUserAccount/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "FormulaLinkForRedirectToOS": "=IF(CONTAINS(%currentUrl%, 'oshtraining'),true,false)",
+            "UserEmailConfirmation": "%letsGetStarted:BlkNoExistingInfoPacket:Email1%",
+            "UserLastName": "=%letsGetStarted:BlkNoExistingInfoPacket:lName%||%Welcome:fname%",
+            "UserName": "=%letsGetStarted:BlkNoExistingInfoPacket:fName%||%Welcome:lname%"
+        },
+        "label": "SVPopulateField",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SVPopulateField",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Reusable/CreateCommunityUserAccount/English/SVPopulateField"
+}

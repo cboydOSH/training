@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AC Stage --></label>
+        <name>ChargentOrders__AC_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>ChargentOrders__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chargent Automated Collections --></label>
+        <name>ChargentOrders__Chargent_Automated_Collections__c</name>
+        <relationshipLabel><!-- Chargent Automated Collections Stages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email Template --></label>
+        <name>ChargentOrders__Email_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emailed On --></label>
+        <name>ChargentOrders__Emailed_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Payment Retry --></label>
+        <name>ChargentOrders__Next_Payment_Retry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Stage --></label>
+        <name>ChargentOrders__Next_Stage__c</name>
+        <relationshipLabel><!-- Chargent Automated Collections Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Organization wide email address Id for sending AC emails. --></help>
+        <label><!-- Sender Email Address --></label>
+        <name>ChargentOrders__Sender_Email_Address__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -155,6 +155,19 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>copado__Application__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>copado__Application__c</referenceTo>
+        <relationshipLabel>Epics</relationshipLabel>
+        <relationshipName>Epics</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>copado__Cancelled_Reason__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>

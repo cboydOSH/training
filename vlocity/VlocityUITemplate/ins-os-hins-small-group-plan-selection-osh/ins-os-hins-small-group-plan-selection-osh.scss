@@ -1,0 +1,488 @@
+$light-blue: #FFFFFF;
+$royal-blue: #0070D2;
+$orange: #F06E2F;
+$bronze: #B2720C;
+$silver: #C1CCDF;
+$gold: #F8C300;
+
+.wordsSetting {
+    white-space: normal !important;
+    word-break: break-word !important;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+//CSS for ISA Amount Right Card
+.isatooltip {
+  position: relative;
+  display: inline-block;
+  //border-bottom: 1px dotted black;
+}
+.isatooltip .isatooltiptext {
+  visibility: hidden;
+  width: 128%;
+  background-color: #005fb2;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 12px 0;
+     
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  //bottom: 100%;
+  left: 108%;
+  top: -30px;
+  //margin-left: -60px;
+}
+.isatooltip:hover .isatooltiptext {
+  visibility: visible;
+}
+
+//Popup Catastrophic
+.tooltip {
+  position: relative;
+  //display: inline-block;
+  //border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #005fb2;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 1;
+     
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 10%;
+  margin-left: -60px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.via-nds {
+    .background-price{
+        background-color: rgba(166, 235, 251, 0.2);
+        border-radius: 5px;
+    }
+    .img-15{
+        height: 15px;
+        min-width: 16px;
+        margin-right: 3px;
+    }
+    .img-10{
+        height: 10px;
+        margin-right: 3px;
+    }
+    .img-8{
+        height: 8px;
+        margin-right: 3px;
+    }
+    .img-offset{
+        bottom: 2px;
+        position: relative;
+    }
+    .dotted{
+        &-bottom{
+            border-bottom: 1px dotted #d3d3d3;
+            @media screen and (max-width: 999px) {
+                border-bottom: 0;
+            }
+        }
+        &-right{
+            border-right: 1px dotted #d3d3d3;
+            @media screen and (max-width: 999px) {
+                border-bottom: 0;
+            }
+        }
+    }
+    .pl-attr{
+        padding-left: .75rem;
+        @media screen and (max-width: 999px) {
+            padding-left: 0px;
+        }
+    }
+
+    .vloc-small-group-plan-selection {
+        width: 100%;
+
+        .vloc-cart-plans-button {
+            max-height: 2.5rem;
+        }
+
+        .vloc-plan-box {
+            position: relative;
+            height: auto !important;
+            text-align: center;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: fadeIn 2s;
+        }
+
+        .vloc-plan-box-header {
+            height: 46%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 1rem;
+            
+        }
+
+        .nds-listbox__item {
+            outline: none;
+        }
+
+        .nds-input nds-combobox__input {
+            cursor: pointer;
+        }
+
+        .vloc-plan-image {
+            max-width: 3rem;
+            max-height: 3rem;
+            padding: 0.5rem;
+        }
+
+        .vloc-plan-icon {
+            .slds-icon {
+                fill: $orange;
+            }
+
+            &.gold .slds-icon {
+                fill: $gold;
+            }
+
+            &.silver .slds-icon {
+                fill: $silver;
+            }
+
+            &.bronze .slds-icon {
+                fill: $bronze;
+            }
+        }
+
+        .vloc-plan-header-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1 1 auto;
+        }
+
+        .vloc-plan-box-body {
+            height: 54%;
+            padding: 0 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .vloc-link {
+                font-size: 25px;
+                font-weight: bold;
+                color: #FF6D00 !important;
+                display: block;
+                margin-top: 15px;
+            }
+            .plan-category{
+                display: inline-block;
+                span{
+                    color: #8B8B8B;
+                    border: 1px solid #8B8B8B;
+                    padding: 1px 10px;
+                    border-radius: 15px;
+                    font-size: 10px;
+                }
+            }
+            .reviews{
+                display: inline-block;
+                span{
+                    font-size: 9px;
+                    color: #FF6D00;
+                }
+            }
+            .description{
+                p{
+                    color: #8B8B8B;
+                }
+            }
+            .plan-links{
+                margin-bottom: 20px;
+                margin-top: 10px;
+
+                .plan-details,
+                .plan-summary{
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    span{
+                        font-size: 12px;
+                        color: #0095DA;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+                .plan-details{
+                    a{
+                        padding-right: 10px;
+                        border-right: 1px solid #8B8B8B;
+                    }
+                }
+            }
+            .vloc-includes{
+                font-weight: bold;
+                font-size: 10px;
+                color: #0095DA;
+            }
+            .name-plan-container{
+                text-align: left;
+                padding-top: 10px
+            }
+            .price-plan-container{
+                text-align: left;
+                @media screen and (max-width: 999px) {
+                    text-align: center;
+                }
+                p{
+                    color: #FF6D00;
+                    .price{
+                        font-size: 1.8rem;
+                    }
+                    .timelapse{
+                        font-weight: lighter;
+                        font-size: 20px;
+                    }
+                }
+                .subsidy{
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: #8B8B8B;
+                }
+                .finder{
+                   a{
+                        font-size: 12px;
+                        color: #0095DA;
+                        font-weight: bold;
+                   }
+                }
+            }
+            .grid-plan-attr{
+                width: 100%;
+                .plan-features{
+                    text-align: left;
+                }
+                .compare-container{
+                    padding-top: 150px;
+                    @media screen and (max-width: 999px) {
+                        padding-top: 30px;
+                    }
+                    .compare-button{
+                        color: #0095DA;
+                        padding: 10px 14px;
+                        border: 1px solid #0095DA !important;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        border-radius: 5px;
+                        background-color: white;
+                        width: 150px;
+                    }
+                    .cart-button{
+                        color: white;
+                        padding: 10px 25px;
+                        border: 1px solid #0095DA;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        background-color: #0095DA;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                        width: 150px;
+                    }
+                }
+            }
+            .standout{
+                color: #FF6D00;
+                font-size: 18px;
+                font-weight: bold;
+                align-items: center;
+
+                h3{
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+            }
+            .plan-attr{
+                h4{
+                    font-weight: bold;
+                    color: black !important;
+                    text-transform: uppercase;
+                }
+                p{
+                    color: #8B8B8B;
+                }
+                .plan-suscriber{
+                    display: inline-block;
+                }
+            }
+            .display-attributes{
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 10px;
+
+                    .display-attributes-text {
+                        font-weight: 300;
+                        color: #13315d;
+                        font-size: 16px;
+                        padding-right: 10px;    
+                    }
+
+                    .display-attributes-value {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .links-panel{
+                margin: 10px 0;
+                //margin: auto;
+                //margin-left: 0;
+            }
+        }
+
+        .vloc-plan-table {
+            margin: 0 auto;
+            font-size: .7125rem;
+            @media screen and (max-width: 999px) {
+                font-size: 0.8125rem;
+            }
+            td {
+                width: 50%;
+                max-width: 0;
+                padding-bottom: 0.25rem;
+            }
+        }
+
+        .vloc-plan-footer {
+            width: 100%;
+        }
+
+        .vloc-link {
+            &:hover {
+                text-decoration: underline;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .vloc-plan-select-button {
+            width: 60%;
+        }
+
+        .vloc-renewal-header {
+            background-color: rgba($royal-blue, .3);
+            color: white;
+            position: relative;
+            z-index: 1;
+            font-size: 0.8rem;
+            font-weight: 100;
+            height: 2.4rem;
+
+            .vloc-link {
+                color: white;
+                line-height: 1;
+                text-decoration: underline;
+            }
+        }
+
+        .vloc-renewal-header-svg {
+            display: block;
+            fill: rgba($royal-blue, .3);;
+        }
+
+        .vloc-renewal-flag-hidden {
+            display: none;
+        }
+
+        .vloc-selected-plan {
+            border-color: $royal-blue;
+            box-shadow: -1px 0 0 1px $royal-blue, inset -1px 0 0 1px $royal-blue;
+            background-color: darken($light-blue, 3%);
+
+            .vloc-renewal-header {
+                background-color: $royal-blue;
+            }
+
+            .vloc-renewal-header-svg {
+                fill: $royal-blue;
+            }
+        }
+
+        .vloc-cart-plans-collapse {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+
+            &.in {
+                max-height: 50rem;
+            }
+        }
+
+        .vloc-cart-plans-collapse-toggle {
+            text-align: center;
+
+            .nds-icon {
+                fill: $royal-blue;
+            }
+
+            .vloc-toggle-closed .nds-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+     .best-plan-wrapper{
+        text-align: left;
+        padding: 10px 20px;
+        font-weight: bold;
+        background-color: #036fd2;
+        color: #fff;
+        font-size: 0.9rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.via-nds .nds-size--1-of-3, .via-nds .nds-size_1-of-3{
+    min-width: 271px;
+}
+.via-nds .vloc-small-group-plan-selection .vloc-plan-box-header .vloc-link{
+    min-height: 42px;
+}
+@media all and (max-width: 768px) {
+    .via-nds .nds-size--1-of-3, .via-nds .nds-size_1-of-3{
+       max-width: 50%;
+       flex: 0 0 50%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .via-nds .nds-size--1-of-3, .via-nds .nds-size_1-of-3{
+    max-width: 100%;
+    flex: 0 0 100%;
+    }
+}

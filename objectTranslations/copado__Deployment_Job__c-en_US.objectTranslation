@@ -42,6 +42,12 @@
         <name>copado__External_Status__c</name>
     </fields>
     <fields>
+        <help><!-- Latest result with more details of the job execution. --></help>
+        <label><!-- Last Result --></label>
+        <name>copado__Last_Result__c</name>
+        <relationshipLabel><!-- Deployment Jobs --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Status Flag --></label>
         <name>copado__Status_Flag__c</name>
     </fields>

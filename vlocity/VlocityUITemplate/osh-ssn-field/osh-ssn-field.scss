@@ -1,0 +1,28 @@
+label[for="SSNITIN"]
+{
+    display:none!important;
+}
+
+//Popup for SSN
+.tooltipSSN {
+  position: relative;
+}
+.tooltipSSN .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #005fb2;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 1;
+    position: absolute;
+    z-index: 1; 
+    bottom: 100%;
+    left: 10%;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.tooltipSSN:hover .tooltiptext {
+  visibility: visible;
+}

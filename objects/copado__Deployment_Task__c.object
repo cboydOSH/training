@@ -315,6 +315,11 @@
                     <label>URL Callout</label>
                 </value>
                 <value>
+                    <fullName>Salesforce Flow</fullName>
+                    <default>false</default>
+                    <label>Salesforce Flow</label>
+                </value>
+                <value>
                     <fullName>Custom Setting</fullName>
                     <default>false</default>
                     <isActive>false</isActive>

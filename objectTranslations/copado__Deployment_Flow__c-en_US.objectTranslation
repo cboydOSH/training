@@ -58,6 +58,11 @@
         <name>copado__Enable_Copado_DX__c</name>
     </fields>
     <fields>
+        <help><!-- If unchecked, Copado will stop applying Smart Conflict resolution during the promotion process and users will have to manually resolve conflicts again in every subsequent promotion. --></help>
+        <label><!-- Enable Smart Conflict Resolution --></label>
+        <name>copado__Enable_Smart_Conflict_Resolution__c</name>
+    </fields>
+    <fields>
         <help><!-- If checked, Environment names must equal their corresponding Branches in the Deployment Flow Steps. --></help>
         <label><!-- Enforce branch/env naming convention --></label>
         <name>copado__Equal_Branch_Environment_Name__c</name>

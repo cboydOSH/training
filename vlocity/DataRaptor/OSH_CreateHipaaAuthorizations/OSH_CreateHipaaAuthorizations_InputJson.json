@@ -1,0 +1,53 @@
+{
+    "AuthorizationDetails": {
+        "HIPAAAuthorizationEffectiveDate": "2021-01-15",
+        "HIPAAAuthorizationEffectiveEvent": null,
+        "HIPAAAuthorizationEffectiveUntil": "Date",
+        "HIPAAAuthorizationPeriod": "Time bound",
+        "HIPAAAuthorizationSubType": "Change/Update of Record;Other",
+        "HIPAAAuthorizationType": "Partial",
+        "OtherHIPAAAuthorization": "sdsadasd",
+        "SubTypeContainsOther": true
+    },
+    "GetHipaaRecords": [
+        {
+            "": "",
+            "$$hashKey": "object:1637",
+            "address": "655 West Irving Park Road",
+            "age": 51,
+            "asthma": false,
+            "behavioralormentalhealth": false,
+            "city": "Chicago",
+            "congestiveheartfailure": false,
+            "copd": false,
+            "country": "United States",
+            "crohnsdisease": false,
+            "diabetesI": false,
+            "diabetesII": false,
+            "dob": "01/07/1970",
+            "eatingdisorders": false,
+            "email": "mia@see.com",
+            "ethnicity": "Hispanic or Latino",
+            "fname": "Mia",
+            "fullname": "Mia See",
+            "gender": "Female",
+            "heartdisease": false,
+            "hearthbypasssurgery": false,
+            "herniateddisc": false,
+            "hivaids": false,
+            "hyperlipidemia": false,
+            "hypertensionorhighblood": false,
+            "id": "0018A00000azDtrQAE",
+            "isHipaaAuthorized": true,
+            "kidneydiseaseorfailure": false,
+            "lname": "See",
+            "parent_id": "0018A00000azDtrQAE",
+            "phone": "4353454354",
+            "relationship": "Primary",
+            "ssnItin": "",
+            "state": "IL",
+            "zipcode": "60613"
+        }
+    ],
+    "PrimaryMemberId": "0018A00000azDtrQAE"
+}
